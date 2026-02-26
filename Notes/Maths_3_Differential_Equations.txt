@@ -1,5 +1,3 @@
-Here is a comprehensive guide to Differential Equations for the MHT CET MCA Entrance Exam, built upon your provided material and enhanced with detailed explanations, shortcuts, and tricks as requested. The search results confirmed the specific syllabus topics and the importance of shortcuts for the exam, which have been integrated throughout the guide .
-
 # 🧠 Complete Differential Equations Guide for MHT CET MCA Entrance Exam
 
 ## Exam Overview
@@ -699,3 +697,4 @@ t = (ln 8)/k = (ln 8)/(ln 2/10) = 10(ln 8/ln 2) = 10 × 3 = 30 minutes
 | **Applications** | Growth/Decay: `N = N₀e^(±kt)`; Cooling: `T - Tₘ = (T₀ - Tₘ)e^(-kt)` |
 
 ---
+
