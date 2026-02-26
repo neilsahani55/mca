@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Time - MCA Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./dashboard.html">MCA Master</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-links">
+                    <!-- Nav links populated by app.js -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm sidebar">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Topics</h5>
+                        </div>
+                        <div class="accordion" id="topicsAccordion">
+                            <!-- Sidebar content will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 id="note-title">Select a topic to start studying</h3>
+                            <hr>
+                            <div id="note-content" class="note-content">
+                                <p class="text-muted">Select a topic from the sidebar to view the notes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        const notesData = {
+            "Mathematics & Statistics": {
+                "Algebra": "./Notes/Maths_1_Algebra.txt",
+                "Co-ordinate Geometry": "./Notes/Maths_2_Co-ordinate_geometry.txt",
+                "Differential Equations": "./Notes/Maths_3_Differential_Equations.txt",
+                "Trigonometry": "./Notes/Maths_4_Trigonometry.txt",
+                "Probability and Statistics": "./Notes/Maths_5_Probability_and_Statistics.txt",
+                "Arithmetic": "./Notes/Maths_6_Arithmetic.txt",
+                "Basic Set Theory and Functions": "./Notes/Maths_7_Basic_Set_Theory_and_Functions.txt",
+                "Mensuration": "./Notes/Maths_8_Mensuration.txt"
+            },
+            "Logical / Abstract Reasoning": {
+                "Traditional Logic": "./Notes/Logical_1_Traditional_Logic.txt",
+                "Verbal & Critical": "./Notes/Logical_2_Verbal_and_Critical.txt",
+                "Analytical": "./Notes/Logical_3_Analytical.txt"
+            },
+            "English comprehension and verbal ability": {
+                "Vocab": "./Notes/English_1_Vocab.txt",
+                "Grammar": "./Notes/English_2_Grammar.txt",
+                "Reading": "./Notes/English_3_Reading.txt"
+            },
+            "Computer Concepts": {
+                "Computer Basics": "./Notes/Computer_1_Computer_Basics.txt",
+                "Data Representation": "./Notes/Computer_2_Data_Representation.txt",
+                "Computer Architecture": "./Notes/Computer_3_Computer_Architecture.txt",
+                "Computer Language": "./Notes/Computer_4_Computer_Language.txt",
+                "Operating System basics": "./Notes/Computer_5_Operating_System_basics.txt"
+            }
+        };
+
+        const accordion = document.getElementById('topicsAccordion');
+        const noteTitle = document.getElementById('note-title');
+        const noteContent = document.getElementById('note-content');
+
+        let index = 0;
+        for (const [category, topics] of Object.entries(notesData)) {
+            const collapseId = `collapse${index}`;
+            const headingId = `heading${index}`;
+
+            const item = document.createElement('div');
+            item.className = 'accordion-item';
+
+            let topicsHtml = '<div class="list-group list-group-flush">';
+            for (const [topicName, topicPath] of Object.entries(topics)) {
+                topicsHtml += `<a href="#" class="list-group-item list-group-item-action topic-link" data-path="${topicPath}" data-title="${topicName}">${topicName}</a>`;
+            }
+            topicsHtml += '</div>';
+
+            item.innerHTML = `
+                <h2 class="accordion-header" id="${headingId}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                        ${category}
+                    </button>
+                </h2>
+                <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#topicsAccordion">
+                    <div class="accordion-body p-0">
+                        ${topicsHtml}
+                    </div>
+                </div>
+            `;
+            accordion.appendChild(item);
+            index++;
+        }
+
+        document.querySelectorAll('.topic-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all links
+                document.querySelectorAll('.topic-link').forEach(l => l.classList.remove('active'));
+                // Add active class to clicked link
+                this.classList.add('active');
+
+                const path = this.getAttribute('data-path');
+                const title = this.getAttribute('data-title');
+
+                noteTitle.textContent = title;
+                noteContent.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>';
+
+                fetch(path)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(text => {
+                        // Clean up some common artifact characters if present (like arrows from cat -n)
+                        // The Read tool output showed " 1→" etc. but the actual file likely doesn't have them if it's a raw file.
+                        // Assuming raw file content is pure markdown.
+                        noteContent.innerHTML = marked.parse(text);
+                    })
+                    .catch(error => {
+                        console.error('Error loading note:', error);
+                        noteContent.innerHTML = `
+                            <div class="alert alert-danger">
+                                <h4>Error loading note</h4>
+                                <p>Could not load the file at <code>${path}</code>.</p>
+                                <p>If you are opening this file directly in a browser (file://), fetch requests are blocked for security.</p>
+                                <p>Please use a local web server (e.g., VS Code Live Server, Python http.server) to view this page.</p>
+                            </div>
+                        `;
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
