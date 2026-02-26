@@ -1,0 +1,2002 @@
+# COMPLETE ARITHMETIC GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## 📊 EXAM ANALYSIS & WEIGHTAGE
+
+| Topic | Expected Questions | Marks | Difficulty |
+|-------|-------------------|-------|------------|
+| Ratio & Proportion | 1-2 | 2-4 | Easy |
+| Percentage | 1-2 | 2-4 | Easy-Moderate |
+| Profit & Loss | 1 | 2 | Moderate |
+| Time & Work | 2 | 4 | Moderate |
+| Time, Speed & Distance | 2 | 4 | Moderate |
+| Simple & Compound Interest | 1 | 2 | Easy-Moderate |
+| Mixture & Alligation | 0-1 | 0-2 | Moderate |
+| **TOTAL** | **8-10** | **16-20** | - |
+
+---
+
+# SECTION 1: RATIO AND PROPORTION 🔢
+
+## 1.1 Fundamental Concepts
+
+### Definition
+A ratio is a comparison of two quantities by division.
+- Written as a : b or a/b
+- **Antecedent**: First term (a)
+- **Consequent**: Second term (b)
+
+### Important Properties
+1. Ratio has **no unit**
+2. Ratio remains same if multiplied/divided by same non-zero number
+3. Ratio should always be in **simplest form**
+
+**Example 1**: Simplify 24 : 36
+```
+24 : 36 = 24/36 = 2/3 = 2 : 3
+```
+
+## 1.2 Types of Ratios (Must Remember)
+
+| Type | Formula | Example |
+|------|---------|---------|
+| Duplicate | a² : b² | Duplicate of 3:4 = 9:16 |
+| Triplicate | a³ : b³ | Triplicate of 2:3 = 8:27 |
+| Sub-duplicate | √a : √b | Sub-duplicate of 16:25 = 4:5 |
+| Sub-triplicate | ∛a : ∛b | Sub-triplicate of 8:27 = 2:3 |
+| Compound | (a×c) : (b×d) | Compound of 2:3 & 4:5 = 8:15 |
+
+### Shortcut for Compound Ratio
+Multiply all antecedents : Multiply all consequents
+
+**Example 2**: Find compound ratio of 2:3, 4:5, 6:7
+```
+Compound = (2×4×6) : (3×5×7) = 48 : 105 = 16 : 35
+```
+
+## 1.3 Comparison of Ratios - Cross Multiplication Method
+
+To compare a:b and c:d, compare ad and bc
+- If ad > bc → a:b > c:d
+- If ad = bc → ratios equal
+- If ad < bc → a:b < c:d
+
+**Example 3**: Compare 5:8 and 7:11
+```
+5×11 = 55, 8×7 = 56
+55 < 56, so 5:8 < 7:11
+```
+
+## 1.4 Proportion
+
+### Basic Proportion
+If a:b = c:d, then a, b, c, d are in proportion
+- Written as a : b :: c : d
+- **Product of extremes = Product of means** → ad = bc
+
+### Types of Proportion
+
+| Type | Condition | Formula |
+|------|-----------|---------|
+| Continued Proportion | a:b = b:c | b² = ac |
+| Mean Proportional | - | b = √(ac) |
+| Third Proportional | a:b = b:c | c = b²/a |
+| Fourth Proportional | a:b = c:d | d = bc/a |
+
+### 🔥 Shortcut Tricks for Proportion
+
+**Trick 1**: To find mean proportional between two numbers
+```
+Mean proportional = √(product of numbers)
+```
+
+**Trick 2**: To find third proportional to a and b
+```
+Third proportional = b²/a
+```
+
+**Trick 3**: To find fourth proportional to a, b, c
+```
+Fourth proportional = bc/a
+```
+
+**Example 4**: Find mean proportional between 9 and 25
+```
+Mean proportional = √(9×25) = √225 = 15
+```
+
+**Example 5**: Find third proportional to 8 and 12
+```
+Third proportional = 12²/8 = 144/8 = 18
+```
+
+**Example 6**: Find fourth proportional to 5, 8, 15
+```
+Fourth proportional = (8×15)/5 = 120/5 = 24
+```
+
+## 1.5 Direct and Inverse Proportion
+
+### Direct Proportion (x ∝ y)
+- If x increases, y increases proportionally
+- x/y = constant (k)
+- **Graph**: Straight line through origin
+
+**Example 7**: If 5 kg apples cost ₹300, find cost of 8 kg
+```
+5/300 = 8/x
+5x = 2400
+x = ₹480
+```
+
+### Inverse Proportion (x ∝ 1/y)
+- If x increases, y decreases proportionally
+- xy = constant (k)
+- **Graph**: Rectangular hyperbola
+
+**Example 8**: 8 men complete work in 15 days. How many days for 12 men?
+```
+8 × 15 = 12 × d
+120 = 12d
+d = 10 days
+```
+
+### 🔥 Quick Identification
+| Situation | Type |
+|-----------|------|
+| More workers → Less time | Inverse |
+| More speed → Less time | Inverse |
+| More money → More quantity | Direct |
+| More length → More cost | Direct |
+
+## 1.6 Dividing a Quantity in Given Ratio
+
+### Method
+1. Sum the ratios
+2. Each part = (Individual ratio/Sum) × Total quantity
+
+**Example 9**: Divide 720 in ratio 2:3:4
+```
+Sum = 2+3+4 = 9
+First part = (2/9)×720 = 160
+Second part = (3/9)×720 = 240
+Third part = (4/9)×720 = 320
+```
+
+### 🔥 Shortcut: Use Fractions
+If ratio a:b:c, parts are:
+- a/(a+b+c) of total
+- b/(a+b+c) of total
+- c/(a+b+c) of total
+
+## 1.7 Combining Ratios (A:B:C Problems)
+
+### Method: Make Common Term Equal
+
+**Example 10**: If A:B = 2:3 and B:C = 4:5, find A:B:C
+```
+Step 1: Write ratios
+A:B = 2:3
+B:C = 4:5
+
+Step 2: Make B same (LCM of 3 and 4 = 12)
+A:B = 2:3 = 8:12 (multiply by 4)
+B:C = 4:5 = 12:15 (multiply by 3)
+
+Step 3: Combine
+A:B:C = 8:12:15
+```
+
+**Example 11**: If A:B = 3:4, B:C = 5:6, C:D = 7:8, find A:D
+```
+A:D = (A/B) × (B/C) × (C/D)
+= (3/4) × (5/6) × (7/8)
+= (3×5×7)/(4×6×8)
+= 105/192 = 35/64
+So A:D = 35:64
+```
+
+### 🔥 Super Shortcut
+For finding A:D when ratios given:
+```
+A:D = Product of all antecedents : Product of all consequents
+But careful - only for the path from A to D
+```
+
+## 1.8 Partnership Problems
+
+### Basic Rule
+Profit sharing ratio = (Investment × Time) ratio
+
+**Example 12**: A invests ₹5000 for 12 months, B invests ₹6000 for 8 months. Find profit ratio.
+```
+A : B = (5000×12) : (6000×8)
+= 60000 : 48000
+= 60 : 48 = 5 : 4
+```
+
+**Example 13**: A, B, C invest ₹2000, ₹3000, ₹4000 for 6, 8, 10 months respectively. Find profit ratio.
+```
+A : B : C = (2000×6) : (3000×8) : (4000×10)
+= 12000 : 24000 : 40000
+= 12 : 24 : 40
+= 3 : 6 : 10
+```
+
+### Types of Partnership Problems
+
+| Type | Key Point |
+|------|-----------|
+| Simple Partnership | All invest for same time |
+| Compound Partnership | Different time periods |
+| Sleeping Partner | Invests but doesn't work |
+| Working Partner | Gets salary + profit share |
+
+## 1.9 Coin/Banknote Problems
+
+**Example 14**: A bag contains ₹1, ₹2, ₹5 coins in ratio 4:3:2. Total value is ₹240. Find number of each.
+```
+Let ratio = 4x : 3x : 2x
+Value = 4x×1 + 3x×2 + 2x×5
+= 4x + 6x + 10x = 20x
+20x = 240
+x = 12
+So coins: ₹1 = 48, ₹2 = 36, ₹5 = 24
+```
+
+## 1.10 Age Ratio Problems
+
+**Example 15**: Ratio of ages A:B = 4:3. After 6 years, ratio becomes 5:4. Find present ages.
+```
+Let present ages = 4x, 3x
+After 6 years: (4x+6)/(3x+6) = 5/4
+4(4x+6) = 5(3x+6)
+16x + 24 = 15x + 30
+16x - 15x = 30 - 24
+x = 6
+Present ages: A = 24 years, B = 18 years
+```
+
+### 🔥 Shortcut for Age Problems
+Use cross multiplication directly:
+```
+(4x+6) : (3x+6) = 5:4
+4(4x+6) = 5(3x+6)
+Solve for x
+```
+
+---
+
+## 📝 RATIO & PROPORTION - PRACTICE PROBLEMS
+
+1. If a:b = 2:3 and b:c = 4:5, find a:b:c
+2. Divide 450 in ratio 5:4
+3. Find mean proportional between 16 and 25
+4. A:B = 3:4, B:C = 5:6, C:D = 7:8, find A:D
+5. 8 men can do work in 12 days. How many days for 6 men?
+6. A invests ₹4000 for 8 months, B invests ₹6000 for 6 months. Find profit ratio
+7. Ratio of ages 5:4, after 5 years ratio 6:5. Find present ages
+8. Find fourth proportional to 6, 8, 12
+
+---
+
+# SECTION 2: PERCENTAGE 📊
+
+## 2.1 Basic Concepts
+
+### Definition
+Percentage means "per hundred" or "out of 100"
+- x% = x/100 = x out of 100
+
+### Conversion Table (Must Memorize)
+
+| Fraction | Percentage | Fraction | Percentage |
+|----------|------------|----------|------------|
+| 1/2 | 50% | 1/3 | 33.33% |
+| 1/4 | 25% | 2/3 | 66.67% |
+| 3/4 | 75% | 1/5 | 20% |
+| 1/6 | 16.67% | 2/5 | 40% |
+| 3/5 | 60% | 4/5 | 80% |
+| 1/8 | 12.5% | 3/8 | 37.5% |
+| 5/8 | 62.5% | 7/8 | 87.5% |
+| 1/10 | 10% | 1/20 | 5% |
+| 1/12 | 8.33% | 1/15 | 6.67% |
+| 1/16 | 6.25% | 1/25 | 4% |
+
+### 🔥 Quick Conversion Tricks
+
+| To convert | Multiply by |
+|------------|-------------|
+| Fraction → % | 100 |
+| Decimal → % | 100 |
+| % → Fraction | 1/100 |
+| % → Decimal | 1/100 |
+
+**Example 16**: Convert 3/8 to percentage
+```
+3/8 × 100 = 300/8 = 37.5%
+```
+
+**Example 17**: Convert 0.45 to percentage
+```
+0.45 × 100 = 45%
+```
+
+## 2.2 Percentage of a Quantity
+
+### Formula
+x% of y = (x × y)/100
+
+**Example 18**: Find 15% of 400
+```
+15% of 400 = (15 × 400)/100 = 6000/100 = 60
+```
+
+**Example 19**: What percent of 80 is 20?
+```
+(20/80) × 100 = 1/4 × 100 = 25%
+```
+
+### 🔥 Shortcut: Fraction Method
+Instead of calculating, use equivalent fractions:
+- 50% = 1/2
+- 25% = 1/4
+- 20% = 1/5
+- 10% = 1/10
+- 5% = 1/20
+
+**Example 20**: 12.5% of 640
+```
+12.5% = 1/8
+1/8 × 640 = 80
+```
+
+## 2.3 Percentage Increase/Decrease
+
+### Formulas
+
+| Situation | Formula |
+|-----------|---------|
+| Increase by r% | New = Original × (1 + r/100) |
+| Decrease by r% | New = Original × (1 - r/100) |
+| % Increase | [(New - Original)/Original] × 100 |
+| % Decrease | [(Original - New)/Original] × 100 |
+
+**Example 21**: Increase 80 by 25%
+```
+New = 80 × (1 + 25/100) = 80 × 1.25 = 100
+```
+
+**Example 22**: Decrease 120 by 30%
+```
+New = 120 × (1 - 30/100) = 120 × 0.7 = 84
+```
+
+**Example 23**: Price increases from 400 to 500, find % increase
+```
+% increase = [(500 - 400)/400] × 100 = (100/400) × 100 = 25%
+```
+
+### 🔥 Quick Mental Math
+- Increase by 10% → Multiply by 1.1
+- Increase by 20% → Multiply by 1.2
+- Decrease by 10% → Multiply by 0.9
+- Decrease by 20% → Multiply by 0.8
+
+## 2.4 Successive Percentage Change
+
+### The Golden Formula
+If a value changes by a% and then by b%, the net change is:
+```
+Net % change = a + b + (a × b)/100
+```
+
+**Rules for signs**:
+- Use + for increase
+- Use - for decrease
+
+**Example 24**: Salary increased by 10% then by 20%
+```
+Net = 10 + 20 + (10×20)/100 = 10 + 20 + 2 = 32% increase
+```
+
+**Example 25**: Price increased by 20% then decreased by 10%
+```
+Net = 20 + (-10) + [20 × (-10)]/100 = 20 - 10 - 2 = 8% increase
+```
+
+**Example 26**: Population decreased by 5% twice
+```
+Net = -5 + (-5) + [(-5) × (-5)]/100 = -10 + 0.25 = -9.75% decrease
+```
+
+### 🔥 Special Cases
+
+**Case 1**: Two successive increases of x%
+```
+Net = 2x + x²/100
+```
+
+**Case 2**: Two successive decreases of x%
+```
+Net = -2x + x²/100
+```
+
+**Case 3**: Increase of x% then decrease of x%
+```
+Net = -x²/100 (always a net decrease)
+```
+
+**Example 27**: Increase 20% then decrease 20%
+```
+Net = 20 + (-20) + [20×(-20)]/100 = 0 - 4 = -4% (4% decrease)
+```
+
+## 2.5 Population Formula
+
+### Growth Formula
+If population increases at r% per annum:
+- After n years: Pₙ = P₀(1 + r/100)ⁿ
+- Before n years: P₀ = Pₙ/(1 + r/100)ⁿ
+
+**Example 28**: Population 50,000 increases at 10% per annum. Find after 3 years.
+```
+P₃ = 50000 × (1.1)³ = 50000 × 1.331 = 66550
+```
+
+**Example 29**: Population becomes 66550 after 3 years at 10% growth. Find initial population.
+```
+P₀ = 66550/(1.1)³ = 66550/1.331 = 50000
+```
+
+### Depreciation Formula
+If value decreases at r% per annum:
+- After n years: Vₙ = V₀(1 - r/100)ⁿ
+
+**Example 30**: Machine value ₹1,00,000 depreciates at 10% per year. Find after 3 years.
+```
+V₃ = 100000 × (0.9)³ = 100000 × 0.729 = 72900
+```
+
+## 2.6 Election Problems
+
+### Type 1: With Invalid Votes
+
+**Example 31**: Candidate A got 45% votes, B got 40%, remaining 3000 invalid. Find total votes.
+```
+Let total = x
+Valid votes = 45% + 40% = 85%
+Invalid = 15% = 3000
+15% of x = 3000
+x = (3000 × 100)/15 = 20000
+```
+
+### Type 2: Margin of Victory
+
+**Example 32**: In an election, winner got 55% votes and won by 2000 votes. Find total votes.
+```
+Winner = 55%, Loser = 45%
+Difference = 10% = 2000
+10% of total = 2000
+Total = 2000 × 10 = 20000
+```
+
+### Type 3: Two Candidates Only
+
+**Example 33**: In an election between A and B, A got 60% votes and won by 5000 votes. Find total votes.
+```
+A = 60%, B = 40%
+Difference = 20% = 5000
+Total = 5000 × 5 = 25000
+```
+
+## 2.7 Income, Expenditure, Savings
+
+### Key Relationship
+Income = Expenditure + Savings
+
+**Example 34**: A spends 75% of income. Income increases by 20%, expenditure increases by 10%. Find % change in savings.
+```
+Let income = 100
+Expenditure = 75
+Savings = 25
+
+New income = 100 × 1.2 = 120
+New expenditure = 75 × 1.1 = 82.5
+New savings = 120 - 82.5 = 37.5
+
+Increase = 37.5 - 25 = 12.5
+% increase = (12.5/25) × 100 = 50%
+```
+
+### 🔥 Shortcut Formula
+If income increases by a% and expenditure increases by b%, then % change in savings:
+```
+Let initial income = 100, expenditure = E, savings = 100 - E
+New income = 100(1 + a/100)
+New expenditure = E(1 + b/100)
+New savings = New income - New expenditure
+% change = [(New savings - Old savings)/Old savings] × 100
+```
+
+## 2.8 Percentage in Marks/Exams
+
+**Example 35**: Student scored 40% marks and failed by 40 marks. Pass marks are 50%. Find maximum marks.
+```
+Let max marks = x
+Failed by 40 means: 40% of x + 40 = 50% of x
+0.4x + 40 = 0.5x
+40 = 0.1x
+x = 400
+```
+
+**Example 36**: To pass an exam, need 36% marks. Student gets 190 marks and fails by 35 marks. Find max marks.
+```
+Pass marks = 190 + 35 = 225
+36% of max = 225
+0.36 × max = 225
+max = 225/0.36 = 625
+```
+
+## 2.9 Percentage in Profit/Loss (Basic)
+
+**Example 37**: If CP = 500, SP = 600, find profit %
+```
+Profit = 100
+Profit % = (100/500) × 100 = 20%
+```
+
+**Example 38**: If SP = 720, loss = 10%, find CP
+```
+SP = CP × (100 - loss%)/100
+720 = CP × 90/100
+CP = 720 × 100/90 = 800
+```
+
+## 2.10 Fraction to Percentage - Important Conversions
+
+### For Quick Calculations
+
+| Fraction | % | Decimal |
+|----------|---|---------|
+| 1/2 | 50% | 0.5 |
+| 1/3 | 33.33% | 0.3333 |
+| 1/4 | 25% | 0.25 |
+| 1/5 | 20% | 0.2 |
+| 1/6 | 16.67% | 0.1667 |
+| 1/7 | 14.28% | 0.1428 |
+| 1/8 | 12.5% | 0.125 |
+| 1/9 | 11.11% | 0.1111 |
+| 1/10 | 10% | 0.1 |
+| 1/11 | 9.09% | 0.0909 |
+| 1/12 | 8.33% | 0.0833 |
+
+### 🔥 Trick: Convert 1/n to percentage
+Percentage = 100/n %
+
+**Example 39**: 1/13 = 100/13 = 7.69%
+
+---
+
+## 📝 PERCENTAGE - PRACTICE PROBLEMS
+
+1. Find 12.5% of 800
+2. What percent of 150 is 30?
+3. Increase 200 by 15%
+4. Decrease 300 by 20%
+5. Find net change if price increases 10% then decreases 5%
+6. Population 40000 increases at 8% per annum. Find after 2 years
+7. In an election, winner gets 52% votes and wins by 2400 votes. Find total votes
+8. A spends 80% of income. Income increases 25%, expenditure increases 20%. Find % change in savings
+9. Student gets 35% marks, fails by 50 marks. Pass marks 40%. Find max marks
+10. Find single discount equivalent to 20% and 10% successive discounts
+
+---
+
+# SECTION 3: TIME AND WORK ⏰
+
+## 3.1 Fundamental Concept
+
+### Basic Principle
+If a person completes work in n days:
+- Work done in 1 day = 1/n (efficiency)
+- Work done in d days = d/n
+
+**Example 40**: A completes work in 10 days
+- Work in 1 day = 1/10
+- Work in 4 days = 4/10 = 2/5
+
+## 3.2 LCM Method - The Ultimate Shortcut 🚀
+
+### Steps
+1. Take LCM of given days = **Total Work**
+2. Find efficiency = Total Work ÷ Days
+3. Add efficiencies for combined work
+4. Time = Total Work ÷ Combined Efficiency
+
+**Example 41**: A takes 10 days, B takes 15 days. Find time together.
+```
+LCM of 10,15 = 30 units (total work)
+A's efficiency = 30/10 = 3 units/day
+B's efficiency = 30/15 = 2 units/day
+Combined = 3 + 2 = 5 units/day
+Time = 30/5 = 6 days
+```
+
+**Example 42**: A takes 12 days, B takes 18 days, C takes 24 days. Find time together.
+```
+LCM of 12,18,24 = 72 units
+A = 72/12 = 6 units/day
+B = 72/18 = 4 units/day
+C = 72/24 = 3 units/day
+Combined = 6+4+3 = 13 units/day
+Time = 72/13 = 5.54 days (5 days 13 hours)
+```
+
+### 🔥 Why LCM Method is Best
+- Avoids fractions
+- Easy to add/subtract
+- Works for all problems
+- Saves time in exam
+
+## 3.3 Work Done in Alternate Days
+
+**Example 43**: A can do work in 10 days, B in 15 days. They work on alternate days starting with A. Find time.
+```
+LCM = 30 units
+A's efficiency = 3 units/day
+B's efficiency = 2 units/day
+
+In 2 days (A+B alternate) = 3 + 2 = 5 units
+Number of cycles = 30/5 = 6 cycles
+Each cycle = 2 days, so total = 12 days
+```
+
+**Example 44**: A takes 8 days, B takes 12 days. They work alternate days starting with B. Find time.
+```
+LCM = 24 units
+A = 3 units/day, B = 2 units/day
+In 2 days = 2 + 3 = 5 units
+Number of cycles = 24/5 = 4 cycles + remainder
+4 cycles = 8 days, work done = 20 units
+Remaining = 4 units
+Day 9: B works (2 units) → remaining 2 units
+Day 10: A works (3 units) → completes
+Total = 10 days
+```
+
+## 3.4 Work and Wages
+
+### Key Principle
+Wages are distributed in the ratio of efficiencies (work done)
+
+**Example 45**: A, B, C can complete work in 10, 12, 15 days. They work together and earn ₹4500. Find shares.
+```
+LCM = 60 units
+A = 60/10 = 6 units/day
+B = 60/12 = 5 units/day
+C = 60/15 = 4 units/day
+Total efficiency = 15 units/day
+
+Wage ratio = efficiency ratio = 6:5:4
+Sum = 15
+A's share = (6/15)×4500 = ₹1800
+B's share = (5/15)×4500 = ₹1500
+C's share = (4/15)×4500 = ₹1200
+```
+
+**Example 46**: A and B undertake work for ₹2400. A alone can do it in 12 days, B in 16 days. With help of C, they finish in 6 days. Find C's share.
+```
+LCM of 12,16,6 = 48 units
+A = 48/12 = 4 units/day
+B = 48/16 = 3 units/day
+A+B+C together = 48/6 = 8 units/day
+So C = 8 - (4+3) = 1 unit/day
+
+Efficiency ratio A:B:C = 4:3:1
+Sum = 8
+C's share = (1/8)×2400 = ₹300
+```
+
+## 3.5 Man-Days Concept
+
+### Formula
+M₁ × D₁ = M₂ × D₂ (for same work)
+
+**Example 47**: 20 men can complete work in 15 days. How many men needed for 10 days?
+```
+20 × 15 = M₂ × 10
+300 = 10M₂
+M₂ = 30 men
+```
+
+### With Work Left
+
+**Example 48**: 30 men can complete work in 12 days. They work for 4 days, then 10 more join. Find total time.
+```
+Total work = 30 × 12 = 360 man-days
+Work done in 4 days = 30 × 4 = 120 man-days
+Remaining work = 360 - 120 = 240 man-days
+New men = 30 + 10 = 40
+Days needed = 240/40 = 6 days
+Total time = 4 + 6 = 10 days
+```
+
+### With Different Efficiencies
+
+**Example 49**: A is twice as efficient as B. They together complete work in 12 days. Find time for A alone.
+```
+Let B's efficiency = 1 unit/day
+A's efficiency = 2 units/day
+Together = 3 units/day
+Total work = 3 × 12 = 36 units
+Time for A alone = 36/2 = 18 days
+```
+
+## 3.6 Pipes and Cisterns
+
+### Key Points
+- Inlet pipe: Positive work (fills)
+- Outlet pipe: Negative work (empties)
+- Same LCM method applies
+
+**Example 50**: Pipe A fills tank in 10 hrs, B fills in 15 hrs, C empties in 12 hrs. Find time to fill when all open.
+```
+LCM of 10,15,12 = 60 units
+A = +60/10 = +6 units/hr
+B = +60/15 = +4 units/hr
+C = -60/12 = -5 units/hr
+Net = 6+4-5 = 5 units/hr
+Time = 60/5 = 12 hours
+```
+
+**Example 51**: A pipe can fill tank in 8 hrs. Due to leak, it takes 12 hrs. Find time for leak to empty.
+```
+Fill rate = 1/8 per hr
+With leak, net rate = 1/12 per hr
+Leak rate = Fill rate - Net rate = 1/8 - 1/12 = (3-2)/24 = 1/24
+Time for leak to empty = 24 hours
+```
+
+### 🔥 Shortcut for Leak Problems
+```
+Time to empty = (Product of times)/(Difference of times)
+= (8 × 12)/(12 - 8) = 96/4 = 24 hours
+```
+
+**Example 52**: Two pipes A and B can fill tank in 20 and 30 minutes. Both opened together but after 5 minutes, A is closed. Find total time.
+```
+LCM of 20,30 = 60 units
+A = 3 units/min, B = 2 units/min
+In 5 minutes: (3+2)×5 = 25 units filled
+Remaining = 60 - 25 = 35 units
+Time by B alone = 35/2 = 17.5 minutes
+Total time = 5 + 17.5 = 22.5 minutes
+```
+
+## 3.7 Group Efficiency Problems
+
+**Example 53**: 2 men or 3 women can complete work in 20 days. Find time for 4 men and 6 women.
+```
+2 men = 3 women (in terms of work)
+So 1 man = 1.5 women
+
+Total work:
+2 men complete in 20 days
+So work = 2 × 20 = 40 man-days
+
+4 men + 6 women = 4 men + (6/1.5) men = 4 + 4 = 8 men
+Time = 40/8 = 5 days
+```
+
+**Example 54**: 4 men and 6 women can complete work in 8 days. 3 men and 7 women can complete in 10 days. Find time for 10 women alone.
+```
+Let man's 1 day work = m, woman's 1 day work = w
+4m + 6w = 1/8  ...(1)
+3m + 7w = 1/10 ...(2)
+
+Multiply (1) by 3: 12m + 18w = 3/8
+Multiply (2) by 4: 12m + 28w = 4/10 = 2/5
+
+Subtract: 10w = 2/5 - 3/8 = (16-15)/40 = 1/40
+w = 1/400
+
+So 10 women's work = 10/400 = 1/40 per day
+Time for 10 women = 40 days
+```
+
+## 3.8 Work Done in Parts
+
+**Example 55**: A can do work in 20 days. B is 25% more efficient than A. They work together for 5 days, then A leaves. Find total time.
+```
+A's work per day = 1/20
+B is 25% more efficient = 1.25 × (1/20) = 1.25/20 = 1/16
+
+Together in 1 day = 1/20 + 1/16 = (4+5)/80 = 9/80
+Work in 5 days = 5 × 9/80 = 45/80 = 9/16
+Remaining = 1 - 9/16 = 7/16
+
+Time by B alone = (7/16) ÷ (1/16) = 7 days
+Total time = 5 + 7 = 12 days
+```
+
+## 3.9 🔥 Important Shortcuts
+
+### Shortcut 1: Time Together
+If A takes 'a' days, B takes 'b' days:
+```
+Time together = (a × b)/(a + b)
+```
+
+**Example 56**: A = 10 days, B = 15 days
+```
+Time together = (10×15)/(10+15) = 150/25 = 6 days
+```
+
+### Shortcut 2: With Efficiency Ratio
+If A:B efficiency = m:n, and together they take T days:
+```
+Time for A alone = T × (m+n)/m
+Time for B alone = T × (m+n)/n
+```
+
+**Example 57**: A is twice as efficient as B, together take 12 days
+```
+A:B = 2:1, sum = 3
+A alone = 12 × 3/2 = 18 days
+B alone = 12 × 3/1 = 36 days
+```
+
+### Shortcut 3: Leaving/Middle Problems
+If A can do work in 'a' days, joins after 'x' days:
+```
+Time = x + (Remaining work × a)/(a + b)
+```
+
+---
+
+## 📝 TIME & WORK - PRACTICE PROBLEMS
+
+1. A takes 12 days, B takes 16 days. Find time together
+2. A, B, C take 10, 15, 20 days. Find time together
+3. A is thrice as efficient as B. Together they finish in 12 days. Find time for A alone
+4. Pipe A fills in 8 hrs, B fills in 12 hrs, C empties in 16 hrs. Find time to fill tank when all open
+5. 20 men can do work in 30 days. After 10 days, 5 men leave. Find total time
+6. A and B together earn ₹3000 for a work. A alone takes 15 days, B alone takes 20 days. Find B's share
+7. A pipe fills tank in 6 hrs. Due to leak, it takes 8 hrs. Find time for leak to empty
+8. 3 men or 4 women can do work in 20 days. Find time for 6 men and 8 women
+9. A and B work on alternate days starting with A. A takes 12 days, B takes 18 days. Find total time
+10. 2 men and 3 women can do work in 10 days. 3 men and 2 women can do in 8 days. Find time for 1 man alone
+
+---
+
+# SECTION 4: TIME, SPEED AND DISTANCE 🚗
+
+## 4.1 Basic Formula
+
+### The Golden Triangle
+```
+Distance = Speed × Time
+Speed = Distance/Time
+Time = Distance/Speed
+```
+
+## 4.2 Unit Conversions (Must Memorize)
+
+| Conversion | Operation |
+|------------|-----------|
+| km/hr → m/s | × 5/18 |
+| m/s → km/hr | × 18/5 |
+
+**Example 58**: Convert 72 km/hr to m/s
+```
+72 × 5/18 = 4 × 5 = 20 m/s
+```
+
+**Example 59**: Convert 25 m/s to km/hr
+```
+25 × 18/5 = 5 × 18 = 90 km/hr
+```
+
+### 🔥 Quick Reference
+| km/hr | m/s |
+|-------|-----|
+| 36 | 10 |
+| 54 | 15 |
+| 72 | 20 |
+| 90 | 25 |
+| 108 | 30 |
+
+## 4.3 Average Speed
+
+### Case 1: Different Distances at Different Speeds
+Average speed = Total distance / Total time
+
+**Example 60**: Travels 60 km at 30 km/hr, then 60 km at 40 km/hr
+```
+Time₁ = 60/30 = 2 hr
+Time₂ = 60/40 = 1.5 hr
+Total distance = 120 km
+Total time = 3.5 hr
+Avg speed = 120/3.5 = 34.29 km/hr
+```
+
+### Case 2: Equal Distances at Speeds x and y
+**Formula**: Average speed = 2xy/(x + y)
+
+**Example 61**: Same as above
+```
+Avg speed = (2×30×40)/(30+40) = 2400/70 = 34.29 km/hr
+```
+
+### Case 3: Equal Time Intervals at Different Speeds
+**Formula**: Average speed = (x + y)/2
+
+**Example 62**: Travels at 30 km/hr for 2 hr, 40 km/hr for 2 hr
+```
+Avg speed = (30+40)/2 = 35 km/hr
+Check: Distance = 60+80=140 km, Time=4 hr, Avg=35 km/hr ✓
+```
+
+### 🔥 Important Notes
+- Average speed is **NOT** arithmetic mean of speeds
+- Use harmonic mean for equal distances
+- Use arithmetic mean for equal times
+
+## 4.4 Relative Speed
+
+### Same Direction
+Relative speed = |S₁ - S₂|
+
+### Opposite Direction
+Relative speed = S₁ + S₂
+
+**Example 63**: Two trains 100 m and 120 m long at 60 km/hr and 48 km/hr in same direction. Find crossing time.
+```
+Relative speed = 60 - 48 = 12 km/hr
+12 km/hr = 12 × 5/18 = 10/3 m/s
+Total distance = 100 + 120 = 220 m
+Time = 220 ÷ (10/3) = 220 × 3/10 = 66 seconds
+```
+
+**Example 64**: Same trains in opposite direction
+```
+Relative speed = 60 + 48 = 108 km/hr = 108 × 5/18 = 30 m/s
+Time = 220/30 = 7.33 seconds
+```
+
+## 4.5 Train Problems - Types
+
+### Type 1: Crossing a Pole/Man/Tree
+Distance = Length of train
+Time = Length of train / Speed
+
+**Example 65**: Train 150 m long passes pole in 9 seconds. Find speed.
+```
+Speed = 150/9 = 50/3 m/s
+In km/hr = (50/3) × (18/5) = (50×18)/(3×5) = 900/15 = 60 km/hr
+```
+
+### Type 2: Crossing a Platform/Bridge
+Distance = Length of train + Length of platform
+Time = (L_train + L_platform)/Speed
+
+**Example 66**: Train 200 m long passes platform 300 m long in 25 seconds. Find speed.
+```
+Distance = 200 + 300 = 500 m
+Time = 25 s
+Speed = 500/25 = 20 m/s = 20 × 18/5 = 72 km/hr
+```
+
+### Type 3: Crossing Another Train
+Distance = Sum of lengths of both trains
+Speed = Relative speed (as per direction)
+
+**Example 67**: Two trains 150 m and 200 m long at 54 km/hr and 72 km/hr in same direction. Find crossing time.
+```
+Relative speed = 72 - 54 = 18 km/hr = 18 × 5/18 = 5 m/s
+Total distance = 150 + 200 = 350 m
+Time = 350/5 = 70 seconds
+```
+
+### 🔥 Important Formula
+For trains crossing each other:
+```
+Time = (L₁ + L₂)/(S₁ ± S₂)
+Use + for opposite, - for same direction
+```
+
+## 4.6 Boat and Stream Problems
+
+### Key Terms
+- **Speed in still water** (u)
+- **Speed of stream** (v)
+- **Downstream speed** = u + v
+- **Upstream speed** = u - v
+
+### Important Formulas
+```
+u = (Downstream + Upstream)/2
+v = (Downstream - Upstream)/2
+```
+
+**Example 68**: Boat goes downstream 40 km in 4 hr, upstream 30 km in 6 hr. Find u and v.
+```
+Downstream speed = 40/4 = 10 km/hr
+Upstream speed = 30/6 = 5 km/hr
+u = (10 + 5)/2 = 7.5 km/hr
+v = (10 - 5)/2 = 2.5 km/hr
+```
+
+**Example 69**: Speed in still water = 15 km/hr, stream speed = 3 km/hr. Time for 36 km downstream and return.
+```
+Downstream = 15 + 3 = 18 km/hr, time = 36/18 = 2 hr
+Upstream = 15 - 3 = 12 km/hr, time = 36/12 = 3 hr
+Total time = 5 hours
+```
+
+### 🔥 Shortcut for Return Journey Time
+If distance = d, downstream speed = a, upstream speed = b:
+```
+Total time = d(1/a + 1/b)
+```
+
+## 4.7 Problems on Races
+
+### Basic Concept
+When A beats B by x meters, it means when A finishes, B is x meters behind.
+
+**Example 70**: In 200 m race, A beats B by 20 m. Find speed ratio.
+```
+When A runs 200 m, B runs 180 m
+Speed ratio = 200 : 180 = 10 : 9
+```
+
+**Example 71**: A gives B a start of 20 m in 200 m race and still beats B by 5 seconds. Speeds 8 m/s and 6 m/s. Find race length.
+```
+Let race length = L
+Time for A = L/8
+B runs (L - 20) m in time (L/8 + 5) seconds
+B's speed = (L - 20)/(L/8 + 5) = 6
+L - 20 = 6(L/8 + 5)
+L - 20 = 3L/4 + 30
+L - 3L/4 = 50
+L/4 = 50
+L = 200 m
+```
+
+## 4.8 Circular Track Problems
+
+### Meeting Points
+- Same direction: Time to meet = Circumference / Relative speed
+- Opposite direction: Time to meet = Circumference / Sum of speeds
+
+**Example 72**: Two runners on circular track of 400 m, speeds 8 m/s and 6 m/s in same direction. When will they meet?
+```
+Relative speed = 8 - 6 = 2 m/s
+Time to meet = 400/2 = 200 seconds
+```
+
+## 4.9 Stoppage Time Problems
+
+**Example 73**: A train travels at 60 km/hr without stoppages. With stoppages, it covers same distance at 45 km/hr. Find stoppage time per hour.
+```
+Without stoppage: speed = 60 km/hr
+With stoppage: speed = 45 km/hr
+Time lost = (60-45)/60 = 15/60 = 1/4 hour = 15 minutes per hour
+```
+
+### Formula
+Stoppage time per hour = (Difference in speeds)/(Faster speed) hours
+
+## 4.10 🔥 Important Shortcuts
+
+### Shortcut 1: Time to Meet
+If two objects start from opposite ends at speeds x and y, distance D:
+```
+Time to meet = D/(x + y)
+```
+
+### Shortcut 2: Time to Catch
+If one starts later and catches up:
+```
+Time = (Distance already covered)/(Speed difference)
+```
+
+### Shortcut 3: Average Speed for Round Trip
+When distance same both ways:
+```
+Avg speed = 2xy/(x + y)
+```
+
+### Shortcut 4: Train Crossing Platform
+```
+Speed = (L_train + L_platform)/Time
+```
+
+---
+
+## 📝 TIME, SPEED & DISTANCE - PRACTICE PROBLEMS
+
+1. Convert 90 km/hr to m/s
+2. Convert 30 m/s to km/hr
+3. A car travels first 60 km at 30 km/hr, next 60 km at 40 km/hr. Find average speed
+4. Two trains 150 m and 200 m long at 54 km/hr and 72 km/hr in opposite direction. Find crossing time
+5. Train 180 m long passes platform 220 m long in 20 seconds. Find speed
+6. Boat downstream speed 12 km/hr, upstream speed 8 km/hr. Find speed in still water and stream speed
+7. In 400 m race, A beats B by 40 m. Find speed ratio
+8. A gives B start of 30 m in 300 m race and beats B by 4 seconds. Speeds 10 m/s and 8 m/s. Find race length
+9. Circular track 500 m, two runners 9 m/s and 7 m/s in same direction. Find meeting time
+10. Train speed without stoppage 72 km/hr, with stoppage 60 km/hr. Find stoppage time per hour
+
+---
+
+# SECTION 5: PROFIT AND LOSS 💰
+
+## 5.1 Basic Terminology
+
+| Term | Meaning |
+|------|---------|
+| CP | Cost Price (Price at which bought) |
+| SP | Selling Price (Price at which sold) |
+| MP | Marked Price (List Price) |
+| Profit | SP > CP |
+| Loss | SP < CP |
+| Discount | Reduction on MP |
+
+## 5.2 Basic Formulas
+
+| Formula | Expression |
+|---------|------------|
+| Profit | SP - CP |
+| Loss | CP - SP |
+| Profit % | (Profit/CP) × 100 |
+| Loss % | (Loss/CP) × 100 |
+| SP with profit% | SP = CP × (100 + P%)/100 |
+| SP with loss% | SP = CP × (100 - L%)/100 |
+| CP with profit% | CP = SP × 100/(100 + P%) |
+| CP with loss% | CP = SP × 100/(100 - L%) |
+
+**Example 74**: CP = 500, SP = 600. Find profit %.
+```
+Profit = 600 - 500 = 100
+Profit % = (100/500) × 100 = 20%
+```
+
+**Example 75**: CP = 800, Loss = 10%. Find SP.
+```
+SP = 800 × (100 - 10)/100 = 800 × 90/100 = 720
+```
+
+**Example 76**: SP = 450, Profit = 12.5%. Find CP.
+```
+CP = 450 × 100/(100 + 12.5) = 450 × 100/112.5 = 450 × 8/9 = 400
+```
+
+## 5.3 Marked Price and Discount
+
+### Formulas
+- Discount = MP - SP
+- Discount % = (Discount/MP) × 100
+- SP = MP × (100 - D%)/100
+- MP = SP × 100/(100 - D%)
+
+**Example 77**: MP = 1000, Discount = 20%. Find SP.
+```
+SP = 1000 × 80/100 = 800
+```
+
+**Example 78**: After 10% discount, shopkeeper still gains 20%. CP = 450. Find MP.
+```
+SP = CP × (100 + 20)/100 = 450 × 120/100 = 540
+SP = MP × (100 - 10)/100
+540 = MP × 90/100
+MP = 540 × 100/90 = 600
+```
+
+### 🔥 Important Relationship
+If discount = d% and profit = p%:
+```
+MP × (100 - d)/100 = CP × (100 + p)/100
+MP/CP = (100 + p)/(100 - d)
+```
+
+## 5.4 Successive Discounts
+
+### Formula for Single Equivalent Discount
+If two discounts of a% and b% are given:
+```
+Single discount = a + b - (a × b)/100
+```
+
+**Example 79**: Find single discount equivalent to 20% and 10%
+```
+Single discount = 20 + 10 - (20×10)/100 = 30 - 2 = 28%
+```
+
+**Example 80**: Find single discount equivalent to 30%, 20%, 10%
+```
+Step 1: 30 + 20 - (30×20)/100 = 50 - 6 = 44%
+Step 2: 44 + 10 - (44×10)/100 = 54 - 4.4 = 49.6%
+```
+
+### 🔥 Shortcut for Two Discounts
+If MP = 100, after first discount = 100 - a
+After second discount = (100 - a)(100 - b)/100
+Final SP = (100 - a)(100 - b)/100
+Single discount = 100 - [(100 - a)(100 - b)/100]
+
+## 5.5 Profit/Loss on Same SP
+
+**Example 81**: Man sells two articles at ₹1000 each. On one gains 25%, on other loses 25%. Find net profit/loss %.
+```
+CP of first = 1000 × 100/125 = 800
+CP of second = 1000 × 100/75 = 1333.33
+Total CP = 800 + 1333.33 = 2133.33
+Total SP = 2000
+Loss = 133.33
+Loss % = (133.33/2133.33) × 100 = 6.25%
+```
+
+### 🔥 Important Result
+When two items are sold at same price, one at x% profit and other at x% loss:
+- There is always a net loss
+- Loss % = (x²/100)%
+
+**Example 82**: For 25% profit and 25% loss
+```
+Loss % = (25²)/100 = 625/100 = 6.25%
+```
+
+## 5.6 Profit/Loss on Same CP
+
+**Example 83**: Two articles bought at same price, sold one at 20% profit, other at 20% loss. Find net profit/loss %.
+```
+Let CP each = 100
+SP₁ = 120, SP₂ = 80
+Total CP = 200, Total SP = 200
+Net = 0% (No profit no loss)
+```
+
+## 5.7 Dishonest Dealer Problems
+
+### Type 1: Faulty Weight
+
+**Example 84**: Shopkeeper sells goods at CP but uses 900 g weight instead of 1 kg. Find profit %.
+```
+He gives 900 g but charges for 1000 g
+Profit = 100 g on 900 g
+Profit % = (100/900) × 100 = 11.11%
+```
+
+**Formula**: Profit % = [Error/(True weight - Error)] × 100
+
+### Type 2: Faulty Weight + Profit
+
+**Example 85**: Shopkeeper uses 950 g weight and also sells at 10% profit. Find total profit %.
+```
+Due to weight: Profit = 50 g on 950 g = (50/950)×100 = 5.26%
+Overall profit = Successive change: 10% + 5.26% + (10×5.26)/100
+= 10 + 5.26 + 0.526 = 15.786%
+```
+
+### Type 3: Buying and Selling with Different Weights
+
+**Example 86**: Dealer buys at ₹1000/kg, sells at ₹1200/kg but uses 900 g weight. Find profit %.
+```
+CP of 1000 g = ₹1000
+He sells 900 g as 1000 g at ₹1200/kg
+So SP of 900 g = ₹1200
+CP of 900 g = ₹900
+Profit = 1200 - 900 = 300
+Profit % = (300/900) × 100 = 33.33%
+```
+
+## 5.8 Partnership in Profit/Loss
+
+**Example 87**: A, B, C invest ₹5000, ₹6000, ₹8000. Profit ₹3800. Find shares if:
+a) All invest for same time
+b) A for 12 months, B for 10 months, C for 8 months
+
+**Case a**: Simple partnership
+```
+Ratio = 5000:6000:8000 = 5:6:8
+Sum = 19
+A = (5/19)×3800 = ₹1000
+B = (6/19)×3800 = ₹1200
+C = (8/19)×3800 = ₹1600
+```
+
+**Case b**: Compound partnership
+```
+Ratio = (5000×12):(6000×10):(8000×8)
+= 60000:60000:64000 = 60:60:64 = 15:15:16
+Sum = 46
+A = (15/46)×3800 = ₹1239.13
+B = (15/46)×3800 = ₹1239.13
+C = (16/46)×3800 = ₹1321.74
+```
+
+## 5.9 Goods Passing Through Multiple Hands
+
+**Example 88**: A sells to B at 10% profit, B sells to C at 20% profit, C sells to D at 30% profit. If D pays ₹1716, find CP for A.
+```
+Let CP for A = x
+SP for A = x × 110/100 = 1.1x (CP for B)
+SP for B = 1.1x × 120/100 = 1.32x (CP for C)
+SP for C = 1.32x × 130/100 = 1.716x (CP for D)
+1.716x = 1716
+x = 1716/1.716 = ₹1000
+```
+
+### Formula
+If successive profits of p₁%, p₂%, p₃%:
+```
+Final price = CP × (1 + p₁/100)(1 + p₂/100)(1 + p₃/100)
+```
+
+## 5.10 🔥 Important Shortcuts
+
+### Shortcut 1: To find SP when two discounts given
+If MP = M, discounts d₁% and d₂%:
+```
+SP = M × (100 - d₁)/100 × (100 - d₂)/100
+```
+
+### Shortcut 2: To find profit % when CP and profit given
+```
+Profit % = (Profit × 100)/CP
+```
+
+### Shortcut 3: To find CP when SP and profit% given
+```
+CP = (SP × 100)/(100 + Profit%)
+```
+
+### Shortcut 4: Equivalent single discount
+```
+= 100 - [(100 - d₁)(100 - d₂)/100]
+```
+
+### Shortcut 5: For faulty weights
+```
+Profit % = (Error/(True weight - Error)) × 100
+```
+
+---
+
+## 📝 PROFIT & LOSS - PRACTICE PROBLEMS
+
+1. CP = 600, SP = 750. Find profit %
+2. CP = 900, Loss = 10%. Find SP
+3. SP = 550, Profit = 10%. Find CP
+4. MP = 1200, Discount = 15%. Find SP
+5. After 20% discount, still gain 25%. CP = 400. Find MP
+6. Find single discount equivalent to 20% and 15%
+7. Two articles sold at ₹800 each, one at 20% profit, other at 20% loss. Find net %
+8. Shopkeeper uses 950 g weight and sells at CP. Find profit %
+9. A sells to B at 10% profit, B to C at 20% profit. C pays ₹1320. Find CP for A
+10. A, B, C invest ₹4000, ₹5000, ₹6000 for 8, 10, 12 months. Profit ₹3700. Find shares
+
+---
+
+# SECTION 6: SIMPLE AND COMPOUND INTEREST 💵
+
+## 6.1 Simple Interest (SI)
+
+### Basic Formula
+```
+SI = (P × R × T)/100
+Amount (A) = P + SI = P(1 + RT/100)
+```
+Where:
+- P = Principal
+- R = Rate % per annum
+- T = Time in years
+
+**Example 89**: Find SI on ₹5000 at 8% for 3 years
+```
+SI = (5000 × 8 × 3)/100 = 1200
+Amount = 5000 + 1200 = 6200
+```
+
+**Example 90**: At what rate will ₹800 become ₹1000 in 5 years?
+```
+SI = 1000 - 800 = 200
+200 = (800 × R × 5)/100
+200 = 40R
+R = 5%
+```
+
+**Example 91**: In what time will ₹600 amount to ₹720 at 5%?
+```
+SI = 720 - 600 = 120
+120 = (600 × 5 × T)/100
+120 = 30T
+T = 4 years
+```
+
+### 🔥 Important Variations
+
+**When time is in months**:
+```
+T = Number of months/12
+```
+
+**When time is in days**:
+```
+T = Number of days/365 (or 360 for some problems)
+```
+
+**Example 92**: SI on ₹4000 at 6% for 8 months
+```
+T = 8/12 = 2/3 years
+SI = (4000 × 6 × 2/3)/100 = (4000 × 6 × 2)/(100 × 3) = 48000/300 = 160
+```
+
+## 6.2 Compound Interest (CI)
+
+### Basic Formula
+```
+A = P(1 + R/100)ᵀ
+CI = A - P = P[(1 + R/100)ᵀ - 1]
+```
+
+**Example 93**: Find CI on ₹5000 at 8% for 2 years
+```
+A = 5000 × (1 + 8/100)² = 5000 × (1.08)² = 5000 × 1.1664 = 5832
+CI = 5832 - 5000 = 832
+```
+
+### Different Compounding Periods
+
+| Compounding | Formula | Rate | Time |
+|-------------|---------|------|------|
+| Yearly | A = P(1 + R/100)ᵀ | R | T |
+| Half-yearly | A = P(1 + R/200)²ᵀ | R/2 | 2T |
+| Quarterly | A = P(1 + R/400)⁴ᵀ | R/4 | 4T |
+| Monthly | A = P(1 + R/1200)¹²ᵀ | R/12 | 12T |
+
+**Example 94**: Find CI on ₹8000 at 10% for 1.5 years compounded half-yearly
+```
+R/2 = 5%, Time = 3 half-years
+A = 8000 × (1 + 5/100)³ = 8000 × (1.05)³
+= 8000 × 1.157625 = 9261
+CI = 9261 - 8000 = 1261
+```
+
+**Example 95**: Find CI on ₹10000 at 8% for 9 months compounded quarterly
+```
+R/4 = 2%, Time = 3 quarters
+A = 10000 × (1 + 2/100)³ = 10000 × (1.02)³
+= 10000 × 1.061208 = 10612.08
+CI = 10612.08 - 10000 = 612.08
+```
+
+## 6.3 Difference between CI and SI
+
+### For 2 Years
+```
+Difference = P × (R/100)²
+```
+
+### For 3 Years
+```
+Difference = P × (R/100)² × (3 + R/100)
+```
+
+**Example 96**: Difference between CI and SI for 2 years on ₹10000 at 10%
+```
+Difference = 10000 × (10/100)² = 10000 × 0.01 = 100
+```
+
+**Example 97**: Difference between CI and SI for 3 years on ₹8000 at 5%
+```
+Difference = 8000 × (5/100)² × (3 + 5/100)
+= 8000 × 0.0025 × 3.05
+= 8000 × 0.007625 = 61
+```
+
+### 🔥 Important Observation
+- For 2 years: CI - SI = Interest on first year's interest
+- CI > SI for T > 1 year
+- CI = SI for T = 1 year
+
+## 6.4 Amount becomes n times
+
+**Example 98**: At what rate % will a sum double in 8 years at SI?
+```
+SI = P (since amount doubles)
+P = (P × R × 8)/100
+1 = 8R/100
+R = 100/8 = 12.5%
+```
+
+**Formula**: R = 100(n - 1)/T, where n = number of times
+
+**Example 99**: In how many years will a sum triple at 10% SI?
+```
+3P - P = 2P interest
+2P = (P × 10 × T)/100
+2 = T/10
+T = 20 years
+```
+
+**For CI**: Amount = P(1 + R/100)ᵀ
+If amount becomes n times: n = (1 + R/100)ᵀ
+
+## 6.5 Equal Annual Installments
+
+### For SI
+If borrowed amount = A, rate = R%, time = T years, each installment = x:
+```
+A = x + x(1 + R/100) + x(1 + 2R/100) + ... (for T years)
+```
+
+**Example 100**: A sum of ₹3000 is to be paid in 3 equal annual installments at 5% SI. Find each installment.
+```
+Let each installment = x
+Amount paid with interest = x + x(1 + 5/100) + x(1 + 10/100)
+= x + 1.05x + 1.10x = 3.15x
+This should equal amount with interest on ₹3000 for 3 years
+SI on 3000 = (3000×5×3)/100 = 450
+Amount = 3450
+3.15x = 3450
+x = 1095.24
+```
+
+### For CI (Installment Formula)
+For equal annual installments at R% CI:
+```
+P = x/(1 + R/100) + x/(1 + R/100)² + ... + x/(1 + R/100)ᵀ
+```
+
+## 6.6 Population Growth/Depreciation
+
+### Growth
+```
+Population after n years = P(1 + r/100)ⁿ
+```
+
+### Depreciation
+```
+Value after n years = P(1 - r/100)ⁿ
+```
+
+**Example 101**: Population 50000, growth rate 10% for 2 years, then 8% for next year. Find after 3 years.
+```
+After 2 years = 50000 × (1.1)² = 50000 × 1.21 = 60500
+After 3 years = 60500 × 1.08 = 65340
+```
+
+**Example 102**: Machine value ₹1,00,000 depreciates at 10% for 2 years, then 15% for next year. Find after 3 years.
+```
+After 2 years = 100000 × (0.9)² = 100000 × 0.81 = 81000
+After 3 years = 81000 × 0.85 = 68850
+```
+
+## 6.7 🔥 Important Shortcuts
+
+### Shortcut 1: For doubling period (Rule of 72)
+Approximate time to double at R% = 72/R years
+
+### Shortcut 2: CI for 2 years
+```
+CI = P[2R/100 + (R/100)²]
+```
+
+### Shortcut 3: CI for 3 years
+```
+CI = P[3R/100 + 3(R/100)² + (R/100)³]
+```
+
+### Shortcut 4: When rates are different for different years
+For R₁, R₂, R₃% for 1st, 2nd, 3rd years:
+```
+A = P(1 + R₁/100)(1 + R₂/100)(1 + R₃/100)
+```
+
+### Shortcut 5: To find principal when amounts for two years given
+If amounts after T₁ and T₂ years are A₁ and A₂:
+```
+Rate = [(A₂ - A₁)/A₁] × 100/(T₂ - T₁)
+```
+
+---
+
+## 📝 SIMPLE & COMPOUND INTEREST - PRACTICE PROBLEMS
+
+1. Find SI on ₹6000 at 7% for 4 years
+2. At what rate will ₹900 amount to ₹1080 in 5 years?
+3. In what time will ₹1200 amount to ₹1500 at 5% SI?
+4. Find CI on ₹8000 at 10% for 2 years
+5. Find CI on ₹10000 at 8% for 1.5 years compounded half-yearly
+6. Difference between CI and SI for 2 years on ₹5000 at 8%
+7. At what rate will a sum double in 10 years at SI?
+8. In how many years will a sum triple at 8% SI?
+9. Population 40000, increases 5% for 2 years, then 4% for next year. Find after 3 years
+10. Machine value 80000 depreciates at 12% for 2 years. Find value after 2 years
+
+---
+
+# SECTION 7: MIXTURES AND ALLIGATION 🧪
+
+## 7.1 Alligation Rule - The Fundamental Concept
+
+### Rule
+When two ingredients at different prices are mixed, the ratio is:
+```
+(Price of dearer - Mean price) : (Mean price - Price of cheaper)
+```
+
+**Example 103**: In what ratio must rice at ₹60/kg and ₹80/kg be mixed to get mixture at ₹75/kg?
+```
+Cheaper (c) = 60, Dearer (d) = 80, Mean (m) = 75
+Ratio = (d - m) : (m - c) = (80 - 75) : (75 - 60) = 5 : 15 = 1 : 3
+```
+
+### Diagrammatic Representation
+```
+Cheaper (60)          Dearer (80)
+      \                 /
+       \               /
+        \             /
+         \           /
+          \         /
+           \       /
+            \     /
+             \   /
+              \ /
+            Mean (75)
+              |
+        _______|_______
+       |               |
+   (d-m)=5          (m-c)=15
+       |               |
+       +-------:-------+
+             1 : 3
+```
+
+## 7.2 Alligation for Percentages
+
+**Example 104**: In what ratio must water be mixed with milk costing ₹50/litre to get mixture worth ₹40/litre? (Water is free)
+```
+Water price = 0, Milk price = 50, Mean = 40
+Ratio = (50 - 40) : (40 - 0) = 10 : 40 = 1 : 4
+So water : milk = 1 : 4
+```
+
+## 7.3 Alligation for Averages
+
+**Example 105**: A class has two sections. Average marks of section A is 75, section B is 85. Overall average is 80. Find ratio of students.
+```
+Section A: 75, Section B: 85, Mean: 80
+Ratio = (85-80) : (80-75) = 5 : 5 = 1 : 1
+```
+
+## 7.4 Mixture Problems - Removal and Replacement
+
+### Formula
+If from a vessel containing V liters of pure liquid, x liters is removed and replaced with water, and this process is repeated n times:
+```
+Final quantity of pure liquid = V × (1 - x/V)ⁿ
+```
+
+**Example 106**: Vessel contains 80 liters milk. 8 liters removed and replaced with water. Done twice. Find final milk.
+```
+After first: Milk = 80 × (1 - 8/80) = 80 × 0.9 = 72 liters
+After second: Milk = 72 × 0.9 = 64.8 liters
+```
+
+**Example 107**: Vessel contains 60 liters milk. 12 liters removed and replaced with water. Done thrice. Find final milk.
+```
+Final milk = 60 × (1 - 12/60)³ = 60 × (0.8)³ = 60 × 0.512 = 30.72 liters
+```
+
+### When mixture not pure initially
+
+**Example 108**: Vessel contains 80 liters of mixture with milk and water in ratio 7:3. 16 liters removed and replaced with water. Find new ratio.
+```
+Initial milk = (7/10)×80 = 56 liters, water = 24 liters
+After removing 16 liters mixture:
+Milk removed = (7/10)×16 = 11.2 liters
+Water removed = (3/10)×16 = 4.8 liters
+Remaining milk = 56 - 11.2 = 44.8 liters
+Remaining water = 24 - 4.8 = 19.2 liters
+After adding 16 liters water:
+New water = 19.2 + 16 = 35.2 liters
+New ratio = 44.8 : 35.2 = 448 : 352 = 14 : 11
+```
+
+## 7.5 Mixing Two Mixtures
+
+**Example 109**: Two mixtures contain milk and water in ratios 2:1 and 3:2. In what ratio should they be mixed to get mixture with ratio 5:3?
+```
+Convert to fraction of milk:
+Mixture 1: Milk = 2/3
+Mixture 2: Milk = 3/5 = 0.6
+Required: Milk = 5/8 = 0.625
+
+Using alligation:
+Mixture 1 (2/3 = 0.667)    Mixture 2 (0.6)
+           \               /
+            \             /
+             \           /
+              \         /
+               \       /
+                \     /
+                 \   /
+                  \ /
+              Required (0.625)
+                  |
+            ______|______
+           |             |
+       0.025          0.042
+           |             |
+           +------:------+
+               0.025 : 0.042
+               = 25 : 42
+               = 5 : 8.4 ≈ 5 : 8
+```
+
+## 7.6 Profit/Loss in Mixtures
+
+**Example 110**: A dealer mixes tea costing ₹60/kg with tea costing ₹80/kg in ratio 2:3 and sells at ₹88/kg. Find profit %.
+```
+Let quantities = 2 kg and 3 kg
+Total CP = 2×60 + 3×80 = 120 + 240 = 360 for 5 kg
+CP per kg = 360/5 = 72
+SP = 88
+Profit = 16
+Profit % = (16/72)×100 = 22.22%
+```
+
+## 7.7 🔥 Important Shortcuts
+
+### Shortcut 1: Mean Price Formula
+If quantities q₁ and q₂ at prices p₁ and p₂ are mixed, mean price:
+```
+Mean = (q₁p₁ + q₂p₂)/(q₁ + q₂)
+```
+
+### Shortcut 2: For repeated replacement
+After n operations, fraction of original left = (1 - x/V)ⁿ
+
+### Shortcut 3: To find quantity to be replaced
+If we want to change concentration from a% to b% by replacing with water:
+```
+Quantity to replace = V × (a - b)/a
+```
+
+### Shortcut 4: For mixing two mixtures with given ratios
+Convert both to same unit (fraction of one component) then use alligation
+
+---
+
+## 📝 MIXTURES & ALLIGATION - PRACTICE PROBLEMS
+
+1. In what ratio must rice at ₹50/kg and ₹70/kg be mixed to get ₹65/kg?
+2. In what ratio must water be mixed with milk at ₹60/litre to get mixture at ₹48/litre?
+3. Average marks of two sections are 70 and 85. Overall average 80. Find ratio of students
+4. Vessel contains 60 liters milk. 10 liters removed and replaced with water. Done twice. Find final milk
+5. Vessel contains 80 liters mixture (milk:water = 5:3). 16 liters removed and replaced with water. Find new ratio
+6. Two mixtures have milk:water = 3:1 and 4:3. In what ratio mix to get 1:1?
+7. A dealer mixes two types of tea at ₹40/kg and ₹60/kg in ratio 3:2 and sells at ₹55/kg. Find profit %
+8. How much water must be added to 60 liters of milk at ₹50/litre to make it ₹40/litre?
+9. After 3 operations of removing 10 liters from 50 liters and replacing with water, find milk left
+10. In what ratio must two alloys with gold% 60% and 80% be mixed to get 72% gold?
+
+---
+
+# SECTION 8: QUICK REFERENCE - ALL FORMULAS IN ONE PLACE 📚
+
+## RATIO AND PROPORTION
+
+| Concept | Formula |
+|---------|---------|
+| Ratio | a : b = a/b |
+| Proportion | a : b = c : d ⇒ ad = bc |
+| Mean Proportional | √(ab) |
+| Third Proportional | b²/a |
+| Fourth Proportional | bc/a |
+| Compound Ratio | (a×c) : (b×d) |
+| Partnership | Profit ratio = Investment × Time |
+
+## PERCENTAGE
+
+| Concept | Formula |
+|---------|---------|
+| x% of y | (x×y)/100 |
+| % Increase | [(New - Old)/Old] × 100 |
+| % Decrease | [(Old - New)/Old] × 100 |
+| Successive change | a + b + ab/100 |
+| Population after n years | P(1 + r/100)ⁿ |
+| Depreciation after n years | P(1 - r/100)ⁿ |
+
+## TIME AND WORK
+
+| Concept | Formula |
+|---------|---------|
+| Work done | Rate × Time |
+| Combined work | 1/(1/A + 1/B) |
+| LCM Method | Total work = LCM, Efficiency = Work/Days |
+| Man-days | M₁D₁ = M₂D₂ (same work) |
+| Pipes (filling) | Rate = 1/time |
+| Pipes (emptying) | Rate = -1/time |
+
+## TIME, SPEED, DISTANCE
+
+| Concept | Formula |
+|---------|---------|
+| Speed | Distance/Time |
+| km/hr to m/s | × 5/18 |
+| m/s to km/hr | × 18/5 |
+| Average speed (equal distance) | 2xy/(x + y) |
+| Average speed (equal time) | (x + y)/2 |
+| Relative speed (same direction) | |S₁ - S₂| |
+| Relative speed (opposite) | S₁ + S₂ |
+| Train crossing pole | Time = Length/Speed |
+| Train crossing platform | Time = (L_train + L_platform)/Speed |
+| Boat downstream | u + v |
+| Boat upstream | u - v |
+| Speed in still water | (DS + US)/2 |
+| Stream speed | (DS - US)/2 |
+
+## PROFIT AND LOSS
+
+| Concept | Formula |
+|---------|---------|
+| Profit | SP - CP |
+| Loss | CP - SP |
+| Profit % | (Profit/CP) × 100 |
+| Loss % | (Loss/CP) × 100 |
+| SP with profit% | CP × (100 + P%)/100 |
+| SP with loss% | CP × (100 - L%)/100 |
+| CP with profit% | SP × 100/(100 + P%) |
+| CP with loss% | SP × 100/(100 - L%) |
+| Discount | MP - SP |
+| Discount % | (Discount/MP) × 100 |
+| Successive discount | a + b - ab/100 |
+| Faulty weight profit% | [Error/(True - Error)] × 100 |
+
+## SIMPLE AND COMPOUND INTEREST
+
+| Concept | Formula |
+|---------|---------|
+| Simple Interest | (P × R × T)/100 |
+| Amount (SI) | P + SI |
+| Compound Interest | P(1 + R/100)ᵀ - P |
+| CI half-yearly | P(1 + R/200)²ᵀ |
+| CI quarterly | P(1 + R/400)⁴ᵀ |
+| CI - SI (2 years) | P(R/100)² |
+| CI - SI (3 years) | P(R/100)²(3 + R/100) |
+| Doubling time (Rule of 72) | ≈ 72/R years |
+
+## ALLIGATION AND MIXTURE
+
+| Concept | Formula |
+|---------|---------|
+| Alligation ratio | (D - M) : (M - C) |
+| Mixture removal (n times) | Final = Initial × (1 - x/V)ⁿ |
+| Mean price | (q₁p₁ + q₂p₂)/(q₁ + q₂) |
+
+---
+
+# 🎯 MHT CET MCA EXAM SPECIFIC TIPS
+
+## Topic-wise Priority
+
+| Priority | Topic | Time to Spend |
+|----------|-------|---------------|
+| ⭐⭐⭐ | Time & Work | 30% |
+| ⭐⭐⭐ | Time, Speed, Distance | 25% |
+| ⭐⭐ | Percentage | 15% |
+| ⭐⭐ | Ratio & Proportion | 10% |
+| ⭐⭐ | Profit & Loss | 10% |
+| ⭐ | Simple & Compound Interest | 5% |
+| ⭐ | Mixture & Alligation | 5% |
+
+## 🔥 Time-Saving Shortcuts for Exam
+
+### 1. For Time & Work
+Always use LCM method - it's fastest
+```
+Time together = (a×b)/(a+b) for two persons
+```
+
+### 2. For Speed
+Memorize: 36 km/hr = 10 m/s (multiply by 5/18)
+```
+km/hr → m/s: ×5/18
+m/s → km/hr: ×18/5
+```
+
+### 3. For Percentage
+Use decimal equivalents:
+- 10% = 0.1
+- 20% = 0.2
+- 25% = 0.25
+- 50% = 0.5
+
+### 4. For Profit/Loss
+If two items sold at same price, one at x% profit, other at x% loss:
+```
+Net loss = (x²/100)%
+```
+
+### 5. For Ratio
+To find A:B:C when A:B and B:C given:
+```
+A:B = a:b, B:C = c:d
+A:B:C = a×c : b×c : b×d
+```
+
+## Common Mistakes to Avoid ❌
+
+1. **Forgetting unit conversion** in speed problems
+2. **Using wrong relative speed formula** (same vs opposite direction)
+3. **Confusing profit% on CP vs on SP** (always on CP unless specified)
+4. **Not considering negative sign** for successive decrease
+5. **Forgetting that time = distance/speed**, not speed/distance
+6. **Mixing up upstream and downstream** in boat problems
+7. **Not using LCM method** for time & work (leads to fractions)
+8. **Confusing CI and SI formulas**
+
+## Last Minute Revision Points 📝
+
+### Must Remember Numbers
+- 1/3 = 33.33%
+- 1/6 = 16.67%
+- 1/8 = 12.5%
+- 1/12 = 8.33%
+- 5/18 (km/hr to m/s)
+- 18/5 (m/s to km/hr)
+
+### Key Formulas to Memorize
+1. Successive percentage: a + b + ab/100
+2. Average speed (equal distance): 2xy/(x+y)
+3. Time together: (a×b)/(a+b)
+4. CI - SI for 2 years: P(R/100)²
+5. Alligation: (D-M):(M-C)
+
+---
+
+# 📚 PRACTICE SET (10 Questions - Exam Level)
+
+**Q1.** A and B can complete work in 12 and 18 days. They work together for 4 days, then A leaves. How many more days will B take?
+
+**Q2.** A train 180 m long passes a platform 220 m long in 20 seconds. Find its speed in km/hr.
+
+**Q3.** If A:B = 3:4 and B:C = 5:6, find A:B:C.
+
+**Q4.** Find single discount equivalent to 20% and 10% successive discounts.
+
+**Q5.** A shopkeeper uses 900 g weight instead of 1 kg and sells at 5% profit. Find actual profit %.
+
+**Q6.** Find CI on ₹8000 at 10% for 2 years compounded half-yearly.
+
+**Q7.** In what ratio must tea at ₹60/kg and ₹80/kg be mixed to get ₹72/kg?
+
+**Q8.** Population of a town increases at 5% for first year and 4% for second year. If present population is 54600, find population 2 years ago.
+
+**Q9.** A boat goes downstream 48 km in 4 hours and upstream 36 km in 6 hours. Find speed in still water.
+
+**Q10.** Difference between CI and SI for 2 years on a sum is ₹80 at 8%. Find the sum.
+
+---
+
+## ✅ ANSWERS TO PRACTICE SET
+
+1. 8 days
+2. 72 km/hr
+3. 15:20:24
+4. 28%
+5. 16.67%
+6. 928.2
+7. 2:3
+8. 50000
+9. 9 km/hr
+10. 12500
+
+---
+
+**Good luck with your MHT CET MCA preparation!** 🍀

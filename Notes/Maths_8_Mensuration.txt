@@ -1,0 +1,1494 @@
+# COMPLETE MENSURATION GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## Exam Overview
+- **Weightage**: 4-6 questions (8-12 marks)
+- **Difficulty Level**: Easy to Moderate
+- **Focus Areas**: Area of 2D shapes, Volume and Surface Area of 3D solids
+- **Key Skill**: Formula memorization + Quick calculations
+- **Time per question**: Ideally 45-60 seconds
+
+---
+
+# SECTION 1: FUNDAMENTAL CONCEPTS
+
+## 1.1 Basic Definitions
+
+| Term | Definition | Example |
+|------|------------|---------|
+| **Perimeter** | Total length of the boundary of a closed figure | Fencing around a garden |
+| **Area** | Measure of the surface enclosed by a closed figure | Carpet required for a room |
+| **Volume** | Space occupied by a solid object | Water in a tank |
+| **Surface Area** | Total area of all surfaces of a solid | Paint required for a box |
+| **Lateral/Curved Surface Area** | Area of lateral/side surfaces (excluding top and bottom) | Curved part of a cylinder |
+| **Cross-section** | Shape obtained by cutting perpendicular to length | Circular cross-section of cylinder |
+
+## 1.2 Units of Measurement
+
+| Quantity | Common Units | Conversion Facts |
+|----------|--------------|-------------------|
+| Length | mm, cm, m, km | 1 m = 100 cm, 1 km = 1000 m |
+| Area | mm², cm², m², km², hectare | 1 m² = 10,000 cm², 1 hectare = 10,000 m² |
+| Volume | mm³, cm³, m³, litre | 1 litre = 1000 cm³ = 0.001 m³ |
+
+**Important Conversions to Memorize:**
+- 1 m = 100 cm
+- 1 m² = 10,000 cm²
+- 1 m³ = 1,000,000 cm³
+- 1 litre = 1000 cm³
+- 1 hectare = 10,000 m²
+- 1 acre = 4046.86 m² (rarely asked, but good to know)
+
+## 1.3 Important Mathematical Constants
+
+| Constant | Value | When to Use |
+|----------|-------|-------------|
+| π (pi) | 22/7 or 3.14 | Circle, cylinder, cone, sphere problems |
+| √2 | 1.414 | Square diagonal, cube face diagonal |
+| √3 | 1.732 | Equilateral triangle height, cube diagonal |
+| √5 | 2.236 | Occurs in some geometry problems |
+
+**MHT CET Tip:** Usually π = 22/7 is used for easier calculations. If options are in decimals, use 3.14.
+
+---
+
+# SECTION 2: TRIANGLES - DETAILED ANALYSIS
+
+## 2.1 General Triangle (Scalene)
+
+### Formulas:
+- **Area** = ½ × base × height
+- **Perimeter** = a + b + c (sum of all sides)
+- **Semi-perimeter (s)** = (a + b + c)/2
+
+### Heron's Formula (When height is not given)
+**Area** = √[s(s-a)(s-b)(s-c)]
+
+### Important Properties:
+- Sum of angles = 180°
+- Exterior angle = Sum of interior opposite angles
+- Triangle inequality: Sum of any two sides > Third side
+
+### Solved Examples:
+
+**Example 1**: Find area of triangle with sides 13 cm, 14 cm, 15 cm.
+```
+s = (13+14+15)/2 = 42/2 = 21 cm
+Area = √[21(21-13)(21-14)(21-15)]
+     = √[21 × 8 × 7 × 6]
+     = √[21 × 336]
+     = √7056 = 84 cm²
+
+Shortcut: 13-14-15 is a known triplet → area = 84 cm²
+```
+
+**Example 2**: Find area of triangle with base 12 cm and height 8 cm.
+```
+Area = ½ × 12 × 8 = 48 cm²
+```
+
+## 2.2 Right-Angled Triangle
+
+### Formulas:
+- **Area** = ½ × (product of legs containing right angle)
+- **Hypotenuse** = √(base² + height²) (Pythagoras theorem)
+- **Perimeter** = base + height + hypotenuse
+
+### Pythagorean Triplets (Memorize for speed):
+| Triplet | Check |
+|---------|-------|
+| 3-4-5 | 3²+4² = 9+16=25=5² |
+| 5-12-13 | 5²+12² = 25+144=169=13² |
+| 7-24-25 | 7²+24² = 49+576=625=25² |
+| 8-15-17 | 8²+15² = 64+225=289=17² |
+| 9-40-41 | 9²+40² = 81+1600=1681=41² |
+| 12-35-37 | 12²+35² = 144+1225=1369=37² |
+
+### Solved Examples:
+
+**Example 3**: In a right triangle, base = 6 cm, height = 8 cm. Find area and hypotenuse.
+```
+Area = ½ × 6 × 8 = 24 cm²
+Hypotenuse = √(6² + 8²) = √(36 + 64) = √100 = 10 cm
+```
+
+**Example 4**: Hypotenuse of right triangle is 13 cm, one side is 5 cm. Find area.
+```
+Using Pythagoras: 5² + b² = 13²
+25 + b² = 169
+b² = 144 → b = 12 cm
+Area = ½ × 5 × 12 = 30 cm²
+```
+
+## 2.3 Equilateral Triangle
+
+### Formulas:
+| Measure | Formula | Derivation/Explanation |
+|---------|---------|----------------------|
+| Area | (√3/4) a² | From ½ × base × height |
+| Perimeter | 3a | Sum of all sides |
+| Height | (√3/2) a | Perpendicular from vertex to base |
+| Inradius | a/(2√3) | Radius of inscribed circle |
+| Circumradius | a/√3 | Radius of circumscribed circle |
+
+### Important Points:
+- All angles = 60°
+- All sides equal
+- Altitude, median, angle bisector are same line
+
+### Solved Examples:
+
+**Example 5**: Find area and height of equilateral triangle with side 12 cm.
+```
+Area = (√3/4) × 12² = (√3/4) × 144 = 36√3 cm²
+Height = (√3/2) × 12 = 6√3 cm
+
+Numerical value: 36 × 1.732 = 62.35 cm²
+```
+
+**Example 6**: If area of equilateral triangle is 16√3 cm², find its side.
+```
+(√3/4)a² = 16√3
+a²/4 = 16
+a² = 64 → a = 8 cm
+```
+
+## 2.4 Isosceles Triangle
+
+### Formulas:
+- **Area** = ½ × base × height
+- **Perimeter** = 2a + b (where a = equal sides, b = base)
+- **Height** = √(a² - (b/2)²)
+
+### Solved Example:
+
+**Example 7**: Isosceles triangle has equal sides 10 cm, base 12 cm. Find area.
+```
+Height = √(10² - 6²) = √(100 - 36) = √64 = 8 cm
+Area = ½ × 12 × 8 = 48 cm²
+```
+
+## 2.5 Important Triangle Properties for MHT CET
+
+### 1. Median of Triangle
+- Divides triangle into two equal areas
+- Length of median = ½√(2a² + 2b² - c²)
+
+### 2. Angle Bisector Theorem
+- Divides opposite side in ratio of adjacent sides
+
+### 3. Area by Coordinate Geometry
+**Area** = ½|x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|
+
+**Example 8**: Find area of triangle with vertices (0,0), (4,0), (0,3).
+```
+Area = ½|0(0-3) + 4(3-0) + 0(0-0)|
+     = ½|0 + 12 + 0| = 6 sq units
+```
+
+### 4. MHT CET Shortcut - Triangle Area Ratios
+If a line parallel to base divides triangle, areas are proportional to squares of corresponding sides.
+
+---
+
+# SECTION 3: QUADRILATERALS - DETAILED ANALYSIS
+
+## 3.1 Square
+
+### Complete Formula Sheet:
+
+| Measure | Formula | Alternative Form |
+|---------|---------|------------------|
+| Area | a² | (diagonal)²/2 |
+| Perimeter | 4a | - |
+| Diagonal | a√2 | √(2 × Area) |
+| Side | a | √Area |
+| Inradius | a/2 | - |
+| Circumradius | a/√2 | - |
+
+### Important Relations:
+- Diagonal = side × √2
+- Area = (diagonal)²/2
+- Side = diagonal/√2
+
+### Solved Examples:
+
+**Example 9**: Find area and diagonal of square with side 10 cm.
+```
+Area = 10² = 100 cm²
+Diagonal = 10√2 cm = 10 × 1.414 = 14.14 cm
+```
+
+**Example 10**: Diagonal of square is 12√2 cm. Find its area.
+```
+Side = diagonal/√2 = 12√2/√2 = 12 cm
+Area = 12² = 144 cm²
+Shortcut: Area = (diagonal)²/2 = (12√2)²/2 = (144×2)/2 = 144 cm²
+```
+
+## 3.2 Rectangle
+
+### Complete Formula Sheet:
+
+| Measure | Formula | Notes |
+|---------|---------|-------|
+| Area | l × b | - |
+| Perimeter | 2(l + b) | - |
+| Diagonal | √(l² + b²) | - |
+| Length | Area/b | When breadth known |
+| Breadth | Area/l | When length known |
+
+### Important Points:
+- Opposite sides equal and parallel
+- All angles 90°
+- Diagonals are equal and bisect each other
+
+### Solved Examples:
+
+**Example 11**: Find area and diagonal of rectangle with length 8 cm, breadth 6 cm.
+```
+Area = 8 × 6 = 48 cm²
+Diagonal = √(8² + 6²) = √(64 + 36) = √100 = 10 cm
+```
+
+**Example 12**: Perimeter of rectangle is 40 cm, length is 12 cm. Find area.
+```
+2(l + b) = 40
+2(12 + b) = 40
+12 + b = 20 → b = 8 cm
+Area = 12 × 8 = 96 cm²
+```
+
+**Example 13**: Diagonal of rectangle is 17 cm, length is 15 cm. Find area.
+```
+15² + b² = 17²
+225 + b² = 289
+b² = 64 → b = 8 cm
+Area = 15 × 8 = 120 cm²
+```
+
+## 3.3 Parallelogram
+
+### Formulas:
+- **Area** = base × height
+- **Perimeter** = 2(a + b) where a, b are adjacent sides
+- **Height** = Area/base
+- **Diagonals**: d₁² + d₂² = 2(a² + b²)
+
+### Important Points:
+- Opposite sides parallel and equal
+- Opposite angles equal
+- Adjacent angles supplementary (sum = 180°)
+- Diagonals bisect each other
+
+### Solved Examples:
+
+**Example 14**: Find area of parallelogram with base 12 cm and height 8 cm.
+```
+Area = 12 × 8 = 96 cm²
+```
+
+**Example 15**: Adjacent sides of parallelogram are 10 cm and 12 cm, area is 60√3 cm². Find angle between sides.
+```
+Area = a × b × sin θ
+60√3 = 10 × 12 × sin θ
+60√3 = 120 sin θ
+sin θ = √3/2 → θ = 60° or 120°
+```
+
+## 3.4 Rhombus
+
+### Complete Formula Sheet:
+
+| Measure | Formula | Alternative |
+|---------|---------|-------------|
+| Area | ½ × d₁ × d₂ | a² sin θ |
+| Perimeter | 4a | - |
+| Side | a = ½√(d₁² + d₂²) | - |
+| Height | Area/a | - |
+
+### Important Properties:
+- All sides equal
+- Diagonals bisect at 90°
+- Diagonals bisect angles
+- Area = product of diagonals/2
+
+### Solved Examples:
+
+**Example 16**: Find area of rhombus with diagonals 10 cm and 12 cm.
+```
+Area = ½ × 10 × 12 = 60 cm²
+Side = ½√(10² + 12²) = ½√(100 + 144) = ½√244 = ½ × 15.62 = 7.81 cm
+```
+
+**Example 17**: Side of rhombus is 10 cm, one diagonal is 12 cm. Find area.
+```
+Let d₁ = 12 cm
+d₁/2 = 6 cm
+From right triangle: (d₁/2)² + (d₂/2)² = a²
+6² + (d₂/2)² = 10²
+36 + (d₂/2)² = 100
+(d₂/2)² = 64
+d₂/2 = 8 → d₂ = 16 cm
+Area = ½ × 12 × 16 = 96 cm²
+```
+
+## 3.5 Trapezium (Trapezoid)
+
+### Formulas:
+- **Area** = ½ × (sum of parallel sides) × height = ½ × (a + b) × h
+- **Perimeter** = sum of all sides
+- **Median** = ½(a + b) (line joining midpoints of non-parallel sides)
+
+### Types of Trapezium:
+1. **Isosceles Trapezium**: Non-parallel sides equal
+2. **Right Trapezium**: One side perpendicular to parallel sides
+
+### Solved Examples:
+
+**Example 18**: Find area of trapezium with parallel sides 10 cm and 14 cm, height 8 cm.
+```
+Area = ½ × (10 + 14) × 8 = ½ × 24 × 8 = 96 cm²
+```
+
+**Example 19**: Area of trapezium is 120 cm², parallel sides are 8 cm and 12 cm. Find height.
+```
+½ × (8 + 12) × h = 120
+½ × 20 × h = 120
+10h = 120 → h = 12 cm
+```
+
+**Example 20**: In an isosceles trapezium, parallel sides are 20 cm and 30 cm, non-parallel sides are 13 cm each. Find area.
+```
+Difference in parallel sides = 30 - 20 = 10 cm
+Half of difference = 5 cm (this forms base of right triangle with height)
+Height = √(13² - 5²) = √(169 - 25) = √144 = 12 cm
+Area = ½ × (20 + 30) × 12 = ½ × 50 × 12 = 300 cm²
+```
+
+## 3.6 General Quadrilateral
+
+### Formula:
+**Area** = ½ × diagonal × (sum of perpendiculars from opposite vertices to that diagonal)
+
+### Solved Example:
+
+**Example 21**: In a quadrilateral, diagonal = 12 cm, perpendiculars from other vertices are 5 cm and 7 cm. Find area.
+```
+Area = ½ × 12 × (5 + 7) = ½ × 12 × 12 = 72 cm²
+```
+
+## 3.7 MHT CET Shortcuts for Quadrilaterals
+
+### 1. Rectangle Max/Min Problems
+- For fixed perimeter, square has maximum area
+- For fixed area, square has minimum perimeter
+
+### 2. Rhombus vs Square
+- Square is a special rhombus with all angles 90°
+- Area of rhombus = a² sin θ (maximum when θ = 90°, i.e., square)
+
+### 3. Trapezium Area Shortcut
+If median (m) is given: Area = m × h
+
+---
+
+# SECTION 4: CIRCLES - DETAILED ANALYSIS
+
+## 4.1 Basic Circle Formulas
+
+| Measure | Formula | Notes |
+|---------|---------|-------|
+| Circumference | 2πr | Also πd |
+| Area | πr² | - |
+| Diameter | 2r | d = 2r |
+| Radius | d/2 | - |
+
+### Important Values of π:
+- π = 22/7 (for exact calculations)
+- π ≈ 3.14 (for decimal answers)
+- π ≈ 3.14159 (accurate)
+
+### Solved Examples:
+
+**Example 22**: Find circumference and area of circle with radius 7 cm.
+```
+Circumference = 2 × (22/7) × 7 = 44 cm
+Area = (22/7) × 7² = (22/7) × 49 = 154 cm²
+```
+
+**Example 23**: Circumference of circle is 88 cm. Find its area.
+```
+2πr = 88
+2 × (22/7) × r = 88
+(44/7)r = 88
+r = 88 × 7/44 = 14 cm
+Area = πr² = (22/7) × 196 = 616 cm²
+```
+
+## 4.2 Circular Ring (Annulus)
+
+### Formula:
+**Area** = π(R² - r²) where R > r (outer radius > inner radius)
+
+### Solved Example:
+
+**Example 24**: Find area of circular ring with outer radius 10 cm, inner radius 8 cm.
+```
+Area = π(10² - 8²) = π(100 - 64) = 36π cm²
+= 36 × 22/7 = 792/7 = 113.14 cm²
+```
+
+## 4.3 Sector of a Circle
+
+### Complete Formula Sheet:
+
+| Measure | Formula | When θ in degrees | When θ in radians |
+|---------|---------|-------------------|-------------------|
+| Arc Length | (θ/360) × 2πr | θ in degrees | rθ (θ in radians) |
+| Area of Sector | (θ/360) × πr² | θ in degrees | ½r²θ (θ in radians) |
+| Perimeter of Sector | 2r + arc length | - | - |
+| Chord Length | 2r sin(θ/2) | - | - |
+
+### Important Points:
+- θ is the central angle
+- Sector is like a "pizza slice"
+- Major sector has θ > 180°, minor sector has θ < 180°
+
+### Solved Examples:
+
+**Example 25**: Find area and arc length of sector with radius 14 cm and angle 60°.
+```
+Area = (60/360) × (22/7) × 14² 
+     = (1/6) × (22/7) × 196 
+     = (1/6) × 616 = 102.67 cm²
+
+Arc length = (60/360) × 2 × (22/7) × 14 
+           = (1/6) × 88 = 14.67 cm
+
+Perimeter = 2r + arc length = 28 + 14.67 = 42.67 cm
+```
+
+**Example 26**: Arc length of sector is 22 cm, radius is 14 cm. Find angle.
+```
+Arc length = (θ/360) × 2πr
+22 = (θ/360) × 2 × (22/7) × 14
+22 = (θ/360) × 88
+θ/360 = 22/88 = 1/4
+θ = 90°
+```
+
+## 4.4 Segment of a Circle
+
+### Formula:
+**Area of segment** = Area of sector - Area of triangle
+
+### For minor segment (θ < 180°):
+Area = r²[ (πθ/360°) - (sin θ)/2 ]
+
+### Solved Examples:
+
+**Example 27**: For a circle of radius 10 cm with chord making 90° at center, find area of segment.
+```
+Area of sector = (90/360) × π × 100 = (1/4) × 100π = 25π cm²
+Area of triangle = ½ × r² × sin θ = ½ × 100 × sin 90° = ½ × 100 × 1 = 50 cm²
+Area of segment = 25π - 50 = 25(3.14) - 50 = 78.5 - 50 = 28.5 cm²
+```
+
+**Example 28**: Find area of segment when chord subtends 120° in circle of radius 7 cm.
+```
+Area of sector = (120/360) × (22/7) × 49 = (1/3) × 154 = 51.33 cm²
+Area of triangle = ½ × 49 × sin 120° = 24.5 × (√3/2) = 24.5 × 0.866 = 21.22 cm²
+Area of segment = 51.33 - 21.22 = 30.11 cm²
+```
+
+## 4.5 Important Circle Properties for MHT CET
+
+### 1. Cyclic Quadrilateral
+- Opposite angles sum = 180°
+- Area = √[(s-a)(s-b)(s-c)(s-d)] where s = (a+b+c+d)/2
+
+### 2. Tangent Properties
+- Tangent perpendicular to radius at point of contact
+- Lengths of tangents from external point are equal
+
+### 3. Chord Properties
+- Perpendicular from center bisects chord
+- Equal chords are equidistant from center
+
+### 4. MHT CET Shortcuts
+
+**Shortcut 1**: If a circle is inscribed in a square of side a:
+- Radius of circle = a/2
+- Area of circle = πa²/4
+- Area between square and circle = a²(1 - π/4)
+
+**Shortcut 2**: If a square is inscribed in a circle of radius r:
+- Side of square = r√2
+- Area of square = 2r²
+- Area between circle and square = πr² - 2r² = r²(π - 2)
+
+**Shortcut 3**: For sectors, remember:
+- 60° sector → 1/6 of circle
+- 90° sector → 1/4 of circle
+- 120° sector → 1/3 of circle
+- 180° sector → 1/2 of circle
+
+---
+
+# SECTION 5: CUBE - DETAILED ANALYSIS
+
+## 5.1 Complete Formula Sheet
+
+| Measure | Formula | Derivation/Mnemonic |
+|---------|---------|---------------------|
+| Volume | a³ | Side × Side × Side |
+| Lateral Surface Area (LSA) | 4a² | Area of 4 side faces |
+| Total Surface Area (TSA) | 6a² | Area of all 6 faces |
+| Face Diagonal | a√2 | Pythagoras on one face |
+| Space Diagonal | a√3 | Pythagoras in 3D |
+| Edge | a | Given any measure, can find a |
+| Volume from diagonal | (diagonal/√3)³ | - |
+
+### Important Relations:
+- TSA = 6 × (face area)
+- LSA = 4 × (face area)
+- Space diagonal = √3 × edge
+- Face diagonal = √2 × edge
+
+## 5.2 Solved Examples
+
+**Example 29**: Find volume, TSA, LSA, and diagonals of cube with edge 5 cm.
+```
+Volume = 5³ = 125 cm³
+TSA = 6 × 5² = 6 × 25 = 150 cm²
+LSA = 4 × 5² = 4 × 25 = 100 cm²
+Face diagonal = 5√2 = 5 × 1.414 = 7.07 cm
+Space diagonal = 5√3 = 5 × 1.732 = 8.66 cm
+```
+
+**Example 30**: If volume of cube is 216 cm³, find its edge, TSA, and diagonals.
+```
+a³ = 216 ⇒ a = 6 cm (since 6³ = 216)
+TSA = 6 × 6² = 6 × 36 = 216 cm²
+Face diagonal = 6√2 cm
+Space diagonal = 6√3 cm
+```
+
+**Example 31**: Total surface area of cube is 150 cm². Find its volume.
+```
+6a² = 150
+a² = 25 → a = 5 cm
+Volume = 5³ = 125 cm³
+```
+
+**Example 32**: Space diagonal of cube is 12√3 cm. Find its volume.
+```
+Space diagonal = a√3 = 12√3
+Therefore a = 12 cm
+Volume = 12³ = 1728 cm³
+```
+
+## 5.3 MHT CET Shortcuts for Cube
+
+### 1. Relationship Between Measures
+If edge = a, then:
+- Face diagonal = 1.414a
+- Space diagonal = 1.732a
+- TSA = 6a²
+- Volume = a³
+
+### 2. If edge is doubled:
+- Volume becomes 8 times
+- Surface area becomes 4 times
+- Diagonal becomes 2 times
+
+### 3. If volume is doubled:
+- Edge becomes ∛2 times ≈ 1.26 times
+- Surface area becomes (∛2)² ≈ 1.59 times
+
+### 4. Quick Calculations
+- 3³ = 27, 4³ = 64, 5³ = 125, 6³ = 216, 7³ = 343, 8³ = 512, 9³ = 729, 10³ = 1000
+- Memorize cubes up to 20 for speed
+
+---
+
+# SECTION 6: CUBOID - DETAILED ANALYSIS
+
+## 6.1 Complete Formula Sheet
+
+| Measure | Formula | Notes |
+|---------|---------|-------|
+| Volume | l × b × h | Length × Breadth × Height |
+| Lateral Surface Area (LSA) | 2h(l + b) | Area of 4 side walls |
+| Total Surface Area (TSA) | 2(lb + bh + hl) | All 6 faces |
+| Diagonal | √(l² + b² + h²) | Space diagonal |
+| Face diagonal (l-b face) | √(l² + b²) | On length-breadth face |
+| Face diagonal (l-h face) | √(l² + h²) | On length-height face |
+| Face diagonal (b-h face) | √(b² + h²) | On breadth-height face |
+
+### Important Points:
+- All faces are rectangles
+- Opposite faces are equal
+- LSA excludes top and bottom
+
+## 6.2 Solved Examples
+
+**Example 33**: Find volume, TSA, LSA, and diagonal of cuboid with l=8 cm, b=6 cm, h=5 cm.
+```
+Volume = 8 × 6 × 5 = 240 cm³
+TSA = 2(8×6 + 6×5 + 5×8) = 2(48 + 30 + 40) = 2 × 118 = 236 cm²
+LSA = 2 × 5(8 + 6) = 10 × 14 = 140 cm²
+Diagonal = √(8² + 6² + 5²) = √(64 + 36 + 25) = √125 = 5√5 cm ≈ 11.18 cm
+```
+
+**Example 34**: Find the maximum length of rod that can be placed in a room of dimensions 12 m × 9 m × 8 m.
+```
+Maximum length = diagonal = √(12² + 9² + 8²) 
+                = √(144 + 81 + 64) 
+                = √289 = 17 m
+```
+
+**Example 35**: TSA of cuboid is 126 cm², LSA is 70 cm², and base area is 20 cm². Find dimensions.
+```
+Let dimensions be l, b, h
+Given: TSA = 2(lb + bh + hl) = 126 ...(1)
+LSA = 2h(l + b) = 70 ...(2)
+Base area = lb = 20 ...(3)
+
+From (1): lb + bh + hl = 63
+20 + h(l + b) = 63
+h(l + b) = 43 ...(4)
+
+From (2): 2h(l + b) = 70
+h(l + b) = 35 ...(5)
+
+From (4) and (5): 43 = 35 (Contradiction!)
+This means given data is inconsistent - typical MHT CET trap!
+```
+
+**Example 36**: Volume of cuboid is 840 cm³, base area is 84 cm², and LSA is 360 cm². Find dimensions.
+```
+Volume = lbh = 840
+Base area = lb = 84
+Therefore h = 840/84 = 10 cm
+
+LSA = 2h(l + b) = 360
+2 × 10 × (l + b) = 360
+20(l + b) = 360
+l + b = 18
+
+Now we have lb = 84 and l + b = 18
+Solving: l and b are roots of x² - 18x + 84 = 0
+Discriminant = 324 - 336 = -12 (No real solution!)
+Another trap - always check if dimensions are possible
+```
+
+## 6.3 Special Cases
+
+### Cube as Special Cuboid
+When l = b = h, cuboid becomes cube
+
+### Square-based Cuboid
+When l = b ≠ h, formulas simplify:
+- Volume = l²h
+- TSA = 2(l² + 2lh)
+- LSA = 4lh
+- Diagonal = √(2l² + h²)
+
+## 6.4 MHT CET Shortcuts for Cuboid
+
+### 1. If all dimensions are increased by k times:
+- Volume becomes k³ times
+- Surface area becomes k² times
+- Diagonal becomes k times
+
+### 2. For a room (4 walls + ceiling/floor):
+- Area of 4 walls = 2h(l + b) = LSA
+- Area of ceiling = l × b
+- Area of floor = l × b
+- Total painting area (walls + ceiling) = 2h(l + b) + lb
+
+### 3. Quick Diagonal Recognition:
+- 3-4-5 triple: √(3²+4²) = 5
+- 5-12-13: √(5²+12²) = 13
+- 8-15-17: √(8²+15²) = 17
+- For 3D, look for numbers that sum squares to perfect squares
+
+### 4. Common Pythagorean Triples in 3D:
+- 3,4,5 → diagonal = √50 = 5√2 ≈ 7.07
+- 6,8,10 → diagonal = √200 = 10√2 ≈ 14.14
+- 5,12,13 → diagonal = √338 ≈ 18.38
+
+---
+
+# SECTION 7: RIGHT CIRCULAR CYLINDER - DETAILED ANALYSIS
+
+## 7.1 Complete Formula Sheet
+
+| Measure | Formula | Explanation |
+|---------|---------|-------------|
+| Volume | πr²h | Area of base × height |
+| Curved Surface Area (CSA) | 2πrh | Lateral surface (like label on a can) |
+| Total Surface Area (TSA) | 2πr(h + r) | CSA + 2 × base area |
+| Base Area | πr² | Area of circular base |
+| Height | h | - |
+| Radius | r | - |
+
+### Important Points:
+- Bases are circles of radius r
+- Axis is perpendicular to bases
+- If cut vertically, get rectangle of dimensions h × 2πr
+
+## 7.2 Solved Examples
+
+**Example 37**: Find volume, CSA, and TSA of cylinder with radius 7 cm, height 10 cm.
+```
+Volume = (22/7) × 7² × 10 = (22/7) × 49 × 10 = 22 × 7 × 10 = 1540 cm³
+CSA = 2 × (22/7) × 7 × 10 = 2 × 22 × 10 = 440 cm²
+TSA = 2 × (22/7) × 7 × (10 + 7) = 2 × 22 × 17 = 748 cm²
+```
+
+**Example 38**: Find height of cylinder whose volume is 1232 cm³ and radius is 7 cm.
+```
+πr²h = 1232
+(22/7) × 49 × h = 1232
+22 × 7 × h = 1232
+154h = 1232
+h = 1232/154 = 8 cm
+```
+
+**Example 39**: Find radius of cylinder whose CSA is 880 cm² and height is 20 cm.
+```
+2πrh = 880
+2 × (22/7) × r × 20 = 880
+(880/7) × r = 880
+r/7 = 1
+r = 7 cm
+```
+
+**Example 40**: TSA of cylinder is 462 cm², CSA is 308 cm². Find radius and height.
+```
+TSA = CSA + 2πr²
+462 = 308 + 2πr²
+2πr² = 154
+πr² = 77
+(22/7)r² = 77
+r² = 77 × 7/22 = 539/22 = 24.5
+r = √24.5 = 4.95 cm ≈ 5 cm
+
+CSA = 2πrh = 308
+2 × (22/7) × 5 × h = 308
+(220/7)h = 308
+h = 308 × 7/220 = 2156/220 = 9.8 cm
+```
+
+## 7.3 Hollow Cylinder
+
+| Measure | Formula |
+|---------|---------|
+| Volume of material | πh(R² - r²) |
+| Curved Surface Area (outer) | 2πRh |
+| Curved Surface Area (inner) | 2πrh |
+| Total Surface Area | 2πh(R + r) + 2π(R² - r²) |
+| Area of each annular end | π(R² - r²) |
+
+**Example 41**: Find volume of material in hollow cylinder of height 10 cm, outer radius 8 cm, inner radius 6 cm.
+```
+Volume = π × 10 × (8² - 6²) = π × 10 × (64 - 36) = π × 10 × 28 = 280π cm³
+= 280 × 3.14 = 879.2 cm³
+= 280 × 22/7 = 880 cm³ (exact)
+```
+
+## 7.4 MHT CET Shortcuts for Cylinder
+
+### 1. Effect of Changing Dimensions:
+- If radius doubles: Volume becomes 4 times, CSA becomes 2 times
+- If height doubles: Volume becomes 2 times, CSA becomes 2 times
+- If both radius and height double: Volume becomes 8 times, CSA becomes 4 times
+
+### 2. Cylinder with Maximum Volume for Given Surface Area:
+- For fixed TSA, volume is maximum when h = 2r
+- For fixed CSA, volume is maximum when h = r
+
+### 3. Common Values to Remember:
+- For r = 7, h = 10: Volume = 1540, CSA = 440, TSA = 748
+- For r = 14, h = 20: Volume = 12320, CSA = 1760, TSA = 2992
+- For r = 3.5, h = 10: Volume = 385, CSA = 220, TSA = 297
+
+### 4. When π cancels:
+In ratio problems, π often cancels out. Look for opportunities to simplify.
+
+---
+
+# SECTION 8: RIGHT CIRCULAR CONE - DETAILED ANALYSIS
+
+## 8.1 Complete Formula Sheet
+
+| Measure | Formula | Notes |
+|---------|---------|-------|
+| Slant Height (l) | l = √(r² + h²) | Pythagoras in right triangle |
+| Volume | (1/3)πr²h | One-third of cylinder volume |
+| Curved Surface Area (CSA) | πrl | Lateral surface |
+| Total Surface Area (TSA) | πr(l + r) | CSA + base area |
+| Base Area | πr² | - |
+| Height | h | - |
+| Radius | r | - |
+
+### Important Relationships:
+- l² = r² + h²
+- Volume = (1/3) × (base area) × height
+- CSA = πr√(r² + h²)
+
+## 8.2 Solved Examples
+
+**Example 42**: Find slant height, volume, CSA, and TSA of cone with radius 6 cm, height 8 cm.
+```
+Slant height l = √(6² + 8²) = √(36 + 64) = √100 = 10 cm
+Volume = (1/3) × (22/7) × 6² × 8 = (1/3) × (22/7) × 36 × 8
+       = (1/3) × (22/7) × 288 = (22 × 288)/(21) = 6336/21 = 301.71 cm³
+CSA = (22/7) × 6 × 10 = (22 × 60)/7 = 1320/7 = 188.57 cm²
+TSA = (22/7) × 6 × (10 + 6) = (22/7) × 6 × 16 = (22 × 96)/7 = 2112/7 = 301.71 cm²
+```
+
+**Example 43**: Find height of cone whose volume is 1232 cm³ and radius is 7 cm.
+```
+(1/3)πr²h = 1232
+(1/3) × (22/7) × 49 × h = 1232
+(1/3) × 22 × 7 × h = 1232
+(154/3)h = 1232
+h = 1232 × 3/154 = 3696/154 = 24 cm
+```
+
+**Example 44**: Slant height of cone is 25 cm, radius is 7 cm. Find height and volume.
+```
+l² = r² + h²
+25² = 7² + h²
+625 = 49 + h²
+h² = 576 → h = 24 cm
+Volume = (1/3) × (22/7) × 49 × 24 = (1/3) × 22 × 7 × 24 = (1/3) × 3696 = 1232 cm³
+```
+
+**Example 45**: CSA of cone is 550 cm², radius is 7 cm. Find slant height and height.
+```
+πrl = 550
+(22/7) × 7 × l = 550
+22 × l = 550
+l = 550/22 = 25 cm
+h = √(l² - r²) = √(625 - 49) = √576 = 24 cm
+```
+
+## 8.3 Frustum of a Cone
+
+When a cone is cut parallel to base, we get a frustum (smaller cone removed from top).
+
+### Complete Formula Sheet for Frustum:
+
+| Measure | Formula |
+|---------|---------|
+| Slant Height (l) | l = √[h² + (R - r)²] |
+| Volume | (πh/3)(R² + Rr + r²) |
+| Curved Surface Area | πl(R + r) |
+| Total Surface Area | πl(R + r) + πR² + πr² |
+| Height of original cone | H = hR/(R - r) |
+| Height of removed cone | h' = hr/(R - r) |
+
+### Solved Examples:
+
+**Example 46**: Find volume of frustum of cone with height 12 cm, top radius 4 cm, bottom radius 10 cm.
+```
+Volume = (π × 12/3)(10² + 10×4 + 4²) = 4π(100 + 40 + 16) = 4π × 156 = 624π cm³
+= 624 × 22/7 = 1961.14 cm³
+```
+
+**Example 47**: Find CSA of frustum with slant height 13 cm, top radius 4 cm, bottom radius 10 cm.
+```
+CSA = π × 13 × (10 + 4) = π × 13 × 14 = 182π cm²
+= 182 × 22/7 = 572 cm²
+```
+
+## 8.4 MHT CET Shortcuts for Cone
+
+### 1. Relationship Between r, h, l:
+- 3-4-5 triangle: r=3, h=4, l=5
+- 5-12-13 triangle: r=5, h=12, l=13
+- 7-24-25 triangle: r=7, h=24, l=25
+- 8-15-17 triangle: r=8, h=15, l=17
+
+### 2. Volume Ratios:
+- Volume of cone = 1/3 × volume of cylinder with same base and height
+- If a cone and cylinder have same radius and height, volume ratio = 1:3
+
+### 3. Effect of Changing Dimensions:
+- If radius doubles (height constant): Volume becomes 4 times
+- If height doubles (radius constant): Volume becomes 2 times
+- If both double: Volume becomes 8 times
+
+### 4. Maximum Volume Cone from a Cylinder:
+Maximum cone volume from a cylinder = 1/3 × cylinder volume
+
+### 5. Frustum Shortcut:
+If a cone is cut at mid-height, the frustum volume = 7/8 of original cone volume
+
+---
+
+# SECTION 9: SPHERE - DETAILED ANALYSIS
+
+## 9.1 Complete Formula Sheet
+
+| Measure | Formula | Notes |
+|---------|---------|-------|
+| Volume | (4/3)πr³ | Four-thirds pi r cubed |
+| Surface Area | 4πr² | Four pi r squared |
+| Diameter | 2r | - |
+| Radius | r | - |
+
+### Important Points:
+- All points on surface equidistant from center
+- Perfectly symmetrical
+- Largest volume for given surface area
+
+## 9.2 Solved Examples
+
+**Example 48**: Find volume and surface area of sphere with radius 7 cm.
+```
+Volume = (4/3) × (22/7) × 7³ = (4/3) × (22/7) × 343
+       = (4/3) × 22 × 49 = (4 × 22 × 49)/3 = 4312/3 = 1437.33 cm³
+Surface Area = 4 × (22/7) × 7² = 4 × (22/7) × 49 = 4 × 22 × 7 = 616 cm²
+```
+
+**Example 49**: Find radius of sphere whose surface area is 616 cm².
+```
+4πr² = 616
+4 × (22/7) × r² = 616
+(88/7)r² = 616
+r² = 616 × 7/88 = 4312/88 = 49
+r = 7 cm
+```
+
+**Example 50**: Volume of sphere is (38808) cm³. Find its radius. (π = 22/7)
+```
+(4/3) × (22/7) × r³ = 38808
+(88/21)r³ = 38808
+r³ = 38808 × 21/88 = 38808 × 21 ÷ 88
+38808 ÷ 88 = 441 (since 88×441 = 38808)
+r³ = 441 × 21 = 9261
+r = ∛9261 = 21 cm (since 21³ = 9261)
+```
+
+**Example 51**: If radius of sphere is doubled, find ratio of new volume to original.
+```
+Original volume = (4/3)πr³
+New volume = (4/3)π(2r)³ = (4/3)π × 8r³ = 8 × original volume
+Ratio = 8 : 1
+```
+
+## 9.3 Hemisphere
+
+Half of a sphere with a circular base.
+
+### Complete Formula Sheet:
+
+| Measure | Formula | Explanation |
+|---------|---------|-------------|
+| Volume | (2/3)πr³ | Half of sphere volume |
+| Curved Surface Area (CSA) | 2πr² | Half of sphere surface area |
+| Total Surface Area (TSA) | 3πr² | CSA + base area (πr²) |
+| Base Area | πr² | Circular face |
+
+### Solved Examples:
+
+**Example 52**: Find volume, CSA, and TSA of hemisphere with radius 7 cm.
+```
+Volume = (2/3) × (22/7) × 7³ = (2/3) × (22/7) × 343
+       = (2/3) × 22 × 49 = (2 × 22 × 49)/3 = 2156/3 = 718.67 cm³
+CSA = 2 × (22/7) × 7² = 2 × (22/7) × 49 = 2 × 22 × 7 = 308 cm²
+TSA = 3 × (22/7) × 7² = 3 × 22 × 7 = 462 cm²
+```
+
+**Example 53**: TSA of hemisphere is 462 cm². Find its radius.
+```
+3πr² = 462
+3 × (22/7) × r² = 462
+(66/7)r² = 462
+r² = 462 × 7/66 = 3234/66 = 49
+r = 7 cm
+```
+
+## 9.4 Spherical Shell
+
+### Formula:
+**Volume of material** = (4/3)π(R³ - r³)
+
+**Example 54**: Find volume of material in spherical shell with outer radius 10 cm, inner radius 8 cm.
+```
+Volume = (4/3)π(10³ - 8³) = (4/3)π(1000 - 512) = (4/3)π × 488 = (1952/3)π cm³
+= 1952 × 22/(3×7) = 1952 × 22/21 = 1952 × 1.0476 = 2044.9 cm³
+```
+
+## 9.5 MHT CET Shortcuts for Sphere
+
+### 1. Relationship Between Measures:
+- Surface area ∝ r²
+- Volume ∝ r³
+- If radius doubles: SA becomes 4×, Volume becomes 8×
+
+### 2. Sphere vs Cube:
+- Largest sphere in cube of side a: radius = a/2
+- Largest cube in sphere of radius r: side = 2r/√3
+
+### 3. Common Values to Remember:
+| r | Surface Area (π=22/7) | Volume (π=22/7) |
+|---|------------------------|------------------|
+| 3.5 cm | 154 cm² | 179.67 cm³ |
+| 7 cm | 616 cm² | 1437.33 cm³ |
+| 10.5 cm | 1386 cm² | 4851 cm³ |
+| 14 cm | 2464 cm² | 11498.67 cm³ |
+
+### 4. Hemisphere TSA Shortcut:
+TSA of hemisphere = 3πr² = CSA + Base area
+If TSA given, divide by 3π to get r²
+
+---
+
+# SECTION 10: COMBINED SOLIDS - DETAILED ANALYSIS
+
+## 10.1 Basic Principles
+
+### Volume:
+**Total volume** = Sum of volumes of individual solids
+
+### Surface Area:
+**Total surface area** = Sum of areas of all **exposed** surfaces
+- Internal contact surfaces are NOT included
+- Only surfaces visible from outside count
+
+## 10.2 Common Combinations
+
+### Type 1: Cylinder with Hemisphere on Top (Capsule shape)
+
+**Example 55**: A solid is formed by a cylinder of height 10 cm and radius 7 cm with a hemisphere of same radius on top. Find total volume and surface area.
+
+```
+Volume:
+Volume of cylinder = π × 7² × 10 = 490π cm³
+Volume of hemisphere = (2/3)π × 7³ = (2/3)π × 343 = (686/3)π cm³
+Total volume = 490π + (686/3)π = (1470π + 686π)/3 = (2156π)/3 cm³
+= 2156 × 22/(3×7) = 2156 × 22/21 = 2156 × 1.0476 = 2258.67 cm³
+
+Surface Area:
+Cylinder CSA = 2πrh = 2π × 7 × 10 = 140π cm²
+Hemisphere CSA = 2πr² = 2π × 49 = 98π cm²
+Base of cylinder (if on ground, not included) - assume open at bottom
+Total exposed area = 140π + 98π = 238π cm² = 238 × 22/7 = 748 cm²
+```
+
+### Type 2: Cylinder with Two Hemispheres (Football shape)
+
+**Example 56**: A solid consists of a cylinder of height 14 cm, radius 7 cm with hemispheres of same radius on both ends. Find total volume.
+
+```
+Volume of cylinder = π × 49 × 14 = 686π cm³
+Volume of two hemispheres = 2 × (2/3)π × 343 = (4/3)π × 343 = (1372/3)π cm³
+Total volume = 686π + (1372/3)π = (2058π + 1372π)/3 = (3430π)/3 cm³
+= 3430 × 22/(3×7) = 3430 × 22/21 = 3593.33 cm³
+```
+
+### Type 3: Cone on Cylinder
+
+**Example 57**: A tent is in form of cylinder of diameter 14 m and height 5 m, surmounted by a cone of same base radius and height 3 m. Find canvas required.
+
+```
+Radius = 7 m
+Cylinder CSA = 2πrh = 2π × 7 × 5 = 70π m²
+Slant height of cone l = √(7² + 3²) = √(49 + 9) = √58 ≈ 7.62 m
+Cone CSA = πrl = π × 7 × 7.62 = 53.34π m²
+Total canvas = 70π + 53.34π = 123.34π m² = 123.34 × 3.14 = 387.3 m²
+```
+
+### Type 4: Cube with Hemisphere on Top
+
+**Example 58**: A cube of edge 14 cm has a hemisphere of diameter 14 cm carved on top. Find total surface area.
+
+```
+Cube TSA (without top) = 5a² = 5 × 196 = 980 cm² (since top is removed)
+Hemisphere CSA = 2πr² = 2π × 49 = 98π cm²
+Base of hemisphere (circle of radius 7 cm) = πr² = 49π cm²
+But this circular area is NOT added as it's where hemisphere meets cube
+Total exposed area = 980 + 98π = 980 + 308 = 1288 cm²
+```
+
+## 10.3 MHT CET Shortcuts for Combined Solids
+
+### 1. Identify Contact Surfaces:
+Always identify which surfaces are in contact - they are not included in TSA
+
+### 2. Common Contact Scenarios:
+- Hemisphere on cylinder: Circular face of hemisphere and top of cylinder are in contact
+- Cone on cylinder: Circular base of cone and top of cylinder are in contact
+- Two cubes joined: One face of each cube is in contact
+
+### 3. Formula for Common Combinations:
+- **Cylinder + Hemisphere** (open at bottom): TSA = 2πrh + 2πr²
+- **Cylinder + Hemisphere** (closed bottom): TSA = 2πrh + 2πr² + πr² = 2πrh + 3πr²
+- **Cylinder + Cone**: TSA = 2πrh + πrl + πr² (if bottom included)
+
+---
+
+# SECTION 11: MELTING AND RECASTING PROBLEMS
+
+## 11.1 Basic Principle
+
+**Golden Rule**: When one solid is melted and recast into another shape, **volume remains constant**.
+
+Volume of original solid = Volume of new solid(s)
+
+## 11.2 Types of Problems
+
+### Type 1: One solid to another single solid
+
+**Example 59**: A metallic sphere of radius 6 cm is melted and recast into a cylinder of height 8 cm. Find radius of cylinder.
+
+```
+Volume of sphere = (4/3)π × 6³ = (4/3)π × 216 = 288π cm³
+Volume of cylinder = πr² × 8 = 8πr²
+Equating: 8πr² = 288π
+8r² = 288
+r² = 36
+r = 6 cm
+```
+
+**Example 60**: A cube of edge 11 cm is melted to form a cylinder of height 10 cm. Find radius of cylinder.
+
+```
+Volume of cube = 11³ = 1331 cm³
+Volume of cylinder = πr² × 10 = 10πr²
+10πr² = 1331
+r² = 1331/(10π) = 1331/(10 × 3.14) = 1331/31.4 = 42.39
+r = √42.39 = 6.51 cm
+```
+
+### Type 2: One solid to multiple small solids
+
+**Example 61**: How many spherical bullets of radius 2 cm can be made from a solid cube of edge 11 cm?
+
+```
+Volume of cube = 11³ = 1331 cm³
+Volume of one bullet = (4/3)π × 2³ = (4/3)π × 8 = (32π)/3 cm³
+Number of bullets = Volume of cube / Volume of one bullet
+= 1331 / [(32π)/3] = 1331 × 3 / (32π)
+= 3993 / (32 × 22/7) = 3993 × 7 / (32 × 22)
+= 27951 / 704 = 39.7 ≈ 39 bullets (whole number)
+```
+
+**Example 62**: A cone of height 24 cm and radius 6 cm is melted and recast into spheres of radius 1.5 cm. Find number of spheres.
+
+```
+Volume of cone = (1/3)π × 6² × 24 = (1/3)π × 36 × 24 = 288π cm³
+Volume of one sphere = (4/3)π × (1.5)³ = (4/3)π × 3.375 = 4.5π cm³
+Number of spheres = 288π / 4.5π = 288/4.5 = 64
+```
+
+### Type 3: Wire drawing problems
+
+**Example 63**: A copper sphere of radius 3 cm is drawn into a wire of diameter 0.4 cm. Find length of wire.
+
+```
+Volume of sphere = (4/3)π × 27 = 36π cm³
+Wire is a cylinder of radius 0.2 cm
+Volume of wire = π × (0.2)² × l = 0.04πl
+Equating: 0.04πl = 36π
+0.04l = 36
+l = 36/0.04 = 900 cm = 9 m
+```
+
+### Type 4: Mixed metals/Alloys
+
+**Example 64**: Two spheres of radii 3 cm and 4 cm are melted to form a single sphere. Find radius of new sphere.
+
+```
+Volume of first sphere = (4/3)π × 27 = 36π cm³
+Volume of second sphere = (4/3)π × 64 = (256/3)π cm³
+Total volume = 36π + (256/3)π = (108π + 256π)/3 = (364π)/3 cm³
+
+Volume of new sphere = (4/3)πR³
+(4/3)πR³ = (364π)/3
+4R³/3 = 364/3
+4R³ = 364
+R³ = 91
+R = ∛91 ≈ 4.5 cm
+```
+
+## 11.3 MHT CET Shortcuts for Melting Problems
+
+### 1. Cancel Common Factors:
+Always cancel π, 4/3, 1/3 etc. before solving
+
+### 2. For Multiple Small Solids:
+Number = (Volume of big) / (Volume of small)
+Always check if answer needs to be integer (whole number)
+
+### 3. Common Cube Roots to Memorize:
+- ∛8 = 2
+- ∛27 = 3
+- ∛64 = 4
+- ∛125 = 5
+- ∛216 = 6
+- ∛343 = 7
+- ∛512 = 8
+- ∛729 = 9
+- ∛1000 = 10
+- ∛1331 = 11
+- ∛1728 = 12
+
+### 4. Common Sphere Volume Ratios:
+- For radii in ratio a:b, volumes in ratio a³:b³
+- If radius doubles, volume becomes 8 times
+
+---
+
+# SECTION 12: SURFACE AREA AND VOLUME RATIOS
+
+## 12.1 Effect of Changing Dimensions
+
+### For Similar Figures:
+If dimensions are scaled by factor k:
+- **Area** scales by factor k²
+- **Volume** scales by factor k³
+
+### Solved Examples:
+
+**Example 65**: If the radius of a sphere is doubled, how does its volume change?
+```
+Original volume = (4/3)πr³
+New volume = (4/3)π(2r)³ = (4/3)π × 8r³ = 8 × original volume
+Volume becomes 8 times
+```
+
+**Example 66**: If each edge of a cube is doubled, find ratio of new surface area to original.
+```
+Original TSA = 6a²
+New TSA = 6(2a)² = 6 × 4a² = 24a²
+Ratio = 24a² : 6a² = 4 : 1
+```
+
+**Example 67**: If radius of cylinder is halved and height is doubled, find change in volume.
+```
+Original volume = πr²h
+New volume = π(r/2)² × (2h) = π × (r²/4) × 2h = πr²h/2 = half of original
+Volume becomes 50% of original
+```
+
+**Example 68**: If dimensions of cuboid are increased by 10% each, find percentage increase in volume.
+```
+Original volume = l × b × h
+New dimensions = 1.1l, 1.1b, 1.1h
+New volume = 1.1l × 1.1b × 1.1h = 1.331 × (l × b × h)
+Increase = 0.331 × 100 = 33.1%
+```
+
+## 12.2 Maximum/Minimum Problems
+
+### Type 1: Largest solid that can be carved from another
+
+**Example 69**: Find maximum volume of cone that can be carved out of a cube of edge 12 cm.
+
+```
+For maximum cone, base radius = side/2 = 6 cm, height = side = 12 cm
+Volume = (1/3)π × 6² × 12 = (1/3)π × 36 × 12 = 144π cm³
+= 144 × 22/7 = 452.57 cm³
+```
+
+**Example 70**: Find volume of largest sphere that can be cut from a cube of edge 10 cm.
+
+```
+Sphere diameter = edge of cube = 10 cm, so radius = 5 cm
+Volume = (4/3)π × 5³ = (4/3)π × 125 = (500π)/3 cm³
+= 500 × 22/(3×7) = 11000/21 = 523.8 cm³
+```
+
+**Example 71**: Find volume of largest cylinder that can be cut from a cube of edge 14 cm.
+
+```
+For maximum cylinder, radius = side/2 = 7 cm, height = side = 14 cm
+Volume = π × 7² × 14 = π × 49 × 14 = 686π cm³
+= 686 × 22/7 = 2156 cm³
+```
+
+### Type 2: Maximum volume for given surface area
+
+**Example 72**: For a cylinder with fixed surface area, when is volume maximum?
+
+```
+For fixed TSA = 2πr² + 2πrh = constant
+Volume is maximum when h = 2r
+Proof involves differentiation (not in syllabus but result useful)
+```
+
+## 12.3 MHT CET Shortcuts for Ratios
+
+### 1. Percentage Change Shortcut:
+If dimension increases by x%, new dimension = (100 + x)/100 times
+New volume = [(100 + x)/100]³ times
+Percentage increase = [(100 + x)³/100² - 1] × 100
+
+### 2. Common Percentage Changes:
+| % Increase in side | % Increase in area | % Increase in volume |
+|--------------------|-------------------|---------------------|
+| 10% | 21% | 33.1% |
+| 20% | 44% | 72.8% |
+| 25% | 56.25% | 95.3% |
+| 50% | 125% | 237.5% |
+
+### 3. If dimension is halved:
+Area becomes 1/4, Volume becomes 1/8
+
+### 4. For similar solids:
+Ratio of volumes = (ratio of corresponding sides)³
+Ratio of surface areas = (ratio of corresponding sides)²
+
+---
+
+# SECTION 13: QUICK REFERENCE - ALL FORMULAS
+
+## 2D Shapes - Complete Formula Table
+
+| Shape | Area | Perimeter | Diagonal/Other |
+|-------|------|-----------|----------------|
+| Triangle (general) | ½ × base × height | a + b + c | - |
+| Triangle (Heron's) | √[s(s-a)(s-b)(s-c)] | - | s = (a+b+c)/2 |
+| Equilateral Triangle | (√3/4)a² | 3a | Height = (√3/2)a |
+| Right Triangle | ½ × product of legs | a + b + c | Hypotenuse = √(a²+b²) |
+| Square | a² | 4a | Diagonal = a√2 |
+| Rectangle | l × b | 2(l + b) | Diagonal = √(l²+b²) |
+| Parallelogram | base × height | 2(a + b) | - |
+| Rhombus | ½ × d₁ × d₂ | 4a | Side = ½√(d₁²+d₂²) |
+| Trapezium | ½ × (a + b) × h | sum of all sides | Median = ½(a+b) |
+| Circle | πr² | 2πr | Diameter = 2r |
+| Sector | (θ/360) × πr² | 2r + arc length | Arc length = (θ/360)×2πr |
+| Segment | Sector area - Triangle area | - | - |
+| Annulus | π(R² - r²) | - | - |
+
+## 3D Solids - Complete Formula Table
+
+| Solid | Volume | Lateral/Curved SA | Total SA | Diagonal |
+|-------|--------|-------------------|----------|----------|
+| Cube | a³ | 4a² | 6a² | a√3 |
+| Cuboid | l × b × h | 2h(l + b) | 2(lb + bh + hl) | √(l²+b²+h²) |
+| Cylinder | πr²h | 2πrh | 2πr(h + r) | - |
+| Hollow Cylinder | πh(R² - r²) | 2πh(R + r) | 2πh(R+r) + 2π(R² - r²) | - |
+| Cone | (1/3)πr²h | πrl | πr(l + r) | l = √(r²+h²) |
+| Frustum | (πh/3)(R²+Rr+r²) | πl(R + r) | πl(R+r) + πR² + πr² | l = √[h²+(R-r)²] |
+| Sphere | (4/3)πr³ | 4πr² | 4πr² | - |
+| Hemisphere | (2/3)πr³ | 2πr² | 3πr² | - |
+| Spherical Shell | (4/3)π(R³ - r³) | 4πR² | 4πR² (outer only) | - |
+
+## Important Relations Summary
+
+1. **Pythagorean Relations:**
+   - Right triangle: h² = p² + b²
+   - Cone: l² = r² + h²
+   - Cube diagonal: d = a√3
+   - Cuboid diagonal: d = √(l² + b² + h²)
+
+2. **Volume Ratios:**
+   - Cone : Cylinder (same base, height) = 1 : 3
+   - Sphere : Cylinder (same radius, height = 2r) = 2 : 3
+   - Hemisphere : Cylinder (same radius, height = r) = 2 : 3
+
+3. **Surface Area Ratios:**
+   - Sphere : Hemisphere (curved only) = 2 : 1
+   - Cube : Sphere inscribed = 6 : π
+
+---
+
+# 🎯 MHT CET MCA EXAM STRATEGY
+
+## Topic-wise Weightage Analysis
+
+| Topic | Expected Questions | Difficulty | Priority |
+|-------|-------------------|------------|----------|
+| Area of Triangle (Heron's) | 0-1 | Easy | Medium |
+| Area of Quadrilaterals | 0-1 | Easy | Medium |
+| Circle & Sector | 1 | Easy-Moderate | High |
+| Cube & Cuboid | 1 | Easy | High |
+| Cylinder | 1 | Easy | High |
+| Cone | 0-1 | Moderate | Medium |
+| Sphere & Hemisphere | 0-1 | Easy | Medium |
+| Combined Solids | 0-1 | Moderate | Medium |
+| Melting/Recasting | 1 | Easy-Moderate | High |
+
+## Common Question Patterns with Time-Saving Approaches
+
+### Pattern 1: Direct Formula Substitution
+**Approach**: Memorize all formulas, plug in values directly
+**Time**: 30-40 seconds
+
+### Pattern 2: Find missing dimension
+**Approach**: Write formula, substitute known values, solve equation
+**Time**: 45-60 seconds
+
+### Pattern 3: Ratio-based questions
+**Approach**: Cancel common factors, work with ratios
+**Time**: 30-45 seconds
+
+### Pattern 4: Percentage change
+**Approach**: Use (1 + x/100)ⁿ formula where n=2 for area, n=3 for volume
+**Time**: 45 seconds
+
+### Pattern 5: Maximum/minimum solids
+**Approach**: Remember standard results (max cone in cube: r = a/2, h = a)
+**Time**: 30 seconds
+
+### Pattern 6: Melting problems
+**Approach**: Equate volumes, cancel π and common factors
+**Time**: 45-60 seconds
+
+## Important Values to Memorize
+
+| Value | Decimal | Use |
+|-------|---------|-----|
+| √2 | 1.414 | Square/cube diagonals |
+| √3 | 1.732 | Equilateral triangle, cube diagonal |
+| √5 | 2.236 | Special triangles |
+| π | 3.14 or 22/7 | Circle calculations |
+| π/2 | 1.57 | Half-circle |
+| 2π | 6.28 | Circumference |
+
+## Common Mistakes to Avoid
+
+1. **Unit Confusion**: Always convert to same unit before calculation
+2. **Radius vs Diameter**: Check whether given is radius or diameter
+3. **CSA vs TSA**: Read carefully what is asked
+4. **π Value**: Use 22/7 unless decimals required
+5. **Including Contact Surfaces**: In combined solids, don't add touching surfaces
+6. **Heron's Formula**: Remember to take square root at the end
+7. **Cone Volume**: Don't forget the 1/3 factor
+8. **Hemisphere TSA**: Remember to add base area (πr²) to CSA
+
+## Last Minute Revision Checklist
+
+### Must-Know Formulas:
+- [ ] Area of triangle (½ × base × height)
+- [ ] Heron's formula
+- [ ] Area of circle and sector
+- [ ] Volume of cube, cuboid
+- [ ] Volume of cylinder, cone (with 1/3 factor)
+- [ ] Volume of sphere, hemisphere
+- [ ] CSA and TSA of all solids
+- [ ] Diagonal formulas
+
+### Must-Know Shortcuts:
+- [ ] Effect of doubling/halving dimensions
+- [ ] Maximum solid carving rules
+- [ ] Melting problems - volume equality
+- [ ] Pythagorean triplets (3-4-5, 5-12-13, etc.)
+- [ ] Common cube roots (1-10)
+
+### Must-Practice Question Types:
+- [ ] Heron's formula with large numbers
+- [ ] Frustum of cone
+- [ ] Combined solids (cylinder+hemisphere)
+- [ ] Melting and recasting
+- [ ] Ratio and percentage change
+
+---

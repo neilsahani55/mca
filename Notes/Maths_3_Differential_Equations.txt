@@ -1,0 +1,701 @@
+Here is a comprehensive guide to Differential Equations for the MHT CET MCA Entrance Exam, built upon your provided material and enhanced with detailed explanations, shortcuts, and tricks as requested. The search results confirmed the specific syllabus topics and the importance of shortcuts for the exam, which have been integrated throughout the guide .
+
+# 🧠 Complete Differential Equations Guide for MHT CET MCA Entrance Exam
+
+## Exam Overview
+- **Weightage**: 4-6 questions (8-12 marks)
+- **Difficulty Level**: Moderate
+- **Focus Areas**: Order/Degree, First Order DE, Linear DE with Constant Coefficients
+- **Key Skill**: Method identification + Integration techniques + Speed
+
+---
+
+# SECTION 1: INTRODUCTION TO DIFFERENTIAL EQUATIONS
+
+## 1.1 Definition
+A differential equation is an equation that involves:
+- Independent variable(s)
+- Dependent variable
+- Derivatives of dependent variable with respect to independent variable
+
+## 1.2 Order of a Differential Equation
+**Definition**: The order of the highest derivative present in the equation.
+
+## 1.3 Degree of a Differential Equation
+**Definition**: The power of the highest order derivative, after the equation has been made free from radicals and fractions in derivatives.
+
+### ⚡ MHT CET TRICK 1: Degree Determination
+**Important**: Degree is defined **only** when the equation is a polynomial in derivatives.
+
+**Special Cases Where Degree is Not Defined (Very Important for MCQ):**
+1. **Trigonometric functions**: `sin(dy/dx) + y = 0` → Degree not defined
+2. **Exponential functions**: `e^(dy/dx) + x = y` → Degree not defined
+3. **Logarithmic functions**: `log(dy/dx) + xy = 0` → Degree not defined
+4. **Inverse trigonometric functions**: `sin⁻¹(dy/dx) + y = x` → Degree not defined
+
+### Step-by-Step Process for Degree/Order Problems
+**Step 1:** Identify the highest order derivative
+**Step 2:** Check if equation is polynomial in derivatives
+**Step 3:** If radicals exist, square/raise both sides appropriately
+**Step 4:** Find power of highest derivative
+
+**Example 1**: Find order and degree of `(d²y/dx²)³ + 2(dy/dx)⁴ + y = 0`
+- Highest derivative: d²y/dx²
+- **Order = 2**
+- Power of highest derivative = 3
+- **Degree = 3**
+
+**Example 2**: Find order and degree of `√(dy/dx) + y = x`
+- Square both sides: `dy/dx = (x - y)²`
+- **Order = 1, Degree = 1**
+
+**Example 3**: Find order and degree of `d²y/dx² = √(1 + (dy/dx)²)`
+- Square both sides: `(d²y/dx²)² = 1 + (dy/dx)²`
+- **Order = 2, Degree = 2**
+
+---
+
+# SECTION 2: FORMATION OF DIFFERENTIAL EQUATIONS
+
+## 2.1 Method of Formation
+To form a differential equation from a given relation:
+1. Differentiate the given relation as many times as the number of arbitrary constants
+2. Eliminate the arbitrary constants
+
+### ⚡ MHT CET TRICK 2: Number of Differentiations
+The number of differentiations required = **Number of arbitrary constants**
+
+**Example 4**: Form differential equation from `y = mx + c`
+```
+Given: y = mx + c
+dy/dx = m
+Since m and c are two constants, we need two derivatives:
+d²y/dx² = 0
+This is the required DE
+```
+
+**Example 5**: Form DE from `y = A cos x + B sin x`
+```
+y = A cos x + B sin x
+dy/dx = -A sin x + B cos x
+d²y/dx² = -A cos x - B sin x = -(A cos x + B sin x) = -y
+∴ d²y/dx² + y = 0
+```
+
+**Example 6**: Form DE from `y² = 4ax` (parabola family)
+```
+y² = 4ax
+Differentiating: 2y(dy/dx) = 4a
+From original: 4a = y²/x
+Substitute: 2y(dy/dx) = y²/x
+Simplify: 2x(dy/dx) = y
+or 2x dy/dx - y = 0
+```
+
+---
+
+# SECTION 3: SOLUTION OF DIFFERENTIAL EQUATIONS
+
+## 3.1 Types of Solutions
+| Type | Definition | Example |
+|------|------------|---------|
+| General Solution | Contains arbitrary constants equal to order | y = Ceˣ |
+| Particular Solution | No arbitrary constants (specific values) | y = 2eˣ |
+| Singular Solution | Cannot be obtained from general solution | Special cases |
+
+---
+
+# SECTION 4: FIRST ORDER DIFFERENTIAL EQUATIONS
+
+## 4.1 VARIABLE SEPARABLE METHOD
+
+### Standard Form
+```
+dy/dx = f(x) × g(y)
+```
+
+### Solution Steps
+1. Separate variables: `dy/g(y) = f(x) dx`
+2. Integrate both sides: `∫ dy/g(y) = ∫ f(x) dx + C`
+3. Simplify to get y as function of x
+
+### ⚡ MHT CET TRICK 3: Recognizing Separable Form
+Look for products of functions of x and y:
+- `dy/dx = eˣ⁺ʸ` → Write as `eˣ·eʸ`
+- `dy/dx = (x+1)(y²+1)` → Directly separable
+- `dy/dx = sin x cos y` → Separable
+
+**Example 7**: Solve `dy/dx = xy`
+```
+Separating: dy/y = x dx
+Integrating: ∫ dy/y = ∫ x dx
+ln|y| = x²/2 + C
+y = ±e^(x²/2 + C) = Ae^(x²/2) where A = ±e^C
+```
+
+**Example 8**: Solve `dy/dx = eˣ⁻ʸ`
+```
+dy/dx = eˣ × e⁻ʸ
+eʸ dy = eˣ dx
+∫ eʸ dy = ∫ eˣ dx
+eʸ = eˣ + C
+y = ln(eˣ + C)
+```
+
+**Example 9**: Solve `(1 + x²) dy = (1 + y²) dx`
+```
+Rewriting: dy/(1 + y²) = dx/(1 + x²)
+Integrating: ∫ dy/(1 + y²) = ∫ dx/(1 + x²)
+tan⁻¹ y = tan⁻¹ x + C
+y = tan(tan⁻¹ x + C)
+```
+
+## 4.2 HOMOGENEOUS DIFFERENTIAL EQUATIONS
+
+### Definition
+A differential equation of form `dy/dx = f(x,y)/g(x,y)` where f and g are homogeneous functions of same degree.
+
+### Test for Homogeneity
+A function F(x,y) is homogeneous of degree n if `F(kx, ky) = kⁿ F(x,y)`
+
+### ⚡ MHT CET TRICK 4: Quick Homogeneity Test
+Check if equation can be written as `dy/dx = F(y/x)`
+If all terms have same total power (degree) in x and y, it's homogeneous.
+
+**For example:** `dy/dx = (x² + y²)/(xy)` → Each term: numerator degree 2, denominator degree 2 → Homogeneous ✓
+
+### Solution Method (Substitution y = vx)
+1. Put y = vx, then `dy/dx = v + x(dv/dx)`
+2. Substitute in the equation
+3. Equation becomes separable in v and x
+4. Solve and substitute back v = y/x
+
+**Example 10**: Solve `dy/dx = (x + y)/x`
+```
+Check homogeneity: Numerator x+y (degree 1), Denominator x (degree 1) ✓
+Put y = vx, dy/dx = v + x(dv/dx)
+v + x(dv/dx) = (x + vx)/x = 1 + v
+x(dv/dx) = 1
+dv = dx/x
+∫ dv = ∫ dx/x
+v = ln|x| + C
+y/x = ln|x| + C
+y = x ln|x| + Cx
+```
+
+**Example 11**: Solve `dy/dx = (x² + y²)/(xy)`
+```
+Put y = vx, dy/dx = v + x(dv/dx)
+v + x(dv/dx) = (x² + v²x²)/(x × vx) = (1 + v²)/v
+x(dv/dx) = (1 + v²)/v - v = (1 + v² - v²)/v = 1/v
+v dv = dx/x
+∫ v dv = ∫ dx/x
+v²/2 = ln|x| + C
+v² = 2 ln|x| + 2C
+(y/x)² = 2 ln|x| + C₁
+y² = x²(2 ln|x| + C₁)
+```
+
+## 4.3 LINEAR DIFFERENTIAL EQUATIONS (FIRST ORDER)
+
+### Standard Form
+```
+dy/dx + P(x) y = Q(x)
+```
+
+### Integrating Factor (IF)
+```
+IF = e^(∫ P dx)
+```
+
+### General Solution
+```
+y × IF = ∫ (Q × IF) dx + C
+```
+
+### ⚡ MHT CET TRICK 5: Special Integrating Factors
+Sometimes the equation is not in standard form but can be converted:
+
+| Form | How to make Linear |
+|------|-------------------|
+| `dx/dy + P(y)x = Q(y)` | Treat x as dependent variable |
+| `(dy/dx) + P(x)y = Q(x)yⁿ` | Bernoulli's equation (put v = y¹⁻ⁿ) |
+
+### ⚡ MHT CET TRICK 6: Recognizing Standard Linear Form
+The equation must have:
+1. `dy/dx` term alone
+2. Coefficient of y is function of x only
+3. RHS is function of x only
+
+**Example 13**: Solve `dy/dx + 2y = 4`
+```
+Here P = 2, Q = 4
+IF = e^(∫ 2 dx) = e^(2x)
+
+Multiply equation by IF:
+e^(2x) dy/dx + 2e^(2x) y = 4e^(2x)
+d/dx(y e^(2x)) = 4e^(2x)
+
+Integrate: y e^(2x) = ∫ 4e^(2x) dx = 2e^(2x) + C
+y = 2 + Ce^(-2x)
+```
+
+**Example 14**: Solve `dy/dx + y/x = x²`
+```
+Here P = 1/x, Q = x²
+IF = e^(∫ (1/x) dx) = e^(ln x) = x
+
+Multiply: x dy/dx + y = x³
+d/dx(xy) = x³
+
+Integrate: xy = ∫ x³ dx = x⁴/4 + C
+y = x³/4 + C/x
+```
+
+**Example 15**: Solve `dy/dx + y cot x = cos x`
+```
+Here P = cot x, Q = cos x
+IF = e^(∫ cot x dx) = e^(ln|sin x|) = sin x
+
+Multiply: sin x dy/dx + y cos x = sin x cos x
+d/dx(y sin x) = sin x cos x
+
+Integrate: y sin x = ∫ sin x cos x dx
+Let u = sin x, du = cos x dx
+∫ u du = u²/2 = sin²x/2 + C
+
+y sin x = sin²x/2 + C
+y = sin x/2 + C cosec x
+```
+
+**Example 16**: Solve `dy/dx + 2y tan x = sin x`, given `y(0) = 0`
+```
+Here P = 2 tan x, Q = sin x
+IF = e^(∫ 2 tan x dx) = e^(2 ln|sec x|) = sec²x
+
+Multiply: sec²x dy/dx + 2 sec²x tan x y = sin x sec²x
+d/dx(y sec²x) = sin x sec²x = tan x sec x
+
+Integrate: y sec²x = ∫ tan x sec x dx = sec x + C
+
+At x = 0: 0 × 1 = 1 + C ⇒ C = -1
+y sec²x = sec x - 1
+y = cos x - cos²x
+```
+
+## 4.4 EXACT DIFFERENTIAL EQUATIONS
+
+### Standard Form
+```
+M(x,y) dx + N(x,y) dy = 0
+```
+
+### Condition for Exactness
+```
+∂M/∂y = ∂N/∂x
+```
+
+### ⚡ MHT CET TRICK 7: Quick Exactness Check
+For MHT CET, quickly compute partial derivatives mentally:
+- ∂M/∂y = coefficient of dy when differentiating M w.r.t y
+- ∂N/∂x = coefficient of dx when differentiating N w.r.t x
+
+### Solution Method
+```
+∫ M dx + ∫ (terms in N not containing x) dy = C
+```
+
+**Example 17**: Check if `(x² + y²) dx + 2xy dy = 0` is exact
+```
+M = x² + y², N = 2xy
+∂M/∂y = 2y
+∂N/∂x = 2y
+Since equal, equation is exact
+
+Solution: ∫ M dx = ∫ (x² + y²) dx = x³/3 + xy²
+∫ (terms in N not containing x) dy = 0 (all terms contain x)
+∴ x³/3 + xy² = C
+```
+
+---
+
+# SECTION 5: LINEAR DIFFERENTIAL EQUATIONS WITH CONSTANT COEFFICIENTS
+
+## 5.1 Second Order Homogeneous Equations
+
+### Standard Form
+```
+a d²y/dx² + b dy/dx + c y = 0
+```
+where a, b, c are constants.
+
+### Auxiliary Equation (Characteristic Equation)
+Replace:
+- d²y/dx² → m²
+- dy/dx → m
+- y → 1
+
+```
+a m² + b m + c = 0
+```
+
+## 5.2 Nature of Roots and Complementary Function (CF)
+
+| Nature of Roots | Roots | Complementary Function (CF) |
+|-----------------|-------|------------------------------|
+| Real and distinct | m₁, m₂ | y = C₁e^(m₁x) + C₂e^(m₂x) |
+| Real and equal | m₁ = m₂ = m | y = (C₁ + C₂x)e^(mx) |
+| Complex conjugate | α ± iβ | y = e^(αx)(C₁ cos βx + C₂ sin βx) |
+
+### ⚡ MHT CET TRICK 8: Writing CF Directly from Roots
+- For m = 2,3 → `C₁e²ˣ + C₂e³ˣ`
+- For m = 2,2 → `(C₁ + C₂x)e²ˣ`
+- For m = 1±2i → `eˣ(C₁ cos 2x + C₂ sin 2x)`
+
+**Example 18**: Solve `d²y/dx² - 5 dy/dx + 6y = 0`
+```
+Auxiliary equation: m² - 5m + 6 = 0
+(m - 2)(m - 3) = 0
+m = 2, 3 (real and distinct)
+CF: y = C₁e^(2x) + C₂e^(3x)
+```
+
+**Example 19**: Solve `d²y/dx² - 6 dy/dx + 9y = 0`
+```
+Auxiliary equation: m² - 6m + 9 = 0
+(m - 3)² = 0
+m = 3, 3 (real and equal)
+CF: y = (C₁ + C₂x)e^(3x)
+```
+
+**Example 20**: Solve `d²y/dx² + 4y = 0`
+```
+Auxiliary equation: m² + 4 = 0
+m² = -4
+m = ±2i (α = 0, β = 2)
+CF: y = C₁ cos 2x + C₂ sin 2x
+```
+
+**Example 21**: Solve `d²y/dx² - 2 dy/dx + 5y = 0`
+```
+Auxiliary equation: m² - 2m + 5 = 0
+m = [2 ± √(4 - 20)]/2 = [2 ± √(-16)]/2 = 1 ± 2i
+α = 1, β = 2
+CF: y = e^x(C₁ cos 2x + C₂ sin 2x)
+```
+
+## 5.3 Higher Order Homogeneous Equations
+
+For nth order linear DE with constant coefficients:
+```
+aₙ dⁿy/dxⁿ + aₙ₋₁ dⁿ⁻¹y/dxⁿ⁻¹ + ... + a₁ dy/dx + a₀ y = 0
+```
+
+Auxiliary equation: `aₙ mⁿ + aₙ₋₁ mⁿ⁻¹ + ... + a₁ m + a₀ = 0`
+
+**Example 22**: Solve `d³y/dx³ - 6 d²y/dx² + 11 dy/dx - 6y = 0`
+```
+Auxiliary equation: m³ - 6m² + 11m - 6 = 0
+(m - 1)(m - 2)(m - 3) = 0
+m = 1, 2, 3
+CF: y = C₁e^x + C₂e^(2x) + C₃e^(3x)
+```
+
+## 5.4 Non-Homogeneous Equations (Method of Undetermined Coefficients)
+
+### Standard Form
+```
+a d²y/dx² + b dy/dx + c y = f(x)
+```
+
+### General Solution
+```
+y = CF + PI
+```
+where PI = Particular Integral
+
+### Rules for Finding PI
+
+#### ⚡ MHT CET TRICK 9: PI Shortcut Table
+| f(x) | Try PI | Modification if in CF |
+|------|--------|----------------------|
+| e^(ax) | A e^(ax) | A x e^(ax) or A x² e^(ax) |
+| sin(ax) or cos(ax) | A sin(ax) + B cos(ax) | x(A sin(ax) + B cos(ax)) |
+| Polynomial (degree n) | a₀ + a₁x + ... + aₙxⁿ | No modification needed |
+| e^(ax) × polynomial | e^(ax) × polynomial | Apply modification to polynomial part |
+
+#### ⚡ MHT CET TRICK 10: When to Modify PI
+**Modification Rule**: If f(x) matches a term in CF, multiply your trial PI by x (or x² if root repeated).
+
+**Example 23**: Solve `d²y/dx² - 5 dy/dx + 6y = e^(2x)`
+```
+CF from Example 18: y_c = C₁e^(2x) + C₂e^(3x)
+Since e^(2x) is in CF, try PI = A x e^(2x)
+
+y_p' = A e^(2x) + 2A x e^(2x)
+y_p'' = 2A e^(2x) + 2A e^(2x) + 4A x e^(2x) = 4A e^(2x) + 4A x e^(2x)
+
+Substitute:
+[4A e^(2x) + 4A x e^(2x)] - 5[A e^(2x) + 2A x e^(2x)] + 6[A x e^(2x)] = e^(2x)
+
+For terms without x: 4A - 5A = -A
+For terms with x: 4A x - 10A x + 6A x = 0
+
+So -A e^(2x) = e^(2x) ⇒ A = -1
+PI = -x e^(2x)
+General solution: y = C₁e^(2x) + C₂e^(3x) - x e^(2x)
+```
+
+**Example 24**: Solve `d²y/dx² + 4y = sin 2x`
+```
+CF: y_c = C₁ cos 2x + C₂ sin 2x
+Since sin 2x and cos 2x are in CF, try PI = x(A cos 2x + B sin 2x)
+
+y_p' = (A cos 2x + B sin 2x) + x(-2A sin 2x + 2B cos 2x)
+y_p'' = (-2A sin 2x + 2B cos 2x) + (-2A sin 2x + 2B cos 2x) + x(-4A cos 2x - 4B sin 2x)
+      = (-4A sin 2x + 4B cos 2x) - 4x(A cos 2x + B sin 2x)
+
+Substitute in d²y/dx² + 4y:
+[(-4A sin 2x + 4B cos 2x) - 4x(A cos 2x + B sin 2x)] + 4[x(A cos 2x + B sin 2x)] = sin 2x
+-4A sin 2x + 4B cos 2x = sin 2x
+
+Comparing: -4A = 1 ⇒ A = -1/4, 4B = 0 ⇒ B = 0
+PI = -x/4 cos 2x
+General solution: y = C₁ cos 2x + C₂ sin 2x - (x/4) cos 2x
+```
+
+**Example 25**: Solve `d²y/dx² - 3 dy/dx + 2y = x²`
+```
+CF: m² - 3m + 2 = 0 ⇒ m = 1, 2
+y_c = C₁e^x + C₂e^(2x)
+
+For PI: Try y_p = Ax² + Bx + C (polynomial of same degree)
+y_p' = 2Ax + B
+y_p'' = 2A
+
+Substitute:
+2A - 3(2Ax + B) + 2(Ax² + Bx + C) = x²
+2A - 6Ax - 3B + 2Ax² + 2Bx + 2C = x²
+
+Comparing coefficients:
+x²: 2A = 1 ⇒ A = 1/2
+x: -6A + 2B = 0 ⇒ -3 + 2B = 0 ⇒ 2B = 3 ⇒ B = 3/2
+Constant: 2A - 3B + 2C = 0 ⇒ 1 - 9/2 + 2C = 0 ⇒ 2C = 7/2 ⇒ C = 7/4
+
+PI = x²/2 + 3x/2 + 7/4
+General solution: y = C₁e^x + C₂e^(2x) + x²/2 + 3x/2 + 7/4
+```
+
+---
+
+# SECTION 6: HOMOGENEOUS LINEAR DIFFERENTIAL EQUATIONS (CAUCHY-EULER EQUATION)
+
+## 6.1 Standard Form
+```
+xⁿ dⁿy/dxⁿ + a₁ xⁿ⁻¹ dⁿ⁻¹y/dxⁿ⁻¹ + ... + aₙ₋₁ x dy/dx + aₙ y = f(x)
+```
+
+## 6.2 Solution Method
+
+### Substitution Method
+Put `x = eᶻ` or `z = ln x`
+Then:
+- `x dy/dx = Dy` where D = d/dz
+- `x² d²y/dx² = D(D-1)y`
+- `x³ d³y/dx³ = D(D-1)(D-2)y`
+
+### ⚡ MHT CET TRICK 11: Cauchy-Euler Shortcut
+For homogeneous Cauchy-Euler equation `ax²y" + bxy' + cy = 0`:
+Try `y = xᵐ` directly without substitution!
+This gives auxiliary equation: `am(m-1) + bm + c = 0`
+
+**Proof**: If `y = xᵐ`, then `y' = m xᵐ⁻¹`, `y" = m(m-1)xᵐ⁻²`
+Substitute in `ax²y" + bxy' + cy = 0`:
+`ax²·m(m-1)xᵐ⁻² + bx·m xᵐ⁻¹ + c xᵐ = 0`
+`am(m-1)xᵐ + bm xᵐ + c xᵐ = 0`
+`[am(m-1) + bm + c] xᵐ = 0`
+∴ `am(m-1) + bm + c = 0`
+
+**Example 26**: Solve `x² d²y/dx² + x dy/dx - y = 0`
+```
+Using shortcut: Try y = xᵐ
+am(m-1) + bm + c = 0 with a=1, b=1, c=-1
+m(m-1) + m - 1 = 0
+m² - m + m - 1 = 0
+m² - 1 = 0
+m = ±1
+Solution: y = C₁x¹ + C₂x⁻¹ = C₁x + C₂/x
+```
+
+**Example 27**: Solve `x² d²y/dx² - 2x dy/dx + 2y = x³`
+```
+For homogeneous part, try y = xᵐ
+a=1, b=-2, c=2
+m(m-1) - 2m + 2 = 0
+m² - m - 2m + 2 = 0
+m² - 3m + 2 = 0
+(m-1)(m-2) = 0
+m = 1, 2
+CF: y_c = C₁x + C₂x²
+
+For PI: Since RHS = x³, try y_p = Ax³
+Substitute in original:
+x²(6Ax) - 2x(3Ax²) + 2(Ax³) = x³
+6Ax³ - 6Ax³ + 2Ax³ = x³
+2A x³ = x³ ⇒ A = 1/2
+PI = x³/2
+
+General solution: y = C₁x + C₂x² + x³/2
+```
+
+**Example 28**: Solve `x² d²y/dx² + x dy/dx + y = log x`
+```
+For homogeneous part, try y = xᵐ
+a=1, b=1, c=1
+m(m-1) + m + 1 = 0
+m² - m + m + 1 = 0
+m² + 1 = 0
+m = ±i
+CF: y_c = C₁ cos(ln x) + C₂ sin(ln x)  [since x^(i) = e^(i ln x)]
+
+For PI: Put x = eᶻ, z = ln x
+Let D = d/dz
+Then: x dy/dx = Dy
+      x² d²y/dx² = D(D-1)y
+
+Substitute:
+D(D-1)y + Dy + y = z
+(D² - D + D + 1)y = z
+(D² + 1)y = z
+
+For PI: Try y_p = Az + B
+D(y_p) = A, D²(y_p) = 0
+Substitute: 0 + 1·(Az + B) = z
+⇒ Az + B = z
+Comparing: A = 1, B = 0
+PI = z = ln x
+
+General solution: y = C₁ cos(ln x) + C₂ sin(ln x) + ln x
+```
+
+---
+
+# SECTION 7: APPLICATIONS OF DIFFERENTIAL EQUATIONS
+
+## 7.1 Growth and Decay Problems
+
+**Form**: `dN/dt = kN` (growth) or `dN/dt = -kN` (decay)
+**Solution**: `N = N₀ e^(kt)` or `N = N₀ e^(-kt)`
+
+### ⚡ MHT CET TRICK 12: Half-Life Formula
+For decay: `t½ = (ln 2)/k`
+For growth doubling time: `t₂ = (ln 2)/k`
+
+**Example 29**: A radioactive substance decays at a rate proportional to its mass. If half-life is 10 years, find time for 90% decay.
+```
+Let N be mass at time t
+dN/dt = -λN
+N = N₀ e^(-λt)
+
+Half-life: N₀/2 = N₀ e^(-10λ)
+e^(-10λ) = 1/2
+-10λ = ln(1/2) = -ln 2
+λ = (ln 2)/10
+
+For 90% decay: N = 0.1 N₀
+0.1 N₀ = N₀ e^(-λt)
+e^(-λt) = 0.1
+-λt = ln 0.1 = -ln 10
+t = (ln 10)/λ = (ln 10)/(ln 2/10) = 10(ln 10/ln 2)
+t = 10 × 3.3219 ≈ 33.22 years
+```
+
+## 7.2 Newton's Law of Cooling
+
+**Form**: `dT/dt = -k(T - Tₘ)`
+**Solution**: `T - Tₘ = (T₀ - Tₘ) e^(-kt)`
+
+**Example 30**: A body at 100°C is placed in room at 20°C. After 10 min, temperature is 60°C. Find time to reach 30°C.
+```
+T - 20 = (100 - 20) e^(-kt) = 80 e^(-kt)
+At t = 10: 60 - 20 = 40 = 80 e^(-10k)
+e^(-10k) = 1/2
+-10k = ln(1/2) = -ln 2
+k = (ln 2)/10
+
+For T = 30: 30 - 20 = 10 = 80 e^(-kt)
+e^(-kt) = 1/8
+-kt = ln(1/8) = -ln 8
+t = (ln 8)/k = (ln 8)/(ln 2/10) = 10(ln 8/ln 2) = 10 × 3 = 30 minutes
+```
+
+---
+
+# SECTION 8: QUICK REFERENCE - ALL FORMULAS IN ONE PLACE
+
+## Order and Degree
+| Concept | Method |
+|---------|--------|
+| Order | Highest derivative |
+| Degree | Power of highest derivative (after removing radicals) |
+
+## First Order DE
+
+| Type | Form | Method | Solution |
+|------|------|--------|----------|
+| Variable Separable | `dy/dx = f(x)g(y)` | Separate & integrate | `∫ dy/g(y) = ∫ f(x) dx + C` |
+| Homogeneous | `dy/dx = F(y/x)` | Put `y = vx` | Solve separable in v and x |
+| Linear | `dy/dx + P(x)y = Q(x)` | `IF = e^(∫ P dx)` | `y·IF = ∫(Q·IF) dx + C` |
+| Exact | `M dx + N dy = 0` | Check `∂M/∂y = ∂N/∂x` | `∫ M dx + ∫` (terms in N without x) `dy = C` |
+
+## Second Order Linear with Constant Coefficients
+
+**Equation**: `a d²y/dx² + b dy/dx + c y = f(x)`
+**Solution**: `y = CF + PI`
+
+### Complementary Function (from `am² + bm + c = 0`)
+
+| Roots | CF |
+|-------|-----|
+| Real distinct m₁, m₂ | `C₁e^(m₁x) + C₂e^(m₂x)` |
+| Real equal m | `(C₁ + C₂x)e^(mx)` |
+| Complex α ± iβ | `e^(αx)(C₁ cos βx + C₂ sin βx)` |
+
+### Particular Integral for f(x)
+
+| f(x) | Try PI |
+|------|--------|
+| `e^(ax)` | `A e^(ax)` [or `Ax e^(ax)` if in CF] |
+| `sin(ax)` or `cos(ax)` | `A sin(ax) + B cos(ax)` [or x times if in CF] |
+| Polynomial | Polynomial of same degree |
+| `e^(ax)V(x)` | `e^(ax) ×` [PI for V(x) with D→D+a] |
+
+## Cauchy-Euler Equation
+
+**Form**: `xⁿ dⁿy/dxⁿ + a₁ xⁿ⁻¹ dⁿ⁻¹y/dxⁿ⁻¹ + ... + aₙ y = f(x)`
+
+**Substitution**: `x = eᶻ`, `z = ln x`
+- `x dy/dx = Dy`
+- `x² d²y/dx² = D(D-1)y`
+- where `D = d/dz`
+
+**Shortcut for Homogeneous**: Try `y = xᵐ` → get `am(m-1) + bm + c = 0`
+
+---
+
+# 📝 MHT CET EXAM TIPS & TRICKS SUMMARY
+
+| Topic | Trick |
+|-------|-------|
+| **Degree** | Not defined if sin, cos, exp, log of derivatives appear |
+| **Order** | Simply count highest derivative |
+| **Variable Separable** | Look for products f(x)·g(y) |
+| **Homogeneous** | Check if all terms have same total degree |
+| **Linear (1st order)** | Must have form `dy/dx + P(x)y = Q(x)` |
+| **Integrating Factor** | For linear: `IF = e^(∫ P dx)` |
+| **CF from roots** | For m = 2,3 → `C₁e²ˣ + C₂e³ˣ`; For m = 2,2 → `(C₁ + C₂x)e²ˣ` |
+| **PI modification** | If f(x) matches CF term, multiply trial PI by x |
+| **Cauchy-Euler** | Try `y = xᵐ` directly without substitution |
+| **Applications** | Growth/Decay: `N = N₀e^(±kt)`; Cooling: `T - Tₘ = (T₀ - Tₘ)e^(-kt)` |
+
+---

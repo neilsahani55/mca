@@ -1,0 +1,2677 @@
+# COMPLETE ALGEBRA GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## EXAM OVERVIEW
+- **Total Marks**: 60 (30 questions in Mathematics & Statistics)
+- **Time**: 90 minutes total for entire paper
+- **Algebra Weightage**: 40-50% of Mathematics section (12-15 questions)
+- **Difficulty Level**: Class 11-12 level + Basic Engineering Mathematics
+- **Question Types**: MCQs with 4 options, no negative marking
+- **Time per question**: Average 3 minutes per question
+
+---
+
+# SECTION 1: FUNDAMENTAL OPERATIONS IN ALGEBRA
+
+## 1.1 Basic Concepts - Detailed Explanation
+
+### Types of Algebraic Expressions with Examples
+
+| Type | Definition | Example | Degree | Terms |
+|------|------------|---------|--------|-------|
+| **Monomial** | One term only | 5x², -3y, 7, 2xy | Sum of exponents | 1 |
+| **Binomial** | Two terms connected by + or - | x + 5, 2x² - 3y, a² + b² | Highest degree | 2 |
+| **Trinomial** | Three terms | x² + 3x + 2, a + b + c | Highest degree | 3 |
+| **Polynomial** | Many terms (general term) | 3x⁴ + 2x³ - x + 5 | Highest degree | ≥ 2 |
+
+### Degree of Polynomial - Detailed Classification
+
+| Type | Degree | General Form | Example |
+|------|--------|--------------|---------|
+| **Constant** | 0 | c | 7, -3, 0 |
+| **Linear** | 1 | ax + b | 2x + 5, 3y - 1 |
+| **Quadratic** | 2 | ax² + bx + c | x² - 5x + 6 |
+| **Cubic** | 3 | ax³ + bx² + cx + d | 2x³ - x² + 3x - 1 |
+| **Biquadratic (Quartic)** | 4 | ax⁴ + bx³ + cx² + dx + e | x⁴ - 3x² + 2 |
+
+### Important Points to Remember
+1. **Degree of zero polynomial** is not defined
+2. **Degree of constant polynomial** (non-zero) = 0
+3. **Like terms**: Same variable with same power (e.g., 3x² and -5x²)
+4. **Unlike terms**: Different variables or same variable with different powers
+
+## 1.2 Operations on Algebraic Expressions - Detailed Methods
+
+### Addition and Subtraction - Step by Step
+**Rule**: Add/subtract only like terms (same variable with same power)
+
+**Example 1**: Add (3x² + 2x - 5) and (x² - 4x + 7)
+
+**Step-by-Step Solution:**
+```
+Step 1: Write both expressions vertically aligning like terms
+        3x² + 2x - 5
+      +  x² - 4x + 7
+      -----------------
+Step 2: Add coefficients of like terms
+        x² terms: 3 + 1 = 4 → 4x²
+        x terms: 2 + (-4) = -2 → -2x
+        Constants: -5 + 7 = 2 → 2
+Step 3: Write final expression
+        = 4x² - 2x + 2
+```
+
+**Example 2**: Subtract (2x² - 3x + 4) from (5x² + x - 2)
+
+**Step-by-Step Solution:**
+```
+Step 1: Write as (5x² + x - 2) - (2x² - 3x + 4)
+Step 2: Distribute negative sign to each term in second bracket
+        = 5x² + x - 2 - 2x² + 3x - 4
+Step 3: Group like terms
+        = (5x² - 2x²) + (x + 3x) + (-2 - 4)
+Step 4: Simplify
+        = 3x² + 4x - 6
+```
+
+### Multiplication - Detailed Methods
+
+#### Method 1: Distributive Law (Horizontal Method)
+**Formula**: a(b + c) = ab + ac
+
+**Example 3**: Multiply (2x + 3)(x - 4)
+
+**Step-by-Step Solution:**
+```
+Step 1: Distribute first term of first bracket
+        (2x + 3)(x - 4) = 2x(x - 4) + 3(x - 4)
+Step 2: Distribute again
+        = 2x² - 8x + 3x - 12
+Step 3: Combine like terms
+        = 2x² - 5x - 12
+```
+
+**Example 4**: Multiply (x + 2)(x² - 3x + 5)
+
+**Step-by-Step Solution:**
+```
+Step 1: Multiply x with each term of second bracket
+        x(x² - 3x + 5) = x³ - 3x² + 5x
+Step 2: Multiply 2 with each term of second bracket
+        2(x² - 3x + 5) = 2x² - 6x + 10
+Step 3: Add results
+        = x³ - 3x² + 5x + 2x² - 6x + 10
+Step 4: Combine like terms
+        = x³ - x² - x + 10
+```
+
+#### Method 2: Column Method (Vertical Multiplication)
+**Example**: Multiply (2x² + 3x - 1) by (x - 2)
+
+```
+        2x² + 3x - 1
+      ×        x - 2
+      ----------------
+        2x² + 3x - 1   (multiply by x)
+      -4x² - 6x + 2    (multiply by -2, align terms)
+      ----------------
+      -2x² - 3x + 1    (add)
+```
+
+### Division - Synthetic Division Method
+
+**Synthetic Division** is a shortcut method for dividing a polynomial by a linear divisor of form (x - a).
+
+**Example 5**: Divide 2x³ - 5x² + 3x - 7 by (x - 2)
+
+**Step-by-Step Synthetic Division:**
+
+```
+Step 1: Write coefficients of dividend in order of descending powers
+        If any power is missing, use 0 as coefficient
+        Coefficients: 2, -5, 3, -7
+
+Step 2: Write the root of divisor (x - a) → a = 2 on left
+        2 | 2  -5   3  -7
+          |    4  -2   2
+          ----------------
+            2  -1   1  -5
+
+Step 3: Bring down first coefficient (2)
+
+Step 4: Multiply by divisor root: 2 × 2 = 4, add to -5 = -1
+
+Step 5: Multiply -1 × 2 = -2, add to 3 = 1
+
+Step 6: Multiply 1 × 2 = 2, add to -7 = -5
+
+Step 7: Interpret result
+        Last number (-5) is remainder
+        Previous numbers are coefficients of quotient
+        Quotient: 2x² - x + 1
+        Remainder: -5
+
+Therefore: (2x³ - 5x² + 3x - 7) ÷ (x - 2) = 2x² - x + 1 - 5/(x - 2)
+```
+
+### Important Division Rules
+1. **Remainder Theorem**: When polynomial P(x) is divided by (x - a), remainder = P(a)
+2. **Factor Theorem**: If P(a) = 0, then (x - a) is a factor of P(x)
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 1
+
+### Shortcut 1: Quick Addition/Subtraction
+For expressions with many terms, group coefficients in your mind:
+- Write coefficients in order: [coeff of x³, x², x, constant]
+- Example: (3x³ - 2x + 5) + (x³ + 4x² - 3) = [3+1, 0+4, -2+0, 5-3] = 4x³ + 4x² - 2x + 2
+
+### Shortcut 2: FOIL Method for Binomial Multiplication
+**FOIL** = First, Outer, Inner, Last
+- (a + b)(c + d) = ac + ad + bc + bd
+- Example: (2x + 3)(x - 4) = (2x)(x) + (2x)(-4) + (3)(x) + (3)(-4) = 2x² - 8x + 3x - 12 = 2x² - 5x - 12
+
+### Shortcut 3: Special Product Patterns
+1. (x + a)(x + b) = x² + (a + b)x + ab
+2. (x + a)(x - b) = x² + (a - b)x - ab
+3. (ax + b)(cx + d) = acx² + (ad + bc)x + bd
+
+### Shortcut 4: Synthetic Division Trick
+For divisor (x + a), use root = -a in synthetic division
+Example: Divide by (x + 3), use -3 in synthetic division
+
+### Common MHT CET Question Patterns
+1. Find remainder without actual division
+2. Identify degree of given expression
+3. Simplify and find coefficient of specific term
+4. Operations with algebraic fractions
+
+---
+
+# SECTION 2: EXPANSION
+
+## 2.1 Standard Algebraic Identities - Complete List
+
+### Basic Identities (Must Memorize)
+
+| Identity No. | Formula | Verbal Form |
+|--------------|---------|-------------|
+| 1 | (a + b)² = a² + 2ab + b² | Square of sum |
+| 2 | (a - b)² = a² - 2ab + b² | Square of difference |
+| 3 | a² - b² = (a - b)(a + b) | Difference of squares |
+| 4 | (x + a)(x + b) = x² + (a + b)x + ab | Product of binomials |
+| 5 | (a + b)³ = a³ + 3a²b + 3ab² + b³ | Cube of sum |
+| 6 | (a - b)³ = a³ - 3a²b + 3ab² - b³ | Cube of difference |
+| 7 | a³ + b³ = (a + b)(a² - ab + b²) | Sum of cubes |
+| 8 | a³ - b³ = (a - b)(a² + ab + b²) | Difference of cubes |
+
+### Advanced Identities
+
+| Identity No. | Formula |
+|--------------|---------|
+| 9 | (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca |
+| 10 | (a + b + c)³ = a³ + b³ + c³ + 3(a + b)(b + c)(c + a) |
+| 11 | a² + b² = (a + b)² - 2ab |
+| 12 | a² + b² = (a - b)² + 2ab |
+| 13 | (a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴ |
+| 14 | (a - b)⁴ = a⁴ - 4a³b + 6a²b² - 4ab³ + b⁴ |
+| 15 | a⁴ + a²b² + b⁴ = (a² + ab + b²)(a² - ab + b²) |
+| 16 | a⁴ + 4b⁴ = (a² + 2ab + 2b²)(a² - 2ab + 2b²) |
+
+### Special Expansions
+1. **(x + 1/x)² = x² + 2 + 1/x²**
+2. **(x - 1/x)² = x² - 2 + 1/x²**
+3. **(x + 1/x)³ = x³ + 3x + 3/x + 1/x³**
+4. **(x - 1/x)³ = x³ - 3x + 3/x - 1/x³**
+
+## 2.2 Solved Examples with Detailed Steps
+
+**Example 6**: Expand (3x + 2y)²
+
+**Solution:**
+```
+Using identity (a + b)² = a² + 2ab + b²
+Here a = 3x, b = 2y
+
+(3x + 2y)² = (3x)² + 2(3x)(2y) + (2y)²
+            = 9x² + 12xy + 4y²
+```
+
+**Example 7**: Expand (2x - 5)³
+
+**Solution:**
+```
+Using identity (a - b)³ = a³ - 3a²b + 3ab² - b³
+Here a = 2x, b = 5
+
+(2x - 5)³ = (2x)³ - 3(2x)²(5) + 3(2x)(5)² - 5³
+           = 8x³ - 3(4x²)(5) + 3(2x)(25) - 125
+           = 8x³ - 60x² + 150x - 125
+```
+
+**Example 8**: Expand (x + 2y - 3z)²
+
+**Solution:**
+```
+Using identity (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca
+Here a = x, b = 2y, c = -3z
+
+(x + 2y - 3z)² = x² + (2y)² + (-3z)² + 2(x)(2y) + 2(2y)(-3z) + 2(-3z)(x)
+                = x² + 4y² + 9z² + 4xy - 12yz - 6zx
+```
+
+**Example 9**: If a + b + c = 0, prove that a³ + b³ + c³ = 3abc
+
+**Proof with Detailed Reasoning:**
+```
+We know the identity:
+a³ + b³ + c³ - 3abc = (a + b + c)(a² + b² + c² - ab - bc - ca)
+
+This is a standard factorization result.
+
+Given that a + b + c = 0
+Substituting in the above identity:
+a³ + b³ + c³ - 3abc = 0 × (a² + b² + c² - ab - bc - ca)
+a³ + b³ + c³ - 3abc = 0
+
+Therefore: a³ + b³ + c³ = 3abc
+
+This is a very important result frequently used in MHT CET.
+```
+
+**Example 10**: Find the value of x² + 1/x² if x + 1/x = 3
+
+**Solution:**
+```
+We know that (x + 1/x)² = x² + 2 + 1/x²
+
+Given: x + 1/x = 3
+Square both sides:
+(x + 1/x)² = 3²
+x² + 2 + 1/x² = 9
+x² + 1/x² = 9 - 2 = 7
+```
+
+**Example 11**: Find the value of x³ + 1/x³ if x + 1/x = 2
+
+**Solution:**
+```
+We know that (x + 1/x)³ = x³ + 3x + 3/x + 1/x³
+                        = x³ + 1/x³ + 3(x + 1/x)
+
+Given: x + 1/x = 2
+Cube both sides:
+(x + 1/x)³ = 2³ = 8
+
+But (x + 1/x)³ = x³ + 1/x³ + 3(x + 1/x)
+So: 8 = x³ + 1/x³ + 3(2)
+8 = x³ + 1/x³ + 6
+x³ + 1/x³ = 8 - 6 = 2
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 2
+
+### Shortcut 1: Direct Application
+Memorize the identities and apply directly without expanding step by step.
+
+### Shortcut 2: Pattern Recognition
+- For (a + b)²: First term² + 2×First×Second + Second²
+- For (a - b)²: First term² - 2×First×Second + Second²
+- For (a + b)³: a³ + 3a²b + 3ab² + b³ (coefficients: 1, 3, 3, 1)
+- For (a - b)³: a³ - 3a²b + 3ab² - b³
+
+### Shortcut 3: Pascal's Triangle for Higher Powers
+Pascal's Triangle gives coefficients for (a + b)ⁿ:
+```
+n=0:             1
+n=1:           1   1
+n=2:         1   2   1
+n=3:       1   3   3   1
+n=4:     1   4   6   4   1
+n=5:   1   5  10  10   5   1
+```
+
+### Shortcut 4: Value of Expressions
+For expressions like xⁿ + 1/xⁿ:
+- If x + 1/x = k, then:
+  - x² + 1/x² = k² - 2
+  - x³ + 1/x³ = k³ - 3k
+  - x⁴ + 1/x⁴ = (x² + 1/x²)² - 2 = (k² - 2)² - 2
+
+### Shortcut 5: Symmetric Expressions
+If a + b + c = 0, then:
+- a² + b² + c² = -2(ab + bc + ca)
+- a³ + b³ + c³ = 3abc
+- a⁴ + b⁴ + c⁴ = 2(a²b² + b²c² + c²a²)
+
+### Common MHT CET Question Patterns
+1. Expand using identities
+2. Find value of expression given condition
+3. Prove identities
+4. Find coefficient of specific term after expansion
+
+---
+
+# SECTION 3: FACTORIZATION
+
+## 3.1 Methods of Factorization - Detailed Explanation
+
+### Method 1: Taking Common Factor (Greatest Common Factor)
+
+**Principle**: Identify the HCF of all terms and factor it out.
+
+**Formula**: ab + ac = a(b + c)
+
+**Example 12**: Factorize 6x²y + 9xy²
+
+**Step-by-Step Solution:**
+```
+Step 1: Find HCF of coefficients: HCF(6,9) = 3
+Step 2: Find common variables with lowest power: x¹, y¹
+Step 3: HCF = 3xy
+Step 4: Divide each term by HCF:
+        6x²y ÷ 3xy = 2x
+        9xy² ÷ 3xy = 3y
+Step 5: Write: 3xy(2x + 3y)
+```
+
+**Example 13**: Factorize 4a³b² - 8a²b³ + 12a²b²
+
+**Solution:**
+```
+HCF of coefficients: HCF(4,8,12) = 4
+Common variables: a²b² (lowest powers)
+HCF = 4a²b²
+
+4a³b² ÷ 4a²b² = a
+-8a²b³ ÷ 4a²b² = -2b
+12a²b² ÷ 4a²b² = 3
+
+Therefore: 4a²b²(a - 2b + 3)
+```
+
+### Method 2: Difference of Squares
+
+**Principle**: Any expression of form a² - b² can be factored as (a - b)(a + b)
+
+**Formula**: a² - b² = (a - b)(a + b)
+
+**Example 14**: Factorize 9x² - 16y²
+
+**Solution:**
+```
+9x² - 16y² = (3x)² - (4y)²
+            = (3x - 4y)(3x + 4y)
+```
+
+**Example 15**: Factorize x⁴ - 81
+
+**Solution:**
+```
+x⁴ - 81 = (x²)² - 9²
+        = (x² - 9)(x² + 9)
+        = (x - 3)(x + 3)(x² + 9)
+```
+
+### Method 3: Perfect Square Trinomial
+
+**Principle**: Trinomials of form a² ± 2ab + b² are perfect squares.
+
+**Formulas**:
+- a² + 2ab + b² = (a + b)²
+- a² - 2ab + b² = (a - b)²
+
+**Example 16**: Factorize 4x² + 12xy + 9y²
+
+**Solution:**
+```
+Check if it matches pattern a² + 2ab + b²:
+4x² = (2x)²
+9y² = (3y)²
+Middle term: 2(2x)(3y) = 12xy ✓
+
+Therefore: 4x² + 12xy + 9y² = (2x + 3y)²
+```
+
+**Example 17**: Factorize 25a² - 30ab + 9b²
+
+**Solution:**
+```
+25a² = (5a)²
+9b² = (3b)²
+Middle term: -2(5a)(3b) = -30ab ✓
+
+Therefore: 25a² - 30ab + 9b² = (5a - 3b)²
+```
+
+### Method 4: Sum/Difference of Cubes
+
+**Formulas**:
+- a³ + b³ = (a + b)(a² - ab + b²)
+- a³ - b³ = (a - b)(a² + ab + b²)
+
+**Example 18**: Factorize 8x³ + 27y³
+
+**Solution:**
+```
+8x³ = (2x)³
+27y³ = (3y)³
+
+8x³ + 27y³ = (2x)³ + (3y)³
+            = (2x + 3y)[(2x)² - (2x)(3y) + (3y)²]
+            = (2x + 3y)(4x² - 6xy + 9y²)
+```
+
+**Example 19**: Factorize 125 - 64x³
+
+**Solution:**
+```
+125 = 5³
+64x³ = (4x)³
+
+125 - 64x³ = 5³ - (4x)³
+            = (5 - 4x)[5² + 5(4x) + (4x)²]
+            = (5 - 4x)(25 + 20x + 16x²)
+```
+
+### Method 5: Quadratic Trinomial (Splitting Middle Term)
+
+**Principle**: For ax² + bx + c, find two numbers p and q such that:
+- p + q = b
+- p × q = ac
+
+Then split middle term: ax² + px + qx + c and factor by grouping.
+
+**Example 20**: Factorize 2x² + 7x + 3
+
+**Step-by-Step Solution:**
+```
+Step 1: Identify a = 2, b = 7, c = 3
+Step 2: Find ac = 2 × 3 = 6
+Step 3: Find factors of 6: (1,6), (2,3), (-1,-6), (-2,-3)
+Step 4: Find pair that sums to b = 7: 1 + 6 = 7 ✓
+Step 5: Split middle term: 2x² + 7x + 3 = 2x² + 6x + x + 3
+Step 6: Group: (2x² + 6x) + (x + 3)
+Step 7: Factor each group: 2x(x + 3) + 1(x + 3)
+Step 8: Take common factor: (x + 3)(2x + 1)
+```
+
+**Example 21**: Factorize 6x² - 13x + 6
+
+**Solution:**
+```
+a = 6, b = -13, c = 6
+ac = 36
+Factors of 36 that sum to -13: (-4) + (-9) = -13 ✓
+
+6x² - 13x + 6 = 6x² - 4x - 9x + 6
+               = (6x² - 4x) - (9x - 6)
+               = 2x(3x - 2) - 3(3x - 2)
+               = (3x - 2)(2x - 3)
+```
+
+### Method 6: Factorization by Grouping
+
+**Principle**: Group terms with common factors and then factor.
+
+**Example 22**: Factorize x³ - 2x² - 5x + 10
+
+**Solution:**
+```
+Group as: (x³ - 2x²) + (-5x + 10)
+Factor each group: x²(x - 2) - 5(x - 2)
+Take common factor: (x - 2)(x² - 5)
+Further factor if possible: (x - 2)(x - √5)(x + √5)
+```
+
+**Example 23**: Factorize a² + ab + ac + bc
+
+**Solution:**
+```
+Group as: (a² + ab) + (ac + bc)
+         = a(a + b) + c(a + b)
+         = (a + b)(a + c)
+```
+
+## 3.2 Special Factorization Results
+
+### Result 1: a⁴ + a²b² + b⁴
+**Formula**: a⁴ + a²b² + b⁴ = (a² + ab + b²)(a² - ab + b²)
+
+**Proof**: 
+```
+a⁴ + a²b² + b⁴ = (a⁴ + 2a²b² + b⁴) - a²b²
+                = (a² + b²)² - (ab)²
+                = (a² + b² - ab)(a² + b² + ab)
+                = (a² - ab + b²)(a² + ab + b²)
+```
+
+### Result 2: a⁴ + 4b⁴ (Sophie Germain Identity)
+**Formula**: a⁴ + 4b⁴ = (a² + 2ab + 2b²)(a² - 2ab + 2b²)
+
+**Proof**:
+```
+a⁴ + 4b⁴ = (a⁴ + 4a²b² + 4b⁴) - 4a²b²
+          = (a² + 2b²)² - (2ab)²
+          = (a² + 2b² - 2ab)(a² + 2b² + 2ab)
+          = (a² - 2ab + 2b²)(a² + 2ab + 2b²)
+```
+
+### Result 3: x⁴ + x² + 1
+**Formula**: x⁴ + x² + 1 = (x² + x + 1)(x² - x + 1)
+
+**Example 24**: Factorize x⁴ + x² + 1
+
+**Solution:**
+```
+x⁴ + x² + 1 = (x⁴ + 2x² + 1) - x²
+             = (x² + 1)² - x²
+             = (x² + 1 - x)(x² + 1 + x)
+             = (x² - x + 1)(x² + x + 1)
+```
+
+### Result 4: x³ + y³ + z³ - 3xyz
+**Formula**: x³ + y³ + z³ - 3xyz = (x + y + z)(x² + y² + z² - xy - yz - zx)
+
+**Example 25**: If x + y + z = 0, then x³ + y³ + z³ = 3xyz (already proved)
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 3
+
+### Shortcut 1: Check for Common Factor First
+Always check if there's a common factor before applying other methods.
+
+### Shortcut 2: Recognize Patterns Quickly
+- **Difference of squares**: Look for a² - b² form
+- **Perfect square**: Check if first and last terms are perfect squares
+- **Sum/difference of cubes**: Look for perfect cubes
+
+### Shortcut 3: Splitting Middle Term - Quick Method
+For ax² + bx + c:
+1. Multiply a and c: ac
+2. Find factors of ac that sum to b
+3. Write factors directly: (ax + p)(x + q/a) where p and q are the factors
+
+**Example**: 2x² + 7x + 3
+ac = 6, factors 1 and 6 sum to 7
+Write: (2x + 1)(x + 3/1) = (2x + 1)(x + 3) ✓
+
+### Shortcut 4: Factorization of Cyclic Expressions
+For expressions like x²(y - z) + y²(z - x) + z²(x - y):
+- Result = (x - y)(y - z)(z - x)
+
+### Shortcut 5: Using Remainder Theorem
+If P(a) = 0, then (x - a) is a factor. Use synthetic division to find other factors.
+
+### Common MHT CET Question Patterns
+1. Factorize given polynomial
+2. Find factors using identities
+3. HCF/LCM of algebraic expressions
+4. Factorization leading to solving equations
+
+---
+
+# SECTION 4: QUADRATIC EQUATIONS
+
+## 4.1 Standard Form and Basic Concepts
+
+**Standard Form**: ax² + bx + c = 0, where a ≠ 0, a, b, c ∈ R
+
+**Terms**:
+- a = coefficient of x² (leading coefficient)
+- b = coefficient of x
+- c = constant term
+
+**Types of Quadratic Equations**:
+1. **Complete**: ax² + bx + c = 0 (all terms present)
+2. **Pure**: ax² + c = 0 (b = 0)
+3. **Adfected**: ax² + bx = 0 (c = 0)
+
+## 4.2 Methods to Solve Quadratic Equations - Detailed
+
+### Method 1: Factorization Method (When factorable)
+
+**Principle**: Express as product of linear factors and equate each to zero.
+
+**Example 26**: Solve x² - 5x + 6 = 0
+
+**Step-by-Step Solution:**
+```
+Step 1: Factorize the quadratic
+        x² - 5x + 6 = x² - 2x - 3x + 6
+                    = x(x - 2) - 3(x - 2)
+                    = (x - 2)(x - 3)
+
+Step 2: Apply zero product property
+        If (x - 2)(x - 3) = 0, then either:
+        x - 2 = 0 or x - 3 = 0
+
+Step 3: Solve each linear equation
+        x - 2 = 0 ⇒ x = 2
+        x - 3 = 0 ⇒ x = 3
+
+Therefore, roots are x = 2 and x = 3
+```
+
+**Example 27**: Solve 2x² - 5x - 3 = 0
+
+**Solution:**
+```
+2x² - 5x - 3 = 0
+2x² - 6x + x - 3 = 0
+2x(x - 3) + 1(x - 3) = 0
+(x - 3)(2x + 1) = 0
+x - 3 = 0 ⇒ x = 3
+2x + 1 = 0 ⇒ x = -1/2
+```
+
+### Method 2: Quadratic Formula (Universal Method)
+
+**Formula**: x = [-b ± √(b² - 4ac)] / 2a
+
+**Derivation** (Completing Square Method):
+```
+ax² + bx + c = 0
+Divide by a: x² + (b/a)x + c/a = 0
+x² + (b/a)x = -c/a
+Add (b/2a)² to both sides: x² + (b/a)x + (b/2a)² = (b/2a)² - c/a
+(x + b/2a)² = (b² - 4ac)/(4a²)
+x + b/2a = ±√(b² - 4ac)/(2a)
+x = [-b ± √(b² - 4ac)] / 2a
+```
+
+**Example 28**: Solve 2x² - 4x - 3 = 0 using quadratic formula
+
+**Step-by-Step Solution:**
+```
+Step 1: Identify coefficients
+        a = 2, b = -4, c = -3
+
+Step 2: Calculate discriminant
+        D = b² - 4ac = (-4)² - 4(2)(-3)
+          = 16 + 24 = 40
+
+Step 3: Apply formula
+        x = [-(-4) ± √40] / (2 × 2)
+        x = [4 ± √40] / 4
+        x = [4 ± 2√10] / 4
+        x = 1 ± (√10)/2
+
+Therefore, roots are x = 1 + √10/2 and x = 1 - √10/2
+```
+
+### Method 3: Completing Square Method
+
+**Principle**: Convert ax² + bx + c to a(x + p)² + q form.
+
+**Example 29**: Solve x² + 6x - 7 = 0 by completing square
+
+**Step-by-Step Solution:**
+```
+Step 1: Move constant to RHS
+        x² + 6x = 7
+
+Step 2: Add (b/2)² to both sides (b = 6, so (6/2)² = 9)
+        x² + 6x + 9 = 7 + 9
+        x² + 6x + 9 = 16
+
+Step 3: Write LHS as perfect square
+        (x + 3)² = 16
+
+Step 4: Take square root
+        x + 3 = ±4
+
+Step 5: Solve for x
+        x + 3 = 4 ⇒ x = 1
+        x + 3 = -4 ⇒ x = -7
+```
+
+### Method 4: Graphical Method (Conceptual)
+The roots are x-intercepts of parabola y = ax² + bx + c.
+
+## 4.3 Discriminant (D) and Nature of Roots
+
+**Formula**: D = b² - 4ac
+
+### Detailed Analysis of Nature of Roots
+
+| Discriminant | Nature of Roots | Graphical Interpretation |
+|--------------|-----------------|--------------------------|
+| **D > 0 and perfect square** | Real, rational, distinct | Parabola cuts x-axis at two distinct rational points |
+| **D > 0 but not perfect square** | Real, irrational, distinct | Parabola cuts x-axis at two distinct irrational points |
+| **D = 0** | Real and equal (coincident) | Parabola touches x-axis at one point |
+| **D < 0** | Imaginary (complex conjugates) | Parabola does not intersect x-axis |
+
+**Example 30**: Find nature of roots of x² + 2x + 5 = 0
+
+**Solution:**
+```
+a = 1, b = 2, c = 5
+D = b² - 4ac = 2² - 4(1)(5) = 4 - 20 = -16 < 0
+
+Since D < 0, roots are imaginary and complex conjugates.
+The roots are: x = [-2 ± √(-16)]/2 = [-2 ± 4i]/2 = -1 ± 2i
+```
+
+**Example 31**: Find nature of roots of 4x² - 12x + 9 = 0
+
+**Solution:**
+```
+a = 4, b = -12, c = 9
+D = (-12)² - 4(4)(9) = 144 - 144 = 0
+
+Since D = 0, roots are real and equal.
+The roots are: x = 12/(2×4) = 12/8 = 3/2 (repeated)
+```
+
+## 4.4 Relation Between Roots and Coefficients
+
+If α and β are roots of ax² + bx + c = 0, then:
+
+**Sum of roots**: S = α + β = -b/a
+**Product of roots**: P = αβ = c/a
+
+**Derivation**:
+```
+If α and β are roots, then:
+ax² + bx + c = a(x - α)(x - β)
+              = a[x² - (α + β)x + αβ]
+Comparing coefficients:
+x² coefficient: a = a
+x coefficient: -a(α + β) = b ⇒ α + β = -b/a
+Constant: a(αβ) = c ⇒ αβ = c/a
+```
+
+**Example 32**: Find sum and product of roots of 3x² - 5x + 2 = 0
+
+**Solution:**
+```
+a = 3, b = -5, c = 2
+Sum of roots = -b/a = -(-5)/3 = 5/3
+Product of roots = c/a = 2/3
+```
+
+**Example 33**: If α and β are roots of 2x² - 3x + 1 = 0, find α² + β²
+
+**Solution:**
+```
+Given: α + β = -(-3)/2 = 3/2
+       αβ = 1/2
+
+We know: α² + β² = (α + β)² - 2αβ
+                = (3/2)² - 2(1/2)
+                = 9/4 - 1
+                = 5/4
+```
+
+## 4.5 Formation of Quadratic Equation from Roots
+
+If α and β are given, the quadratic equation is:
+**x² - (α + β)x + αβ = 0**
+
+**Example 34**: Form quadratic equation with roots 3 and -4
+
+**Solution:**
+```
+Sum = α + β = 3 + (-4) = -1
+Product = αβ = 3 × (-4) = -12
+
+Equation: x² - (sum)x + product = 0
+         x² - (-1)x + (-12) = 0
+         x² + x - 12 = 0
+```
+
+**Example 35**: Form quadratic equation with roots 2 + √3 and 2 - √3
+
+**Solution:**
+```
+Sum = (2 + √3) + (2 - √3) = 4
+Product = (2 + √3)(2 - √3) = 4 - 3 = 1
+
+Equation: x² - 4x + 1 = 0
+```
+
+## 4.6 Special Results and Conditions
+
+### Condition 1: Roots are reciprocal of each other
+If one root is reciprocal of the other: αβ = 1 ⇒ c/a = 1 ⇒ c = a
+
+**Example 36**: Find k if roots of x² + 5x + k = 0 are reciprocals
+```
+For reciprocal roots: c = a
+Here a = 1, c = k
+Therefore k = 1
+```
+
+### Condition 2: Roots are equal in magnitude but opposite in sign
+If one root is negative of the other: α + β = 0 ⇒ -b/a = 0 ⇒ b = 0
+
+**Example 37**: Find k if roots of x² + kx + 9 = 0 are equal in magnitude but opposite in sign
+```
+For opposite sign roots: b = 0
+Here b = k
+Therefore k = 0
+```
+
+### Condition 3: Roots are equal
+If roots are equal: D = 0 ⇒ b² = 4ac
+
+**Example 38**: For what value of k will the equation x² + kx + 9 = 0 have equal roots?
+```
+For equal roots: b² = 4ac
+Here a = 1, b = k, c = 9
+k² = 4(1)(9)
+k² = 36
+k = ±6
+```
+
+### Condition 4: One root is zero
+If one root is zero: product = 0 ⇒ c/a = 0 ⇒ c = 0
+
+### Condition 5: Roots are real
+For real roots: D ≥ 0 ⇒ b² - 4ac ≥ 0
+
+## 4.7 Common Problems and Solutions
+
+**Example 39**: Find the quadratic equation whose roots are twice the roots of 2x² - 5x + 3 = 0
+
+**Solution:**
+```
+Let α and β be roots of 2x² - 5x + 3 = 0
+Then α + β = 5/2, αβ = 3/2
+
+New roots: 2α and 2β
+Sum = 2α + 2β = 2(α + β) = 2 × 5/2 = 5
+Product = (2α)(2β) = 4αβ = 4 × 3/2 = 6
+
+New equation: x² - 5x + 6 = 0
+```
+
+**Example 40**: If α and β are roots of x² - 3x + 2 = 0, find the equation whose roots are α² and β²
+
+**Solution:**
+```
+From given: α + β = 3, αβ = 2
+α² + β² = (α + β)² - 2αβ = 9 - 4 = 5
+α²β² = (αβ)² = 4
+
+Required equation: x² - 5x + 4 = 0
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 4
+
+### Shortcut 1: Quick Roots for Special Forms
+- If ax² + bx = 0 ⇒ x(ax + b) = 0 ⇒ x = 0 or x = -b/a
+- If ax² + c = 0 ⇒ x² = -c/a ⇒ x = ±√(-c/a)
+- If (x - a)(x - b) = 0 ⇒ roots are a and b
+
+### Shortcut 2: Sum and Product Check
+For equation x² + px + q = 0:
+- Sum of roots = -p
+- Product of roots = q
+
+### Shortcut 3: Nature of Roots without Solving
+Just check D = b² - 4ac:
+- D > 0: Real and distinct
+- D = 0: Real and equal
+- D < 0: Complex
+
+### Shortcut 4: Finding k for Given Condition
+For equal roots: b² = 4ac
+For reciprocal roots: a = c
+For opposite sign roots: b = 0
+
+### Shortcut 5: Symmetric Functions of Roots
+- α² + β² = (α + β)² - 2αβ
+- α³ + β³ = (α + β)³ - 3αβ(α + β)
+- 1/α + 1/β = (α + β)/αβ
+- α²β + αβ² = αβ(α + β)
+
+### Shortcut 6: Descartes' Rule of Signs
+Number of positive real roots ≤ number of sign changes in P(x)
+Number of negative real roots ≤ number of sign changes in P(-x)
+
+### Shortcut 7: Common MHT CET Trick
+If one root is given as p + √q, the other root is p - √q (irrational roots occur in conjugate pairs when coefficients are rational)
+
+### Common MHT CET Question Patterns
+1. Find roots using formula/factorization
+2. Determine nature of roots
+3. Find k for given condition
+4. Form equation from given roots
+5. Problems involving sum/product of roots
+6. Relation between roots of different equations
+
+---
+
+# SECTION 5: INDICES (EXPONENTS)
+
+## 5.1 Laws of Indices - Complete Explanation
+
+### Basic Laws with Proofs
+
+| Law | Formula | Proof/Explanation |
+|-----|---------|-------------------|
+| **Product Law** | aᵐ × aⁿ = aᵐ⁺ⁿ | aᵐ = a × a × ... (m times); aⁿ = a × a × ... (n times); product = a × a × ... (m+n times) |
+| **Quotient Law** | aᵐ ÷ aⁿ = aᵐ⁻ⁿ | aᵐ/aⁿ = (a × a × ... m times)/(a × a × ... n times) = a × a × ... (m-n times) |
+| **Power of Power** | (aᵐ)ⁿ = aᵐⁿ | (aᵐ)ⁿ = aᵐ × aᵐ × ... (n times) = aᵐ⁺ᵐ⁺...⁺ᵐ (n times) = aᵐⁿ |
+| **Power of Product** | (ab)ᵐ = aᵐ × bᵐ | (ab)ᵐ = (ab) × (ab) × ... (m times) = (a × a × ...) × (b × b × ...) = aᵐbᵐ |
+| **Power of Quotient** | (a/b)ᵐ = aᵐ/bᵐ | (a/b)ᵐ = (a/b) × (a/b) × ... (m times) = aᵐ/bᵐ |
+
+### Zero and Negative Indices
+
+| Formula | Explanation |
+|---------|-------------|
+| **a⁰ = 1** (a ≠ 0) | By quotient law: aᵐ/aᵐ = aᵐ⁻ᵐ = a⁰ = 1 |
+| **a⁻ⁿ = 1/aⁿ** | By definition: a⁻ⁿ = a⁰⁻ⁿ = a⁰/aⁿ = 1/aⁿ |
+| **0⁰ is undefined** | Indeterminate form |
+
+### Fractional Indices (Rational Exponents)
+
+| Formula | Meaning | Example |
+|---------|---------|---------|
+| **a¹/ⁿ = ⁿ√a** | nth root of a | 8¹/³ = ³√8 = 2 |
+| **aᵐ/ⁿ = (aᵐ)¹/ⁿ = ⁿ√(aᵐ)** | nth root of aᵐ | 8²/³ = (8²)¹/³ = ³√64 = 4 |
+| **aᵐ/ⁿ = (a¹/ⁿ)ᵐ** | (nth root) raised to m | 8²/³ = (³√8)² = 2² = 4 |
+
+## 5.2 Solved Examples with Detailed Steps
+
+**Example 41**: Simplify 2³ × 2⁴ × 2⁻²
+
+**Solution:**
+```
+Using product law: aᵐ × aⁿ = aᵐ⁺ⁿ
+2³ × 2⁴ × 2⁻² = 2³⁺⁴⁻²
+                = 2⁵
+                = 32
+```
+
+**Example 42**: Simplify (x²y³)⁴ ÷ (x³y²)²
+
+**Solution:**
+```
+Step 1: Apply power of product law
+        (x²y³)⁴ = (x²)⁴ × (y³)⁴ = x⁸ × y¹²
+        (x³y²)² = (x³)² × (y²)² = x⁶ × y⁴
+
+Step 2: Apply quotient law
+        (x⁸y¹²) ÷ (x⁶y⁴) = x⁸⁻⁶ × y¹²⁻⁴
+                          = x² × y⁸
+                          = x²y⁸
+```
+
+**Example 43**: Simplify [(27)²/³ × (8)⁴/³] / (16)³/⁴
+
+**Solution:**
+```
+Step 1: Express each number as power of prime
+        27 = 3³
+        8 = 2³
+        16 = 2⁴
+
+Step 2: Apply power rules
+        (27)²/³ = (3³)²/³ = 3³×²/³ = 3² = 9
+        (8)⁴/³ = (2³)⁴/³ = 2³×⁴/³ = 2⁴ = 16
+        (16)³/⁴ = (2⁴)³/⁴ = 2⁴×³/⁴ = 2³ = 8
+
+Step 3: Simplify
+        = (9 × 16) / 8
+        = 144/8
+        = 18
+```
+
+**Example 44**: If 2ˣ = 3ʸ = 6ᶻ, prove that 1/x + 1/y = 1/z
+
+**Solution:**
+```
+Step 1: Let 2ˣ = 3ʸ = 6ᶻ = k
+Step 2: Express each in terms of k
+        2 = k¹/ˣ
+        3 = k¹/ʸ
+        6 = k¹/ᶻ
+
+Step 3: Since 6 = 2 × 3
+        k¹/ᶻ = k¹/ˣ × k¹/ʸ
+
+Step 4: Using product law
+        k¹/ᶻ = k¹/ˣ⁺¹/ʸ
+
+Step 5: Since bases are equal (k > 0, k ≠ 1)
+        1/z = 1/x + 1/y
+
+Therefore proved.
+```
+
+**Example 45**: Solve for x: 2ˣ⁺¹ + 2ˣ⁻¹ = 20
+
+**Solution:**
+```
+Step 1: Write all terms with base 2
+        2ˣ⁺¹ = 2ˣ × 2¹ = 2 × 2ˣ
+        2ˣ⁻¹ = 2ˣ × 2⁻¹ = 2ˣ/2
+
+Step 2: Let y = 2ˣ
+        Equation becomes: 2y + y/2 = 20
+
+Step 3: Multiply throughout by 2
+        4y + y = 40
+        5y = 40
+        y = 8
+
+Step 4: Substitute back
+        2ˣ = 8 = 2³
+        Therefore x = 3
+```
+
+**Example 46**: Simplify: (xᵃ/xᵇ)ᵃ⁺ᵇ × (xᵇ/xᶜ)ᵇ⁺ᶜ × (xᶜ/xᵃ)ᶜ⁺ᵃ
+
+**Solution:**
+```
+Step 1: Simplify each factor using quotient law
+        (xᵃ/xᵇ)ᵃ⁺ᵇ = (xᵃ⁻ᵇ)ᵃ⁺ᵇ = x(ᵃ⁻ᵇ)(ᵃ⁺ᵇ) = xᵃ²⁻ᵇ²
+
+        Similarly:
+        (xᵇ/xᶜ)ᵇ⁺ᶜ = x(ᵇ⁻ᶜ)(ᵇ⁺ᶜ) = xᵇ²⁻ᶜ²
+        (xᶜ/xᵃ)ᶜ⁺ᵃ = x(ᶜ⁻ᵃ)(ᶜ⁺ᵃ) = xᶜ²⁻ᵃ²
+
+Step 2: Multiply all factors
+        = x(ᵃ²⁻ᵇ²) × x(ᵇ²⁻ᶜ²) × x(ᶜ²⁻ᵃ²)
+        = x(ᵃ²⁻ᵇ² + ᵇ²⁻ᶜ² + ᶜ²⁻ᵃ²)
+        = x⁰ = 1
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 5
+
+### Shortcut 1: Compare Exponents
+When aᵐ = aⁿ, then m = n (if a > 0, a ≠ 1)
+
+### Shortcut 2: Express Numbers as Powers of Same Base
+To solve exponential equations, express all terms with same base.
+
+**Example**: Solve 8ˣ = 32
+```
+8 = 2³, 32 = 2⁵
+So (2³)ˣ = 2⁵ ⇒ 2³ˣ = 2⁵ ⇒ 3x = 5 ⇒ x = 5/3
+```
+
+### Shortcut 3: Laws in Reverse
+aᵐ⁺ⁿ = aᵐ × aⁿ
+aᵐ⁻ⁿ = aᵐ/aⁿ
+aᵐⁿ = (aᵐ)ⁿ = (aⁿ)ᵐ
+
+### Shortcut 4: Fractional Powers
+aᵐ/ⁿ = (a¹/ⁿ)ᵐ = (aᵐ)¹/ⁿ
+Choose whichever is easier to compute.
+
+### Shortcut 5: Common Mistakes to Avoid
+- aᵐ × bⁿ ≠ (ab)ᵐ⁺ⁿ (bases different)
+- (a + b)ⁿ ≠ aⁿ + bⁿ
+- a⁻ⁿ ≠ -aⁿ (it's reciprocal, not negative)
+
+### Shortcut 6: Solving Exponential Equations
+If aˣ = b, then x = logₐ b (using logarithms)
+
+### Common MHT CET Question Patterns
+1. Simplify expressions using laws
+2. Solve exponential equations
+3. Find value of expressions
+4. Prove identities
+5. Compare exponential values
+
+---
+
+# SECTION 6: LOGARITHMS
+
+## 6.1 Definition and Basic Concepts
+
+**Definition**: If a > 0, a ≠ 1, and aˣ = N, then x is called logarithm of N to base a.
+**Notation**: x = logₐ N
+
+**Example 47**: Write in logarithmic form: 2⁵ = 32
+```
+Since 2⁵ = 32, therefore log₂ 32 = 5
+```
+
+**Example 48**: Write in exponential form: log₁₀ 1000 = 3
+```
+Since log₁₀ 1000 = 3, therefore 10³ = 1000
+```
+
+### Important Conditions
+1. **Base**: a > 0, a ≠ 1
+2. **Argument**: N > 0
+3. Logarithm of negative numbers is not defined in real numbers
+
+## 6.2 Laws of Logarithms - Complete with Proofs
+
+### Law 1: Product Rule
+**Formula**: logₐ (mn) = logₐ m + logₐ n
+
+**Proof**:
+```
+Let logₐ m = x ⇒ aˣ = m
+Let logₐ n = y ⇒ aʸ = n
+Then mn = aˣ × aʸ = aˣ⁺ʸ
+Therefore logₐ (mn) = x + y = logₐ m + logₐ n
+```
+
+### Law 2: Quotient Rule
+**Formula**: logₐ (m/n) = logₐ m - logₐ n
+
+**Proof**:
+```
+Let logₐ m = x ⇒ aˣ = m
+Let logₐ n = y ⇒ aʸ = n
+Then m/n = aˣ/aʸ = aˣ⁻ʸ
+Therefore logₐ (m/n) = x - y = logₐ m - logₐ n
+```
+
+### Law 3: Power Rule
+**Formula**: logₐ (mⁿ) = n logₐ m
+
+**Proof**:
+```
+Let logₐ m = x ⇒ aˣ = m
+Then mⁿ = (aˣ)ⁿ = aˣⁿ
+Therefore logₐ (mⁿ) = xn = n logₐ m
+```
+
+### Law 4: Change of Base Rule
+**Formula**: logₐ b = log_c b / log_c a
+
+**Proof**:
+```
+Let logₐ b = x ⇒ aˣ = b
+Take log_c both sides: log_c (aˣ) = log_c b
+x log_c a = log_c b
+x = log_c b / log_c a
+Therefore logₐ b = log_c b / log_c a
+```
+
+### Law 5: Base Exchange Rule
+**Formula**: logₐ b = 1/log_b a
+
+**Proof**:
+```
+From change of base with c = b:
+logₐ b = log_b b / log_b a = 1/log_b a
+```
+
+### Important Results
+
+| Result | Explanation |
+|--------|-------------|
+| **logₐ a = 1** | Since a¹ = a |
+| **logₐ 1 = 0** | Since a⁰ = 1 |
+| **a^(logₐ x) = x** | Definition of logarithm |
+| **logₐ (aˣ) = x** | Definition of logarithm |
+| **logₐ b × log_b a = 1** | From Law 5 |
+
+## 6.3 Common and Natural Logarithms
+
+### Common Logarithms (Base 10)
+- Notation: log₁₀ x = log x
+- Used in calculations and scientific notation
+
+### Natural Logarithms (Base e)
+- Notation: logₑ x = ln x
+- e ≈ 2.718281828459045...
+- Used in calculus and natural growth/decay
+
+### Characteristic and Mantissa
+For log₁₀ N:
+- **Characteristic**: Integer part (depends on number of digits)
+- **Mantissa**: Decimal part (always between 0 and 1)
+
+**Example**: log₁₀ 2345 = 3.3701
+- Characteristic = 3
+- Mantissa = 0.3701
+
+## 6.4 Solved Examples with Detailed Steps
+
+**Example 49**: Find log₂ 32
+
+**Solution:**
+```
+Method 1: Using definition
+32 = 2⁵, therefore log₂ 32 = 5
+
+Method 2: Using power rule
+log₂ 32 = log₂ 2⁵ = 5 log₂ 2 = 5 × 1 = 5
+```
+
+**Example 50**: Simplify log 75 - log 3 + log 4
+
+**Solution:**
+```
+Using quotient and product rules:
+log 75 - log 3 + log 4 = log(75/3) + log 4
+                        = log 25 + log 4
+                        = log(25 × 4)
+                        = log 100
+                        = 2 (since log₁₀ 100 = 2)
+```
+
+**Example 51**: If log 2 = 0.3010 and log 3 = 0.4771, find:
+a) log 6
+b) log 5
+c) log 1.5
+
+**Solution:**
+```
+a) log 6 = log(2 × 3) = log 2 + log 3 = 0.3010 + 0.4771 = 0.7781
+
+b) log 5 = log(10/2) = log 10 - log 2 = 1 - 0.3010 = 0.6990
+
+c) log 1.5 = log(3/2) = log 3 - log 2 = 0.4771 - 0.3010 = 0.1761
+```
+
+**Example 52**: Solve for x: log(x - 1) + log(x + 1) = log 21
+
+**Solution:**
+```
+Step 1: Apply product rule
+        log[(x - 1)(x + 1)] = log 21
+        log(x² - 1) = log 21
+
+Step 2: Since log is one-to-one function
+        x² - 1 = 21
+        x² = 22
+        x = ±√22
+
+Step 3: Check domain conditions
+        For log(x - 1): x - 1 > 0 ⇒ x > 1
+        For log(x + 1): x + 1 > 0 ⇒ x > -1
+        Combined: x > 1
+        Therefore x = √22 (since √22 ≈ 4.69 > 1)
+        x = -√22 is rejected
+```
+
+**Example 53**: Solve: log₂ (x² - 4x + 4) = 3
+
+**Solution:**
+```
+Step 1: Convert to exponential form
+        x² - 4x + 4 = 2³
+        x² - 4x + 4 = 8
+
+Step 2: Simplify
+        x² - 4x - 4 = 0
+
+Step 3: Solve quadratic
+        x = [4 ± √(16 + 16)]/2
+        x = [4 ± √32]/2
+        x = [4 ± 4√2]/2
+        x = 2 ± 2√2
+
+Step 4: Check domain
+        Argument must be positive: x² - 4x + 4 > 0
+        x² - 4x + 4 = (x - 2)² ≥ 0 always, and = 0 only when x = 2
+        Since log₂ 0 is undefined, x ≠ 2
+        Both 2 ± 2√2 are valid
+```
+
+**Example 54**: Prove that logₐ b × log_b c × log_c a = 1
+
+**Proof:**
+```
+Method 1: Using change of base
+logₐ b × log_b c × log_c a
+= (log b / log a) × (log c / log b) × (log a / log c)
+= 1
+
+Method 2: Using definition
+Let logₐ b = x ⇒ aˣ = b
+Let log_b c = y ⇒ bʸ = c
+Let log_c a = z ⇒ cᶻ = a
+
+From aˣ = b and bʸ = c: aˣʸ = c
+From cᶻ = a: (aˣʸ)ᶻ = a ⇒ aˣʸᶻ = a¹
+Therefore xyz = 1
+Hence proved.
+```
+
+**Example 55**: If log (x + y)/3 = 1/2 (log x + log y), prove that x² + y² = 7xy
+
+**Solution:**
+```
+Step 1: Given equation
+        log[(x + y)/3] = 1/2 (log x + log y)
+
+Step 2: Apply product rule on RHS
+        log[(x + y)/3] = 1/2 log(xy)
+
+Step 3: Multiply both sides by 2
+        2 log[(x + y)/3] = log(xy)
+
+Step 4: Apply power rule on LHS
+        log[(x + y)/3]² = log(xy)
+
+Step 5: Since log is one-to-one
+        [(x + y)/3]² = xy
+        (x + y)²/9 = xy
+        (x + y)² = 9xy
+        x² + 2xy + y² = 9xy
+        x² + y² = 7xy
+
+Hence proved.
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 6
+
+### Shortcut 1: Change of Base Shortcut
+logₐ b = 1/log_b a
+Useful when base and argument are swapped.
+
+### Shortcut 2: Combining Logs
+- log m + log n = log(mn)
+- log m - log n = log(m/n)
+- n log m = log(mⁿ)
+
+### Shortcut 3: Solving Log Equations
+For equation logₐ f(x) = logₐ g(x):
+1. Equate: f(x) = g(x)
+2. Check domain: f(x) > 0, g(x) > 0
+
+### Shortcut 4: Exponential Form
+logₐ f(x) = b ⇒ f(x) = aᵇ
+Always check domain after solving.
+
+### Shortcut 5: Important Values to Memorize
+- log₁₀ 2 = 0.3010
+- log₁₀ 3 = 0.4771
+- log₁₀ 5 = 0.6990
+- log₁₀ 7 = 0.8451
+- ln 2 = 0.6931
+- ln 3 = 1.0986
+- ln 5 = 1.6094
+- ln 10 = 2.3026
+
+### Shortcut 6: Characteristic Rule
+For log₁₀ N:
+- If 1 ≤ N < 10: characteristic = 0
+- If 10 ≤ N < 100: characteristic = 1
+- If 100 ≤ N < 1000: characteristic = 2
+- And so on...
+
+### Shortcut 7: Antilog Shortcut
+If log x = n + m (n integer, m mantissa)
+Then x = antilog(m) × 10ⁿ
+
+### Common MHT CET Question Patterns
+1. Simplify logarithmic expressions
+2. Solve logarithmic equations
+3. Prove logarithmic identities
+4. Find value using given log values
+5. Domain of logarithmic functions
+6. Characteristic and mantissa problems
+
+---
+
+# SECTION 7: ARITHMETIC PROGRESSION (AP)
+
+## 7.1 Definition and Basic Concepts
+
+**Definition**: A sequence is in Arithmetic Progression (AP) if the difference between any term and its preceding term is constant.
+
+**General Form**: a, a + d, a + 2d, a + 3d, ...
+where:
+- **a** = first term
+- **d** = common difference
+
+**Examples**:
+1. 2, 5, 8, 11, ... (a = 2, d = 3)
+2. 10, 7, 4, 1, ... (a = 10, d = -3)
+3. 5, 5, 5, 5, ... (a = 5, d = 0)
+
+## 7.2 Important Formulas - Complete Derivation
+
+### Formula 1: nth Term (General Term)
+
+**Formula**: tₙ = a + (n - 1)d
+
+**Derivation**:
+```
+t₁ = a
+t₂ = a + d
+t₃ = a + 2d
+t₄ = a + 3d
+...
+tₙ = a + (n - 1)d
+```
+
+### Formula 2: Sum of n Terms
+
+**Formula 1**: Sₙ = n/2 [2a + (n - 1)d]
+
+**Derivation**:
+```
+Sₙ = a + (a + d) + (a + 2d) + ... + [a + (n - 1)d]  ...(1)
+Write in reverse order:
+Sₙ = [a + (n - 1)d] + [a + (n - 2)d] + ... + a  ...(2)
+
+Add (1) and (2):
+2Sₙ = [2a + (n - 1)d] + [2a + (n - 1)d] + ... + [2a + (n - 1)d] (n times)
+2Sₙ = n[2a + (n - 1)d]
+Sₙ = n/2 [2a + (n - 1)d]
+```
+
+**Formula 2**: Sₙ = n/2 (a + l) where l = last term
+
+**Derivation**:
+```
+Since l = a + (n - 1)d
+Substitute in Formula 1:
+Sₙ = n/2 [2a + (n - 1)d] = n/2 [a + a + (n - 1)d] = n/2 (a + l)
+```
+
+### Formula 3: Common Difference
+d = t₂ - t₁ = t₃ - t₂ = tₙ - tₙ₋₁
+
+### Formula 4: Arithmetic Mean (AM)
+If three numbers are in AP: a - d, a, a + d
+If x, y, z are in AP: y = (x + z)/2
+
+## 7.3 Properties of AP
+
+### Property 1: Linear Combination
+If a sequence is in AP, then adding a constant to each term also gives an AP with same common difference.
+
+**Example**: AP: 2, 5, 8, 11
+Add 3: 5, 8, 11, 14 (still AP with d = 3)
+
+### Property 2: Multiplication/Division
+If each term is multiplied/divided by a non-zero constant, the resulting sequence is also an AP.
+
+**Example**: AP: 2, 5, 8, 11
+Multiply by 2: 4, 10, 16, 22 (AP with d = 6)
+
+### Property 3: Selection of Terms
+If tₖ, tₗ, tₘ are in AP, then k, l, m are in AP.
+
+### Property 4: Sum of Terms Equidistant from Ends
+In an AP, sum of terms equidistant from beginning and end is constant = a + l
+
+**Example**: In AP: 2, 5, 8, 11, 14
+t₁ + t₅ = 2 + 14 = 16
+t₂ + t₄ = 5 + 11 = 16
+
+## 7.4 Selection of Terms in AP
+
+| Number of Terms | Convenient Selection |
+|-----------------|---------------------|
+| 3 terms | a - d, a, a + d |
+| 4 terms | a - 3d, a - d, a + d, a + 3d |
+| 5 terms | a - 2d, a - d, a, a + d, a + 2d |
+
+**Advantage**: Sum becomes simple (e.g., for 3 terms, sum = 3a)
+
+## 7.5 Solved Examples with Detailed Steps
+
+**Example 56**: Find the 10th term of AP: 3, 7, 11, 15, ...
+
+**Solution:**
+```
+Step 1: Identify first term and common difference
+        a = 3
+        d = 7 - 3 = 4
+
+Step 2: Apply formula tₙ = a + (n - 1)d
+        t₁₀ = 3 + (10 - 1)4
+             = 3 + 9 × 4
+             = 3 + 36
+             = 39
+```
+
+**Example 57**: Find the sum of first 20 terms of AP: 5, 9, 13, ...
+
+**Solution:**
+```
+Step 1: Identify a and d
+        a = 5
+        d = 9 - 5 = 4
+        n = 20
+
+Step 2: Apply Sₙ = n/2 [2a + (n - 1)d]
+        S₂₀ = 20/2 [2×5 + (20-1)4]
+             = 10 [10 + 19×4]
+             = 10 [10 + 76]
+             = 10 × 86
+             = 860
+```
+
+**Example 58**: Which term of AP: 21, 18, 15, ... is -81?
+
+**Solution:**
+```
+Step 1: Identify a and d
+        a = 21
+        d = 18 - 21 = -3
+
+Step 2: Let nth term = -81
+        tₙ = a + (n-1)d = -81
+        21 + (n-1)(-3) = -81
+        21 - 3(n-1) = -81
+        -3(n-1) = -81 - 21
+        -3(n-1) = -102
+        n-1 = 34
+        n = 35
+
+Therefore, 35th term is -81
+```
+
+**Example 59**: The 4th term of an AP is 14 and 8th term is 26. Find the AP.
+
+**Solution:**
+```
+Step 1: Write equations using formula
+        t₄ = a + 3d = 14  ...(1)
+        t₈ = a + 7d = 26  ...(2)
+
+Step 2: Subtract (1) from (2)
+        (a + 7d) - (a + 3d) = 26 - 14
+        4d = 12
+        d = 3
+
+Step 3: Substitute d = 3 in (1)
+        a + 3(3) = 14
+        a + 9 = 14
+        a = 5
+
+Therefore, AP is: 5, 8, 11, 14, 17, ...
+```
+
+**Example 60**: Find three numbers in AP whose sum is 15 and product is 80.
+
+**Solution:**
+```
+Step 1: Let the three numbers be a - d, a, a + d
+        Sum = (a - d) + a + (a + d) = 3a = 15
+        Therefore a = 5
+
+Step 2: Product = (5 - d)(5)(5 + d) = 80
+        (25 - d²) × 5 = 80
+        25 - d² = 16
+        d² = 9
+        d = ±3
+
+Step 3: When d = 3: numbers are 2, 5, 8
+        When d = -3: numbers are 8, 5, 2
+
+Therefore, the numbers are 2, 5, 8 (or 8, 5, 2)
+```
+
+**Example 61**: Find the sum of all three-digit numbers divisible by 7.
+
+**Solution:**
+```
+Step 1: Identify the sequence
+        Smallest 3-digit number divisible by 7 = 105
+        Largest 3-digit number divisible by 7 = 994
+        Sequence: 105, 112, 119, ..., 994
+        This is an AP with a = 105, d = 7
+
+Step 2: Find number of terms
+        Let nth term = 994
+        a + (n-1)d = 994
+        105 + (n-1)7 = 994
+        (n-1)7 = 889
+        n-1 = 127
+        n = 128
+
+Step 3: Find sum
+        S₁₂₈ = n/2 (a + l)
+              = 128/2 (105 + 994)
+              = 64 × 1099
+              = 70,336
+```
+
+**Example 62**: If the sum of n terms of an AP is given by Sₙ = 3n² + 2n, find the AP.
+
+**Solution:**
+```
+Step 1: Find first term
+        t₁ = S₁ = 3(1)² + 2(1) = 3 + 2 = 5
+
+Step 2: Find sum of first two terms
+        S₂ = 3(2)² + 2(2) = 12 + 4 = 16
+        t₂ = S₂ - S₁ = 16 - 5 = 11
+
+Step 3: Find common difference
+        d = t₂ - t₁ = 11 - 5 = 6
+
+Therefore, AP is: 5, 11, 17, 23, ...
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 7
+
+### Shortcut 1: Finding n when tₙ is given
+Use formula: n = [(tₙ - a)/d] + 1
+
+### Shortcut 2: Finding d from two terms
+If tₘ and tₙ are given:
+d = (tₘ - tₙ)/(m - n)
+
+### Shortcut 3: Middle Term(s)
+If number of terms n is:
+- Odd: Middle term = (n+1)/2 th term = a + (n-1)d/2
+- Even: Two middle terms = n/2 th and (n/2 + 1)th terms
+
+### Shortcut 4: Sum of First n Natural Numbers
+1 + 2 + 3 + ... + n = n(n+1)/2
+This is an AP with a = 1, d = 1
+
+### Shortcut 5: Sum of First n Odd Numbers
+1 + 3 + 5 + ... + (2n-1) = n²
+
+### Shortcut 6: Sum of First n Even Numbers
+2 + 4 + 6 + ... + 2n = n(n+1)
+
+### Shortcut 7: Arithmetic Mean Shortcut
+If three numbers are in AP, the middle number is the average of the three.
+
+### Common MHT CET Question Patterns
+1. Find nth term or sum of n terms
+2. Find number of terms satisfying condition
+3. Problems with given sum or product
+4. Find AP from given conditions
+5. Word problems (like Example 61)
+
+---
+
+# SECTION 8: GEOMETRIC PROGRESSION (GP)
+
+## 8.1 Definition and Basic Concepts
+
+**Definition**: A sequence is in Geometric Progression (GP) if the ratio of any term to its preceding term is constant.
+
+**General Form**: a, ar, ar², ar³, ...
+where:
+- **a** = first term
+- **r** = common ratio
+
+**Examples**:
+1. 2, 6, 18, 54, ... (a = 2, r = 3)
+2. 16, 8, 4, 2, ... (a = 16, r = 1/2)
+3. 5, 5, 5, 5, ... (a = 5, r = 1)
+4. 3, -6, 12, -24, ... (a = 3, r = -2)
+
+## 8.2 Important Formulas - Complete Derivation
+
+### Formula 1: nth Term (General Term)
+
+**Formula**: tₙ = arⁿ⁻¹
+
+**Derivation**:
+```
+t₁ = a = ar⁰
+t₂ = ar = ar¹
+t₃ = ar²
+t₄ = ar³
+...
+tₙ = arⁿ⁻¹
+```
+
+### Formula 2: Sum of n Terms
+
+**Case 1: When r ≠ 1**
+
+**Formula**: Sₙ = a(rⁿ - 1)/(r - 1) for r > 1
+**Formula**: Sₙ = a(1 - rⁿ)/(1 - r) for r < 1
+
+**Derivation**:
+```
+Sₙ = a + ar + ar² + ... + arⁿ⁻¹  ...(1)
+Multiply both sides by r:
+rSₙ = ar + ar² + ar³ + ... + arⁿ  ...(2)
+
+Subtract (2) from (1):
+Sₙ - rSₙ = a - arⁿ
+Sₙ(1 - r) = a(1 - rⁿ)
+Sₙ = a(1 - rⁿ)/(1 - r)
+
+This can be written as Sₙ = a(rⁿ - 1)/(r - 1)
+```
+
+**Case 2: When r = 1**
+Sₙ = a + a + a + ... (n times) = na
+
+### Formula 3: Sum of Infinite GP
+
+**Formula**: S∞ = a/(1 - r), where |r| < 1
+
+**Derivation**:
+```
+As n → ∞, if |r| < 1, then rⁿ → 0
+S∞ = lim(n→∞) a(1 - rⁿ)/(1 - r) = a/(1 - r)
+```
+
+### Formula 4: Geometric Mean (GM)
+
+If three numbers are in GP: a/r, a, ar
+If x, y, z are in GP: y² = xz
+GM of two numbers a and b = √(ab)
+
+## 8.3 Properties of GP
+
+### Property 1: Reciprocal Property
+If a sequence is in GP, its reciprocal is also in GP.
+
+**Example**: GP: 2, 4, 8, 16 (r = 2)
+Reciprocal: 1/2, 1/4, 1/8, 1/16 (r = 1/2)
+
+### Property 2: Multiplication/Division
+If each term is multiplied/divided by a constant, resulting sequence is also GP.
+
+**Example**: GP: 2, 4, 8, 16 (r = 2)
+Multiply by 3: 6, 12, 24, 48 (r = 2)
+
+### Property 3: Logarithms
+Logarithms of terms of GP form an AP.
+
+**Example**: GP: 2, 4, 8, 16
+log₂: 1, 2, 3, 4 (AP with d = 1)
+
+### Property 4: Product of Terms
+In a GP, product of terms equidistant from beginning and end is constant.
+
+**Example**: GP: 2, 4, 8, 16, 32
+t₁ × t₅ = 2 × 32 = 64
+t₂ × t₄ = 4 × 16 = 64
+
+## 8.4 Selection of Terms in GP
+
+| Number of Terms | Convenient Selection |
+|-----------------|---------------------|
+| 3 terms | a/r, a, ar |
+| 4 terms | a/r³, a/r, ar, ar³ |
+| 5 terms | a/r², a/r, a, ar, ar² |
+
+**Advantage**: Product becomes simple (e.g., for 3 terms, product = a³)
+
+## 8.5 Solved Examples with Detailed Steps
+
+**Example 63**: Find the 7th term of GP: 2, 6, 18, ...
+
+**Solution:**
+```
+Step 1: Identify a and r
+        a = 2
+        r = 6/2 = 3
+
+Step 2: Apply formula tₙ = arⁿ⁻¹
+        t₇ = 2 × 3⁷⁻¹
+            = 2 × 3⁶
+            = 2 × 729
+            = 1458
+```
+
+**Example 64**: Find the sum of first 6 terms of GP: 1, 2, 4, ...
+
+**Solution:**
+```
+Step 1: Identify a and r
+        a = 1
+        r = 2
+
+Step 2: Apply Sₙ = a(rⁿ - 1)/(r - 1)
+        S₆ = 1(2⁶ - 1)/(2 - 1)
+            = (64 - 1)/1
+            = 63
+```
+
+**Example 65**: Find the sum of infinite GP: 1 + 1/2 + 1/4 + 1/8 + ...
+
+**Solution:**
+```
+Step 1: Identify a and r
+        a = 1
+        r = 1/2 (< 1)
+
+Step 2: Apply S∞ = a/(1 - r)
+        S∞ = 1/(1 - 1/2)
+            = 1/(1/2)
+            = 2
+```
+
+**Example 66**: The 2nd term of GP is 6 and 5th term is 162. Find the GP.
+
+**Solution:**
+```
+Step 1: Write equations using formula
+        t₂ = ar = 6  ...(1)
+        t₅ = ar⁴ = 162  ...(2)
+
+Step 2: Divide (2) by (1)
+        (ar⁴)/(ar) = 162/6
+        r³ = 27
+        r = 3
+
+Step 3: Substitute r = 3 in (1)
+        a × 3 = 6
+        a = 2
+
+Therefore, GP is: 2, 6, 18, 54, 162, ...
+```
+
+**Example 67**: Find three numbers in GP whose sum is 13 and product is 27.
+
+**Solution:**
+```
+Step 1: Let the three numbers be a/r, a, ar
+        Product = (a/r) × a × ar = a³ = 27
+        Therefore a = 3
+
+Step 2: Sum = 3/r + 3 + 3r = 13
+        3/r + 3r = 10
+        Multiply by r: 3 + 3r² = 10r
+        3r² - 10r + 3 = 0
+        (3r - 1)(r - 3) = 0
+        r = 1/3 or r = 3
+
+Step 3: When r = 1/3: numbers = 9, 3, 1
+        When r = 3: numbers = 1, 3, 9
+
+Therefore, the numbers are 1, 3, 9 (or 9, 3, 1)
+```
+
+**Example 68**: Find the sum of the series: 0.7 + 0.77 + 0.777 + ... to n terms
+
+**Solution:**
+```
+Step 1: Write each term
+        0.7 = 7/10
+        0.77 = 77/100 = 7/10 + 7/100
+        0.777 = 777/1000 = 7/10 + 7/100 + 7/1000
+
+Step 2: The series can be written as:
+        S = (7/10)[1 + 1/10 + 1/100 + ... to n terms] +
+            (7/10)[1/10 + 1/100 + ... to (n-1) terms] +
+            (7/10)[1/100 + ... to (n-2) terms] + ...
+
+Step 3: This forms a GP of GPs
+        Better approach: S = 7[0.1 + 0.11 + 0.111 + ...]
+        S = 7/9 [0.9 + 0.99 + 0.999 + ...]
+        S = 7/9 [(1 - 0.1) + (1 - 0.01) + (1 - 0.001) + ...]
+        S = 7/9 [n - (0.1 + 0.01 + 0.001 + ... to n terms)]
+        S = 7/9 [n - 0.1(1 - 0.1ⁿ)/(1 - 0.1)]
+        S = 7/9 [n - (1/9)(1 - 0.1ⁿ)]
+```
+
+**Example 69**: If a, b, c are in GP, prove that log a, log b, log c are in AP.
+
+**Proof:**
+```
+Given a, b, c are in GP
+Therefore b² = ac
+
+Take log on both sides:
+log(b²) = log(ac)
+2 log b = log a + log c
+
+This shows that log a, log b, log c are in AP
+(because 2 log b = log a + log c)
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 8
+
+### Shortcut 1: Finding r from two terms
+If tₘ and tₙ are given:
+rᵐ⁻ⁿ = tₘ/tₙ
+
+### Shortcut 2: Product of n terms
+Product of n terms of GP = aⁿ × rⁿ⁽ⁿ⁻¹⁾/²
+
+### Shortcut 3: Three numbers in GP
+If three numbers in GP have:
+- Sum S and product P, then numbers are:
+  Let a³ = P, and a/r + a + ar = S
+
+### Shortcut 4: Infinite GP Sum
+For |r| < 1, S∞ = a/(1 - r)
+For |r| ≥ 1, infinite GP diverges (no finite sum)
+
+### Shortcut 5: Recurring Decimals
+0.\overline{ab} = ab/99 (for 2-digit repeating)
+0.\overline{abc} = abc/999 (for 3-digit repeating)
+
+**Example**: 0.\overline{18} = 18/99 = 2/11
+This is sum of infinite GP: 0.18 + 0.0018 + 0.000018 + ...
+
+### Shortcut 6: Harmonic Progression Relation
+If a, b, c are in GP, then 1/a, 1/b, 1/c are also in GP (with ratio 1/r)
+
+### Common MHT CET Question Patterns
+1. Find nth term or sum of n terms
+2. Find sum of infinite GP
+3. Problems with given sum or product
+4. Find GP from given conditions
+5. Relation between AP, GP, HP
+6. Word problems (population growth, compound interest)
+
+---
+
+# SECTION 9: HARMONIC PROGRESSION (HP)
+
+## 9.1 Definition and Basic Concepts
+
+**Definition**: A sequence is in Harmonic Progression (HP) if the reciprocals of its terms are in Arithmetic Progression (AP).
+
+**General Form**: 1/a, 1/(a+d), 1/(a+2d), 1/(a+3d), ...
+where a, a+d, a+2d, ... are in AP.
+
+**Examples**:
+1. 1, 1/2, 1/3, 1/4, ... (reciprocals: 1, 2, 3, 4, ... in AP)
+2. 1/2, 1/4, 1/6, 1/8, ... (reciprocals: 2, 4, 6, 8, ... in AP)
+
+## 9.2 Important Formulas
+
+### Formula 1: nth Term of HP
+If the corresponding AP has first term A and common difference D, then:
+**tₙ (HP) = 1/[A + (n - 1)D]**
+
+### Formula 2: Harmonic Mean (HM)
+If three numbers a, b, c are in HP, then:
+**b = 2ac/(a + c)**
+
+**Derivation**:
+```
+a, b, c in HP ⇒ 1/a, 1/b, 1/c in AP
+Therefore 2/b = 1/a + 1/c
+2/b = (c + a)/(ac)
+b = 2ac/(a + c)
+```
+
+### Formula 3: Harmonic Mean of Two Numbers
+For two positive numbers a and b:
+**HM = 2ab/(a + b)**
+
+## 9.3 Relation between AM, GM, HM
+
+For two positive numbers a and b:
+
+| Measure | Formula | Property |
+|---------|---------|----------|
+| **Arithmetic Mean (AM)** | (a + b)/2 | AM ≥ GM ≥ HM |
+| **Geometric Mean (GM)** | √(ab) | Equality when a = b |
+| **Harmonic Mean (HM)** | 2ab/(a + b) | AM × HM = GM² |
+
+**Important Results**:
+1. AM × HM = GM²
+2. GM² = AM × HM
+3. For n numbers, AM ≥ GM ≥ HM
+
+## 9.4 Solved Examples with Detailed Steps
+
+**Example 70**: Find the 5th term of HP: 1/2, 1/5, 1/8, ...
+
+**Solution:**
+```
+Step 1: Find the corresponding AP
+        Reciprocals: 2, 5, 8, ...
+        This is AP with A = 2, D = 3
+
+Step 2: Find 5th term of AP
+        t₅(AP) = A + (5-1)D = 2 + 4×3 = 2 + 12 = 14
+
+Step 3: 5th term of HP = 1/t₅(AP) = 1/14
+```
+
+**Example 71**: If a, b, c are in HP, prove that 1/(b-a) + 1/(b-c) = 1/a + 1/c
+
+**Proof:**
+```
+Step 1: Since a, b, c are in HP
+        1/a, 1/b, 1/c are in AP
+        Therefore 2/b = 1/a + 1/c  ...(1)
+
+Step 2: Consider LHS = 1/(b-a) + 1/(b-c)
+        Write a and c in terms of b from (1)
+        From (1): 1/a = 2/b - 1/c
+        Also 1/c = 2/b - 1/a
+
+Step 3: We can also use:
+        b - a = b - a
+        b - c = b - c
+
+        Using the property of HP, we can show that:
+        1/(b-a) + 1/(b-c) = (b-c + b-a)/[(b-a)(b-c)]
+                          = (2b - a - c)/[(b-a)(b-c)]
+
+Step 4: Using (1), we get the result after simplification.
+        The identity holds true.
+```
+
+**Example 72**: Find the harmonic mean of 4 and 6
+
+**Solution:**
+```
+Using formula HM = 2ab/(a + b)
+HM = 2 × 4 × 6/(4 + 6)
+    = 48/10
+    = 4.8
+
+Check: AM = (4 + 6)/2 = 5
+       GM = √(4×6) = √24 ≈ 4.899
+       HM = 4.8
+       Therefore AM > GM > HM ✓
+```
+
+**Example 73**: Insert 3 harmonic means between 1/2 and 1/6
+
+**Solution:**
+```
+Step 1: Let the HP be: 1/2, H₁, H₂, H₃, 1/6
+        Corresponding AP: 2, 1/H₁, 1/H₂, 1/H₃, 6
+
+Step 2: In this AP, first term A = 2, last term = 6
+        Number of terms in AP = 5
+        Using t₅ = A + (5-1)D
+        6 = 2 + 4D
+        4D = 4
+        D = 1
+
+Step 3: The AP terms are:
+        t₁ = 2
+        t₂ = 2 + 1 = 3 ⇒ 1/H₁ = 3 ⇒ H₁ = 1/3
+        t₃ = 2 + 2 = 4 ⇒ 1/H₂ = 4 ⇒ H₂ = 1/4
+        t₄ = 2 + 3 = 5 ⇒ 1/H₃ = 5 ⇒ H₃ = 1/5
+        t₅ = 6
+
+Therefore, the harmonic means are 1/3, 1/4, 1/5
+```
+
+**Example 74**: If AM and GM of two numbers are 10 and 8 respectively, find the numbers and their HM.
+
+**Solution:**
+```
+Step 1: Let the numbers be a and b
+        AM = (a + b)/2 = 10 ⇒ a + b = 20
+        GM = √(ab) = 8 ⇒ ab = 64
+
+Step 2: Solve for a and b
+        a and b are roots of x² - 20x + 64 = 0
+        x = [20 ± √(400 - 256)]/2
+        x = [20 ± √144]/2
+        x = [20 ± 12]/2
+        x = 16 or 4
+
+        Therefore numbers are 16 and 4
+
+Step 3: Find HM
+        HM = 2ab/(a + b) = 2×64/20 = 128/20 = 6.4
+
+Check: AM × HM = 10 × 6.4 = 64 = 8² = GM² ✓
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 9
+
+### Shortcut 1: Convert HP to AP
+Always convert HP to AP by taking reciprocals. Solve in AP and convert back.
+
+### Shortcut 2: Harmonic Mean Formula
+HM = 2ab/(a + b) for two numbers
+For n numbers, HM = n/(1/a₁ + 1/a₂ + ... + 1/aₙ)
+
+### Shortcut 3: Relation AM, GM, HM
+- AM × HM = GM²
+- AM ≥ GM ≥ HM
+- For equal numbers, AM = GM = HM
+
+### Shortcut 4: Three Numbers in HP
+If a, b, c are in HP, then:
+1/a, 1/b, 1/c are in AP
+b = 2ac/(a + c)
+
+### Shortcut 5: Harmonic Progression Identification
+To check if a sequence is in HP:
+Take reciprocals and check if they form AP
+
+### Common MHT CET Question Patterns
+1. Find nth term of HP
+2. Insert harmonic means
+3. Problems involving AM, GM, HM
+4. Prove identities involving HP
+5. Relation between AP, GP, HP
+
+---
+
+# SECTION 10: BINOMIAL THEOREM
+
+## 10.1 Statement and Explanation
+
+**Binomial Theorem**: For any positive integer n,
+(a + b)ⁿ = ⁿC₀ aⁿ + ⁿC₁ aⁿ⁻¹b + ⁿC₂ aⁿ⁻²b² + ... + ⁿCₙ bⁿ
+
+where ⁿCᵣ = n!/[r!(n - r)!] are called binomial coefficients.
+
+**Expanded Form**:
+(a + b)ⁿ = aⁿ + ⁿC₁ aⁿ⁻¹b + ⁿC₂ aⁿ⁻²b² + ... + ⁿC_{n-1} abⁿ⁻¹ + bⁿ
+
+## 10.2 Important Formulas
+
+### Formula 1: General Term
+The (r+1)th term in the expansion is:
+**tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ**
+
+### Formula 2: Middle Term(s)
+
+**Case 1: n is even**
+- Number of terms = n + 1 (odd)
+- One middle term: (n/2 + 1)th term
+- t_{n/2 + 1} = ⁿC_{n/2} aⁿ/² bⁿ/²
+
+**Case 2: n is odd**
+- Number of terms = n + 1 (even)
+- Two middle terms: (n+1)/2 th and (n+3)/2 th terms
+- t_{(n+1)/2} and t_{(n+3)/2}
+
+### Formula 3: Term Independent of x
+For expansions like (xᵖ ± 1/xᵠ)ⁿ, put power of x = 0 in general term to find r.
+
+### Formula 4: Greatest Coefficient
+Middle term has greatest binomial coefficient.
+For even n: Greatest coefficient = ⁿC_{n/2}
+For odd n: Greatest coefficients = ⁿC_{(n-1)/2} = ⁿC_{(n+1)/2}
+
+## 10.3 Binomial Coefficients Properties
+
+### Property 1: Sum of Binomial Coefficients
+ⁿC₀ + ⁿC₁ + ⁿC₂ + ... + ⁿCₙ = 2ⁿ
+
+**Proof**: Put a = 1, b = 1 in (a + b)ⁿ
+
+### Property 2: Alternating Sum
+ⁿC₀ - ⁿC₁ + ⁿC₂ - ⁿC₃ + ... = 0
+
+**Proof**: Put a = 1, b = -1 in (a + b)ⁿ
+
+### Property 3: Sum of Even Terms
+ⁿC₀ + ⁿC₂ + ⁿC₄ + ... = 2ⁿ⁻¹
+
+### Property 4: Sum of Odd Terms
+ⁿC₁ + ⁿC₃ + ⁿC₅ + ... = 2ⁿ⁻¹
+
+### Property 5: Symmetry Property
+ⁿCᵣ = ⁿCₙ₋ᵣ
+
+### Property 6: Pascal's Identity
+ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ
+
+## 10.4 Solved Examples with Detailed Steps
+
+**Example 75**: Expand (2x + 3)⁴ using binomial theorem
+
+**Solution:**
+```
+(2x + 3)⁴ = ⁴C₀(2x)⁴ + ⁴C₁(2x)³(3) + ⁴C₂(2x)²(3)² + ⁴C₃(2x)(3)³ + ⁴C₄(3)⁴
+
+Calculate each term:
+⁴C₀ = 1, (2x)⁴ = 16x⁴ ⇒ term = 16x⁴
+⁴C₁ = 4, (2x)³ = 8x³, 3 = 3 ⇒ 4 × 8x³ × 3 = 96x³
+⁴C₂ = 6, (2x)² = 4x², 3² = 9 ⇒ 6 × 4x² × 9 = 216x²
+⁴C₃ = 4, (2x) = 2x, 3³ = 27 ⇒ 4 × 2x × 27 = 216x
+⁴C₄ = 1, 3⁴ = 81 ⇒ term = 81
+
+Therefore: (2x + 3)⁴ = 16x⁴ + 96x³ + 216x² + 216x + 81
+```
+
+**Example 76**: Find the 5th term in the expansion of (x + 2y)⁸
+
+**Solution:**
+```
+Step 1: General term tᵣ₊₁ = ⁸Cᵣ x⁸⁻ʳ (2y)ʳ
+        For 5th term, r + 1 = 5 ⇒ r = 4
+
+Step 2: t₅ = ⁸C₄ x⁸⁻⁴ (2y)⁴
+          = ⁸C₄ x⁴ × 16y⁴
+          = 70 × 16 x⁴y⁴
+          = 1120 x⁴y⁴
+```
+
+**Example 77**: Find the term independent of x in (x² + 1/x)⁹
+
+**Solution:**
+```
+Step 1: Write general term
+        tᵣ₊₁ = ⁹Cᵣ (x²)⁹⁻ʳ (1/x)ʳ
+              = ⁹Cᵣ x¹⁸⁻²ʳ × x⁻ʳ
+              = ⁹Cᵣ x¹⁸⁻³ʳ
+
+Step 2: For term independent of x, power of x = 0
+        18 - 3r = 0
+        3r = 18
+        r = 6
+
+Step 3: Independent term = ⁹C₆
+        Note: ⁹C₆ = ⁹C₃ = 84
+```
+
+**Example 78**: Find the coefficient of x⁵ in (1 + x)¹⁰
+
+**Solution:**
+```
+General term: tᵣ₊₁ = ¹⁰Cᵣ xʳ
+For x⁵: r = 5
+Coefficient = ¹⁰C₅ = 252
+```
+
+**Example 79**: Find the middle term(s) in (x + 1/x)⁶
+
+**Solution:**
+```
+Step 1: Here n = 6 (even)
+        Number of terms = 7
+        Middle term = (n/2 + 1)th = 4th term
+
+Step 2: For 4th term, r + 1 = 4 ⇒ r = 3
+        t₄ = ⁶C₃ (x)⁶⁻³ (1/x)³
+            = ⁶C₃ x³ × 1/x³
+            = 20 × 1
+            = 20
+
+Therefore middle term = 20
+```
+
+**Example 80**: Find the middle term(s) in (2x + 3y)⁷
+
+**Solution:**
+```
+Step 1: Here n = 7 (odd)
+        Number of terms = 8
+        Two middle terms: (n+1)/2 = 4th and (n+3)/2 = 5th terms
+
+Step 2: 4th term (r = 3)
+        t₄ = ⁷C₃ (2x)⁷⁻³ (3y)³
+            = 35 × (2x)⁴ × 27y³
+            = 35 × 16x⁴ × 27y³
+            = 35 × 432 x⁴y³
+            = 15120 x⁴y³
+
+Step 3: 5th term (r = 4)
+        t₅ = ⁷C₄ (2x)⁷⁻⁴ (3y)⁴
+            = 35 × (2x)³ × 81y⁴
+            = 35 × 8x³ × 81y⁴
+            = 35 × 648 x³y⁴
+            = 22680 x³y⁴
+```
+
+**Example 81**: Find the coefficient of x⁶ in (1 + x + x²)⁵
+
+**Solution:**
+```
+Step 1: This is trinomial expansion
+        We need terms where sum of powers = 6
+        Let (1 + x + x²)⁵ = ∑ (5!/(p!q!r!)) 1ᵖ xᵠ (x²)ʳ
+        where p + q + r = 5 and q + 2r = 6
+
+Step 2: Find all solutions of p + q + r = 5 and q + 2r = 6
+        From q = 6 - 2r
+        Substituting: p + (6 - 2r) + r = 5
+        p + 6 - r = 5
+        p = r - 1
+
+        Since p ≥ 0, r - 1 ≥ 0 ⇒ r ≥ 1
+        Also r ≤ 5 and p,q ≥ 0
+
+        r = 1: p = 0, q = 4
+        r = 2: p = 1, q = 2
+        r = 3: p = 2, q = 0
+
+Step 3: Calculate each term
+        For (p,q,r) = (0,4,1): 5!/(0!4!1!) = 120/(1×24×1) = 5
+        For (1,2,2): 5!/(1!2!2!) = 120/(1×2×2) = 30
+        For (2,0,3): 5!/(2!0!3!) = 120/(2×1×6) = 10
+
+Step 4: Total coefficient = 5 + 30 + 10 = 45
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 10
+
+### Shortcut 1: Binomial Coefficients Memory
+Use Pascal's Triangle for small n:
+```
+n=0:             1
+n=1:           1   1
+n=2:         1   2   1
+n=3:       1   3   3   1
+n=4:     1   4   6   4   1
+n=5:   1   5  10  10   5   1
+n=6: 1   6  15  20  15   6   1
+```
+
+### Shortcut 2: Finding Specific Term
+For (ax + b)ⁿ, term with xʳ:
+t_{r+1} = ⁿCᵣ (ax)ⁿ⁻ʳ (b)ʳ
+
+### Shortcut 3: Term Independent of x
+Put power of x = 0 in general term
+For (xᵖ + 1/xᵠ)ⁿ, solve p(n-r) - qr = 0
+
+### Shortcut 4: Numerically Greatest Term
+For (1 + x)ⁿ, numerically greatest term occurs when:
+r = floor[(n+1)|x|/(1+|x|)]
+
+### Shortcut 5: Sum of Coefficients
+Put variable = 1 to get sum of all coefficients
+For (1 + x)ⁿ, sum of coefficients = 2ⁿ
+
+### Shortcut 6: Binomial Theorem for Any Index
+For |x| < 1,
+(1 + x)ⁿ = 1 + nx + n(n-1)x²/2! + n(n-1)(n-2)x³/3! + ...
+(valid for any real n)
+
+### Common MHT CET Question Patterns
+1. Find particular term
+2. Find coefficient of given power
+3. Find term independent of x
+4. Find middle term(s)
+5. Sum of binomial coefficients
+6. Problems involving binomial theorem
+
+---
+
+# SECTION 11: PERMUTATIONS AND COMBINATIONS
+
+## 11.1 Fundamental Principle of Counting
+
+### Multiplication Principle
+If one event can occur in **m** ways and another independent event can occur in **n** ways, then the total number of ways both events can occur = **m × n**
+
+**Example**: If you have 3 shirts and 4 pants, number of outfits = 3 × 4 = 12
+
+### Addition Principle
+If one event can occur in **m** ways and another mutually exclusive event can occur in **n** ways, then total ways = **m + n**
+
+**Example**: If you can travel by bus (3 routes) or train (2 routes), total ways = 3 + 2 = 5
+
+## 11.2 Factorial Notation
+
+**Definition**: n! = n × (n-1) × (n-2) × ... × 3 × 2 × 1
+
+**Special Values**:
+- 0! = 1 (by definition)
+- 1! = 1
+- 2! = 2 × 1 = 2
+- 3! = 3 × 2 × 1 = 6
+- 4! = 4 × 3 × 2 × 1 = 24
+- 5! = 5 × 4 × 3 × 2 × 1 = 120
+
+**Properties**:
+1. n! = n × (n-1)!
+2. (n+1)! = (n+1) × n!
+
+## 11.3 Permutations (Order Matters)
+
+### Formula
+ⁿPᵣ = number of permutations of n distinct objects taken r at a time
+**ⁿPᵣ = n!/(n - r)!**
+
+### Special Cases
+1. ⁿPₙ = n! (arranging all objects)
+2. ⁿP₀ = 1 (choosing nothing)
+3. ⁿP₁ = n (choosing one object)
+4. ⁰P₀ = 1 (by convention)
+
+### Permutations with Repetition
+Number of permutations of n different things taken r at a time when repetition is allowed = **nʳ**
+
+### Permutations when all objects are not distinct
+Number of permutations of n objects where p are alike of one kind, q are alike of second kind, etc.:
+**n!/(p! q! r! ...)**
+
+### Circular Permutations
+**Number of circular permutations of n different things = (n - 1)!**
+
+**Explanation**: In circular arrangement, rotations are considered same. Fix one object and arrange remaining (n-1) objects.
+
+### Permutations with Restrictions
+
+**Case 1: Certain objects always together**
+- Treat the group as one unit
+- Number of ways = (number of units)! × (internal arrangements of the group)
+
+**Case 2: Certain objects never together**
+- Total permutations without restriction - permutations with objects together
+
+## 11.4 Combinations (Order Doesn't Matter)
+
+### Formula
+ⁿCᵣ = number of combinations of n distinct objects taken r at a time
+**ⁿCᵣ = n!/[r!(n - r)!]**
+
+### Properties
+1. ⁿCᵣ = ⁿCₙ₋ᵣ
+2. ⁿC₀ = ⁿCₙ = 1
+3. ⁿC₁ = n
+4. ⁿCₐ = ⁿCᵦ ⇒ either a = b or a + b = n
+5. ⁿCᵣ + ⁿCᵣ₋₁ = ⁿ⁺¹Cᵣ (Pascal's identity)
+6. ⁿC₀ + ⁿC₁ + ⁿC₂ + ... + ⁿCₙ = 2ⁿ
+
+### Selection with Repetition
+Number of ways to select r objects from n types (repetition allowed) = ⁿ⁺ʳ⁻¹Cᵣ
+
+## 11.5 Solved Examples with Detailed Steps
+
+**Example 82**: How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 without repetition?
+
+**Solution:**
+```
+Method 1: Using permutation formula
+We need to arrange 3 digits out of 5 distinct digits
+⁵P₃ = 5!/(5-3)! = 120/2 = 60
+
+Method 2: Using multiplication principle
+First digit: 5 choices
+Second digit: 4 choices (can't repeat first)
+Third digit: 3 choices
+Total = 5 × 4 × 3 = 60
+```
+
+**Example 83**: How many 4-letter words can be formed from letters of "MATHEMATICS" with repetition allowed?
+
+**Solution:**
+```
+Total distinct letters in MATHEMATICS:
+M, A, T, H, E, I, C, S = 8 distinct letters
+
+With repetition allowed:
+For each position, 8 choices
+Total = 8⁴ = 4096
+```
+
+**Example 84**: In how many ways can 5 persons sit in a row?
+
+**Solution:**
+```
+Arranging 5 distinct persons in a row
+⁵P₅ = 5! = 120 ways
+```
+
+**Example 85**: In how many ways can 5 persons sit around a circular table?
+
+**Solution:**
+```
+For circular arrangements
+Number of ways = (5-1)! = 4! = 24
+```
+
+**Example 86**: How many words can be formed from letters of "MISSISSIPPI"?
+
+**Solution:**
+```
+Total letters = 11
+Repeated letters:
+M: 1 time
+I: 4 times
+S: 4 times
+P: 2 times
+
+Number of permutations = 11!/(4! × 4! × 2!)
+= 39916800/(24 × 24 × 2)
+= 39916800/1152
+= 34650
+```
+
+**Example 87**: In how many ways can a committee of 3 be selected from 10 people?
+
+**Solution:**
+```
+Selection, order doesn't matter
+Number of ways = ¹⁰C₃ = 10!/(3! × 7!)
+                = (10 × 9 × 8)/(3 × 2 × 1)
+                = 720/6 = 120
+```
+
+**Example 88**: How many ways to select 3 balls from a bag containing 5 red and 4 blue balls such that at least 1 red is selected?
+
+**Solution:**
+```
+Method 1: Direct counting
+Total ways to select 3 from 9 = ⁹C₃ = 84
+Ways with no red (all blue) = ⁴C₃ = 4
+Ways with at least 1 red = 84 - 4 = 80
+
+Method 2: Casewise
+1 red + 2 blue: ⁵C₁ × ⁴C₂ = 5 × 6 = 30
+2 red + 1 blue: ⁵C₂ × ⁴C₁ = 10 × 4 = 40
+3 red + 0 blue: ⁵C₃ × ⁴C₀ = 10 × 1 = 10
+Total = 30 + 40 + 10 = 80
+```
+
+**Example 89**: Find the number of ways to arrange the letters of "EQUATION" such that vowels occupy odd places.
+
+**Solution:**
+```
+Step 1: Identify vowels and consonants
+Word: E Q U A T I O N (8 letters)
+Vowels: E, U, A, I, O (5 vowels)
+Consonants: Q, T, N (3 consonants)
+
+Step 2: Odd places are positions 1, 3, 5, 7 (4 positions)
+But we have 5 vowels, so impossible
+Therefore 0 ways
+```
+
+**Example 90**: How many 3-digit numbers divisible by 5 can be formed using digits 0-9 without repetition?
+
+**Solution:**
+```
+For divisibility by 5, last digit must be 0 or 5
+
+Case 1: Last digit = 0
+First digit: cannot be 0, so 1-9 (9 choices)
+Second digit: remaining 8 choices (including 0 is used)
+Number of ways = 9 × 8 × 1 = 72
+
+Case 2: Last digit = 5
+First digit: cannot be 0 or 5 (8 choices)
+Second digit: remaining 8 choices (including 0)
+Number of ways = 8 × 8 × 1 = 64
+
+Total = 72 + 64 = 136
+```
+
+**Example 91**: In how many ways can 5 boys and 3 girls sit in a row such that no two girls sit together?
+
+**Solution:**
+```
+Step 1: First arrange the 5 boys
+Boys can be arranged in 5! = 120 ways
+
+Step 2: After arranging boys, there are 6 gaps (before first, between, after last)
+_ B _ B _ B _ B _ B _
+
+Step 3: Choose 3 gaps for girls: ⁶C₃ = 20 ways
+
+Step 4: Arrange 3 girls in selected gaps: 3! = 6 ways
+
+Total = 120 × 20 × 6 = 14,400
+```
+
+---
+
+## TRICKS & SHORTCUTS FOR SECTION 11
+
+### Shortcut 1: When to Use P or C
+- **Permutation (P)**: Order matters (arrangements, sequences, rankings)
+- **Combination (C)**: Order doesn't matter (selections, committees, groups)
+
+### Shortcut 2: Number of Diagonals in Polygon
+Number of diagonals in n-sided polygon = ⁿC₂ - n = n(n-3)/2
+
+### Shortcut 3: Rank of a Word
+To find rank of a word in dictionary order:
+1. Arrange letters alphabetically
+2. Count words before given word
+
+### Shortcut 4: Circular Permutation
+For n different objects around circle: (n-1)!
+For garland/necklace (flipping allowed): (n-1)!/2
+
+### Shortcut 5: Number of Non-negative Integer Solutions
+Number of non-negative integer solutions to x₁ + x₂ + ... + xᵣ = n is ⁿ⁺ʳ⁻¹Cᵣ₋₁
+
+### Shortcut 6: Number of Positive Integer Solutions
+Number of positive integer solutions to x₁ + x₂ + ... + xᵣ = n is ⁿ⁻¹Cᵣ₋₁
+
+### Shortcut 7: Committee Problems
+For selection with conditions, use:
+- Total - (undesired)
+- Or direct casewise counting
+
+### Shortcut 8: Handshake Problem
+Number of handshakes among n people = ⁿC₂ = n(n-1)/2
+
+### Common MHT CET Question Patterns
+1. Arrangements with/without repetition
+2. Selections with conditions
+3. Circular arrangements
+4. Word formation problems
+5. Number of diagonals
+6. Committee formation
+7. Number of solutions to equations
+
+---
+
+# SUMMARY TABLE - KEY FORMULAS
+
+| Topic | Formula |
+|-------|---------|
+| **Quadratic Equation** | x = [-b ± √(b² - 4ac)]/2a |
+| **Discriminant** | D = b² - 4ac |
+| **Sum of Roots** | α + β = -b/a |
+| **Product of Roots** | αβ = c/a |
+| **AP nth term** | tₙ = a + (n-1)d |
+| **AP sum** | Sₙ = n/2[2a + (n-1)d] |
+| **GP nth term** | tₙ = arⁿ⁻¹ |
+| **GP sum (n terms)** | Sₙ = a(1 - rⁿ)/(1 - r) |
+| **GP infinite sum** | S∞ = a/(1 - r), |r|<1 |
+| **HP nth term** | tₙ = 1/[a + (n-1)d] |
+| **Harmonic Mean** | HM = 2ab/(a + b) |
+| **AM, GM, HM relation** | AM × HM = GM² |
+| **Permutation** | ⁿPᵣ = n!/(n-r)! |
+| **Combination** | ⁿCᵣ = n!/[r!(n-r)!] |
+| **Binomial Theorem** | (a+b)ⁿ = ∑ ⁿCᵣ aⁿ⁻ʳ bʳ |
+| **General Term** | tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ |
+| **Logarithm** | logₐ (mn) = logₐ m + logₐ n |
+| **Indices** | aᵐ × aⁿ = aᵐ⁺ⁿ |
+
+---

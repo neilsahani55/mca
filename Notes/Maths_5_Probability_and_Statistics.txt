@@ -1,0 +1,1437 @@
+# COMPLETE PROBABILITY & STATISTICS GUIDE FOR MHT CET MCA ENTRANCE EXAM 📊
+
+---
+
+## 📌 **EXAM QUICK REFERENCE**
+
+| **Particulars** | **Details** |
+|---|---|
+| **Weightage** | 8-10 questions (16-20 marks) |
+| **Difficulty** | Moderate |
+| **Time per question** | 45-60 seconds |
+| **Key to success** | Formula recall + Quick calculations |
+
+---
+
+# SECTION 1: FUNDAMENTALS OF PROBABILITY 🎲
+
+## 1.1 BASIC TERMINOLOGY
+
+| **Term** | **Definition** | **Example** |
+|---|---|---|
+| **Random Experiment** | Process with well-defined but unpredictable outcomes | Tossing a coin, rolling dice |
+| **Sample Space (S)** | Set of ALL possible outcomes | Coin: S = {H, T} |
+| **Event (E)** | Subset of sample space | Getting head: E = {H} |
+| **Trial** | Single performance of experiment | One coin toss |
+| **Outcome** | Result of a trial | Head or Tail |
+
+### 🔍 **Memory Trick: "SAMPLE"**
+- **S** - Sample Space (everything possible)
+- **A** - All outcomes listed
+- **M** - Mutually exclusive outcomes
+- **P** - Probability between 0-1
+- **L** - Likely events
+- **E** - Event (what we want)
+
+## 1.2 PROBABILITY OF AN EVENT
+
+### **Formula**: 
+$$P(E) = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} = \frac{n(E)}{n(S)}$$
+
+### **Properties**:
+1. $0 \leq P(E) \leq 1$
+2. $P(S) = 1$ (certain event)
+3. $P(\emptyset) = 0$ (impossible event)
+4. $P(E') = 1 - P(E)$ (complement rule)
+
+### **Quick Examples**:
+
+**Example 1**: Probability of getting a sum of 7 with two dice
+- Total outcomes = $6 \times 6 = 36$
+- Favorable: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → 6 outcomes
+- $P = \frac{6}{36} = \frac{1}{6}$
+
+**Example 2**: Probability of drawing a king from 52 cards
+- $P = \frac{4}{52} = \frac{1}{13}$
+
+## 1.3 TYPES OF EVENTS
+
+| **Event Type** | **Definition** | **Example** | **Venn Diagram Representation** |
+|---|---|---|---|
+| **Simple Event** | Single outcome | Getting '5' on die | Single point |
+| **Compound Event** | Multiple outcomes | Getting even number | Multiple points |
+| **Mutually Exclusive** | Cannot occur together | Head AND Tail in one toss | Disjoint circles |
+| **Exhaustive Events** | Union = Sample space | {H}, {T} for coin | Circles covering whole space |
+| **Equally Likely** | Same probability | Each face of fair die | Equal areas |
+| **Independent** | One doesn't affect other | Two separate coin tosses | Separate experiments |
+
+### 📝 **MHT CET Special**: Questions on identifying event types are common (1 mark)
+
+## 1.4 LAWS OF PROBABILITY
+
+### **ADDITION RULE** (OR Rule)
+
+**For Mutually Exclusive Events**:
+$$P(A \cup B) = P(A) + P(B)$$
+
+**For Non-Mutually Exclusive Events**:
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+
+**For Three Events**:
+$$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(B \cap C) - P(C \cap A) + P(A \cap B \cap C)$$
+
+### **MULTIPLICATION RULE** (AND Rule)
+
+**For Independent Events**:
+$$P(A \cap B) = P(A) \times P(B)$$
+
+**For Dependent Events**:
+$$P(A \cap B) = P(A) \times P(B|A)$$
+
+### 🎯 **Solved Examples with Tricks**
+
+**Example 3**: From a deck of 52 cards, probability of drawing a King OR a Queen
+- **Trick**: Mutually exclusive (can't be both)
+- $P = \frac{4}{52} + \frac{4}{52} = \frac{8}{52} = \frac{2}{13}$
+
+**Example 4**: Probability of drawing a King OR a Red card
+- **Trick**: Not mutually exclusive (red kings counted twice)
+- $P(K) = \frac{4}{52}$, $P(R) = \frac{26}{52}$, $P(K \cap R) = \frac{2}{52}$
+- $P = \frac{4}{52} + \frac{26}{52} - \frac{2}{52} = \frac{28}{52} = \frac{7}{13}$
+
+**Example 5**: Two cards drawn WITHOUT replacement, probability both are Kings
+- **Trick**: Dependent events
+- $P(\text{first King}) = \frac{4}{52}$
+- $P(\text{second King | first King}) = \frac{3}{51}$
+- $P = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221}$
+
+### ⚡ **MHT CET Shortcut**: For "without replacement" problems, multiply fractions directly
+
+## 1.5 CONDITIONAL PROBABILITY
+
+### **Definition**:
+Probability of event A given that event B has occurred
+
+### **Formula**:
+$$P(A|B) = \frac{P(A \cap B)}{P(B)}, \text{ where } P(B) > 0$$
+
+### **Properties**:
+1. $P(A|B) = P(A)$ if A and B are independent
+2. $P(A \cap B) = P(A) \times P(B|A) = P(B) \times P(A|B)$
+
+### **Example 6**:
+In a class, 60% pass Math, 50% pass Physics, 30% pass both. Find probability that a student who passed Math also passed Physics.
+
+$P(M) = 0.6$, $P(P) = 0.5$, $P(M \cap P) = 0.3$
+
+$P(P|M) = \frac{0.3}{0.6} = 0.5$
+
+### 🔄 **Venn Diagram Approach**:
+
+```
+        ┌─────────────┐
+        │     M(0.6)   │
+        │   ┌─────┐    │
+        │   │0.3  │    │
+        │   └─────┘    │
+        │     P(0.5)   │
+        └─────────────┘
+```
+
+## 1.6 INDEPENDENT VS DEPENDENT EVENTS
+
+### **Test for Independence**:
+Events A and B are independent if ANY of these hold:
+1. $P(A \cap B) = P(A) \times P(B)$
+2. $P(A|B) = P(A)$
+3. $P(B|A) = P(B)$
+
+### **Example 7**: Check independence: Getting head on first coin AND head on second coin
+- $P(H_1) = \frac{1}{2}$, $P(H_2) = \frac{1}{2}$, $P(H_1 \cap H_2) = \frac{1}{4}$
+- $P(H_1) \times P(H_2) = \frac{1}{4} = P(H_1 \cap H_2)$
+- ∴ **Independent**
+
+### **Example 8**: Check independence: Drawing a King AND drawing a Red card
+- $P(K) = \frac{4}{52} = \frac{1}{13}$
+- $P(R) = \frac{26}{52} = \frac{1}{2}$
+- $P(K \cap R) = \frac{2}{52} = \frac{1}{26}$
+- $P(K) \times P(R) = \frac{1}{13} \times \frac{1}{2} = \frac{1}{26}$
+- ∴ **Independent** (surprising but true!)
+
+## 1.7 BAYES' THEOREM
+
+### **Formula**:
+$$P(A_i|B) = \frac{P(A_i) \times P(B|A_i)}{\sum_{j=1}^{n} P(A_j) \times P(B|A_j)}$$
+
+### **When to Use**:
+- When we know probabilities in one direction and need reverse
+- "Given that event B happened, find probability it came from source A_i"
+
+### 📝 **MHT CET Pattern**: 1 question on Bayes' theorem (usually moderate difficulty)
+
+### **Example 9**: Box I: 3 Red, 2 Blue | Box II: 2 Red, 4 Blue
+A box is selected randomly, a ball drawn is Red. Find probability it came from Box I.
+
+**Step-by-Step Solution**:
+
+| **Step** | **Calculation** |
+|---|---|
+| Define events | A₁ = Box I, A₂ = Box II, R = Red ball |
+| Prior probabilities | $P(A_1) = \frac{1}{2}$, $P(A_2) = \frac{1}{2}$ |
+| Likelihoods | $P(R|A_1) = \frac{3}{5}$, $P(R|A_2) = \frac{2}{6} = \frac{1}{3}$ |
+| Numerator | $P(A_1) \times P(R|A_1) = \frac{1}{2} \times \frac{3}{5} = \frac{3}{10}$ |
+| Denominator | $\frac{1}{2} \times \frac{3}{5} + \frac{1}{2} \times \frac{1}{3} = \frac{3}{10} + \frac{1}{6} = \frac{9}{30} + \frac{5}{30} = \frac{14}{30} = \frac{7}{15}$ |
+| **Result** | $P(A_1|R) = \frac{3/10}{7/15} = \frac{3}{10} \times \frac{15}{7} = \frac{45}{70} = \frac{9}{14}$ |
+
+### ⚡ **MHT CET Shortcut**: Use the "Tree Diagram" method
+
+```
+        ┌── Box I (1/2) ── Red (3/5) ── (1/2 × 3/5 = 3/10)
+        │
+Start ──┤
+        │
+        └── Box II (1/2) ── Red (1/3) ── (1/2 × 1/3 = 1/6)
+        
+P(Box I|Red) = 3/10 ÷ (3/10 + 1/6) = 3/10 ÷ 14/30 = 9/14
+```
+
+---
+
+# SECTION 2: MEASURES OF CENTRAL TENDENCY (AVERAGES) 📈
+
+## 2.1 ARITHMETIC MEAN
+
+### **For Ungrouped Data**:
+$$\bar{x} = \frac{\sum x}{n}$$
+
+### **For Grouped Data**:
+$$\bar{x} = \frac{\sum fx}{\sum f}$$
+
+### **Step Deviation Method (Shortcut)**:
+$$\bar{x} = A + \frac{\sum fd}{\sum f} \times h$$
+where $d = \frac{x - A}{h}$, A = assumed mean, h = class width
+
+### ✅ **When to Use Which Method**:
+
+| **Data Type** | **Method** | **When to Use** |
+|---|---|---|
+| Small ungrouped | Direct | n < 10 |
+| Large ungrouped | Direct or Coding | Any size |
+| Grouped with small numbers | Direct | Simple numbers |
+| Grouped with large numbers | Step Deviation | Save time |
+
+### **Example 10**: Find mean from frequency distribution
+
+| Class | f | x | fx |
+|---|---|---|---|
+| 0-10 | 5 | 5 | 25 |
+| 10-20 | 8 | 15 | 120 |
+| 20-30 | 12 | 25 | 300 |
+| 30-40 | 5 | 35 | 175 |
+| **Total** | **Σf = 30** | | **Σfx = 620** |
+
+$\bar{x} = \frac{620}{30} = 20.67$
+
+### **Example 11**: Same data using Step Deviation (A = 25, h = 10)
+
+| Class | f | x | d = (x-25)/10 | fd |
+|---|---|---|---|---|
+| 0-10 | 5 | 5 | -2 | -10 |
+| 10-20 | 8 | 15 | -1 | -8 |
+| 20-30 | 12 | 25 | 0 | 0 |
+| 30-40 | 5 | 35 | 1 | 5 |
+| **Total** | **30** | | | **Σfd = -13** |
+
+$\bar{x} = 25 + \frac{-13}{30} \times 10 = 25 - 4.33 = 20.67$ ✓
+
+### ⚡ **MHT CET Trick**: For step deviation, choose A as the middle value to make calculations easier
+
+## 2.2 MEDIAN
+
+### **For Ungrouped Data**:
+1. Arrange data in ascending order
+2. If n is odd: Median = $(\frac{n+1}{2})^{th}$ term
+3. If n is even: Median = average of $(\frac{n}{2})^{th}$ and $(\frac{n}{2} + 1)^{th}$ terms
+
+### **For Grouped Data**:
+$$\text{Median} = L + \frac{\frac{N}{2} - cf}{f} \times h$$
+
+Where:
+- L = lower limit of median class
+- N = total frequency
+- cf = cumulative frequency before median class
+- f = frequency of median class
+- h = class width
+
+### 🔍 **Finding Median Class**:
+1. Calculate N/2
+2. Find class where cumulative frequency just exceeds N/2
+
+### **Example 12**: Find median
+
+| Class | f | cf |
+|---|---|---|
+| 0-10 | 5 | 5 |
+| 10-20 | 8 | 13 |
+| 20-30 | 12 | 25 |
+| 30-40 | 5 | 30 |
+
+N = 30, N/2 = 15
+Median class: 20-30 (cf = 25 > 15)
+L = 20, cf = 13, f = 12, h = 10
+
+$\text{Median} = 20 + \frac{15 - 13}{12} \times 10 = 20 + \frac{2}{12} \times 10 = 20 + 1.67 = 21.67$
+
+## 2.3 MODE
+
+### **For Ungrouped Data**:
+Value that occurs most frequently
+
+### **For Grouped Data**:
+$$\text{Mode} = L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times h$$
+
+Where:
+- L = lower limit of modal class
+- f₁ = frequency of modal class
+- f₀ = frequency of class before modal class
+- f₂ = frequency of class after modal class
+- h = class width
+
+### **Example 13**: Find mode
+
+| Class | 0-10 | 10-20 | 20-30 | 30-40 |
+|---|---|---|---|---|
+| f | 5 | 8 | 12 | 5 |
+
+Modal class: 20-30 (highest frequency)
+L = 20, f₁ = 12, f₀ = 8, f₂ = 5, h = 10
+
+$\text{Mode} = 20 + \frac{12 - 8}{2(12) - 8 - 5} \times 10 = 20 + \frac{4}{24 - 13} \times 10 = 20 + \frac{4}{11} \times 10 = 20 + 3.64 = 23.64$
+
+## 2.4 EMPIRICAL RELATIONSHIP
+
+### **Formula**:
+$$\text{Mode} = 3\text{Median} - 2\text{Mean}$$
+
+### **Example 14**: If Mean = 25, Median = 24, find Mode
+$\text{Mode} = 3(24) - 2(25) = 72 - 50 = 22$
+
+### 📊 **Relationship Summary**:
+
+| **Distribution** | **Relationship** |
+|---|---|
+| Symmetric | Mean = Median = Mode |
+| Positively Skewed | Mean > Median > Mode |
+| Negatively Skewed | Mode > Median > Mean |
+
+---
+
+# SECTION 3: MEASURES OF DISPERSION 📉
+
+## 3.1 RANGE
+
+### **Formula**:
+$$\text{Range} = \text{Maximum value} - \text{Minimum value}$$
+
+### **Coefficient of Range**:
+$$\text{Coefficient of Range} = \frac{\text{Max} - \text{Min}}{\text{Max} + \text{Min}}$$
+
+### **Example 15**: Find range and its coefficient for 12, 25, 18, 30, 15
+- Range = 30 - 12 = 18
+- Coefficient = $\frac{18}{30 + 12} = \frac{18}{42} = 0.4286$
+
+### ⚠️ **Limitation**: Range is affected by outliers; use only for small datasets
+
+## 3.2 QUARTILES AND INTERQUARTILE RANGE
+
+### **Quartile Formulas**:
+
+| **Quartile** | **Position (Ungrouped)** | **Formula (Grouped)** |
+|---|---|---|
+| Q₁ (First) | $\frac{n+1}{4}^{th}$ term | $L + \frac{\frac{N}{4} - cf}{f} \times h$ |
+| Q₂ (Median) | $\frac{n+1}{2}^{th}$ term | $L + \frac{\frac{N}{2} - cf}{f} \times h$ |
+| Q₃ (Third) | $\frac{3(n+1)}{4}^{th}$ term | $L + \frac{\frac{3N}{4} - cf}{f} \times h$ |
+
+### **Measures Based on Quartiles**:
+
+1. **Interquartile Range (IQR)** = Q₃ - Q₁
+2. **Quartile Deviation (QD)** = $\frac{Q_3 - Q_1}{2}$
+3. **Coefficient of QD** = $\frac{Q_3 - Q_1}{Q_3 + Q_1}$
+
+### **Example 16**: Find Q₁, Q₃, IQR, QD for 10, 15, 20, 25, 30, 35, 40
+- n = 7
+- Q₁ = 2nd term = 15
+- Q₃ = 6th term = 35
+- IQR = 35 - 15 = 20
+- QD = 20/2 = 10
+
+## 3.3 MEAN DEVIATION
+
+### **Formula**:
+$$\text{MD} = \frac{\sum |x - \bar{x}|}{n} \text{ (ungrouped)}$$
+$$\text{MD} = \frac{\sum f|x - \bar{x}|}{\sum f} \text{ (grouped)}$$
+
+### **Coefficient of MD**:
+$$\text{Coefficient of MD} = \frac{\text{MD}}{\bar{x}}$$
+
+### **Example 17**: Find MD from mean for 5, 8, 12, 15, 20
+- $\bar{x} = 12$
+- |x - x̄|: 7, 4, 0, 3, 8
+- Σ|x - x̄| = 22
+- MD = 22/5 = 4.4
+
+## 3.4 VARIANCE AND STANDARD DEVIATION
+
+### **For Ungrouped Data**:
+
+| **Measure** | **Formula** | **Shortcut Formula** |
+|---|---|---|
+| Variance (σ²) | $\frac{\sum (x - \bar{x})^2}{n}$ | $\frac{\sum x^2}{n} - (\bar{x})^2$ |
+| Standard Deviation (σ) | $\sqrt{\frac{\sum (x - \bar{x})^2}{n}}$ | $\sqrt{\frac{\sum x^2}{n} - (\bar{x})^2}$ |
+
+### **For Grouped Data**:
+
+$$\sigma^2 = \frac{\sum fx^2}{\sum f} - \left(\frac{\sum fx}{\sum f}\right)^2$$
+
+### **Example 18**: Find variance and SD for 5, 8, 12, 15, 20
+
+| x | x² |
+|---|---|
+| 5 | 25 |
+| 8 | 64 |
+| 12 | 144 |
+| 15 | 225 |
+| 20 | 400 |
+| Σx = 60 | Σx² = 858 |
+
+$\bar{x} = \frac{60}{5} = 12$
+$\sigma^2 = \frac{858}{5} - (12)^2 = 171.6 - 144 = 27.6$
+$\sigma = \sqrt{27.6} = 5.25$
+
+### **Example 19**: Grouped data
+
+| Class | f | x | fx | x² | fx² |
+|---|---|---|---|---|---|
+| 0-10 | 5 | 5 | 25 | 25 | 125 |
+| 10-20 | 8 | 15 | 120 | 225 | 1800 |
+| 20-30 | 12 | 25 | 300 | 625 | 7500 |
+| 30-40 | 5 | 35 | 175 | 1225 | 6125 |
+| **Total** | **30** | | **620** | | **15550** |
+
+$\bar{x} = \frac{620}{30} = 20.67$
+$\sigma^2 = \frac{15550}{30} - (20.67)^2 = 518.33 - 427.25 = 91.08$
+$\sigma = \sqrt{91.08} = 9.54$
+
+## 3.5 COEFFICIENT OF VARIATION (CV)
+
+### **Formula**:
+$$CV = \frac{\sigma}{\bar{x}} \times 100\%$$
+
+### **Interpretation**:
+- Lower CV → More consistent/less variability
+- Higher CV → More variability
+- Used to compare variability of different datasets
+
+### **Example 20**: If x̄ = 50, σ = 5, find CV
+$CV = \frac{5}{50} \times 100 = 10\%$
+
+### **Example 21**: Compare two groups
+- Group A: x̄ = 100, σ = 10 → CV = 10%
+- Group B: x̄ = 50, σ = 8 → CV = 16%
+- Group A is more consistent (lower CV)
+
+## 3.6 COMBINED MEAN AND VARIANCE
+
+### **Combined Mean**:
+$$\bar{x} = \frac{n_1\bar{x}_1 + n_2\bar{x}_2}{n_1 + n_2}$$
+
+### **Combined Variance**:
+$$\sigma^2 = \frac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$$
+where $d_1 = \bar{x}_1 - \bar{x}$, $d_2 = \bar{x}_2 - \bar{x}$
+
+### **Example 22**:
+Group 1: n₁ = 10, x̄₁ = 20, σ₁ = 4
+Group 2: n₂ = 15, x̄₂ = 30, σ₂ = 5
+Find combined mean and variance.
+
+**Step 1**: Combined mean
+$\bar{x} = \frac{10 \times 20 + 15 \times 30}{10 + 15} = \frac{200 + 450}{25} = \frac{650}{25} = 26$
+
+**Step 2**: Deviations
+$d_1 = 20 - 26 = -6$, $d_2 = 30 - 26 = 4$
+
+**Step 3**: Combined variance
+$\sigma^2 = \frac{10(4^2 + (-6)^2) + 15(5^2 + 4^2)}{25}$
+$= \frac{10(16 + 36) + 15(25 + 16)}{25}$
+$= \frac{10 \times 52 + 15 \times 41}{25}$
+$= \frac{520 + 615}{25} = \frac{1135}{25} = 45.4$
+
+---
+
+# SECTION 4: SKEWNESS AND KURTOSIS 📐
+
+## 4.1 SKEWNESS
+
+Skewness measures the asymmetry of a distribution.
+
+### **Types of Skewness**:
+
+| **Type** | **Shape** | **Relationship** | **Example** |
+|---|---|---|---|
+| **Positive Skew** | Tail on right | Mean > Median > Mode | Income distribution |
+| **Negative Skew** | Tail on left | Mode > Median > Mean | Exam scores (easy paper) |
+| **Zero Skew** | Symmetric | Mean = Median = Mode | Normal distribution |
+
+### **Karl Pearson's Coefficient of Skewness**:
+
+$$S_k = \frac{\text{Mean} - \text{Mode}}{\sigma}$$
+
+**OR** (when mode is not well-defined):
+
+$$S_k = \frac{3(\text{Mean} - \text{Median})}{\sigma}$$
+
+### **Interpretation**:
+- $S_k = 0$: Symmetric distribution
+- $S_k > 0$: Positive skew
+- $S_k < 0$: Negative skew
+- $|S_k| > 1$: Highly skewed
+
+### **Example 23**: If Mean = 50, Median = 48, σ = 8, find skewness
+$S_k = \frac{3(50 - 48)}{8} = \frac{3 \times 2}{8} = \frac{6}{8} = 0.75$ (Positive skew)
+
+### **Bowley's Coefficient of Skewness** (based on quartiles):
+
+$$S_k = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$$
+
+**Range**: -1 to +1
+
+### **Example 24**: If Q₁ = 25, Q₂ = 30, Q₃ = 40
+$S_k = \frac{40 + 25 - 2 \times 30}{40 - 25} = \frac{65 - 60}{15} = \frac{5}{15} = 0.33$
+
+### 🔍 **When to Use Which**:
+
+| **Measure** | **When to Use** |
+|---|---|
+| Pearson's | When mean, mode, SD are available |
+| Bowley's | When data has outliers (quartiles are robust) |
+
+## 4.2 KURTOSIS
+
+Kurtosis measures the "peakedness" or "flatness" of a distribution.
+
+### **Types of Kurtosis**:
+
+| **Type** | **Characteristic** | **β₂ Value** | **Visual** |
+|---|---|---|---|
+| **Leptokurtic** | Sharp peak, heavy tails | > 3 | Pointed like a mountain |
+| **Mesokurtic** | Normal distribution | = 3 | Bell-shaped |
+| **Platykurtic** | Flat peak, light tails | < 3 | Flat like a plateau |
+
+### **Measure of Kurtosis**:
+
+$$\beta_2 = \frac{\mu_4}{\mu_2^2}$$
+
+Where:
+- $\mu_2$ = variance (second moment about mean)
+- $\mu_4$ = fourth moment about mean
+- $\mu_r = \frac{\sum f(x - \bar{x})^r}{\sum f}$
+
+### **Example 25**: If μ₄ = 100, σ² = 5, find kurtosis type
+$\beta_2 = \frac{100}{(5)^2} = \frac{100}{25} = 4 > 3$ → **Leptokurtic**
+
+### 📝 **Memory Trick**:
+- **Lepto** = "Lean and pointy" (like a needle)
+- **Meso** = "Medium" (normal)
+- **Platy** = "Plateau" (flat)
+
+---
+
+# SECTION 5: RANDOM VARIABLES AND EXPECTATION 🎯
+
+## 5.1 RANDOM VARIABLE
+
+A function that assigns numerical values to outcomes of a random experiment.
+
+### **Types**:
+
+| **Type** | **Definition** | **Examples** |
+|---|---|---|
+| **Discrete** | Takes countable values | Number of heads, defective items |
+| **Continuous** | Takes any value in an interval | Height, weight, time |
+
+## 5.2 PROBABILITY DISTRIBUTION
+
+### **Discrete Probability Distribution**:
+
+List of all possible values with their probabilities.
+
+**Conditions**:
+1. $P(X = x_i) \geq 0$ for all i
+2. $\sum P(X = x_i) = 1$
+
+### **Example 26**: Number of heads in 2 coin tosses
+
+| X | 0 | 1 | 2 |
+|---|---|---|---|
+| P(X) | 1/4 | 1/2 | 1/4 |
+
+## 5.3 MATHEMATICAL EXPECTATION
+
+### **Definition**:
+$$E(X) = \sum x_i P(X = x_i)$$
+
+### **Properties**:
+
+| **Property** | **Formula** |
+|---|---|
+| Constant | $E(c) = c$ |
+| Scalar multiplication | $E(cX) = cE(X)$ |
+| Addition | $E(X + Y) = E(X) + E(Y)$ |
+| Multiplication (independent) | $E(XY) = E(X)E(Y)$ |
+| Linear combination | $E(aX + bY) = aE(X) + bE(Y)$ |
+
+### **Example 27**: Find E(X) for the distribution above
+$E(X) = 0 \times \frac{1}{4} + 1 \times \frac{1}{2} + 2 \times \frac{1}{4} = 0 + 0.5 + 0.5 = 1$
+
+## 5.4 VARIANCE OF RANDOM VARIABLE
+
+### **Formula**:
+$$\text{Var}(X) = E(X^2) - [E(X)]^2$$
+
+### **Properties**:
+
+| **Property** | **Formula** |
+|---|---|
+| Constant | $\text{Var}(c) = 0$ |
+| Scalar multiplication | $\text{Var}(cX) = c^2\text{Var}(X)$ |
+| Addition (independent) | $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)$ |
+| Linear combination | $\text{Var}(aX + bY) = a^2\text{Var}(X) + b^2\text{Var}(Y)$ |
+
+### **Example 28**: Find variance for above distribution
+$E(X^2) = 0^2 \times \frac{1}{4} + 1^2 \times \frac{1}{2} + 2^2 \times \frac{1}{4} = 0 + 0.5 + 1 = 1.5$
+$\text{Var}(X) = 1.5 - (1)^2 = 0.5$
+
+## 5.5 MOMENTS
+
+### **Definitions**:
+
+| **Moment** | **Formula** | **Description** |
+|---|---|---|
+| rth moment about origin | $\mu_r' = E(X^r)$ | Raw moments |
+| rth moment about mean | $\mu_r = E[(X - \mu)^r]$ | Central moments |
+| First moment about origin | $\mu_1' = E(X) = \mu$ | Mean |
+| Second moment about mean | $\mu_2 = E[(X - \mu)^2] = \sigma^2$ | Variance |
+
+### **Relationship**:
+$\mu_2 = \mu_2' - (\mu_1')^2$
+$\mu_3 = \mu_3' - 3\mu_2'\mu_1' + 2(\mu_1')^3$
+$\mu_4 = \mu_4' - 4\mu_3'\mu_1' + 6\mu_2'(\mu_1')^2 - 3(\mu_1')^4$
+
+---
+
+# SECTION 6: PROBABILITY DISTRIBUTIONS 📊
+
+## 6.1 BINOMIAL DISTRIBUTION
+
+### **Conditions (Bernoulli Trials)**:
+1. Fixed number of trials (n)
+2. Each trial has two outcomes: Success (p) or Failure (q)
+3. Trials are independent
+4. Probability of success remains constant
+
+### **Probability Mass Function**:
+$$P(X = r) = \binom{n}{r} p^r q^{n-r}, \quad r = 0, 1, 2, ..., n$$
+where $q = 1 - p$
+
+### **Important Measures**:
+
+| **Measure** | **Formula** |
+|---|---|
+| Mean | $\mu = np$ |
+| Variance | $\sigma^2 = npq$ |
+| Standard Deviation | $\sigma = \sqrt{npq}$ |
+| Skewness | $\frac{q-p}{\sqrt{npq}}$ |
+| Kurtosis | $3 - \frac{6}{n} + \frac{1}{npq}$ |
+
+### **Properties**:
+- When p = q = 0.5, distribution is symmetric
+- When p < 0.5, distribution is positively skewed
+- When p > 0.5, distribution is negatively skewed
+
+### **Example 29**: Coin tossed 5 times, probability of exactly 3 heads
+- n = 5, p = 1/2, q = 1/2, r = 3
+- $P(X = 3) = \binom{5}{3} (1/2)^3 (1/2)^2 = 10 \times (1/8) \times (1/4) = 10/32 = 5/16$
+
+### **Example 30**: Binomial with n = 10, p = 0.4, find mean and variance
+- Mean = $10 \times 0.4 = 4$
+- Variance = $10 \times 0.4 \times 0.6 = 2.4$
+
+### **Example 31**: If mean = 6, variance = 2.4, find n and p
+- $np = 6$, $npq = 2.4$
+- $q = \frac{2.4}{6} = 0.4$
+- $p = 1 - 0.4 = 0.6$
+- $n = \frac{6}{0.6} = 10$
+
+### ⚡ **MHT CET Shortcut**: For binomial, remember $\frac{\text{Variance}}{\text{Mean}} = q$
+
+## 6.2 POISSON DISTRIBUTION
+
+### **Conditions (Rare Events)**:
+1. Events occur randomly and independently
+2. Probability in small interval ∝ interval length
+3. Probability of >1 event in small interval is negligible
+
+### **Probability Mass Function**:
+$$P(X = r) = \frac{e^{-\lambda} \lambda^r}{r!}, \quad r = 0, 1, 2, ...$$
+where $\lambda$ = mean number of occurrences
+
+### **Important Measures**:
+
+| **Measure** | **Formula** |
+|---|---|
+| Mean | $\lambda$ |
+| Variance | $\lambda$ |
+| Standard Deviation | $\sqrt{\lambda}$ |
+| Skewness | $\frac{1}{\sqrt{\lambda}}$ |
+| Kurtosis | $3 + \frac{1}{\lambda}$ |
+
+### **Additive Property**:
+If X ~ Poisson(λ₁) and Y ~ Poisson(λ₂) are independent, then
+X + Y ~ Poisson(λ₁ + λ₂)
+
+### **Example 32**: Average 2 calls per minute, probability of exactly 3 calls
+- λ = 2, r = 3
+- $P(X = 3) = \frac{e^{-2} \times 2^3}{3!} = \frac{e^{-2} \times 8}{6} = \frac{4}{3}e^{-2} \approx 1.333 \times 0.1353 = 0.18$
+
+### **Example 33**: If P(X = 0) = e⁻³, find λ and P(X = 2)
+- $P(X = 0) = e^{-\lambda} = e^{-3} \Rightarrow \lambda = 3$
+- $P(X = 2) = \frac{e^{-3} \times 3^2}{2!} = \frac{e^{-3} \times 9}{2} = 4.5e^{-3} \approx 4.5 \times 0.0498 = 0.224$
+
+### **Example 34**: If P(X = 1) = P(X = 2), find λ
+- $e^{-\lambda} \lambda = \frac{e^{-\lambda} \lambda^2}{2}$
+- $\lambda = \frac{\lambda^2}{2}$
+- $\lambda^2 - 2\lambda = 0$
+- $\lambda(\lambda - 2) = 0$
+- $\lambda = 2$ (since λ > 0)
+
+### 📝 **MHT CET Pattern**: Poisson questions often involve solving for λ using given probabilities
+
+## 6.3 NORMAL DISTRIBUTION
+
+### **Properties**:
+1. Bell-shaped and symmetric about mean
+2. Mean = Median = Mode
+3. Total area under curve = 1
+4. Asymptotic to x-axis
+5. Points of inflection at μ ± σ
+
+### **Probability Density Function**:
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+### **Standard Normal Distribution (Z)**:
+$$Z = \frac{x - \mu}{\sigma}$$
+- Mean = 0, Variance = 1
+- Z ~ N(0, 1)
+
+### **68-95-99.7 Rule (Empirical Rule)**:
+
+| **Interval** | **Area** |
+|---|---|
+| μ ± σ | 68.27% |
+| μ ± 2σ | 95.45% |
+| μ ± 3σ | 99.73% |
+
+### **Standard Normal Table Values to Remember**:
+
+| **Z-value** | **Area from 0 to Z** |
+|---|---|
+| 1.00 | 0.3413 |
+| 1.64 | 0.4495 |
+| 1.96 | 0.4750 |
+| 2.00 | 0.4772 |
+| 2.58 | 0.4951 |
+| 3.00 | 0.4987 |
+
+### **Example 35**: Normal with μ = 50, σ = 10, find P(40 < x < 60)
+- $Z_1 = \frac{40 - 50}{10} = -1$
+- $Z_2 = \frac{60 - 50}{10} = 1$
+- $P(-1 < Z < 1) = 2 \times P(0 < Z < 1) = 2 \times 0.3413 = 0.6826$
+
+### **Example 36**: Mean = 100, SD = 15, find P(x > 130)
+- $Z = \frac{130 - 100}{15} = 2$
+- $P(Z > 2) = 0.5 - P(0 < Z < 2) = 0.5 - 0.4772 = 0.0228$
+
+### **Example 37**: 31% items below 45, 8% above 64, find μ and σ
+
+**Step 1**: Set up equations
+- $P(X < 45) = 0.31 \Rightarrow P(Z < \frac{45-\mu}{\sigma}) = 0.31$
+- From table: $\frac{45-\mu}{\sigma} = -0.5$ ...(1)
+
+- $P(X > 64) = 0.08 \Rightarrow P(Z > \frac{64-\mu}{\sigma}) = 0.08$
+- $P(Z < \frac{64-\mu}{\sigma}) = 0.92$
+- From table: $\frac{64-\mu}{\sigma} = 1.4$ ...(2)
+
+**Step 2**: Solve
+From (1): $45 - \mu = -0.5\sigma \Rightarrow \mu = 45 + 0.5\sigma$
+From (2): $64 - \mu = 1.4\sigma$
+
+Substitute: $64 - (45 + 0.5\sigma) = 1.4\sigma$
+$19 - 0.5\sigma = 1.4\sigma$
+$19 = 1.9\sigma$
+$\sigma = 10$
+$\mu = 45 + 0.5 \times 10 = 50$
+
+### ⚡ **MHT CET Trick**: For normal distribution problems, always convert to Z-scores first
+
+## 6.4 COMPARISON OF DISTRIBUTIONS
+
+| **Feature** | **Binomial** | **Poisson** | **Normal** |
+|---|---|---|---|
+| **Type** | Discrete | Discrete | Continuous |
+| **Parameters** | n, p | λ | μ, σ |
+| **Mean** | np | λ | μ |
+| **Variance** | npq | λ | σ² |
+| **Symmetry** | Symmetric if p = 0.5 | Positively skewed | Symmetric |
+| **Relation** | → Poisson when n large, p small | → Normal when λ large | - |
+
+---
+
+# SECTION 7: CURVE FITTING 📐
+
+## 7.1 PRINCIPLE OF LEAST SQUARES
+
+### **Definition**:
+The best-fitting curve minimizes the sum of squares of the vertical deviations between observed and estimated values.
+
+$$\text{Minimize } S = \sum (y_i - \hat{y}_i)^2$$
+
+## 7.2 FITTING OF STRAIGHT LINE (y = a + bx)
+
+### **Normal Equations**:
+$$\sum y = na + b\sum x$$
+$$\sum xy = a\sum x + b\sum x^2$$
+
+### **Solution for a and b**:
+
+$$b = \frac{n\sum xy - \sum x \sum y}{n\sum x^2 - (\sum x)^2}$$
+$$a = \frac{\sum y - b\sum x}{n}$$
+
+### **Example 38**: Fit a straight line to the data
+
+| x | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| y | 3 | 5 | 7 | 9 | 11 |
+
+**Calculations**:
+- n = 5
+- Σx = 1 + 2 + 3 + 4 + 5 = 15
+- Σy = 3 + 5 + 7 + 9 + 11 = 35
+- Σxy = 1×3 + 2×5 + 3×7 + 4×9 + 5×11 = 3 + 10 + 21 + 36 + 55 = 125
+- Σx² = 1 + 4 + 9 + 16 + 25 = 55
+
+$b = \frac{5 \times 125 - 15 \times 35}{5 \times 55 - 15^2} = \frac{625 - 525}{275 - 225} = \frac{100}{50} = 2$
+
+$a = \frac{35 - 2 \times 15}{5} = \frac{35 - 30}{5} = \frac{5}{5} = 1$
+
+∴ Line: $y = 1 + 2x$
+
+### ✅ **Verification**: For x = 3, y = 1 + 2×3 = 7 ✓
+
+## 7.3 FITTING OF PARABOLA (y = a + bx + cx²)
+
+### **Normal Equations**:
+$$\sum y = na + b\sum x + c\sum x^2$$
+$$\sum xy = a\sum x + b\sum x^2 + c\sum x^3$$
+$$\sum x^2y = a\sum x^2 + b\sum x^3 + c\sum x^4$$
+
+### **Example 39**: Fit a parabola y = a + bx + cx²
+
+| x | 0 | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|---|
+| y | 1 | 2 | 5 | 10 | 17 |
+
+**Calculations**:
+- n = 5
+- Σx = 0 + 1 + 2 + 3 + 4 = 10
+- Σy = 1 + 2 + 5 + 10 + 17 = 35
+- Σx² = 0 + 1 + 4 + 9 + 16 = 30
+- Σx³ = 0 + 1 + 8 + 27 + 64 = 100
+- Σx⁴ = 0 + 1 + 16 + 81 + 256 = 354
+- Σxy = 0×1 + 1×2 + 2×5 + 3×10 + 4×17 = 0 + 2 + 10 + 30 + 68 = 110
+- Σx²y = 0²×1 + 1²×2 + 2²×5 + 3²×10 + 4²×17 = 0 + 2 + 20 + 90 + 272 = 384
+
+**Normal equations**:
+$5a + 10b + 30c = 35$ ...(1)
+$10a + 30b + 100c = 110$ ...(2)
+$30a + 100b + 354c = 384$ ...(3)
+
+From (1): $a + 2b + 6c = 7$ ...(1')
+From (2) ÷ 10: $a + 3b + 10c = 11$ ...(2')
+From (3) ÷ 2: $15a + 50b + 177c = 192$ ...(3')
+
+Subtract (1') from (2'): $b + 4c = 4$ ...(4)
+
+Multiply (1') by 15: $15a + 30b + 90c = 105$ ...(5)
+Subtract (5) from (3'): $20b + 87c = 87$ ...(6)
+
+From (4): $b = 4 - 4c$
+Substitute in (6): $20(4 - 4c) + 87c = 87$
+$80 - 80c + 87c = 87$
+$80 + 7c = 87$
+$7c = 7 \Rightarrow c = 1$
+$b = 4 - 4 = 0$
+From (1'): $a + 0 + 6 = 7 \Rightarrow a = 1$
+
+∴ Parabola: $y = 1 + 0x + 1x^2 = 1 + x^2$
+
+## 7.4 FITTING OF EXPONENTIAL CURVE (y = ae^{bx})
+
+### **Method**:
+Take natural logarithms: $\ln y = \ln a + bx$
+Let $Y = \ln y$, $A = \ln a$
+Then $Y = A + bx$ (linear in Y and x)
+
+### **Example 40**: Fit y = ae^{bx}
+
+| x | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| y | 2 | 5 | 12 | 30 |
+
+**Step 1**: Calculate Y = ln y
+- x: 0, 1, 2, 3
+- y: 2, 5, 12, 30
+- Y: 0.693, 1.609, 2.485, 3.401
+
+**Step 2**: Fit straight line Y = A + bx
+- n = 4
+- Σx = 6
+- ΣY = 0.693 + 1.609 + 2.485 + 3.401 = 8.188
+- ΣxY = 0×0.693 + 1×1.609 + 2×2.485 + 3×3.401 = 0 + 1.609 + 4.97 + 10.203 = 16.782
+- Σx² = 0 + 1 + 4 + 9 = 14
+
+$b = \frac{4 \times 16.782 - 6 \times 8.188}{4 \times 14 - 36} = \frac{67.128 - 49.128}{56 - 36} = \frac{18}{20} = 0.9$
+
+$A = \frac{8.188 - 0.9 \times 6}{4} = \frac{8.188 - 5.4}{4} = \frac{2.788}{4} = 0.697$
+
+**Step 3**: Convert back
+$a = e^A = e^{0.697} \approx 2.0$
+
+∴ Curve: $y = 2e^{0.9x}$
+
+### ⚡ **MHT CET Trick**: For exponential fitting, always take logs first to convert to linear form
+
+## 7.5 SUMMARY OF CURVE FITTING
+
+| **Curve Type** | **Equation** | **Transformation** | **Normal Equations** |
+|---|---|---|---|
+| Straight Line | y = a + bx | None | Σy = na + bΣx, Σxy = aΣx + bΣx² |
+| Parabola | y = a + bx + cx² | None | Three equations as above |
+| Exponential | y = ae^{bx} | Y = ln y, A = ln a | Y = A + bx (linear) |
+| Power | y = ax^b | Y = ln y, X = ln x, A = ln a | Y = A + bX (linear) |
+
+---
+
+# SECTION 8: CORRELATION 🔗
+
+## 8.1 DEFINITION
+
+Correlation measures the strength and direction of linear relationship between two variables.
+
+### **Types of Correlation**:
+
+| **Type** | **Description** | **Example** |
+|---|---|---|
+| **Positive** | Both variables increase together | Height & Weight |
+| **Negative** | One increases, other decreases | Price & Demand |
+| **Zero** | No linear relationship | Shoe size & IQ |
+| **Linear** | Points follow straight line | - |
+| **Non-linear** | Points follow curve | - |
+
+## 8.2 KARL PEARSON'S CORRELATION COEFFICIENT (r)
+
+### **Formula**:
+
+**Direct Method**:
+$$r = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sqrt{\sum (x - \bar{x})^2 \times \sum (y - \bar{y})^2}}$$
+
+**Computational Formula** (for exams):
+$$r = \frac{n\sum xy - \sum x \sum y}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}}$$
+
+### **Properties**:
+1. $-1 \leq r \leq +1$
+2. $r = +1$: Perfect positive correlation
+3. $r = -1$: Perfect negative correlation
+4. $r = 0$: No correlation
+5. r is independent of change of origin and scale
+
+### **Interpretation of |r|**:
+
+| **Value of |r|** | **Interpretation** |
+|---|---|---|
+| 0.00 - 0.19 | Very weak correlation |
+| 0.20 - 0.39 | Weak correlation |
+| 0.40 - 0.59 | Moderate correlation |
+| 0.60 - 0.79 | Strong correlation |
+| 0.80 - 1.00 | Very strong correlation |
+
+### **Example 41**: Find correlation coefficient
+
+| x | 10 | 12 | 15 | 18 | 20 |
+|---|---|---|---|---|---|
+| y | 15 | 18 | 20 | 25 | 22 |
+
+**Calculations**:
+- n = 5
+- Σx = 10 + 12 + 15 + 18 + 20 = 75
+- Σy = 15 + 18 + 20 + 25 + 22 = 100
+- Σx² = 100 + 144 + 225 + 324 + 400 = 1193
+- Σy² = 225 + 324 + 400 + 625 + 484 = 2058
+- Σxy = 10×15 + 12×18 + 15×20 + 18×25 + 20×22 = 150 + 216 + 300 + 450 + 440 = 1556
+
+$r = \frac{5 \times 1556 - 75 \times 100}{\sqrt{[5 \times 1193 - 75^2][5 \times 2058 - 100^2]}}$
+
+$= \frac{7780 - 7500}{\sqrt{[5965 - 5625][10290 - 10000]}}$
+
+$= \frac{280}{\sqrt{[340][290]}}$
+
+$= \frac{280}{\sqrt{98600}}$
+
+$= \frac{280}{314.0} = 0.892$ (Strong positive correlation)
+
+### ⚡ **MHT CET Shortcut**: For small datasets, create a table:
+
+| x | y | x² | y² | xy |
+|---|---|---|---|---|
+| 10 | 15 | 100 | 225 | 150 |
+| 12 | 18 | 144 | 324 | 216 |
+| 15 | 20 | 225 | 400 | 300 |
+| 18 | 25 | 324 | 625 | 450 |
+| 20 | 22 | 400 | 484 | 440 |
+| **75** | **100** | **1193** | **2058** | **1556** |
+
+Then apply formula directly
+
+## 8.3 SPEARMAN'S RANK CORRELATION
+
+### **When to Use**:
+- Data is in ranks
+- Qualitative data
+- When extreme values are present
+
+### **Formula**:
+$$\rho = 1 - \frac{6\sum d^2}{n(n^2 - 1)}$$
+where d = difference in ranks
+
+### **Example 42**: Find rank correlation
+
+| Student | A | B | C | D | E | F |
+|---|---|---|---|---|---|---|
+| Rank in Maths | 1 | 2 | 3 | 4 | 5 | 6 |
+| Rank in Stats | 2 | 4 | 1 | 5 | 3 | 6 |
+
+- d: -1, -2, 2, -1, 2, 0
+- d²: 1, 4, 4, 1, 4, 0
+- Σd² = 14, n = 6
+
+$\rho = 1 - \frac{6 \times 14}{6(36 - 1)} = 1 - \frac{84}{6 \times 35} = 1 - \frac{84}{210} = 1 - 0.4 = 0.6$
+
+### **Handling Tied Ranks**:
+When ranks are tied, assign average rank and add correction factor:
+
+$$\rho = 1 - \frac{6[\sum d^2 + \frac{m(m^2-1)}{12} + ...]}{n(n^2 - 1)}$$
+
+where m = number of ties in a group
+
+## 8.4 COMPARISON: PEARSON vs SPEARMAN
+
+| **Aspect** | **Pearson (r)** | **Spearman (ρ)** |
+|---|---|---|
+| **Data type** | Quantitative | Rank/Ordinal |
+| **Relationship** | Linear only | Any monotonic |
+| **Outliers** | Affected | Robust |
+| **Calculation** | Complex | Simple |
+| **Range** | -1 to +1 | -1 to +1 |
+
+---
+
+# SECTION 9: REGRESSION ANALYSIS 📈
+
+## 9.1 CONCEPT
+
+Regression analysis predicts the value of one variable based on the value of another.
+
+### **Regression Lines**:
+- **Regression line of y on x**: $y = a + bx$ (predict y from x)
+- **Regression line of x on y**: $x = a' + b'y$ (predict x from y)
+
+## 9.2 REGRESSION COEFFICIENTS
+
+### **Coefficient of y on x (b_yx)**:
+$$b_{yx} = \frac{n\sum xy - \sum x \sum y}{n\sum x^2 - (\sum x)^2} = r \cdot \frac{\sigma_y}{\sigma_x}$$
+
+### **Coefficient of x on y (b_xy)**:
+$$b_{xy} = \frac{n\sum xy - \sum x \sum y}{n\sum y^2 - (\sum y)^2} = r \cdot \frac{\sigma_x}{\sigma_y}$$
+
+### **Important Relation**:
+$$r = \sqrt{b_{yx} \times b_{xy}}$$
+
+## 9.3 REGRESSION EQUATIONS
+
+### **y on x**:
+$$y - \bar{y} = b_{yx}(x - \bar{x})$$
+
+### **x on y**:
+$$x - \bar{x} = b_{xy}(y - \bar{y})$$
+
+## 9.4 PROPERTIES OF REGRESSION COEFFICIENTS
+
+1. Both regression coefficients have same sign (same as r)
+2. $b_{yx} = r\frac{\sigma_y}{\sigma_x}$, $b_{xy} = r\frac{\sigma_x}{\sigma_y}$
+3. Geometric mean of regression coefficients = $|r|$
+4. Arithmetic mean of regression coefficients ≥ $|r|$
+5. $b_{yx} \times b_{xy} = r^2 \leq 1$
+
+### **Example 43**: From data in Example 41, find regression equations
+
+**Step 1**: Calculate means
+- $\bar{x} = \frac{75}{5} = 15$
+- $\bar{y} = \frac{100}{5} = 20$
+
+**Step 2**: Calculate standard deviations
+- $\sigma_x^2 = \frac{1193}{5} - (15)^2 = 238.6 - 225 = 13.6$
+- $\sigma_x = \sqrt{13.6} = 3.69$
+- $\sigma_y^2 = \frac{2058}{5} - (20)^2 = 411.6 - 400 = 11.6$
+- $\sigma_y = \sqrt{11.6} = 3.41$
+- $r = 0.892$
+
+**Step 3**: Calculate regression coefficients
+- $b_{yx} = r \times \frac{\sigma_y}{\sigma_x} = 0.892 \times \frac{3.41}{3.69} = 0.892 \times 0.924 = 0.824$
+- $b_{xy} = r \times \frac{\sigma_x}{\sigma_y} = 0.892 \times \frac{3.69}{3.41} = 0.892 \times 1.082 = 0.965$
+
+**Step 4**: Write equations
+- y on x: $y - 20 = 0.824(x - 15)$
+  $y = 0.824x + 20 - 12.36$
+  $y = 0.824x + 7.64$
+
+- x on y: $x - 15 = 0.965(y - 20)$
+  $x = 0.965y + 15 - 19.3$
+  $x = 0.965y - 4.3$
+
+### **Example 44**: If $b_{yx} = 0.8$ and $b_{xy} = 0.5$, find r
+$$r = \sqrt{b_{yx} \times b_{xy}} = \sqrt{0.8 \times 0.5} = \sqrt{0.4} = 0.632$$
+
+## 9.5 ANGLE BETWEEN REGRESSION LINES
+
+### **Formula**:
+$$\tan \theta = \frac{1 - r^2}{|r|} \times \frac{\sigma_x \sigma_y}{\sigma_x^2 + \sigma_y^2}$$
+
+### **Special Cases**:
+- If r = ±1, lines coincide (θ = 0°)
+- If r = 0, lines are perpendicular (θ = 90°)
+
+---
+
+# SECTION 10: QUICK REFERENCE - ALL FORMULAS 📋
+
+## PROBABILITY
+
+| **Concept** | **Formula** |
+|---|---|
+| Probability of event | $P(E) = \frac{\text{Favorable}}{\text{Total}}$ |
+| Complement | $P(E') = 1 - P(E)$ |
+| Addition rule (mutually exclusive) | $P(A \cup B) = P(A) + P(B)$ |
+| Addition rule (general) | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| Multiplication rule (independent) | $P(A \cap B) = P(A) \times P(B)$ |
+| Multiplication rule (dependent) | $P(A \cap B) = P(A) \times P(B|A)$ |
+| Conditional probability | $P(A|B) = \frac{P(A \cap B)}{P(B)}$ |
+| Bayes' theorem | $P(A_i|B) = \frac{P(A_i)P(B|A_i)}{\sum P(A_j)P(B|A_j)}$ |
+
+## MEASURES OF CENTRAL TENDENCY
+
+| **Measure** | **Formula** |
+|---|---|
+| Mean (ungrouped) | $\bar{x} = \frac{\sum x}{n}$ |
+| Mean (grouped) | $\bar{x} = \frac{\sum fx}{\sum f}$ |
+| Mean (step deviation) | $\bar{x} = A + \frac{\sum fd}{\sum f} \times h$ |
+| Median (grouped) | $L + \frac{\frac{N}{2} - cf}{f} \times h$ |
+| Mode (grouped) | $L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times h$ |
+| Empirical relation | Mode = 3Median - 2Mean |
+
+## MEASURES OF DISPERSION
+
+| **Measure** | **Formula** |
+|---|---|
+| Range | Max - Min |
+| Quartile Deviation | $\frac{Q_3 - Q_1}{2}$ |
+| Mean Deviation | $\frac{\sum |x - \bar{x}|}{n}$ |
+| Variance (ungrouped) | $\sigma^2 = \frac{\sum (x - \bar{x})^2}{n}$ |
+| Variance (grouped) | $\sigma^2 = \frac{\sum fx^2}{\sum f} - \left(\frac{\sum fx}{\sum f}\right)^2$ |
+| Standard Deviation | $\sigma = \sqrt{\sigma^2}$ |
+| Coefficient of Variation | $CV = \frac{\sigma}{\bar{x}} \times 100\%$ |
+
+## SKEWNESS AND KURTOSIS
+
+| **Measure** | **Formula** |
+|---|---|
+| Pearson's skewness | $S_k = \frac{\text{Mean} - \text{Mode}}{\sigma}$ |
+| Pearson's (alternative) | $S_k = \frac{3(\text{Mean} - \text{Median})}{\sigma}$ |
+| Bowley's skewness | $S_k = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$ |
+| Kurtosis | $\beta_2 = \frac{\mu_4}{\mu_2^2}$ |
+
+## RANDOM VARIABLES
+
+| **Measure** | **Formula** |
+|---|---|
+| Expectation | $E(X) = \sum x_i P(X = x_i)$ |
+| Variance | $Var(X) = E(X^2) - [E(X)]^2$ |
+| rth moment about origin | $\mu_r' = E(X^r)$ |
+| rth moment about mean | $\mu_r = E[(X - \mu)^r]$ |
+
+## PROBABILITY DISTRIBUTIONS
+
+| **Distribution** | **PMF/PDF** | **Mean** | **Variance** |
+|---|---|---|---|
+| Binomial | $\binom{n}{r} p^r q^{n-r}$ | $np$ | $npq$ |
+| Poisson | $\frac{e^{-\lambda} \lambda^r}{r!}$ | $\lambda$ | $\lambda$ |
+| Normal | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$ | $\sigma^2$ |
+| Standard Normal | $Z = \frac{x - \mu}{\sigma}$ | $0$ | $1$ |
+
+## CURVE FITTING
+
+| **Curve** | **Normal Equations** |
+|---|---|
+| y = a + bx | $\sum y = na + b\sum x$, $\sum xy = a\sum x + b\sum x^2$ |
+| y = a + bx + cx² | $\sum y = na + b\sum x + c\sum x^2$ |
+| | $\sum xy = a\sum x + b\sum x^2 + c\sum x^3$ |
+| | $\sum x^2y = a\sum x^2 + b\sum x^3 + c\sum x^4$ |
+
+## CORRELATION AND REGRESSION
+
+| **Measure** | **Formula** |
+|---|---|
+| Pearson's r | $r = \frac{n\sum xy - \sum x \sum y}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}}$ |
+| Rank correlation | $\rho = 1 - \frac{6\sum d^2}{n(n^2 - 1)}$ |
+| Regression coeff (y on x) | $b_{yx} = \frac{n\sum xy - \sum x \sum y}{n\sum x^2 - (\sum x)^2} = r\frac{\sigma_y}{\sigma_x}$ |
+| Regression coeff (x on y) | $b_{xy} = \frac{n\sum xy - \sum x \sum y}{n\sum y^2 - (\sum y)^2} = r\frac{\sigma_x}{\sigma_y}$ |
+| Relation | $r = \sqrt{b_{yx} \times b_{xy}}$ |
+| Regression line (y on x) | $y - \bar{y} = b_{yx}(x - \bar{x})$ |
+| Regression line (x on y) | $x - \bar{x} = b_{xy}(y - \bar{y})$ |
+
+---
+
+# 🎯 MHT CET MCA EXAM STRATEGY
+
+## TOPIC-WISE WEIGHTAGE ANALYSIS
+
+| **Topic** | **Expected Questions** | **Priority** |
+|---|---|---|
+| Basic Probability | 2-3 | ⭐⭐⭐ |
+| Binomial Distribution | 1-2 | ⭐⭐⭐ |
+| Mean, Median, Mode | 1-2 | ⭐⭐⭐ |
+| Variance & SD | 1-2 | ⭐⭐⭐ |
+| Correlation | 1-2 | ⭐⭐ |
+| Regression | 1 | ⭐⭐ |
+| Normal Distribution | 1 | ⭐⭐ |
+| Poisson Distribution | 0-1 | ⭐ |
+| Curve Fitting | 0-1 | ⭐ |
+| Skewness & Kurtosis | 0-1 | ⭐ |
+
+## TIME MANAGEMENT
+
+| **Question Type** | **Time Allotted** |
+|---|---|
+| Direct formula application | 30-45 seconds |
+| Moderate calculation | 45-60 seconds |
+| Multi-step problem | 60-90 seconds |
+| Theory/concept | 20-30 seconds |
+
+## SHORTCUTS & TRICKS
+
+### **Probability Shortcuts**:
+1. For "at least one" problems: $P(\text{at least one}) = 1 - P(\text{none})$
+2. For "without replacement": Multiply fractions $\frac{a}{b} \times \frac{a-1}{b-1} \times ...$
+3. For dice problems: Total outcomes = $6^n$, where n = number of dice
+
+### **Mean Calculation Tricks**:
+1. Step deviation: Choose A as middle value to minimize calculations
+2. For symmetric data, mean ≈ middle value
+3. For grouped data, use mid-points efficiently
+
+### **Variance Shortcuts**:
+1. For binomial: $\sigma^2 = npq$ (no need to calculate from data)
+2. For Poisson: $\sigma^2 = \lambda$ (variance equals mean)
+3. For small datasets, use $\sigma^2 = \frac{\sum x^2}{n} - (\bar{x})^2$
+
+### **Correlation Tips**:
+1. Create a table with columns: x, y, x², y², xy
+2. Sum each column, then plug into formula
+3. Check sign of r before calculating (if Σxy is large relative to ΣxΣy, r is positive)
+
+### **Regression Shortcuts**:
+1. $b_{yx} \times b_{xy} = r^2$
+2. Both regression lines pass through ($\bar{x}$, $\bar{y}$)
+3. To estimate y for given x, use y on x line
+
+## COMMON MISTAKES TO AVOID
+
+❌ **Forgetting that** $P(A \cup B) = P(A) + P(B)$ only for mutually exclusive events
+
+❌ **Confusing** variance formula: divide by n (population), not n-1 (sample)
+
+❌ **Using** grouped formula for ungrouped data
+
+❌ **Forgetting** to take square root for standard deviation
+
+❌ **Misinterpreting** sign of correlation coefficient
+
+❌ **Using** wrong regression line (y on x vs x on y)
+
+❌ **Forgetting** to convert Z-scores in normal distribution problems
+
+❌ **Not checking** if events are independent before multiplication
+
+## FORMULA MEMORY TRICKS
+
+### **For Binomial**:
+- "np" = Mean (think: n times p)
+- "npq" = Variance (add q to mean)
+
+### **For Poisson**:
+- "Same same" = Mean = Variance
+
+### **For Normal**:
+- "68-95-99.7" = 1σ, 2σ, 3σ percentages
+
+### **For Correlation**:
+- "r = √(b_yx × b_xy)" = geometric mean
+
+### **For Regression**:
+- "b_yx = r × (σ_y/σ_x)" = r times ratio of SDs
+
+---
+
+## 📝 PRACTICE QUESTIONS (MHT CET PATTERN)
+
+### **Level 1: Basic (1 mark)**
+
+**Q1.** Two dice are rolled. Probability of getting sum 8?
+- a) 5/36
+- b) 6/36
+- c) 4/36
+- d) 7/36
+
+**Q2.** If P(A) = 0.4, P(B) = 0.5, P(A∩B) = 0.2, then P(A∪B) = ?
+- a) 0.9
+- b) 0.7
+- c) 0.8
+- d) 0.6
+
+**Q3.** Mean of first 5 natural numbers is:
+- a) 2
+- b) 3
+- c) 4
+- d) 5
+
+### **Level 2: Moderate (2 marks)**
+
+**Q4.** In a binomial distribution, mean = 4, variance = 3. Find n and p.
+- a) n = 16, p = 0.25
+- b) n = 8, p = 0.5
+- c) n = 12, p = 0.33
+- d) n = 10, p = 0.4
+
+**Q5.** Find correlation coefficient from data:
+x: 1, 2, 3, 4, 5
+y: 2, 4, 6, 8, 10
+- a) 0
+- b) 0.5
+- c) 1
+- d) -1
+
+**Q6.** If b_yx = 0.6 and b_xy = 0.4, find r.
+- a) 0.24
+- b) 0.49
+- c) 0.5
+- d) 1
+
+### **Level 3: Advanced (2-3 marks)**
+
+**Q7.** In a normal distribution, 5% items are below 40 and 10% are above 70. Find mean and SD.
+- a) μ = 50, σ = 10
+- b) μ = 52.5, σ = 8.5
+- c) μ = 55, σ = 12
+- d) μ = 48, σ = 6
+
+**Q8.** Box I: 4R, 2B; Box II: 3R, 3B. A box is selected randomly and a ball drawn is red. Find probability it came from Box I.
+- a) 2/3
+- b) 4/7
+- c) 3/5
+- d) 5/8
+
+**Q9.** Fit a straight line to the data:
+x: 0, 1, 2, 3
+y: 1, 3, 5, 7
+- a) y = 1 + 2x
+- b) y = 2 + x
+- c) y = 1 + 3x
+- d) y = 2x + 1
+
+---
+
+## ✅ ANSWER KEY
+
+| **Q.No.** | **Answer** | **Explanation** |
+|---|---|---|
+| 1 | a) 5/36 | Favorable: (2,6),(3,5),(4,4),(5,3),(6,2) = 5 |
+| 2 | b) 0.7 | P(A∪B) = 0.4 + 0.5 - 0.2 = 0.7 |
+| 3 | b) 3 | (1+2+3+4+5)/5 = 15/5 = 3 |
+| 4 | a) n=16, p=0.25 | np=4, npq=3 → q=3/4, p=1/4, n=16 |
+| 5 | c) 1 | Perfect positive correlation |
+| 6 | b) 0.49 | r = √(0.6×0.4) = √0.24 = 0.49 |
+| 7 | b) μ=52.5, σ=8.5 | Solve using Z-scores |
+| 8 | b) 4/7 | Bayes' theorem application |
+| 9 | a) y = 1 + 2x | Check: For x=2, y=5 ✓ |
+
+---
+
+## 📚 FINAL PREPARATION TIPS
+
+### **One Week Before Exam**:
+✅ Review all formulas daily  
+✅ Practice 20-25 problems each day  
+✅ Focus on high-weightage topics  
+✅ Time yourself while solving  
+
+### **One Day Before Exam**:
+✅ Revise formula sheet  
+✅ Don't try new difficult problems  
+✅ Get good sleep  
+✅ Keep calculator ready  
+
+### **During Exam**:
+✅ Read question carefully  
+✅ Identify the topic quickly  
+✅ Apply correct formula  
+✅ Double-check calculations  
+✅ If stuck, move to next question  
+
+---
+
+## 🎯 CONCLUSION
+
+This comprehensive guide covers **all topics** required for MHT CET MCA Probability & Statistics section:
+
+✅ Basic Probability Concepts  
+✅ Measures of Central Tendency  
+✅ Measures of Dispersion  
+✅ Skewness and Kurtosis  
+✅ Random Variables & Expectation  
+✅ Binomial, Poisson, Normal Distributions  
+✅ Curve Fitting (Least Squares)  
+✅ Correlation and Regression  
+
+**Remember**: Practice is the key to success. Solve at least 100 problems from each section to build speed and accuracy.
+
+**All the Best for Your MHT CET MCA Exam!** 🍀
+
+---

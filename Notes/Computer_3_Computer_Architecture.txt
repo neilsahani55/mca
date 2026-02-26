@@ -1,0 +1,2093 @@
+# COMPUTER ARCHITECTURE FOR MHT MCA CET
+## Comprehensive Guide with Shortcuts, Tricks & Exam-Focused Content
+
+Hello! I'll provide you with an **extensively detailed, exam-oriented guide** covering all aspects of Computer Architecture with special focus on MHT CET pattern. I've organized everything with clear sections, shortcuts, memory tricks, and exam-specific insights.
+
+---
+
+# 📋 COMPLETE TOPICS COVERAGE
+
+| S.No | Main Topic | Subtopics Covered |
+|------|------------|-------------------|
+| 1 | **Block Structure** | CPU, Memory, I/O, System Bus, Control Unit, ALU, Registers |
+| 2 | **CPU Organization** | Register Set, Instruction Cycle, Fetch-Execute Cycle |
+| 3 | **Memory Hierarchy** | Cache, RAM, ROM, Secondary Storage, Memory Mapping |
+| 4 | **I/O Communication** | Programmed I/O, Interrupt I/O, DMA (COMPLETE DETAIL) |
+| 5 | **Interrupts** | Types, Priority, Handling, Vectored vs Non-Vectored, Maskable vs Non-Maskable |
+| 6 | **Bus Structure** | Data Bus, Address Bus, Control Bus, Arbitration |
+| 7 | **Architectures** | Von Neumann vs Harvard, RISC vs CISC |
+| 8 | **Performance Metrics** | MIPS, MFLOPS, CPI, Clock Speed |
+| 9 | **MCQ Bank** | 50+ Questions with Tricks |
+
+---
+
+# 1️⃣ BLOCK STRUCTURE OF COMPUTERS - DEEP DIVE
+
+## 🏛️ Complete Block Diagram with All Components
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                            COMPUTER SYSTEM ORGANIZATION                               │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                       │
+│  ┌─────────────────────────────────────────────────────────────────────────────┐    │
+│  │                           CENTRAL PROCESSING UNIT (CPU)                      │    │
+│  │  ┌───────────────────────────────────────────────────────────────────────┐  │    │
+│  │  │                       CONTROL UNIT (CU)                               │  │    │
+│  │  │  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐     │  │    │
+│  │  │  │ Instruction│  │   Program  │  │ Instruction│  │    Timing  │     │  │    │
+│  │  │  │  Register  │  │  Counter   │  │  Decoder   │  │   & Control│     │  │    │
+│  │  │  │    (IR)    │  │    (PC)    │  │            │  │   Signals  │     │  │    │
+│  │  │  └────────────┘  └────────────┘  └────────────┘  └────────────┘     │  │    │
+│  │  └───────────────────────────────────────────────────────────────────────┘  │    │
+│  │                                                                               │    │
+│  │  ┌───────────────────────────────────────────────────────────────────────┐  │    │
+│  │  │                    ARITHMETIC LOGIC UNIT (ALU)                        │  │    │
+│  │  │  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐     │  │    │
+│  │  │  │   Adder/   │  │   Subtractor│  │   Logical  │  │   Shifter  │     │  │    │
+│  │  │  │  Subtractor│  │            │  │   Circuit  │  │            │     │  │    │
+│  │  │  └────────────┘  └────────────┘  └────────────┘  └────────────┘     │  │    │
+│  │  └───────────────────────────────────────────────────────────────────────┘  │    │
+│  │                                                                               │    │
+│  │  ┌───────────────────────────────────────────────────────────────────────┐  │    │
+│  │  │                         REGISTER SET                                  │  │    │
+│  │  │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐    │  │    │
+│  │  │  │  AC  │ │  DR  │ │  AR  │ │  PC  │ │  IR  │ │  SP  │ │  FLAG│    │  │    │
+│  │  │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘    │  │    │
+│  │  └───────────────────────────────────────────────────────────────────────┘  │    │
+│  └─────────────────────────────────────────────────────────────────────────────┘    │
+│                                    │                                                   │
+│                                    ▼                                                   │
+│  ┌─────────────────────────────────────────────────────────────────────────────┐    │
+│  │                           SYSTEM BUS                                          │    │
+│  │  ┌───────────────────────────────────────────────────────────────────────┐  │    │
+│  │  │  DATA BUS (Bi-directional) - Width: 8,16,32,64 bits                   │  │    │
+│  │  │  ADDRESS BUS (Uni-directional) - Width: 16,20,32,64 bits              │  │    │
+│  │  │  CONTROL BUS (Bi-directional) - Read, Write, Interrupt, etc.          │  │    │
+│  │  └───────────────────────────────────────────────────────────────────────┘  │    │
+│  └─────────────────────────────────────────────────────────────────────────────┘    │
+│                                    │                                                   │
+│           ┌────────────────────────┼────────────────────────┐                          │
+│           ▼                        ▼                        ▼                          │
+│  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐                    │
+│  │   MEMORY UNIT   │    │   INPUT UNIT    │    │   OUTPUT UNIT   │                    │
+│  │                 │    │                 │    │                 │                    │
+│  │  ┌───────────┐  │    │  ┌───────────┐  │    │  ┌───────────┐  │                    │
+│  │  │   Cache   │  │    │  │ Keyboard  │  │    │  │  Monitor  │  │                    │
+│  │  ├───────────┤  │    │  ├───────────┤  │    │  ├───────────┤  │                    │
+│  │  │    RAM    │  │    │  │  Mouse    │  │    │  │  Printer  │  │                    │
+│  │  ├───────────┤  │    │  ├───────────┤  │    │  ├───────────┤  │                    │
+│  │  │    ROM    │  │    │  │ Scanner   │  │    │  │  Speaker  │  │                    │
+│  │  ├───────────┤  │    │  ├───────────┤  │    │  ├───────────┤  │                    │
+│  │  │ Secondary │  │    │  │ Microphone│  │    │  │  Plotter  │  │                    │
+│  │  │  Storage  │  │    │  └───────────┘  │    │  └───────────┘  │                    │
+│  │  └───────────┘  │    │                 │    │                 │                    │
+│  └─────────────────┘    └─────────────────┘    └─────────────────┘                    │
+│                                                                                       │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔍 DETAILED FUNCTIONAL UNITS EXPLANATION
+
+### 1. INPUT UNIT
+**Purpose:** Interface between user and computer
+
+**Functions in Detail:**
+- **Data Acquisition:** Captures data from external sources
+- **Conversion:** Converts analog signals to digital (ADC - Analog to Digital Converter)
+- **Buffering:** Temporarily stores input data
+- **Error Detection:** Parity checking, validation
+
+**Common Input Devices with Working Principles:**
+| Device | Working Principle | Data Form |
+|--------|-------------------|------------|
+| Keyboard | Mechanical switches/Matrix | ASCII codes |
+| Mouse | Optical sensor/Movement tracking | Coordinates (X,Y) |
+| Scanner | CCD/CMOS sensors | Bitmap images |
+| Microphone | Diaphragm vibration → Electrical | Digital audio |
+| Barcode Reader | Light reflection | Product codes |
+| Touch Screen | Capacitive/Resistive sensing | Touch coordinates |
+
+---
+
+### 2. OUTPUT UNIT
+**Purpose:** Present processed data to user
+
+**Functions in Detail:**
+- **Conversion:** Digital to human-readable form
+- **Display Management:** Resolution, color depth
+- **Synchronization:** Timing with CPU
+- **Buffering:** Store output data before display
+
+**Common Output Devices:**
+| Device | Technology | Output Form |
+|--------|------------|-------------|
+| Monitor | LCD, LED, OLED | Visual display |
+| Printer | Laser, Inkjet, Dot Matrix | Hard copy |
+| Speaker | Electromagnetic | Sound waves |
+| Projector | DLP, LCD | Large display |
+| Plotter | Pen/Ink | Vector graphics |
+
+---
+
+### 3. MEMORY UNIT - COMPLETE HIERARCHY
+
+```
+                    MEMORY HIERARCHY
+                         ▲
+                         │ Speed ↑ Cost ↑
+                         │
+      ┌─────────┐    Registers  (Fastest, Smallest, Costliest)
+      │  CPU    │        ▲
+      │Registers│        │
+      └─────────┘        │
+                         │
+      ┌─────────┐    Cache L1 (On-Chip)
+      │  Cache  │        ▲
+      │   L1    │        │
+      └─────────┘        │
+                         │
+      ┌─────────┐    Cache L2
+      │  Cache  │        ▲
+      │   L2    │        │
+      └─────────┘        │
+                         │
+      ┌─────────┐    Cache L3
+      │  Cache  │        ▲
+      │   L3    │        │
+      └─────────┘        │
+                         │
+      ┌─────────┐    Main Memory (RAM)
+      │   RAM   │        ▲
+      └─────────┘        │
+                         │
+      ┌─────────┐    Secondary Memory (HDD/SSD)
+      │  HDD/   │        ▲
+      │  SSD    │        │
+      └─────────┘        │
+                         │
+      ┌─────────┐    Tertiary Memory (Backup)
+      │  Tape/  │   (Slowest, Largest, Cheapest)
+      │  Cloud  │
+      └─────────┘
+                         │ Speed ↓ Cost ↓
+                         ▼
+```
+
+#### Memory Types Comparison Table:
+
+| Memory Type | Volatile? | Speed | Cost/bit | Access Time | Used For |
+|-------------|-----------|-------|----------|-------------|----------|
+| **Registers** | Yes | Fastest | Highest | 1-2 ns | CPU internal storage |
+| **Cache L1** | Yes | Very Fast | Very High | 2-4 ns | Frequently used data |
+| **Cache L2** | Yes | Fast | High | 4-8 ns | Data prefetch |
+| **Cache L3** | Yes | Moderate | Moderate | 10-20 ns | Shared cache |
+| **RAM (DRAM)** | Yes | Moderate | Low | 50-100 ns | Main memory |
+| **ROM** | No | Slow | Low | 100-200 ns | Boot firmware |
+| **SSD** | No | Slow | Very Low | 0.1-1 ms | Mass storage |
+| **HDD** | No | Slowest | Lowest | 5-20 ms | Mass storage |
+
+---
+
+### 4. ARITHMETIC LOGIC UNIT (ALU) - DEEP DIVE
+
+**Complete ALU Operations:**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    ALU OPERATIONS                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ARITHMETIC OPERATIONS:                                      │
+│  ├── Addition (ADD)           ──► A + B                     │
+│  ├── Subtraction (SUB)        ──► A - B                     │
+│  ├── Multiplication (MUL)     ──► A × B                     │
+│  ├── Division (DIV)           ──► A ÷ B                     │
+│  ├── Increment (INC)          ──► A + 1                     │
+│  ├── Decrement (DEC)          ──► A - 1                     │
+│  └── Negation (NEG)           ──► -A                        │
+│                                                              │
+│  LOGICAL OPERATIONS:                                         │
+│  ├── AND                      ──► A ∧ B                     │
+│  ├── OR                       ──► A ∨ B                     │
+│  ├── NOT                      ──► ¬A                        │
+│  ├── XOR (Exclusive OR)       ──► A ⊕ B                     │
+│  ├── NAND                     ──► ¬(A ∧ B)                  │
+│  └── NOR                      ──► ¬(A ∨ B)                  │
+│                                                              │
+│  SHIFT OPERATIONS:                                           │
+│  ├── Logical Left Shift (SHL) ──► Multiply by 2             │
+│  ├── Logical Right Shift (SHR) ──► Divide by 2 (unsigned)   │
+│  ├── Arithmetic Left Shift    ──► Same as SHL               │
+│  ├── Arithmetic Right Shift   ──► Divide by 2 (signed)      │
+│  ├── Rotate Left (ROL)        ──► Circular shift            │
+│  └── Rotate Right (ROR)       ──► Circular shift            │
+│                                                              │
+│  COMPARISON OPERATIONS:                                      │
+│  ├── Equal (CMP EQ)           ──► A == B                    │
+│  ├── Less Than (CMP LT)       ──► A < B                     │
+│  ├── Greater Than (CMP GT)    ──► A > B                     │
+│  └── Zero Test                ──► A == 0                    │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**ALU Flags/Status Register:**
+| Flag | Symbol | Set When |
+|------|--------|----------|
+| Carry | CF | Result has carry/borrow from MSB |
+| Zero | ZF | Result is zero |
+| Sign | SF | Result is negative (MSB = 1) |
+| Overflow | OF | Result exceeds signed range |
+| Parity | PF | Result has even number of 1's |
+| Auxiliary | AF | Carry from bit 3 to bit 4 |
+
+**📌 EXAM TRICK:** "CZOSPA" - Remember flags order
+- **C**arry
+- **Z**ero
+- **O**verflow
+- **S**ign
+- **P**arity
+- **A**uxiliary
+
+---
+
+### 5. CONTROL UNIT (CU) - COMPLETE FUNCTIONALITY
+
+**Control Unit Functions:**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              CONTROL UNIT OPERATIONS                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  FETCH PHASE:                                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ 1. Send PC address to MAR                            │  │
+│  │ 2. Send READ signal to memory                         │  │
+│  │ 3. Wait for memory to respond                         │  │
+│  │ 4. Transfer instruction from MBR to IR                │  │
+│  │ 5. Increment PC to point to next instruction          │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  DECODE PHASE:                                               │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ 1. Decode opcode in IR                                │  │
+│  │ 2. Identify addressing mode                           │  │
+│  │ 3. Generate micro-operations sequence                  │  │
+│  │ 4. Fetch operands if needed                           │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  EXECUTE PHASE:                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ 1. Activate ALU for operation                         │  │
+│  │ 2. Send control signals to appropriate units          │  │
+│  │ 3. Handle data movement                               │  │
+│  │ 4. Update status flags                                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  WRITE BACK PHASE:                                           │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ 1. Store result in destination                       │  │
+│  │ 2. Update memory if required                         │  │
+│  │ 3. Check for interrupts                              │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Types of Control Unit:**
+
+| Type | Implementation | Speed | Flexibility | Example |
+|------|---------------|-------|-------------|---------|
+| **Hardwired** | Logic circuits | Fastest | Fixed | RISC processors |
+| **Microprogrammed** | Microcode in ROM | Slower | Flexible | CISC processors |
+
+**📌 EXAM TRICK:** Hardwired = Hardware (Fast but rigid) | Microprogrammed = Microcode (Slow but flexible)
+
+---
+
+# 2️⃣ CPU REGISTERS - COMPLETE DETAIL
+
+## 🔢 Essential Registers and Their Functions
+
+| Register | Full Form | Size | Purpose |
+|----------|-----------|------|---------|
+| **PC** | Program Counter | Address width | Holds address of next instruction |
+| **IR** | Instruction Register | Instruction width | Holds current instruction |
+| **MAR** | Memory Address Register | Address width | Holds memory address for access |
+| **MBR/MDR** | Memory Buffer/Data Register | Word size | Holds data to/from memory |
+| **AC/ACC** | Accumulator | Word size | Stores intermediate results |
+| **SP** | Stack Pointer | Address width | Points to top of stack |
+| **BP** | Base Pointer | Address width | Points to stack base frame |
+| **FLAGS/PSW** | Program Status Word | 16/32 bits | Stores CPU status flags |
+| **GPRs** | General Purpose Registers | Word size | Temporary storage |
+
+**📌 IMPORTANT TRICK:** Remember the sequence - **PC MAR MBR IR**
+- PC → MAR (sends address)
+- MAR → Memory (selects location)
+- Memory → MBR (returns data)
+- MBR → IR (instruction loaded)
+
+---
+
+## 🔄 Instruction Cycle (Machine Cycle) - Complete Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   INSTRUCTION CYCLE                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  START                                                       │
+│    │                                                         │
+│    ▼                                                         │
+│  ┌──────────────────────┐                                   │
+│  │   FETCH CYCLE        │                                   │
+│  │   (T1, T2, T3, T4)   │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│  ┌──────────────────────┐                                   │
+│  │   DECODE CYCLE       │                                   │
+│  │   (T5, T6)           │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│  ┌──────────────────────┐                                   │
+│  │   EXECUTE CYCLE      │                                   │
+│  │   (T7...Tn)          │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│  ┌──────────────────────┐                                   │
+│  │   MEMORY ACCESS      │                                   │
+│  │   (If required)      │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│  ┌──────────────────────┐                                   │
+│  │   WRITE BACK         │                                   │
+│  │   (If required)      │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│  ┌──────────────────────┐                                   │
+│  │   INTERRUPT CHECK    │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                                │
+│             ▼                                                │
+│           NEXT                                                │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**📌 TIMING TRICK:**
+- **T-state** = One clock period
+- Machine Cycle = 3 to 6 T-states
+- Instruction Cycle = 1 to 6 Machine Cycles
+
+---
+
+# 3️⃣ I/O COMMUNICATION METHODS - COMPLETE DETAIL
+
+## 📡 THREE METHODS COMPARISON WITH VISUALIZATION
+
+```
+                    I/O COMMUNICATION METHODS
+                    
+    PROGRAMMED I/O          INTERRUPT I/O              DMA
+    (Polling)               (Event-driven)          (Direct)
+    
+    ┌─────┐                  ┌─────┐                  ┌─────┐
+    │ CPU │◄──Data Path──►   │ CPU │                  │ CPU │────┐
+    └──┬──┘  (Slow)          └──┬──┘                  └──┬──┘    │
+       │                        │                        │       │
+       │ Check Status           │  Interrupt             │  Setup│
+       │ (Busy Loop)            │  Signal                │       │
+       ▼                        ▼                        ▼       ▼
+    ┌─────┐                  ┌─────┐                  ┌─────┐ ┌─────┐
+    │ I/O │                  │ I/O │                  │ DMA │ │ I/O │
+    │Device│                  │Device│                  │Ctrl │ │Device│
+    └─────┘                  └─────┘                  └──┬──┘ └──┬──┘
+                                                          │       │
+                                                          │ Data  │
+                                                          │ Path  │
+                                                          ▼       ▼
+                                                      ┌─────────────┐
+                                                      │   MEMORY    │
+                                                      └─────────────┘
+```
+
+---
+
+## 3.1️⃣ PROGRAMMED I/O (POLLING) - DETAILED
+
+### Complete Working Mechanism
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   PROGRAMMED I/O FLOWCHART                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  CPU wants to read from Keyboard                                 │
+│         │                                                        │
+│         ▼                                                        │
+│  ┌─────────────────┐                                            │
+│  │ Read Status Reg │◀──────────────────────────────────────┐   │
+│  │ of Device       │                                       │   │
+│  └────────┬────────┘                                       │   │
+│           │                                                 │   │
+│           ▼                                                 │   │
+│  ┌─────────────────┐          NO                            │   │
+│  │ Is Device       │───────► Wait for next timeslot         │   │
+│  │ Ready?          │         (Waste CPU cycles)             │   │
+│  └────────┬────────┘          │                              │   │
+│           │ YES                │                              │   │
+│           ▼                    └──────────────────────────────┘   │
+│  ┌─────────────────┐                                            │
+│  │ Transfer 1 Byte │                                            │
+│  └────────┬────────┘                                            │
+│           │                                                      │
+│           ▼                                                      │
+│  ┌─────────────────┐                                            │
+│  │ More Data?      │───YES──────────────────────────────────────┘
+│  └────────┬────────┘                                            │
+│           │ NO                                                   │
+│           ▼                                                      │
+│  ┌─────────────────┐                                            │
+│  │   Continue      │                                            │
+│  │   Main Program  │                                            │
+│  └─────────────────┘                                            │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Technical Details
+
+| Parameter | Value |
+|-----------|-------|
+| **CPU Utilization** | 100% during I/O operation |
+| **Data Path** | I/O Device → CPU → Memory |
+| **Hardware Required** | Status register in I/O device |
+| **Software Complexity** | Very Low |
+| **Best For** | Simple devices, polling intervals |
+
+### Code Level Representation
+```
+Programmed I/O (Assembly Level):
+    
+    CHECK:  IN  STATUS_PORT    ; Read status register
+            AND READY_MASK     ; Check ready bit
+            JZ  CHECK          ; If not ready, loop
+            IN  DATA_PORT      ; Read data
+            MOV [MEMORY], AL   ; Store in memory
+            ; Continue...
+```
+
+### Advantages & Disadvantages
+
+| ✅ Advantages | ❌ Disadvantages |
+|--------------|-----------------|
+| Simple to implement | Wastes CPU time |
+| No special hardware needed | Cannot do parallel work |
+| Predictable timing | Slow for fast devices |
+| Easy debugging | Inefficient for multiple devices |
+
+---
+
+## 3.2️⃣ INTERRUPT-DRIVEN I/O - COMPLETE DETAIL
+
+### Interrupt Processing - Step by Step
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│              INTERRUPT PROCESSING SEQUENCE                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  PHASE 1: INTERRUPT REQUEST                                      │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. I/O Device completes operation                         │  │
+│  │ 2. Device sets interrupt request line HIGH                │  │
+│  │ 3. Interrupt Controller (PIC) receives signal             │  │
+│  │ 4. PIC prioritizes and forwards to CPU                    │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  PHASE 2: CPU RESPONSE                                           │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. CPU checks interrupt flag (IF)                         │  │
+│  │ 2. Completes current instruction                          │  │
+│  │ 3. Sends INTA (Interrupt Acknowledge)                     │  │
+│  │ 4. Disables further interrupts (optional)                 │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  PHASE 3: CONTEXT SAVE                                           │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. Push Program Counter (PC) onto stack                   │  │
+│  │ 2. Push Processor Status Word (PSW)                       │  │
+│  │ 3. Push general purpose registers (if needed)             │  │
+│  │ 4. Save current stack pointer                             │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  PHASE 4: INTERRUPT VECTOR FETCH                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. CPU reads interrupt vector number from device          │  │
+│  │ 2. Uses vector as index into Interrupt Vector Table       │  │
+│  │ 3. Fetches ISR address from IVT                           │  │
+│  │ 4. Loads ISR address into PC                              │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  PHASE 5: INTERRUPT SERVICE ROUTINE (ISR) EXECUTION              │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. Execute ISR code                                       │  │
+│  │ 2. Transfer data if needed                                │  │
+│  │ 3. Send EOI (End of Interrupt) to PIC                     │  │
+│  │ 4. Restore context (pop registers)                        │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  PHASE 6: RESUME                                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. Restore Program Counter from stack                     │  │
+│  │ 2. Restore PSW from stack                                 │  │
+│  │ 3. Re-enable interrupts (if disabled)                     │  │
+│  │ 4. Resume original program                                │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Hardware Components for Interrupts
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                INTERRUPT HARDWARE ARCHITECTURE                   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│                         ┌─────────┐                              │
+│                         │   CPU   │                              │
+│                         │         │                              │
+│                         │INTR INTA│                              │
+│                         └───┬──┬──┘                              │
+│                             │  │                                 │
+│                    ┌────────┘  └────────┐                        │
+│                    │                     │                        │
+│                    ▼                     ▼                        │
+│              ┌───────────┐         ┌───────────┐                 │
+│              │    PIC    │         │   Timer   │                 │
+│              │ (8259A)   │         │ Interrupt │                 │
+│              └─────┬─────┘         └───────────┘                 │
+│                    │                                             │
+│        ┌───────────┼───────────┬───────────┐                    │
+│        ▼           ▼           ▼           ▼                    │
+│   ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐                │
+│   │Keyboard│  │ Mouse  │  │ Printer│  │ Disk   │                │
+│   │ IRQ1   │  │ IRQ12  │  │ IRQ7   │  │ IRQ14  │                │
+│   └────────┘  └────────┘  └────────┘  └────────┘                │
+│                                                                   │
+│  PIC = Programmable Interrupt Controller                         │
+│  IRQ = Interrupt ReQuest lines                                   │
+│  INTR = INTerrupt Request (to CPU)                               │
+│  INTA = INTerrupt Acknowledge (from CPU)                         │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 3.3️⃣ DIRECT MEMORY ACCESS (DMA) - COMPLETE DETAIL
+
+### DMA Controller Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    DMA CONTROLLER (8237)                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │                    INTERNAL REGISTERS                      │  │
+│  │  ┌────────────┐  ┌────────────┐  ┌────────────┐          │  │
+│  │  │  Base      │  │  Current   │  │  Base      │          │  │
+│  │  │ Address   │  │  Address   │  │  Word      │          │  │
+│  │  │  Register │  │  Register  │  │  Count     │          │  │
+│  │  └────────────┘  └────────────┘  └────────────┘          │  │
+│  │                                                           │  │
+│  │  ┌────────────┐  ┌────────────┐  ┌────────────┐          │  │
+│  │  │  Current   │  │  Status    │  │  Command   │          │  │
+│  │  │  Word      │  │  Register  │  │  Register  │          │  │
+│  │  │  Count     │  │            │  │            │          │  │
+│  │  └────────────┘  └────────────┘  └────────────┘          │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │                   CHANNELS (4 Channels)                    │  │
+│  │  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐             │  │
+│  │  │CH 0    │ │CH 1    │ │CH 2    │ │CH 3    │             │  │
+│  │  │DRQ0    │ │DRQ1    │ │DRQ2    │ │DRQ3    │             │  │
+│  │  │DACK0   │ │DACK1   │ │DACK2   │ │DACK3   │             │  │
+│  │  └────────┘ └────────┘ └────────┘ └────────┘             │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  Interface Signals:                                               │
+│  • DREQ (DMA Request) - From I/O device to DMAC                 │
+│  • DACK (DMA Acknowledge) - From DMAC to I/O device             │
+│  • HRQ (Hold Request) - From DMAC to CPU                        │
+│  • HLDA (Hold Acknowledge) - From CPU to DMAC                   │
+│  • MEMR, MEMW, IOR, IOW - Control signals                       │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### DMA Operation Modes
+
+| Mode | Description | Use Case |
+|------|-------------|----------|
+| **Single Transfer Mode** | Transfers 1 byte/word per request | Slow devices |
+| **Block Transfer Mode** | Transfers entire block continuously | Fast devices, disk |
+| **Demand Transfer Mode** | Transfers until device deasserts request | Variable rate devices |
+| **Cascade Mode** | Multiple DMACs connected | Complex systems |
+
+### DMA Transfer Types
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    DMA TRANSFER TYPES                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  TYPE 1: I/O → MEMORY (Write Operation)                          │
+│  ┌─────┐     ┌─────┐     ┌────────┐                            │
+│  │ I/O │────▶│ DMA │────▶│ MEMORY │                            │
+│  │Device│     │Ctrl │     │        │                            │
+│  └─────┘     └─────┘     └────────┘                            │
+│  Direction: I/O Device → Memory                                 │
+│  Example: Disk read, Keyboard input                             │
+│                                                                   │
+│  TYPE 2: MEMORY → I/O (Read Operation)                           │
+│  ┌────────┐     ┌─────┐     ┌─────┐                            │
+│  │ MEMORY │────▶│ DMA │────▶│ I/O │                            │
+│  │        │     │Ctrl │     │Device│                            │
+│  └────────┘     └─────┘     └─────┘                            │
+│  Direction: Memory → I/O Device                                  │
+│  Example: Disk write, Printer output                             │
+│                                                                   │
+│  TYPE 3: MEMORY → MEMORY (Memory Copy)                           │
+│  ┌────────┐     ┌─────┐     ┌────────┐                         │
+│  │ Source │────▶│ DMA │────▶│ Dest   │                         │
+│  │Memory  │     │Ctrl │     │Memory  │                         │
+│  └────────┘     └─────┘     └────────┘                         │
+│  Direction: Memory to Memory                                     │
+│  Example: Block move, Memory clear                               │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### DMA Transfer Process - Step by Step
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   DMA TRANSFER SEQUENCE                          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  STEP 1: DMA Initialization (CPU Programs DMAC)                  │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ CPU writes to DMAC registers:                             │  │
+│  │ • Source Address (Where data comes from)                  │  │
+│  │ • Destination Address (Where data goes to)                │  │
+│  │ • Transfer Count (How many bytes)                         │  │
+│  │ • Transfer Mode (Single/Block/Demand)                     │  │
+│  │ • Transfer Type (Read/Write/Verify)                       │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  STEP 2: I/O Device Request                                      │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ I/O device ready for transfer                             │  │
+│  │ Device asserts DREQ (DMA Request) to DMAC                 │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  STEP 3: DMAC Requests Bus Control                               │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ DMAC asserts HRQ (Hold Request) to CPU                    │  │
+│  │ CPU completes current bus cycle                           │  │
+│  │ CPU floats its buses (high impedance state)               │  │
+│  │ CPU asserts HLDA (Hold Acknowledge) to DMAC               │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  STEP 4: DMAC Controls Bus                                       │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ DMAC takes control of address, data, control buses        │  │
+│  │ DMAC asserts DACK to I/O device                           │  │
+│  │ DMAC places address on address bus                        │  │
+│  │ DMAC generates control signals (MEMR, MEMW, IOR, IOW)     │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  STEP 5: Data Transfer                                           │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ For I/O → Memory:                                          │  │
+│  │   • IOR (I/O Read) active                                 │  │
+│  │   • MEMW (Memory Write) active                            │  │
+│  │   • Data flows from I/O to Memory via data bus            │  │
+│  │                                                           │  │
+│  │ For Memory → I/O:                                          │  │
+│  │   • MEMR (Memory Read) active                             │  │
+│  │   • IOW (I/O Write) active                                │  │
+│  │   • Data flows from Memory to I/O via data bus            │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  STEP 6: Repeat or Finish                                        │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ Decrement word count                                       │  │
+│  │ Increment addresses                                        │  │
+│  │ If count > 0 and mode = block, repeat STEP 5              │  │
+│  │ If count = 0, DMAC deasserts HRQ                          │  │
+│  │ CPU regains bus control                                    │  │
+│  │ DMAC may interrupt CPU on completion                       │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Bus Acquisition Methods in DMA
+
+| Method | Description | Advantage | Disadvantage |
+|--------|-------------|-----------|--------------|
+| **Burst Mode** | DMAC holds bus for entire transfer | Fast transfer | CPU starved |
+| **Cycle Stealing** | One word per bus cycle | CPU gets bus frequently | Slower transfer |
+| **Transparent Mode** | DMA when CPU not using bus | No CPU slowdown | Complex timing |
+
+---
+
+## 3.4️⃣ COMPARISON TABLE - ALL I/O METHODS
+
+| Feature | Programmed I/O | Interrupt I/O | DMA |
+|---------|---------------|---------------|-----|
+| **Initiator** | CPU | I/O Device | I/O Device |
+| **Data Path** | Device → CPU → Memory | Device → CPU → Memory | Device ↔ Memory (Direct) |
+| **CPU Role** | Active participant | Supervisor | Only setup & completion |
+| **Transfer Unit** | Byte/Word | Byte/Word | Block |
+| **Hardware Needed** | I/O ports | Interrupt controller | DMA controller |
+| **CPU Utilization** | Very Low (0-10%) | Medium (60-70%) | Very High (90-95%) |
+| **Response Time** | Predictable | Variable | Fast |
+| **Overhead** | Minimal | Context switch | Setup time |
+| **Cost** | Low | Medium | High |
+| **Complexity** | Simple | Moderate | Complex |
+| **Best For** | Simple polling | Character devices | Block devices |
+| **Examples** | Status checking | Keyboard, Mouse | Disk, Network |
+| **Data Rate** | < 10 KB/s | 10-100 KB/s | > 1 MB/s |
+| **Interrupts** | No | Yes (per transfer) | Yes (per block) |
+| **Parallelism** | None | Partial | Full |
+
+---
+
+# 4️⃣ INTERRUPTS - COMPLETE DETAILED GUIDE
+
+## 🔔 Comprehensive Interrupt Classification
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    INTERRUPT CLASSIFICATION                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│                         INTERRUPTS                                │
+│                              │                                    │
+│        ┌─────────────────────┼─────────────────────┐            │
+│        ▼                     ▼                     ▼            │
+│  ┌───────────┐        ┌───────────┐        ┌───────────┐       │
+│  │  HARDWARE │        │  SOFTWARE │        │EXCEPTIONS │       │
+│  │(External) │        │(Internal) │        │ (Traps)   │       │
+│  └─────┬─────┘        └─────┬─────┘        └─────┬─────┘       │
+│        │                    │                    │              │
+│        ▼                    ▼                    ▼              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
+│  │• I/O Devices │    │• System Calls│    │• Divide by 0 │      │
+│  │• Timer       │    │• INT n instr │    │• Overflow    │      │
+│  │• Power Fail  │    │• Breakpoint  │    │• Invalid Op  │      │
+│  │• DMA Complete│    │• Trap        │    │• Page Fault  │      │
+│  └──────────────┘    └──────────────┘    └──────────────┘      │
+│                                                                   │
+│  ┌─────────────────────────────────────────────────────────────┐ │
+│  │  Further Classification:                                     │ │
+│  │  ┌────────────────────┐  ┌────────────────────┐           │ │
+│  │  │ Maskable vs Non-   │  │ Vectored vs Non-   │           │ │
+│  │  │ Maskable           │  │ Vectored           │           │ │
+│  │  └────────────────────┘  └────────────────────┘           │ │
+│  │                                                           │ │
+│  │  ┌────────────────────┐  ┌────────────────────┐           │ │
+│  │  │ Edge vs Level      │  │ Single vs Multiple │           │ │
+│  │  │ Triggered          │  │ Priority           │           │ │
+│  │  └────────────────────┘  └────────────────────┘           │ │
+│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4.1️⃣ INTERRUPT TYPES - DETAILED EXPLANATION
+
+### A. Hardware Interrupts
+Generated by external hardware devices
+
+| Type | Source | Characteristics | Example |
+|------|--------|-----------------|---------|
+| **I/O Interrupt** | I/O devices | Device ready/completion | Keyboard press |
+| **Timer Interrupt** | Programmable timer | Periodic, time slicing | OS scheduler |
+| **Power Fail** | Power supply | Emergency, NMI | UPS signal |
+| **DMA Interrupt** | DMA controller | Transfer complete | Disk read done |
+| **Clock Interrupt** | System clock | Time keeping | Real-time clock |
+
+### B. Software Interrupts
+Generated by programs intentionally
+
+| Type | Instruction | Use |
+|------|-------------|-----|
+| **System Calls** | INT 21h (DOS), INT 80h (Linux) | OS services |
+| **Breakpoint** | INT 3 (x86) | Debugging |
+| **Overflow** | INTO (x86) | Check overflow |
+| **Bound** | BOUND (x86) | Array bounds check |
+
+### C. Exceptions (Internal Interrupts)
+Generated by CPU due to abnormal conditions
+
+| Exception | Cause | Handling |
+|-----------|-------|----------|
+| **Faults** | Correctable error | Restart instruction |
+| **Traps** | Deliberate | Continue next instruction |
+| **Aborts** | Unrecoverable error | Terminate program |
+
+---
+
+## 4.2️⃣ MASKABLE vs NON-MASKABLE INTERRUPTS
+
+### Maskable Interrupts
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    MASKABLE INTERRUPTS                           │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Characteristics:                                                │
+│  • Can be disabled by CPU using CLI instruction                 │
+│  • Controlled by Interrupt Flag (IF) in CPU                     │
+│  • Lower priority                                                │
+│  • Used for normal I/O devices                                   │
+│                                                                   │
+│  IF Flag Behavior:                                               │
+│  ┌──────────────┐    ┌──────────────┐                          │
+│  │ IF = 1       │    │ IF = 0       │                          │
+│  │ Interrupts   │    │ Interrupts   │                          │
+│  │ Enabled      │    │ Disabled     │                          │
+│  └──────────────┘    └──────────────┘                          │
+│                                                                   │
+│  Instructions:                                                   │
+│  • STI (Set Interrupt Flag) - Enable interrupts                 │
+│  • CLI (Clear Interrupt Flag) - Disable interrupts              │
+│                                                                   │
+│  Examples: Keyboard, Mouse, Printer, Disk                        │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Non-Maskable Interrupts (NMI)
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   NON-MASKABLE INTERRUPTS                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Characteristics:                                                │
+│  • Cannot be disabled by software                               │
+│  • Ignored only in very critical sections                       │
+│  • Highest priority                                             │
+│  • Dedicated pin on CPU (NMI pin)                               │
+│                                                                   │
+│  Features:                                                       │
+│  • Always recognized                                           │
+│  • No IF flag control                                          │
+│  • Immediate response required                                 │
+│                                                                   │
+│  Common NMIs:                                                    │
+│  • Power failure detection                                      │
+│  • Memory parity error                                          │
+│  • Hardware watchdog timer                                      │
+│  • Critical temperature                                         │
+│  • Emergency shutdown                                           │
+│                                                                   │
+│  TRICK: "NMI = Never Miss Interrupts"                           │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4.3️⃣ VECTORED vs NON-VECTORED INTERRUPTS
+
+### Vectored Interrupts
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    VECTORED INTERRUPTS                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Concept: Each interrupt has a fixed vector number               │
+│                                                                   │
+│  INTERRUPT VECTOR TABLE (IVT)                                    │
+│  ┌──────────┬────────────────────────────┐                      │
+│  │ Vector # │        ISR Address         │                      │
+│  ├──────────┼────────────────────────────┤                      │
+│  │    0     │  Divide by Zero Handler    │                      │
+│  │    1     │  Single Step Handler       │                      │
+│  │    2     │  NMI Handler               │                      │
+│  │    3     │  Breakpoint Handler        │                      │
+│  │    4     │  Overflow Handler          │                      │
+│  │    ...   │  ...                        │                      │
+│  │    14    │  Keyboard ISR (IRQ1)        │                      │
+│  │    15    │  Mouse ISR (IRQ12)          │                      │
+│  │    ...   │  ...                        │                      │
+│  │    255   │  User Defined               │                      │
+│  └──────────┴────────────────────────────┘                      │
+│                                                                   │
+│  Process:                                                        │
+│  1. Device sends interrupt vector number                         │
+│  2. CPU multiplies vector by 4 (or 8)                            │
+│  3. CPU reads ISR address from IVT                               │
+│  4. CPU jumps to ISR                                             │
+│                                                                   │
+│  Advantages: Fast, Direct                                         │
+│  Disadvantages: Fixed table size                                 │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Non-Vectored Interrupts
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                  NON-VECTORED INTERRUPTS                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Concept: Single interrupt line, device must provide address     │
+│                                                                   │
+│  Process:                                                        │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │ 1. Device asserts interrupt                               │  │
+│  │ 2. CPU sends INTA (Interrupt Acknowledge)                 │  │
+│  │ 3. Device places ISR address on data bus                  │  │
+│  │ 4. CPU reads address and jumps                             │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  Comparison:                                                     │
+│  ┌─────────────────────────┬─────────────────────────────┐     │
+│  │    Vectored             │      Non-Vectored            │     │
+│  ├─────────────────────────┼─────────────────────────────┤     │
+│  │ Fixed vectors           │ Dynamic addresses            │     │
+│  │ Faster response         │ Slower (needs address fetch) │     │
+│  │ Limited devices         │ Unlimited devices            │     │
+│  │ Hardware table          │ Software polling may be needed │   │
+│  │ Used in x86 PC          │ Used in some microcontrollers │   │
+│  └─────────────────────────┴─────────────────────────────┘     │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4.4️⃣ INTERRUPT PRIORITY SCHEMES
+
+### Priority Levels
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    INTERRUPT PRIORITY LEVELS                     │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  LEVEL 0 (Highest) - Internal Exceptions                         │
+│  ├── Divide by Zero                                              │
+│  ├── Invalid Opcode                                              │
+│  └── Hardware Reset                                              │
+│                                                                   │
+│  LEVEL 1 - Non-Maskable Interrupts (NMI)                         │
+│  ├── Power Failure                                               │
+│  ├── Memory Error                                                │
+│  └── Watchdog Timer                                              │
+│                                                                   │
+│  LEVEL 2 - High Priority Hardware                                │
+│  ├── DMA Controller                                              │
+│  ├── Disk Controller                                             │
+│  └── Network Interface                                           │
+│                                                                   │
+│  LEVEL 3 - Medium Priority Hardware                              │
+│  ├── Timer Interrupt                                             │
+│  ├── Keyboard                                                    │
+│  └── Mouse                                                       │
+│                                                                   │
+│  LEVEL 4 - Low Priority Hardware                                 │
+│  ├── Printer                                                     │
+│  └── Serial Port                                                 │
+│                                                                   │
+│  LEVEL 5 (Lowest) - Software Interrupts                          │
+│  ├── System Calls                                                │
+│  └── INT Instructions                                            │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Priority Resolution Methods
+
+| Method | Description | Advantage | Disadvantage |
+|--------|-------------|-----------|--------------|
+| **Fixed Priority** | Pre-assigned priority levels | Simple | Rigid |
+| **Round Robin** | Equal priority, cyclic | Fair | Complex |
+| **Daisy Chain** | Priority by physical position | Easy wiring | Slow for far devices |
+| **Programmable** | Priority set by software | Flexible | Needs PIC |
+
+---
+
+## 4.5️⃣ MULTIPLE INTERRUPT HANDLING
+
+### Scenario 1: Sequential Handling
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    SEQUENTIAL INTERRUPT HANDLING                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Main Program                                    Time            │
+│      │                                                          │
+│      ├─── Interrupt 1 occurs ───┐                              │
+│      │                          ▼                              │
+│      │                  ┌───────────────┐                      │
+│      │                  │   Handle ISR1 │                      │
+│      │                  └───────┬───────┘                      │
+│      │                          │                               │
+│      │                  ┌───────▼───────┐                      │
+│      │                  │   Interrupt 2 │──┐                   │
+│      │                  │    occurs     │  │                   │
+│      │                  └───────────────┘  │                   │
+│      │                                      ▼                   │
+│      │                             ┌───────────────┐           │
+│      │                             │  Handle ISR2  │           │
+│      │                             └───────┬───────┘           │
+│      │                                     │                    │
+│      │◄────────────────────────────────────┘                    │
+│      │                                                          │
+│      │◄────────────────────────────────────────────────────────┘
+│      ▼                                                          │
+│    Continue                                                     │
+│                                                                   │
+│  • Interrupts handled one after another                          │
+│  • No nesting                                                    │
+│  • Simpler but slower                                            │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Scenario 2: Nested Interrupts
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     NESTED INTERRUPT HANDLING                    │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Main Program                                    Time            │
+│      │                                                          │
+│      ├─── Int1 (Low Priority) ───┐                             │
+│      │                           ▼                             │
+│      │                   ┌───────────────┐                     │
+│      │                   │  Handle ISR1  │                     │
+│      │                   │               │                     │
+│      │                   │  ┌─ Int2 (High) ───┐               │
+│      │                   │  ▼                  ▼               │
+│      │                   │ ┌───────────────┐  │               │
+│      │                   │ │  Handle ISR2  │  │               │
+│      │                   │ │  (Preempts)   │  │               │
+│      │                   │ └───────┬───────┘  │               │
+│      │                   │         │          │               │
+│      │                   │◄────────┘          │               │
+│      │                   │                     │               │
+│      │                   │  ┌─ Int3 (Medium) ──┐             │
+│      │                   │  ▼                  ▼             │
+│      │                   │ ┌───────────────┐  │             │
+│      │                   │ │  Handle ISR3  │  │             │
+│      │                   │ └───────┬───────┘  │             │
+│      │                   │         │          │             │
+│      │                   │◄────────┘          │             │
+│      │                   └──────────┬────────┘             │
+│      │                              │                       │
+│      │◄─────────────────────────────┘                       │
+│      ▼                                                       │
+│    Continue                                                  │
+│                                                                   │
+│  • Higher priority interrupts preempt lower ones                │
+│  • Need stack for context saving                                │
+│  • Efficient but complex                                        │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4.6️⃣ INTERRUPT LATENCY AND OVERHEAD
+
+### Components of Interrupt Latency
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    INTERRUPT LATENCY                             │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Total Latency = Detection Time + Recognition Time +             │
+│                  Context Save Time + ISR Execution Time          │
+│                                                                   │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │  TIMELINE:                                                 │  │
+│  │                                                            │  │
+│  │  Interrupt ──┐                                            │  │
+│  │  Occurs      ▼                                            │  │
+│  │  ───┬─────────────────────────────────────────────────   │  │
+│  │     │                                                     │  │
+│  │     ├── Detection Time (Hardware delay)                   │  │
+│  │     ├── Recognition Time (CPU finishes current instr)     │  │
+│  │     ├── Context Save Time (Push registers)                │  │
+│  │     ├── ISR Execution Time (Process interrupt)            │  │
+│  │     ├── Context Restore Time (Pop registers)              │  │
+│  │     └── Return to main program                            │  │
+│  │                                                            │  │
+│  │  Total Delay = Sum of all times                           │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  Typical Values:                                                 │
+│  • Detection Time: 1-2 clock cycles                             │
+│  • Recognition Time: 1-5 clock cycles                           │
+│  • Context Save: 10-50 clock cycles                             │
+│  • ISR: 50-500+ clock cycles                                    │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 5️⃣ ARCHITECTURE COMPARISONS - COMPLETE
+
+## 5.1️⃣ VON NEUMANN vs HARVARD - EXTENDED
+
+### Von Neumann Architecture
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    VON NEUMANN ARCHITECTURE                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  CPU ──────────────────────────────────────┐                    │
+│   │                                        │                    │
+│   │      ┌─────────────────────────┐       │                    │
+│   │      │    SINGLE MEMORY        │       │                    │
+│   │      │  ┌─────────┬─────────┐  │       │                    │
+│   │      │  │  DATA   │ INSTR   │  │       │                    │
+│   └──────│─▶│ SECTION │ SECTION │◀─│───────┘                    │
+│          │  └─────────┴─────────┘  │                            │
+│          │  (Programs + Data)       │                            │
+│          └─────────────────────────┘                            │
+│                                                                   │
+│  Key Features:                                                   │
+│  • Stored Program Concept (Instructions = Data)                 │
+│  • Single Bus for both Data and Instructions                    │
+│  • Sequential Execution                                          │
+│                                                                   │
+│  Limitations:                                                    │
+│  • Von Neumann Bottleneck (Bus contention)                      │
+│  • Cannot fetch instruction and data simultaneously             │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Harvard Architecture
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     HARVARD ARCHITECTURE                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  CPU ───────────────────────────────────────────────────────┐   │
+│   │                      │                                  │   │
+│   │      ┌─────────────┐ │      ┌─────────────┐           │   │
+│   │      │ DATA MEMORY │ │      │ INSTR MEMORY│           │   │
+│   │      │ ┌─────────┐ │ │      │ ┌─────────┐ │           │   │
+│   └──────│▶│  DATA   │◀│─┘      │ │ INSTR   │◀│───────┘   │   │
+│          │ └─────────┘ │        │ └─────────┘ │           │   │
+│          │  (RAM)      │        │  (ROM/Cache)│           │   │
+│          └─────────────┘        └─────────────┘           │   │
+│                │                       │                   │   │
+│                ▼                       ▼                   │   │
+│          ┌─────────────┐        ┌─────────────┐           │   │
+│          │  DATA BUS   │        │ INSTR BUS   │           │   │
+│          └─────────────┘        └─────────────┘           │   │
+│                                                              │   │
+│  Key Features:                                                │
+│  • Separate Memory for Data and Instructions                 │
+│  • Separate Buses for Data and Instructions                  │
+│  • Parallel Access possible                                  │
+│                                                              │
+│  Advantages:                                                 │
+│  • Faster (Parallel fetch)                                   │
+│  • No bottleneck                                             │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Complete Comparison Table
+
+| Feature | Von Neumann | Harvard |
+|---------|-------------|---------|
+| **Memory** | Single memory space | Separate data & instruction memory |
+| **Buses** | Single bus for both | Separate data & instruction buses |
+| **Speed** | Slower (bottleneck) | Faster (parallel access) |
+| **Cost** | Lower | Higher |
+| **Complexity** | Simple | Complex |
+| **Fetch** | Sequential fetch | Parallel fetch possible |
+| **Flexibility** | More flexible | Less flexible |
+| **Self-modifying code** | Possible | Difficult |
+| **Data as Instructions** | Yes | No |
+| **Examples** | Most PCs | DSP, Microcontrollers |
+| **Bottleneck** | Von Neumann Bottleneck | No bottleneck |
+| **Memory Utilization** | Efficient | May be inefficient |
+| **Instruction Prefetch** | Limited | Advanced |
+
+**📌 EXAM TRICK:** 
+- "Von" sounds like "One" → One memory, One bus
+- "Harvard" has "Hard" (Harder to implement, but faster)
+
+---
+
+## 5.2️⃣ RISC vs CISC ARCHITECTURE
+
+### RISC (Reduced Instruction Set Computer)
+
+| Feature | RISC |
+|---------|------|
+| **Instructions** | Few, simple instructions |
+| **Instruction Size** | Fixed (usually 32-bit) |
+| **Addressing Modes** | Few (typically 1-3) |
+| **Registers** | Many (32-128) |
+| **Memory Access** | Load/Store only |
+| **Execution Time** | 1 cycle per instruction |
+| **Pipeline** | Efficient pipelining |
+| **Microprogramming** | Hardwired control |
+| **Examples** | ARM, MIPS, RISC-V |
+
+### CISC (Complex Instruction Set Computer)
+
+| Feature | CISC |
+|---------|------|
+| **Instructions** | Many, complex instructions |
+| **Instruction Size** | Variable (1-15 bytes) |
+| **Addressing Modes** | Many (10-20) |
+| **Registers** | Few (8-16) |
+| **Memory Access** | Memory-operand instructions |
+| **Execution Time** | Multiple cycles |
+| **Pipeline** | Complex pipelining |
+| **Microprogramming** | Microprogrammed control |
+| **Examples** | x86, 8086, 68000 |
+
+### Comparison Table
+
+| Aspect | RISC | CISC |
+|--------|------|------|
+| **Philosophy** | Simpler is faster | Complex is powerful |
+| **Instruction Count** | 50-100 | 200-300+ |
+| **Format** | Fixed length | Variable length |
+| **Cycles per Instruction** | 1 (pipelined) | 2-15 |
+| **Compiler Complexity** | High | Low |
+| **Hardware Complexity** | Low | High |
+| **Power Consumption** | Low | High |
+| **Performance/Watt** | High | Low |
+| **Development Time** | Short | Long |
+
+---
+
+# 6️⃣ SYSTEM BUS - EXTENDED DETAILS
+
+## 6.1️⃣ BUS CHARACTERISTICS
+
+### Bus Width vs Addressable Memory
+
+| Address Lines | Addressable Memory | Memory Size |
+|---------------|-------------------|-------------|
+| 16 | 2¹⁶ = 65,536 | 64 KB |
+| 20 | 2²⁰ = 1,048,576 | 1 MB |
+| 24 | 2²⁴ = 16,777,216 | 16 MB |
+| 32 | 2³² = 4,294,967,296 | 4 GB |
+| 36 | 2³⁶ = 68,719,476,736 | 64 GB |
+| 40 | 2⁴⁰ = 1,099,511,627,776 | 1 TB |
+| 48 | 2⁴⁸ = 281,474,976,710,656 | 256 TB |
+| 64 | 2⁶⁴ = 18,446,744,073,709,551,616 | 16 EB |
+
+**📌 MEMORY TRICK:** 
+- 2¹⁰ = 1 K (Kilo)
+- 2²⁰ = 1 M (Mega)
+- 2³⁰ = 1 G (Giga)
+- 2⁴⁰ = 1 T (Tera)
+- 2⁵⁰ = 1 P (Peta)
+
+---
+
+### Data Bus Width vs Transfer Rate
+
+| Bus Width | Bits/Transfer | Bytes/Transfer | Relative Speed |
+|-----------|---------------|----------------|----------------|
+| 8-bit | 8 bits | 1 byte | 1x (base) |
+| 16-bit | 16 bits | 2 bytes | 2x |
+| 32-bit | 32 bits | 4 bytes | 4x |
+| 64-bit | 64 bits | 8 bytes | 8x |
+| 128-bit | 128 bits | 16 bytes | 16x |
+
+**Formula:**
+```
+Transfer Rate = Bus Width × Bus Frequency
+
+Example:
+64-bit bus @ 100 MHz
+= 64 bits × 100,000,000 Hz
+= 6,400,000,000 bits/sec
+= 800 MB/sec (since 1 byte = 8 bits)
+```
+
+---
+
+## 6.2️⃣ BUS ARBITRATION
+
+When multiple devices want to use bus simultaneously:
+
+### Centralized Arbitration
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   CENTRALIZED ARBITRATION                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│                     ┌─────────┐                                 │
+│                     │Arbitrator│                                 │
+│                     └────┬────┘                                 │
+│                          │                                       │
+│        ┌─────────────────┼─────────────────┐                   │
+│        │                 │                 │                   │
+│        ▼                 ▼                 ▼                   │
+│   ┌────────┐       ┌────────┐       ┌────────┐                 │
+│   │Device 1│       │Device 2│       │Device 3│                 │
+│   └────────┘       └────────┘       └────────┘                 │
+│                                                                   │
+│  Methods:                                                        │
+│  1. Daisy Chaining (Priority by position)                       │
+│  2. Polling (Central controller polls)                          │
+│  3. Independent Request (Parallel arbitration)                  │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Distributed Arbitration
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   DISTRIBUTED ARBITRATION                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  All devices have equal capability                               │
+│                                                                   │
+│  ┌────────┐      ┌────────┐      ┌────────┐                    │
+│  │Device 1│──────│Device 2│──────│Device 3│                    │
+│  │Arbiter │      │Arbiter │      │Arbiter │                    │
+│  └────────┘      └────────┘      └────────┘                    │
+│       │               │               │                         │
+│       └───────────────┼───────────────┘                         │
+│                       │                                         │
+│                  Common Bus Lines                                │
+│                                                                   │
+│  Methods:                                                        │
+│  1. Self-selection (Each decides)                               │
+│  2. Collision detection (CSMA/CD)                               │
+│                                                                   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 7️⃣ PERFORMANCE METRICS - FORMULAS & TRICKS
+
+## Key Performance Formulas
+
+### 1. Clock Speed
+```
+Clock Speed = 1 / Clock Period
+
+Example: 
+Clock Period = 2 ns → Clock Speed = 1/(2×10⁻⁹) = 500 MHz
+```
+
+### 2. CPU Time
+```
+CPU Time = Instructions × CPI × Clock Cycle Time
+
+Or
+CPU Time = Instructions × CPI / Clock Speed
+```
+
+### 3. MIPS (Million Instructions Per Second)
+```
+MIPS = Clock Speed / (CPI × 10⁶)
+
+Example:
+Clock = 2 GHz, CPI = 2
+MIPS = (2×10⁹) / (2×10⁶) = 1000 MIPS
+```
+
+### 4. MFLOPS (Million Floating Point Operations)
+```
+MFLOPS = Number of FP Operations / (Execution Time × 10⁶)
+```
+
+### 5. CPI (Cycles Per Instruction)
+```
+CPI = Total CPU Cycles / Instruction Count
+```
+
+### 6. Throughput
+```
+Throughput = Instructions / Time
+```
+
+### 7. Speedup (Amdahl's Law)
+```
+Speedup = 1 / [(1 - P) + P/S]
+
+Where:
+P = Parallel portion
+S = Speedup of parallel portion
+```
+
+**📌 PERFORMANCE TRICKS:**
+- Higher Clock ≠ Always Faster (Check CPI)
+- RISC usually has lower CPI than CISC
+- Pipeline increases throughput, not individual instruction speed
+- Cache improves effective memory access time
+
+---
+
+# 8️⃣ SHORTCUTS & MEMORY TRICKS
+
+## 📝 Mnemonics for Quick Recall
+
+### 1. CPU Components - "CARD"
+```
+C - Control Unit
+A - ALU
+R - Registers
+D - Data Path
+```
+
+### 2. Bus Types - "DAC"
+```
+D - Data Bus (Data transfer)
+A - Address Bus (Address selection)  
+C - Control Bus (Control signals)
+```
+
+### 3. I/O Methods - "PID"
+```
+P - Programmed I/O (Polling)
+I - Interrupt I/O (Event-driven)
+D - DMA (Direct)
+```
+
+### 4. Interrupt Types - "HSE"
+```
+H - Hardware (External)
+S - Software (Internal - INT)
+E - Exceptions (Errors)
+```
+
+### 5. Memory Hierarchy - "RCSR" (Top to Bottom)
+```
+R - Registers
+C - Cache
+S - Main Memory (RAM)
+R - ROM/Secondary
+```
+
+### 6. ALU Flags - "CZOSPA"
+```
+C - Carry
+Z - Zero
+O - Overflow
+S - Sign
+P - Parity
+A - Auxiliary
+```
+
+### 7. DMA Steps - "IRTD"
+```
+I - Initialize DMAC
+R - Request bus
+T - Transfer data
+D - Done (Interrupt)
+```
+
+### 8. Interrupt Handling - "SIRER"
+```
+S - Save context
+I - Identify source
+R - Run ISR
+E - End (EOI)
+R - Restore context
+```
+
+---
+
+## 📊 QUICK REFERENCE TABLES
+
+### Memory Size Calculation
+| Address Lines | Formula | Memory |
+|--------------|---------|--------|
+| 16 | 2¹⁶ | 64 KB |
+| 20 | 2²⁰ | 1 MB |
+| 24 | 2²⁴ | 16 MB |
+| 32 | 2³² | 4 GB |
+| 36 | 2³⁶ | 64 GB |
+
+### Speed Comparison
+| Component | Access Time |
+|-----------|-------------|
+| Register | 1-2 ns |
+| Cache L1 | 2-4 ns |
+| Cache L2 | 4-8 ns |
+| RAM | 50-100 ns |
+| SSD | 0.1-1 ms |
+| HDD | 5-20 ms |
+
+### Common IRQ Numbers
+| IRQ | Device |
+|-----|--------|
+| 0 | System Timer |
+| 1 | Keyboard |
+| 2 | Cascade for IRQ 8-15 |
+| 3 | COM2/COM4 |
+| 4 | COM1/COM3 |
+| 6 | Floppy Disk |
+| 7 | LPT1 (Printer) |
+| 8 | Real Time Clock |
+| 12 | Mouse |
+| 13 | Math Coprocessor |
+| 14 | Primary IDE |
+| 15 | Secondary IDE |
+
+---
+
+# 9️⃣ PRACTICE MCQs - EXTENDED SET (50+ Questions)
+
+## Section A: Block Structure (Q1-Q10)
+
+### Q1. Which component is responsible for decoding instructions?
+a) ALU
+b) Control Unit
+c) Memory Unit
+d) Register Unit
+
+✅ **Answer: b) Control Unit**
+
+### Q2. What is the function of MAR?
+a) Store data
+b) Hold memory address
+c) Perform arithmetic
+d) Control I/O
+
+✅ **Answer: b) Hold memory address**
+
+### Q3. Which memory is fastest?
+a) RAM
+b) Cache
+c) Register
+d) Hard Disk
+
+✅ **Answer: c) Register**
+
+### Q4. PC stands for?
+a) Personal Computer
+b) Program Counter
+c) Priority Control
+d) Process Control
+
+✅ **Answer: b) Program Counter**
+
+### Q5. Which unit performs addition and subtraction?
+a) Control Unit
+b) ALU
+c) Memory Unit
+d) Input Unit
+
+✅ **Answer: b) ALU**
+
+### Q6. What is stored in IR?
+a) Data
+b) Address
+c) Current instruction
+d) Status flags
+
+✅ **Answer: c) Current instruction**
+
+### Q7. Which is volatile memory?
+a) ROM
+b) RAM
+c) Hard Disk
+d) Flash
+
+✅ **Answer: b) RAM**
+
+### Q8. What does MDR stand for?
+a) Memory Data Register
+b) Main Data Router
+c) Multiple Data Register
+d) Memory Display Register
+
+✅ **Answer: a) Memory Data Register**
+
+### Q9. Which register holds the result of ALU operations?
+a) PC
+b) IR
+c) Accumulator
+d) MAR
+
+✅ **Answer: c) Accumulator**
+
+### Q10. What is the function of Stack Pointer?
+a) Points to next instruction
+b) Points to top of stack
+c) Points to base of stack
+d) Points to I/O device
+
+✅ **Answer: b) Points to top of stack**
+
+---
+
+## Section B: I/O Methods (Q11-Q25)
+
+### Q11. Which I/O method uses polling?
+a) Programmed I/O
+b) Interrupt I/O
+c) DMA
+d) All of these
+
+✅ **Answer: a) Programmed I/O**
+
+### Q12. In which method does CPU not participate in data transfer?
+a) Programmed I/O
+b) Interrupt I/O
+c) DMA
+d) Both a and b
+
+✅ **Answer: c) DMA**
+
+### Q13. What initiates data transfer in interrupt I/O?
+a) CPU
+b) I/O Device
+c) Memory
+d) DMA Controller
+
+✅ **Answer: b) I/O Device**
+
+### Q14. DMA stands for?
+a) Direct Memory Access
+b) Direct Memory Allocation
+c) Data Memory Access
+d) Dynamic Memory Access
+
+✅ **Answer: a) Direct Memory Access**
+
+### Q15. Which is fastest I/O method?
+a) Programmed I/O
+b) Interrupt I/O
+c) DMA
+d) All are equal
+
+✅ **Answer: c) DMA**
+
+### Q16. What is main disadvantage of Programmed I/O?
+a) Complex hardware
+b) Wastes CPU time
+c) Slow data transfer
+d) Both b and c
+
+✅ **Answer: d) Both b and c**
+
+### Q17. Which hardware is required for DMA?
+a) Interrupt Controller
+b) DMA Controller
+c) Timer
+d) Cache
+
+✅ **Answer: b) DMA Controller**
+
+### Q18. In DMA, who controls the bus during transfer?
+a) CPU
+b) DMA Controller
+c) I/O Device
+d) Memory
+
+✅ **Answer: b) DMA Controller**
+
+### Q19. What is cycle stealing in DMA?
+a) CPU steals cycles from DMA
+b) DMA steals bus cycles from CPU
+c) I/O steals data cycles
+d) Memory steals address cycles
+
+✅ **Answer: b) DMA steals bus cycles from CPU**
+
+### Q20. Which I/O method is best for high-speed devices?
+a) Programmed I/O
+b) Interrupt I/O
+c) DMA
+d) Polling
+
+✅ **Answer: c) DMA**
+
+### Q21. What does DREQ signal in DMA indicate?
+a) Data ready
+b) DMA request
+c) DMA acknowledge
+d) Data error
+
+✅ **Answer: b) DMA request**
+
+### Q22. What is the role of HLDA in DMA?
+a) Hold Acknowledge from CPU
+b) High Level Data Access
+c) Hardware Logic DMA Access
+d) Hold DMA Acknowledge
+
+✅ **Answer: a) Hold Acknowledge from CPU**
+
+### Q23. Which DMA mode transfers entire block continuously?
+a) Single mode
+b) Block mode
+c) Demand mode
+d) Cascade mode
+
+✅ **Answer: b) Block mode**
+
+### Q24. In which I/O method is CPU most efficient?
+a) Programmed I/O
+b) Interrupt I/O
+c) DMA
+d) All equal
+
+✅ **Answer: c) DMA**
+
+### Q25. What happens in burst mode DMA?
+a) One byte per request
+b) Entire block transferred without release
+c) Transfer on demand
+d) Multiple DMACs connected
+
+✅ **Answer: b) Entire block transferred without release**
+
+---
+
+## Section C: Interrupts (Q26-Q40)
+
+### Q26. What is an interrupt?
+a) Signal to stop CPU
+b) Signal to pause current task
+c) Signal to reset system
+d) Signal to shutdown
+
+✅ **Answer: b) Signal to pause current task**
+
+### Q27. NMI stands for?
+a) Non-Maskable Interrupt
+b) Normal Mode Interrupt
+c) Network Management Interrupt
+d) Null Memory Interrupt
+
+✅ **Answer: a) Non-Maskable Interrupt**
+
+### Q28. Which interrupt Cannot be ignored?
+a) Maskable
+b) NMI
+c) Software
+d) Hardware
+
+✅ **Answer: b) NMI**
+
+### Q29. ISR stands for?
+a) Interrupt Service Routine
+b) Instruction Service Register
+c) Internal Status Register
+d) Interrupt Status Routine
+
+✅ **Answer: a) Interrupt Service Routine**
+
+### Q30. Where are ISR addresses stored?
+a) Cache
+b) Interrupt Vector Table
+c) RAM
+d) Hard Disk
+
+✅ **Answer: b) Interrupt Vector Table**
+
+### Q31. Which has highest priority?
+a) Keyboard interrupt
+b) Divide by zero exception
+c) Timer interrupt
+d) Mouse interrupt
+
+✅ **Answer: b) Divide by zero exception**
+
+### Q32. What is saved first during interrupt?
+a) Data
+b) Program Counter
+c) Accumulator
+d) Stack Pointer
+
+✅ **Answer: b) Program Counter**
+
+### Q33. Which instruction disables interrupts in x86?
+a) STI
+b) CLI
+c) INT
+d) IRET
+
+✅ **Answer: b) CLI**
+
+### Q34. What does EOI stand for?
+a) End of Interrupt
+b) Enable Output Interrupt
+c) External Output Input
+d) End of Instruction
+
+✅ **Answer: a) End of Interrupt**
+
+### Q35. Which is software interrupt?
+a) Keyboard press
+b) Divide by zero
+c) INT 21h
+d) Power failure
+
+✅ **Answer: c) INT 21h**
+
+### Q36. What is vectored interrupt?
+a) Interrupt with fixed handler address
+b) Interrupt with variable address
+c) Multiple interrupts
+d) High priority interrupt
+
+✅ **Answer: a) Interrupt with fixed handler address**
+
+### Q37. Which interrupt is generated by CPU internally?
+a) Hardware interrupt
+b) Software interrupt
+c) Exception
+d) Maskable interrupt
+
+✅ **Answer: c) Exception**
+
+### Q38. What is interrupt latency?
+a) Time to generate interrupt
+b) Time between interrupt occurrence and handling
+c) Time to execute ISR
+d) Time to return from ISR
+
+✅ **Answer: b) Time between interrupt occurrence and handling**
+
+### Q39. In nested interrupts, what happens?
+a) All interrupts ignored
+b) Higher priority preempts lower
+c) All handled sequentially
+d) System crashes
+
+✅ **Answer: b) Higher priority preempts lower**
+
+### Q40. Which register controls interrupt enabling?
+a) PC
+b) IR
+c) Flag register
+d) SP
+
+✅ **Answer: c) Flag register**
+
+---
+
+## Section D: Buses & Architecture (Q41-Q50)
+
+### Q41. Which bus is uni-directional?
+a) Data bus
+b) Address bus
+c) Control bus
+d) System bus
+
+✅ **Answer: b) Address bus**
+
+### Q42. With 24 address lines, how much memory can be addressed?
+a) 4 MB
+b) 8 MB
+c) 16 MB
+d) 32 MB
+
+✅ **Answer: c) 16 MB**
+
+### Q43. Which architecture uses separate memory for data and instructions?
+a) Von Neumann
+b) Harvard
+c) Princeton
+d) Both a and c
+
+✅ **Answer: b) Harvard**
+
+### Q44. Von Neumann bottleneck refers to?
+a) Slow CPU
+b) Single bus for data and instructions
+c) Small memory
+d) Slow I/O
+
+✅ **Answer: b) Single bus for data and instructions**
+
+### Q45. Which is characteristic of RISC?
+a) Complex instructions
+b) Variable instruction length
+c) Load/Store architecture
+d) Microprogrammed control
+
+✅ **Answer: c) Load/Store architecture**
+
+### Q46. What determines maximum memory size?
+a) Data bus width
+b) Address bus width
+c) Control bus width
+d) CPU speed
+
+✅ **Answer: b) Address bus width**
+
+### Q47. Which bus carries read/write signals?
+a) Data bus
+b) Address bus
+c) Control bus
+d) Memory bus
+
+✅ **Answer: c) Control bus**
+
+### Q48. What is bus arbitration?
+a) Deciding who uses bus
+b) Increasing bus speed
+c) Adding more devices
+d) Error detection
+
+✅ **Answer: a) Deciding who uses bus**
+
+### Q49. Which is example of CISC processor?
+a) ARM
+b) MIPS
+c) x86
+d) RISC-V
+
+✅ **Answer: c) x86**
+
+### Q50. What is the function of data bus?
+a) Carry addresses
+b) Carry control signals
+c) Carry actual data
+d) Carry power
+
+✅ **Answer: c) Carry actual data**
+
+---
+
+# 🔟 EXAM TIPS FOR MHT MCA CET
+
+## 📌 Most Frequently Asked Topics
+
+| Topic | Weightage | Difficulty |
+|-------|-----------|------------|
+| I/O Methods (Programmed, Interrupt, DMA) | High | Medium |
+| Interrupt Types & Handling | High | Medium |
+| Bus Structure & Memory Calculation | Medium | Easy |
+| Von Neumann vs Harvard | Medium | Easy |
+| Block Diagram Components | Medium | Easy |
+| CPU Registers | Low | Easy |
+
+---
+
+## ⚡ QUICK SOLVING TRICKS
+
+### Trick 1: Memory Calculation
+```
+If address lines = n → Memory = 2ⁿ
+
+Quick Powers:
+2¹⁰ = 1K
+2²⁰ = 1M
+2³⁰ = 1G
+2⁴⁰ = 1T
+```
+
+### Trick 2: Identifying I/O Method
+```
+Keywords in Question:
+- "CPU continuously checks" → Programmed I/O
+- "Device sends signal" → Interrupt I/O
+- "Direct transfer without CPU" → DMA
+- "Bulk data transfer" → DMA
+```
+
+### Trick 3: Interrupt Priority
+```
+Higher Priority:
+- Internal Errors (Divide by zero) > NMI > Hardware > Software
+```
+
+### Trick 4: Architecture Identification
+```
+- Single memory, single bus → Von Neumann
+- Separate memory, separate buses → Harvard
+- Many registers, simple instructions → RISC
+- Few registers, complex instructions → CISC
+```
+
+### Trick 5: Flag Register Bits
+```
+"Careless Zebras Often Sit Peacefully Alone"
+C - Carry
+Z - Zero
+O - Overflow  
+S - Sign
+P - Parity
+A - Auxiliary
+```
+
+---
+
+## 📝 Formula Summary Card
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║                   FORMULA CARD                            ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  Memory Size = 2^(Address Lines)                         ║
+║                                                           ║
+║  Transfer Rate = Bus Width × Frequency                   ║
+║                                                           ║
+║  MIPS = Clock Speed / (CPI × 10⁶)                        ║
+║                                                           ║
+║  CPU Time = Instructions × CPI × Clock Cycle Time        ║
+║                                                           ║
+║  Speedup = 1 / [(1-P) + P/S]                             ║
+║                                                           ║
+║  Clock Speed = 1 / Clock Period                          ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+---
+
+## 🎯 Final Exam Day Tips
+
+1. **Read Carefully** - Look for keywords like "polling", "direct", "signal"
+2. **Elimination Method** - Remove obviously wrong options first
+3. **Memory Questions** - Apply 2ⁿ formula
+4. **Interrupt Questions** - Remember: Exceptions > NMI > Hardware > Software
+5. **I/O Questions** - DMA = Fastest, Programmed = Slowest
+6. **Time Management** - Easy questions first, difficult later
+7. **Negative Marking** - If unsure, skip (if negative marking applies)
+
+---
+
+**🎉 BEST OF LUCK FOR YOUR MHT MCA CET EXAM! 🎉**
+
+Remember: Computer Architecture is logical - understand the flow, not just memorize!
+
+Would you like me to create more practice questions on specific topics or explain any concept in even more detail?

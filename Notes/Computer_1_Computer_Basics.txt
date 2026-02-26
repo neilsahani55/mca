@@ -1,0 +1,3691 @@
+# 📚 COMPUTER BASICS FOR MHT MCA CET
+## Complete Guide with Integrated Concepts from All Sources
+
+Hello! I'll provide you with a **comprehensive, exam-oriented guide** on Computer Basics for MHT MCA CET. I've analyzed and merged the best concepts from all sources to give you a complete understanding.
+
+---
+
+# 📋 TOPICS COVERED
+
+| S.No | Topic | Page |
+|------|-------|------|
+| 1 | Organization of a Computer | 2 |
+| 2 | Central Processing Unit (CPU) | 5 |
+| 3 | Structure of Instructions in CPU | 8 |
+| 4 | Input/Output Devices | 10 |
+| 5 | Computer Memory | 13 |
+| 6 | Memory Organization | 17 |
+| 7 | Backup Devices | 19 |
+| 8 | **ADDITIONAL TOPICS** | 21 |
+| 9 | Quick Revision Tables | 24 |
+| 10 | Practice MCQs | 26 |
+
+---
+
+# 1️⃣ ORGANIZATION OF A COMPUTER
+
+## 🏛️ Von Neumann Architecture (The Foundation)
+
+Most computers follow the **Von Neumann Architecture**, which has three main systems:
+
+```
+┌─────────────────────────────────────────────────┐
+│                  COMPUTER SYSTEM                 │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐  │
+│  │   CPU    │◄──►│  MEMORY  │◄──►│   I/O    │  │
+│  │          │    │   UNIT   │    │  SYSTEM  │  │
+│  └──────────┘    └──────────┘    └──────────┘  │
+└─────────────────────────────────────────────────┘
+```
+
+## 📌 Four Main Functional Units
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    COMPUTER ORGANIZATION                         │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  ┌─────────────┐     ┌──────────────────────┐                    │
+│  │   INPUT     │────▶│                      │                    │
+│  │   UNIT      │     │         CPU          │                    │
+│  └─────────────┘     │  ┌────────────────┐  │    ┌─────────────┐ │
+│                      │  │      CU        │  │    │   OUTPUT    │ │
+│  ┌─────────────┐     │  ├────────────────┤  │───▶│    UNIT     │ │
+│  │  MEMORY     │◀───▶│  │      ALU       │  │    └─────────────┘ │
+│  │   UNIT      │     │  └────────────────┘  │                    │
+│  └─────────────┘     │                      │                    │
+│                      └──────────────────────┘                    │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔍 Detailed Explanation of Each Unit
+
+### 1. Input Unit
+**Function:** Takes data from user and converts into machine-readable form (binary)
+
+**Working:**
+- Accepts data/instructions from user
+- Converts human-readable data to binary
+- Sends to CPU/Memory for processing
+
+**Examples:** Keyboard, Mouse, Scanner, Microphone, Joystick, Webcam, OCR, Light Pen, Touch Screen, Barcode Reader, Magnetic Stripe Reader, Smart Card Reader, Biometric Devices
+
+---
+
+### 2. Central Processing Unit (CPU) - The Brain
+**Three Main Components:**
+
+| Component | Function | Analogy |
+|-----------|----------|---------|
+| **ALU** | Performs calculations & logical operations | The "Worker" |
+| **CU** | Coordinates all operations | The "Manager" |
+| **Registers** | High-speed temporary storage | The "Notepad" |
+
+---
+
+### 3. Memory Unit
+**Two Types:**
+
+| Type | Characteristics | Examples |
+|------|-----------------|----------|
+| **Primary Memory** | Fast, volatile, directly accessed by CPU | RAM, ROM, Cache |
+| **Secondary Memory** | Slow, non-volatile, permanent storage | HDD, SSD, Pen Drive |
+
+---
+
+### 4. Output Unit
+**Function:** Displays results to user in human-readable form
+
+**Examples:** Monitor, Printer, Speaker, Plotter, Projector, Headphones, LED/LCD Display
+
+---
+
+## 🔄 Data Flow in Computer System
+
+```
+┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+│  INPUT  │───▶│  CPU    │───▶│  OUTPUT │
+│  DEVICE │    │         │    │  DEVICE │
+└─────────┘    └─────────┘    └─────────┘
+                    │
+                    ▼
+               ┌─────────┐
+               │ MEMORY  │
+               │  UNIT   │
+               └─────────┘
+```
+
+---
+
+## 🎯 IMPORTANT CONCEPTS FOR EXAM
+
+### System Buses
+Buses are communication pathways that connect components:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                      SYSTEM BUS                          │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  ┌─────────────────────────────────────────────────┐   │
+│  │           DATA BUS (Bi-directional)             │   │
+│  │           Carries actual data                    │   │
+│  └─────────────────────────────────────────────────┘   │
+│                                                          │
+│  ┌─────────────────────────────────────────────────┐   │
+│  │          ADDRESS BUS (Uni-directional)          │   │
+│  │          Carries memory addresses                │   │
+│  └─────────────────────────────────────────────────┘   │
+│                                                          │
+│  ┌─────────────────────────────────────────────────┐   │
+│  │          CONTROL BUS (Bi-directional)           │   │
+│  │          Carries control signals                 │   │
+│  └─────────────────────────────────────────────────┘   │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Memory/Register** = **MAR** (Memory Address Register) → Connected to Address Bus
+**Memory/Register** = **MBR/MDR** (Memory Buffer/Data Register) → Connected to Data Bus
+
+---
+
+### 📌 KEY POINTS FOR QUICK REVISION
+
+| Component | Function | Trick to Remember |
+|-----------|----------|-------------------|
+| **CPU** | Brain of computer | **C**entral **P**rocessing **U**nit |
+| **ALU** | Arithmetic & Logic | **A**rithmetic **L**ogic **U**nit - does math |
+| **CU** | Controls everything | **C**ontrol **U**nit - like a traffic police |
+| **Register** | Fastest memory | Think "Cash Register" - quick access money |
+| **Bus** | Communication path | Like a bus carrying data |
+| **MAR** | Holds address | **M**emory **A**ddress **R**egister |
+| **MDR** | Holds data | **M**emory **D**ata **R**egister |
+
+---
+
+# 2️⃣ CENTRAL PROCESSING UNIT (CPU)
+
+## 🔧 Components of CPU
+
+```
+┌─────────────────────────────────────────────┐
+│                   CPU                        │
+│  ┌───────────────────────────────────────┐  │
+│  │            CONTROL UNIT (CU)          │  │
+│  │  • Fetches instructions               │  │
+│  │  • Decodes instructions                │  │
+│  │  • Controls data flow                  │  │
+│  │  • Generates timing signals            │  │
+│  └───────────────────────────────────────┘  │
+│  ┌───────────────────────────────────────┐  │
+│  │     ARITHMETIC LOGIC UNIT (ALU)       │  │
+│  │  Arithmetic: +, -, ×, ÷               │  │
+│  │  Logical: AND, OR, NOT, XOR           │  │
+│  │  Comparison: <, >, =, ≤, ≥            │  │
+│  │  Shift operations                      │  │
+│  └───────────────────────────────────────┘  │
+│  ┌───────────────────────────────────────┐  │
+│  │            REGISTERS                   │  │
+│  │  • Program Counter (PC)                │  │
+│  │  • Instruction Register (IR)           │  │
+│  │  • Accumulator (ACC)                   │  │
+│  │  • Memory Address Register (MAR)       │  │
+│  │  • Memory Data Register (MDR)          │  │
+│  │  • Stack Pointer (SP)                  │  │
+│  │  • Index Register                       │  │
+│  └───────────────────────────────────────┘  │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 CPU Performance Factors
+
+| Factor | Description | Impact | Exam Tip |
+|--------|-------------|--------|----------|
+| **Clock Speed** | Measured in GHz | Higher = Faster processing | 3 GHz = 3 billion cycles/sec |
+| **Number of Cores** | Dual-core, Quad-core, Octa-core | More cores = Better multitasking | Not always linear scaling |
+| **Cache Size** | L1, L2, L3 cache | Larger cache = Faster access | L1 fastest but smallest |
+| **Word Length** | 32-bit, 64-bit | More bits = More data per cycle | 64-bit can address more RAM |
+| **Pipeline Stages** | Number of stages in pipeline | More stages = Better throughput | Can cause hazards |
+| **IPC** | Instructions Per Cycle | Higher = Better efficiency | Combines with clock speed |
+
+---
+
+## 🔄 Instruction Cycle (Fetch-Decode-Execute)
+
+This is the **most important concept** for MHT MCA CET!
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                 INSTRUCTION CYCLE                        │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│   ┌─────────┐                                           │
+│   │  START  │                                           │
+│   └────┬────┘                                           │
+│        ▼                                                │
+│   ┌─────────┐     ┌──────────────────┐                  │
+│   │ FETCH   │────▶│ Get instruction  │                  │
+│   │         │     │ from memory      │  PC → MAR → MDR  │
+│   └─────────┘     └──────────────────┘    → IR         │
+│        ▼                                                │
+│   ┌─────────┐     ┌──────────────────┐                  │
+│   │ DECODE  │────▶│ CU interprets    │                  │
+│   │         │     │ the instruction  │  IR decoded      │
+│   └─────────┘     └──────────────────┘                  │
+│        ▼                                                │
+│   ┌─────────┐     ┌──────────────────┐                  │
+│   │ EXECUTE │────▶│ ALU performs     │                  │
+│   │         │     │ operation        │  ALU activated   │
+│   └─────────┘     └──────────────────┘                  │
+│        ▼                                                │
+│   ┌─────────┐     ┌──────────────────┐                  │
+│   │  STORE  │────▶│ Write back       │                  │
+│   │         │     │ to memory        │  Result stored   │
+│   └─────────┘     └──────────────────┘                  │
+│        ▼                                                │
+│   ┌─────────┐                                           │
+│   │ REPEAT  │───▶ PC incremented, next instruction     │
+│   └─────────┘                                           │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📝 DETAILED REGISTER FUNCTIONS
+
+| Register | Full Form | Function | Analogy |
+|----------|-----------|----------|---------|
+| **PC** | Program Counter | Holds address of next instruction | Bookmark |
+| **IR** | Instruction Register | Holds current instruction being executed | Current page |
+| **ACC** | Accumulator | Stores results of ALU operations | Scratch pad |
+| **MAR** | Memory Address Register | Holds address of memory location to access | GPS location |
+| **MDR** | Memory Data Register | Holds data to be read/written from/to memory | Cargo |
+| **SP** | Stack Pointer | Points to top of stack | Stack top marker |
+| **BP** | Base Pointer | Points to base of current stack frame | Stack bottom |
+| **FLAGS** | Flag Register | Stores condition flags (Zero, Carry, etc.) | Status indicators |
+
+---
+
+## 🎯 FLAG REGISTER BITS
+
+| Flag | Symbol | Meaning | Set When |
+|------|--------|---------|----------|
+| **Zero Flag** | ZF | Result is zero | Result = 0 |
+| **Carry Flag** | CF | Carry/Borrow occurred | Addition overflow |
+| **Sign Flag** | SF | Result is negative | MSB = 1 |
+| **Overflow Flag** | OF | Arithmetic overflow | Signed overflow |
+| **Parity Flag** | PF | Even number of 1s | For error checking |
+| **Auxiliary Carry** | AF | Carry from bit 3 | BCD operations |
+
+**Trick to Remember:** "Zero Carries Sign Over, Parity Auxiliary" - ZC S O P A
+
+---
+
+## 🔥 EXAM TRICKS FOR CPU
+
+1. **Speed Hierarchy:** Register > Cache > RAM > Secondary Memory
+2. **PC always points to NEXT instruction**, not current
+3. **IR holds CURRENT instruction** being executed
+4. **MAR is connected to Address Bus**, MDR to Data Bus
+5. **Clock speed vs Cores:** More cores ≠ always faster (software must support)
+6. **Pipeline:** Like assembly line - multiple instructions at different stages
+
+---
+
+# 3️⃣ STRUCTURE OF INSTRUCTIONS IN CPU
+
+## 📝 Instruction Format
+
+An instruction is a binary code that tells the CPU what to do. It consists of:
+
+```
+┌─────────────────────────────────────┐
+│          INSTRUCTION WORD            │
+├─────────────────┬───────────────────┤
+│     OPCODE      │     OPERAND       │
+│  (What to do)   │  (On what data)   │
+└─────────────────┴───────────────────┘
+```
+
+### 🔹 Opcode (Operation Code)
+- The specific task to perform
+- Examples: ADD, SUB, MOV, LOAD, STOP, JMP, CMP
+
+### 🔹 Operand
+- The data or memory address of the data
+- Can be multiple operands
+- Examples: R1 (Register), #5 (Immediate value), [2000] (Memory address), (R1) (Indirect)
+
+---
+
+## 📌 Types of Instruction Formats
+
+| Type | Format | Example | Use | Advantage |
+|------|--------|---------|-----|-----------|
+| **Zero Address** | `OPCODE` | `ADD` | Stack-based machines | Simple, stack oriented |
+| **One Address** | `OPCODE ADDRESS1` | `ADD R1` | Accumulator machines | One operand in accumulator |
+| **Two Address** | `OPCODE ADDR1, ADDR2` | `ADD R1, R2` | General purpose | One operand overwritten |
+| **Three Address** | `OPCODE ADDR1, ADDR2, ADDR3` | `ADD R1, R2, R3` | RISC architecture | All operands preserved |
+
+---
+
+## 🔍 Addressing Modes (IMPORTANT FOR EXAM!)
+
+How the CPU finds the operand:
+
+| Mode | Description | Example | Formula |
+|------|-------------|---------|---------|
+| **Immediate** | Operand is in instruction | `ADD #5` | Operand = value |
+| **Direct** | Address in instruction | `ADD 2000` | EA = 2000 |
+| **Indirect** | Address points to address | `ADD [2000]` | EA = M[2000] |
+| **Register** | Operand in register | `ADD R1` | EA = R1 |
+| **Register Indirect** | Register holds address | `ADD (R1)` | EA = M[R1] |
+| **Indexed** | Base + offset | `ADD 100(R1)` | EA = R1 + 100 |
+| **Relative** | PC + offset | `BRA 10` | EA = PC + 10 |
+| **Auto-increment** | Use then increment | `ADD (R1)+` | EA = R1; R1++ |
+| **Auto-decrement** | Decrement then use | `ADD -(R1)` | R1--; EA = R1 |
+
+**EA = Effective Address** (actual memory location)
+
+---
+
+## 🔍 Examples
+
+```
+Assembly:   ADD R1, R2
+Binary:     0010 0001 0010
+            │    │     │
+            │    │     └─ Operand 2 (R2)
+            │    └─────── Operand 1 (R1)
+            └──────────── Opcode (ADD)
+```
+
+**More Examples:**
+
+```
+MOV R1, #5      ; Move immediate value 5 to R1
+MOV R2, R1      ; Copy R1 to R2
+MOV R3, [2000]  ; Load from memory address 2000
+MOV [3000], R4  ; Store R4 to memory address 3000
+ADD R5, R6      ; R5 = R5 + R6
+SUB R7, #10     ; R7 = R7 - 10
+JMP 1000        ; Jump to address 1000
+CMP R1, R2      ; Compare R1 and R2 (sets flags)
+```
+
+---
+
+## 🎯 Instruction Cycle with Addressing Modes
+
+```
+┌─────────────────────────────────────────────────────────┐
+│              INSTRUCTION EXECUTION FLOW                  │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  FETCH ──► DECODE ──► CALCULATE EA ──► FETCH OPERAND   │
+│                              │              │            │
+│                              └──────────────┘            │
+│                                   │                       │
+│                                   ▼                       │
+│                           EXECUTE ──► STORE RESULT       │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔥 EXAM TRICKS FOR INSTRUCTIONS
+
+1. **RISC vs CISC:**
+   - **RISC** (Reduced): Simple instructions, fixed length, more registers
+   - **CISC** (Complex): Complex instructions, variable length, fewer registers
+
+2. **Mnemonic to remember addressing modes:**
+   "I Directly Register Indirectly Indexed Relative Auto-matically"
+   - I - Immediate
+   - Directly - Direct
+   - Register - Register
+   - Indirectly - Indirect
+   - Indexed - Indexed
+   - Relative - Relative
+   - Auto-matically - Auto-increment/decrement
+
+3. **Formula for memory access:**
+   - Immediate: 0 memory access (data in instruction)
+   - Direct: 1 memory access (get data)
+   - Indirect: 2 memory accesses (get address, then data)
+
+---
+
+# 4️⃣ INPUT/OUTPUT DEVICES
+
+## 🖥️ INPUT DEVICES (Data Entry)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     INPUT DEVICES                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
+│  │   KEYBOARD   │    │    MOUSE     │    │   SCANNER    │  │
+│  │ • Alphanumeric│    │ • Pointing   │    │ • OCR        │  │
+│  │ • Function    │    │ • Click      │    │ • OMR        │  │
+│  │ • Numeric     │    │ • Scroll     │    │ • MICR       │  │
+│  │ • QWERTY layout│   │ • Optical    │    │ • 3D Scanner │  │
+│  └──────────────┘    └──────────────┘    └──────────────┘  │
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
+│  │  MICROPHONE  │    │   WEBCAM     │    │  JOYSTICK    │  │
+│  │ • Audio input│    │ • Video input│    │ • Gaming     │  │
+│  │ • Voice cmd  │    │ • Conference │    │ • Simulation │  │
+│  │ • Speech rec │    │ • Face recog │    │ • Flight sim │  │
+│  └──────────────┘    └──────────────┘    └──────────────┘  │
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
+│  │  TOUCHSCREEN │    │  BARCODE     │    │  LIGHT PEN   │  │
+│  │ • Direct     │    │   READER     │    │ • Draw on    │  │
+│  │ • Multi-touch│    │ • Retail     │    │   screen     │  │
+│  │ • Gestures   │    │ • Inventory  │    │ • CAD apps   │  │
+│  └──────────────┘    └──────────────┘    └──────────────┘  │
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐                       │
+│  │  BIOMETRIC   │    │  DIGITIZER   │                       │
+│  │   DEVICES    │    │   TABLET     │                       │
+│  │ • Fingerprint│    │ • Graphics   │                       │
+│  │ • Retina scan│    │ • Drawing    │                       │
+│  │ • Face ID    │    │ • CAD        │                       │
+│  └──────────────┘    └──────────────┘                       │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 📌 Special Input Devices for Exams
+
+| Device | Full Form | Use | Exam Tip |
+|--------|-----------|-----|----------|
+| **OCR** | Optical Character Recognition | Converts printed text to digital | Recognizes characters |
+| **OMR** | Optical Mark Recognition | Reads checkboxes (exams) | Used in answer sheets |
+| **MICR** | Magnetic Ink Character Recognition | Reads cheques (banking) | Uses magnetic ink |
+| **BCR** | Barcode Reader | Reads product codes | Uses laser/scanner |
+| **MSR** | Magnetic Stripe Reader | Reads cards | Credit/debit cards |
+| **Smart Card Reader** | - | Reads chip cards | EMV chips |
+| **Light Pen** | - | Direct screen input | Light-sensitive |
+
+---
+
+## 🖨️ OUTPUT DEVICES (Result Display)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     OUTPUT DEVICES                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    MONITORS                           │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  ┌──────────┐    ┌──────────┐    ┌──────────┐       │  │
+│  │  │   CRT    │    │   LCD    │    │   LED    │       │  │
+│  │  │Bulky, old│    │Flat, slim│    │Better LCD│       │  │
+│  │  │High power│    │Low power │    │Low power │       │  │
+│  │  │Analog    │    │Digital   │    │Digital   │       │  │
+│  │  └──────────┘    └──────────┘    └──────────┘       │  │
+│  │                                                      │  │
+│  │  ┌──────────┐    ┌──────────┐                       │  │
+│  │  │   OLED   │    │   AMOLED │                       │  │
+│  │  │Better clr│    │Best clr  │                       │  │
+│  │  │Flexible  │    │Samsung's │                       │  │
+│  │  └──────────┘    └──────────┘                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    PRINTERS                           │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  ┌──────────────┐    ┌──────────────┐                │  │
+│  │  │  IMPACT      │    │  NON-IMPACT  │                │  │
+│  │  │ • Dot Matrix │    │ • Inkjet     │                │  │
+│  │  │ • Daisy Wheel│    │ • Laser      │                │  │
+│  │  │ • Line Print │    │ • Thermal    │                │  │
+│  │  │ • Drum Print │    │ • Bubble Jet │                │  │
+│  │  │ • Chain Print│    │ • Solid Ink  │                │  │
+│  │  │Uses ribbons  │    │Uses toner/ink│                │  │
+│  │  │Noisy, slow   │    │Quiet, fast   │                │  │
+│  │  └──────────────┘    └──────────────┘                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
+│  │   SPEAKER    │    │   PLOTTER    │    │  PROJECTOR   │  │
+│  │ • Audio out  │    │ • Large draw │    │ • Big screen │  │
+│  │ • Multimedia │    │ • CAD/CAM    │    │ • Meetings   │  │
+│  │ • 2.1/5.1/7.1│    │ • Vector draw│    │ • Presentations│
+│  └──────────────┘    └──────────────┘    └──────────────┘  │
+│                                                              │
+│  ┌──────────────┐    ┌──────────────┐                       │
+│  │   HEADPHONES │    │  VR HEADSET  │                       │
+│  │ • Private    │    │ • Immersive  │                       │
+│  │ • Noise canc │    │ • 3D display │                       │
+│  │ • Monitoring │    │ • Gaming     │                       │
+│  └──────────────┘    └──────────────┘                       │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔄 I/O Interface Types
+
+| Type | Data Transfer | Example | Speed | Max Devices |
+|------|--------------|---------|-------|-------------|
+| **Serial Port** | 1 bit at a time | Mouse, Modem | Up to 115 kbps | 1 |
+| **Parallel Port** | 8 bits at a time | Printer | Up to 2 MB/s | 1 |
+| **USB 2.0** | Universal Serial Bus | All devices | 480 Mbps | 127 |
+| **USB 3.0** | Universal Serial Bus | All devices | 5 Gbps | 127 |
+| **USB 3.1** | Universal Serial Bus | All devices | 10 Gbps | 127 |
+| **USB-C** | Reversible USB | Modern devices | Up to 40 Gbps | 127 |
+| **HDMI** | Audio + Video | Monitor | 18 Gbps | 1 |
+| **VGA** | Video only | Old monitor | Analog | 1 |
+| **Thunderbolt** | High-speed | Apple devices | 40 Gbps | 6 |
+| **FireWire** | Audio/Video | Cameras | 800 Mbps | 63 |
+| **Bluetooth** | Wireless | Short range | 3 Mbps | 7 |
+| **WiFi** | Wireless network | Networking | Up to 9.6 Gbps | Many |
+
+---
+
+## 🎯 I/O Techniques (IMPORTANT FOR EXAM!)
+
+How CPU communicates with I/O devices:
+
+| Technique | Description | Advantage | Disadvantage |
+|-----------|-------------|-----------|--------------|
+| **Programmed I/O** | CPU constantly checks device | Simple | Wastes CPU time |
+| **Interrupt-Driven I/O** | Device notifies CPU when ready | Efficient | Overhead of interrupts |
+| **DMA** | Direct Memory Access | Very fast | Complex hardware |
+| **Channel I/O** | Separate I/O processor | Offloads CPU | Expensive |
+
+### DMA (Direct Memory Access)
+- Special controller transfers data directly between I/O and memory
+- CPU is freed for other tasks
+- Cycle stealing: DMA steals memory cycles from CPU
+
+---
+
+## 🔥 EXAM TRICKS FOR I/O DEVICES
+
+1. **Impact vs Non-impact Printers:**
+   - **Impact:** Dot Matrix, Daisy Wheel, Line Printer (Hits the paper)
+   - **Non-impact:** Laser, Inkjet, Thermal (No physical contact)
+
+2. **Printer Speeds (fastest to slowest):**
+   - Page Printer (Laser) > Line Printer > Character Printer
+
+3. **Monitor Technologies (old to new):**
+   - CRT → LCD → LED → OLED → AMOLED
+
+4. **USB versions (remember colors):**
+   - USB 1.0/2.0: White/Black
+   - USB 3.0: Blue
+   - USB 3.1: Red or Teal
+   - USB-C: Small reversible connector
+
+5. **Mnemonic for special input devices:**
+   "OMR OCR MICR - O My God, My Computer Reads!"
+
+---
+
+# 5️⃣ COMPUTER MEMORY
+
+## 📊 Memory Hierarchy
+
+```
+                    ┌─────────────────┐
+                    │   REGISTERS     │ ◄──── Fastest, Smallest, Costliest
+                    │   (CPU内部)     │        Access time: <1 ns
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  CACHE MEMORY   │
+                    │  L1, L2, L3     │        Access time: 1-10 ns
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │  PRIMARY MEMORY │
+                    │    RAM, ROM     │        Access time: 50-100 ns
+                    └────────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │    SECONDARY    │
+                    │    MEMORY       │ ◄──── Slowest, Largest, Cheapest
+                    │  HDD, SSD, USB  │        Access time: 5-20 ms (HDD)
+                    └─────────────────┘
+```
+
+**Rule:** As you go UP → Speed increases, Cost increases, Size decreases
+**Rule:** As you go DOWN → Speed decreases, Cost decreases, Size increases
+
+---
+
+## 🔹 PRIMARY MEMORY (Main Memory)
+
+### 📌 RAM (Random Access Memory)
+
+| Feature | Description |
+|---------|-------------|
+| **Full Form** | Random Access Memory |
+| **Volatility** | Volatile (Data lost when power off) |
+| **Access** | Direct access to any location (equal time) |
+| **Speed** | Fast (ns) |
+| **Use** | Running programs, active data, OS |
+
+**Types of RAM:**
+
+| Type | Full Form | Characteristics | Use |
+|------|-----------|-----------------|-----|
+| **SRAM** | Static RAM | Faster, expensive, no refresh, 6 transistors/bit | Cache memory |
+| **DRAM** | Dynamic RAM | Slower, cheaper, needs refresh, 1 transistor/bit | Main memory |
+| **SDRAM** | Synchronous DRAM | Synchronized with CPU clock | Older PCs |
+| **DDR** | Double Data Rate | Transfers on both clock edges | Modern PCs |
+| **DDR2** | DDR2 | Faster, lower power | 2000s PCs |
+| **DDR3** | DDR3 | Faster, lower voltage | 2010s PCs |
+| **DDR4** | DDR4 | Faster, lower power | Current PCs |
+| **DDR5** | DDR5 | Latest, very fast | High-end PCs |
+
+**Refresh Rate:** DRAM needs refresh every 64ms
+
+---
+
+### 📌 ROM (Read Only Memory)
+
+| Feature | Description |
+|---------|-------------|
+| **Full Form** | Read Only Memory |
+| **Volatility** | Non-volatile (Retains data) |
+| **Access** | Usually read-only |
+| **Speed** | Slower than RAM |
+| **Use** | Stores BIOS, firmware, bootloader |
+
+**Types of ROM:**
+
+| Type | Full Form | Description | Erasable? |
+|------|-----------|-------------|-----------|
+| **PROM** | Programmable ROM | Can be programmed once | No |
+| **EPROM** | Erasable PROM | Can be erased using UV light | Yes (UV) |
+| **EEPROM** | Electrically EPROM | Can be erased electrically | Yes (electrical) |
+| **Flash ROM** | - | Type of EEPROM, block erase | Yes (electrical) |
+| **Mask ROM** | - | Factory programmed | No |
+
+**UV Light:** EPROM has a quartz window for UV erasure
+
+---
+
+### 📌 CACHE MEMORY
+
+**Purpose:** Bridge the speed gap between CPU and RAM
+
+**Levels of Cache:**
+
+| Level | Location | Size | Speed | Associativity |
+|-------|----------|------|-------|---------------|
+| **L1 Cache** | Inside CPU core | 8-64 KB | Fastest (1 cycle) | Usually 2-way |
+| **L2 Cache** | Between L1 and RAM | 256 KB - 1 MB | Fast (2-10 cycles) | 4-8 way |
+| **L3 Cache** | Shared among cores | 2-8 MB | Slower than L2 (10-20 cycles) | 12-16 way |
+| **L4 Cache** | On some CPUs | 128 MB | DRAM based | - |
+
+**Key Terms:**
+- **Cache Hit:** Data found in cache (Fast)
+- **Cache Miss:** Data not in cache (Slow - must go to RAM)
+- **Hit Ratio:** Hits / Total accesses (Goal: >90%)
+- **Miss Penalty:** Time to fetch from lower level
+
+**Cache Mapping Techniques:**
+
+| Technique | Description | Advantage | Disadvantage |
+|-----------|-------------|-----------|--------------|
+| **Direct Mapped** | Each block maps to one cache line | Simple | Conflict misses |
+| **Fully Associative** | Any block to any line | Flexible | Complex, slow |
+| **Set Associative** | Mix of both | Good compromise | n-way set |
+
+**Cache Write Policies:**
+- **Write-Through:** Write to cache AND memory immediately
+- **Write-Back:** Write only to cache, write to memory when replaced
+
+---
+
+## 🔹 SECONDARY MEMORY (Storage)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   SECONDARY MEMORY                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              MAGNETIC STORAGE                         │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • Hard Disk Drive (HDD)       - 500GB-20TB           │  │
+│  │ • Magnetic Tape                - Up to 15TB           │  │
+│  │ • Floppy Disk                  - 1.44MB (obsolete)    │  │
+│  │ • Zip Drive                     - 100-750MB           │  │
+│  │ • Uses magnetic coating to store data                 │  │
+│  │ • Can be erased and rewritten                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              OPTICAL STORAGE                          │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • CD (Compact Disc)        - 700 MB                   │  │
+│  │ • DVD (Digital Versatile)  - 4.7 GB (single layer)   │  │
+│  │ • DVD Dual Layer           - 8.5 GB                   │  │
+│  │ • Blu-ray                   - 25-50 GB (dual layer)   │  │
+│  │ • Blu-ray XL                - 100-128 GB              │  │
+│  │ • HD-DVD                     - 15-30 GB (obsolete)    │  │
+│  │ • Uses laser to read/write data                       │  │
+│  │ • Less durable than magnetic                          │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              FLASH STORAGE                            │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • Solid State Drive (SSD)    - 128GB-8TB             │  │
+│  │ • USB Flash Drive             - 8GB-2TB              │  │
+│  │ • Memory Cards (SD, MicroSD)  - 32GB-1TB             │  │
+│  │ • M.2 SSD                      - Very fast            │  │
+│  │ • NVMe SSD                      - Fastest             │  │
+│  │ • No moving parts            - Durable                │  │
+│  │ • Limited write cycles        - 3000-100000 writes   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 📊 HDD vs SSD Detailed Comparison
+
+| Feature | HDD | SSD |
+|---------|-----|-----|
+| **Technology** | Magnetic platters, moving arm | NAND flash memory |
+| **Moving Parts** | Yes (Spinning disks, actuator) | No |
+| **Read Speed** | 80-160 MB/s | 200-3500 MB/s |
+| **Write Speed** | 80-160 MB/s | 200-3000 MB/s |
+| **Access Time** | 5-15 ms | 0.1-0.2 ms |
+| **Random I/O** | Poor (mechanical seek) | Excellent |
+| **Durability** | Less (shock sensitive) | More (no moving parts) |
+| **Noise** | Noisy (spinning, clicking) | Silent |
+| **Heat** | More | Less |
+| **Power** | 6-10 W | 2-5 W |
+| **Weight** | Heavy | Light |
+| **Price/GB** | $0.02-0.03 | $0.10-0.20 |
+| **Lifespan** | 3-5 years | 5-10 years (write limited) |
+| **Failure** | Mechanical failure | Electronic failure |
+
+---
+
+## 🔥 EXAM TRICKS FOR MEMORY
+
+1. **Memory Speed Hierarchy:**
+   - Register (1x) → L1 Cache (2x) → L2 Cache (5x) → RAM (50x) → SSD (1000x) → HDD (10000x)
+
+2. **Volatile vs Non-volatile:**
+   - **Volatile:** Register, Cache, RAM
+   - **Non-volatile:** ROM, HDD, SSD, USB, Optical
+
+3. **Mnemonic for RAM types:**
+   "**S**ome **D**ogs **D**on't **D**ig **D**eep **D**irt"
+   - SRAM, DRAM, DDR, DDR2, DDR3, DDR4
+
+4. **Mnemonic for ROM types:**
+   "**P**eople **E**at **E**very **F**ood"
+   - PROM, EPROM, EEPROM, Flash
+
+5. **Cache memory trick:**
+   L1 - Inside core (fastest)
+   L2 - Between core and L3
+   L3 - Shared (largest)
+
+---
+
+# 6️⃣ MEMORY ORGANIZATION
+
+## 📏 Memory Units
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    MEMORY UNITS                          │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  1 Bit     =   0 or 1 (Binary digit)                    │
+│  1 Nibble  =   4 Bits (Half byte)                       │
+│  1 Byte    =   8 Bits (Can store 1 character)           │
+│  1 Word    =   2/4/8 Bytes (depends on architecture)    │
+│  1 Kilo    =   2^10 = 1024 (in computing)               │
+│  1 Mega    =   2^20 = 1,048,576                         │
+│  1 Giga    =   2^30 = 1,073,741,824                     │
+│  1 Tera    =   2^40 = 1,099,511,627,776                 │
+│                                                          │
+│  ┌─────────────────────────────────────────────────┐   │
+│  │  Decimal vs Binary (Important for exams!)       │   │
+│  ├─────────────────────────────────────────────────┤   │
+│  │  1 KB (Binary) = 1024 Bytes                      │   │
+│  │  1 KB (Decimal) = 1000 Bytes (Marketing use)    │   │
+│  │  1 MB (Binary) = 1,048,576 Bytes                  │   │
+│  │  1 MB (Decimal) = 1,000,000 Bytes (HDD mfrs)    │   │
+│  └─────────────────────────────────────────────────┘   │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🗺️ Memory Addresses
+
+Each memory location has a unique **address**:
+
+```
+Memory Array:
+┌────────────┐
+│ Address 0  │ ── Data Byte 0
+├────────────┤
+│ Address 1  │ ── Data Byte 1
+├────────────┤
+│ Address 2  │ ── Data Byte 2
+├────────────┤
+│    ...     │
+├────────────┤
+│ Address N  │ ── Data Byte N
+└────────────┘
+```
+
+---
+
+## 🔢 Memory Calculation Formulas
+
+| What to Find | Formula | Example |
+|--------------|---------|---------|
+| **Total Bytes** | Size in MB × 1024 × 1024 | 2 MB = 2 × 1024 × 1024 = 2,097,152 bytes |
+| **Address Lines** | log₂(Number of locations) | 1 KB = 1024 locations → 10 lines (2^10=1024) |
+| **Data Lines** | Word size in bits | 64-bit CPU → 64 data lines |
+| **Memory Size** | 2^(address lines) × data lines/8 bytes | 16 addr × 8 data = 2^16 × 1 = 64 KB |
+| **Chip Count** | Total size / Chip size | 1 MB using 256K×1 chips = (1M×8)/(256K×1) = 32 chips |
+
+---
+
+## 🔢 Memory Calculation Examples
+
+**Example 1:** How many bytes in 2 MB?
+- 2 MB = 2 × 1024 KB = 2048 KB
+- 2048 KB = 2048 × 1024 Bytes = **2,097,152 Bytes**
+
+**Example 2:** How many address lines for 1 KB memory?
+- 1 KB = 1024 locations
+- 2^10 = 1024
+- So **10 address lines** needed
+
+**Example 3:** A memory chip has 12 address lines and 8 data lines. What is its capacity?
+- Address lines = 12 → 2^12 = 4096 locations
+- Data lines = 8 → 8 bits per location
+- Total = 4096 × 8 bits = 4096 bytes = **4 KB**
+
+**Example 4:** How many 256×8 RAM chips are needed for 2 KB memory?
+- 2 KB = 2 × 1024 = 2048 bytes
+- Each chip = 256 bytes
+- Number = 2048 / 256 = **8 chips**
+
+---
+
+## 🏗️ Memory Organization Techniques
+
+### Interleaved Memory
+- Divides memory into multiple banks
+- Allows simultaneous access
+- Reduces memory access time
+
+### Memory Banking
+- Multiple memory modules
+- CPU can access different banks simultaneously
+
+### Virtual Memory
+- Uses hard disk as extension of RAM
+- Pages are swapped between RAM and disk
+- Managed by MMU (Memory Management Unit)
+
+---
+
+## 🔥 EXAM TRICKS FOR MEMORY CALCULATIONS
+
+1. **Quick conversions:**
+   - 1 KB = 1024 bytes (not 1000)
+   - 1 MB = 1024 KB = 1,048,576 bytes
+   - 1 GB = 1024 MB = 1,073,741,824 bytes
+
+2. **Address lines to size:**
+   - 8 lines → 256 bytes
+   - 10 lines → 1 KB
+   - 16 lines → 64 KB
+   - 20 lines → 1 MB
+   - 24 lines → 16 MB
+   - 32 lines → 4 GB
+
+3. **Formula for address lines:**
+   - n address lines = 2^n locations
+   - Example: 16 address lines = 65,536 locations (64 KB)
+
+4. **Formula for data lines:**
+   - m data lines = m bits per location
+   - Total size = 2^n × m bits
+
+---
+
+# 7️⃣ BACKUP DEVICES
+
+## 💾 What is Backup?
+Creating copies of data to protect against loss due to hardware failure, accidental deletion, corruption, or disasters.
+
+## 📀 Types of Backup Devices
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     BACKUP DEVICES                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │           EXTERNAL STORAGE DEVICES                    │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • External HDD          - Large capacity (1-8 TB)     │  │
+│  │ • External SSD          - Fast, durable (500GB-2TB)   │  │
+│  │ • USB Flash Drive       - Portable (8GB-256GB)        │  │
+│  │ • Memory Card           - Small devices (32GB-1TB)    │  │
+│  │ • Network Attached Storage (NAS) - Multi-drive        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              OPTICAL BACKUP                           │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • CD-R / CD-RW         - 700 MB                       │  │
+│  │ • DVD-R / DVD-RW       - 4.7 GB                       │  │
+│  │ • DVD-R DL             - 8.5 GB (Dual Layer)          │  │
+│  │ • Blu-ray              - 25-50 GB                     │  │
+│  │ • Blu-ray XL           - 100-128 GB                   │  │
+│  │ • M-DISC               - 1000 years archival          │  │
+│  │ • Archival Disc        - 300GB-1TB (Sony/Panasonic)  │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              MAGNETIC TAPE                            │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • Used in enterprises                                  │  │
+│  │ • LTO (Linear Tape-Open) technology                   │  │
+│  │ • LTO-9: 18TB native, 45TB compressed                 │  │
+│  │ • Sequential access only                               │  │
+│  │ • Cheapest per GB (≈$0.01/GB)                         │  │
+│  │ • Long-term archival (30+ years)                      │  │
+│  │ • Very slow access                                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              CLOUD BACKUP                             │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • Google Drive         - 15GB free                     │  │
+│  │ • Dropbox              - 2GB free                      │  │
+│  │ • OneDrive             - 5GB free                      │  │
+│  │ • iCloud               - 5GB free                      │  │
+│  │ • AWS S3 / Glacier     - Enterprise                    │  │
+│  │ • Backblaze            - Unlimited                     │  │
+│  │ • Accessible anywhere  - Needs internet                │  │
+│  │ • Automatic sync       - Versioning                    │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              RAID SYSTEMS                             │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ • RAID 0: Striping    - Performance, no redundancy   │  │
+│  │ • RAID 1: Mirroring   - Redundancy, 50% capacity     │  │
+│  │ • RAID 5: Striping + parity - Good balance           │  │
+│  │ • RAID 6: Dual parity  - Survives 2 disk failures    │  │
+│  │ • RAID 10: Mirror + stripe - Best performance        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Backup Device Comparison
+
+| Device | Capacity | Speed | Portability | Cost/GB | Lifespan | Best For |
+|--------|----------|-------|-------------|---------|----------|----------|
+| **External HDD** | 1-8 TB | 100-200 MB/s | Medium | $0.03 | 3-5 yrs | Full system backup |
+| **External SSD** | 500GB-2TB | 500-1000 MB/s | High | $0.15 | 5-10 yrs | Active data, frequent access |
+| **USB Flash** | 8-256GB | 50-400 MB/s | Very High | $0.10 | 5-10 yrs | Quick transfer, portable |
+| **Optical Disc** | 700MB-128GB | 10-50 MB/s | Medium | $0.05 | 10-100 yrs | Archival, media |
+| **Magnetic Tape** | Up to 18TB | 300-750 MB/s | Low | $0.01 | 30+ yrs | Enterprise archival |
+| **Cloud** | Unlimited | Depends on internet | Anywhere | Subscription | Vendor dependent | Offsite backup, sync |
+| **NAS** | Multi-TB | Network speed | Fixed | $0.05-0.10 | 3-5 yrs | Home/office shared backup |
+
+---
+
+## 🔄 Backup Strategies
+
+| Strategy | Description | Storage Space | Restore Time | Example |
+|----------|-------------|---------------|--------------|---------|
+| **Full Backup** | Copy all data | Most (100%) | Fastest | Weekly full backup |
+| **Incremental** | Copy only changes since last backup (any type) | Least (changes only) | Slowest (need all incrementals) | Daily incremental |
+| **Differential** | Copy changes since last full backup | Medium (cumulative) | Medium (last full + last diff) | Mid-week backup |
+| **Mirror** | Exact copy in real-time | Same as source | Instant | RAID 1, rsync |
+| **Snapshot** | Point-in-time copy | Varies | Fast | Virtual machines |
+
+### Backup Rotation Schemes:
+- **Grandfather-Father-Son (GFS):** Daily, weekly, monthly backups
+- **Tower of Hanoi:** Complex rotation, multiple tapes
+- **10-tape rotation:** Labeled Monday through Friday, plus 5 weekly
+
+---
+
+## 🔥 3-2-1 Backup Rule (IMPORTANT!)
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                   3-2-1 BACKUP RULE                      │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  3  ├─── Keep THREE copies of your data                 │
+│      │    (1 primary + 2 backups)                        │
+│                                                          │
+│  2  ├─── Store on TWO different media                    │
+│      │    (e.g., HDD + Cloud)                            │
+│                                                          │
+│  1  ├─── Keep ONE copy offsite                           │
+│      │    (in case of fire, theft, disaster)             │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 8️⃣ ADDITIONAL TOPICS (MISSING FROM ORIGINAL)
+
+## 📡 ADDITIONAL TOPIC 1: COMPUTER GENERATIONS
+
+| Generation | Period | Technology | Characteristics | Examples |
+|------------|--------|------------|-----------------|----------|
+| **1st Gen** | 1940-1956 | Vacuum Tubes | Large, slow, heat, machine language | ENIAC, UNIVAC |
+| **2nd Gen** | 1956-1963 | Transistors | Smaller, faster, assembly language | IBM 1401 |
+| **3rd Gen** | 1964-1971 | IC (SSI/MSI) | Even smaller, OS, high-level languages | IBM 360 |
+| **4th Gen** | 1971-1980 | LSI/VLSI | Microprocessors, PCs | Intel 4004, 8086 |
+| **5th Gen** | 1980-present | ULSI, AI | Parallel processing, AI, quantum | Modern PCs |
+| **6th Gen** | Future | Quantum, AI | Quantum computing, neural networks | Experimental |
+
+**Trick:** VTTI - Vacuum, Transistor, IC, VLSI (Generations 1-4)
+
+---
+
+## 📡 ADDITIONAL TOPIC 2: NUMBER SYSTEMS
+
+| System | Base | Digits | Use | Example |
+|--------|------|--------|-----|---------|
+| **Binary** | 2 | 0,1 | Computer internal | 1010₂ |
+| **Octal** | 8 | 0-7 | Compact binary representation | 12₈ |
+| **Decimal** | 10 | 0-9 | Human use | 10₁₀ |
+| **Hexadecimal** | 16 | 0-9, A-F | Memory addresses, colors | A₁₆ |
+
+### Conversions:
+- Binary to Decimal: 1010₂ = 1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8+0+2+0 = 10₁₀
+- Decimal to Binary: 10₁₀ = 1010₂ (divide by 2 repeatedly)
+- Hexadecimal to Binary: A₁₆ = 1010₂ (4 bits per hex digit)
+
+---
+
+## 📡 ADDITIONAL TOPIC 3: OPERATING SYSTEM BASICS
+
+| Component | Function | Examples |
+|-----------|----------|----------|
+| **Kernel** | Core of OS, manages hardware | Linux kernel, NT kernel |
+| **Process Management** | Manages running programs | Scheduling, multitasking |
+| **Memory Management** | Allocates memory to processes | Virtual memory, paging |
+| **File System** | Organizes files on disk | NTFS, FAT32, ext4 |
+| **Device Drivers** | Interface with hardware | Printer drivers, GPU drivers |
+| **User Interface** | User interaction | CLI, GUI |
+
+### Types of OS:
+- **Batch OS:** Jobs in batches, no user interaction
+- **Time-sharing OS:** Multiple users, timeslices
+- **Real-time OS:** Guaranteed response time (RTOS)
+- **Distributed OS:** Multiple computers appear as one
+- **Network OS:** Network services (NOS)
+
+---
+
+## 📡 ADDITIONAL TOPIC 4: COMPUTER CLASSIFICATIONS
+
+| Type | Size | Users | Use | Example |
+|------|------|-------|-----|---------|
+| **Supercomputer** | Very large | Many | Scientific, weather, research | Fugaku, Summit |
+| **Mainframe** | Large | Hundreds | Banking, enterprise | IBM zSeries |
+| **Minicomputer** | Medium | Dozens | Department servers | PDP-11 |
+| **Workstation** | Desktop | 1 | Professional, CAD | High-end PC |
+| **Microcomputer** | Desktop | 1 | Personal use | PC, Mac |
+| **Embedded** | Tiny | 1 | Appliances, cars | Arduino, Raspberry Pi |
+
+---
+
+## 📡 ADDITIONAL TOPIC 5: SOFTWARE TYPES
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                      SOFTWARE                             │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  ┌──────────────────────┐  ┌──────────────────────┐    │
+│  │   SYSTEM SOFTWARE    │  │   APPLICATION SW     │    │
+│  ├──────────────────────┤  ├──────────────────────┤    │
+│  │ • Operating System   │  │ • Word Processor     │    │
+│  │ • Device Drivers     │  │ • Spreadsheet        │    │
+│  │ • Compilers          │  │ • Database           │    │
+│  │ • Assemblers         │  │ • Browser            │    │
+│  │ • Utility Programs   │  │ • Games              │    │
+│  │ • Linkers/Loaders    │  │ • Multimedia         │    │
+│  └──────────────────────┘  └──────────────────────┘    │
+│                                                          │
+│  ┌──────────────────────┐  ┌──────────────────────┐    │
+│  │   PROGRAMMING LANG   │  │      FIRMWARE        │    │
+│  ├──────────────────────┤  ├──────────────────────┤    │
+│  │ • High Level (C, Java)│  │ • BIOS/UEFI         │    │
+│  │ • Assembly           │  │ • Embedded system    │    │
+│  │ • Scripting (Python) │  │ • ROM chips          │    │
+│  │ • 4GL (SQL)          │  │ • Device firmware    │    │
+│  └──────────────────────┘  └──────────────────────┘    │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📡 ADDITIONAL TOPIC 6: BOOTING PROCESS
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    BOOTING PROCESS                       │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  Power On ──► BIOS/UEFI POST ──► Load Bootloader       │
+│      │                           │                       │
+│      │                           ▼                       │
+│      │                    Load OS Kernel                 │
+│      │                           │                       │
+│      │                           ▼                       │
+│      └──────────────► Initialize Devices                │
+│                                                          │
+│                           ▼                              │
+│                    Load System Services                  │
+│                           │                              │
+│                           ▼                              │
+│                    User Interface (GUI/CLI)             │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+**POST:** Power-On Self Test
+**BIOS:** Basic Input/Output System
+**UEFI:** Unified Extensible Firmware Interface (modern BIOS)
+
+---
+
+## 📡 ADDITIONAL TOPIC 7: INTERRUPTS
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Hardware Interrupt** | From hardware device | Keyboard press, timer |
+| **Software Interrupt** | From program instruction | System calls |
+| **Maskable Interrupt** | Can be ignored | Most I/O devices |
+| **Non-Maskable Interrupt** | Cannot be ignored | Power failure, memory error |
+| **Vectored Interrupt** | Has fixed handler address | x86 architecture |
+
+**Interrupt Process:**
+1. Device sends interrupt signal
+2. CPU finishes current instruction
+3. CPU saves state (PC, registers)
+4. CPU jumps to Interrupt Service Routine (ISR)
+5. ISR handles the interrupt
+6. CPU restores state and continues
+
+---
+
+## 📡 ADDITIONAL TOPIC 8: PIPELINING
+
+```
+┌─────────────────────────────────────────────────────────┐
+│             5-STAGE INSTRUCTION PIPELINE                 │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  Clock  │  Stage 1  │  Stage 2  │  Stage 3  │  Stage 4  │
+│  Cycle  │   Fetch   │  Decode   │  Execute  │  Write    │
+├─────────┼───────────┼───────────┼───────────┼───────────┤
+│    1    │  Inst 1   │           │           │           │
+│    2    │  Inst 2   │  Inst 1   │           │           │
+│    3    │  Inst 3   │  Inst 2   │  Inst 1   │           │
+│    4    │  Inst 4   │  Inst 3   │  Inst 2   │  Inst 1   │
+│    5    │  Inst 5   │  Inst 4   │  Inst 3   │  Inst 2   │
+│    6    │  Inst 6   │  Inst 5   │  Inst 4   │  Inst 3   │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Pipeline Hazards:**
+- **Structural:** Hardware resource conflict
+- **Data:** Instruction depends on previous result
+- **Control:** Branch instructions
+
+**Solutions:** Stalling, forwarding, branch prediction
+
+---
+
+## 📡 ADDITIONAL TOPIC 9: MULTIPROCESSING
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **SMP** | Symmetric Multi-Processing | Multiple identical CPUs |
+| **AMP** | Asymmetric Multi-Processing | Master-slave CPUs |
+| **Cluster** | Multiple computers | Load balancing |
+| **Multi-core** | Multiple cores on one chip | Dual-core, quad-core |
+
+**Parallel Processing:**
+- **SIMD:** Single Instruction Multiple Data (vector processors)
+- **MIMD:** Multiple Instructions Multiple Data (most modern CPUs)
+- **MISD:** Multiple Instructions Single Data (rare)
+- **SISD:** Single Instruction Single Data (traditional)
+
+---
+
+## 📡 ADDITIONAL TOPIC 10: BUS ARCHITECTURE
+
+| Bus | Width | Speed | Use |
+|-----|-------|-------|-----|
+| **ISA** | 8/16-bit | 8 MHz | Old PCs (obsolete) |
+| **PCI** | 32/64-bit | 33/66 MHz | Expansion cards |
+| **PCIe** | Serial | Up to 32 GT/s | Modern GPUs, SSDs |
+| **AGP** | 32-bit | 66 MHz | Old graphics (obsolete) |
+| **USB** | Serial | Varies | External devices |
+| **SATA** | Serial | 6 Gbps | Hard drives, SSDs |
+| **NVMe** | Serial over PCIe | Up to 32 Gbps | Fast SSDs |
+
+---
+
+# 9️⃣ QUICK REVISION TABLES
+
+## Table 1: CPU Components
+
+| Component | Function | Key Point |
+|-----------|----------|-----------|
+| **ALU** | Arithmetic & Logic ops | Performs calculations |
+| **CU** | Controls all operations | The manager |
+| **Registers** | Temporary storage | Fastest memory |
+| **PC** | Points to next instruction | Program Counter |
+| **IR** | Holds current instruction | Instruction Register |
+| **ACC** | Stores results | Accumulator |
+| **MAR** | Memory address | Connected to address bus |
+| **MDR** | Memory data | Connected to data bus |
+| **SP** | Stack top | Stack Pointer |
+
+---
+
+## Table 2: Memory Types
+
+| Memory | Volatile | Speed | Size | Cost | Use |
+|--------|----------|-------|------|------|-----|
+| **Register** | Yes | Fastest | Bytes | Highest | CPU internal |
+| **Cache L1** | Yes | Very Fast | KB | High | CPU core |
+| **Cache L2** | Yes | Fast | MB | High | CPU core |
+| **RAM** | Yes | Fast | GB | Medium | Running programs |
+| **ROM** | No | Slow | MB | Low | BIOS/Firmware |
+| **SSD** | No | Fast | GB-TB | Medium | Modern storage |
+| **HDD** | No | Slowest | TB | Low | Bulk storage |
+
+---
+
+## Table 3: Important Full Forms
+
+| Abbr | Full Form | Abbr | Full Form |
+|------|-----------|------|-----------|
+| **ALU** | Arithmetic Logic Unit | **MAR** | Memory Address Register |
+| **CU** | Control Unit | **MDR** | Memory Data Register |
+| **CPU** | Central Processing Unit | **PC** | Program Counter |
+| **RAM** | Random Access Memory | **IR** | Instruction Register |
+| **ROM** | Read Only Memory | **ACC** | Accumulator |
+| **HDD** | Hard Disk Drive | **SP** | Stack Pointer |
+| **SSD** | Solid State Drive | **DMA** | Direct Memory Access |
+| **OCR** | Optical Character Recognition | **BIOS** | Basic Input Output System |
+| **MICR** | Magnetic Ink Character Recognition | **POST** | Power-On Self Test |
+| **OMR** | Optical Mark Recognition | **UEFI** | Unified Extensible Firmware Interface |
+
+---
+
+## Table 4: Printer Types Comparison
+
+| Printer Type | Technology | Speed | Quality | Cost | Use |
+|--------------|------------|-------|---------|------|-----|
+| **Dot Matrix** | Impact, pins | Slow | Low | Low | Invoices, multi-part |
+| **Inkjet** | Ink sprayed | Medium | Good | Medium | Home, photos |
+| **Laser** | Toner, drum | Fast | Excellent | High | Office, high volume |
+| **Thermal** | Heat on paper | Medium | Good | Medium | Receipts, labels |
+| **3D Printer** | Additive | Very slow | Varies | High | Prototyping |
+
+---
+
+## Table 5: Display Technologies
+
+| Type | Technology | Power | Thickness | Quality | Use |
+|------|------------|-------|-----------|---------|-----|
+| **CRT** | Cathode ray | High | Bulky | Good | Old TVs/monitors |
+| **LCD** | Liquid crystal | Low | Thin | Good | Monitors, laptops |
+| **LED** | LED backlight | Low | Thin | Better | Modern monitors |
+| **OLED** | Organic LED | Low | Very thin | Best | High-end phones/TVs |
+| **AMOLED** | Active matrix OLED | Low | Very thin | Best | Samsung phones |
+
+---
+
+## Table 6: Memory Units Quick Reference
+
+| Unit | Bytes | Power | Approx |
+|------|-------|-------|--------|
+| 1 Bit | 1/8 | 2^0 | 0.125 bytes |
+| 1 Byte | 1 | 2^0 | 1 character |
+| 1 KB | 1024 | 2^10 | 1,000 characters |
+| 1 MB | 1,048,576 | 2^20 | 1 million characters |
+| 1 GB | 1,073,741,824 | 2^30 | 1 billion characters |
+| 1 TB | 1,099,511,627,776 | 2^40 | 1 trillion characters |
+| 1 PB | 1,125,899,906,842,624 | 2^50 | 1 quadrillion characters |
+
+---
+
+# 🔟 200+ PRACTICE MCQs (MHT MCA CET Level)
+
+## SECTION A: COMPUTER ORGANIZATION
+
+### Question 1
+**Which unit of the CPU coordinates all operations?**
+a) ALU
+b) CU
+c) Memory Unit
+d) Register
+
+✅ **Answer: b) CU** - Control Unit manages all operations
+
+---
+
+### Question 2
+**Who is known as the father of modern computers?**
+a) Charles Babbage
+b) Alan Turing
+c) John Von Neumann
+d) Bill Gates
+
+✅ **Answer: a) Charles Babbage** - Designed Analytical Engine
+
+---
+
+### Question 3
+**Von Neumann architecture uses which concept?**
+a) Stored program concept
+b) Distributed computing
+c) Cloud computing
+d) Parallel processing
+
+✅ **Answer: a) Stored program concept** - Program and data in same memory
+
+---
+
+### Question 4
+**Which bus is bidirectional?**
+a) Address bus
+b) Data bus
+c) Control bus
+d) All of the above
+
+✅ **Answer: b) Data bus** - Data flows both ways
+
+---
+
+### Question 5
+**Which bus carries memory addresses?**
+a) Data bus
+b) Address bus
+c) Control bus
+d) System bus
+
+✅ **Answer: b) Address bus** - Specifies memory location
+
+---
+
+### Question 6
+**Width of address bus determines?**
+a) Data transfer speed
+b) Maximum memory capacity
+c) CPU speed
+d) Number of I/O devices
+
+✅ **Answer: b) Maximum memory capacity** - 2^n addresses
+
+---
+
+### Question 7
+**Which is NOT a component of CPU?**
+a) ALU
+b) Control Unit
+c) RAM
+d) Registers
+
+✅ **Answer: c) RAM** - RAM is separate memory unit
+
+---
+
+### Question 8
+**Which unit performs mathematical calculations?**
+a) Control Unit
+b) ALU
+c) Memory Unit
+d) Input Unit
+
+✅ **Answer: b) ALU** - Arithmetic Logic Unit
+
+---
+
+### Question 9
+**What is the function of Control Unit?**
+a) Performs calculations
+b) Stores data
+c) Coordinates all activities
+d) Inputs data
+
+✅ **Answer: c) Coordinates all activities** - The manager
+
+---
+
+### Question 10
+**Which of the following is NOT a functional unit of computer?**
+a) Input Unit
+b) Output Unit
+c) Processing Unit
+d) Operating Unit
+
+✅ **Answer: d) Operating Unit** - Not a standard term
+
+---
+
+## SECTION B: CPU
+
+### Question 11
+**What is the correct sequence of the instruction cycle?**
+a) Execute → Decode → Fetch → Store
+b) Fetch → Decode → Execute → Store
+c) Decode → Fetch → Execute → Store
+d) Fetch → Execute → Decode → Store
+
+✅ **Answer: b) Fetch → Decode → Execute → Store**
+
+---
+
+### Question 12
+**Which register holds the address of next instruction?**
+a) IR
+b) PC
+c) MAR
+d) ACC
+
+✅ **Answer: b) PC** - Program Counter
+
+---
+
+### Question 13
+**Which register holds the current instruction?**
+a) PC
+b) MAR
+c) IR
+d) MDR
+
+✅ **Answer: c) IR** - Instruction Register
+
+---
+
+### Question 14
+**Which register stores results of ALU operations?**
+a) PC
+b) IR
+c) MAR
+d) Accumulator
+
+✅ **Answer: d) Accumulator** - ACC
+
+---
+
+### Question 15
+**Which flag is set when result is zero?**
+a) Carry flag
+b) Zero flag
+c) Sign flag
+d) Overflow flag
+
+✅ **Answer: b) Zero flag** - ZF = 1 when result is zero
+
+---
+
+### Question 16
+**Which flag indicates arithmetic overflow?**
+a) Carry flag
+b) Zero flag
+c) Sign flag
+d) Overflow flag
+
+✅ **Answer: d) Overflow flag** - For signed numbers
+
+---
+
+### Question 17
+**Which register is used to point to top of stack?**
+a) PC
+b) SP
+c) BP
+d) IR
+
+✅ **Answer: b) SP** - Stack Pointer
+
+---
+
+### Question 18
+**What is the speed of CPU measured in?**
+a) Hz
+b) Bytes
+c) Bits
+d) Mbps
+
+✅ **Answer: a) Hz** - Hertz (cycles per second)
+
+---
+
+### Question 19
+**1 GHz equals how many cycles per second?**
+a) 1 million
+b) 10 million
+c) 100 million
+d) 1 billion
+
+✅ **Answer: d) 1 billion** - 1,000,000,000 cycles
+
+---
+
+### Question 20
+**Which is the fastest memory?**
+a) Hard Disk
+b) RAM
+c) Cache
+d) Register
+
+✅ **Answer: d) Register** - Located inside CPU
+
+---
+
+### Question 21
+**What does RISC stand for?**
+a) Reduced Instruction Set Computer
+b) Reduced Integrated System Computer
+c) Random Instruction Set Computer
+d) Reduced Instruction System Computer
+
+✅ **Answer: a) Reduced Instruction Set Computer**
+
+---
+
+### Question 22
+**What does CISC stand for?**
+a) Complex Instruction Set Computer
+b) Computer Integrated System Computer
+c) Complex Integrated System Computer
+d) Complex Instruction System Computer
+
+✅ **Answer: a) Complex Instruction Set Computer**
+
+---
+
+### Question 23
+**Which architecture has more registers?**
+a) RISC
+b) CISC
+c) Both have equal
+d) Depends on manufacturer
+
+✅ **Answer: a) RISC** - RISC has more registers
+
+---
+
+### Question 24
+**Which is an example of RISC processor?**
+a) Intel x86
+b) ARM
+c) 8086
+d) 68000
+
+✅ **Answer: b) ARM** - Advanced RISC Machines
+
+---
+
+### Question 25
+**Which is an example of CISC processor?**
+a) ARM
+b) MIPS
+c) Intel Core i7
+d) PowerPC
+
+✅ **Answer: c) Intel Core i7** - x86 architecture is CISC
+
+---
+
+### Question 26
+**What is pipelining?**
+a) Connecting multiple CPUs
+b) Overlapping instruction execution
+c) Increasing clock speed
+d) Adding more memory
+
+✅ **Answer: b) Overlapping instruction execution** - Like assembly line
+
+---
+
+### Question 27
+**What is a pipeline hazard?**
+a) CPU overheating
+b) Situation that prevents next instruction execution
+c) Memory full condition
+d) Power failure
+
+✅ **Answer: b) Situation that prevents next instruction execution**
+
+---
+
+### Question 28
+**Which hazard occurs due to branch instructions?**
+a) Structural hazard
+b) Data hazard
+c) Control hazard
+d) Memory hazard
+
+✅ **Answer: c) Control hazard** - Branch changes flow
+
+---
+
+### Question 29
+**Which technique solves data hazards?**
+a) Branch prediction
+b) Forwarding
+c) Stalling
+d) Both b and c
+
+✅ **Answer: d) Both b and c** - Forwarding and stalling
+
+---
+
+### Question 30
+**What is a multi-core processor?**
+a) Multiple CPUs on different chips
+b) Multiple CPUs on same chip
+c) Multiple computers connected
+d) Multiple programs running
+
+✅ **Answer: b) Multiple CPUs on same chip** - Cores on single die
+
+---
+
+## SECTION C: INSTRUCTION STRUCTURE
+
+### Question 31
+**What does opcode specify?**
+a) Data to operate on
+b) Operation to perform
+c) Memory address
+d) Register number
+
+✅ **Answer: b) Operation to perform** - What to do
+
+---
+
+### Question 32
+**In instruction ADD R1, R2, what is R1?**
+a) Opcode
+b) Operand
+c) Address
+d) Data
+
+✅ **Answer: b) Operand** - On what data
+
+---
+
+### Question 33
+**Which addressing mode has operand in instruction itself?**
+a) Direct
+b) Indirect
+c) Immediate
+d) Register
+
+✅ **Answer: c) Immediate** - #5, $10 etc.
+
+---
+
+### Question 34
+**Which addressing mode requires 2 memory accesses for data?**
+a) Direct
+b) Indirect
+c) Immediate
+d) Register
+
+✅ **Answer: b) Indirect** - Get address, then data
+
+---
+
+### Question 35
+**MOV R1, #5 uses which addressing mode?**
+a) Register
+b) Immediate
+c) Direct
+d) Indirect
+
+✅ **Answer: b) Immediate** - #5 is immediate value
+
+---
+
+### Question 36
+**MOV R1, 2000 uses which addressing mode?**
+a) Register
+b) Immediate
+c) Direct
+d) Indirect
+
+✅ **Answer: c) Direct** - Address 2000 given directly
+
+---
+
+### Question 37
+**MOV R1, (R2) uses which addressing mode?**
+a) Register
+b) Register indirect
+c) Direct
+d) Indexed
+
+✅ **Answer: b) Register indirect** - R2 holds address
+
+---
+
+### Question 38
+**MOV R1, 100(R2) uses which addressing mode?**
+a) Register
+b) Register indirect
+c) Indexed
+d) Relative
+
+✅ **Answer: c) Indexed** - R2 + 100
+
+---
+
+### Question 39
+**In zero address instruction, where are operands?**
+a) Registers
+b) Memory
+c) Stack
+d) Accumulator
+
+✅ **Answer: c) Stack** - Stack-based machines
+
+---
+
+### Question 40
+**In one address instruction, where is one operand usually?**
+a) Memory
+b) Register
+c) Stack
+d) Accumulator
+
+✅ **Answer: d) Accumulator** - Implicit accumulator
+
+---
+
+### Question 41
+**What is effective address?**
+a) Address in instruction
+b) Actual memory address after calculation
+c) Register number
+d) Virtual address
+
+✅ **Answer: b) Actual memory address after calculation**
+
+---
+
+### Question 42
+**Which addressing mode is used for array access?**
+a) Immediate
+b) Direct
+c) Indexed
+d) Indirect
+
+✅ **Answer: c) Indexed** - Base + index for array elements
+
+---
+
+### Question 43
+**Which addressing mode is used for position-independent code?**
+a) Direct
+b) Indirect
+c) Relative
+d) Indexed
+
+✅ **Answer: c) Relative** - PC + offset
+
+---
+
+### Question 44
+**Auto-increment mode does what?**
+a) Increments register after use
+b) Increments before use
+c) Decrements after use
+d) No increment
+
+✅ **Answer: a) Increments register after use** - (R1)+
+
+---
+
+### Question 45
+**Auto-decrement mode does what?**
+a) Increments after use
+b) Decrements before use
+c) Decrements after use
+d) Increments before use
+
+✅ **Answer: b) Decrements before use** - -(R1)
+
+---
+
+### Question 46
+**JMP 1000 is which type of instruction?**
+a) Data transfer
+b) Arithmetic
+c) Control transfer
+d) Logical
+
+✅ **Answer: c) Control transfer** - Changes program flow
+
+---
+
+### Question 47
+**CMP instruction affects which register?**
+a) PC
+b) IR
+c) Flags
+d) MAR
+
+✅ **Answer: c) Flags** - Sets condition flags
+
+---
+
+### Question 48
+**Which instruction calls a subroutine?**
+a) JMP
+b) CALL
+c) RET
+d) CMP
+
+✅ **Answer: b) CALL** - Jumps and saves return address
+
+---
+
+### Question 49
+**Which instruction returns from subroutine?**
+a) JMP
+b) CALL
+c) RET
+d) CMP
+
+✅ **Answer: c) RET** - Returns to saved address
+
+---
+
+### Question 50
+**Stack is used for?**
+a) Arithmetic operations
+b) Subroutine calls and interrupts
+c) Data storage
+d) All of the above
+
+✅ **Answer: d) All of the above** - Multiple uses
+
+---
+
+## SECTION D: INPUT/OUTPUT DEVICES
+
+### Question 51
+**Which is NOT an input device?**
+a) Scanner
+b) Mouse
+c) Plotter
+d) Keyboard
+
+✅ **Answer: c) Plotter** - It's an output device
+
+---
+
+### Question 52
+**Which printer is an impact printer?**
+a) Laser Printer
+b) Inkjet Printer
+c) Dot Matrix Printer
+d) Thermal Printer
+
+✅ **Answer: c) Dot Matrix Printer** - Hits the paper
+
+---
+
+### Question 53
+**What does MICR stand for?**
+a) Magnetic Ink Character Reader
+b) Magnetic Ink Character Recognition
+c) Machine Integrated Circuit Reader
+d) Multiple Input Character Reader
+
+✅ **Answer: b) Magnetic Ink Character Recognition**
+
+---
+
+### Question 54
+**What does OCR stand for?**
+a) Optical Character Reader
+b) Optical Character Recognition
+c) Output Character Reader
+d) Optical Code Reader
+
+✅ **Answer: b) Optical Character Recognition**
+
+---
+
+### Question 55
+**What does OMR stand for?**
+a) Optical Mark Reader
+b) Optical Mark Recognition
+c) Output Mark Reader
+d) Optical Memory Reader
+
+✅ **Answer: b) Optical Mark Recognition**
+
+---
+
+### Question 56
+**Which device is used for reading cheques?**
+a) OCR
+b) OMR
+c) MICR
+d) BCR
+
+✅ **Answer: c) MICR** - Magnetic Ink Character Recognition
+
+---
+
+### Question 57
+**Which device is used for reading answer sheets?**
+a) OCR
+b) OMR
+c) MICR
+d) BCR
+
+✅ **Answer: b) OMR** - Optical Mark Recognition
+
+---
+
+### Question 58
+**Which printer uses toner?**
+a) Inkjet
+b) Dot Matrix
+c) Laser
+d) Thermal
+
+✅ **Answer: c) Laser** - Uses toner powder
+
+---
+
+### Question 59
+**Which printer uses ink cartridges?**
+a) Laser
+b) Inkjet
+c) Dot Matrix
+d) Line Printer
+
+✅ **Answer: b) Inkjet** - Sprays liquid ink
+
+---
+
+### Question 60
+**Which printer is fastest?**
+a) Dot Matrix
+b) Inkjet
+c) Laser
+d) Daisy Wheel
+
+✅ **Answer: c) Laser** - Page printer, fastest
+
+---
+
+### Question 61
+**Which printer can print multi-part forms?**
+a) Laser
+b) Inkjet
+c) Dot Matrix
+d) Thermal
+
+✅ **Answer: c) Dot Matrix** - Impact printer, can use carbon copies
+
+---
+
+### Question 62
+**What is DPI in printers?**
+a) Dots Per Inch
+b) Data Per Inch
+c) Digital Print Interface
+d) Double Print Image
+
+✅ **Answer: a) Dots Per Inch** - Resolution measure
+
+---
+
+### Question 63
+**Which monitor technology is oldest?**
+a) LCD
+b) LED
+c) CRT
+d) OLED
+
+✅ **Answer: c) CRT** - Cathode Ray Tube
+
+---
+
+### Question 64
+**Which monitor consumes least power?**
+a) CRT
+b) LCD
+c) LED
+d) Plasma
+
+✅ **Answer: c) LED** - Most energy efficient
+
+---
+
+### Question 65
+**Which display has best contrast ratio?**
+a) LCD
+b) LED
+c) OLED
+d) CRT
+
+✅ **Answer: c) OLED** - True blacks, pixels turn off
+
+---
+
+### Question 66
+**Which is a pointing device?**
+a) Keyboard
+b) Mouse
+c) Scanner
+d) Microphone
+
+✅ **Answer: b) Mouse** - Points and selects
+
+---
+
+### Question 67
+**Which port is commonly used for mouse?**
+a) Parallel
+b) Serial (old)
+c) USB
+d) HDMI
+
+✅ **Answer: c) USB** - Modern mice use USB
+
+---
+
+### Question 68
+**Which port is used for monitor?**
+a) USB
+b) HDMI
+c) Ethernet
+d) Audio jack
+
+✅ **Answer: b) HDMI** - High-Definition Multimedia Interface
+
+---
+
+### Question 69
+**What is the maximum speed of USB 3.0?**
+a) 480 Mbps
+b) 5 Gbps
+c) 10 Gbps
+d) 20 Gbps
+
+✅ **Answer: b) 5 Gbps** - USB 3.0 = 5 Gbps
+
+---
+
+### Question 70
+**What is the maximum speed of USB 2.0?**
+a) 480 Mbps
+b) 5 Gbps
+c) 10 Gbps
+d) 20 Gbps
+
+✅ **Answer: a) 480 Mbps** - USB 2.0 = 480 Mbps
+
+---
+
+### Question 71
+**Which I/O technique uses interrupts?**
+a) Programmed I/O
+b) Interrupt-driven I/O
+c) DMA
+d) Channel I/O
+
+✅ **Answer: b) Interrupt-driven I/O** - Device interrupts CPU
+
+---
+
+### Question 72
+**Which I/O technique is fastest?**
+a) Programmed I/O
+b) Interrupt-driven I/O
+c) DMA
+d) All are same
+
+✅ **Answer: c) DMA** - Direct Memory Access, no CPU involvement
+
+---
+
+### Question 73
+**DMA stands for?**
+a) Direct Memory Access
+b) Data Memory Access
+c) Direct Memory Allocation
+d) Data Memory Allocation
+
+✅ **Answer: a) Direct Memory Access**
+
+---
+
+### Question 74
+**Which device uses thermal technology?**
+a) Laser printer
+b) Inkjet printer
+c) Fax machine
+d) Dot matrix printer
+
+✅ **Answer: c) Fax machine** - Thermal paper often used
+
+---
+
+### Question 75
+**Which is an example of biometric device?**
+a) Keyboard
+b) Mouse
+c) Fingerprint scanner
+d) Microphone
+
+✅ **Answer: c) Fingerprint scanner** - Biometric authentication
+
+---
+
+## SECTION E: MEMORY
+
+### Question 76
+**How many bytes in 4 MB?**
+a) 4,000,000
+b) 4,096,000
+c) 4,194,304
+d) 4,000,096
+
+✅ **Answer: c) 4,194,304** (4 × 1024 × 1024)
+
+---
+
+### Question 77
+**Which of the following is non-volatile memory?**
+a) RAM
+b) Cache
+c) Register
+d) ROM
+
+✅ **Answer: d) ROM** - Retains data without power
+
+---
+
+### Question 78
+**What is a cache hit?**
+a) Data found in cache
+b) Data not found in cache
+c) Cache memory full
+d) Cache memory empty
+
+✅ **Answer: a) Data found in cache** - Makes processing faster
+
+---
+
+### Question 79
+**What is the full form of SSD?**
+a) Super Speed Drive
+b) Solid State Drive
+c) System Storage Device
+d) Serial State Drive
+
+✅ **Answer: b) Solid State Drive**
+
+---
+
+### Question 80
+**Which memory is fastest?**
+a) Hard Disk
+b) RAM
+c) Cache
+d) Register
+
+✅ **Answer: d) Register** - Located inside CPU
+
+---
+
+### Question 81
+**Which is volatile memory?**
+a) ROM
+b) Hard Disk
+c) RAM
+d) SSD
+
+✅ **Answer: c) RAM** - Random Access Memory, loses data on power off
+
+---
+
+### Question 82
+**How many address lines for 64 KB memory?**
+a) 10
+b) 12
+c) 16
+d) 20
+
+✅ **Answer: c) 16** - 2^16 = 65536 bytes = 64 KB
+
+---
+
+### Question 83
+**1 Kilobyte equals?**
+a) 1000 bytes
+b) 1024 bytes
+c) 1000 bits
+d) 1024 bits
+
+✅ **Answer: b) 1024 bytes** - In computing
+
+---
+
+### Question 84
+**Which is largest?**
+a) MB
+b) GB
+c) TB
+d) PB
+
+✅ **Answer: d) PB** - Petabyte > TB > GB > MB
+
+---
+
+### Question 85
+**SRAM is used for?**
+a) Main memory
+b) Cache memory
+c) Secondary memory
+d) Virtual memory
+
+✅ **Answer: b) Cache memory** - Faster but expensive
+
+---
+
+### Question 86
+**DRAM needs?**
+a) No refresh
+b) Periodic refresh
+c) Constant power
+d) Cooling
+
+✅ **Answer: b) Periodic refresh** - Every 64ms typically
+
+---
+
+### Question 87
+**What is virtual memory?**
+a) RAM memory
+b) Using hard disk as RAM
+c) Cache memory
+d) ROM memory
+
+✅ **Answer: b) Using hard disk as RAM** - When RAM is full
+
+---
+
+### Question 88
+**Which is smallest in size?**
+a) L1 cache
+b) L2 cache
+c) L3 cache
+d) RAM
+
+✅ **Answer: a) L1 cache** - Fastest but smallest
+
+---
+
+### Question 89
+**ROM BIOS is stored in?**
+a) RAM
+b) Hard disk
+c) ROM chip
+d) Cache
+
+✅ **Answer: c) ROM chip** - Read Only Memory
+
+---
+
+### Question 90
+**Which is not a type of ROM?**
+a) PROM
+b) EPROM
+c) EEPROM
+d) SRAM
+
+✅ **Answer: d) SRAM** - SRAM is RAM type
+
+---
+
+### Question 91
+**How is EPROM erased?**
+a) Electrical signal
+b) UV light
+c) Heat
+d) Magnetic field
+
+✅ **Answer: b) UV light** - Through quartz window
+
+---
+
+### Question 92
+**How is EEPROM erased?**
+a) UV light
+b) Electrical signal
+c) Heat
+d) Magnetic field
+
+✅ **Answer: b) Electrical signal** - Electrically Erasable
+
+---
+
+### Question 93
+**Which cache level is inside CPU core?**
+a) L1 only
+b) L2 only
+c) L1 and L2
+d) L3
+
+✅ **Answer: a) L1 only** - L1 is inside each core
+
+---
+
+### Question 94
+**Which cache is shared among cores?**
+a) L1
+b) L2
+c) L3
+d) All are shared
+
+✅ **Answer: c) L3** - L3 is typically shared
+
+---
+
+### Question 95
+**What is memory access time?**
+a) Time to read/write data
+b) Time to transfer data
+c) Time to process data
+d) Time to store data
+
+✅ **Answer: a) Time to read/write data** - Latency
+
+---
+
+### Question 96
+**Which has lowest access time?**
+a) HDD
+b) SSD
+c) RAM
+d) Register
+
+✅ **Answer: d) Register** - <1 ns
+
+---
+
+### Question 97
+**Which has highest access time?**
+a) Register
+b) Cache
+c) RAM
+d) HDD
+
+✅ **Answer: d) HDD** - 5-15 ms (milliseconds)
+
+---
+
+### Question 98
+**What is flash memory?**
+a) Type of RAM
+b) Type of ROM
+c) Type of cache
+d) Type of register
+
+✅ **Answer: b) Type of ROM** - Non-volatile, electrically erasable
+
+---
+
+### Question 99
+**Which is not a magnetic storage?**
+a) HDD
+b) Floppy disk
+c) Magnetic tape
+d) SSD
+
+✅ **Answer: d) SSD** - Flash memory, not magnetic
+
+---
+
+### Question 100
+**Which is not an optical storage?**
+a) CD
+b) DVD
+c) Blu-ray
+d) SSD
+
+✅ **Answer: d) SSD** - Solid State Drive
+
+---
+
+## SECTION F: MEMORY ORGANIZATION
+
+### Question 101
+**How many bits in a nibble?**
+a) 2
+b) 4
+c) 8
+d) 16
+
+✅ **Answer: b) 4** - Half byte
+
+---
+
+### Question 102
+**How many bits in a byte?**
+a) 4
+b) 8
+c) 16
+d) 32
+
+✅ **Answer: b) 8** - Standard byte size
+
+---
+
+### Question 103
+**1 MB = ? bytes**
+a) 1,000,000
+b) 1,048,576
+c) 1,024,000
+d) 1,000,024
+
+✅ **Answer: b) 1,048,576** - 1024 × 1024
+
+---
+
+### Question 104
+**A memory chip has 10 address lines. How many locations?**
+a) 256
+b) 512
+c) 1024
+d) 2048
+
+✅ **Answer: c) 1024** - 2^10 = 1024
+
+---
+
+### Question 105
+**A memory chip has 16 address lines and 8 data lines. Capacity?**
+a) 16 KB
+b) 32 KB
+c) 64 KB
+d) 128 KB
+
+✅ **Answer: c) 64 KB** - 2^16 × 8 bits = 65536 bytes = 64 KB
+
+---
+
+### Question 106
+**How many 256×8 RAM chips for 2 KB memory?**
+a) 4
+b) 8
+c) 16
+d) 32
+
+✅ **Answer: b) 8** - 2048/256 = 8
+
+---
+
+### Question 107
+**What is word length?**
+a) Number of bits CPU processes at once
+b) Number of bytes in memory
+c) Size of hard disk
+d) Clock speed
+
+✅ **Answer: a) Number of bits CPU processes at once** - 32-bit, 64-bit
+
+---
+
+### Question 108
+**32-bit CPU can address maximum?**
+a) 2 GB
+b) 4 GB
+c) 8 GB
+d) 16 GB
+
+✅ **Answer: b) 4 GB** - 2^32 bytes = 4 GB
+
+---
+
+### Question 109
+**64-bit CPU can address maximum?**
+a) 4 GB
+b) 16 GB
+c) 16 EB
+d) 16 TB
+
+✅ **Answer: c) 16 EB** - 2^64 bytes = 16 exabytes (theoretically)
+
+---
+
+### Question 110
+**Memory interleaving does what?**
+a) Increases memory size
+b) Decreases access time
+c) Increases speed
+d) Both b and c
+
+✅ **Answer: d) Both b and c** - Parallel access to multiple banks
+
+---
+
+### Question 111
+**Which mapping allows any block to any cache line?**
+a) Direct mapped
+b) Fully associative
+c) Set associative
+d) None
+
+✅ **Answer: b) Fully associative** - Most flexible
+
+---
+
+### Question 112
+**Which mapping is simplest?**
+a) Direct mapped
+b) Fully associative
+c) Set associative
+d) All same
+
+✅ **Answer: a) Direct mapped** - Each block maps to one line
+
+---
+
+### Question 113
+**Cache write-through policy does what?**
+a) Write to cache only
+b) Write to cache and memory
+c) Write to memory only
+d) Write to disk
+
+✅ **Answer: b) Write to cache and memory** - Immediately
+
+---
+
+### Question 114
+**Cache write-back policy does what?**
+a) Write to cache only initially
+b) Write to cache and memory
+c) Write to memory only
+d) Write to disk
+
+✅ **Answer: a) Write to cache only initially** - Write to memory when replaced
+
+---
+
+### Question 115
+**What is cache miss penalty?**
+a) Time to access cache
+b) Time to access lower level memory
+c) Time to write to cache
+d) Time to update cache
+
+✅ **Answer: b) Time to access lower level memory** - RAM or disk
+
+---
+
+## SECTION G: BACKUP DEVICES
+
+### Question 116
+**Which is best for long-term archival?**
+a) HDD
+b) SSD
+c) Magnetic tape
+d) USB flash
+
+✅ **Answer: c) Magnetic tape** - 30+ years lifespan
+
+---
+
+### Question 117
+**Which RAID level provides mirroring?**
+a) RAID 0
+b) RAID 1
+c) RAID 5
+d) RAID 6
+
+✅ **Answer: b) RAID 1** - Mirroring, 100% redundancy
+
+---
+
+### Question 118
+**Which RAID level provides striping?**
+a) RAID 0
+b) RAID 1
+c) RAID 5
+d) RAID 6
+
+✅ **Answer: a) RAID 0** - Striping, no redundancy
+
+---
+
+### Question 119
+**Which RAID level can survive 2 disk failures?**
+a) RAID 1
+b) RAID 5
+c) RAID 6
+d) RAID 0
+
+✅ **Answer: c) RAID 6** - Dual parity
+
+---
+
+### Question 120
+**What is the 3-2-1 backup rule?**
+a) 3 copies, 2 media, 1 offsite
+b) 3 backups, 2 days, 1 location
+c) 3 drives, 2 TB, 1 computer
+d) 3 copies, 2 locations, 1 week
+
+✅ **Answer: a) 3 copies, 2 media, 1 offsite**
+
+---
+
+### Question 121
+**Which backup copies only changes since last full backup?**
+a) Full backup
+b) Incremental backup
+c) Differential backup
+d) Mirror backup
+
+✅ **Answer: c) Differential backup** - Cumulative changes since last full
+
+---
+
+### Question 122
+**Which backup copies only changes since last backup of any type?**
+a) Full backup
+b) Incremental backup
+c) Differential backup
+d) Mirror backup
+
+✅ **Answer: b) Incremental backup** - Smallest, fastest backup
+
+---
+
+### Question 123
+**Which backup is slowest to restore?**
+a) Full
+b) Incremental
+c) Differential
+d) All same
+
+✅ **Answer: b) Incremental** - Need all incrementals + last full
+
+---
+
+### Question 124
+**NAS stands for?**
+a) Network Access Storage
+b) Network Attached Storage
+c) Network Array Storage
+d) Node Attached Storage
+
+✅ **Answer: b) Network Attached Storage** - Storage on network
+
+---
+
+### Question 125
+**Which cloud backup is from Amazon?**
+a) OneDrive
+b) Google Drive
+c) AWS S3
+d) iCloud
+
+✅ **Answer: c) AWS S3** - Amazon Web Services Simple Storage Service
+
+---
+
+## SECTION H: ADDITIONAL TOPICS
+
+### Question 126
+**Which generation used vacuum tubes?**
+a) First
+b) Second
+c) Third
+d) Fourth
+
+✅ **Answer: a) First** - 1940s-1950s
+
+---
+
+### Question 127
+**Which generation used transistors?**
+a) First
+b) Second
+c) Third
+d) Fourth
+
+✅ **Answer: b) Second** - 1950s-1960s
+
+---
+
+### Question 128
+**Which generation used ICs?**
+a) First
+b) Second
+c) Third
+d) Fourth
+
+✅ **Answer: c) Third** - 1960s-1970s
+
+---
+
+### Question 129
+**Which generation used microprocessors?**
+a) Second
+b) Third
+c) Fourth
+d) Fifth
+
+✅ **Answer: c) Fourth** - 1970s-1980s
+
+---
+
+### Question 130
+**ENIAC belongs to which generation?**
+a) First
+b) Second
+c) Third
+d) Fourth
+
+✅ **Answer: a) First** - First general-purpose computer
+
+---
+
+### Question 131
+**What is the base of binary system?**
+a) 2
+b) 8
+c) 10
+d) 16
+
+✅ **Answer: a) 2** - 0 and 1
+
+---
+
+### Question 132
+**What is the base of octal system?**
+a) 2
+b) 8
+c) 10
+d) 16
+
+✅ **Answer: b) 8** - 0-7
+
+---
+
+### Question 133
+**What is the base of hexadecimal system?**
+a) 2
+b) 8
+c) 10
+d) 16
+
+✅ **Answer: d) 16** - 0-9, A-F
+
+---
+
+### Question 134
+**Binary 1010 in decimal?**
+a) 8
+b) 9
+c) 10
+d) 11
+
+✅ **Answer: c) 10** - 8+0+2+0 = 10
+
+---
+
+### Question 135
+**Decimal 15 in hexadecimal?**
+a) A
+b) B
+c) C
+d) F
+
+✅ **Answer: d) F** - 15 = F in hex
+
+---
+
+### Question 136
+**What is kernel?**
+a) User interface
+b) Core of operating system
+c) Application program
+d) Device driver
+
+✅ **Answer: b) Core of operating system** - Manages hardware
+
+---
+
+### Question 137
+**Which is not an operating system?**
+a) Windows
+b) Linux
+c) macOS
+d) MS Office
+
+✅ **Answer: d) MS Office** - Application software
+
+---
+
+### Question 138
+**What is GUI?**
+a) Graphical User Interface
+b) General User Interface
+c) Graphic Unit Interface
+d) General Utility Interface
+
+✅ **Answer: a) Graphical User Interface** - Icons, windows, mouse
+
+---
+
+### Question 139
+**What is CLI?**
+a) Command Line Interface
+b) Computer Line Interface
+c) Command Language Interface
+d) Control Line Interface
+
+✅ **Answer: a) Command Line Interface** - Text commands
+
+---
+
+### Question 140
+**Which OS is open source?**
+a) Windows
+b) macOS
+c) Linux
+d) All of the above
+
+✅ **Answer: c) Linux** - Free and open source
+
+---
+
+### Question 141
+**What is BIOS?**
+a) Basic Input Output System
+b) Binary Input Output System
+c) Basic Input Output Software
+d) Binary Input Output Software
+
+✅ **Answer: a) Basic Input Output System** - Firmware on motherboard
+
+---
+
+### Question 142
+**What is POST?**
+a) Power-On Self Test
+b) Program Operation System Test
+c) Primary Operating System Test
+d) Power Operating System Test
+
+✅ **Answer: a) Power-On Self Test** - Tests hardware at boot
+
+---
+
+### Question 143
+**What is UEFI?**
+a) Unified Extensible Firmware Interface
+b) Universal Extensible Firmware Interface
+c) Unified Extended Firmware Interface
+d) Universal Extended Firmware Interface
+
+✅ **Answer: a) Unified Extensible Firmware Interface** - Modern BIOS replacement
+
+---
+
+### Question 144
+**Which is a supercomputer?**
+a) IBM zSeries
+b) Fugaku
+c) Dell PowerEdge
+d) MacBook Pro
+
+✅ **Answer: b) Fugaku** - Japanese supercomputer
+
+---
+
+### Question 145
+**Which is a mainframe?**
+a) IBM zSeries
+b) Fugaku
+c) Raspberry Pi
+d) iPhone
+
+✅ **Answer: a) IBM zSeries** - Enterprise mainframe
+
+---
+
+### Question 146
+**What is an embedded system?**
+a) Desktop computer
+b) Computer inside another device
+c) Laptop computer
+d) Server computer
+
+✅ **Answer: b) Computer inside another device** - Microwave, car, etc.
+
+---
+
+### Question 147
+**Which is an example of embedded system?**
+a) Desktop PC
+b) Laptop
+c) Smartwatch
+d) Server
+
+✅ **Answer: c) Smartwatch** - Embedded in watch
+
+---
+
+### Question 148
+**What is firmware?**
+a) Software in ROM
+b) Operating system
+c) Application software
+d) Device driver
+
+✅ **Answer: a) Software in ROM** - Permanent software
+
+---
+
+### Question 149
+**Which is system software?**
+a) Word processor
+b) Spreadsheet
+c) Compiler
+d) Game
+
+✅ **Answer: c) Compiler** - System software, converts code
+
+---
+
+### Question 150
+**Which is application software?**
+a) Operating system
+b) Device driver
+c) Excel
+d) Compiler
+
+✅ **Answer: c) Excel** - Application for users
+
+---
+
+## SECTION I: MIXED QUESTIONS
+
+### Question 151
+**Which is the brain of computer?**
+a) RAM
+b) CPU
+c) Hard disk
+d) Monitor
+
+✅ **Answer: b) CPU** - Central Processing Unit
+
+---
+
+### Question 152
+**Which memory is temporary?**
+a) ROM
+b) Hard disk
+c) RAM
+d) SSD
+
+✅ **Answer: c) RAM** - Volatile memory
+
+---
+
+### Question 153
+**Which device converts analog to digital?**
+a) Printer
+b) Modem
+c) Monitor
+d) Speaker
+
+✅ **Answer: b) Modem** - Modulator-Demodulator
+
+---
+
+### Question 154
+**What does Modem stand for?**
+a) Modulator-Demodulator
+b) Modern Demodulator
+c) Modulator-Demoder
+d) Modern Device
+
+✅ **Answer: a) Modulator-Demodulator** - Converts digital to analog and vice versa
+
+---
+
+### Question 155
+**Which is an output device?**
+a) Keyboard
+b) Mouse
+c) Scanner
+d) Printer
+
+✅ **Answer: d) Printer** - Produces output
+
+---
+
+### Question 156
+**Which is input device?**
+a) Monitor
+b) Printer
+c) Speaker
+d) Scanner
+
+✅ **Answer: d) Scanner** - Takes input
+
+---
+
+### Question 157
+**What is the full form of VGA?**
+a) Video Graphics Array
+b) Visual Graphics Adapter
+c) Video Graphics Adapter
+d) Visual Graphics Array
+
+✅ **Answer: a) Video Graphics Array** - Display standard
+
+---
+
+### Question 158
+**What is the full form of HDMI?**
+a) High Definition Multimedia Interface
+b) High Density Multimedia Interface
+c) High Definition Multi-connection Interface
+d) High Density Multi-connection Interface
+
+✅ **Answer: a) High Definition Multimedia Interface**
+
+---
+
+### Question 159
+**What is the full form of USB?**
+a) Universal Serial Bus
+b) United Serial Bus
+c) Universal System Bus
+d) United System Bus
+
+✅ **Answer: a) Universal Serial Bus**
+
+---
+
+### Question 160
+**Which port is hot-swappable?**
+a) Serial
+b) Parallel
+c) USB
+d) PS/2
+
+✅ **Answer: c) USB** - Can connect/disconnect while powered
+
+---
+
+### Question 161
+**What is the clock speed of CPU measured in?**
+a) MHz/GHz
+b) MBps
+c) Mbps
+d) RPM
+
+✅ **Answer: a) MHz/GHz** - Megahertz/Gigahertz
+
+---
+
+### Question 162
+**What is the speed of hard disk measured in?**
+a) MHz
+b) RPM
+c) GHz
+d) Hz
+
+✅ **Answer: b) RPM** - Revolutions Per Minute (for HDD)
+
+---
+
+### Question 163
+**7200 RPM means?**
+a) 7200 revolutions per minute
+b) 7200 cycles per second
+c) 7200 MB per second
+d) 7200 bits per second
+
+✅ **Answer: a) 7200 revolutions per minute** - Spindle speed
+
+---
+
+### Question 164
+**Which is faster?**
+a) 5400 RPM HDD
+b) 7200 RPM HDD
+c) SSD
+d) RAM
+
+✅ **Answer: c) SSD** - No moving parts, much faster
+
+---
+
+### Question 165
+**Which is largest?**
+a) KB
+b) MB
+c) GB
+d) TB
+
+✅ **Answer: d) TB** - Terabyte
+
+---
+
+### Question 166
+**1 TB = ? GB**
+a) 1000
+b) 1024
+c) 1024 × 1024
+d) 1000 × 1000
+
+✅ **Answer: b) 1024** - 1 TB = 1024 GB
+
+---
+
+### Question 167
+**What is the smallest unit of data?**
+a) Byte
+b) Bit
+c) Nibble
+d) Word
+
+✅ **Answer: b) Bit** - Binary digit (0 or 1)
+
+---
+
+### Question 168
+**What is the full form of ASCII?**
+a) American Standard Code for Information Interchange
+b) American System Code for Information Interchange
+c) American Standard Code for International Interchange
+d) American System Code for International Interchange
+
+✅ **Answer: a) American Standard Code for Information Interchange**
+
+---
+
+### Question 169
+**How many characters in ASCII?**
+a) 128
+b) 256
+c) 512
+d) 1024
+
+✅ **Answer: a) 128** - 7-bit ASCII, 0-127
+
+---
+
+### Question 170
+**How many characters in extended ASCII?**
+a) 128
+b) 256
+c) 512
+d) 1024
+
+✅ **Answer: b) 256** - 8-bit ASCII, 0-255
+
+---
+
+### Question 171
+**What is Unicode?**
+a) 16-bit character encoding
+b) 8-bit character encoding
+c) 7-bit character encoding
+d) 32-bit character encoding
+
+✅ **Answer: a) 16-bit character encoding** - Supports all languages
+
+---
+
+### Question 172
+**Which is not a programming language?**
+a) C
+b) Java
+c) Python
+d) Windows
+
+✅ **Answer: d) Windows** - Operating system
+
+---
+
+### Question 173
+**Which language is used for web development?**
+a) HTML
+b) C
+c) Assembly
+d) COBOL
+
+✅ **Answer: a) HTML** - HyperText Markup Language
+
+---
+
+### Question 174
+**What is an assembler?**
+a) Converts assembly to machine code
+b) Converts high-level to machine code
+c) Converts one high-level to another
+d) Executes programs
+
+✅ **Answer: a) Converts assembly to machine code**
+
+---
+
+### Question 175
+**What is a compiler?**
+a) Converts assembly to machine code
+b) Converts high-level to machine code at once
+c) Converts line by line
+d) Links object files
+
+✅ **Answer: b) Converts high-level to machine code at once**
+
+---
+
+### Question 176
+**What is an interpreter?**
+a) Converts assembly to machine code
+b) Converts high-level to machine code at once
+c) Converts and executes line by line
+d) Links object files
+
+✅ **Answer: c) Converts and executes line by line**
+
+---
+
+### Question 177
+**Which is interpreted language?**
+a) C
+b) C++
+c) Python
+d) Java (compiled to bytecode)
+
+✅ **Answer: c) Python** - Interpreted (usually)
+
+---
+
+### Question 178
+**Which is compiled language?**
+a) Python
+b) Ruby
+c) JavaScript
+d) C
+
+✅ **Answer: d) C** - Compiled to machine code
+
+---
+
+### Question 179
+**What is a linker?**
+a) Combines object files into executable
+b) Converts source to object
+c) Loads program into memory
+d) Debugs program
+
+✅ **Answer: a) Combines object files into executable**
+
+---
+
+### Question 180
+**What is a loader?**
+a) Combines object files
+b) Converts source to object
+c) Loads program into memory for execution
+d) Debugs program
+
+✅ **Answer: c) Loads program into memory for execution**
+
+---
+
+### Question 181
+**What is multiprogramming?**
+a) Multiple programs in memory at once
+b) Multiple CPUs
+c) Multiple users
+d) Multiple tasks in one program
+
+✅ **Answer: a) Multiple programs in memory at once** - CPU switches between them
+
+---
+
+### Question 182
+**What is multitasking?**
+a) Multiple programs running concurrently
+b) Multiple CPUs
+c) Multiple users
+d) Multiple tasks in one program
+
+✅ **Answer: a) Multiple programs running concurrently** - Same as multiprogramming
+
+---
+
+### Question 183
+**What is multiprocessing?**
+a) Multiple programs in memory
+b) Multiple CPUs
+c) Multiple users
+d) Multiple tasks in one program
+
+✅ **Answer: b) Multiple CPUs** - Hardware parallelism
+
+---
+
+### Question 184
+**What is time sharing?**
+a) Each user gets time slice
+b) Multiple CPUs
+c) Multiple programs
+d) Real-time response
+
+✅ **Answer: a) Each user gets time slice** - Interactive computing
+
+---
+
+### Question 185
+**What is real-time OS?**
+a) Guaranteed response time
+b) Fastest OS
+c) Multiple users
+d) Batch processing
+
+✅ **Answer: a) Guaranteed response time** - For critical systems
+
+---
+
+### Question 186
+**Which is a real-time OS?**
+a) Windows
+b) Linux
+c) VxWorks
+d) macOS
+
+✅ **Answer: c) VxWorks** - Used in embedded systems
+
+---
+
+### Question 187
+**What is thrashing?**
+a) Too much paging, system slows
+b) CPU overheating
+c) Disk failure
+d) Memory full
+
+✅ **Answer: a) Too much paging, system slows** - Excessive virtual memory use
+
+---
+
+### Question 188
+**What is paging?**
+a) Dividing memory into fixed-size blocks
+b) Dividing memory into variable blocks
+c) Memory allocation
+d) Disk formatting
+
+✅ **Answer: a) Dividing memory into fixed-size blocks** - Pages
+
+---
+
+### Question 189
+**What is segmentation?**
+a) Fixed-size blocks
+b) Variable-size blocks
+c) Memory protection
+d) Disk partitioning
+
+✅ **Answer: b) Variable-size blocks** - Logical divisions
+
+---
+
+### Question 190
+**What is fragmentation?**
+a) Wasted memory space
+b) Broken disk
+c) File corruption
+d) Virus infection
+
+✅ **Answer: a) Wasted memory space** - Internal/external fragmentation
+
+---
+
+### Question 191
+**What is spooling?**
+a) Simultaneous Peripheral Operations Online
+b) Storing data temporarily
+c) Printing queue
+d) All of the above
+
+✅ **Answer: d) All of the above** - Managing I/O queues
+
+---
+
+### Question 192
+**What is buffering?**
+a) Temporary storage area
+b) Permanent storage
+c) CPU cache
+d) Disk cache
+
+✅ **Answer: a) Temporary storage area** - Between devices
+
+---
+
+### Question 193
+**What is a device driver?**
+a) Software to control hardware
+b) Hardware component
+c) User application
+d) Operating system
+
+✅ **Answer: a) Software to control hardware** - Interface between OS and device
+
+---
+
+### Question 194
+**What is plug and play?**
+a) Automatic device configuration
+b) Manual installation
+c) Hardware setup
+d) Software update
+
+✅ **Answer: a) Automatic device configuration** - Auto-detects and installs
+
+---
+
+### Question 195
+**What is an interrupt?**
+a) Signal to CPU from device
+b) Stopping program
+c) Error condition
+d) Power failure
+
+✅ **Answer: a) Signal to CPU from device** - Requests attention
+
+---
+
+### Question 196
+**What is ISR?**
+a) Interrupt Service Routine
+b) Interrupt System Routine
+c) Instruction Service Routine
+d) Integrated System Routine
+
+✅ **Answer: a) Interrupt Service Routine** - Handles interrupts
+
+---
+
+### Question 197
+**What is a system call?**
+a) Program requests OS service
+b) Hardware interrupt
+c) Function call
+d) System error
+
+✅ **Answer: a) Program requests OS service** - Interface to kernel
+
+---
+
+### Question 198
+**What is a process?**
+a) Program in execution
+b) Program on disk
+c) CPU core
+d) Memory area
+
+✅ **Answer: a) Program in execution** - Active program
+
+---
+
+### Question 199
+**What is a thread?**
+a) Lightweight process
+b) Heavyweight process
+c) Program
+d) CPU core
+
+✅ **Answer: a) Lightweight process** - Part of a process
+
+---
+
+### Question 200
+**What is context switching?**
+a) Switching between processes
+b) Switching between programs
+c) Changing CPU mode
+d) Changing memory
+
+✅ **Answer: a) Switching between processes** - Saves/restores state
+
+---
+
+### Question 201
+**What is FCFS scheduling?**
+a) First Come First Served
+b) Fast CPU First Served
+c) First Come Fast Service
+d) Fast Come First Served
+
+✅ **Answer: a) First Come First Served** - Non-preemptive
+
+---
+
+### Question 202
+**What is SJF scheduling?**
+a) Shortest Job First
+b) Slow Job First
+c) Simple Job First
+d) System Job First
+
+✅ **Answer: a) Shortest Job First** - Optimal average wait time
+
+---
+
+### Question 203
+**What is Round Robin scheduling?**
+a) Each process gets time quantum
+b) First come first served
+c) Shortest job first
+d) Priority based
+
+✅ **Answer: a) Each process gets time quantum** - Time sharing
+
+---
+
+### Question 204
+**What is deadlock?**
+a) Processes waiting indefinitely
+b) System crash
+c) Program error
+d) Memory full
+
+✅ **Answer: a) Processes waiting indefinitely** - Circular wait
+
+---
+
+### Question 205
+**Conditions for deadlock?**
+a) Mutual exclusion, hold and wait, no preemption, circular wait
+b) Mutual exclusion, hold and wait, preemption, circular wait
+c) Mutual exclusion, release and wait, no preemption, linear wait
+d) Shared resources, hold and wait, preemption, circular wait
+
+✅ **Answer: a) Mutual exclusion, hold and wait, no preemption, circular wait**
+
+---
+
+## 🎯 QUICK REFERENCE - IMPORTANT NUMBERS
+
+| Item | Value |
+|------|-------|
+| 1 Byte | 8 bits |
+| 1 KB | 1024 bytes |
+| 1 MB | 1,048,576 bytes |
+| 1 GB | 1,073,741,824 bytes |
+| 1 TB | 1,099,511,627,776 bytes |
+| 32-bit max memory | 4 GB |
+| ASCII characters | 128 |
+| Extended ASCII | 256 |
+| USB 2.0 speed | 480 Mbps |
+| USB 3.0 speed | 5 Gbps |
+| DDR4 speed | 2133-3200 MHz |
+| PCIe lanes | 16 for GPU |
+| SATA speed | 6 Gbps |
+| NVMe speed | 32 Gbps+ |
+
+---
+
+## 📝 FINAL EXAM TIPS FOR MHT MCA CET
+
+1. **Focus on differences** - RAM vs ROM, HDD vs SSD, Impact vs Non-impact printers
+2. **Remember the hierarchy** - Register > Cache > RAM > Secondary
+3. **Instruction cycle sequence** - Fetch → Decode → Execute → Store
+4. **Memory units conversion** - 1 KB = 1024 Bytes (not 1000)
+5. **ALU vs CU** - ALU does the work, CU manages the work
+6. **Addressing modes** - Immediate, Direct, Indirect, Register, Indexed
+7. **Cache levels** - L1 (fastest, smallest), L2, L3 (largest, shared)
+8. **I/O techniques** - Programmed, Interrupt, DMA (fastest)
+9. **Backup types** - Full, Incremental, Differential
+10. **RAID levels** - 0 (striping), 1 (mirroring), 5 (parity), 6 (dual parity)
+
+---
+
+## 🏆 MOST IMPORTANT FOR EXAM
+
+| Topic | Key Points |
+|-------|------------|
+| **CPU** | ALU, CU, Registers, PC, IR, ACC |
+| **Instruction Cycle** | Fetch, Decode, Execute, Store |
+| **Memory Hierarchy** | Register > Cache > RAM > SSD > HDD |
+| **RAM vs ROM** | Volatile vs Non-volatile |
+| **Cache** | L1, L2, L3, Hit/Miss |
+| **Addressing Modes** | Immediate, Direct, Indirect, Register |
+| **Input Devices** | Keyboard, Mouse, Scanner, MICR, OCR, OMR |
+| **Output Devices** | Monitor, Printer (Impact/Non-impact) |
+| **Backup** | 3-2-1 rule, Full/Incremental/Differential |
+| **Number System** | Binary, Decimal, Hex conversions |
+
+---

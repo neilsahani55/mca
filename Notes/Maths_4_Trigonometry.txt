@@ -1,0 +1,1398 @@
+# COMPLETE TRIGONOMETRY GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## Exam Overview
+- **Weightage**: 6-8 questions (12-16 marks)
+- **Difficulty Level**: Moderate
+- **Focus Areas**: Identities, Trigonometric Equations, Properties of Triangles, Inverse Functions, Heights & Distances
+- **Key Skill**: Formula memorization + Quick calculation
+- **Time Management**: 45-60 seconds per question
+
+---
+
+# SECTION 1: FUNDAMENTAL TRIGONOMETRIC RATIOS
+
+## 1.1 Basic Definitions
+
+In a right-angled triangle:
+- **sin θ** = Opposite/Hypotenuse
+- **cos θ** = Adjacent/Hypotenuse  
+- **tan θ** = Opposite/Adjacent
+
+**Reciprocal Ratios**:
+- **cosec θ** = 1/sin θ = Hypotenuse/Opposite
+- **sec θ** = 1/cos θ = Hypotenuse/Adjacent
+- **cot θ** = 1/tan θ = Adjacent/Opposite
+
+## 1.2 Signs of Trigonometric Functions in Quadrants
+
+| Quadrant | sin | cos | tan | cosec | sec | cot |
+|----------|-----|-----|-----|-------|-----|-----|
+| I (0°-90°) | + | + | + | + | + | + |
+| II (90°-180°) | + | - | - | + | - | - |
+| III (180°-270°) | - | - | + | - | - | + |
+| IV (270°-360°) | - | + | - | - | + | - |
+
+**Memory Aid**: "All Students Take Coffee"
+- **A**ll positive in Quadrant **A** (I)
+- **S**in positive in Quadrant **S** (II)
+- **T**an positive in Quadrant **T** (III)
+- **C**os positive in Quadrant **C** (IV)
+
+## 1.3 Standard Angle Values (MUST MEMORIZE)
+
+| Angle (θ) | 0° | 30° | 45° | 60° | 90° | 180° | 270° | 360° |
+|-----------|-----|-----|-----|-----|-----|------|------|------|
+| sin θ | 0 | 1/2 | 1/√2 | √3/2 | 1 | 0 | -1 | 0 |
+| cos θ | 1 | √3/2 | 1/√2 | 1/2 | 0 | -1 | 0 | 1 |
+| tan θ | 0 | 1/√3 | 1 | √3 | ∞ | 0 | ∞ | 0 |
+| cosec θ | ∞ | 2 | √2 | 2/√3 | 1 | ∞ | -1 | ∞ |
+| sec θ | 1 | 2/√3 | √2 | 2 | ∞ | -1 | ∞ | 1 |
+| cot θ | ∞ | √3 | 1 | 1/√3 | 0 | ∞ | 0 | ∞ |
+
+**Memory Trick for sin values**: Write 0, 1, 2, 3, 4 → divide by 4 → take square root
+- sin 0° = √(0/4) = 0
+- sin 30° = √(1/4) = 1/2
+- sin 45° = √(2/4) = 1/√2
+- sin 60° = √(3/4) = √3/2
+- sin 90° = √(4/4) = 1
+
+cos values are reverse of sin values.
+
+## 1.4 CAST Rule - Quick Quadrant Determination
+
+**C**os positive (IV)
+**A**ll positive (I)
+**S**in positive (II)
+**T**an positive (III)
+
+Read anticlockwise: ASTC (All Sin Tan Cos)
+
+## 1.5 Jog Your Memory - Section 1
+
+| Concept | Formula/Trick |
+|---------|---------------|
+| Quadrant Signs | ASTC - All, Sin, Tan, Cos positive |
+| Standard Values | √(0/4), √(1/4), √(2/4), √(3/4), √(4/4) for sin |
+| Reciprocal | cosec = 1/sin, sec = 1/cos, cot = 1/tan |
+
+---
+
+# SECTION 2: TRIGONOMETRIC IDENTITIES
+
+## 2.1 Pythagorean Identities
+
+| Identity | Alternative Form |
+|----------|------------------|
+| sin²θ + cos²θ = 1 | sin²θ = 1 - cos²θ, cos²θ = 1 - sin²θ |
+| 1 + tan²θ = sec²θ | tan²θ = sec²θ - 1, sec²θ - tan²θ = 1 |
+| 1 + cot²θ = cosec²θ | cot²θ = cosec²θ - 1, cosec²θ - cot²θ = 1 |
+
+## 2.2 Reciprocal Identities
+
+| Identity | Alternative |
+|----------|-------------|
+| sin θ = 1/cosec θ | cosec θ = 1/sin θ |
+| cos θ = 1/sec θ | sec θ = 1/cos θ |
+| tan θ = 1/cot θ | cot θ = 1/tan θ |
+| tan θ = sin θ/cos θ | cot θ = cos θ/sin θ |
+
+## 2.3 Complementary Angle Identities (90° - θ)
+
+| Function | Result |
+|----------|--------|
+| sin(90° - θ) | cos θ |
+| cos(90° - θ) | sin θ |
+| tan(90° - θ) | cot θ |
+| cot(90° - θ) | tan θ |
+| sec(90° - θ) | cosec θ |
+| cosec(90° - θ) | sec θ |
+
+**Memory Aid**: "Co-function pairs": sin↔cos, tan↔cot, sec↔cosec
+
+## 2.4 Negative Angle Identities
+
+| Identity | Result |
+|----------|--------|
+| sin(-θ) | -sin θ |
+| cos(-θ) | cos θ |
+| tan(-θ) | -tan θ |
+| cosec(-θ) | -cosec θ |
+| sec(-θ) | sec θ |
+| cot(-θ) | -cot θ |
+
+**Memory Aid**: Only cos and sec are even functions (remain positive), rest are odd.
+
+## 2.5 Sum and Difference Formulas (CRITICAL)
+
+| Formula | Expansion |
+|---------|-----------|
+| sin(A + B) | sin A cos B + cos A sin B |
+| sin(A - B) | sin A cos B - cos A sin B |
+| cos(A + B) | cos A cos B - sin A sin B |
+| cos(A - B) | cos A cos B + sin A sin B |
+| tan(A + B) | (tan A + tan B)/(1 - tan A tan B) |
+| tan(A - B) | (tan A - tan B)/(1 + tan A tan B) |
+
+**Memory Aid**: 
+- Sine: "Same signs, mix functions" → sin(A+B) = sin cos + cos sin
+- Cosine: "Opposite signs, same functions" → cos(A+B) = cos cos - sin sin
+
+## 2.6 Double Angle Formulas
+
+| Formula | Alternative Forms |
+|---------|-------------------|
+| sin 2A | 2 sin A cos A |
+| cos 2A | cos²A - sin²A = 2 cos²A - 1 = 1 - 2 sin²A |
+| tan 2A | 2 tan A/(1 - tan²A) |
+
+**Important**: 
+- sin 2A = 2 sin A cos A = 2 tan A/(1 + tan²A)
+- cos 2A = (1 - tan²A)/(1 + tan²A)
+
+## 2.7 Triple Angle Formulas
+
+| Formula | Expansion |
+|---------|-----------|
+| sin 3A | 3 sin A - 4 sin³A |
+| cos 3A | 4 cos³A - 3 cos A |
+| tan 3A | (3 tan A - tan³A)/(1 - 3 tan²A) |
+
+## 2.8 Half Angle Formulas
+
+| Formula | Expression |
+|---------|------------|
+| sin(A/2) | ±√[(1 - cos A)/2] |
+| cos(A/2) | ±√[(1 + cos A)/2] |
+| tan(A/2) | ±√[(1 - cos A)/(1 + cos A)] = (1 - cos A)/sin A = sin A/(1 + cos A) |
+
+**Sign** depends on quadrant of A/2.
+
+## 2.9 Sum-to-Product Formulas
+
+| Formula | Result |
+|---------|--------|
+| sin C + sin D | 2 sin[(C + D)/2] cos[(C - D)/2] |
+| sin C - sin D | 2 cos[(C + D)/2] sin[(C - D)/2] |
+| cos C + cos D | 2 cos[(C + D)/2] cos[(C - D)/2] |
+| cos C - cos D | -2 sin[(C + D)/2] sin[(C - D)/2] |
+
+**Memory Aid**: 
+- Sum of sines → 2 sin(average) cos(half difference)
+- Difference of sines → 2 cos(average) sin(half difference)
+
+## 2.10 Product-to-Sum Formulas
+
+| Formula | Result |
+|---------|--------|
+| 2 sin A cos B | sin(A + B) + sin(A - B) |
+| 2 cos A sin B | sin(A + B) - sin(A - B) |
+| 2 cos A cos B | cos(A + B) + cos(A - B) |
+| 2 sin A sin B | cos(A - B) - cos(A + B) |
+
+## 2.11 Special Product Formulas (Exam Specials)
+
+**Product of Cosines Series**:
+- cos θ × cos 2θ × cos 2²θ × ... × cos(2ⁿ⁻¹θ) = sin(2ⁿθ)/(2ⁿ sin θ), for θ ≠ nπ
+
+**Example**: cos 20° × cos 40° × cos 80°
+- Here, θ = 20°, n = 3
+- = sin(2³ × 20°)/(2³ sin 20°) = sin 160°/(8 sin 20°)
+- = sin(180° - 20°)/(8 sin 20°) = sin 20°/(8 sin 20°) = 1/8
+
+**Sine and Cosine Series**:
+- sin α + sin(α+β) + sin(α+2β) + ... + sin(α+(n-1)β) = [sin(nβ/2)/sin(β/2)] × sin(α + (n-1)β/2)
+- cos α + cos(α+β) + cos(α+2β) + ... + cos(α+(n-1)β) = [sin(nβ/2)/sin(β/2)] × cos(α + (n-1)β/2)
+
+## 2.12 Advanced Problem-Solving Strategies
+
+### Strategy 1: Convert to Sine & Cosine
+When you see sec, cosec, tan, cot - rewrite them in terms of sin and cos.
+
+**Example**: Simplify (sec θ + tan θ)(1 - sin θ)
+
+**Solution**:
+= (1/cos θ + sin θ/cos θ)(1 - sin θ)
+= ((1 + sin θ)/cos θ)(1 - sin θ)
+= (1 - sin²θ)/cos θ
+= cos²θ/cos θ = cos θ ✓
+
+### Strategy 2: The "1" Substitution Trick
+Replace 1 with sin²θ + cos²θ, sec²θ - tan²θ, or cosec²θ - cot²θ.
+
+**Example**: Prove √[(1 - cos θ)/(1 + cos θ)] = cosec θ - cot θ
+
+**Solution**:
+Multiply numerator and denominator inside root by (1 - cos θ):
+LHS = √[((1 - cos θ)²)/(1 - cos²θ)] = √[((1 - cos θ)²)/sin²θ]
+= (1 - cos θ)/sin θ = 1/sin θ - cos θ/sin θ = cosec θ - cot θ ✓
+
+### Strategy 3: Matching with Options
+In MCQ, simplify until it matches one of the given options.
+
+## 2.13 Conditional Identities
+
+When A + B + C = π (or 180°):
+
+| Identity | Formula |
+|----------|---------|
+| sin(A + B) | sin C |
+| cos(A + B) | -cos C |
+| tan(A + B) | -tan C |
+| sin 2A + sin 2B + sin 2C | 4 sin A sin B sin C |
+| cos 2A + cos 2B + cos 2C | -1 - 4 cos A cos B cos C |
+| sin A + sin B + sin C | 4 cos(A/2) cos(B/2) cos(C/2) |
+| cos A + cos B + cos C | 1 + 4 sin(A/2) sin(B/2) sin(C/2) |
+| tan A + tan B + tan C | tan A tan B tan C |
+
+## 2.14 Solved Examples with Shortcuts
+
+**Example 1**: If sin θ + cos θ = √2, find tan θ + cot θ.
+
+**Shortcut**:
+- Square both sides: sin²θ + cos²θ + 2 sin θ cos θ = 2
+- 1 + 2 sin θ cos θ = 2
+- sin θ cos θ = 1/2
+- tan θ + cot θ = (sin θ/cos θ) + (cos θ/sin θ) = (sin²θ + cos²θ)/(sin θ cos θ) = 1/(1/2) = 2
+
+**Example 2**: If tan A = 1/2 and tan B = 1/3, find A + B.
+
+**Shortcut**:
+- tan(A + B) = (1/2 + 1/3)/(1 - 1/2 × 1/3) = (5/6)/(5/6) = 1
+- ∴ A + B = 45° or π/4
+
+**Example 3**: Prove that (1 + tan θ tan 2θ) = sec 2θ.
+
+**Solution**:
+LHS = 1 + (sin θ/cos θ) × (sin 2θ/cos 2θ)
+= 1 + [sin θ × 2 sin θ cos θ]/(cos θ × cos 2θ)
+= 1 + (2 sin²θ)/cos 2θ
+= 1 + [2(1 - cos²θ)]/cos 2θ
+= 1 + [2 - (1 + cos 2θ)]/cos 2θ [since cos²θ = (1+cos 2θ)/2]
+= 1 + [1 - cos 2θ]/cos 2θ
+= 1 + sec 2θ - 1 = sec 2θ ✓
+
+## 2.15 Jog Your Memory - Section 2
+
+| Category | Key Formulas |
+|----------|---------------|
+| Pythagorean | sin²θ + cos²θ = 1, 1 + tan²θ = sec²θ, 1 + cot²θ = cosec²θ |
+| Sum/Difference | sin(A±B) = sinA cosB ± cosA sinB, cos(A±B) = cosA cosB ∓ sinA sinB |
+| Double Angle | sin2A = 2 sinA cosA, cos2A = 2cos²A - 1 = 1 - 2sin²A |
+| Product Series | cosθ cos2θ ... cos(2ⁿ⁻¹θ) = sin(2ⁿθ)/(2ⁿ sinθ) |
+| Conditional (A+B+C=π) | tanA + tanB + tanC = tanA tanB tanC |
+
+---
+
+# SECTION 3: TRIGONOMETRIC EQUATIONS
+
+## 3.1 General Solutions
+
+| Equation | General Solution | Principal Values |
+|----------|------------------|-------------------|
+| sin θ = 0 | θ = nπ, n ∈ Z | θ = 0, π, 2π,... |
+| cos θ = 0 | θ = (2n + 1)π/2, n ∈ Z | θ = π/2, 3π/2,... |
+| tan θ = 0 | θ = nπ, n ∈ Z | θ = 0, π, 2π,... |
+
+| Equation | General Solution |
+|----------|------------------|
+| sin θ = sin α | θ = nπ + (-1)ⁿα, n ∈ Z |
+| cos θ = cos α | θ = 2nπ ± α, n ∈ Z |
+| tan θ = tan α | θ = nπ + α, n ∈ Z |
+| sin²θ = sin²α | θ = nπ ± α, n ∈ Z |
+| cos²θ = cos²α | θ = nπ ± α, n ∈ Z |
+| tan²θ = tan²α | θ = nπ ± α, n ∈ Z |
+
+## 3.2 Important Particular Cases
+
+| Equation | Solution |
+|----------|----------|
+| sin θ = 1 | θ = (4n + 1)π/2 |
+| sin θ = -1 | θ = (4n - 1)π/2 |
+| cos θ = 1 | θ = 2nπ |
+| cos θ = -1 | θ = (2n + 1)π |
+| tan θ = 1 | θ = nπ + π/4 |
+| tan θ = -1 | θ = nπ - π/4 |
+
+## 3.3 Principal Value in Given Interval - Shortcut
+
+To find solutions in [0, 2π] or [0°, 360°]:
+
+**Step 1**: Find reference angle α (positive acute angle)
+**Step 2**: Use ASTC rule to identify quadrants where function has given sign
+**Step 3**: Calculate angles:
+- Quadrant I: α
+- Quadrant II: π - α (180° - α)
+- Quadrant III: π + α (180° + α)
+- Quadrant IV: 2π - α (360° - α)
+
+**Example**: Solve sin θ = -1/2 in [0, 2π]
+
+**Solution**:
+- Reference angle α = 30° (π/6) [since sin 30° = 1/2]
+- sin is negative in QIII and QIV
+- QIII: θ = π + π/6 = 7π/6 (210°)
+- QIV: θ = 2π - π/6 = 11π/6 (330°)
+
+## 3.4 Solving by Bounding Technique
+
+Since -1 ≤ sin θ ≤ 1 and -1 ≤ cos θ ≤ 1:
+
+**Example**: Solve sin θ + cos θ = 2
+
+**Shortcut**: Maximum value of sin θ and cos θ individually is 1. Their sum can be 2 only if both are simultaneously 1, i.e., sin θ = 1 AND cos θ = 1. No such θ exists. ∴ No solution.
+
+**Example**: Solve 3 sin θ + 4 cos θ = 7
+
+**Shortcut**: Maximum value of 3 sin θ + 4 cos θ = √(3² + 4²) = 5. Since 7 > 5, no solution.
+
+## 3.5 Equations of Form a cos θ + b sin θ = c
+
+**Method**:
+1. Divide by √(a² + b²)
+2. Let cos φ = a/√(a²+b²), sin φ = b/√(a²+b²)
+3. Equation becomes cos(θ - φ) = c/√(a²+b²) or sin(θ + φ) = c/√(a²+b²)
+4. Condition for solution: |c| ≤ √(a² + b²)
+
+**Example**: Solve √3 cos θ + sin θ = 1
+
+**Solution**:
+- √(a²+b²) = √(3+1) = 2
+- Divide: (√3/2) cos θ + (1/2) sin θ = 1/2
+- cos 30° cos θ + sin 30° sin θ = 1/2
+- cos(θ - 30°) = 1/2 = cos 60°
+- θ - 30° = ±60° + 360°n
+- θ = 90° + 360°n or θ = -30° + 360°n
+- Principal values: θ = 90°, 330°
+
+## 3.6 Quadratic Equations in Trigonometric Functions
+
+**Example**: Solve 2 cos²θ + 3 sin θ = 0
+
+**Solution**:
+- 2(1 - sin²θ) + 3 sin θ = 0
+- 2 - 2 sin²θ + 3 sin θ = 0
+- 2 sin²θ - 3 sin θ - 2 = 0
+- Let x = sin θ: 2x² - 3x - 2 = 0
+- (2x + 1)(x - 2) = 0
+- x = -1/2 or x = 2 (impossible)
+- sin θ = -1/2
+- θ = 210°, 330° (in 0° to 360°)
+
+## 3.7 Equations Involving Multiple Angles
+
+**Example**: Solve tan 3θ = 1
+
+**Solution**:
+- tan 3θ = 1 = tan π/4
+- 3θ = nπ + π/4
+- θ = nπ/3 + π/12, n ∈ Z
+
+## 3.8 Equations Using Factorization
+
+**Example**: Solve sin 2θ = cos θ
+
+**Solution**:
+- 2 sin θ cos θ - cos θ = 0
+- cos θ (2 sin θ - 1) = 0
+- Either cos θ = 0 → θ = (2n+1)π/2
+- Or sin θ = 1/2 → θ = nπ + (-1)ⁿ(π/6)
+
+## 3.9 Solved Examples with Tricks
+
+**Example 1**: Solve sin²θ - sin θ - 2 = 0
+
+**Trick**: 
+- Let x = sin θ
+- x² - x - 2 = 0
+- (x - 2)(x + 1) = 0
+- x = 2 (reject) or x = -1
+- sin θ = -1 → θ = (4n - 1)π/2
+
+**Example 2**: Solve tan θ + cot θ = 2
+
+**Trick**:
+- tan θ + 1/tan θ = 2
+- Let t = tan θ
+- t + 1/t = 2
+- t² - 2t + 1 = 0
+- (t - 1)² = 0 → t = 1
+- tan θ = 1 → θ = nπ + π/4
+
+**Example 3**: Solve sin 7θ + sin 4θ + sin θ = 0
+
+**Trick**: Use sum-to-product
+- (sin 7θ + sin θ) + sin 4θ = 0
+- 2 sin 4θ cos 3θ + sin 4θ = 0
+- sin 4θ (2 cos 3θ + 1) = 0
+- Either sin 4θ = 0 → 4θ = nπ → θ = nπ/4
+- Or cos 3θ = -1/2 → 3θ = 2nπ ± 2π/3 → θ = 2nπ/3 ± 2π/9
+
+## 3.10 Jog Your Memory - Section 3
+
+| Equation Type | Solution Method |
+|---------------|-----------------|
+| sin θ = sin α | θ = nπ + (-1)ⁿα |
+| cos θ = cos α | θ = 2nπ ± α |
+| tan θ = tan α | θ = nπ + α |
+| a cos θ + b sin θ = c | Convert to cos(θ-φ) = c/√(a²+b²) |
+| Quadratic in sin/cos | Substitute variable, solve, then find θ |
+
+---
+
+# SECTION 4: INVERSE TRIGONOMETRIC FUNCTIONS
+
+## 4.1 Definitions and Principal Value Branches
+
+| Function | Domain | Range (Principal Value) | Quadrant |
+|----------|--------|------------------------|----------|
+| sin⁻¹x | [-1, 1] | [-π/2, π/2] | IV & I |
+| cos⁻¹x | [-1, 1] | [0, π] | I & II |
+| tan⁻¹x | R | (-π/2, π/2) | IV & I |
+| cot⁻¹x | R | (0, π) | I & II |
+| sec⁻¹x | (-∞, -1] ∪ [1, ∞) | [0, π/2) ∪ (π/2, π] | I & II |
+| cosec⁻¹x | (-∞, -1] ∪ [1, ∞) | [-π/2, 0) ∪ (0, π/2] | IV & I |
+
+**Memory Aid for Ranges**:
+- sin⁻¹, tan⁻¹, cosec⁻¹ → Right side angles (QIV and QI)
+- cos⁻¹, cot⁻¹, sec⁻¹ → Upper side angles (QI and QII)
+
+## 4.2 Important Properties
+
+### Property 1: Complementary Relations
+- sin⁻¹x + cos⁻¹x = π/2
+- tan⁻¹x + cot⁻¹x = π/2
+- sec⁻¹x + cosec⁻¹x = π/2
+
+### Property 2: Negative Arguments
+- sin⁻¹(-x) = -sin⁻¹x
+- cos⁻¹(-x) = π - cos⁻¹x
+- tan⁻¹(-x) = -tan⁻¹x
+- cot⁻¹(-x) = π - cot⁻¹x
+- sec⁻¹(-x) = π - sec⁻¹x
+- cosec⁻¹(-x) = -cosec⁻¹x
+
+### Property 3: Reciprocal Relations
+- sin⁻¹(1/x) = cosec⁻¹x, for |x| ≥ 1
+- cos⁻¹(1/x) = sec⁻¹x, for |x| ≥ 1
+- tan⁻¹(1/x) = cot⁻¹x, for x > 0
+- tan⁻¹(1/x) = -π + cot⁻¹x, for x < 0
+
+### Property 4: Sum/Difference Formulas
+
+**For tan⁻¹**:
+- tan⁻¹x + tan⁻¹y = tan⁻¹[(x + y)/(1 - xy)], if xy < 1
+- tan⁻¹x + tan⁻¹y = π + tan⁻¹[(x + y)/(1 - xy)], if x > 0, y > 0, xy > 1
+- tan⁻¹x + tan⁻¹y = -π + tan⁻¹[(x + y)/(1 - xy)], if x < 0, y < 0, xy > 1
+- tan⁻¹x - tan⁻¹y = tan⁻¹[(x - y)/(1 + xy)]
+
+**For sin⁻¹**:
+- sin⁻¹x + sin⁻¹y = sin⁻¹[x√(1-y²) + y√(1-x²)]
+- sin⁻¹x - sin⁻¹y = sin⁻¹[x√(1-y²) - y√(1-x²)]
+
+**For cos⁻¹**:
+- cos⁻¹x + cos⁻¹y = cos⁻¹[xy - √(1-x²)√(1-y²)]
+- cos⁻¹x - cos⁻¹y = cos⁻¹[xy + √(1-x²)√(1-y²)]
+
+## 4.3 Function of Inverse Formulas (CRITICAL)
+
+These are direct applications:
+
+| Formula | Result |
+|---------|--------|
+| sin(cos⁻¹x) | √(1 - x²) |
+| cos(sin⁻¹x) | √(1 - x²) |
+| tan(sin⁻¹x) | x/√(1 - x²) |
+| tan(cos⁻¹x) | √(1 - x²)/x |
+| sin(tan⁻¹x) | x/√(1 + x²) |
+| cos(tan⁻¹x) | 1/√(1 + x²) |
+
+## 4.4 Simplification using Substitution
+
+**Example**: Simplify sin(cot⁻¹x)
+
+**Method**: 
+- Let θ = cot⁻¹x → cot θ = x
+- Construct right triangle: adjacent = x, opposite = 1, hypotenuse = √(1 + x²)
+- sin θ = opposite/hypotenuse = 1/√(1 + x²)
+- ∴ sin(cot⁻¹x) = 1/√(1 + x²)
+
+## 4.5 Solved Examples
+
+**Example 1**: Find value of sin⁻¹(1/2) + cos⁻¹(1/2)
+
+**Shortcut**: Using complementary property: sin⁻¹x + cos⁻¹x = π/2
+∴ Answer = π/2
+
+**Example 2**: Prove tan⁻¹(1/2) + tan⁻¹(1/3) = π/4
+
+**Solution**:
+- tan⁻¹(1/2) + tan⁻¹(1/3) = tan⁻¹[(1/2 + 1/3)/(1 - 1/2 × 1/3)]
+- = tan⁻¹[(5/6)/(5/6)] = tan⁻¹(1) = π/4
+
+**Example 3**: Solve tan⁻¹(2x) + tan⁻¹(3x) = π/4
+
+**Solution**:
+- tan⁻¹[(2x + 3x)/(1 - 6x²)] = π/4
+- 5x/(1 - 6x²) = 1
+- 5x = 1 - 6x²
+- 6x² + 5x - 1 = 0
+- (x + 1)(6x - 1) = 0
+- x = -1 or x = 1/6
+- Check condition: For x = -1, xy = 3 > 1, formula gives π + ..., not valid
+- ∴ x = 1/6
+
+**Example 4**: Evaluate sin(cos⁻¹(3/5))
+
+**Shortcut**: sin(cos⁻¹x) = √(1 - x²) = √(1 - 9/25) = √(16/25) = 4/5
+
+**Example 5**: Evaluate tan[½ sin⁻¹(2x/(1 + x²)) + ½ cos⁻¹((1 - y²)/(1 + y²))]
+
+**Recall**:
+- sin⁻¹(2x/(1 + x²)) = 2 tan⁻¹x for |x| ≤ 1
+- cos⁻¹((1 - y²)/(1 + y²)) = 2 tan⁻¹y for y ≥ 0
+
+**Solution**:
+= tan[½ × 2 tan⁻¹x + ½ × 2 tan⁻¹y]
+= tan[tan⁻¹x + tan⁻¹y]
+= tan[tan⁻¹((x + y)/(1 - xy))] = (x + y)/(1 - xy)
+
+**Example 6**: Find value of tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3)
+
+**Trick**: Note that 1 + 2 + 3 = 6 and 1×2×3 = 6
+- For A+B+C = π, tan A + tan B + tan C = tan A tan B tan C
+- Here, if tan A = 1, tan B = 2, tan C = 3, then tan A + tan B + tan C = 6 = tan A tan B tan C
+- ∴ A + B + C = π
+- So tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3) = π
+
+## 4.6 Jog Your Memory - Section 4
+
+| Property | Formula |
+|----------|---------|
+| Complementary | sin⁻¹x + cos⁻¹x = π/2 |
+| Negative | sin⁻¹(-x) = -sin⁻¹x, cos⁻¹(-x) = π - cos⁻¹x |
+| tan⁻¹ sum | tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)], xy<1 |
+| Function of inverse | sin(cos⁻¹x) = √(1-x²), tan(sin⁻¹x) = x/√(1-x²) |
+| Triple tan identity | If tan⁻¹a + tan⁻¹b + tan⁻¹c = π, then a+b+c = abc |
+
+---
+
+# SECTION 5: PROPERTIES OF TRIANGLES
+
+## 5.1 Notation
+
+For triangle ABC:
+- **Angles**: A, B, C (in degrees or radians)
+- **Sides opposite to angles**: a, b, c respectively
+- **Perimeter**: 2s = a + b + c (s = semi-perimeter)
+- **Area**: Δ
+- **Circumradius**: R
+- **Inradius**: r
+- **Exradii**: r₁, r₂, r₃ (opposite to vertices A, B, C respectively)
+
+## 5.2 Sine Rule (Fundamental)
+
+**Formula**: a/sin A = b/sin B = c/sin C = 2R
+
+**Alternative**: a : b : c = sin A : sin B : sin C
+
+**Applications**:
+- Two angles and one side (AAS or ASA)
+- Two sides and a non-included angle (SSA)
+
+**Example**: In ΔABC, if A = 60°, B = 45°, a = 10, find b.
+- b = (a × sin B)/sin A = (10 × sin 45°)/sin 60° = (10 × 1/√2)/(√3/2) = 20/√6
+
+## 5.3 Cosine Rule
+
+**Formulas**:
+- a² = b² + c² - 2bc cos A
+- b² = a² + c² - 2ac cos B
+- c² = a² + b² - 2ab cos C
+
+**Alternative Forms**:
+- cos A = (b² + c² - a²)/(2bc)
+- cos B = (a² + c² - b²)/(2ac)
+- cos C = (a² + b² - c²)/(2ab)
+
+**Applications**:
+- Three sides (SSS)
+- Two sides and included angle (SAS)
+
+**Example**: In ΔABC, a = 8, b = 6, c = 4, find cos A.
+- cos A = (b² + c² - a²)/(2bc) = (36 + 16 - 64)/(2 × 6 × 4) = (-12)/(48) = -1/4
+
+## 5.4 Projection Rule
+
+**Formulas**:
+- a = b cos C + c cos B
+- b = c cos A + a cos C
+- c = a cos B + b cos A
+
+## 5.5 Napier's Analogies (Tangent Rule)
+
+**Formulas**:
+- tan[(B - C)/2] = [(b - c)/(b + c)] cot(A/2)
+- tan[(C - A)/2] = [(c - a)/(c + a)] cot(B/2)
+- tan[(A - B)/2] = [(a - b)/(a + b)] cot(C/2)
+
+**Application**: When two sides and included angle are given, to find other angles quickly.
+
+**Example**: In ΔABC, a = 18, b = 12, C = 60°. Find A and B.
+- A + B = 120°
+- tan[(A - B)/2] = (18-12)/(18+12) × cot(30°) = (6/30) × √3 = √3/5
+- (A - B)/2 = tan⁻¹(√3/5)
+- Then A = [(A+B) + (A-B)]/2, B = [(A+B) - (A-B)]/2
+
+## 5.6 Half-Angle Formulas
+
+**Sine half-angle**:
+- sin(A/2) = √[(s - b)(s - c)/(bc)]
+- sin(B/2) = √[(s - c)(s - a)/(ca)]
+- sin(C/2) = √[(s - a)(s - b)/(ab)]
+
+**Cosine half-angle**:
+- cos(A/2) = √[s(s - a)/(bc)]
+- cos(B/2) = √[s(s - b)/(ca)]
+- cos(C/2) = √[s(s - c)/(ab)]
+
+**Tangent half-angle**:
+- tan(A/2) = √[(s - b)(s - c)/{s(s - a)}] = Δ/[s(s - a)]
+- tan(B/2) = Δ/[s(s - b)]
+- tan(C/2) = Δ/[s(s - c)]
+
+## 5.7 Area Formulas (Multiple Forms)
+
+1. **Using two sides and included angle**:
+   - Δ = ½ bc sin A = ½ ca sin B = ½ ab sin C
+
+2. **Heron's Formula**:
+   - Δ = √[s(s - a)(s - b)(s - c)]
+
+3. **Using circumradius**:
+   - Δ = abc/(4R)
+
+4. **Using inradius**:
+   - Δ = rs
+
+5. **Using sides and angles**:
+   - Δ = (b² sin C sin A)/(2 sin B) (and similar cyclic forms)
+
+## 5.8 Circumradius (R)
+
+**Formulas**:
+- R = a/(2 sin A) = b/(2 sin B) = c/(2 sin C)
+- R = abc/(4Δ)
+
+**Special case**: In right triangle with hypotenuse c, R = c/2
+
+## 5.9 Inradius (r)
+
+**Formulas**:
+- r = Δ/s
+- r = (a sin(B/2) sin(C/2))/cos(A/2)
+- r = 4R sin(A/2) sin(B/2) sin(C/2)
+
+## 5.10 Exradii (r₁, r₂, r₃)
+
+**Formulas**:
+- r₁ = Δ/(s - a) [excircle opposite A]
+- r₂ = Δ/(s - b) [excircle opposite B]
+- r₃ = Δ/(s - c) [excircle opposite C]
+
+**Relations**:
+- 1/r = 1/r₁ + 1/r₂ + 1/r₃
+- r₁ + r₂ + r₃ - r = 4R
+
+## 5.11 m-n Theorem (Important for Cevians)
+
+If a cevian from vertex C divides side AB in ratio m:n (i.e., AD:DB = m:n) and makes angle δ with AB, then:
+
+**(m + n) cot δ = m cot α - n cot β**
+
+or alternatively: (m + n) cot δ = n cot B - m cot A
+
+## 5.12 Length of Angle Bisector
+
+Length of bisector of angle A (from A to side a):
+- **Formula**: lₐ = (2bc cos(A/2))/(b + c)
+- **Alternative**: lₐ² = bc[1 - (a²/(b + c)²)]
+
+## 5.13 Length of Median
+
+Length of median from A to side a:
+- **Formula**: mₐ = ½√(2b² + 2c² - a²)
+
+## 5.14 Orthocenter and Distances
+
+- Distance of orthocenter from vertex A = 2R cos A
+- Distance of orthocenter from side BC = 2R cos B cos C
+
+## 5.15 Solved Examples
+
+**Example 1**: In ΔABC, a = 13, b = 14, c = 15. Find area, R, r.
+
+**Solution**:
+- s = (13 + 14 + 15)/2 = 21
+- Δ = √[21(21-13)(21-14)(21-15)] = √[21 × 8 × 7 × 6] = √7056 = 84
+- R = abc/(4Δ) = (13 × 14 × 15)/(4 × 84) = 2730/336 = 8.125
+- r = Δ/s = 84/21 = 4
+
+**Example 2**: In ΔABC, if a = 18, b = 24, c = 30, find R and r.
+
+**Shortcut**: Check if right triangle: 18² + 24² = 324 + 576 = 900 = 30², so C = 90°
+- Δ = ½ × 18 × 24 = 216
+- R = c/2 = 15 (hypotenuse is diameter)
+- s = (18 + 24 + 30)/2 = 36
+- r = Δ/s = 216/36 = 6
+
+**Example 3**: Prove that in any triangle, a(b cos C - c cos B) = b² - c²
+
+**Solution**:
+Using cosine rule:
+- b cos C = (a² + b² - c²)/(2a)
+- c cos B = (a² + c² - b²)/(2a)
+- LHS = a[(a² + b² - c²)/(2a) - (a² + c² - b²)/(2a)]
+- = (a² + b² - c² - a² - c² + b²)/2
+- = (2b² - 2c²)/2 = b² - c² = RHS
+
+**Example 4**: In ΔABC, if A = 60°, b = 10, c = 12, find a.
+
+**Solution**:
+- a² = b² + c² - 2bc cos A
+- a² = 100 + 144 - 2 × 10 × 12 × 1/2
+- a² = 244 - 120 = 124
+- a = 2√31
+
+## 5.16 Jog Your Memory - Section 5
+
+| Rule | Formula |
+|------|---------|
+| Sine Rule | a/sin A = b/sin B = c/sin C = 2R |
+| Cosine Rule | cos A = (b² + c² - a²)/(2bc) |
+| Area | Δ = ½ bc sin A = √[s(s-a)(s-b)(s-c)] = rs |
+| Napier's Analogy | tan[(A-B)/2] = (a-b)/(a+b) cot(C/2) |
+| Half-angle | tan(A/2) = Δ/[s(s-a)] |
+| Circumradius | R = abc/(4Δ) |
+| Inradius | r = Δ/s |
+
+---
+
+# SECTION 6: SOLUTION OF TRIANGLES
+
+## 6.1 Types of Triangle Problems
+
+| Case | Given | Use | Condition |
+|------|-------|-----|-----------|
+| 1 | Three sides (SSS) | Cosine rule to find angles | Triangle inequality |
+| 2 | Two sides and included angle (SAS) | Cosine rule for third side, then sine rule | - |
+| 3 | Two angles and one side (ASA or AAS) | Sine rule | A+B+C = 180° |
+| 4 | Two sides and non-included angle (SSA) | Sine rule | Ambiguous case |
+
+## 6.2 Step-by-Step Solution Methods
+
+### Case 1: SSS (Three sides given)
+1. Use cosine rule to find largest angle first (opposite largest side)
+2. Use sine rule or cosine rule for second angle
+3. Third angle = 180° - sum of first two
+
+### Case 2: SAS (Two sides and included angle)
+1. Use cosine rule to find third side
+2. Use sine rule to find smaller angle (opposite smaller side)
+3. Third angle = 180° - sum of first two
+
+### Case 3: ASA/AAS (Two angles and one side)
+1. Find third angle using A + B + C = 180°
+2. Use sine rule to find remaining sides
+
+### Case 4: SSA (Two sides and non-included angle) - Ambiguous Case
+
+## 6.3 Ambiguous Case (SSA) - Detailed Analysis
+
+Given: sides a, b and angle A (opposite side a)
+
+**Step 1**: Calculate h = b sin A (height from C)
+
+**Step 2**: Apply decision tree:
+
+```
+                    ┌─────────────────┐
+                    │   Given a, b, A  │
+                    │   h = b sin A    │
+                    └─────────┬────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            │                 │                 │
+            ▼                 ▼                 ▼
+        a < h            a = h            a > h
+           │                 │                 │
+           ▼                 ▼                 │
+    ┌──────────────┐  ┌──────────────┐        │
+    │ No Triangle  │  │ One Triangle │        │
+    │              │  │ (Right-angled│        │
+    └──────────────┘  │ at B)        │        │
+                      └──────────────┘        │
+                                              │
+                            ┌─────────────────┼─────────────────┐
+                            │                 │                 │
+                            ▼                 ▼                 ▼
+                        a < b             a = b             a > b
+                           │                 │                 │
+                           ▼                 ▼                 ▼
+                    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+                    │ Two Triangles│  │ One Triangle │  │ One Triangle │
+                    │ B acute/obtuse│  │ (Isosceles)  │  │ (B acute)    │
+                    └──────────────┘  └──────────────┘  └──────────────┘
+```
+
+**Step 3**: Calculate sin B = (b sin A)/a
+- If sin B > 1: No triangle
+- If sin B = 1: One right triangle (B = 90°)
+- If sin B < 1:
+  - If a ≥ b: One triangle (B acute)
+  - If a < b: Two triangles (B₁ acute, B₂ obtuse)
+
+## 6.4 Solved Examples - All Cases
+
+### Example 1: SSS Case
+Solve ΔABC if a = 7, b = 8, c = 9
+
+**Solution**:
+- Largest side is c = 9, so find angle C first
+- cos C = (a² + b² - c²)/(2ab) = (49 + 64 - 81)/(2 × 7 × 8) = 32/112 = 2/7
+- C = cos⁻¹(2/7) ≈ 73.4°
+- Using sine rule: sin A = (a sin C)/c = (7 × sin 73.4°)/9 ≈ (7 × 0.958)/9 ≈ 0.745
+- A = sin⁻¹(0.745) ≈ 48.2° (acute since a < c)
+- B = 180° - A - C = 180° - 48.2° - 73.4° = 58.4°
+
+### Example 2: SAS Case
+Solve ΔABC if b = 12, c = 10, A = 60°
+
+**Solution**:
+- a² = b² + c² - 2bc cos A = 144 + 100 - 2 × 12 × 10 × 0.5 = 244 - 120 = 124
+- a = √124 ≈ 11.14
+- Using sine rule: sin B = (b sin A)/a = (12 × 0.866)/11.14 ≈ 10.392/11.14 ≈ 0.933
+- B = sin⁻¹(0.933) ≈ 68.9° or 111.1°
+- Check: Since a < b? Actually 11.14 < 12, so a < b → possible two triangles
+- For B₁ = 68.9°: C₁ = 180° - 60° - 68.9° = 51.1°
+- For B₂ = 111.1°: C₂ = 180° - 60° - 111.1° = 8.9° (valid)
+- ∴ Two possible triangles
+
+### Example 3: ASA Case
+Solve ΔABC if A = 50°, B = 60°, a = 10
+
+**Solution**:
+- C = 180° - 50° - 60° = 70°
+- Using sine rule: b = (a sin B)/sin A = (10 × sin 60°)/sin 50° = (10 × 0.866)/0.766 ≈ 11.31
+- c = (a sin C)/sin A = (10 × sin 70°)/sin 50° = (10 × 0.94)/0.766 ≈ 12.27
+
+### Example 4: SSA Case - No Triangle
+Solve ΔABC if a = 5, b = 8, A = 30°
+
+**Solution**:
+- h = b sin A = 8 × 0.5 = 4
+- a = 5 > h? Yes, 5 > 4, so proceed
+- sin B = (b sin A)/a = (8 × 0.5)/5 = 4/5 = 0.8
+- B = sin⁻¹(0.8) ≈ 53.1° or 126.9°
+- Check a < b? 5 < 8, so both possible?
+- For B₁ = 53.1°: C₁ = 180° - 30° - 53.1° = 96.9° (valid)
+- For B₂ = 126.9°: C₂ = 180° - 30° - 126.9° = 23.1° (valid)
+- ∴ Two triangles possible
+
+**Correction**: Actually both are valid, so two triangles exist.
+
+### Example 5: SSA Case - One Triangle
+Solve ΔABC if a = 10, b = 8, A = 50°
+
+**Solution**:
+- h = b sin A = 8 × 0.766 = 6.128
+- a = 10 > h, proceed
+- sin B = (b sin A)/a = (8 × 0.766)/10 = 6.128/10 = 0.6128
+- B = sin⁻¹(0.6128) ≈ 37.8° or 142.2°
+- Check a < b? 10 > 8, so a > b → only acute B possible
+- B = 37.8°, C = 180° - 50° - 37.8° = 92.2°
+- Only one triangle
+
+## 6.5 Jog Your Memory - Section 6
+
+| Case | Approach | Check |
+|------|----------|-------|
+| SSS | Cosine rule for largest angle first | Triangle inequality |
+| SAS | Cosine rule for third side, then sine rule | - |
+| ASA/AAS | Sine rule directly | A+B+C = 180° |
+| SSA | sin B = (b sin A)/a | Check a vs h and a vs b |
+
+---
+
+# SECTION 7: HEIGHTS AND DISTANCES
+
+## 7.1 Basic Terminology
+
+- **Angle of Elevation**: Angle made by line of sight with horizontal when object is ABOVE observer
+- **Angle of Depression**: Angle made by line of sight with horizontal when object is BELOW observer
+- **Line of Sight**: Straight line from observer's eye to object
+
+## 7.2 Key Relationships
+
+In right triangle: 
+- tan θ = height/distance (opposite/adjacent)
+- sin θ = height/hypotenuse
+- cos θ = distance/hypotenuse
+
+## 7.3 Standard Right Triangle Ratios
+
+| Angle | sin | cos | tan | Side Ratio |
+|-------|-----|-----|-----|------------|
+| 30° | 1/2 | √3/2 | 1/√3 | 1 : √3 : 2 |
+| 45° | 1/√2 | 1/√2 | 1 | 1 : 1 : √2 |
+| 60° | √3/2 | 1/2 | √3 | √3 : 1 : 2 |
+
+## 7.4 Common Problem Types
+
+### Type 1: Single Object - Single Observer
+
+**Example**: A tower stands vertically. From a point 100 m away, angle of elevation is 30°. Find height.
+
+**Solution**:
+- tan 30° = h/100
+- h = 100 × tan 30° = 100/√3 ≈ 57.74 m
+
+### Type 2: Two Objects - Single Observer
+
+**Example**: From the top of a building 60 m high, angles of depression of top and bottom of a lamp post are 30° and 60°. Find lamp post height.
+
+**Solution**:
+- Let building height = 60 m, lamp post height = h m, distance = x
+- For bottom: tan 60° = 60/x → x = 60/√3 = 20√3 m
+- For top: tan 30° = (60 - h)/x
+- 1/√3 = (60 - h)/(20√3)
+- 20 = 60 - h → h = 40 m
+
+### Type 3: Single Object - Two Observers (Same Side)
+
+**Example**: Two points on ground 100 m apart, angles of elevation of tower are 30° and 45°. Find tower height.
+
+**Solution**:
+- Let height = h, distance from first point = x
+- tan 45° = h/x → x = h
+- tan 30° = h/(x + 100)
+- 1/√3 = h/(h + 100)
+- h + 100 = h√3
+- 100 = h(√3 - 1)
+- h = 100/(√3 - 1) = 100(√3 + 1)/2 = 50(√3 + 1) m
+
+### Type 4: Single Object - Two Observers (Opposite Sides)
+
+**Example**: From a point on bridge across river, angles of depression of banks on opposite sides are 30° and 45°. Bridge height = 6 m. Find river width.
+
+**Solution**:
+- Let distances from foot to banks = x and y
+- tan 30° = 6/x → x = 6√3 m
+- tan 45° = 6/y → y = 6 m
+- Width = x + y = 6(√3 + 1) m
+
+### Type 5: Cloud/Aeroplane Problems
+
+**Example**: Angle of elevation of cloud from point 20 m above lake is 30°, angle of depression of its reflection is 60°. Find cloud height above lake.
+
+**Solution**:
+- Let cloud height above lake = h m, horizontal distance = x
+- For cloud: tan 30° = (h - 20)/x → 1/√3 = (h - 20)/x ...(1)
+- For reflection (appears at depth h below surface):
+- Total vertical distance = 20 + h
+- tan 60° = (20 + h)/x → √3 = (20 + h)/x ...(2)
+- From (1): x = √3(h - 20)
+- From (2): x = (20 + h)/√3
+- Equating: √3(h - 20) = (20 + h)/√3
+- 3(h - 20) = 20 + h
+- 3h - 60 = 20 + h
+- 2h = 80 → h = 40 m
+
+### Type 6: Speed/Distance Problems
+
+**Example**: An aeroplane flying horizontally at height of 3000 m observes angles of depression of two points on opposite banks of river as 45° and 30°. If points are in line with plane, find width of river and speed if time to cross is 30 seconds.
+
+**Solution**:
+- Let plane at height 3000 m
+- For first point: tan 45° = 3000/x₁ → x₁ = 3000 m
+- For second point: tan 30° = 3000/x₂ → x₂ = 3000√3 m
+- Width = |x₂ - x₁| = 3000(√3 - 1) m
+- Speed = distance/time = 3000(√3 - 1)/30 = 100(√3 - 1) m/s
+
+### Type 7: Pillar/Building with Shadow
+
+**Example**: A pillar casts a shadow of length 20 m when sun's altitude is 60°. Find length of shadow when sun's altitude is 30°.
+
+**Solution**:
+- Let pillar height = h
+- At 60°: tan 60° = h/20 → h = 20√3 m
+- At 30°: tan 30° = h/x → 1/√3 = 20√3/x
+- x = 20√3 × √3 = 60 m
+
+## 7.5 Shortcuts and Tricks
+
+### Trick 1: 30-60-90 Triangle Ratios
+In 30-60-90 triangle, sides are in ratio 1 : √3 : 2
+- Side opposite 30° = (1/2) × hypotenuse
+- Side opposite 60° = (√3/2) × hypotenuse
+
+### Trick 2: 45-45-90 Triangle Ratios
+In 45-45-90 triangle, sides are in ratio 1 : 1 : √2
+- Both legs equal
+- Hypotenuse = leg × √2
+
+### Trick 3: Common Values Approximation
+- √2 ≈ 1.414
+- √3 ≈ 1.732
+- 1/√2 ≈ 0.707
+- 1/√3 ≈ 0.577
+
+### Trick 4: For Two-Observer Problems
+If angles are complementary (e.g., 30° and 60°):
+- h² = d₁ × d₂ (where d₁, d₂ are distances from foot)
+
+## 7.6 Jog Your Memory - Section 7
+
+| Scenario | Approach |
+|----------|----------|
+| Single observer | tan θ = height/distance |
+| Two observers same side | Set up equations using tan, solve simultaneously |
+| Two observers opposite sides | Sum of distances = width |
+| Cloud/reflection | Use tan for cloud and reflection, equate distances |
+| Shadow problems | Height constant, tan θ varies with shadow length |
+
+---
+
+# SECTION 8: COMPLETE FORMULA SHEET
+
+## 8.1 Basic Identities
+
+| Category | Formula |
+|----------|---------|
+| Pythagorean | sin²θ + cos²θ = 1 |
+| | 1 + tan²θ = sec²θ |
+| | 1 + cot²θ = cosec²θ |
+| Reciprocal | cosec θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ |
+| Complementary | sin(90°-θ) = cos θ, tan(90°-θ) = cot θ |
+| Negative | sin(-θ) = -sin θ, cos(-θ) = cos θ |
+
+## 8.2 Sum/Difference Formulas
+
+| Formula | Expansion |
+|---------|-----------|
+| sin(A ± B) | sin A cos B ± cos A sin B |
+| cos(A ± B) | cos A cos B ∓ sin A sin B |
+| tan(A ± B) | (tan A ± tan B)/(1 ∓ tan A tan B) |
+
+## 8.3 Multiple Angle Formulas
+
+| Angle | Formula |
+|-------|---------|
+| sin 2A | 2 sin A cos A |
+| cos 2A | cos²A - sin²A = 2 cos²A - 1 = 1 - 2 sin²A |
+| tan 2A | 2 tan A/(1 - tan²A) |
+| sin 3A | 3 sin A - 4 sin³A |
+| cos 3A | 4 cos³A - 3 cos A |
+| tan 3A | (3 tan A - tan³A)/(1 - 3 tan²A) |
+
+## 8.4 Half Angle Formulas
+
+| Formula | Expression |
+|---------|------------|
+| sin(A/2) | ±√[(1 - cos A)/2] |
+| cos(A/2) | ±√[(1 + cos A)/2] |
+| tan(A/2) | (1 - cos A)/sin A = sin A/(1 + cos A) |
+
+## 8.5 Sum-to-Product Formulas
+
+| Formula | Result |
+|---------|--------|
+| sin C + sin D | 2 sin[(C+D)/2] cos[(C-D)/2] |
+| sin C - sin D | 2 cos[(C+D)/2] sin[(C-D)/2] |
+| cos C + cos D | 2 cos[(C+D)/2] cos[(C-D)/2] |
+| cos C - cos D | -2 sin[(C+D)/2] sin[(C-D)/2] |
+
+## 8.6 Inverse Trigonometry
+
+| Property | Formula |
+|----------|---------|
+| Complementary | sin⁻¹x + cos⁻¹x = π/2 |
+| | tan⁻¹x + cot⁻¹x = π/2 |
+| Negative | sin⁻¹(-x) = -sin⁻¹x |
+| | cos⁻¹(-x) = π - cos⁻¹x |
+| tan⁻¹ sum | tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)], xy<1 |
+| Function of inverse | sin(cos⁻¹x) = √(1-x²) |
+| | tan(sin⁻¹x) = x/√(1-x²) |
+| | cos(tan⁻¹x) = 1/√(1+x²) |
+
+## 8.7 Solution of Triangles
+
+| Rule | Formula |
+|------|---------|
+| Sine Rule | a/sin A = b/sin B = c/sin C = 2R |
+| Cosine Rule | a² = b² + c² - 2bc cos A |
+| | cos A = (b² + c² - a²)/(2bc) |
+| Projection Rule | a = b cos C + c cos B |
+| Napier's Analogy | tan[(A-B)/2] = (a-b)/(a+b) cot(C/2) |
+| Half-angle | tan(A/2) = √[(s-b)(s-c)/{s(s-a)}] = Δ/[s(s-a)] |
+| Area | Δ = ½ bc sin A = √[s(s-a)(s-b)(s-c)] = rs = abc/(4R) |
+| Circumradius | R = a/(2 sin A) = abc/(4Δ) |
+| Inradius | r = Δ/s = 4R sin(A/2) sin(B/2) sin(C/2) |
+| Exradii | r₁ = Δ/(s-a), r₂ = Δ/(s-b), r₃ = Δ/(s-c) |
+
+## 8.8 Trigonometric Equations
+
+| Equation | General Solution |
+|----------|------------------|
+| sin θ = 0 | θ = nπ |
+| cos θ = 0 | θ = (2n+1)π/2 |
+| tan θ = 0 | θ = nπ |
+| sin θ = sin α | θ = nπ + (-1)ⁿα |
+| cos θ = cos α | θ = 2nπ ± α |
+| tan θ = tan α | θ = nπ + α |
+| sin²θ = sin²α | θ = nπ ± α |
+| cos²θ = cos²α | θ = nπ ± α |
+| tan²θ = tan²α | θ = nπ ± α |
+
+## 8.9 Heights and Distances
+
+| Scenario | Formula |
+|----------|---------|
+| Single observer | height = distance × tan θ |
+| Two observers (same side) | Set up two equations, solve simultaneously |
+| Two observers (opposite) | width = d₁ + d₂ |
+| Shadow problems | h = d₁ tan θ₁ = d₂ tan θ₂ |
+
+---
+
+# SECTION 9: SHORTCUTS AND TRICKS COMPILATION
+
+## 9.1 Identity Shortcuts
+
+1. **Convert to sin/cos** when multiple functions appear
+2. **Use 1 = sin²θ + cos²θ** to simplify expressions
+3. **For product series** cos θ cos 2θ ... cos(2ⁿ⁻¹θ) = sin(2ⁿθ)/(2ⁿ sin θ)
+4. **For A+B+C = π**: tan A + tan B + tan C = tan A tan B tan C
+
+## 9.2 Equation Shortcuts
+
+1. **sin θ + cos θ = √2 sin(θ + 45°)** = √2 cos(θ - 45°)
+2. **Maximum value** of a sin θ + b cos θ = √(a² + b²)
+3. **Minimum value** = -√(a² + b²)
+4. **For sin θ + cos θ = k**, square to find sin 2θ
+
+## 9.3 Inverse Shortcuts
+
+1. **sin⁻¹x + cos⁻¹x = π/2** always
+2. **tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)]** when xy < 1
+3. **sin(cos⁻¹x) = √(1-x²)** (memorize these)
+4. **tan(sin⁻¹x) = x/√(1-x²)**
+
+## 9.4 Triangle Shortcuts
+
+1. **Check right triangle** using a² + b² = c²
+2. **For right triangle**: R = hypotenuse/2, r = (a+b-c)/2
+3. **Area** using Heron's formula when three sides given
+4. **Napier's analogy** for quick angle difference
+5. **Ambiguous case**: Compare a with h = b sin A and with b
+
+## 9.5 Height-Distance Shortcuts
+
+1. **30-60-90 triangle**: sides 1 : √3 : 2
+2. **45-45-90 triangle**: sides 1 : 1 : √2
+3. **For complementary angles** (30° & 60°): h² = d₁ × d₂
+4. **Approximate values**: √3 ≈ 1.732, √2 ≈ 1.414
+
+---
+
+# SECTION 10: MOCK TEST - 10 QUESTIONS WITH SOLUTIONS
+
+**Time: 15 minutes | Marks: 20 (2 marks each)**
+
+---
+
+**Q1.** If sin θ + cos θ = √2, then tan θ + cot θ = ?
+a) 1
+b) 2
+c) √2
+d) 0
+
+**Solution**:
+- Square: sin²θ + cos²θ + 2 sin θ cos θ = 2
+- 1 + 2 sin θ cos θ = 2
+- sin θ cos θ = 1/2
+- tan θ + cot θ = (sin²θ + cos²θ)/(sin θ cos θ) = 1/(1/2) = 2
+**Answer: b) 2**
+
+---
+
+**Q2.** The value of cos 20° cos 40° cos 80° is:
+a) 1/4
+b) 1/8
+c) 1/2
+d) 1
+
+**Solution**:
+- Using product formula: cos θ cos 2θ cos 4θ = sin 8θ/(8 sin θ)
+- Here θ = 20°, so = sin 160°/(8 sin 20°)
+- sin 160° = sin(180° - 20°) = sin 20°
+- = sin 20°/(8 sin 20°) = 1/8
+**Answer: b) 1/8**
+
+---
+
+**Q3.** If tan⁻¹(1/2) + tan⁻¹(1/3) = θ, then θ = ?
+a) 30°
+b) 45°
+c) 60°
+d) 90°
+
+**Solution**:
+- tan⁻¹(1/2) + tan⁻¹(1/3) = tan⁻¹[(1/2+1/3)/(1-1/6)]
+- = tan⁻¹[(5/6)/(5/6)] = tan⁻¹(1) = 45°
+**Answer: b) 45°**
+
+---
+
+**Q4.** In ΔABC, if a = 13, b = 14, c = 15, then R = ?
+a) 65/8
+b) 65/4
+c) 65/2
+d) 65
+
+**Solution**:
+- s = (13+14+15)/2 = 21
+- Δ = √[21×8×7×6] = √7056 = 84
+- R = abc/(4Δ) = (13×14×15)/(4×84) = 2730/336 = 65/8
+**Answer: a) 65/8**
+
+---
+
+**Q5.** The general solution of sin θ = 1/2 is:
+a) θ = nπ + (-1)ⁿ(π/6)
+b) θ = 2nπ ± π/6
+c) θ = nπ + π/6
+d) θ = nπ ± π/6
+
+**Answer: a) θ = nπ + (-1)ⁿ(π/6)**
+
+---
+
+**Q6.** From the top of a building 60 m high, the angles of depression of the top and bottom of a lamp post are 30° and 60°. The height of lamp post is:
+a) 20 m
+b) 30 m
+c) 40 m
+d) 50 m
+
+**Solution**:
+- For bottom: tan 60° = 60/x → x = 20√3
+- For top: tan 30° = (60-h)/x
+- 1/√3 = (60-h)/(20√3) → 20 = 60-h → h = 40 m
+**Answer: c) 40 m**
+
+---
+
+**Q7.** In ΔABC, if a = 8, b = 6, c = 4, then cos A = ?
+a) 1/4
+b) -1/4
+c) 1/2
+d) -1/2
+
+**Solution**:
+- cos A = (b² + c² - a²)/(2bc) = (36 + 16 - 64)/(2×6×4) = (-12)/48 = -1/4
+**Answer: b) -1/4**
+
+---
+
+**Q8.** The value of sin(cos⁻¹(4/5)) is:
+a) 3/5
+b) 4/5
+c) 3/4
+d) 4/3
+
+**Solution**:
+- sin(cos⁻¹x) = √(1-x²) = √(1-16/25) = √(9/25) = 3/5
+**Answer: a) 3/5**
+
+---
+
+**Q9.** If tan θ + cot θ = 2, then sin θ = ?
+a) 0
+b) 1
+c) ±1
+d) ±1/√2
+
+**Solution**:
+- tan θ + 1/tan θ = 2
+- tan²θ - 2 tan θ + 1 = 0
+- (tan θ - 1)² = 0 → tan θ = 1
+- θ = 45° → sin θ = 1/√2
+**Answer: d) ±1/√2**
+
+---
+
+**Q10.** A tower casts a shadow of length 30 m when sun's altitude is 60°. The length of shadow when sun's altitude is 30° is:
+a) 60 m
+b) 90 m
+c) 30√3 m
+d) 30 m
+
+**Solution**:
+- At 60°: tan 60° = h/30 → h = 30√3
+- At 30°: tan 30° = h/x → 1/√3 = 30√3/x → x = 90 m
+**Answer: b) 90 m**
+
+---
+
+**Answer Key**: 1-b, 2-b, 3-b, 4-a, 5-a, 6-c, 7-b, 8-a, 9-d, 10-b
+
+---
+
+# SECTION 11: LAST MINUTE REVISION - ONE PAGE SUMMARY
+
+## 11.1 MUST-KNOW FORMULAS
+
+### Identities
+- sin²θ + cos²θ = 1
+- 1 + tan²θ = sec²θ
+- 1 + cot²θ = cosec²θ
+
+### Sum/Difference
+- sin(A+B) = sinA cosB + cosA sinB
+- cos(A+B) = cosA cosB - sinA sinB
+- tan(A+B) = (tanA + tanB)/(1 - tanA tanB)
+
+### Double Angle
+- sin2A = 2 sinA cosA
+- cos2A = 2cos²A - 1 = 1 - 2sin²A
+
+### Inverse
+- sin⁻¹x + cos⁻¹x = π/2
+- tan⁻¹x + tan⁻¹y = tan⁻¹[(x+y)/(1-xy)], xy<1
+- sin(cos⁻¹x) = √(1-x²)
+
+### Triangle Properties
+- Sine Rule: a/sinA = b/sinB = c/sinC = 2R
+- Cosine Rule: cosA = (b²+c²-a²)/(2bc)
+- Area: Δ = ½ bc sinA = √[s(s-a)(s-b)(s-c)] = rs
+- Napier's Analogy: tan[(A-B)/2] = (a-b)/(a+b) cot(C/2)
+
+### Equations
+- sinθ = sinα → θ = nπ + (-1)ⁿα
+- cosθ = cosα → θ = 2nπ ± α
+- tanθ = tanα → θ = nπ + α
+
+---
+
+## 11.2 QUICK TIPS
+
+1. **ASTC rule** for signs in quadrants
+2. **Convert to sin/cos** first when simplifying
+3. **For maximum/minimum** of a sinθ + b cosθ, value = ±√(a²+b²)
+4. **In ambiguous case** (SSA), compare a with h = b sinA and with b
+5. **For heights and distances**, draw diagram first, then set up tan equations
+6. **Memorize standard values** - they appear frequently
+7. **Practice product series** - they are exam favorites
+
+---
+
+**Best of luck for your MHT CET MCA Entrance Exam!**

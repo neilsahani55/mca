@@ -1,0 +1,5021 @@
+# 🖥️ OPERATING SYSTEM BASICS FOR MHT MCA CET
+## 🌟 ULTIMATE GUIDE - COMPLETE COVERAGE WITH TRICKS & SHORTCUTS
+
+Hello! I'll provide you with a **comprehensive, exam-oriented guide** covering ALL Operating System topics with detailed explanations, shortcuts, and memory tricks specifically for MHT MCA CET.
+
+---
+
+# 📚 COMPLETE SYLLABUS COVERAGE
+
+| S.No | Topic | Status | Page |
+|------|-------|--------|------|
+| 1 | What is an Operating System? | ✅ | 2 |
+| 2 | Functions of Operating System | ✅ | 5 |
+| 3 | Types of Operating Systems | ✅ | 8 |
+| 4 | OS Structure & Components | ✅ | 12 |
+| 5 | **ADDED: Operating System Services** | ✅ NEW | 14 |
+| 6 | **ADDED: Operating System Generation** | ✅ NEW | 15 |
+| 7 | Process Management | ✅ | 16 |
+| 8 | Process States | ✅ | 19 |
+| 9 | **ADDED: Process Control Block (PCB) - Detailed** | ✅ NEW | 22 |
+| 10 | **ADDED: Context Switching - Detailed** | ✅ NEW | 24 |
+| 11 | CPU Scheduling Algorithms | ✅ | 25 |
+| 12 | **ADDED: Scheduling Criteria - Detailed** | ✅ NEW | 30 |
+| 13 | **ADDED: Multi-level Queue Scheduling** | ✅ NEW | 31 |
+| 14 | **ADDED: Multi-level Feedback Queue** | ✅ NEW | 32 |
+| 15 | Threads | ✅ | 33 |
+| 16 | **ADDED: Multithreading Models** | ✅ NEW | 35 |
+| 17 | **ADDED: Threading Issues** | ✅ NEW | 37 |
+| 18 | Memory Management | ✅ | 38 |
+| 19 | **ADDED: Swapping** | ✅ NEW | 41 |
+| 20 | **ADDED: Contiguous Memory Allocation** | ✅ NEW | 42 |
+| 21 | Paging & Segmentation | ✅ | 44 |
+| 22 | **ADDED: Page Table Structure** | ✅ NEW | 47 |
+| 23 | **ADDED: TLB (Translation Lookaside Buffer)** | ✅ NEW | 48 |
+| 24 | Virtual Memory | ✅ | 49 |
+| 25 | **ADDED: Page Replacement Algorithms - ALL** | ✅ NEW | 52 |
+| 26 | **ADDED: Frame Allocation** | ✅ NEW | 56 |
+| 27 | **ADDED: Working Set Model** | ✅ NEW | 57 |
+| 28 | Deadlocks | ✅ | 58 |
+| 29 | **ADDED: Resource-Allocation Graph - Detailed** | ✅ NEW | 61 |
+| 30 | **ADDED: Banker's Algorithm - Step by Step** | ✅ NEW | 63 |
+| 31 | Deadlock Handling | ✅ | 66 |
+| 32 | **ADDED: Deadlock Detection Algorithm** | ✅ NEW | 69 |
+| 33 | **ADDED: Recovery from Deadlock** | ✅ NEW | 71 |
+| 34 | File Systems | ✅ | 72 |
+| 35 | **ADDED: File Access Methods** | ✅ NEW | 75 |
+| 36 | **ADDED: Directory Structure - All Types** | ✅ NEW | 76 |
+| 37 | **ADDED: File System Mounting** | ✅ NEW | 78 |
+| 38 | **ADDED: File Sharing & Protection** | ✅ NEW | 79 |
+| 39 | Disk Scheduling | ✅ | 80 |
+| 40 | **ADDED: Disk Structure** | ✅ NEW | 83 |
+| 41 | **ADDED: Disk Management** | ✅ NEW | 84 |
+| 42 | **ADDED: RAID Structure** | ✅ NEW | 85 |
+| 43 | System Calls | ✅ | 87 |
+| 44 | **ADDED: Types of System Calls - All** | ✅ NEW | 89 |
+| 45 | **ADDED: System Programs** | ✅ NEW | 91 |
+| 46 | **ADDED: OS Design Approaches** | ✅ NEW | 92 |
+| 47 | **ADDED: Virtual Machines** | ✅ NEW | 93 |
+| 48 | **ADDED: Distributed Systems** | ✅ NEW | 94 |
+| 49 | **ADDED: Protection & Security** | ✅ NEW | 95 |
+| 50 | Comparison Tables | ✅ | 97 |
+| 51 | **ADDED: 100+ Practice MCQs** | ✅ NEW | 100 |
+| 52 | **ADDED: Last Minute Revision Notes** | ✅ NEW | 120 |
+
+---
+
+# 1️⃣ WHAT IS AN OPERATING SYSTEM? (DETAILED)
+
+## 📌 Definition
+An **Operating System (OS)** is a **system software** that acts as an **intermediary (interface)** between the user and the computer hardware. It provides an environment in which a user can execute programs conveniently and efficiently.
+
+## 🎯 Primary Goals of OS
+
+| Goal | Description | Exam Importance |
+|------|-------------|------------------|
+| **Convenience** | Makes computer easier to use | ⭐⭐ |
+| **Efficiency** | Manages resources optimally | ⭐⭐⭐ |
+| **Extensibility** | Allows adding new features | ⭐ |
+| **Abstraction** | Hides hardware complexity | ⭐⭐⭐ |
+
+---
+
+## 🔬 Detailed View of Computer System Layers
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    COMPUTER SYSTEM                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    USER                               │  │
+│  │            (End Users, Programmers)                   │  │
+│  └────────────────────┬─────────────────────────────────┘  │
+│                       │                                     │
+│                       ▼                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              APPLICATION PROGRAMS                     │  │
+│  │   (Compilers, Editors, Databases, Games, Browsers)    │  │
+│  └────────────────────┬─────────────────────────────────┘  │
+│                       │                                     │
+│                       ▼                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              OPERATING SYSTEM                         │  │
+│  │  ┌───────────────────────────────────────────────┐  │  │
+│  │  │   KERNEL (Core - Always in Memory)            │  │  │
+│  │  │   • Process Management    • Memory Management  │  │  │
+│  │  │   • File Management       • Device Management  │  │  │
+│  │  │   • Security              • IPC               │  │  │
+│  │  └───────────────────────────────────────────────┘  │  │
+│  │  ┌───────────────────────────────────────────────┐  │  │
+│  │  │   SYSTEM PROGRAMS (Shell, Utilities)          │  │  │
+│  │  └───────────────────────────────────────────────┘  │  │
+│  └────────────────────┬─────────────────────────────────┘  │
+│                       │                                     │
+│                       ▼                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    HARDWARE                           │  │
+│  │  ┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐        │  │
+│  │  │  CPU  │  │Memory │  │  Disk │  │  I/O  │        │  │
+│  │  │       │  │ (RAM) │  │       │  │Devices│        │  │
+│  │  └───────┘  └───────┘  └───────┘  └───────┘        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧠 Memory Trick: "HAS KFC"
+
+**H**ardware → **A**pplication → **S**ystem (OS) → **K**ernel → **F**ile → **C**PU
+
+Remember: Hardware And Software Keep Files Categorized
+
+---
+
+## 🔑 Key Components Explained
+
+### 1. Kernel (The Heart)
+- **Definition**: Core program that manages all operations
+- **Location**: Always resides in main memory (RAM)
+- **Functions**: Process scheduling, memory management, interrupt handling
+- **Types**: Monolithic, Microkernel, Hybrid, Exokernel
+
+### 2. Shell (The Face)
+- **Definition**: Interface between user and kernel
+- **Types**:
+  - **CLI** (Command Line Interface): Text-based (Bash, CMD, PowerShell)
+  - **GUI** (Graphical User Interface): Visual (Windows, GNOME, KDE)
+
+### 3. System Calls (The Gateway)
+- **Definition**: Programming interface to OS services
+- **Purpose**: Request services from kernel
+- **Examples**: `read()`, `write()`, `fork()`, `open()`
+
+---
+
+## 📊 Popular Operating Systems Comparison
+
+| OS | Type | Kernel Type | Open Source | Market | Year Created |
+|----|------|-------------|-------------|--------|--------------|
+| **Windows** | Desktop/Server | Hybrid | ❌ | Microsoft | 1985 |
+| **Linux** | All-purpose | Monolithic | ✅ | Community | 1991 |
+| **macOS** | Desktop | Hybrid (XNU) | ⚠️ (Partial) | Apple | 2001 |
+| **Android** | Mobile | Linux-based | ✅ | Google | 2008 |
+| **iOS** | Mobile | Hybrid | ❌ | Apple | 2007 |
+| **Unix** | Server | Monolithic | ⚠️ | AT&T | 1969 |
+
+📌 **Exam Tip**: Linux is **open source**, Windows is **proprietary**, macOS is **Unix-based**
+
+---
+
+# 2️⃣ FUNCTIONS OF OPERATING SYSTEM (DETAILED)
+
+## 🎯 Primary Functions
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 FUNCTIONS OF OPERATING SYSTEM                │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. PROCESS MANAGEMENT                               │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • Process creation & termination          │   │  │
+│  │     │ • CPU scheduling                          │   │  │
+│  │     │ • Process synchronization                 │   │  │
+│  │     │ • Inter-process communication (IPC)       │   │  │
+│  │     │ • Deadlock handling                       │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. MEMORY MANAGEMENT                                │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • Track used/free memory                  │   │  │
+│  │     │ • Allocate memory to processes            │   │  │
+│  │     │ • Deallocate when process ends            │   │  │
+│  │     │ • Manage virtual memory                   │   │  │
+│  │     │ • Handle swapping/paging                  │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. FILE MANAGEMENT                                  │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • File creation/deletion                  │   │  │
+│  │     │ • Directory creation/deletion             │   │  │
+│  │     │ • File operations (read/write)            │   │  │
+│  │     │ • File permissions & protection           │   │  │
+│  │     │ • Backup & recovery                       │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  4. DEVICE MANAGEMENT                                │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • I/O device control                      │   │  │
+│  │     │ • Device drivers                          │   │  │
+│  │     │ • Buffering & caching                     │   │  │
+│  │     │ • Spooling                                 │   │  │
+│  │     │ • Interrupt handling                      │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  5. SECURITY & PROTECTION                            │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • User authentication                     │   │  │
+│  │     │ • Authorization                           │   │  │
+│  │     │ • Access control                          │   │  │
+│  │     │ • Encryption                              │   │  │
+│  │     │ • Malware protection                      │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  6. ACCOUNTING (ADDITIONAL)                         │  │
+│  │     ┌───────────────────────────────────────────┐   │  │
+│  │     │ • Track resource usage                    │   │  │
+│  │     │ • User statistics                         │   │  │
+│  │     │ • Billing information                     │   │  │
+│  │     └───────────────────────────────────────────┘   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧠 Memory Trick: "P M F D S A"
+
+**P**rocess → **M**emory → **F**ile → **D**evice → **S**ecurity → **A**ccounting
+
+**"Please Make Files Device Secure Always"**
+
+---
+
+## 🔬 Detailed Explanation of Each Function
+
+### 1. PROCESS MANAGEMENT (Deep Dive)
+
+| Sub-function | Description | Why Important? |
+|--------------|-------------|----------------|
+| **Process Creation** | Creating new processes using `fork()`/`CreateProcess()` | Foundation of multitasking |
+| **Process Termination** | Ending processes, releasing resources | Prevent resource leakage |
+| **CPU Scheduling** | Deciding which process gets CPU next | Maximize CPU utilization |
+| **Process Synchronization** | Coordinating access to shared resources | Prevent race conditions |
+| **IPC (Inter-Process Communication)** | Data exchange between processes | Enable cooperation |
+| **Deadlock Handling** | Preventing/resolving deadlocks | Ensure system progress |
+
+### 2. MEMORY MANAGEMENT (Deep Dive)
+
+| Sub-function | Description | Techniques Used |
+|--------------|-------------|-----------------|
+| **Allocation** | Giving memory to processes | Contiguous, Paging, Segmentation |
+| **Deallocation** | Taking back memory | Free lists, Garbage collection |
+| **Tracking** | Knowing which memory is used | Bit maps, Linked lists |
+| **Protection** | Preventing unauthorized access | Base & Limit registers |
+| **Virtual Memory** | Illusion of more memory | Paging, Demand paging |
+
+### 3. FILE MANAGEMENT (Deep Dive)
+
+| Sub-function | Description | Examples |
+|--------------|-------------|----------|
+| **File Operations** | Create, read, write, delete | `open()`, `read()`, `write()` |
+| **Directory Management** | Organize files hierarchically | `/home/user/docs` |
+| **Access Control** | Permissions (read/write/execute) | rwx, chmod |
+| **File Sharing** | Multiple users access | Network shares |
+| **Backup** | Data recovery | Incremental, Full backup |
+
+### 4. DEVICE MANAGEMENT (Deep Dive)
+
+| Sub-function | Description | Real Example |
+|--------------|-------------|--------------|
+| **Device Detection** | Recognizing hardware | Plug & Play |
+| **Driver Management** | Software to control devices | Printer drivers |
+| **Buffering** | Temporary storage | Keyboard buffer |
+| **Spooling** | Queue for output devices | Print spooler |
+| **Interrupt Handling** | Respond to device signals | IRQ handling |
+
+### 5. SECURITY & PROTECTION (Deep Dive)
+
+| Sub-function | Description | Methods |
+|--------------|-------------|---------|
+| **Authentication** | Verify user identity | Password, Biometric, 2FA |
+| **Authorization** | What user can do | Access matrix, ACLs |
+| **Encryption** | Data protection | AES, RSA |
+| **Audit Trail** | Logging activities | System logs |
+| **Intrusion Detection** | Detect attacks | IDS, Firewall |
+
+---
+
+# 3️⃣ TYPES OF OPERATING SYSTEMS (COMPLETE DETAIL)
+
+## 📊 Classification Tree
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   TYPES OF OPERATING SYSTEMS                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+├─► Based on User Interface                                   │
+│   ├─► CLI (Command Line Interface)                         │
+│   └─► GUI (Graphical User Interface)                       │
+│                                                              │
+├─► Based on Number of Users                                  │
+│   ├─► Single-User (e.g., MS-DOS)                           │
+│   └─► Multi-User (e.g., Unix, Linux)                       │
+│                                                              │
+├─► Based on Number of Tasks                                  │
+│   ├─► Single-Tasking (e.g., MS-DOS)                        │
+│   └─► Multi-Tasking (e.g., Windows, Linux)                 │
+│                                                              │
+├─► Based on Number of Processors                             │
+│   ├─► Single-Processor                                      │
+│   └─► Multi-Processor                                       │
+│                                                              │
+├─► Based on Processing Mode                                  │
+│   ├─► Batch OS                                              │
+│   ├─► Time-Sharing OS                                       │
+│   ├─► Real-Time OS                                          │
+│   ├─► Distributed OS                                        │
+│   └─► Network OS                                            │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 1. BATCH OPERATING SYSTEM
+
+### Detailed Explanation
+- **Concept**: Jobs with similar needs are grouped into **batches**
+- **Operator**: Special person who sorts jobs with similar requirements
+- **Memory**: Has a **resident monitor** (early OS) that controls job execution
+
+### Working Mechanism
+```
+┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+│ Job 1   │    │ Job 2   │    │ Job 3   │    │ Job 4   │
+│ FORTRAN │    │ COBOL   │    │ FORTRAN │    │ COBOL   │
+└────┬────┘    └────┬────┘    └────┬────┘    └────┬────┘
+     │              │              │              │
+     └──────────────┴──────────────┴──────────────┘
+                        │
+                        ▼
+              ┌─────────────────┐
+              │   Job Sorter    │
+              │   (Operator)    │
+              └────────┬────────┘
+                       │
+        ┌──────────────┴──────────────┐
+        │                             │
+        ▼                             ▼
+┌───────────────┐             ┌───────────────┐
+│ FORTRAN Batch │             │ COBOL Batch   │
+│ Job 1, Job 3  │             │ Job 2, Job 4  │
+└───────┬───────┘             └───────┬───────┘
+        │                             │
+        ▼                             ▼
+┌───────────────┐             ┌───────────────┐
+│   Execute     │             │   Execute     │
+│   FORTRAN     │             │   COBOL       │
+│   Compiler    │             │   Compiler    │
+└───────────────┘             └───────────────┘
+```
+
+### 📊 Pros & Cons
+
+| Advantages | Disadvantages |
+|------------|---------------|
+| ✓ Suitable for large jobs | ✗ No user interaction |
+| ✓ Easy to manage | ✗ Difficult debugging |
+| ✓ Predictable execution | ✗ Turnaround time high |
+| ✓ No special hardware | ✗ CPU idle during I/O |
+| ✓ Low overhead | ✗ Job can starve |
+
+### 🧠 Memory Trick: "BATCH = Big And Tedious Computer Handling"
+
+---
+
+## 🔹 2. TIME-SHARING OPERATING SYSTEM
+
+### Detailed Explanation
+- **Concept**: CPU time is shared among multiple users
+- **Mechanism**: Each user gets a **time slice/quantum**
+- **Also called**: Multitasking system
+- **Key Feature**: **Interactive computing** becomes possible
+
+### Working Mechanism
+```
+                    TIME SLICE = 50ms
+    ┌─────────────────────────────────────────────────┐
+    │                                                 │
+    │  User 1    User 2    User 3    User 4    User 1│
+    │  [0-50ms]  [50-100]  [100-150] [150-200] [200-250]
+    │                                                 │
+    └─────────────────────────────────────────────────┘
+                       CPU Timeline
+    
+    ┌─────────────────────────────────────────────────┐
+    │              BENEFITS OF TIME-SHARING           │
+    ├─────────────────────────────────────────────────┤
+    │ • Each user feels they have dedicated CPU       │
+    │ • Quick response time (seconds)                 │
+    │ • Many users share resources                     │
+    │ • Ideal for interactive work                     │
+    └─────────────────────────────────────────────────┘
+```
+
+### 📊 Pros & Cons
+
+| Advantages | Disadvantages |
+|------------|---------------|
+| ✓ Quick response time | ✗ Complex implementation |
+| ✓ Interactive computing | ✗ Security concerns |
+| ✓ Resource sharing | ✗ Data communication issues |
+| ✓ Reduced CPU idle | ✗ Overhead of switching |
+| ✓ Many users supported | ✗ Requires memory protection |
+
+### 🧠 Memory Trick: "TIME = Turn In Minutes Easily" (Quick response)
+
+---
+
+## 🔹 3. REAL-TIME OPERATING SYSTEM (RTOS)
+
+### Detailed Explanation
+- **Definition**: OS that guarantees **response within fixed time constraints**
+- **Time Bound**: Critical tasks completed within **deadline**
+- **Deterministic**: Behavior is predictable
+
+### Types of RTOS
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    TYPES OF RTOS                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  HARD REAL-TIME OS                                   │  │
+│  │  • Missing deadline = System failure                 │  │
+│  │  • Time bound is absolute                            │  │
+│  │  • Example: Missile guidance, Airbag system          │  │
+│  │  • "Failure is NOT an option"                        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  SOFT REAL-TIME OS                                   │  │
+│  │  • Missing deadline = Degraded performance           │  │
+│  │  • Time bound is flexible                            │  │
+│  │  • Example: Video streaming, Online games            │  │
+│  │  • "Failure is acceptable but not desirable"         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 📊 Comparison: Hard vs Soft RTOS
+
+| Parameter | Hard RTOS | Soft RTOS |
+|-----------|-----------|-----------|
+| **Deadline Violation** | Catastrophic | Acceptable with limits |
+| **Predictability** | 100% required | High but not absolute |
+| **Jitter Tolerance** | Zero | Some tolerance |
+| **Examples** | Medical devices, Aircraft | Multimedia, Games |
+| **OS Examples** | VxWorks, QNX, RTLinux | Windows, Linux (with patches) |
+
+### 🧠 Memory Trick: "HARD = Have Absolute Real-time Deadlines"
+### "SOFT = Some Opportunity For Tolerance"
+
+---
+
+## 🔹 4. MULTIPROGRAMMING OS
+
+### Detailed Explanation
+- **Definition**: Multiple programs reside in memory simultaneously
+- **Goal**: Keep CPU busy at all times
+- **Principle**: When one program waits for I/O, CPU switches to another
+
+### Concept Visualization
+```
+Without Multiprogramming:
+CPU: [P1][IDLE][P1][IDLE][P1][IDLE] → Wasted time
+
+With Multiprogramming:
+Memory: [P1][P2][P3][P4]
+
+CPU: [P1][P2][P3][P4][P1][P2] → Always busy
+     ▲        ▲        ▲
+     │        │        │
+    I/O      I/O      I/O
+    wait     wait     wait
+```
+
+### 📊 Key Points
+
+| Aspect | Description |
+|--------|-------------|
+| **Memory** | Multiple processes in memory |
+| **CPU Utilization** | High (near 100%) |
+| **Response Time** | May increase |
+| **Switching** | When process waits for I/O |
+| **Requires** | Memory protection, Scheduling |
+
+---
+
+## 🔹 5. MULTITASKING OS
+
+### Detailed Explanation
+- **Definition**: Multiple tasks executed **concurrently**
+- **Types**: Preemptive and Cooperative
+- **Confusion Note**: Often used interchangeably with multiprogramming
+
+### Types of Multitasking
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Preemptive** | OS controls CPU allocation | Windows, Linux |
+| **Cooperative** | Processes voluntarily yield | Early Mac OS |
+
+---
+
+## 🔹 6. MULTIPROCESSING OS
+
+### Detailed Explanation
+- **Definition**: System with **multiple CPUs**
+- **Goal**: Increase throughput and reliability
+- **Types**: SMP and Asymmetric
+
+### Types of Multiprocessing
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              TYPES OF MULTIPROCESSING                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  SYMMETRIC MULTIPROCESSING (SMP)                     │  │
+│  │  • All processors are equal                          │  │
+│  │  • Share memory                                       │  │
+│  │  • Any process can run on any CPU                    │  │
+│  │  • Example: Most modern systems                       │  │
+│  │                                                       │  │
+│  │      CPU1 ───┐                                       │  │
+│  │      CPU2 ───┤─── Shared Memory                      │  │
+│  │      CPU3 ───┘                                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  ASYMMETRIC MULTIPROCESSING                          │  │
+│  │  • Master-slave relationship                         │  │
+│  │  • Master CPU handles OS, scheduling                 │  │
+│  │  • Slave CPUs execute user code                      │  │
+│  │  • Example: Older systems                             │  │
+│  │                                                       │  │
+│  │      Master CPU ─── Controls                         │  │
+│  │          │                                            │  │
+│  │      Slave 1   Slave 2   Slave 3                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 7. DISTRIBUTED OS
+
+### Detailed Explanation
+- **Definition**: Multiple computers appear as **single system**
+- **Transparency**: User doesn't know where resources are
+- **Communication**: Via network
+
+### Characteristics
+
+| Feature | Description |
+|---------|-------------|
+| **Resource Sharing** | Share printers, files across network |
+| **Computation Speedup** | Parallel processing |
+| **Reliability** | If one fails, others work |
+| **Communication** | Message passing |
+| **Transparency** | Location, migration, replication |
+
+---
+
+## 🔹 8. NETWORK OS
+
+### Detailed Explanation
+- **Definition**: OS with networking capabilities
+- **Features**: File sharing, printer sharing, user management
+- **Examples**: Windows Server, Novell NetWare
+
+### Comparison: Distributed vs Network OS
+
+| Feature | Distributed OS | Network OS |
+|---------|---------------|------------|
+| **User View** | Single system | Multiple systems |
+| **Autonomy** | Less | More |
+| **Transparency** | High | Low |
+| **Examples** | Sprite, Amoeba | Windows Server |
+
+---
+
+## 🔹 9. MOBILE OS
+
+### Detailed Explanation
+- **Definition**: Designed for mobile devices
+- **Features**: Touch interface, power management, sensors
+- **Examples**: Android, iOS, HarmonyOS
+
+### Key Features
+
+| Feature | Android | iOS |
+|---------|---------|-----|
+| **Kernel** | Linux-based | XNU (Hybrid) |
+| **Open Source** | Yes | No |
+| **App Store** | Play Store | App Store |
+| **Programming** | Java/Kotlin | Swift/Objective-C |
+
+---
+
+## 📊 QUICK REFERENCE - OS TYPES
+
+| OS Type | CPU | Memory | Users | Interaction | Example |
+|---------|-----|--------|-------|-------------|---------|
+| Batch | 1 | Single | 0 | Non-interactive | IBM OS/360 |
+| Time-sharing | 1 | Multi | Many | Interactive | Unix |
+| Real-time | 1+ | Multi | Few | Time-bound | VxWorks |
+| Multiprogramming | 1 | Multi | Many | Interactive | All modern |
+| Multiprocessing | Many | Shared | Many | Interactive | Servers |
+| Distributed | Many | Distributed | Many | Transparent | Cloud OS |
+| Network | Many | Separate | Many | Networked | Windows Server |
+
+---
+
+# 4️⃣ OS STRUCTURE & COMPONENTS (DETAILED)
+
+## 🏛️ Operating System Structure Types
+
+### 1. Simple Structure
+- **Example**: MS-DOS
+- **Characteristics**:
+  - No clear boundaries
+  - All layers mixed
+  - Least secure
+  - Small size
+
+```
+┌─────────────────────────┐
+│   Application Program   │
+├─────────────────────────┤
+│   Resident System       │
+│   (MS-DOS)              │
+├─────────────────────────┤
+│   Device Drivers        │
+├─────────────────────────┤
+│   BIOS                  │
+└─────────────────────────┘
+```
+
+### 2. Layered Structure
+- **Example**: THE OS
+- **Characteristics**:
+  - Hierarchical layers
+  - Layer N uses Layer N-1
+  - Modular approach
+  - Debugging easier
+
+```
+         Layer N: User Programs
+         ───────────────────▲
+         Layer N-1: I/O Management
+         ───────────────────▲
+         Layer N-2: Memory Management
+         ───────────────────▲
+         Layer N-3: Process Scheduling
+         ───────────────────▲
+         Layer 0: Hardware
+```
+
+### 3. Microkernel Structure
+- **Example**: QNX, Minix
+- **Characteristics**:
+  - Minimal kernel
+  - Services in user space
+  - Better stability
+  - IPC overhead
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    USER SPACE                                │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+│  │ File     │  │ Process  │  │ Device   │  │ Memory   │   │
+│  │ Server   │  │ Server   │  │ Server   │  │ Server   │   │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘   │
+│       │             │             │             │          │
+│       └─────────────┼─────────────┼─────────────┘          │
+│                     │             │                         │
+│                    IPC (Inter-Process Communication)        │
+│                     │             │                         │
+└─────────────────────┼─────────────┼─────────────────────────┘
+                      │             │
+                      ▼             ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    KERNEL SPACE                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │         MICROKERNEL (Minimal)                        │  │
+│  │  • IPC Management    • Basic Scheduling              │  │
+│  │  • Memory Mapping    • Basic Hardware Handling       │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 4. Monolithic Kernel
+- **Example**: Linux, Unix
+- **Characteristics**:
+  - All services in kernel
+  - Fast performance
+  - Less stable
+  - Large kernel size
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    KERNEL SPACE                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              MONOLITHIC KERNEL                        │  │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐          │  │
+│  │  │ Process  │  │ Memory   │  │ File     │          │  │
+│  │  │ Mgmt     │  │ Mgmt     │  │ System   │          │  │
+│  │  ├──────────┤  ├──────────┤  ├──────────┤          │  │
+│  │  │ I/O      │  │ Device   │  │ Network  │          │  │
+│  │  │ Mgmt     │  │ Drivers  │  │ Stack    │          │  │
+│  │  └──────────┘  └──────────┘  └──────────┘          │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+│
+▼
+┌─────────────────────────────────────────────────────────────┐
+│                    USER SPACE                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              Applications                             │  │
+│  │  (Browser, Word, Games, etc.)                        │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 5. Hybrid Kernel
+- **Example**: Windows NT, macOS
+- **Characteristics**:
+  - Combination of monolithic and microkernel
+  - Performance + stability
+  - Most modern OS use this
+
+---
+
+## 🔬 Kernel Components in Detail
+
+### What's inside the Kernel?
+
+| Component | Function | Importance |
+|-----------|----------|------------|
+| **Scheduler** | Decides which process runs next | ⭐⭐⭐ |
+| **Memory Manager** | Handles memory allocation | ⭐⭐⭐ |
+| **File System** | Manages files and directories | ⭐⭐⭐ |
+| **Device Drivers** | Controls hardware devices | ⭐⭐ |
+| **Network Stack** | Handles network protocols | ⭐⭐ |
+| **IPC Manager** | Manages inter-process communication | ⭐⭐ |
+| **System Call Interface** | Entry point for user programs | ⭐⭐⭐ |
+
+---
+
+## 📊 Kernel Comparison Table
+
+| Feature | Monolithic | Microkernel | Hybrid | Exokernel |
+|---------|------------|-------------|--------|-----------|
+| **Size** | Large | Small | Medium | Very Small |
+| **Speed** | Fast | Slow (IPC) | Fast | Fast |
+| **Stability** | Low | High | Medium | High |
+| **Security** | Low | High | Medium | High |
+| **Modularity** | Low | High | Medium | High |
+| **Examples** | Linux | QNX, Minix | Windows, macOS | MIT Exokernel |
+| **Maintenance** | Hard | Easy | Medium | Hard |
+
+---
+
+## 🧠 Memory Trick: "My Mother Makes Healthy Eggs"
+
+**M**onolithic → **M**icrokernel → **H**ybrid → **E**xokernel
+
+---
+
+# 5️⃣ ADDED: OPERATING SYSTEM SERVICES
+
+## 📌 OS Services (Detailed)
+
+Operating systems provide an environment for execution of programs and services to programs and users.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              OPERATING SYSTEM SERVICES                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. USER INTERFACE                                   │  │
+│  │     • CLI (Command Line Interface)                   │  │
+│  │     • GUI (Graphical User Interface)                 │  │
+│  │     • Batch Interface                                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. PROGRAM EXECUTION                                │  │
+│  │     • Load program into memory                       │  │
+│  │     • Run program                                     │  │
+│  │     • End execution normally/abnormally              │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. I/O OPERATIONS                                   │  │
+│  │     • Read from files/devices                        │  │
+│  │     • Write to files/devices                         │  │
+│  │     • Buffering and spooling                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  4. FILE SYSTEM MANIPULATION                         │  │
+│  │     • Create/delete files                            │  │
+│  │     • Create/delete directories                      │  │
+│  │     • File permissions                               │  │
+│  │     • File attributes                                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  5. COMMUNICATIONS                                   │  │
+│  │     • Inter-process communication (IPC)              │  │
+│  │     • Shared memory                                  │  │
+│  │     • Message passing                                │  │
+│  │     • Network communication                          │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  6. ERROR DETECTION                                  │  │
+│  │     • CPU errors                                      │  │
+│  │     • Memory errors                                   │  │
+│  │     • I/O device errors                               │  │
+│  │     • User program errors                             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  7. RESOURCE ALLOCATION                              │  │
+│  │     • CPU scheduling                                 │  │
+│  │     • Memory allocation                              │  │
+│  │     • File storage                                   │  │
+│  │     • I/O devices                                    │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  8. ACCOUNTING                                       │  │
+│  │     • Track resource usage                           │  │
+│  │     • User statistics                                │  │
+│  │     • Billing (if applicable)                        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  9. PROTECTION & SECURITY                            │  │
+│  │     • User authentication                            │  │
+│  │     • Access control                                 │  │
+│  │     • Data encryption                                │  │
+│  │     • Malware protection                             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧠 Memory Trick: "UP IF CREA RAP"
+
+**U**ser Interface  
+**P**rogram Execution  
+**I**/O Operations  
+**F**ile Manipulation  
+**C**ommunications  
+**R**esource Allocation  
+**E**rror Detection  
+**A**ccounting  
+**P**rotection
+
+---
+
+# 6️⃣ ADDED: OPERATING SYSTEM GENERATION
+
+## 📌 OS Generation and System Boot
+
+### System Generation (SYSGEN)
+The process of configuring and building an OS for a specific hardware environment.
+
+### Steps in OS Generation
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    OS GENERATION PROCESS                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Step 1: Hardware Information Collection                    │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • CPU type and speed                                 │  │
+│  │ • Memory size                                       │  │
+│  │ • Available devices (disk, keyboard, mouse)         │  │
+│  │ • Device parameters (IRQ, I/O addresses)            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 2: Configuration Selection                           │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Choose OS features                                  │  │
+│  │ • Select file system type                            │  │
+│  │ • Choose scheduling algorithm                        │  │
+│  │ • Set security options                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 3: Compilation & Linking                            │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Compile OS modules                                  │  │
+│  │ • Link with libraries                                 │  │
+│  │ • Create bootable image                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 4: Installation                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Copy OS to disk                                     │  │
+│  │ • Create boot sector                                 │  │
+│  │ • Configure boot loader                              │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔄 System Boot Process
+
+### Boot Sequence
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    BOOT PROCESS                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Step 1: Power On                                           │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Power supply sends signal to CPU                   │  │
+│  │ • CPU resets and looks for BIOS                      │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 2: BIOS (Basic Input/Output System)                 │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • POST (Power-On Self Test)                          │  │
+│  │ • Initialize hardware                                 │  │
+│  │ • Find boot device                                    │  │
+│  │ • Load boot sector (MBR)                             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 3: Boot Loader                                      │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • GRUB, LILO, Windows Boot Manager                   │  │
+│  │ • Display OS selection menu                          │  │
+│  │ • Load OS kernel into memory                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 4: Kernel Initialization                            │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Initialize kernel data structures                  │  │
+│  │ • Set up interrupt vectors                           │  │
+│  │ • Initialize device drivers                          │  │
+│  │ • Mount root file system                             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  Step 5: Init Process                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ • Create first process (init or systemd)             │  │
+│  │ • Start system services                              │  │
+│  │ • Display login prompt                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Types of Boot
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Cold Boot** | Starting from power-off state | Pressing power button |
+| **Warm Boot** | Restart without power cycle | Ctrl+Alt+Del |
+| **Soft Boot** | Software-initiated restart | `reboot` command |
+| **Hard Boot** | Hardware-initiated restart | Reset button |
+
+---
+
+# 7️⃣ PROCESS MANAGEMENT (DETAILED)
+
+## 📌 Process Definition
+A **process** is a program in execution. It's an **active entity** that requires resources like CPU, memory, I/O.
+
+## 🔬 Program vs Process
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              PROGRAM VS PROCESS                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────┐    ┌──────────────────────┐      │
+│  │      PROGRAM         │    │       PROCESS        │      │
+│  │ (Passive Entity)     │    │  (Active Entity)     │      │
+│  ├──────────────────────┤    ├──────────────────────┤      │
+│  │ • Stored on disk     │    │ • Loaded in memory   │      │
+│  │ • Static             │    │ • Dynamic            │      │
+│  │ • No resources       │    │ • Has resources      │      │
+│  │ • Single copy        │    │ • Multiple copies    │      │
+│  │ • Code only          │    │ • Code + Data + State│      │
+│  │ • Like a recipe      │    │ • Like cooking       │      │
+│  └──────────────────────┘    └──────────────────────┘      │
+│                                                              │
+│  Example:                                                   │
+│  Program: notepad.exe (on disk)                             │
+│  Process: Running Notepad (in memory with its data)        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧠 Memory Trick: "PAPA = Program At rest, Process Active"
+
+---
+
+## 🔹 Process Memory Layout
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PROCESS IN MEMORY                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  HIGH ADDRESS                                        │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │                                                      │  │
+│  │  ┌────────────────────────────────────────────────┐ │  │
+│  │  │                   STACK                         │ │  │
+│  │  │  • Local variables                             │ │  │
+│  │  │  • Function parameters                         │ │  │
+│  │  │  • Return addresses                            │ │  │
+│  │  │  • Grows downward                              │ │  │
+│  │  └────────────────────────────────────────────────┘ │  │
+│  │                           │                          │  │
+│  │                           ▼                          │  │
+│  │                     (Free Memory)                    │  │
+│  │                           │                          │  │
+│  │                           ▼                          │  │
+│  │  ┌────────────────────────────────────────────────┐ │  │
+│  │  │                   HEAP                          │ │  │
+│  │  │  • Dynamically allocated memory                │ │  │
+│  │  │  • malloc()/new                                │ │  │
+│  │  │  • free()/delete                               │ │  │
+│  │  │  • Grows upward                                │ │  │
+│  │  └────────────────────────────────────────────────┘ │  │
+│  │                                                      │  │
+│  │  ┌────────────────────────────────────────────────┐ │  │
+│  │  │                   DATA                          │ │  │
+│  │  │  • Global variables                            │ │  │
+│  │  │  • Static variables                            │ │  │
+│  │  │  • Initialized data segment                    │ │  │
+│  │  │  • Uninitialized data (BSS)                    │ │  │
+│  │  └────────────────────────────────────────────────┘ │  │
+│  │                                                      │  │
+│  │  ┌────────────────────────────────────────────────┐ │  │
+│  │  │                   TEXT (CODE)                   │ │  │
+│  │  │  • Program instructions                        │ │  │
+│  │  │  • Read-only                                   │ │  │
+│  │  │  • Shared among processes                      │ │  │
+│  │  └────────────────────────────────────────────────┘ │  │
+│  │                                                      │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  LOW ADDRESS                                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Process Attributes
+
+| Attribute | Description |
+|-----------|-------------|
+| **Process ID (PID)** | Unique identifier |
+| **Parent PID (PPID)** | ID of parent process |
+| **Program Counter** | Next instruction address |
+| **CPU Registers** | Saved when process not running |
+| **Stack Pointer** | Top of stack |
+| **Process State** | Running, ready, etc. |
+| **Priority** | Scheduling priority |
+| **Memory Limits** | Memory allocated |
+| **Open Files** | List of opened files |
+| **Credentials** | User/group ID |
+
+---
+
+# 8️⃣ PROCESS STATES (DETAILED)
+
+## 📌 Process State Model
+
+### 5-State Model (Most Common)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   5-STATE PROCESS MODEL                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│      ┌───────────┐                                          │
+│      │   NEW     │                                          │
+│      │(Created)  │                                          │
+│      └─────┬─────┘                                          │
+│            │ Admitted                                       │
+│            ▼                                                │
+│      ┌───────────┐      ┌───────────┐      ┌───────────┐   │
+│      │   READY   │─────▶│  RUNNING  │─────▶│ TERMINATED│   │
+│      │(Waiting   │      │(On CPU)   │      │ (Exited)  │   │
+│      │ for CPU)  │      │           │      │           │   │
+│      └───────────┘      └─────┬─────┘      └───────────┘   │
+│            ▲                  │                             │
+│            │        I/O or    │                             │
+│            │        event wait│                             │
+│            │                  │                             │
+│            │      Scheduler   │   I/O or event              │
+│            │      dispatch    │   completion                │
+│            │                  ▼                             │
+│            │           ┌───────────┐                        │
+│            └───────────│  WAITING  │                        │
+│                        │ (BLOCKED) │                        │
+│                        │ (I/O)     │                        │
+│                        └───────────┘                        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Process States Description (with EXAMPLES)
+
+| State | Description | Example | Transitions |
+|-------|-------------|---------|-------------|
+| **NEW** | Process being created | User double-clicks app | → READY |
+| **READY** | Ready to run, waiting for CPU | Waiting in queue | → RUNNING |
+| **RUNNING** | Instructions being executed | Actually using CPU | → READY, WAITING, TERMINATED |
+| **WAITING** | Waiting for I/O or event | Reading from disk | → READY |
+| **TERMINATED** | Finished execution | App closed | None |
+
+---
+
+## 🔄 Detailed State Transitions
+
+| Transition | From → To | Cause | Example |
+|------------|-----------|-------|---------|
+| **Admit** | NEW → READY | Process accepted by OS | After creation |
+| **Dispatch** | READY → RUNNING | Scheduler selects process | CPU allocated |
+| **Timeout** | RUNNING → READY | Time quantum expired | Preemption |
+| **Block** | RUNNING → WAITING | I/O request | Reading file |
+| **Wakeup** | WAITING → READY | I/O complete | Data ready |
+| **Exit** | RUNNING → TERMINATED | Process ends | App closed |
+
+---
+
+## 🧠 Memory Trick: "Never Run When Tired" - Process can't run when waiting
+
+---
+
+## 🔹 7-State Model (with Suspended States)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   7-STATE PROCESS MODEL                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│      ┌───────────┐                                          │
+│      │   NEW     │                                          │
+│      └─────┬─────┘                                          │
+│            │                                                 │
+│            ▼                                                 │
+│      ┌───────────┐      ┌───────────┐      ┌───────────┐   │
+│      │ READY     │─────▶│ RUNNING   │─────▶│ TERMINATED│   │
+│      │ (Memory)  │      │           │      │           │   │
+│      └───────────┘      └─────┬─────┘      └───────────┘   │
+│            ▲                  │                             │
+│            │                  │                             │
+│            │                  ▼                             │
+│            │           ┌───────────┐                        │
+│            │           │ WAITING   │                        │
+│            │           │ (Memory)  │                        │
+│            │           └───────────┘                        │
+│            │                 │                              │
+│            │    Suspend      │      Suspend                 │
+│            │                 │                              │
+│            │                 ▼                              │
+│            │           ┌───────────┐                        │
+│            │           │ WAITING   │                        │
+│            └───────────│ SUSPENDED │                        │
+│                        │  (Disk)   │                        │
+│                        └───────────┘                        │
+│                              │                               │
+│                              │ Resume                       │
+│                              ▼                               │
+│                        ┌───────────┐                        │
+│                        │ READY     │                        │
+│                        │ SUSPENDED │                        │
+│                        │  (Disk)   │                        │
+│                        └───────────┘                        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 9️⃣ ADDED: PROCESS CONTROL BLOCK (PCB) - DETAILED
+
+## 📌 What is PCB?
+
+**Process Control Block** is a data structure maintained by OS for each process. It contains all information about the process.
+
+## 🔬 PCB Structure
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PROCESS CONTROL BLOCK                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. PROCESS IDENTIFIERS                              │  │
+│  │     • PID (Process ID)                               │  │
+│  │     • PPID (Parent Process ID)                       │  │
+│  │     • UID (User ID)                                  │  │
+│  │     • GID (Group ID)                                 │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. PROCESS STATE                                    │  │
+│  │     • Current state (Ready, Running, etc.)           │  │
+│  │     • Previous state                                 │  │
+│  │     • Next state                                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. CPU REGISTERS                                    │  │
+│  │     • Program Counter (PC)                           │  │
+│  │     • Stack Pointer (SP)                             │  │
+│  │     • General Purpose Registers                      │  │
+│  │     • Status Register                                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  4. CPU SCHEDULING INFO                              │  │
+│  │     • Priority                                        │  │
+│  │     • Scheduling queue pointers                       │  │
+│  │     • CPU burst time                                  │  │
+│  │     • Time quantum                                    │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  5. MEMORY MANAGEMENT INFO                           │  │
+│  │     • Base/Limit registers                           │  │
+│  │     • Page table pointer                             │  │
+│  │     • Segment table pointer                          │  │
+│  │     • Memory allocated                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  6. I/O STATUS INFO                                  │  │
+│  │     • List of open files                             │  │
+│  │     • Allocated devices                              │  │
+│  │     • I/O requests pending                           │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  7. ACCOUNTING INFO                                  │  │
+│  │     • CPU time used                                  │  │
+│  │     • Time limits                                    │  │
+│  │     • Process creation time                          │  │
+│  │     • Time in ready queue                            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧠 Memory Trick: "PIC SMI RA"
+
+**P**rocess ID  
+**I**nfo (State)  
+**C**PU Registers  
+**S**cheduling  
+**M**emory  
+**I**/O Status  
+**R**egister values  
+**A**ccounting
+
+---
+
+## 🔹 PCB Organization
+
+How OS stores PCBs:
+
+| Method | Description | Advantage | Disadvantage |
+|--------|-------------|-----------|--------------|
+| **Linked List** | Each PCB points to next | Easy insertion/deletion | Slow search |
+| **Array** | Fixed size array | Fast access | Wasted space |
+| **Hash Table** | Hash based on PID | Fast lookup | Complex |
+
+---
+
+# 🔟 ADDED: CONTEXT SWITCHING - DETAILED
+
+## 📌 What is Context Switching?
+
+**Context Switching** is the process of storing the state of a process so that it can be resumed later, and loading the saved state of another process.
+
+## 🔬 Context Switch Mechanism
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    CONTEXT SWITCH PROCESS                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Timeline:                                                  │
+│                                                              │
+│  Process A Running                                          │
+│  ┌────────────────────────────────────────────────────┐    │
+│  │                                                    │    │
+│  └────────────────────────────────────────────────────┘    │
+│                          │                                  │
+│                          ▼                                  │
+│  ┌────────────────────────────────────────────────────┐    │
+│  │  INTERRUPT or SYSTEM CALL                          │    │
+│  │  • Save Process A state in its PCB                 │    │
+│  │  • Update Process A state to READY                 │    │
+│  │  • Move PCB A to ready queue                       │    │
+│  └────────────────────────────────────────────────────┘    │
+│                          │                                  │
+│                          ▼                                  │
+│  ┌────────────────────────────────────────────────────┐    │
+│  │  SCHEDULER SELECTS PROCESS B                       │    │
+│  │  • Choose next process from ready queue            │    │
+│  │  • Update Process B state to RUNNING               │    │
+│  └────────────────────────────────────────────────────┘    │
+│                          │                                  │
+│                          ▼                                  │
+│  ┌────────────────────────────────────────────────────┐    │
+│  │  RESTORE PROCESS B STATE                           │    │
+│  │  • Load registers from PCB B                       │    │
+│  │  • Load program counter                            │    │
+│  │  • Update memory mapping                           │    │
+│  └────────────────────────────────────────────────────┘    │
+│                          │                                  │
+│                          ▼                                  │
+│  Process B Running                                         │
+│  ┌────────────────────────────────────────────────────┐    │
+│  │                                                    │    │
+│  └────────────────────────────────────────────────────┘    │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Context Switch Overhead
+
+| Component | Time (approx) | Description |
+|-----------|---------------|-------------|
+| **Save CPU registers** | 1-10 μs | Store in PCB |
+| **Update process tables** | 1-5 μs | OS data structures |
+| **Flush TLB** | 10-50 μs | Memory mapping |
+| **Cache invalidation** | 10-100 μs | CPU cache |
+| **Schedule next process** | 1-10 μs | Choose next process |
+| **Load new registers** | 1-10 μs | Restore from PCB |
+| **Total** | 24-185 μs | Pure overhead |
+
+---
+
+## 🧠 Memory Trick: Context switch is "FREE" time - no useful work done
+
+---
+
+## 🔹 When Does Context Switching Occur?
+
+| Event | Description | Example |
+|-------|-------------|---------|
+| **Timer Interrupt** | Time quantum expired | Round Robin scheduling |
+| **I/O Request** | Process needs I/O | Reading file |
+| **I/O Completion** | Waiting process ready | Data arrived |
+| **System Call** | Process requests OS service | `read()` call |
+| **Higher Priority** | Preemptive scheduling | Priority-based |
+
+---
+
+# 1️⃣1️⃣ CPU SCHEDULING ALGORITHMS (COMPLETE DETAIL)
+
+## 📌 What is CPU Scheduling?
+Deciding which process in the ready queue gets the CPU next.
+
+## 🎯 Scheduling Objectives
+
+| Objective | Description | Metric |
+|-----------|-------------|--------|
+| **Max CPU Utilization** | Keep CPU busy as much as possible | % busy |
+| **Max Throughput** | Number of processes completed per time | processes/sec |
+| **Min Turnaround Time** | Time from submission to completion | seconds |
+| **Min Waiting Time** | Time spent in ready queue | seconds |
+| **Min Response Time** | Time from submission to first response | seconds |
+| **Fairness** | Equal CPU time to all processes | - |
+
+---
+
+## 📊 Scheduling Terminology - DETAILED
+
+| Term | Symbol | Definition | Formula |
+|------|--------|------------|---------|
+| **Arrival Time** | AT | When process arrives in system | - |
+| **Burst Time** | BT | CPU execution time needed | - |
+| **Completion Time** | CT | When process finishes | - |
+| **Turnaround Time** | TAT | Total time in system | CT - AT |
+| **Waiting Time** | WT | Time waiting in ready queue | TAT - BT |
+| **Response Time** | RT | Time until first response | First start - AT |
+
+---
+
+## 🔹 Types of Scheduling
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               TYPES OF CPU SCHEDULING                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. LONG-TERM SCHEDULING (Job Scheduler)             │  │
+│  │     • Selects processes to be admitted               │  │
+│  │     • Controls degree of multiprogramming            │  │
+│  │     • Executes infrequently                          │  │
+│  │     • Balances I/O-bound and CPU-bound processes     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. SHORT-TERM SCHEDULING (CPU Scheduler)            │  │
+│  │     • Selects next process to execute                │  │
+│  │     • Executes very frequently (every few ms)        │  │
+│  │     • Must be very fast                              │  │
+│  │     • Implements scheduling algorithms               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. MEDIUM-TERM SCHEDULING (Swapper)                 │  │
+│  │     • Handles swapping in/out                        │  │
+│  │     • Controls degree of multiprogramming            │  │
+│  │     • Reduces memory pressure                        │  │
+│  │     • Suspends and resumes processes                 │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Preemptive vs Non-Preemptive
+
+| Feature | Preemptive | Non-Preemptive |
+|---------|------------|----------------|
+| **Interruption** | Process can be interrupted | Runs until completion/I/O |
+| **Control** | OS controls CPU allocation | Process controls |
+| **Overhead** | Higher (context switches) | Lower |
+| **Response Time** | Better | Worse |
+| **Fairness** | More fair | Less fair |
+| **Examples** | Round Robin, Priority | FCFS, SJF (non-preemptive) |
+
+---
+
+## 🔹 1. FCFS (First-Come, First-Served) - DETAILED
+
+| Feature | Value |
+|---------|-------|
+| **Type** | Non-preemptive |
+| **Queue** | FIFO (First In First Out) |
+| **Algorithm** | Process that arrives first gets CPU first |
+| **Implementation** | Simple queue |
+| **Advantage** | Simple, easy to implement |
+| **Disadvantage** | Convoy effect, high average waiting time |
+
+### Detailed Example with Multiple Arrival Times
+
+**Process Table:**
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 5 |
+| P2 | 1 | 3 |
+| P3 | 2 | 8 |
+| P4 | 3 | 6 |
+
+**Gantt Chart:**
+```
+[ P1 ] [ P2 ] [ P3 ] [ P4 ]
+0      5      8      16     22
+```
+
+**Calculations:**
+
+| Process | AT | BT | CT | TAT (CT-AT) | WT (TAT-BT) |
+|---------|----|----|----|-------------|-------------|
+| P1 | 0 | 5 | 5 | 5 | 0 |
+| P2 | 1 | 3 | 8 | 7 | 4 |
+| P3 | 2 | 8 | 16 | 14 | 6 |
+| P4 | 3 | 6 | 22 | 19 | 13 |
+
+**Average Turnaround Time** = (5 + 7 + 14 + 19)/4 = 45/4 = **11.25**
+**Average Waiting Time** = (0 + 4 + 6 + 13)/4 = 23/4 = **5.75**
+
+---
+
+## 🔹 2. SJF (Shortest Job First) - DETAILED
+
+| Feature | Value |
+|---------|-------|
+| **Type** | Can be preemptive (SRTF) or non-preemptive |
+| **Algorithm** | Process with smallest burst time first |
+| **Optimality** | Minimizes average waiting time |
+| **Problem** | Starvation of long processes |
+| **Solution** | Aging |
+
+### Non-Preemptive SJF Example
+
+**Process Table:**
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 6 |
+| P2 | 0 | 8 |
+| P3 | 0 | 7 |
+| P4 | 0 | 3 |
+
+**Order:** P4(3) → P1(6) → P3(7) → P2(8)
+
+**Gantt Chart:**
+```
+[ P4 ] [ P1 ] [ P3 ] [ P2 ]
+0      3      9      16     24
+```
+
+**Calculations:**
+
+| Process | AT | BT | CT | TAT | WT |
+|---------|----|----|----|-----|-----|
+| P4 | 0 | 3 | 3 | 3 | 0 |
+| P1 | 0 | 6 | 9 | 9 | 3 |
+| P3 | 0 | 7 | 16 | 16 | 9 |
+| P2 | 0 | 8 | 24 | 24 | 16 |
+
+**Average Waiting Time** = (0 + 3 + 9 + 16)/4 = 28/4 = **7**
+
+Compare with FCFS (P1-P2-P3-P4): WT = (0 + 6 + 14 + 21)/4 = 41/4 = **10.25**
+**SJF is better!**
+
+---
+
+## 🔹 SRTF (Shortest Remaining Time First) - Preemptive SJF
+
+**Example with Different Arrival Times:**
+
+| Process | Arrival Time | Burst Time |
+|---------|--------------|------------|
+| P1 | 0 | 8 |
+| P2 | 1 | 4 |
+| P3 | 2 | 9 |
+| P4 | 3 | 5 |
+
+**Execution Timeline:**
+
+| Time | Event | Running | Remaining Times |
+|------|-------|---------|-----------------|
+| 0-1 | P1 starts | P1 | P1:7, P2:4, P3:9, P4:5 |
+| 1-2 | P2 arrives, shorter than remaining P1 (4 < 7) | P2 | P1:7, P2:3, P3:9, P4:5 |
+| 2-3 | P3 arrives, but P2 has 3 left, P3 has 9 | P2 | P1:7, P2:2, P3:9, P4:5 |
+| 3-4 | P4 arrives, P2 has 2 left, P4 has 5 | P2 | P1:7, P2:1, P3:9, P4:5 |
+| 4-5 | P2 finishes at 5 | P4 | P1:7, P4:4, P3:9 |
+| 5-9 | P4 runs | P4 | P1:7, P4:0, P3:9 |
+| 9-16 | P1 runs | P1 | P1:0, P3:9 |
+| 16-25 | P3 runs | P3 | Done |
+
+**Gantt Chart:**
+```
+[ P1 ] [ P2 ] [ P2 ] [ P2 ] [ P4 ] [ P1 ] [ P3 ]
+0  1  2  3  4  5       9       16      25
+```
+
+---
+
+## 🔹 3. Round Robin (RR) - DETAILED
+
+| Feature | Value |
+|---------|-------|
+| **Type** | Preemptive |
+| **Time Quantum** | Fixed time slice (typically 10-100 ms) |
+| **Algorithm** | Each process gets quantum, then goes to end of queue |
+| **Advantage** | Good response time, fair |
+| **Disadvantage** | Performance depends on quantum size |
+
+### Effect of Time Quantum
+
+| Quantum Size | Effect | Problem |
+|--------------|--------|---------|
+| **Too Large** | Becomes FCFS | Poor response time |
+| **Too Small** | Too many context switches | High overhead |
+| **Optimal** | 80% of processes finish in one quantum | Good balance |
+
+### Example (Quantum = 4)
+
+| Process | Burst Time |
+|---------|------------|
+| P1 | 10 |
+| P2 | 5 |
+| P3 | 2 |
+
+**Execution:**
+
+| Time | Process | Remaining |
+|------|---------|-----------|
+| 0-4 | P1 | P1:6, P2:5, P3:2 |
+| 4-8 | P2 | P1:6, P2:1, P3:2 |
+| 8-10 | P3 | P1:6, P2:1, P3:0 |
+| 10-14 | P1 | P1:2, P2:1 |
+| 14-15 | P2 | P1:2, P2:0 |
+| 15-17 | P1 | P1:0 |
+
+**Gantt Chart:**
+```
+[ P1 ] [ P2 ] [ P3 ] [ P1 ] [ P2 ] [ P1 ]
+0     4     8     10    14    15    17
+```
+
+**Calculations:**
+
+| Process | BT | CT | TAT | WT |
+|---------|----|----|-----|-----|
+| P1 | 10 | 17 | 17 | 7 |
+| P2 | 5 | 15 | 15 | 10 |
+| P3 | 2 | 10 | 10 | 8 |
+
+**Average WT** = (7 + 10 + 8)/3 = 25/3 = **8.33**
+**Average TAT** = (17 + 15 + 10)/3 = 42/3 = **14**
+
+---
+
+## 🔹 4. Priority Scheduling - DETAILED
+
+| Feature | Value |
+|---------|-------|
+| **Type** | Can be preemptive or non-preemptive |
+| **Priority** | Lower number = Higher priority (in Unix) |
+| **Problem** | Starvation (indefinite blocking) |
+| **Solution** | Aging |
+
+### Types of Priority
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Static Priority** | Priority fixed at creation | Real-time systems |
+| **Dynamic Priority** | Priority changes over time | Aging, Unix nice |
+
+### Example (Non-preemptive, Lower number = Higher priority)
+
+| Process | Burst Time | Priority |
+|---------|------------|----------|
+| P1 | 10 | 3 |
+| P2 | 1 | 1 |
+| P3 | 2 | 4 |
+| P4 | 1 | 5 |
+| P5 | 5 | 2 |
+
+**Order by Priority:** P2(1) → P5(2) → P1(3) → P3(4) → P4(5)
+
+**Gantt Chart:**
+```
+[ P2 ] [ P5 ] [ P1 ] [ P3 ] [ P4 ]
+0     1     6     16    18    19
+```
+
+---
+
+## 🧠 Memory Trick for Scheduling: "First Come First Served, Shortest Job First, Round Robin, Priority"
+
+**FCFS:** First Come First Served  
+**SJF:** Shortest Job First  
+**RR:** Round Robin  
+**Priority:** Priority
+
+**"Frustrated Students Really Prefer"** - FCFS, SJF, RR, Priority
+
+---
+
+## 📊 Scheduling Algorithms Comparison Table
+
+| Algorithm | Preemptive? | Starvation? | Convoy Effect? | Complexity | Best For |
+|-----------|-------------|-------------|----------------|------------|----------|
+| **FCFS** | No | No | Yes | Very Low | Batch systems |
+| **SJF** | Optional | Yes | No | Medium | Short jobs |
+| **SRTF** | Yes | Yes | No | Medium | Interactive |
+| **Round Robin** | Yes | No | No | Medium | Time-sharing |
+| **Priority** | Optional | Yes | No | Medium | Real-time |
+| **Multilevel Queue** | Yes | Possible | No | High | Mixed workloads |
+
+---
+
+# 1️⃣2️⃣ ADDED: SCHEDULING CRITERIA - DETAILED
+
+## 📊 Detailed Scheduling Metrics
+
+### 1. CPU Utilization
+- **Definition**: Percentage of time CPU is busy
+- **Range**: 0-100%
+- **Target**: 40-90% (real systems)
+- **Formula**: (Busy Time / Total Time) × 100
+
+### 2. Throughput
+- **Definition**: Number of processes completed per unit time
+- **Unit**: processes/second or processes/hour
+- **Example**: 10 processes/sec
+
+### 3. Turnaround Time (TAT)
+- **Definition**: Total time from submission to completion
+- **Formula**: Completion Time - Arrival Time
+- **Includes**: Waiting + Execution + I/O
+
+### 4. Waiting Time (WT)
+- **Definition**: Total time spent in ready queue
+- **Formula**: Turnaround Time - Burst Time
+- **Key metric**: Most scheduling aims to minimize this
+
+### 5. Response Time (RT)
+- **Definition**: Time from submission to first response
+- **Important for**: Interactive systems
+- **Example**: Time from Enter key to first character appearing
+
+### 6. Fairness
+- **Definition**: Equal CPU time to equal priority processes
+- **Metric**: Variance in CPU time allocated
+
+---
+
+# 1️⃣3️⃣ ADDED: MULTI-LEVEL QUEUE SCHEDULING
+
+## 📌 Concept
+Processes are divided into different queues based on properties (priority, type, etc.)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              MULTI-LEVEL QUEUE SCHEDULING                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 1: System Processes (Highest Priority)        │  │
+│  │  ┌────┐ ┌────┐ ┌────┐                               │  │
+│  │  │ P1 │ │ P2 │ │ P3 │  (RR with quantum 8)          │  │
+│  │  └────┘ └────┘ └────┘                               │  │
+│  └───────────────────┬──────────────────────────────────┘  │
+│                      │                                      │
+│                      ▼                                      │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 2: Interactive Processes                      │  │
+│  │  ┌────┐ ┌────┐ ┌────┐ ┌────┐                        │  │
+│  │  │ P4 │ │ P5 │ │ P6 │ │ P7 │  (RR with quantum 16)  │  │
+│  │  └────┘ └────┘ └────┘ └────┘                        │  │
+│  └───────────────────┬──────────────────────────────────┘  │
+│                      │                                      │
+│                      ▼                                      │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 3: Batch Processes (Lowest Priority)          │  │
+│  │  ┌────┐ ┌────┐ ┌────┐                               │  │
+│  │  │ P8 │ │ P9 │ │ P10│  (FCFS)                        │  │
+│  │  └────┘ └────┘ └────┘                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  Scheduling between queues:                                 │
+│  • Absolute Priority: Queue 1 → Queue 2 → Queue 3         │
+│  OR                                                        │
+│  • Time Slice: 60% Queue 1, 30% Queue 2, 10% Queue 3      │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 1️⃣4️⃣ ADDED: MULTI-LEVEL FEEDBACK QUEUE
+
+## 📌 Concept
+Processes can move between queues based on their behavior.
+
+### Key Parameters
+1. Number of queues
+2. Scheduling algorithm per queue
+3. When to upgrade/downgrade processes
+4. Which queue to start new processes
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              MULTI-LEVEL FEEDBACK QUEUE                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 1 (Quantum = 8)  Highest Priority            │  │
+│  │  ┌────┐ ┌────┐                                      │  │
+│  │  │ P1 │ │ P2 │  (If not finished, move to Q2)       │  │
+│  │  └────┘ └────┘                                      │  │
+│  └───────────────────┬──────────────────────────────────┘  │
+│                      │                                      │
+│                      ▼                                      │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 2 (Quantum = 16)                             │  │
+│  │  ┌────┐ ┌────┐ ┌────┐                               │  │
+│  │  │ P3 │ │ P4 │ │ P5 │  (If not finished, move to Q3) │  │
+│  │  └────┘ └────┘ └────┘                               │  │
+│  └───────────────────┬──────────────────────────────────┘  │
+│                      │                                      │
+│                      ▼                                      │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Queue 3 (FCFS)  Lowest Priority                    │  │
+│  │  ┌────┐ ┌────┐ ┌────┐ ┌────┐                       │  │
+│  │  │ P6 │ │ P7 │ │ P8 │ │ P9 │                       │  │
+│  │  └────┘ └────┘ └────┘ └────┘                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  Aging: If process stays too long in lower queue,          │
+│         move it to higher queue to prevent starvation      │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 1️⃣5️⃣ THREADS (DETAILED)
+
+## 📌 What is a Thread?
+A **thread** is the smallest unit of execution within a process. A process can have multiple threads.
+
+## 🔬 Process vs Thread - Detailed Comparison
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              PROCESS VS THREAD                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌────────────────────────┐   ┌────────────────────────┐   │
+│  │       PROCESS          │   │        THREAD          │   │
+│  ├────────────────────────┤   ├────────────────────────┤   │
+│  │ • Has own PCB          │   │ • Has TCB (Thread      │   │
+│  │ • Separate memory      │   │   Control Block)       │   │
+│  │ • Heavyweight          │   │ • Shares memory with   │   │
+│  │ • Independent          │   │   other threads        │   │
+│  │ • Isolated             │   │ • Lightweight          │   │
+│  │ • More overhead        │   │ • Dependent on process │   │
+│  │ • Slower creation      │   │ • Faster creation      │   │
+│  │ • IPC required for     │   │ • Direct communication │   │
+│  │   communication        │   │   (shared memory)      │   │
+│  │ • Context switch slow  │   │ • Context switch fast  │   │
+│  └────────────────────────┘   └────────────────────────┘   │
+│                                                              │
+│  Memory Layout:                                             │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    PROCESS                            │  │
+│  │  ┌───────┐  ┌───────┐  ┌───────┐                    │  │
+│  │  │Thread1│  │Thread2│  │Thread3│                    │  │
+│  │  │Stack  │  │Stack  │  │Stack  │                    │  │
+│  │  │Regs   │  │Regs   │  │Regs   │                    │  │
+│  │  └───────┘  └───────┘  └───────┘                    │  │
+│  │                                                      │  │
+│  │  ┌────────────────────────────────────────────────┐ │  │
+│  │  │         SHARED: Code, Data, Heap, Files        │ │  │
+│  │  └────────────────────────────────────────────────┘ │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Benefits of Threads
+
+| Benefit | Description | Example |
+|---------|-------------|---------|
+| **Responsiveness** | Program continues even if part blocked | Web browser loading while scrolling |
+| **Resource Sharing** | Threads share memory easily | Multiple threads accessing same data |
+| **Economy** | Cheaper than processes | Creating thread vs process (10x faster) |
+| **Scalability** | Can use multiple CPUs | Parallel processing on multi-core |
+
+---
+
+# 1️⃣6️⃣ ADDED: MULTITHREADING MODELS
+
+## 📌 Thread Models
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              MULTITHREADING MODELS                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  1. MANY-TO-ONE MODEL                                       │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  User Space                    Kernel Space          │  │
+│  │  ┌────┐ ┌────┐ ┌────┐                               │  │
+│  │  │ T1 │ │ T2 │ │ T3 │                               │  │
+│  │  └─┬──┘ └─┬──┘ └─┬──┘                               │  │
+│  │    └───┬──┘       │                                  │  │
+│  │        └────┬─────┘                                  │  │
+│  │             │                                        │  │
+│  │             ▼                                        │  │
+│  │        ┌─────────┐                                   │  │
+│  │        │   KLT   │                                   │  │
+│  │        └─────────┘                                   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│  • Many user threads map to one kernel thread             │
+│  • If one thread blocks, all block                        │
+│  • Cannot use multiple CPUs                               │
+│  • Example: Green threads (old Java)                      │
+│                                                              │
+│  2. ONE-TO-ONE MODEL                                       │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  User Space                    Kernel Space          │  │
+│  │  ┌────┐                        ┌────┐               │  │
+│  │  │ T1 │───────────────────────▶│KLT1│               │  │
+│  │  └────┘                        └────┘               │  │
+│  │  ┌────┐                        ┌────┐               │  │
+│  │  │ T2 │───────────────────────▶│KLT2│               │  │
+│  │  └────┘                        └────┘               │  │
+│  │  ┌────┐                        ┌────┐               │  │
+│  │  │ T3 │───────────────────────▶│KLT3│               │  │
+│  │  └────┘                        └────┘               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│  • Each user thread maps to one kernel thread             │
+│  • More concurrency                                        │
+│  • Can use multiple CPUs                                   │
+│  • Example: Windows, Linux                                 │
+│                                                              │
+│  3. MANY-TO-MANY MODEL                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  User Space                    Kernel Space          │  │
+│  │  ┌────┐ ┌────┐ ┌────┐         ┌────┐ ┌────┐        │  │
+│  │  │ T1 │ │ T2 │ │ T3 │────────▶│KLT1│ │KLT2│        │  │
+│  │  └────┘ └────┘ └────┘         └────┘ └────┘        │  │
+│  │    │      │      │               ▲      ▲           │  │
+│  │    └──────┼──────┘               │      │           │  │
+│  │           └──────────────────────┘      │           │  │
+│  │                  ┌──────────────────────┘           │  │
+│  │                  │                                  │  │
+│  │             ┌────┴────┐                            │  │
+│  │             │   KLT3  │                            │  │
+│  │             └─────────┘                            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│  • Many user threads multiplex to many kernel threads     │
+│  • Best flexibility                                        │
+│  • Complex to implement                                    │
+│  • Example: Solaris (older)                                │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Thread Model Comparison
+
+| Feature | Many-to-One | One-to-One | Many-to-Many |
+|---------|-------------|------------|--------------|
+| **Parallelism** | No | Yes | Yes |
+| **Blocking** | All block | Independent | Independent |
+| **Creation Speed** | Fast | Slower | Medium |
+| **Complexity** | Low | Medium | High |
+| **CPU Utilization** | Poor | Good | Excellent |
+| **Examples** | Green threads | Windows, Linux | Solaris |
+
+---
+
+# 1️⃣7️⃣ ADDED: THREADING ISSUES
+
+## 🔹 Common Threading Issues
+
+### 1. fork() and exec() Issues
+- If one thread calls `fork()`, does the new process duplicate all threads or only that thread?
+- **Unix solution**: Two versions of fork
+
+### 2. Signal Handling
+- Where should signals be delivered?
+  - To thread that caused signal
+  - To all threads
+  - To specific thread
+
+### 3. Thread Cancellation
+| Type | Description | When |
+|------|-------------|------|
+| **Deferred** | Thread checks if should cancel | Safe points |
+| **Asynchronous** | Immediate termination | Dangerous |
+
+### 4. Thread-Local Storage (TLS)
+- Each thread needs its own copy of certain data
+- Example: errno variable
+
+### 5. Scheduler Activations
+- Communication between user and kernel threads
+- Upcalls from kernel to user space
+
+---
+
+# 1️⃣8️⃣ MEMORY MANAGEMENT (DETAILED)
+
+## 📌 Why Memory Management?
+
+1. **Allocation**: Give memory to processes
+2. **Tracking**: Know which memory is used/free
+3. **Protection**: Prevent processes from accessing each other's memory
+4. **Sharing**: Allow controlled sharing
+5. **Virtualization**: Create illusion of more memory
+
+---
+
+## 🔹 Memory Management Techniques
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               MEMORY MANAGEMENT TECHNIQUES                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. CONTIGUOUS ALLOCATION                            │  │
+│  │     • Single partition                               │  │
+│  │     • Multiple partitions                            │  │
+│  │        - Fixed partition                             │  │
+│  │        - Variable partition                          │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. NON-CONTIGUOUS ALLOCATION                        │  │
+│  │     • Paging                                         │  │
+│  │     • Segmentation                                   │  │
+│  │     • Segmentation with paging                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. VIRTUAL MEMORY                                   │  │
+│  │     • Demand paging                                  │  │
+│  │     • Demand segmentation                            │  │
+│  │     • Memory-mapped files                            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 1️⃣9️⃣ ADDED: SWAPPING
+
+## 📌 Swapping
+A process is temporarily moved from main memory to secondary memory (disk) to free up memory.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                         SWAPPING                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│                    Main Memory                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  ┌─────────┐                                        │  │
+│  │  │ Process │  Running                               │  │
+│  │  │    A    │                                        │  │
+│  │  └─────────┘                                        │  │
+│  │  ┌─────────┐                                        │  │
+│  │  │ Process │  Ready                                 │  │
+│  │  │    B    │                                        │  │
+│  │  └─────────┘                                        │  │
+│  │  ┌─────────┐                                        │  │
+│  │  │ Process │  Ready                                 │  │
+│  │  │    C    │                                        │  │
+│  │  └─────────┘                                        │  │
+│  │                                                     │  │
+│  └───────────────────┬─────────────────────────────────┘  │
+│                      │                                     │
+│        Swap Out      │         Swap In                    │
+│        (when low     │         (when memory              │
+│        on memory)    │         available)                │
+│                      ▼                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                   Swap Space (Disk)                   │  │
+│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐              │  │
+│  │  │ Process │  │ Process │  │ Process │              │  │
+│  │  │    D    │  │    E    │  │    F    │              │  │
+│  │  └─────────┘  └─────────┘  └─────────┘              │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Swapping Considerations
+
+| Aspect | Description |
+|--------|-------------|
+| **Swap Time** | Dominated by disk transfer time |
+| **Ready Queue** | Contains processes in memory + swapped |
+| **Roll Out/Roll In** | Swap out lower priority, swap in higher |
+| **Context** | Swapping entire process vs partial |
+
+---
+
+# 2️⃣0️⃣ ADDED: CONTIGUOUS MEMORY ALLOCATION
+
+## 📌 Fixed Partition Allocation
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 FIXED PARTITION ALLOCATION                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Main Memory                                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  OS (Reserved)        Size: 256 MB                  │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Partition 1           Size: 128 MB                 │  │
+│  │  [ Process A - 100 MB ]                              │  │
+│  │  [ Internal Frag - 28 MB ]                           │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Partition 2           Size: 256 MB                 │  │
+│  │  [ Process B - 200 MB ]                              │  │
+│  │  [ Internal Frag - 56 MB ]                           │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Partition 3           Size: 512 MB                 │  │
+│  │  [ Process C - 400 MB ]                              │  │
+│  │  [ Internal Frag - 112 MB ]                          │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Partition 4           Size: 1 GB                   │  │
+│  │  [ Free ]                                            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  Internal Fragmentation = Allocated - Used                  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 📌 Variable Partition Allocation
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               VARIABLE PARTITION ALLOCATION                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Main Memory                                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  OS (256 MB)                                         │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Process A (120 MB)                                  │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Free (80 MB)                                        │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Process B (200 MB)                                  │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Free (50 MB)                                        │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Process C (300 MB)                                  │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │  Free (150 MB)                                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  External Fragmentation = Total Free but not contiguous     │
+│  Here: Free = 80 + 50 + 150 = 280 MB total                 │
+│  But largest contiguous block = 150 MB                     │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Allocation Strategies
+
+| Strategy | Description | Advantage | Disadvantage |
+|----------|-------------|-----------|--------------|
+| **First Fit** | First hole that fits | Fast | Fragmentation at start |
+| **Best Fit** | Smallest hole that fits | Minimizes waste | Slow, tiny holes |
+| **Worst Fit** | Largest hole | Leaves large holes | Wastes large space |
+| **Next Fit** | Start from last allocated | Spreads allocations | Similar to first fit |
+
+### 🧠 Memory Trick: "First Best Worst Next"
+
+**F**irst - First hole  
+**B**est - Best fit  
+**W**orst - Worst fit  
+**N**ext - Next fit
+
+---
+
+# 2️⃣1️⃣ PAGING & SEGMENTATION (DETAILED)
+
+## 📌 Paging - Complete Explanation
+
+### Basic Concepts
+
+| Term | Definition | Size |
+|------|------------|------|
+| **Page** | Fixed-size block in logical memory | Typically 4 KB |
+| **Frame** | Fixed-size block in physical memory | Same as page |
+| **Page Table** | Maps pages to frames | Per process |
+| **Page Offset** | Location within page | d bits |
+| **Page Number** | Page index | p bits |
+
+### Address Translation
+
+```
+Logical Address (CPU generates)
+┌──────────────┬──────────────┐
+│  Page Number │ Page Offset  │
+│      p       │      d       │
+└──────┬───────┴──────┬───────┘
+       │              │
+       │              │
+       ▼              │
+┌──────────────┐      │
+│  Page Table  │      │
+│  ┌───┬───┐   │      │
+│  │p  │f  │   │      │
+│  ├───┼───┤   │      │
+│  │0  │5  │   │      │
+│  │1  │2  │   │      │
+│  │2  │8  │   │      │
+│  │3  │1  │   │      │
+│  └───┴───┘   │      │
+└──────┬───────┘      │
+       │              │
+       │ f (frame #)  │
+       ▼              ▼
+┌──────────────┬──────────────┐
+│   Frame #    │ Page Offset  │
+│      f       │      d       │
+└──────────────┴──────────────┘
+       │
+       ▼
+Physical Address (Memory)
+```
+
+### Example
+If:
+- Page size = 4 KB (2^12 bytes)
+- Logical address = 32 bits
+- Then:
+  - Page offset = 12 bits
+  - Page number = 20 bits
+  - Max pages = 2^20 = 1,048,576 pages
+
+---
+
+## 🔹 Paging Hardware with TLB
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PAGING HARDWARE                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  CPU ──► Logical Address ──┬──► TLB Lookup                 │
+│            (p,d)            │                               │
+│                             │                               │
+│                             ├── TLB Hit?                    │
+│                             │   │                           │
+│                             │   ├─ Yes: Get frame from TLB │
+│                             │   │                           │
+│                             │   └─ No: Access Page Table   │
+│                             │        in memory              │
+│                             │        │                      │
+│                             │        ▼                      │
+│                             │    Update TLB                 │
+│                             │                               │
+│                             ▼                               │
+│                    Physical Address (f,d)                   │
+│                             │                               │
+│                             ▼                               │
+│                        Physical Memory                       │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📌 Segmentation - Complete Explanation
+
+### Basic Concepts
+
+| Term | Definition |
+|------|------------|
+| **Segment** | Variable-sized logical unit (code, data, stack) |
+| **Base** | Starting physical address |
+| **Limit** | Length of segment |
+| **Segment Table** | Maps segments to physical memory |
+
+### Address Translation
+
+```
+Logical Address (CPU generates)
+┌──────────────┬──────────────┐
+│ Segment No.  │ Segment Offset│
+│      s       │      d        │
+└──────┬───────┴──────┬───────┘
+       │              │
+       │              │
+       ▼              │
+┌──────────────┐      │
+│ Segment Table│      │
+│ ┌───┬───┬──┐ │      │
+│ │s  │Base│Lmt│ │      │
+│ ├───┼───┼──┤ │      │
+│ │0  │1K │4K│ │      │
+│ │1  │5K │2K│ │      │
+│ │2  │7K │3K│ │      │
+│ └───┴───┴──┘ │      │
+└──────┬───────┘      │
+       │              │ Check: d < Limit?
+       │ Base         │ If no → Segmentation Fault
+       ▼              ▼
+┌──────────────┬──────────────┐
+│    Base      │    Offset    │
+│   (from ST)  │      d       │
+└──────────────┴──────────────┘
+       │
+       ▼
+Physical Address = Base + d
+```
+
+---
+
+## 📊 Paging vs Segmentation - Complete Comparison
+
+| Feature | Paging | Segmentation |
+|---------|--------|--------------|
+| **Size** | Fixed | Variable |
+| **Fragmentation** | Internal | External |
+| **View** | Physical (hardware view) | Logical (programmer view) |
+| **Protection** | Per page | Per segment |
+| **Sharing** | Complex (multiple page tables) | Easier (share whole segment) |
+| **Table** | Page Table (p to f mapping) | Segment Table (base+limit) |
+| **Address Space** | Linear | Multiple independent spaces |
+| **Growth** | Difficult (fixed size) | Easy (segments can grow) |
+| **Compaction** | Not needed | Possible |
+| **Overhead** | Page table per process | Segment table per process |
+
+---
+
+# 2️⃣2️⃣ ADDED: PAGE TABLE STRUCTURE
+
+## 🔹 Page Table Entry (PTE)
+
+A typical PTE contains:
+
+| Bit | Field | Description |
+|-----|-------|-------------|
+| **0** | Present/Absent | Is page in memory? |
+| **1** | Modified/Dirty | Has page been written? |
+| **2** | Referenced | Has page been accessed? |
+| **3** | Protection | Read/write/execute permissions |
+| **4** | Caching Disabled | Cache this page? |
+| **5-31** | Frame Number | Physical frame address |
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PAGE TABLE ENTRY                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌────┬────┬────┬────┬──────────────────────────────────┐  │
+│  │ P  │ M  │ R  │ Pr │         Frame Number             │  │
+│  │(1) │(1) │(1) │(2) │            (27 bits)            │  │
+│  └────┴────┴────┴────┴──────────────────────────────────┘  │
+│                                                              │
+│  P  = Present bit (1 = in memory, 0 = on disk)             │
+│  M  = Modified/Dirty bit (1 = modified)                     │
+│  R  = Referenced bit (1 = accessed)                        │
+│  Pr = Protection bits (read/write/execute)                 │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Page Table Size Example
+
+**Given:**
+- 32-bit logical address
+- Page size = 4 KB (2^12)
+- Page table entry = 4 bytes
+
+**Calculations:**
+- Number of pages = 2^32 / 2^12 = 2^20 = 1,048,576 pages
+- Page table size = 1,048,576 × 4 bytes = 4 MB per process
+
+**Problem:** 4 MB per process is too large!
+
+**Solutions:**
+1. Multi-level page tables
+2. Hashed page tables
+3. Inverted page tables
+
+---
+
+## 🔹 Multi-level Page Table
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 TWO-LEVEL PAGE TABLE                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Logical Address:                                           │
+│  ┌────────────┬────────────┬────────────┐                  │
+│  │  p1 (10b)  │  p2 (10b)  │ offset(12b)│                  │
+│  └──────┬─────┴──────┬─────┴──────┬─────┘                  │
+│         │            │            │                         │
+│         ▼            │            │                         │
+│  ┌────────────┐      │            │                         │
+│  │ Outer Page │      │            │                         │
+│  │   Table    │      │            │                         │
+│  └──────┬─────┘      │            │                         │
+│         │ p1 entry   │            │                         │
+│         ▼            │            │                         │
+│  ┌────────────┐      │            │                         │
+│  │ Inner Page │      │            │                         │
+│  │   Table    │──────┘            │                         │
+│  └──────┬─────┘  p2 entry         │                         │
+│         │                         │                         │
+│         └─────────────────────────┘                         │
+│                 │                                           │
+│                 ▼                                           │
+│        ┌─────────────────┐                                  │
+│        │ Physical Frame  │                                  │
+│        └─────────────────┘                                  │
+│                                                              │
+│  Memory saved: Only allocate inner tables that are needed   │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 2️⃣3️⃣ ADDED: TLB (TRANSLATION LOOKASIDE BUFFER)
+
+## 📌 What is TLB?
+A fast, associative cache for page table entries.
+
+## 🔹 TLB Operation
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    TLB OPERATION                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  CPU Generates Logical Address (p,d)                        │
+│              │                                              │
+│              ▼                                              │
+│  ┌──────────────────────┐                                   │
+│  │  Search TLB for p    │                                   │
+│  └──────────┬───────────┘                                   │
+│             │                                               │
+│     ┌───────┴───────┐                                       │
+│     ▼               ▼                                       │
+│  TLB Hit        TLB Miss                                    │
+│     │               │                                       │
+│     │               ▼                                       │
+│     │       ┌────────────────┐                              │
+│     │       │ Access Page    │                              │
+│     │       │ Table in Memory│                              │
+│     │       └───────┬────────┘                              │
+│     │               │                                       │
+│     │               ▼                                       │
+│     │       ┌────────────────┐                              │
+│     │       │ Update TLB     │                              │
+│     │       └────────────────┘                              │
+│     │               │                                       │
+│     └───────────────┘                                       │
+│             │                                               │
+│             ▼                                               │
+│  ┌──────────────────────┐                                   │
+│  │ Get Frame Number f   │                                   │
+│  └──────────────────────┘                                   │
+│             │                                               │
+│             ▼                                               │
+│  ┌──────────────────────┐                                   │
+│  │ Physical Address =   │                                   │
+│  │    (f,d)             │                                   │
+│  └──────────────────────┘                                   │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 TLB Performance
+
+| Metric | Formula | Example |
+|--------|---------|---------|
+| **TLB Hit Ratio** | Hits / Total accesses | 98% |
+| **TLB Miss Ratio** | 1 - Hit Ratio | 2% |
+| **Effective Access Time** | Hit% × TLB_time + Miss% × (TLB_time + Mem_time) | |
+
+**Example:**
+- TLB lookup time = 10 ns
+- Memory access time = 100 ns
+- Hit ratio = 98%
+
+EAT = 0.98 × 10 + 0.02 × (10 + 100) = 9.8 + 2.2 = **12 ns**
+
+Without TLB: 100 ns  
+**With TLB: 12 ns (8.3x faster!)**
+
+---
+
+# 2️⃣4️⃣ VIRTUAL MEMORY (DETAILED)
+
+## 📌 What is Virtual Memory?
+A technique that allows execution of processes that are **not completely in memory**.
+
+## 🎯 Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Larger Programs** | Run programs larger than physical memory |
+| **More Processes** | Higher degree of multiprogramming |
+| **Less I/O** | Less swapping overhead |
+| **Faster Loading** | Only needed parts loaded |
+| **Protection** | Each process isolated |
+
+---
+
+## 🔹 Demand Paging
+
+### Concept
+Pages are loaded only when they are needed (referenced).
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    DEMAND PAGING                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Process A's Virtual Memory                                 │
+│  ┌──────┬──────┬──────┬──────┬──────┬──────┐              │
+│  │Page 0│Page 1│Page 2│Page 3│Page 4│Page 5│              │
+│  │  in  │  in  │  on  │  in  │  on  │  on  │              │
+│  │memory│memory│ disk │memory│ disk │ disk │              │
+│  └──┬───┴──┬───┴──┬───┴──┬───┴──┬───┴──┬───┘              │
+│     │      │      │      │      │      │                   │
+│     │      │      │      │      │      │                   │
+│     ▼      ▼      ▼      ▼      ▼      ▼                   │
+│  ┌──────┬──────┬──────┬──────┬──────┬──────┐              │
+│  │Frame │Frame │      │Frame │      │      │              │
+│  │  2   │  5   │  ... │  1   │  ... │  ... │              │
+│  └──────┴──────┴──────┴──────┴──────┴──────┘              │
+│                                                              │
+│  Physical Memory                                            │
+│                                                              │
+│  Access to Page 2:                                         │
+│  1. Page fault (not in memory)                             │
+│  2. Find free frame                                        │
+│  3. Load Page 2 from disk                                  │
+│  4. Update page table                                      │
+│  5. Restart instruction                                    │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Page Fault Handling
+
+### Steps in Page Fault Handling
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   PAGE FAULT HANDLING                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Step 1: Process accesses page not in memory               │
+│                 │                                           │
+│                 ▼                                           │
+│  Step 2: MMU detects page fault (invalid PTE)              │
+│                 │                                           │
+│                 ▼                                           │
+│  Step 3: Trap to OS (page fault handler)                   │
+│                 │                                           │
+│                 ▼                                           │
+│  Step 4: OS checks if reference is valid                   │
+│         ┌──────┴──────┐                                    │
+│         ▼             ▼                                    │
+│    Invalid         Valid                                   │
+│    Access          Access                                  │
+│       │              │                                      │
+│       ▼              ▼                                      │
+│  Terminate      Find free frame                            │
+│   Process        ┌──────┴──────┐                           │
+│                  ▼             ▼                           │
+│            Free frame    No free frame                     │
+│            available        │                              │
+│                 │            ▼                              │
+│                 │     Use page replacement                 │
+│                 │     algorithm to choose victim          │
+│                 │            │                              │
+│                 │            ▼                              │
+│                 │     If victim dirty,                     │
+│                 │     write to disk                        │
+│                 │            │                              │
+│                 └────────────┘                              │
+│                      │                                      │
+│                      ▼                                      │
+│  Step 5: Read requested page from disk                     │
+│                 │                                           │
+│                 ▼                                           │
+│  Step 6: Update page table (present bit = 1)               │
+│                 │                                           │
+│                 ▼                                           │
+│  Step 7: Restart faulting instruction                      │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 2️⃣5️⃣ ADDED: PAGE REPLACEMENT ALGORITHMS - ALL
+
+## 📌 Page Replacement Algorithms - Complete List
+
+### 1. FIFO (First In First Out)
+- Replace the oldest page
+- Simple but may have Belady's Anomaly
+
+**Example (3 frames):**
+Reference string: 7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1
+
+| Ref | 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 | 2 | 3 | 0 | 3 | 2 | 1 | 2 | 0 | 1 | 7 | 0 | 1 |
+|-----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| F1 | 7 | 7 | 7 | 2 | 2 | 2 | 2 | 4 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 7 | 7 |
+| F2 |   | 0 | 0 | 0 | 0 | 3 | 3 | 3 | 2 | 2 | 2 | 2 | 2 | 1 | 1 | 1 | 1 | 1 | 0 | 0 |
+| F3 |   |   | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 3 | 3 | 3 | 3 | 3 | 2 | 2 | 2 | 2 | 2 | 1 |
+| PF | Y | Y | Y | Y | N | Y | Y | Y | Y | Y | Y | N | N | Y | Y | N | N | Y | Y | Y |
+
+**Page Faults = 15**
+
+---
+
+### 2. Optimal (OPT)
+- Replace page that won't be used for longest time in future
+- Theoretical benchmark, not implementable
+
+**Same example (3 frames):**
+
+| Ref | 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 | 2 | 3 | 0 | 3 | 2 | 1 | 2 | 0 | 1 | 7 | 0 | 1 |
+|-----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| F1 | 7 | 7 | 7 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 7 | 7 | 7 |
+| F2 |   | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| F3 |   |   | 1 | 1 | 1 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| PF | Y | Y | Y | Y | N | Y | N | Y | N | N | Y | N | N | Y | N | N | N | Y | N | N |
+
+**Page Faults = 9** (Best possible)
+
+---
+
+### 3. LRU (Least Recently Used)
+- Replace page that hasn't been used for longest time
+- Good performance, needs hardware support
+
+**Same example (3 frames):**
+
+| Ref | 7 | 0 | 1 | 2 | 0 | 3 | 0 | 4 | 2 | 3 | 0 | 3 | 2 | 1 | 2 | 0 | 1 | 7 | 0 | 1 |
+|-----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| F1 | 7 | 7 | 7 | 2 | 2 | 2 | 2 | 4 | 4 | 4 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| F2 |   | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 | 0 |
+| F3 |   |   | 1 | 1 | 1 | 3 | 3 | 3 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 7 | 7 | 7 |
+| PF | Y | Y | Y | Y | N | Y | N | Y | Y | Y | Y | N | N | Y | N | Y | N | Y | N | N |
+
+**Page Faults = 12**
+
+---
+
+### 4. Second Chance (Clock)
+- Like FIFO but gives pages a second chance
+- Uses reference bit
+
+**Algorithm:**
+1. Maintain circular list of pages
+2. If page's reference bit = 1:
+   - Clear bit and move to next
+3. If reference bit = 0:
+   - Replace this page
+
+---
+
+### 5. Enhanced Second Chance
+- Uses reference bit and modify bit
+
+| (Ref, Mod) | Priority |
+|------------|----------|
+| (0,0) | Best to replace |
+| (0,1) | Next best |
+| (1,0) | Probably needed soon |
+| (1,1) | Worst to replace |
+
+---
+
+### 6. NRU (Not Recently Used)
+- Randomly select from pages not referenced recently
+- Simple, used in some systems
+
+---
+
+### 7. MFU (Most Frequently Used)
+- Replace most frequently used page
+- Based on idea that frequently used pages may not be needed soon
+
+---
+
+### 8. LFU (Least Frequently Used)
+- Replace page with smallest count
+- Problem: Pages used heavily initially stay forever
+
+---
+
+## 📊 Page Replacement Algorithms Comparison
+
+| Algorithm | Performance | Implementation | Overhead | Belady's Anomaly? |
+|-----------|-------------|----------------|----------|-------------------|
+| **FIFO** | Poor | Very Easy | Low | Yes |
+| **Optimal** | Best | Impossible | - | No |
+| **LRU** | Good | Hard | High | No |
+| **NRU** | Fair | Easy | Low | No |
+| **Clock** | Good | Easy | Medium | No |
+| **LFU** | Fair | Medium | High | No |
+
+---
+
+## 🧠 Memory Trick: "FOLC" - Page Replacement Algorithms
+
+**F**IFO  
+**O**ptimal  
+**L**RU  
+**C**lock
+
+---
+
+# 2️⃣6️⃣ ADDED: FRAME ALLOCATION
+
+## 📌 Frame Allocation Strategies
+
+### 1. Equal Allocation
+- Each process gets equal number of frames
+- Example: 100 frames, 5 processes → 20 each
+- Problem: Small processes waste, large processes starve
+
+### 2. Proportional Allocation
+- Allocate based on process size
+- Formula: frames = (process size / total size) × total frames
+
+### 3. Priority Allocation
+- Higher priority gets more frames
+- Can be combined with proportional
+
+---
+
+## 🔹 Global vs Local Allocation
+
+| Type | Description | Advantage | Disadvantage |
+|------|-------------|-----------|--------------|
+| **Global** | Process can take frames from others | Flexible | One process can affect others |
+| **Local** | Each process has fixed frames | Isolated | May waste frames |
+
+---
+
+# 2️⃣7️⃣ ADDED: WORKING SET MODEL
+
+## 📌 Working Set
+Set of pages a process is currently using.
+
+## 🔹 Working Set Principle
+- Process must have its working set in memory to run efficiently
+- If working set > available frames → Thrashing
+
+### Working Set Window (Δ)
+- Look at last Δ references
+- Pages referenced in that window = working set
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    WORKING SET MODEL                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Page References:                                            │
+│  t:  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15         │
+│      a  b  c  d  a  e  f  g  a  b  c  d  a  e  f          │
+│                                                              │
+│  Working Set at t=12 (Δ=5):                                 │
+│  References t=8..12: g, a, b, c, d                         │
+│  Working Set = {a,b,c,d,g} (5 pages)                        │
+│                                                              │
+│  Working Set at t=15 (Δ=5):                                 │
+│  References t=11..15: c, d, a, e, f                        │
+│  Working Set = {a,c,d,e,f} (5 pages)                        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 2️⃣8️⃣ DEADLOCKS (COMPLETE DETAIL)
+
+## 📌 What is a Deadlock?
+A set of processes are deadlocked if each process is waiting for an event that only another process in the set can cause.
+
+## 🔬 Classic Example
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    DEADLOCK EXAMPLE                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Resources: R1 (Printer), R2 (Scanner)                      │
+│  Processes: P1, P2                                          │
+│                                                              │
+│  Timeline:                                                  │
+│  t1: P1 requests and gets R1 (Printer)                     │
+│  t2: P2 requests and gets R2 (Scanner)                     │
+│  t3: P1 requests R2 (Scanner) - BLOCKS                     │
+│  t4: P2 requests R1 (Printer) - BLOCKS                     │
+│                                                              │
+│  Result:                                                    │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │   P1: Holds R1, waiting for R2                       │  │
+│  │   P2: Holds R2, waiting for R1                       │  │
+│  │                                                        │  │
+│  │   Circular Wait! Both wait forever!                   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Four Necessary Conditions (ALL MUST HOLD)
+
+| Condition | Description | Example |
+|-----------|-------------|---------|
+| **1. Mutual Exclusion** | Resources cannot be shared | Printer can only be used by one process |
+| **2. Hold and Wait** | Process holds resources while waiting for others | P1 holds printer, waits for scanner |
+| **3. No Preemption** | Resources cannot be forcibly taken | Cannot take printer from P1 |
+| **4. Circular Wait** | Circular chain of processes waiting | P1→R2→P2→R1→P1 |
+
+---
+
+## 🧠 Memory Trick: "M H N C"
+
+**M**utual Exclusion  
+**H**old and Wait  
+**N**o Preemption  
+**C**ircular Wait
+
+**"My Homework Needs Checking"**
+
+---
+
+# 2️⃣9️⃣ ADDED: RESOURCE-ALLOCATION GRAPH - DETAILED
+
+## 📌 Resource-Allocation Graph
+
+### Graph Components
+
+| Symbol | Represents |
+|--------|------------|
+| ○ | Process |
+| □ | Resource (with dots = instances) |
+| → from Process to Resource | Process requesting resource |
+| → from Resource to Process | Resource allocated to process |
+
+### Graph Examples
+
+```
+No Deadlock:
+    ┌───┐        ┌───┐
+    │P1 │───────▶│R1 │
+    └───┘        └───┘
+      ▲
+      │
+      │
+    ┌───┐
+    │R2 │
+    └───┘
+
+Deadlock:
+    ┌───┐        ┌───┐
+    │P1 │───────▶│R1 │
+    └───┘        └───┘
+      ▲            │
+      │            │
+      │            ▼
+    ┌───┐        ┌───┐
+    │R2 │◀───────│P2 │
+    └───┘        └───┘
+
+Cycle Present → Possible Deadlock
+```
+
+### Detection Rules
+
+| Graph Property | Meaning |
+|----------------|---------|
+| No cycle | No deadlock |
+| Cycle with single-instance resources | Deadlock |
+| Cycle with multi-instance resources | Possible deadlock (need further analysis) |
+
+---
+
+# 3️⃣0️⃣ ADDED: BANKER'S ALGORITHM - STEP BY STEP
+
+## 📌 Banker's Algorithm (Deadlock Avoidance)
+
+### Data Structures
+
+| Matrix | Description | Size |
+|--------|-------------|------|
+| **Available** | Available resources of each type | Vector (m) |
+| **Max** | Maximum demand of each process | Matrix (n×m) |
+| **Allocation** | Currently allocated to each process | Matrix (n×m) |
+| **Need** | Remaining need = Max - Allocation | Matrix (n×m) |
+
+### Safety Algorithm
+
+**Step 1:** Create Work = Available, Finish[i] = False for all i
+
+**Step 2:** Find i such that:
+   - Finish[i] = False
+   - Need[i] ≤ Work
+
+**Step 3:** If found:
+   - Work = Work + Allocation[i]
+   - Finish[i] = True
+   - Go to Step 2
+
+**Step 4:** If Finish[i] = True for all i, system is in safe state.
+
+---
+
+## 🔬 Worked Example
+
+**Initial State:**
+```
+              Allocation    Max       Available
+              A  B  C      A  B  C    A  B  C
+    P0        0  1  0      7  5  3    3  3  2
+    P1        2  0  0      3  2  2
+    P2        3  0  2      9  0  2
+    P3        2  1  1      2  2  2
+    P4        0  0  2      4  3  3
+```
+
+**Step 1: Calculate Need = Max - Allocation**
+
+```
+    Need
+    A  B  C
+P0  7  4  3
+P1  1  2  2
+P2  6  0  0
+P3  0  1  1
+P4  4  3  1
+```
+
+**Step 2: Safety Algorithm**
+
+Initialize: Work = [3,3,2], Finish = [F,F,F,F,F]
+
+**Iteration 1:** Check P0: Need[7,4,3] > Work[3,3,2] → No
+Check P1: Need[1,2,2] ≤ Work[3,3,2] → Yes
+- Work = Work + Allocation[1] = [3,3,2] + [2,0,0] = [5,3,2]
+- Finish[1] = True
+
+**Iteration 2:** Check P0: Need[7,4,3] > Work[5,3,2] → No
+Check P2: Need[6,0,0] > Work[5,3,2] → No
+Check P3: Need[0,1,1] ≤ Work[5,3,2] → Yes
+- Work = Work + Allocation[3] = [5,3,2] + [2,1,1] = [7,4,3]
+- Finish[3] = True
+
+**Iteration 3:** Check P0: Need[7,4,3] ≤ Work[7,4,3] → Yes
+- Work = Work + Allocation[0] = [7,4,3] + [0,1,0] = [7,5,3]
+- Finish[0] = True
+
+**Iteration 4:** Check P2: Need[6,0,0] ≤ Work[7,5,3] → Yes
+- Work = Work + Allocation[2] = [7,5,3] + [3,0,2] = [10,5,5]
+- Finish[2] = True
+
+**Iteration 5:** Check P4: Need[4,3,1] ≤ Work[10,5,5] → Yes
+- Work = Work + Allocation[4] = [10,5,5] + [0,0,2] = [10,5,7]
+- Finish[4] = True
+
+**Safe Sequence:** P1 → P3 → P0 → P2 → P4
+
+---
+
+# 3️⃣1️⃣ DEADLOCK HANDLING (COMPLETE)
+
+## 🔹 Four Strategies
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 DEADLOCK HANDLING METHODS                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. DEADLOCK PREVENTION                              │  │
+│  │     • Prevent at least one condition                 │  │
+│  │     • Conservative, may reduce utilization           │  │
+│  │     • Examples:                                       │  │
+│  │       - Mutual Exclusion: Not possible               │  │
+│  │       - Hold & Wait: Request all at once             │  │
+│  │       - No Preemption: Preempt resources             │  │
+│  │       - Circular Wait: Order resources               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. DEADLOCK AVOIDANCE                               │  │
+│  │     • Banker's Algorithm                             │  │
+│  │     • Safe state concept                             │  │
+│  │     • Requires advance knowledge of Max needs        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. DEADLOCK DETECTION & RECOVERY                    │  │
+│  │     • Allow deadlock, then detect and recover        │  │
+│  │     • Detection algorithms                           │  │
+│  │     • Recovery methods                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  4. DEADLOCK IGNORANCE                               │  │
+│  │     • Ostrich algorithm                              │  │
+│  │     • Assume deadlock won't happen                   │  │
+│  │     • Used in most OS (Windows, Linux)               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 3️⃣2️⃣ ADDED: DEADLOCK DETECTION ALGORITHM
+
+## 📌 Detection Algorithm (Multi-instance Resources)
+
+**Step 1:** Initialize Work = Available, Finish[i] = False for all i
+
+**Step 2:** Find i such that:
+   - Finish[i] = False
+   - Request[i] ≤ Work
+
+**Step 3:** If found:
+   - Work = Work + Allocation[i]
+   - Finish[i] = True
+   - Go to Step 2
+
+**Step 4:** If Finish[i] = False for any i, deadlock exists.
+
+---
+
+# 3️⃣3️⃣ ADDED: RECOVERY FROM DEADLOCK
+
+## 🔹 Recovery Methods
+
+### 1. Process Termination
+| Method | Description | Pros | Cons |
+|--------|-------------|------|------|
+| **Abort all** | Kill all deadlocked processes | Simple | Expensive |
+| **Abort one by one** | Kill one, check if deadlock resolved | Efficient | Overhead |
+
+### 2. Resource Preemption
+- Select victim (minimize cost)
+- Rollback to safe state
+- Starvation possible (always pick same victim)
+
+### 3. Cost Factors for Victim Selection
+- Process priority
+- How long computed
+- Resources used
+- Resources needed to complete
+- Number of processes to terminate
+
+---
+
+# 3️⃣4️⃣ FILE SYSTEMS (DETAILED)
+
+## 📌 File System Components
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    FILE SYSTEM COMPONENTS                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  1. FILES                                            │  │
+│  │     • Named collection of related information        │  │
+│  │     • Types: Data, Program, Directory                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  2. DIRECTORIES                                      │  │
+│  │     • Collection of files                            │  │
+│  │     • Hierarchical structure                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  3. PARTITIONS                                       │  │
+│  │     • Logical division of disk                       │  │
+│  │     • Each partition has own file system             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  4. BOOT BLOCK                                       │  │
+│  │     • Contains bootstrap code                        │  │
+│  │     • First block of partition                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  5. SUPER BLOCK                                      │  │
+│  │     • File system metadata                           │  │
+│  │     • Size, free blocks, etc.                        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 File Attributes
+
+| Attribute | Description |
+|-----------|-------------|
+| **Name** | Human-readable name |
+| **Identifier** | Unique number (inode) |
+| **Type** | Regular, directory, device |
+| **Location** | Pointer to file location |
+| **Size** | Current file size |
+| **Protection** | Read/write/execute permissions |
+| **Time** | Creation, modification, access |
+| **Owner** | User who owns file |
+
+---
+
+# 3️⃣5️⃣ ADDED: FILE ACCESS METHODS
+
+## 📌 File Access Methods
+
+### 1. Sequential Access
+```
+read next  ──►  read next  ──►  read next
+  ▲
+  │
+reset
+```
+
+- Data read in order
+- Can reset to beginning
+- Tape drives, text files
+
+### 2. Direct Access (Relative)
+```
+read 14  ──►  read 53  ──►  read 7
+```
+
+- Read any block directly
+- Disk-based files
+- Database systems
+
+### 3. Indexed Access
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    INDEXED ACCESS                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Index Block                                                │
+│  ┌────┬────┬────┬────┬────┬────┐                          │
+│  │ 0  │ 1  │ 2  │ 3  │ 4  │ 5  │                          │
+│  │100 │204 │308 │412 │516 │620 │                          │
+│  └─┬──┴─┬──┴─┬──┴─┬──┴─┬──┴─┬──┘                          │
+│    │    │    │    │    │    │                              │
+│    ▼    ▼    ▼    ▼    ▼    ▼                              │
+│  ┌────┬────┬────┬────┬────┬────┐                          │
+│  │Data│Data│Data│Data│Data│Data│                          │
+│  │100 │204 │308 │412 │516 │620 │                          │
+│  └────┴────┴────┴────┴────┴────┘                          │
+│                                                              │
+│  To read record 3:                                         │
+│  1. Read index block                                       │
+│  2. Get pointer for index 3 → 412                         │
+│  3. Read block 412                                         │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 3️⃣6️⃣ ADDED: DIRECTORY STRUCTURE - ALL TYPES
+
+## 📌 Directory Structures
+
+### 1. Single-Level Directory
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    SINGLE-LEVEL DIRECTORY                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Root Directory                                             │
+│  ┌────┬────┬────┬────┬────┬────┐                          │
+│  │ a  │ b  │ c  │ d  │ e  │ f  │                          │
+│  │.txt│.txt│.txt│.txt│.txt│.txt│                          │
+│  └────┴────┴────┴────┴────┴────┘                          │
+│                                                              │
+│  Problem: Naming conflict                                   │
+│  Solution: Not used in modern systems                       │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 2. Two-Level Directory
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    TWO-LEVEL DIRECTORY                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Root                                                       │
+│  ┌──────┬──────┬──────┐                                   │
+│  │User1 │User2 │User3 │                                   │
+│  └──┬───┴──┬───┴──┬───┘                                   │
+│     │      │      │                                        │
+│     ▼      ▼      ▼                                        │
+│  ┌────┐ ┌────┐ ┌────┐                                     │
+│  │ a  │ │ a  │ │ a  │                                     │
+│  │.txt│ │.txt│ │.txt│                                     │
+│  └────┘ └────┘ └────┘                                     │
+│                                                              │
+│  Each user has own directory                                │
+│  Same filename allowed for different users                  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 3. Tree-Structured Directory
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  TREE-STRUCTURED DIRECTORY                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│                          root                               │
+│                           │                                 │
+│        ┌───────────┬─────┴─────┬───────────┐              │
+│        │           │           │           │              │
+│       bin        home        etc         usr              │
+│        │           │           │           │              │
+│        │       ┌───┴───┐       │       ┌───┴───┐          │
+│        │       │       │       │       │       │          │
+│        ls    user1   user2   passwd  local  share        │
+│                │       │               │                  │
+│                │       │               │                  │
+│            ┌───┴───┐   │           ┌───┴───┐              │
+│            │       │   │           │       │              │
+│          docs   pics  docs        bin    lib              │
+│                                                              │
+│  Path: /home/user1/docs/file.txt                           │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 4. Acyclic Graph Directory
+- Allows sharing (links)
+- Multiple paths to same file
+- Need garbage collection
+
+### 5. General Graph Directory
+- Allows cycles
+- Need cycle detection
+
+---
+
+# 3️⃣7️⃣ ADDED: FILE SYSTEM MOUNTING
+
+## 📌 Mounting
+Process of making a file system accessible.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    FILE SYSTEM MOUNTING                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Before Mount:                                              │
+│  ┌─────────────────┐         ┌─────────────────┐          │
+│  │ Existing FS     │         │ New FS (on /dev/sdb1)      │
+│  │                 │         │                 │          │
+│  │  /              │         │  /             │          │
+│  │  ├── home       │         │  ├── users     │          │
+│  │  ├── etc        │         │  └── data      │          │
+│  │  └── usr        │         └─────────────────┘          │
+│  └─────────────────┘                                       │
+│                                                              │
+│  Mount Command: mount /dev/sdb1 /mnt                       │
+│                                                              │
+│  After Mount:                                               │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  /                                                     │  │
+│  │  ├── home                                              │  │
+│  │  ├── etc                                               │  │
+│  │  ├── usr                                               │  │
+│  │  └── mnt  ←─── Mount point                            │  │
+│  │       ├── users                                        │  │
+│  │       └── data                                         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 3️⃣8️⃣ ADDED: FILE SHARING & PROTECTION
+
+## 📌 File Protection Mechanisms
+
+### 1. Access Control Lists (ACL)
+- List of users/groups with permissions
+- Fine-grained control
+
+### 2. UNIX Permissions (rwx)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    UNIX FILE PERMISSIONS                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ls -l output:                                              │
+│  -rwxr-xr-- 1 user group 1024 Jan 1 12:00 file.txt        │
+│  │└┬┘└┬┘└┬┘                                               │
+│  │ │  │  └── Other permissions (r--)                       │
+│  │ │  └───── Group permissions (r-x)                       │
+│  │ └──────── Owner permissions (rwx)                       │
+│  └────────── File type (- = regular file)                  │
+│                                                              │
+│  Permission Bits:                                           │
+│  r = 4 (read)                                              │
+│  w = 2 (write)                                             │
+│  x = 1 (execute)                                           │
+│                                                              │
+│  chmod 755 file.txt                                        │
+│  Owner: 7 = rwx (4+2+1)                                    │
+│  Group: 5 = r-x (4+0+1)                                    │
+│  Other: 5 = r-x (4+0+1)                                    │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 3. Access Matrix
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    ACCESS MATRIX                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│          │ File1 │ File2 │ File3 │ Printer │               │
+│──────────┼───────┼───────┼───────┼─────────┤               │
+│ User A   │  rw   │   r   │   -   │    -    │               │
+│ User B   │   r   │  rw   │   r   │    -    │               │
+│ User C   │   -   │   -   │  rw   │    -    │               │
+│ Group G  │   r   │   r   │   r   │    w    │               │
+│                                                              │
+│  Implementation:                                            │
+│  • Row-wise: Capability lists                               │
+│  • Column-wise: Access Control Lists                        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 3️⃣9️⃣ DISK SCHEDULING (DETAILED)
+
+## 📌 Disk Structure
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    DISK STRUCTURE                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                    Platter                           │  │
+│  │  ┌───────────────────────────────────────────────┐  │  │
+│  │  │  Track t                                      │  │  │
+│  │  │  ┌────────────────────────────────────────┐  │  │  │
+│  │  │  │  Sector s                              │  │  │  │
+│  │  │  │  ┌────┐                                │  │  │  │
+│  │  │  │  │Data│                                │  │  │  │
+│  │  │  │  └────┘                                │  │  │  │
+│  │  │  └────────────────────────────────────────┘  │  │  │
+│  │  └───────────────────────────────────────────────┘  │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+│  Disk Access Time = Seek Time + Rotational Latency + Transfer Time │
+│                                                              │
+│  • Seek Time: Time to move arm to correct cylinder (slowest) │
+│  • Rotational Latency: Time for sector to rotate under head │
+│  • Transfer Time: Time to read/write data                  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔹 Disk Scheduling Algorithms - COMPLETE
+
+### 1. FCFS (First-Come, First-Served)
+**Example:** Requests: 98, 183, 37, 122, 14, 124, 65, 67
+Head start: 53
+
+**Movement:** 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67
+**Total Seek:** (45) + (85) + (146) + (85) + (108) + (110) + (59) + (2) = **640 cylinders**
+
+### 2. SSTF (Shortest Seek Time First)
+**Example:** Same requests
+**Movement:** 53 → 65 → 67 → 37 → 14 → 98 → 122 → 124 → 183
+**Total Seek:** (12) + (2) + (30) + (23) + (84) + (24) + (2) + (59) = **236 cylinders**
+
+**Problem:** Starvation (far away requests may never be served)
+
+### 3. SCAN (Elevator)
+- Move in one direction, serve all requests, then reverse
+
+**Example:** Direction = toward 199
+**Movement:** 53 → 37 → 14 → 0 → 65 → 67 → 98 → 122 → 124 → 183 → 199
+**Total Seek:** (16) + (23) + (14) + (65) + (2) + (31) + (24) + (2) + (59) + (16) = **252 cylinders**
+
+### 4. C-SCAN (Circular SCAN)
+- Move to one end, serve, then jump to other end without serving
+
+**Movement:** 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37
+**Total Seek:** (12) + (2) + (31) + (24) + (2) + (59) + (16) + (199) + (14) + (23) = **382 cylinders**
+
+### 5. LOOK
+- SCAN but only go until last request
+
+**Movement:** 53 → 65 → 67 → 98 → 122 → 124 → 183 → 37 → 14
+**Total Seek:** (12) + (2) + (31) + (24) + (2) + (59) + (146) + (23) = **299 cylinders**
+
+### 6. C-LOOK
+- C-SCAN but only go until last request
+
+**Movement:** 53 → 65 → 67 → 98 → 122 → 124 → 183 → 14 → 37
+**Total Seek:** (12) + (2) + (31) + (24) + (2) + (59) + (169) + (23) = **322 cylinders**
+
+---
+
+## 📊 Disk Scheduling Comparison
+
+| Algorithm | Throughput | Response Time | Starvation | Implementation |
+|-----------|------------|---------------|------------|----------------|
+| **FCFS** | Low | High | No | Simplest |
+| **SSTF** | High | Low | Yes | Moderate |
+| **SCAN** | High | Moderate | No | Moderate |
+| **C-SCAN** | High | Uniform | No | Moderate |
+| **LOOK** | Very High | Low | No | Complex |
+| **C-LOOK** | Very High | Uniform | No | Complex |
+
+---
+
+## 🧠 Memory Trick: "FSS CLC" - Disk Scheduling
+
+**F**CFS  
+**S**STF  
+**S**CAN  
+**C**-SCAN  
+**L**OOK  
+**C**-LOOK
+
+**"Fast Students Study Computer Learning Carefully"**
+
+---
+
+# 4️⃣0️⃣ ADDED: DISK MANAGEMENT
+
+## 📌 Disk Management Tasks
+
+### 1. Disk Formatting
+- **Low-level formatting**: Divides disk into sectors
+- **Logical formatting**: Creates file system
+
+### 2. Boot Block
+- Contains bootstrap code
+- First sector of disk (MBR)
+
+### 3. Bad Block Management
+- Sectors that go bad
+- Handled by controller or OS
+
+---
+
+# 4️⃣1️⃣ ADDED: RAID STRUCTURE
+
+## 📌 RAID Levels
+
+| Level | Description | Min Disks | Pros | Cons |
+|-------|-------------|-----------|------|------|
+| **RAID 0** | Striping | 2 | Best performance | No redundancy |
+| **RAID 1** | Mirroring | 2 | Excellent redundancy | 50% capacity |
+| **RAID 2** | Bit-level striping | 3 | Error correction | Complex |
+| **RAID 3** | Byte-level with parity | 3 | Good for large data | Dedicated parity disk |
+| **RAID 4** | Block-level with parity | 3 | Better than RAID 3 | Parity bottleneck |
+| **RAID 5** | Distributed parity | 3 | Good balance | Slow writes |
+| **RAID 6** | Double parity | 4 | Fault tolerant | More overhead |
+| **RAID 10** | Mirror + Stripe | 4 | Best of both | Expensive |
+
+---
+
+# 4️⃣2️⃣ SYSTEM CALLS (DETAILED)
+
+## 📌 System Call Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    SYSTEM CALL FLOW                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  User Program                                               │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  #include <stdio.h>                                  │  │
+│  │  int main() {                                        │  │
+│  │      printf("Hello");  ←── User code                │  │
+│  │      return 0;                                       │  │
+│  │  }                                                   │  │
+│  └─────────────────────────┬────────────────────────────┘  │
+│                            │                                │
+│                            ▼                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Standard Library (glibc)                           │  │
+│  │  printf() calls write()                             │  │
+│  │  write() prepares system call                       │  │
+│  └─────────────────────────┬────────────────────────────┘  │
+│                            │                                │
+│                            ▼                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  System Call Interface                               │  │
+│  │  • Save registers                                    │  │
+│  │  • Put system call number in register               │  │
+│  │  • Execute TRAP instruction                         │  │
+│  │  • Switch to kernel mode                            │  │
+│  └─────────────────────────┬────────────────────────────┘  │
+│                            │                                │
+│                            ▼                                │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Kernel                                               │  │
+│  │  • Dispatch to handler based on number               │  │
+│  │  • Execute sys_write()                               │  │
+│  │  • Display "Hello"                                   │  │
+│  │  • Return to user mode                               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+# 4️⃣3️⃣ ADDED: TYPES OF SYSTEM CALLS - ALL
+
+## 📌 Complete List of System Call Types
+
+### 1. Process Control
+| System Call | Description | Example |
+|-------------|-------------|---------|
+| **fork()** | Create new process | `pid = fork()` |
+| **exec()** | Replace process image | `execlp("ls", "ls", NULL)` |
+| **wait()** | Wait for child | `wait(&status)` |
+| **exit()** | Terminate process | `exit(0)` |
+| **getpid()** | Get process ID | `pid = getpid()` |
+| **nice()** | Change priority | `nice(10)` |
+
+### 2. File Management
+| System Call | Description | Example |
+|-------------|-------------|---------|
+| **open()** | Open file | `fd = open("file.txt", O_RDONLY)` |
+| **read()** | Read from file | `n = read(fd, buffer, size)` |
+| **write()** | Write to file | `n = write(fd, buffer, size)` |
+| **close()** | Close file | `close(fd)` |
+| **lseek()** | Reposition file pointer | `lseek(fd, offset, SEEK_SET)` |
+| **stat()** | Get file info | `stat("file.txt", &buf)` |
+
+### 3. Device Management
+| System Call | Description |
+|-------------|-------------|
+| **ioctl()** | Device control |
+| **read()** | Read from device |
+| **write()** | Write to device |
+
+### 4. Information Maintenance
+| System Call | Description |
+|-------------|-------------|
+| **getpid()** | Get process ID |
+| **alarm()** | Set alarm clock |
+| **sleep()** | Sleep for time |
+| **time()** | Get current time |
+
+### 5. Communication
+| System Call | Description |
+|-------------|-------------|
+| **pipe()** | Create pipe |
+| **shmget()** | Create shared memory |
+| **shmat()** | Attach shared memory |
+| **msgget()** | Create message queue |
+| **msgsnd()** | Send message |
+| **msgrcv()** | Receive message |
+| **socket()** | Create socket |
+
+### 6. Protection
+| System Call | Description |
+|-------------|-------------|
+| **chmod()** | Change permissions |
+| **chown()** | Change owner |
+| **umask()** | Set file creation mask |
+
+---
+
+# 4️⃣4️⃣ ADDED: SYSTEM PROGRAMS
+
+## 📌 System Programs
+Programs that provide a convenient environment for program development and execution.
+
+### Categories
+
+| Category | Examples |
+|----------|----------|
+| **File Management** | cp, mv, rm, ls, mkdir |
+| **Status Information** | date, time, ps, df, du |
+| **File Modification** | vi, emacs, nano |
+| **Programming Support** | compilers, assemblers, debuggers |
+| **Program Loading** | loaders, linkers |
+| **Communications** | ssh, ftp, telnet |
+| **Background Services** | daemons (httpd, sshd) |
+
+---
+
+# 4️⃣5️⃣ ADDED: OS DESIGN APPROACHES
+
+## 📌 OS Design Goals
+
+### 1. User Goals
+- Easy to use
+- Easy to learn
+- Reliable
+- Fast
+- Secure
+
+### 2. System Goals
+- Easy to design
+- Easy to implement
+- Easy to maintain
+- Flexible
+- Efficient
+
+---
+
+# 4️⃣6️⃣ ADDED: VIRTUAL MACHINES
+
+## 📌 Virtual Machine Concept
+Allows multiple OSes to run on same hardware.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    VIRTUAL MACHINES                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  Guest OS 1    │  Guest OS 2    │  Guest OS 3       │  │
+│  │   (Windows)    │   (Linux)      │   (macOS)         │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              Hypervisor (VMM)                        │  │
+│  │         (Virtual Machine Monitor)                    │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                           │                                 │
+│                           ▼                                 │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │                   Hardware                            │  │
+│  │              (CPU, Memory, Disk, I/O)                │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Types of Hypervisors
+
+| Type | Description | Examples |
+|------|-------------|----------|
+| **Type 1 (Bare-metal)** | Runs directly on hardware | VMware ESXi, Xen, KVM |
+| **Type 2 (Hosted)** | Runs on host OS | VirtualBox, VMware Workstation |
+
+---
+
+# 4️⃣7️⃣ ADDED: DISTRIBUTED SYSTEMS
+
+## 📌 Distributed System Concepts
+
+### Characteristics
+- Multiple computers connected via network
+- Appear as single system to user
+- Resource sharing
+- Transparency
+
+### Types of Transparency
+
+| Transparency | Description |
+|--------------|-------------|
+| **Access** | Hide differences in data representation |
+| **Location** | Hide where resource is located |
+| **Migration** | Hide movement of resources |
+| **Relocation** | Hide movement during use |
+| **Replication** | Hide replication of resources |
+| **Concurrency** | Hide sharing of resources |
+| **Failure** | Hide failure and recovery |
+
+---
+
+# 4️⃣8️⃣ ADDED: PROTECTION & SECURITY
+
+## 📌 Protection vs Security
+
+| Aspect | Protection | Security |
+|--------|------------|----------|
+| **Focus** | Internal threats | External threats |
+| **Mechanisms** | Access control, permissions | Authentication, encryption |
+| **Scope** | Within system | System boundaries |
+
+## 🔹 Security Threats
+
+| Threat | Description | Example |
+|--------|-------------|---------|
+| **Interruption** | Resource destroyed/unavailable | Denial of Service |
+| **Interception** | Unauthorized access | Eavesdropping |
+| **Modification** | Unauthorized alteration | Data tampering |
+| **Fabrication** | Fake objects inserted | Spoofing |
+
+## 🔹 Security Measures
+
+| Measure | Description |
+|---------|-------------|
+| **Authentication** | Verify identity (password, biometric) |
+| **Authorization** | Determine access rights |
+| **Encryption** | Data protection (AES, RSA) |
+| **Auditing** | Track activities |
+| **Firewall** | Network filtering |
+| **IDS/IPS** | Intrusion detection/prevention |
+
+---
+
+# 4️⃣9️⃣ COMPARISON TABLES (COMPLETE)
+
+## Table 1: OS Types Comparison
+
+| Type | CPU Utilization | Response Time | User Interaction | Example |
+|------|----------------|---------------|------------------|---------|
+| Batch | Medium | Hours | No | IBM OS/360 |
+| Time-sharing | High | Seconds | Yes | Unix |
+| Real-time | Deterministic | Microseconds | Limited | VxWorks |
+| Multiprogramming | Very High | Minutes | Limited | Early mainframes |
+| Distributed | High | Variable | Yes | Cloud OS |
+
+## Table 2: Scheduling Algorithms
+
+| Algorithm | Type | Preemptive? | Starvation? | Complexity |
+|-----------|------|-------------|-------------|------------|
+| FCFS | Non-preemptive | No | No | Very Low |
+| SJF | Both | Optional | Yes | Medium |
+| SRTF | Preemptive | Yes | Yes | Medium |
+| Round Robin | Preemptive | Yes | No | Medium |
+| Priority | Both | Optional | Yes | Medium |
+| Multilevel Queue | Preemptive | Yes | Possible | High |
+
+## Table 3: Memory Management
+
+| Technique | Fragmentation | Hardware Support | Complexity |
+|-----------|--------------|------------------|------------|
+| Fixed Partition | Internal | Low | Very Low |
+| Variable Partition | External | Low | Low |
+| Paging | Internal | High | Medium |
+| Segmentation | External | Medium | Medium |
+| Segmented Paging | Both | Very High | High |
+
+## Table 4: Page Replacement
+
+| Algorithm | Performance | Overhead | Belady's? |
+|-----------|-------------|----------|-----------|
+| FIFO | Poor | Low | Yes |
+| Optimal | Best | Impossible | No |
+| LRU | Good | High | No |
+| Clock | Good | Medium | No |
+| NRU | Fair | Low | No |
+
+## Table 5: Disk Scheduling
+
+| Algorithm | Throughput | Fairness | Direction |
+|-----------|-----------|----------|-----------|
+| FCFS | Low | Perfect | Both |
+| SSTF | High | Poor | Both |
+| SCAN | High | Good | One |
+| C-SCAN | High | Very Good | Circular |
+| LOOK | Very High | Good | One |
+| C-LOOK | Very High | Very Good | Circular |
+
+---
+
+# 5️⃣0️⃣ 100+ PRACTICE MCQs (MHT MCA CET Level)
+
+## Section A: OS Basics (Questions 1-10)
+
+**1. Which of the following is NOT a function of operating system?**
+a) Process Management
+b) Memory Management
+c) Compilation
+d) File Management
+
+✅ **Answer: c) Compilation**
+
+---
+
+**2. What is the core part of operating system called?**
+a) Shell
+b) Kernel
+c) BIOS
+d) Driver
+
+✅ **Answer: b) Kernel**
+
+---
+
+**3. Which type of OS provides guaranteed response time?**
+a) Batch OS
+b) Time-sharing OS
+c) Real-time OS
+d) Distributed OS
+
+✅ **Answer: c) Real-time OS**
+
+---
+
+**4. Which of the following is a real-time operating system?**
+a) Windows 10
+b) Linux
+c) VxWorks
+d) macOS
+
+✅ **Answer: c) VxWorks**
+
+---
+
+**5. What is the main advantage of microkernel architecture?**
+a) Faster execution
+b) More stable and secure
+c) Simpler design
+d) Less memory usage
+
+✅ **Answer: b) More stable and secure**
+
+---
+
+**6. Which of the following is an example of open source OS?**
+a) Windows
+b) macOS
+c) Linux
+d) iOS
+
+✅ **Answer: c) Linux**
+
+---
+
+**7. What does CLI stand for?**
+a) Command Line Interface
+b) Computer Language Interface
+c) Common Language Interface
+d) Control Language Interface
+
+✅ **Answer: a) Command Line Interface**
+
+---
+
+**8. Which component is always in memory?**
+a) Shell
+b) Application
+c) Kernel
+d) Utility programs
+
+✅ **Answer: c) Kernel**
+
+---
+
+**9. What is the main purpose of an operating system?**
+a) To compile programs
+b) To manage resources
+c) To design hardware
+d) To write applications
+
+✅ **Answer: b) To manage resources**
+
+---
+
+**10. Which type of OS allows multiple users to interact simultaneously?**
+a) Batch OS
+b) Time-sharing OS
+c) Single-user OS
+d) Embedded OS
+
+✅ **Answer: b) Time-sharing OS**
+
+---
+
+## Section B: Process Management (Questions 11-25)
+
+**11. Which scheduling algorithm may cause the convoy effect?**
+a) SJF
+b) Round Robin
+c) FCFS
+d) Priority
+
+✅ **Answer: c) FCFS**
+
+---
+
+**12. In which scheduling, each process gets fixed time quantum?**
+a) FCFS
+b) SJF
+c) Round Robin
+d) Priority
+
+✅ **Answer: c) Round Robin**
+
+---
+
+**13. What is the smallest unit of execution within a process?**
+a) Program
+b) Thread
+c) Job
+d) Task
+
+✅ **Answer: b) Thread**
+
+---
+
+**14. Which state is NOT a valid process state?**
+a) Ready
+b) Running
+c) Waiting
+d) Holding
+
+✅ **Answer: d) Holding**
+
+---
+
+**15. What does PCB stand for?**
+a) Process Control Block
+b) Program Control Block
+c) Process Code Block
+d) Program Code Block
+
+✅ **Answer: a) Process Control Block**
+
+---
+
+**16. What is response time in CPU scheduling?**
+a) Total time to complete
+b) Time from submission to first response
+c) Time waiting in queue
+d) Time for I/O
+
+✅ **Answer: b) Time from submission to first response**
+
+---
+
+**17. Which of the following is a preemptive scheduling algorithm?**
+a) FCFS
+b) SJF (non-preemptive)
+c) Round Robin
+d) All of these
+
+✅ **Answer: c) Round Robin**
+
+---
+
+**18. What is context switching?**
+a) Switching between processes
+b) Switching between programs
+c) Saving and restoring process state
+d) All of the above
+
+✅ **Answer: d) All of the above**
+
+---
+
+**19. What is the solution to starvation in priority scheduling?**
+a) FCFS
+b) Aging
+c) Round Robin
+d) Multilevel queue
+
+✅ **Answer: b) Aging**
+
+---
+
+**20. Which scheduling algorithm gives minimum average waiting time?**
+a) FCFS
+b) SJF
+c) Round Robin
+d) Priority
+
+✅ **Answer: b) SJF**
+
+---
+
+**21. What is the degree of multiprogramming?**
+a) Number of CPUs
+b) Number of processes in memory
+c) Number of I/O devices
+d) Number of users
+
+✅ **Answer: b) Number of processes in memory**
+
+---
+
+**22. What is turnaround time?**
+a) Time from submission to completion
+b) Time from submission to first response
+c) Time waiting in ready queue
+d) Time for I/O
+
+✅ **Answer: a) Time from submission to completion**
+
+---
+
+**23. Which scheduling algorithm is best for time-sharing systems?**
+a) FCFS
+b) SJF
+c) Round Robin
+d) Priority
+
+✅ **Answer: c) Round Robin**
+
+---
+
+**24. In Round Robin, if time quantum is too large, it becomes like:**
+a) FCFS
+b) SJF
+c) Priority
+d) SRTF
+
+✅ **Answer: a) FCFS**
+
+---
+
+**25. Which of the following is NOT stored in PCB?**
+a) Process ID
+b) Program Counter
+c) File data
+d) CPU registers
+
+✅ **Answer: c) File data**
+
+---
+
+## Section C: Memory Management (Questions 26-40)
+
+**26. Which memory management technique divides memory into fixed-sized blocks?**
+a) Segmentation
+b) Paging
+c) Partitioning
+d) Swapping
+
+✅ **Answer: b) Paging**
+
+---
+
+**27. What is thrashing?**
+a) High CPU utilization
+b) Excessive paging
+c) Deadlock situation
+d) Process termination
+
+✅ **Answer: b) Excessive paging**
+
+---
+
+**28. Which page replacement algorithm suffers from Belady's Anomaly?**
+a) LRU
+b) Optimal
+c) FIFO
+d) MFU
+
+✅ **Answer: c) FIFO**
+
+---
+
+**29. What is the function of the Memory Management Unit (MMU)?**
+a) Manage CPU registers
+b) Translate virtual to physical addresses
+c) Schedule processes
+d) Handle I/O
+
+✅ **Answer: b) Translate virtual to physical addresses**
+
+---
+
+**30. Which memory allocation technique leads to external fragmentation?**
+a) Paging
+b) Segmentation
+c) Both
+d) Neither
+
+✅ **Answer: b) Segmentation**
+
+---
+
+**31. Which technique allows running programs larger than physical memory?**
+a) Paging
+b) Segmentation
+c) Virtual Memory
+d) Swapping
+
+✅ **Answer: c) Virtual Memory**
+
+---
+
+**32. In paging, what is a page fault?**
+a) Error in page table
+b) Page not in memory
+c) Page corrupted
+d) Page table full
+
+✅ **Answer: b) Page not in memory**
+
+---
+
+**33. Which replacement algorithm replaces the page that will not be used for the longest time?**
+a) FIFO
+b) LRU
+c) Optimal
+d) Clock
+
+✅ **Answer: c) Optimal**
+
+---
+
+**34. What does TLB stand for?**
+a) Translation Lookaside Buffer
+b) Table Lookup Buffer
+c) Translation Level Buffer
+d) Table Level Buffer
+
+✅ **Answer: a) Translation Lookaside Buffer**
+
+---
+
+**35. Which is NOT a page replacement algorithm?**
+a) LRU
+b) FIFO
+c) SSTF
+d) Optimal
+
+✅ **Answer: c) SSTF (Disk scheduling)**
+
+---
+
+**36. What is internal fragmentation?**
+a) Wasted space inside allocated block
+b) Wasted space between blocks
+c) Total free memory
+d) Memory not used by OS
+
+✅ **Answer: a) Wasted space inside allocated block**
+
+---
+
+**37. What is external fragmentation?**
+a) Wasted space inside allocated block
+b) Total free memory not contiguous
+c) Memory used by OS
+d) Page table overhead
+
+✅ **Answer: b) Total free memory not contiguous**
+
+---
+
+**38. In paging, logical memory is divided into:**
+a) Frames
+b) Pages
+c) Segments
+d) Partitions
+
+✅ **Answer: b) Pages**
+
+---
+
+**39. In paging, physical memory is divided into:**
+a) Frames
+b) Pages
+c) Segments
+d) Partitions
+
+✅ **Answer: a) Frames**
+
+---
+
+**40. Which bit indicates a page has been modified?**
+a) Present bit
+b) Dirty bit
+c) Reference bit
+d) Protection bit
+
+✅ **Answer: b) Dirty bit**
+
+---
+
+## Section D: Deadlocks (Questions 41-50)
+
+**41. How many conditions are necessary for deadlock?**
+a) 2
+b) 3
+c) 4
+d) 5
+
+✅ **Answer: c) 4**
+
+---
+
+**42. Which algorithm is used for deadlock avoidance?**
+a) FCFS
+b) Banker's Algorithm
+c) SJF
+d) LRU
+
+✅ **Answer: b) Banker's Algorithm**
+
+---
+
+**43. Which of the following is NOT a deadlock condition?**
+a) Mutual Exclusion
+b) Hold and Wait
+c) Preemption
+d) Circular Wait
+
+✅ **Answer: c) Preemption** (No Preemption is the condition)
+
+---
+
+**44. What is the "Ostrich algorithm" in deadlock handling?**
+a) Prevent deadlock
+b) Avoid deadlock
+c) Ignore deadlock
+d) Detect deadlock
+
+✅ **Answer: c) Ignore deadlock**
+
+---
+
+**45. In Resource Allocation Graph, a cycle indicates:**
+a) Always deadlock
+b) Possible deadlock
+c) No deadlock
+d) Starvation
+
+✅ **Answer: b) Possible deadlock**
+
+---
+
+**46. Which condition can be broken by ordering resources?**
+a) Mutual Exclusion
+b) Hold and Wait
+c) No Preemption
+d) Circular Wait
+
+✅ **Answer: d) Circular Wait**
+
+---
+
+**47. What does the Banker's Algorithm check for?**
+a) Deadlock prevention
+b) Safe state
+c) Page faults
+d) CPU utilization
+
+✅ **Answer: b) Safe state**
+
+---
+
+**48. In deadlock recovery, what is a victim?**
+a) Process to be killed
+b) Resource to be added
+c) Memory to be freed
+d) CPU to be allocated
+
+✅ **Answer: a) Process to be killed**
+
+---
+
+**49. Which is NOT a deadlock handling method?**
+a) Prevention
+b) Avoidance
+c) Detection
+d) Acceleration
+
+✅ **Answer: d) Acceleration**
+
+---
+
+**50. What is the main problem with deadlock avoidance?**
+a) Too slow
+b) Requires advance knowledge of Max needs
+c) Complex to implement
+d) Wastes resources
+
+✅ **Answer: b) Requires advance knowledge of Max needs**
+
+---
+
+## Section E: File Systems (Questions 51-60)
+
+**51. Which directory is at the top of the file system hierarchy?**
+a) Home
+b) Root
+c) System
+d) Main
+
+✅ **Answer: b) Root**
+
+---
+
+**52. What does inode contain?**
+a) File data
+b) File metadata
+c) Directory entries
+d) File name
+
+✅ **Answer: b) File metadata**
+
+---
+
+**53. Which file allocation method suffers from external fragmentation?**
+a) Contiguous
+b) Linked
+c) Indexed
+d) All of these
+
+✅ **Answer: a) Contiguous**
+
+---
+
+**54. Which file access method is best for databases?**
+a) Sequential
+b) Direct
+c) Indexed
+d) All of these
+
+✅ **Answer: c) Indexed**
+
+---
+
+**55. What does 'rwx' mean in file permissions?**
+a) Read, Write, Execute
+b) Read, Write, Xfer
+c) Run, Write, Xfer
+d) Read, Write, eXecute
+
+✅ **Answer: a) Read, Write, Execute**
+
+---
+
+**56. What is the meaning of chmod 755?**
+a) Owner: rwx, Group: r-x, Other: r-x
+b) Owner: rwx, Group: rwx, Other: r-x
+c) Owner: r-x, Group: rwx, Other: rwx
+d) Owner: rwx, Group: r-x, Other: ---
+
+✅ **Answer: a) Owner: rwx, Group: r-x, Other: r-x**
+
+---
+
+**57. Which is NOT a file operation?**
+a) Open
+b) Read
+c) Compile
+d) Write
+
+✅ **Answer: c) Compile**
+
+---
+
+**58. What is a superblock?**
+a) File system metadata
+b) First block of file
+c) Directory structure
+d) Boot code
+
+✅ **Answer: a) File system metadata**
+
+---
+
+**59. Which directory structure allows sharing?**
+a) Single-level
+b) Two-level
+c) Tree-structured
+d) Acyclic graph
+
+✅ **Answer: d) Acyclic graph**
+
+---
+
+**60. What is mounting?**
+a) Creating file
+b) Making file system accessible
+c) Deleting file
+d) Copying file
+
+✅ **Answer: b) Making file system accessible**
+
+---
+
+## Section F: Disk Scheduling (Questions 61-70)
+
+**61. Which disk scheduling algorithm is also called elevator algorithm?**
+a) FCFS
+b) SSTF
+c) SCAN
+d) C-LOOK
+
+✅ **Answer: c) SCAN**
+
+---
+
+**62. What is seek time?**
+a) Time to rotate to sector
+b) Time to move arm to cylinder
+c) Time to transfer data
+d) Total access time
+
+✅ **Answer: b) Time to move arm to cylinder**
+
+---
+
+**63. Which disk scheduling algorithm may cause starvation?**
+a) FCFS
+b) SSTF
+c) SCAN
+d) C-SCAN
+
+✅ **Answer: b) SSTF**
+
+---
+
+**64. Which algorithm provides uniform waiting time?**
+a) FCFS
+b) SSTF
+c) SCAN
+d) C-SCAN
+
+✅ **Answer: d) C-SCAN**
+
+---
+
+**65. What is rotational latency?**
+a) Time to move arm
+b) Time for sector to rotate under head
+c) Time to transfer data
+d) Time to process request
+
+✅ **Answer: b) Time for sector to rotate under head**
+
+---
+
+**66. Which is NOT a disk scheduling algorithm?**
+a) FCFS
+b) SSTF
+c) LRU
+d) SCAN
+
+✅ **Answer: c) LRU (Page replacement)**
+
+---
+
+**67. In SCAN algorithm, the arm moves:**
+a) Only in one direction
+b) Both directions
+c) Randomly
+d) To shortest seek first
+
+✅ **Answer: b) Both directions**
+
+---
+
+**68. In C-SCAN algorithm, the arm moves:**
+a) Only in one direction
+b) Both directions
+c) Randomly
+d) To shortest seek first
+
+✅ **Answer: a) Only in one direction**
+
+---
+
+**69. What is the fastest component of disk access?**
+a) Seek time
+b) Rotational latency
+c) Transfer time
+d) All are equal
+
+✅ **Answer: c) Transfer time**
+
+---
+
+**70. What is the slowest component of disk access?**
+a) Seek time
+b) Rotational latency
+c) Transfer time
+d) All are equal
+
+✅ **Answer: a) Seek time**
+
+---
+
+## Section G: System Calls (Questions 71-80)
+
+**71. Which system call creates a new process in UNIX?**
+a) new()
+b) create()
+c) fork()
+d) process()
+
+✅ **Answer: c) fork()**
+
+---
+
+**72. Which system call is used for file reading?**
+a) get()
+b) read()
+c) input()
+d) receive()
+
+✅ **Answer: b) read()**
+
+---
+
+**73. What is the purpose of exec() system call?**
+a) Create new process
+b) Replace process image
+c) Terminate process
+d) Wait for child
+
+✅ **Answer: b) Replace process image**
+
+---
+
+**74. Which system call terminates a process?**
+a) kill()
+b) exit()
+c) end()
+d) stop()
+
+✅ **Answer: b) exit()**
+
+---
+
+**75. What is a system call?**
+a) Call to another program
+b) Interface to OS kernel
+c) Function in C library
+d) Hardware instruction
+
+✅ **Answer: b) Interface to OS kernel**
+
+---
+
+**76. Which system call creates a pipe?**
+a) pipe()
+b) createpipe()
+c) mkpipe()
+d) newpipe()
+
+✅ **Answer: a) pipe()**
+
+---
+
+**77. What does wait() system call do?**
+a) Sleep for time
+b) Wait for child to finish
+c) Wait for I/O
+d) Wait for signal
+
+✅ **Answer: b) Wait for child to finish**
+
+---
+
+**78. Which system call changes file permissions?**
+a) perm()
+b) chmod()
+c) chperm()
+d) mod()
+
+✅ **Answer: b) chmod()**
+
+---
+
+**79. What is the purpose of open() system call?**
+a) Create new file
+b) Open existing file
+c) Both a and b
+d) Close file
+
+✅ **Answer: c) Both a and b**
+
+---
+
+**80. Which system call returns process ID?**
+a) getpid()
+b) pid()
+c) processid()
+d) id()
+
+✅ **Answer: a) getpid()**
+
+---
+
+## Section H: Threads (Questions 81-90)
+
+**81. What is a thread?**
+a) Lightweight process
+b) Heavyweight process
+c) Program
+d) File
+
+✅ **Answer: a) Lightweight process**
+
+---
+
+**82. Threads within the same process share:**
+a) Stack
+b) Registers
+c) Code and Data
+d) Program Counter
+
+✅ **Answer: c) Code and Data**
+
+---
+
+**83. Which is NOT a multithreading model?**
+a) Many-to-One
+b) One-to-One
+c) Many-to-Many
+d) One-to-Many
+
+✅ **Answer: d) One-to-Many**
+
+---
+
+**84. In Many-to-One model, if one thread blocks:**
+a) Only that thread blocks
+b) All threads block
+c) Process terminates
+d) Thread continues
+
+✅ **Answer: b) All threads block**
+
+---
+
+**85. Which model allows maximum parallelism?**
+a) Many-to-One
+b) One-to-One
+c) Many-to-Many
+d) All equal
+
+✅ **Answer: b) One-to-One**
+
+---
+
+**86. Thread creation is _____ than process creation:**
+a) Faster
+b) Slower
+c) Same
+d) Not comparable
+
+✅ **Answer: a) Faster**
+
+---
+
+**87. Context switch between threads is _____ than between processes:**
+a) Faster
+b) Slower
+c) Same
+d) Not comparable
+
+✅ **Answer: a) Faster**
+
+---
+
+**88. What is thread-local storage?**
+a) Data shared by all threads
+b) Data private to each thread
+c) Data in kernel
+d) Data on disk
+
+✅ **Answer: b) Data private to each thread**
+
+---
+
+**89. Which is an example of user-level thread?**
+a) Windows threads
+b) Linux threads
+c) Java threads (green threads)
+d) POSIX threads
+
+✅ **Answer: c) Java threads (green threads)**
+
+---
+
+**90. What is the main advantage of kernel-level threads?**
+a) Faster creation
+b) Can use multiple CPUs
+c) Less overhead
+d) Simpler implementation
+
+✅ **Answer: b) Can use multiple CPUs**
+
+---
+
+## Section I: Miscellaneous (Questions 91-100)
+
+**91. What is spooling?**
+a) Simultaneous Peripheral Operations On-Line
+b) Process synchronization
+c) Memory management
+d) CPU scheduling
+
+✅ **Answer: a) Simultaneous Peripheral Operations On-Line**
+
+---
+
+**92. What does RAID stand for?**
+a) Redundant Array of Inexpensive Disks
+b) Random Access Inexpensive Disks
+c) Rapid Access Inexpensive Drives
+d) Redundant Array of Independent Drives
+
+✅ **Answer: a) Redundant Array of Inexpensive Disks**
+
+---
+
+**93. Which RAID level uses mirroring?**
+a) RAID 0
+b) RAID 1
+c) RAID 5
+d) RAID 6
+
+✅ **Answer: b) RAID 1**
+
+---
+
+**94. Which RAID level uses striping with parity?**
+a) RAID 0
+b) RAID 1
+c) RAID 5
+d) RAID 10
+
+✅ **Answer: c) RAID 5**
+
+---
+
+**95. What is a Type 1 hypervisor?**
+a) Runs on host OS
+b) Runs directly on hardware
+c) Runs on another VM
+d) Runs in user space
+
+✅ **Answer: b) Runs directly on hardware**
+
+---
+
+**96. What is the main purpose of virtualization?**
+a) Run multiple OSes
+b) Faster computing
+c) Better graphics
+d) More storage
+
+✅ **Answer: a) Run multiple OSes**
+
+---
+
+**97. What is authentication?**
+a) Verifying user identity
+b) Granting permissions
+c) Encrypting data
+d) Auditing actions
+
+✅ **Answer: a) Verifying user identity**
+
+---
+
+**98. What is a Denial of Service attack?**
+a) Stealing data
+b) Making service unavailable
+c) Modifying data
+d) Unauthorized access
+
+✅ **Answer: b) Making service unavailable**
+
+---
+
+**99. What is the main function of a firewall?**
+a) Detect viruses
+b) Filter network traffic
+c) Encrypt data
+d) Authenticate users
+
+✅ **Answer: b) Filter network traffic**
+
+---
+
+**100. Which is NOT a security threat?**
+a) Interruption
+b) Interception
+c) Modification
+d) Compilation
+
+✅ **Answer: d) Compilation**
+
+---
+
+# 🔥 LAST MINUTE REVISION NOTES
+
+## ⚡ QUICK REFERENCE CARDS
+
+### Card 1: OS Basics
+```
+OS Definition: Interface between user and hardware
+Kernel: Core of OS, always in memory
+Shell: User interface (CLI/GUI)
+System Calls: Interface to kernel
+```
+
+### Card 2: OS Types
+```
+Batch    : Jobs in batches, no interaction
+Time-share: Multiple users, interactive
+RTOS     : Guaranteed response time
+Multi-prog: Multiple programs in memory
+Multi-task: Multiple tasks running
+Multi-proc: Multiple CPUs
+```
+
+### Card 3: Process States
+```
+NEW → READY → RUNNING → TERMINATED
+           ↑      ↓
+           ← WAITING
+PCB: Process Control Block (process info)
+```
+
+### Card 4: Scheduling Formulas
+```
+Turnaround Time = Completion - Arrival
+Waiting Time = Turnaround - Burst
+Response Time = First Response - Arrival
+CPU Utilization = Busy Time / Total Time
+Throughput = Processes / Time
+```
+
+### Card 5: Scheduling Algorithms
+```
+FCFS  : First come, Convoy effect
+SJF   : Min avg waiting, Starvation
+RR    : Time quantum, Fair
+Priority: Priority based, Aging needed
+```
+
+### Card 6: Memory Management
+```
+Paging     : Fixed size, No external frag
+Segmentation: Variable size, External frag
+Virtual Mem: Run larger programs
+Page Fault : Page not in memory
+Thrashing  : Excessive paging
+```
+
+### Card 7: Page Replacement
+```
+FIFO   : Oldest first, Belady's anomaly
+LRU    : Least recently used
+Optimal: Future knowledge (theoretical)
+Clock  : Second chance
+```
+
+### Card 8: Deadlock
+```
+4 Conditions: Mutual Exclusion, Hold & Wait,
+              No Preemption, Circular Wait
+Prevention: Break any condition
+Avoidance : Banker's Algorithm
+Detection : Wait-for graph
+Recovery  : Kill process, Preempt resources
+```
+
+### Card 9: File Systems
+```
+File Allocation: Contiguous, Linked, Indexed
+Directory: Single, Two-level, Tree, Graph
+Permissions: r (4), w (2), x (1)
+Mounting: Make FS accessible
+```
+
+### Card 10: Disk Scheduling
+```
+FCFS  : Simple, high seek
+SSTF  : Min seek, starvation
+SCAN  : Elevator, fair
+C-SCAN: Circular SCAN, uniform
+LOOK  : SCAN until last request
+C-LOOK: Circular LOOK
+```
+
+---
+
+## 🎯 IMPORTANT NUMBERS TO REMEMBER
+
+| Concept | Number |
+|---------|--------|
+| Deadlock conditions | 4 |
+| Process states (basic) | 5 |
+| Process states (with suspend) | 7 |
+| RAID levels | 0-6,10 |
+| File permission bits | 3 (rwx) |
+| Time quantum (typical) | 10-100 ms |
+| Page size (typical) | 4 KB |
+
+---
+
+## 🧠 MNEMONICS SUMMARY
+
+| Topic | Mnemonic | Meaning |
+|-------|----------|---------|
+| OS Functions | PMFDSA | Process, Memory, File, Device, Security, Accounting |
+| Deadlock Conditions | MHNC | Mutual, Hold, No preemption, Circular |
+| Scheduling | FSRP | FCFS, SJF, RR, Priority |
+| Page Replacement | FOLC | FIFO, Optimal, LRU, Clock |
+| Disk Scheduling | FSS CLC | FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK |
+| Memory Techniques | CPSV | Contiguous, Paging, Segmentation, Virtual |
+| File Allocation | CLI | Contiguous, Linked, Indexed |
+
+---
+
+# 📝 FINAL WORDS
+
+## 🎯 Exam Day Strategy
+
+1. **First 5 minutes**: Scan entire paper
+2. **Easy questions first**: Build confidence
+3. **Time management**: 1 minute per MCQ approx
+4. **Elimination**: Remove obviously wrong options
+5. **Guess smart**: If 2 options eliminated, 50% chance
+6. **Review**: Last 5 minutes for marked questions
+
+## ⚡ Most Important Topics (Weightage)
+
+| Topic | Weightage | Priority |
+|-------|-----------|----------|
+| CPU Scheduling | ⭐⭐⭐⭐⭐ | Highest |
+| Deadlocks | ⭐⭐⭐⭐⭐ | Highest |
+| Memory Management | ⭐⭐⭐⭐ | High |
+| Process Management | ⭐⭐⭐⭐ | High |
+| OS Basics/Types | ⭐⭐⭐ | Medium |
+| File Systems | ⭐⭐⭐ | Medium |
+| Disk Scheduling | ⭐⭐ | Low |
+| Threads | ⭐⭐ | Low |
+
+---
+
+## 🏆 SUCCESS FORMULA
+
+**70% Concepts + 20% Practice + 10% Strategy = 100% Success**
+
+---
+
+**Best of luck for your MHT MCA CET exam! You've got this!** 🎉🎯🚀
+
+**Prepared by: OS Master Guide**  
+**For MHT MCA CET Aspirants**

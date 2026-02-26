@@ -1,0 +1,2137 @@
+# 📚 COMPLETE GUIDE TO MAH MCA CET GRAMMAR SECTION
+
+## 🎯 **IMPORTANT UPDATE: Additional Topics to Cover**
+
+Based on the MAH MCA CET latest pattern, here are the **missing topics** that need to be added:
+
+### ❗ Missing Grammar Topics:
+1. **Active-Passive Voice**
+2. **Direct-Indirect Speech (Narration)**
+3. **Clauses (Noun, Adjective, Adverb Clauses)**
+4. **Phrasal Verbs**
+5. **Confusing Words (Homophones/Homonyms)**
+6. **Idioms and Phrases**
+7. **Synonyms and Antonyms**
+8. **One Word Substitution**
+9. **Spelling Rules and Common Misspellings**
+10. **Sentence Arrangement (Para Jumbles)**
+11. **Fill in the Blanks (with options)**
+12. **Cloze Test (Passage with blanks)**
+
+---
+
+# 📑 COMPLETE SECTION-WISE DETAILED GUIDE
+
+---
+
+# SECTION 1: ERROR DETECTION (SPOTTING ERRORS)
+
+## 📌 What is Error Detection?
+A sentence is divided into **3-4 parts** (labeled A, B, C, D). You must identify which part contains the grammatical mistake. If no error exists, choose "No error" (usually option D).
+
+**Example Format:**
+```
+The team of players (A) / are preparing (B) / for the match. (C) / No error (D)
+```
+
+## 🎯 **SHORTCUTS & TRICKS FOR ERROR DETECTION**
+
+### ⚡ **The 10-Second Scan Method**
+
+When you see an error detection question, quickly scan for these in order:
+
+| Step | What to Check | Time |
+|------|---------------|------|
+| 1 | Subject-Verb Agreement | 2 sec |
+| 2 | Tense (look for time words) | 2 sec |
+| 3 | Prepositions after verbs | 1 sec |
+| 4 | Articles (a/an/the) | 1 sec |
+| 5 | Pronouns (who/whom, I/me) | 1 sec |
+| 6 | Parallelism in lists | 1 sec |
+| 7 | Redundancy | 1 sec |
+| 8 | Comparatives | 1 sec |
+
+### ⚡ **Trick: The "Sound Test"**
+Read the sentence in your mind. If it sounds wrong, it probably IS wrong. Trust your ear for 80% of questions!
+
+### ⚡ **Trick: Elimination Technique**
+1. Identify parts that are DEFINITELY correct
+2. Focus on the remaining 1-2 suspicious parts
+3. Apply grammar rules to the suspicious part
+4. If all parts seem correct, choose "No error"
+
+### ⚡ **Trick: Common Error Probability**
+In MAH MCA CET, errors are most likely in:
+- **Part B** (40% probability)
+- **Part C** (30% probability)
+- **Part A** (20% probability)
+- **No error** (10% probability)
+
+---
+
+## 📋 **DETAILED ERROR TYPES WITH EXAMPLES**
+
+### TYPE 1: SUBJECT-VERB AGREEMENT ERRORS
+
+#### Rule 1: Singular Subject → Singular Verb
+| Incorrect | Correct | Explanation |
+|-----------|---------|-------------|
+| She **go** to school. | She **goes** to school. | She (singular) needs goes |
+| He **play** cricket. | He **plays** cricket. | He (singular) needs plays |
+| The boy **run** fast. | The boy **runs** fast. | Boy (singular) needs runs |
+
+#### Rule 2: Plural Subject → Plural Verb
+| Incorrect | Correct | Explanation |
+|-----------|---------|-------------|
+| They **goes** to school. | They **go** to school. | They (plural) needs go |
+| The boys **runs** fast. | The boys **run** fast. | Boys (plural) needs run |
+
+#### Rule 3: Each/Every/Either/Neither + Noun → Singular Verb
+| Incorrect | Correct |
+|-----------|---------|
+| Each student **are** ready. | Each student **is** ready. |
+| Every boy **have** passed. | Every boy **has** passed. |
+| Either option **are** fine. | Either option **is** fine. |
+| Neither answer **were** correct. | Neither answer **was** correct. |
+
+#### Rule 4: Neither...Nor / Either...Or → Verb agrees with NEAREST subject
+| Incorrect | Correct |
+|-----------|---------|
+| Neither Ram nor his friends **is** coming. | Neither Ram nor his friends **are** coming. |
+| Neither his friends nor Ram **are** coming. | Neither his friends nor Ram **is** coming. |
+| Either the teacher or the students **is** wrong. | Either the teacher or the students **are** wrong. |
+| Either the students or the teacher **are** wrong. | Either the students or the teacher **is** wrong. |
+
+#### 🔥 **SHORTCUT:** In Neither/Nor and Either/Or, look at the SECOND subject (the one after nor/or). That decides the verb!
+
+#### Rule 5: One of + Plural Noun → Singular Verb
+| Incorrect | Correct |
+|-----------|---------|
+| One of the boys **are** absent. | One of the boys **is** absent. |
+| One of the cars **were** damaged. | One of the cars **was** damaged. |
+| One of the best students **have** won. | One of the best students **has** won. |
+
+#### 🔥 **SHORTCUT:** "One of" ALWAYS takes singular verb. Remember: One → Singular
+
+#### Rule 6: The number of → Singular | A number of → Plural
+| Incorrect | Correct |
+|-----------|---------|
+| The number of students **are** increasing. | The number of students **is** increasing. |
+| A number of students **is** present. | A number of students **are** present. |
+
+#### 🔥 **SHORTCUT:** 
+- "The number" (The = definite = singular)
+- "A number" (A = indefinite = many = plural)
+
+#### Rule 7: Collective Nouns (Team, Family, Crowd, Committee) → Usually Singular
+| Incorrect | Correct |
+|-----------|---------|
+| The team **are** playing well. | The team **is** playing well. |
+| The family **have** arrived. | The family **has** arrived. |
+| The committee **were** unanimous. | The committee **was** unanimous. |
+
+**Exception:** If members act individually → Plural
+- The family **are** eating dinner. (each person eating separately)
+- The team **are** arguing among themselves. (individual members arguing)
+
+#### Rule 8: Nouns ending in 's' but Singular (News, Mathematics, Physics)
+| Incorrect | Correct |
+|-----------|---------|
+| The news **are** good. | The news **is** good. |
+| Mathematics **are** difficult. | Mathematics **is** difficult. |
+| Economics **were** his favorite. | Economics **was** his favorite. |
+
+**List of such words:**
+- News, Mathematics, Physics, Economics, Politics, Athletics, Gymnastics, Measles, Mumps, Rickets
+
+#### Rule 9: Nouns always Plural (Scissors, Trousers, Glasses)
+| Incorrect | Correct |
+|-----------|---------|
+| This scissors **is** sharp. | These scissors **are** sharp. |
+| His trousers **was** torn. | His trousers **were** torn. |
+| The glasses **is** on the table. | The glasses **are** on the table. |
+
+#### Rule 10: Measurements/Amounts → Usually Singular
+| Incorrect | Correct |
+|-----------|---------|
+| Ten kilometers **are** a long distance. | Ten kilometers **is** a long distance. |
+| Five thousand rupees **are** too much. | Five thousand rupees **is** too much. |
+| Two hours **are** enough time. | Two hours **is** enough time. |
+
+#### Rule 11: There/Here sentences → Verb agrees with subject AFTER verb
+| Incorrect | Correct |
+|-----------|---------|
+| There **is** many books. | There **are** many books. |
+| Here **come** the bus. | Here **comes** the bus. |
+
+#### Rule 12: Titles/Names → Singular even if plural in form
+| Incorrect | Correct |
+|-----------|---------|
+| "The Adventures of Tom Sawyer" **are** famous. | "The Adventures of Tom Sawyer" **is** famous. |
+| The United States **are** powerful. | The United States **is** powerful. |
+
+#### Rule 13: Relative Pronouns (who/which/that) → Verb agrees with ANTECEDENT
+| Incorrect | Correct |
+|-----------|---------|
+| He is one of those who **works** hard. | He is one of those who **work** hard. |
+| This is the boy who **work** hard. | This is the boy who **works** hard. |
+
+#### 🔥 **SHORTCUT:** Find what "who/which/that" refers to. If it refers to plural → plural verb, singular → singular verb.
+
+#### Rule 14: Subjects with "as well as, along with, together with, including"
+→ Verb agrees with FIRST subject
+
+| Incorrect | Correct |
+|-----------|---------|
+| The teacher, along with the students, **are** going. | The teacher, along with the students, **is** going. |
+| Ram, as well as his friends, **were** present. | Ram, as well as his friends, **was** present. |
+
+#### 🔥 **SHORTCUT:** Ignore the phrases between commas (as well as, along with, together with). Look at the first subject only!
+
+---
+
+### TYPE 2: TENSE ERRORS
+
+#### Rule 1: Past Time Marker → Past Tense
+| Incorrect | Correct |
+|-----------|---------|
+| I have seen him **yesterday**. | I **saw** him yesterday. |
+| She has gone **last week**. | She **went** last week. |
+| They have arrived **ago**. | They **arrived** ago. |
+
+**Time Markers for Past Tense:**
+- yesterday, last night/week/month/year, ago, in 1990, the other day
+
+#### Rule 2: Since/For → Present Perfect or Perfect Continuous
+| Incorrect | Correct |
+|-----------|---------|
+| She is living here **since** 2020. | She **has been living** here since 2020. |
+| I know him **for** 5 years. | I **have known** him for 5 years. |
+
+**Time Markers for Present Perfect:**
+- since, for, already, just, ever, never, yet, recently, lately
+
+#### Rule 3: Sequence of Tenses (Indirect Speech)
+| Incorrect | Correct |
+|-----------|---------|
+| He said that he **is** coming. | He said that he **was** coming. |
+| She told me that she **will** help. | She told me that she **would** help. |
+
+**Rule:** If reporting verb is in past tense (said, told), the reported speech must be in past tense.
+
+#### Rule 4: Habitual Actions → Present Tense
+| Incorrect | Correct |
+|-----------|---------|
+| He **is going** to school daily. | He **goes** to school daily. |
+| She **is waking** up at 6 AM every day. | She **wakes** up at 6 AM every day. |
+
+#### Rule 5: Universal Truths → Present Tense (even in past context)
+| Correct Usage |
+|---------------|
+| The teacher said that the earth **is** round. (NOT was) |
+| He knew that water **boils** at 100°C. (NOT boiled) |
+
+#### 📊 **TENSE TIME MARKERS QUICK REFERENCE**
+
+| Tense | Time Markers |
+|-------|--------------|
+| Simple Present | always, usually, often, sometimes, rarely, never, every day |
+| Present Continuous | now, at present, at the moment, Look! Listen! |
+| Present Perfect | since, for, already, just, ever, never, yet, recently |
+| Simple Past | yesterday, last night, ago, in 2000, the other day |
+| Past Continuous | at 5 PM yesterday, while, when (interrupted action) |
+| Past Perfect | before, after, already, by the time |
+| Future | tomorrow, next week, soon, in the future |
+| Future Perfect | by tomorrow, by next week, by 2025 |
+
+---
+
+### TYPE 3: PREPOSITION ERRORS
+
+#### 📌 **FIXED PREPOSITIONS (MUST MEMORIZE)**
+
+| Verb + Preposition | Example |
+|-------------------|---------|
+| Accused **of** | He was accused **of** theft. |
+| Addicted **to** | She is addicted **to** coffee. |
+| Afraid **of** | The child is afraid **of** dogs. |
+| Agree **with** (person) | I agree **with** you. |
+| Agree **to** (proposal) | He agreed **to** the plan. |
+| Angry **with** (person) | She was angry **with** me. |
+| Angry **at** (situation) | He was angry **at** the result. |
+| Apologize **for** | She apologized **for** her mistake. |
+| Apply **for** (job) | He applied **for** the post. |
+| Apply **to** (institution) | She applied **to** Harvard. |
+| Arrive **at** (small place) | We arrived **at** the airport. |
+| Arrive **in** (city/country) | They arrived **in** Mumbai. |
+| Believe **in** | Do you believe **in** God? |
+| Belong **to** | This book belongs **to** me. |
+| Beware **of** | Beware **of** dogs. |
+| Blame **for** | He blamed me **for** the mistake. |
+| Borrow **from** | I borrowed money **from** him. |
+| Care **about** | I don't care **about** money. |
+| Care **for** (look after) | She cares **for** her parents. |
+| Compare **with** (similarities) | Compare this **with** that. |
+| Compare **to** (likeness) | He compared her **to** a rose. |
+| Complain **about** | They complained **about** the food. |
+| Complain **of** (pain) | He complained **of** headache. |
+| Consist **of** | Water consists **of** hydrogen. |
+| Deal **with** | How to deal **with** problems? |
+| Depend **on** | It depends **on** you. |
+| Die **of** (disease) | He died **of** cancer. |
+| Die **from** (injury) | He died **from** wounds. |
+| Different **from** | This is different **from** that. |
+| Disappointed **with** (person) | I'm disappointed **with** you. |
+| Disappointed **at** (result) | He was disappointed **at** the score. |
+| Divide **into** (parts) | Divide the cake **into** pieces. |
+| Dream **of** (aspire) | She dreams **of** becoming a doctor. |
+| Dream **about** (while sleeping) | I dreamed **about** you. |
+| Excuse **for** | What's your excuse **for** being late? |
+| Famous **for** | She is famous **for** her singing. |
+| Fill **with** | Fill the glass **with** water. |
+| Get **rid of** | Get rid **of** bad habits. |
+| Glad **about** | I'm glad **about** your success. |
+| Good **at** | He is good **at** mathematics. |
+| Grateful **to** (person) | I'm grateful **to** you. |
+| Grateful **for** (thing) | I'm grateful **for** your help. |
+| Guess **at** | Can you guess **at** the answer? |
+| Happen **to** | What happened **to** you? |
+| Hear **of** (know about) | I've never heard **of** him. |
+| Hear **from** (receive news) | I heard **from** her yesterday. |
+| Hope **for** | Let's hope **for** the best. |
+| Insist **on** | He insisted **on** paying. |
+| Interested **in** | She is interested **in** music. |
+| Invest **in** | Invest **in** shares. |
+| Involved **in** | He is involved **in** politics. |
+| Jealous **of** | He is jealous **of** my success. |
+| Know **about** | I know **about** the plan. |
+| Laugh **at** | Don't laugh **at** others. |
+| Listen **to** | Listen **to** me carefully. |
+| Look **at** | Look **at** the board. |
+| Look **for** (search) | I'm looking **for** my keys. |
+| Look **after** (take care) | She looks **after** her grandmother. |
+| Look **forward to** | I look forward **to** meeting you. |
+| Married **to** | She is married **to** a doctor. |
+| Object **to** | I object **to** this proposal. |
+| Occur **to** (idea) | It never occurred **to** me. |
+| Pay **for** | Who will pay **for** this? |
+| Pleased **with** | The teacher is pleased **with** me. |
+| Pray **to** (God) | Pray **to** God. |
+| Pray **for** (someone) | I'll pray **for** you. |
+| Prefer **to** | I prefer tea **to** coffee. |
+| Prepare **for** | Prepare **for** the exam. |
+| Prevent **from** | Prevent him **from** going. |
+| Proud **of** | I'm proud **of** you. |
+| Provide **with** | Provide us **with** food. |
+| Recover **from** | He recovered **from** illness. |
+| Related **to** | She is related **to** me. |
+| Rely **on** | You can rely **on** me. |
+| Remind **of** | This reminds me **of** my childhood. |
+| Responsible **for** | Who is responsible **for** this? |
+| Result **in** (lead to) | Smoking results **in** cancer. |
+| Result **from** (caused by) | Cancer results **from** smoking. |
+| Run **after** (chase) | The dog ran **after** the cat. |
+| Run **over** (hit by vehicle) | He was run **over** by a car. |
+| Search **for** | Search **for** the truth. |
+| See **to** (arrange) | I'll see **to** the arrangements. |
+| Similar **to** | This is similar **to** that. |
+| Sit **on** (chair) | Sit **on** the chair. |
+| Sit **in** (armchair) | Sit **in** the armchair. |
+| Smile **at** | She smiled **at** me. |
+| Speak **to/with** | May I speak **to** you? |
+| Succeed **in** | He succeeded **in** life. |
+| Suffer **from** | She suffers **from** asthma. |
+| Sure **of/about** | Are you sure **about** that? |
+| Surprised **at** | I'm surprised **at** you. |
+| Take care **of** | Take care **of** yourself. |
+| Talk **about** | What are you talking **about**? |
+| Think **of/about** | What do you think **about** this? |
+| Tired **of** | I'm tired **of** waiting. |
+| Translate **into** | Translate this **into** Hindi. |
+| Trust **in** | Trust **in** God. |
+| Wait **for** | Wait **for** me. |
+| Warn **against** | He warned me **against** smoking. |
+| Wonder **at** | I wonder **at** his behavior. |
+| Worry **about** | Don't worry **about** me. |
+| Write **to** | Write **to** me soon. |
+
+#### 🔥 **SHORTCUT FOR PREPOSITIONS:**
+1. If verb is followed by a person → check fixed preposition
+2. If verb is followed by a thing → check fixed preposition
+3. Memorize the 50 most common ones (marked with ★)
+
+---
+
+### TYPE 4: ARTICLE ERRORS (A/AN/THE)
+
+#### Rule 1: 'A' before consonant SOUND (not letter)
+| Incorrect | Correct | Reason |
+|-----------|---------|--------|
+| **an** university | **a** university | "university" starts with "yu" sound (consonant) |
+| **an** European | **a** European | "European" starts with "yu" sound |
+| **an** one-eyed man | **a** one-eyed man | "one" starts with "wu" sound |
+| **an** useful thing | **a** useful thing | "useful" starts with "yu" sound |
+| **a** honest man | **an** honest man | "honest" starts with "o" sound (vowel) |
+| **a** hour | **an** hour | "hour" starts with "ow" sound (vowel) |
+| **a** MCA student | **an** MCA student | "MCA" starts with "em" sound (vowel) |
+| **a** FBI agent | **an** FBI agent | "FBI" starts with "ef" sound (vowel) |
+
+#### 🔥 **SHORTCUT FOR A/AN:**
+- Say the word aloud. If the FIRST SOUND is a vowel (a, e, i, o, u) → use "an"
+- If the FIRST SOUND is a consonant → use "a"
+
+**Sound Check Examples:**
+- University = "Yoo-niversity" (Y = consonant) → a university
+- Honest = "O-nest" (O = vowel) → an honest
+- Hour = "Ow-er" (Ow = vowel) → an hour
+- One = "Wun" (W = consonant) → a one-eyed
+- European = "Yoo-ro-pean" (Y = consonant) → a European
+- MCA = "Em-see-ay" (E = vowel) → an MCA
+
+#### Rule 2: First mention → a/an, Subsequent mention → the
+| Incorrect | Correct |
+|-----------|---------|
+| I saw **a** lion. **A** lion was big. | I saw **a** lion. **The** lion was big. |
+
+#### Rule 3: Unique things → 'the'
+| Incorrect | Correct |
+|-----------|---------|
+| Sun is bright. | **The** sun is bright. |
+| Moon is beautiful. | **The** moon is beautiful. |
+| Earth is round. | **The** earth is round. |
+| Sky is blue. | **The** sky is blue. |
+
+#### Rule 4: Superlatives → 'the'
+| Incorrect | Correct |
+|-----------|---------|
+| He is **best** student. | He is **the** best student. |
+| This is **most** expensive. | This is **the** most expensive. |
+| She is **tallest** girl. | She is **the** tallest girl. |
+
+#### Rule 5: Ordinals (first, second, last) → 'the'
+| Incorrect | Correct |
+|-----------|---------|
+| He came **first**. | He came **the** first. |
+| This is **second** time. | This is **the** second time. |
+| She was **last** to arrive. | She was **the** last to arrive. |
+
+#### Rule 6: Musical instruments → 'the'
+| Incorrect | Correct |
+|-----------|---------|
+| She plays **piano**. | She plays **the** piano. |
+| He learns **guitar**. | He learns **the** guitar. |
+
+#### Rule 7: Before rivers, seas, oceans, mountain ranges → 'the'
+| Correct Usage |
+|---------------|
+| **the** Ganges, **the** Yamuna |
+| **the** Pacific Ocean, **the** Arabian Sea |
+| **the** Himalayas, **the** Alps |
+
+#### Rule 8: Before countries with plural names or Republic/Kingdom → 'the'
+| Correct Usage |
+|---------------|
+| **the** United States, **the** United Kingdom |
+| **the** Netherlands, **the** Philippines |
+| **the** Czech Republic |
+
+#### Rule 9: Before adjectives representing a class → 'the'
+| Correct Usage |
+|---------------|
+| **the** rich, **the** poor, **the** young, **the** elderly |
+| **the** disabled, **the** unemployed |
+
+#### 📌 **WHEN NOT TO USE 'THE'**
+
+| Situation | Incorrect | Correct |
+|-----------|-----------|---------|
+| Proper nouns (names) | **the** Mumbai | Mumbai |
+| Abstract nouns (general) | **the** life is hard | Life is hard |
+| Plural nouns (general) | **the** dogs are loyal | Dogs are loyal |
+| Meals (general) | **the** breakfast is ready | Breakfast is ready |
+| Languages | **the** Hindi is easy | Hindi is easy |
+| Games/Sports | **the** cricket is fun | Cricket is fun |
+| Most countries | **the** India | India |
+| Streets/Roads | **the** Park Street | Park Street |
+| Mountains (single) | **the** Mount Everest | Mount Everest |
+| Lakes | **the** Lake Superior | Lake Superior |
+
+---
+
+### TYPE 5: PRONOUN ERRORS
+
+#### 📌 **PRONOUN CASES**
+
+| Subject Pronoun | Object Pronoun | Possessive Adjective | Possessive Pronoun | Reflexive |
+|-----------------|----------------|----------------------|-------------------|-----------|
+| I | me | my | mine | myself |
+| You | you | your | yours | yourself |
+| He | him | his | his | himself |
+| She | her | her | hers | herself |
+| It | it | its | its | itself |
+| We | us | our | ours | ourselves |
+| They | them | their | theirs | themselves |
+
+#### Rule 1: Subject Pronoun (I, he, she, they, we) → Used as SUBJECT of verb
+| Incorrect | Correct |
+|-----------|---------|
+| **Me** and my friend went. | **My friend and I** went. |
+| **Him** and her are coming. | **He** and **she** are coming. |
+| **Us** students are ready. | **We** students are ready. |
+
+#### 🔥 **SHORTCUT:** If the pronoun is DOING the action → use subject pronoun (I, he, she, they, we)
+
+#### Rule 2: Object Pronoun (me, him, her, them, us) → Used as OBJECT of verb/preposition
+| Incorrect | Correct |
+|-----------|---------|
+| Between you and **I** | Between you and **me** |
+| She gave it to **he** and **I** | She gave it to **him** and **me** |
+| Please call **she** and **I** | Please call **her** and **me** |
+
+#### 🔥 **SHORTCUT:** If the pronoun is RECEIVING the action or comes after a preposition → use object pronoun (me, him, her, them, us)
+
+#### Rule 3: Who vs Whom
+| Incorrect | Correct |
+|-----------|---------|
+| The man **whom** is here | The man **who** is here |
+| The man **who** I saw | The man **whom** I saw |
+
+#### 🔥 **THE WHO/WHOM TRICK:**
+- If you can replace with **HE/SHE/THEY** → use **WHO**
+- If you can replace with **HIM/HER/THEM** → use **WHOM**
+
+**Examples:**
+- "The man ___ is here" → **HE** is here → WHO
+- "The man ___ I saw" → I saw **HIM** → WHOM
+- "___ did you meet?" → You met **HIM** → WHOM
+- "___ is coming?" → **HE** is coming → WHO
+
+#### Rule 4: Each/Everyone/Everybody/Someone/Anybody/No one → Singular Pronouns
+| Incorrect | Correct |
+|-----------|---------|
+| Everyone brought **their** book. | Everyone brought **his/her** book. |
+| Each student must submit **their** assignment. | Each student must submit **his/her** assignment. |
+| Nobody likes **their** boss. | Nobody likes **his/her** boss. |
+
+#### 🔥 **SHORTCUT:** Words ending in -one, -body, -thing are SINGULAR → use singular pronouns
+
+#### Rule 5: Reflexive Pronouns (myself, yourself, himself)
+| Incorrect | Correct |
+|-----------|---------|
+| He did it **hisself**. | He did it **himself**. |
+| They enjoyed **theirselves**. | They enjoyed **themselves**. |
+| Please give it to **myself**. | Please give it to **me**. |
+
+**When to use Reflexive Pronouns:**
+1. Subject and object are same: I hurt **myself**.
+2. For emphasis: I **myself** saw it.
+
+#### Rule 6: Possessive before Gerund (-ing form as noun)
+| Incorrect | Correct |
+|-----------|---------|
+| I hate **him** coming late. | I hate **his** coming late. |
+| Do you mind **me** smoking? | Do you mind **my** smoking? |
+
+#### Rule 7: Its vs It's
+| Incorrect | Correct |
+|-----------|---------|
+| The dog wagged **it's** tail. | The dog wagged **its** tail. |
+| **Its** a beautiful day. | **It's** a beautiful day. |
+
+**Difference:**
+- **Its** = possessive form of it
+- **It's** = it is (contraction)
+
+#### Rule 8: Your vs You're
+| Incorrect | Correct |
+|-----------|---------|
+| **Your** late for class. | **You're** late for class. |
+| I like **you're** dress. | I like **your** dress. |
+
+**Difference:**
+- **Your** = possessive form of you
+- **You're** = you are (contraction)
+
+#### Rule 9: Their vs There vs They're
+| Incorrect | Correct |
+|-----------|---------|
+| **There** car is red. | **Their** car is red. |
+| **Their** is a problem. | **There** is a problem. |
+| **There** coming tomorrow. | **They're** coming tomorrow. |
+
+**Difference:**
+- **Their** = possessive form of they
+- **There** = place or existence
+- **They're** = they are (contraction)
+
+---
+
+### TYPE 6: ADJECTIVE VS ADVERB ERRORS
+
+#### Rule 1: Adjective describes Noun | Adverb describes Verb
+| Incorrect | Correct | Explanation |
+|-----------|---------|-------------|
+| She is **beautifully**. | She is **beautiful**. | Describes noun "she" → adjective |
+| She sings **beautiful**. | She sings **beautifully**. | Describes verb "sings" → adverb |
+| He is **careful** driver. | He is a **careful** driver. | Describes noun "driver" → adjective |
+| He drives **careful**. | He drives **carefully**. | Describes verb "drives" → adverb |
+
+#### Rule 2: Linking Verbs (be, seem, appear, look, feel, smell, taste, sound, become) → Take Adjectives
+| Incorrect | Correct |
+|-----------|---------|
+| She feels **badly**. | She feels **bad**. |
+| It tastes **sweetly**. | It tastes **sweet**. |
+| He looks **angrily**. | He looks **angry**. |
+| The soup smells **deliciously**. | The soup smells **delicious**. |
+
+#### 🔥 **SHORTCUT:** After linking verbs (is, am, are, was, were, seem, appear, look, feel, smell, taste, sound, become) → use ADJECTIVE, not adverb
+
+#### Rule 3: Good vs Well
+| Incorrect | Correct |
+|-----------|---------|
+| She sings **good**. | She sings **well**. |
+| I am **well** at math. | I am **good** at math. |
+| He is a **well** player. | He is a **good** player. |
+
+**Difference:**
+- **Good** = adjective (describes nouns)
+- **Well** = adverb (describes verbs) OR adjective meaning "healthy"
+
+**Examples:**
+- She is a **good** singer. (adjective describing singer)
+- She sings **well**. (adverb describing sings)
+- I am **well**. (adjective meaning healthy)
+
+#### Rule 4: Real vs Really
+| Incorrect | Correct |
+|-----------|---------|
+| It is **real** beautiful. | It is **really** beautiful. |
+| She is **real** intelligent. | She is **really** intelligent. |
+
+**Difference:**
+- **Real** = adjective (describes nouns)
+- **Really** = adverb (describes adjectives/verbs)
+
+#### Rule 5: Sure vs Surely
+| Incorrect | Correct |
+|-----------|---------|
+| He **sure** is smart. | He **surely** is smart. |
+| I am **surely** about it. | I am **sure** about it. |
+
+---
+
+### TYPE 7: PARALLELISM ERRORS
+
+#### Rule: Items in a list must have the SAME GRAMMATICAL FORM
+
+| Incorrect | Correct |
+|-----------|---------|
+| She likes **dancing**, **to sing**, and **reading**. | She likes **dancing**, **singing**, and **reading**. |
+| He is **intelligent**, **hardworking**, and **has honesty**. | He is **intelligent**, **hardworking**, and **honest**. |
+| I came **to see**, **to learn**, and **understanding**. | I came **to see**, **to learn**, and **to understand**. |
+| The exam was **long**, **difficult**, and **frustratingly**. | The exam was **long**, **difficult**, and **frustrating**. |
+
+#### 🔥 **PARALLELISM PATTERNS:**
+
+| Pattern | Example |
+|---------|---------|
+| Noun, noun, and noun | She bought apples, bananas, and oranges. |
+| Adjective, adjective, and adjective | He is tall, dark, and handsome. |
+| -ing, -ing, and -ing | She enjoys reading, writing, and painting. |
+| to + verb, to + verb, and to + verb | He wants to eat, to sleep, and to relax. |
+| Verb, verb, and verb | They ran, jumped, and shouted. |
+
+#### Common Parallelism Errors in Correlative Conjunctions:
+
+| Correlative Pair | Incorrect | Correct |
+|-----------------|-----------|---------|
+| not only...but also | He **not only** lost his ticket **but also** his luggage. | He lost **not only** his ticket **but also** his luggage. |
+| either...or | You can **either** have tea **or** coffee. | ✓ (if followed by same form) |
+| neither...nor | He **neither** eats fish **nor** meat. | He eats **neither** fish **nor** meat. |
+| both...and | She is **both** intelligent **and** hardworking. | ✓ |
+
+---
+
+### TYPE 8: DOUBLE NEGATIVE ERRORS
+
+#### Rule: Only ONE negative per sentence
+
+| Incorrect | Correct |
+|-----------|---------|
+| I don't know **nothing**. | I don't know **anything**. |
+| He didn't see **nobody**. | He didn't see **anybody**. |
+| She never goes **nowhere**. | She never goes **anywhere**. |
+| I can't find it **nowhere**. | I can't find it **anywhere**. |
+| He hasn't got **no** money. | He hasn't got **any** money. |
+| We didn't do **nothing**. | We didn't do **anything**. |
+
+#### 📌 **NEGATIVE WORDS:**
+- no, not, never, nothing, nobody, nowhere, none, neither
+- hardly, scarcely, barely (these are also negative)
+
+#### 🔥 **SHORTCUT:** If you see two negatives in a sentence, one of them is wrong. Replace the second negative with "any" word.
+
+**Negative + Any Rule:**
+- nothing → anything
+- nobody → anybody
+- nowhere → anywhere
+- none → any
+- no → any
+
+---
+
+### TYPE 9: COMPARATIVE/SUPERLATIVE ERRORS
+
+#### Rule 1: No Double Comparatives
+| Incorrect | Correct |
+|-----------|---------|
+| She is **more smarter** than me. | She is **smarter** than me. |
+| This is **more better**. | This is **better**. |
+| He is **most tallest**. | He is **tallest**. |
+
+#### Rule 2: Absolute Adjectives (cannot be compared)
+| Incorrect | Correct |
+|-----------|---------|
+| This is **more unique**. | This is **unique**. |
+| It is **most perfect**. | It is **perfect**. |
+| She is **more dead** than alive. | She is dead. |
+
+**List of Absolute Adjectives:**
+- unique, perfect, complete, entire, total, absolute
+- impossible, eternal, infinite, universal
+- round, square, circular, triangular
+- dead, alive, pregnant, married
+
+#### Rule 3: Two items → Comparative (better) | Three+ items → Superlative (best)
+| Incorrect | Correct |
+|-----------|---------|
+| He is the **best** of the two. | He is the **better** of the two. |
+| She is the **taller** of the three. | She is the **tallest** of the three. |
+| This is the **better** option among all. | This is the **best** option among all. |
+
+#### Rule 4: Comparative with "than" | Superlative with "of/in"
+| Correct Usage |
+|---------------|
+| She is **taller than** me. |
+| She is the **tallest of** all. |
+| She is the **tallest in** the class. |
+
+#### Rule 5: Avoid self-comparison with "any"
+| Incorrect | Correct |
+|-----------|---------|
+| She is taller than **any** student. | She is taller than **any other** student. |
+| Mumbai is bigger than **any** city. | Mumbai is bigger than **any other** city. |
+
+**Reason:** Without "other", she is comparing herself to herself (she is also a student)
+
+#### Rule 6: Comparative Forms
+
+| Adjective | Comparative | Superlative |
+|-----------|-------------|-------------|
+| good | better | best |
+| bad | worse | worst |
+| far | farther (distance) / further (additional) | farthest / furthest |
+| little | less | least |
+| many/much | more | most |
+
+---
+
+### TYPE 10: CONJUNCTION ERRORS
+
+#### Rule 1: Though/Although + clause → No "but"
+| Incorrect | Correct |
+|-----------|---------|
+| **Though** he tried **but** he failed. | **Though** he tried, he failed. |
+| **Although** she was tired **but** she worked. | **Although** she was tired, she worked. |
+
+#### Rule 2: Because/Since/As + clause → No "so"
+| Incorrect | Correct |
+|-----------|---------|
+| **Because** he was ill **so** he stayed home. | **Because** he was ill, he stayed home. |
+| **Since** it was raining **so** we stayed in. | **Since** it was raining, we stayed in. |
+
+#### Rule 3: Correlative Conjunctions must be paired correctly
+
+| Pair | Incorrect | Correct |
+|------|-----------|---------|
+| neither...nor | He **neither** eats fish **or** meat. | He **neither** eats fish **nor** meat. |
+| either...or | He **either** eats fish **nor** meat. | He **either** eats fish **or** meat. |
+| not only...but also | He **not only** eats fish **but** meat. | He **not only** eats fish **but also** meat. |
+| both...and | He **both** eats fish **and** meat. | ✓ |
+| whether...or | I don't know **whether** he comes **or** not. | ✓ |
+
+#### Rule 4: No sooner...than | Hardly/Scarcely...when
+| Incorrect | Correct |
+|-----------|---------|
+| No sooner did he see the police **when** he ran. | No sooner did he see the police **than** he ran. |
+| Hardly had he reached **than** it started. | Hardly had he reached **when** it started. |
+
+#### 🔥 **SHORTCUT:**
+- No sooner → than
+- Hardly/Scarcely → when/before
+
+---
+
+### TYPE 11: MISPLACED MODIFIERS
+
+#### Rule: The modifier should be NEXT to what it describes
+
+| Incorrect | Correct |
+|-----------|---------|
+| **Running fast**, the bus was missed by him. | **Running fast**, he missed the bus. |
+| **Covered in rust**, he bought the old car. | He bought the old car **that was covered in rust**. |
+| I saw a dog **on the way to school**. | **On the way to school**, I saw a dog. |
+| She almost drove her kids to school every day. | She drove her kids to school **almost every day**. |
+| He sold the car to the man **with leather seats**. | He sold the car **with leather seats** to the man. |
+
+#### 🔥 **DANGLING MODIFIER TRICK:**
+If a sentence starts with an -ing phrase, the next word MUST be the doer of that action.
+
+❌ **Walking down the street**, the building looked beautiful. (Building can't walk)
+✔ **Walking down the street**, I saw a beautiful building. (I can walk)
+
+❌ **To pass the exam**, hard work is needed. (Hard work can't pass exam)
+✔ **To pass the exam**, you need to work hard.
+
+---
+
+### TYPE 12: REDUNDANCY ERRORS
+
+#### Rule: Avoid unnecessary repetition
+
+| Incorrect | Correct |
+|-----------|---------|
+| **Return back** | Return |
+| **Repeat again** | Repeat |
+| **Advance forward** | Advance |
+| **Join together** | Join |
+| **Revert back** | Revert |
+| **Free gift** | Gift |
+| **Past history** | History |
+| **Final conclusion** | Conclusion |
+| **End result** | Result |
+| **Each and every** | Each or Every |
+| **First and foremost** | First or Foremost |
+| **Basic fundamentals** | Basics or Fundamentals |
+| **Close proximity** | Proximity |
+| **Completely unanimous** | Unanimous |
+| **Cooperate together** | Cooperate |
+| **Exactly identical** | Identical |
+| **Important essentials** | Essentials |
+| **New innovation** | Innovation |
+| **Personal opinion** | Opinion |
+| **Refer back** | Refer |
+| **Still continues** | Continues |
+| **True facts** | Facts |
+
+#### 🔥 **REDUNDANCY SHORTCUT:**
+If two words mean the same thing, remove one!
+
+---
+
+### TYPE 13: CONDITIONAL SENTENCE ERRORS
+
+#### 📊 **CONDITIONAL TYPES**
+
+| Type | Usage | Structure | Example |
+|------|-------|-----------|---------|
+| Zero | Always true | If + present, present | If you heat ice, it melts. |
+| First | Possible/Real | If + present, will + V1 | If it rains, we will cancel. |
+| Second | Unlikely/Imaginary | If + past, would + V1 | If I were rich, I would travel. |
+| Third | Impossible past | If + had + V3, would have + V3 | If I had studied, I would have passed. |
+
+#### Common Errors:
+
+**Error 1: Using "will" in if-clause**
+❌ If it **will rain**, we will cancel.
+✔ If it **rains**, we will cancel.
+
+**Error 2: Using "would" in if-clause**
+❌ If I **would** be rich, I would travel.
+✔ If I **were** rich, I would travel.
+
+**Error 3: Using "was" instead of "were" in Second Conditional**
+❌ If I **was** you, I would accept.
+✔ If I **were** you, I would accept.
+❌ If she **was** here, she would help.
+✔ If she **were** here, she would help.
+
+#### 🔥 **CONDITIONAL SHORTCUT:**
+- If-clause (condition) → NEVER use will/would/should/could
+- Main clause (result) → use will/would/should/could
+
+#### 📝 **CONDITIONAL CHEAT SHEET:**
+
+| Situation | If-clause | Main clause |
+|-----------|-----------|-------------|
+| Possible future | Present tense | will + V1 |
+| Unlikely present | Past tense | would + V1 |
+| Impossible past | had + V3 | would have + V3 |
+
+---
+
+### TYPE 14: GERUND/INFINITIVE ERRORS
+
+#### Verbs followed by GERUND (-ing)
+
+| Verb | Example |
+|------|---------|
+| enjoy | I enjoy **playing** cricket. |
+| avoid | Avoid **eating** junk food. |
+| consider | Consider **applying** for the job. |
+| suggest | She suggested **going** to the park. |
+| mind | Do you mind **waiting**? |
+| finish | He finished **writing** the letter. |
+| practice | Practice **speaking** English. |
+| admit | He admitted **stealing** the money. |
+| deny | She denied **breaking** the vase. |
+| imagine | Imagine **living** on the moon. |
+| risk | Don't risk **losing** your job. |
+| miss | I miss **seeing** you. |
+| keep | Keep **trying**. |
+| quit | He quit **smoking**. |
+
+#### Verbs followed by INFINITIVE (to + V1)
+
+| Verb | Example |
+|------|---------|
+| want | I want **to play** cricket. |
+| decide | She decided **to apply** for the job. |
+| hope | I hope **to see** you soon. |
+| plan | They plan **to build** a house. |
+| promise | He promised **to help** me. |
+| agree | She agreed **to come**. |
+| refuse | He refused **to pay**. |
+| learn | I learned **to swim**. |
+| forget | Don't forget **to call**. |
+| remember | Remember **to lock** the door. |
+| need | You need **to study**. |
+| offer | He offered **to drive** me home. |
+| seem | She seems **to be** happy. |
+
+#### Verbs followed by BOTH (with meaning change)
+
+| Verb | + Gerund | + Infinitive |
+|------|----------|--------------|
+| remember | I remember **locking** the door. (past memory) | Remember **to lock** the door. (don't forget) |
+| forget | I'll never forget **meeting** her. (past memory) | Don't forget **to meet** her. (don't fail to) |
+| stop | He stopped **smoking**. (quit) | He stopped **to smoke**. (paused for) |
+| try | Try **pressing** the button. (experiment) | Try **to press** the button. (attempt) |
+| regret | I regret **telling** him. (sorry for past) | I regret **to tell** you. (sorry to inform) |
+
+---
+
+### TYPE 15: QUESTION TAG ERRORS
+
+#### Rule 1: Positive statement → Negative tag
+| Statement | Tag |
+|-----------|-----|
+| She is coming, | **isn't she?** |
+| You like coffee, | **don't you?** |
+| He can swim, | **can't he?** |
+
+#### Rule 2: Negative statement → Positive tag
+| Statement | Tag |
+|-----------|-----|
+| She isn't coming, | **is she?** |
+| You don't like coffee, | **do you?** |
+| He can't swim, | **can he?** |
+
+#### Rule 3: Auxiliary verb in statement → Same auxiliary in tag
+| Statement | Tag |
+|-----------|-----|
+| She **is** coming, | **isn't** she? |
+| They **have** arrived, | **haven't** they? |
+| He **will** come, | **won't** he? |
+
+#### Rule 4: No auxiliary → Use do/does/did
+| Statement | Tag |
+|-----------|-----|
+| She **likes** coffee, | **doesn't** she? |
+| They **came** yesterday, | **didn't** they? |
+| You **eat** meat, | **don't** you? |
+
+#### Rule 5: I am → aren't I? (not amn't I)
+| Statement | Tag |
+|-----------|-----|
+| I am late, | **aren't I?** |
+
+#### Rule 6: Let's → shall we?
+| Statement | Tag |
+|-----------|-----|
+| Let's go, | **shall we?** |
+
+#### Rule 7: Imperatives → will you? / won't you?
+| Statement | Tag |
+|-----------|-----|
+| Open the door, | **will you?** |
+| Don't be late, | **will you?** |
+
+#### Rule 8: Nothing/Everything → Use "it"
+| Statement | Tag |
+|-----------|-----|
+| Nothing is perfect, | **is it?** |
+| Everything is fine, | **isn't it?** |
+
+#### Rule 9: Nobody/Everyone → Use "they"
+| Statement | Tag |
+|-----------|-----|
+| Nobody came, | **did they?** |
+| Everyone is here, | **aren't they?** |
+
+#### Rule 10: Never/No/Hardly/Scarcely → Positive tag
+| Statement | Tag |
+|-----------|-----|
+| He never comes, | **does he?** |
+| She hardly works, | **does she?** |
+
+#### 🔥 **QUESTION TAG SHORTCUT:**
+1. If statement is positive → tag is negative
+2. If statement is negative → tag is positive
+3. Use the auxiliary from the statement
+4. If no auxiliary, use do/does/did
+5. Pronoun in tag matches the subject
+
+---
+
+### TYPE 16: DIRECT-INDIRECT SPEECH (NARRATION)
+
+#### 📌 **RULE 1: CHANGE OF TENSES**
+
+| Direct Speech | Indirect Speech |
+|---------------|-----------------|
+| Simple Present | Simple Past |
+| Present Continuous | Past Continuous |
+| Present Perfect | Past Perfect |
+| Simple Past | Past Perfect |
+| Past Continuous | Past Perfect Continuous |
+| Past Perfect | Past Perfect (no change) |
+| Will | Would |
+| Can | Could |
+| May | Might |
+| Shall | Should |
+| Must | Had to / Must (no change if universal) |
+
+**Examples:**
+| Direct | Indirect |
+|--------|----------|
+| He said, "I **eat** apples." | He said that he **ate** apples. |
+| She said, "I **am reading**." | She said that she **was reading**. |
+| They said, "We **have finished**." | They said that they **had finished**. |
+| He said, "I **saw** her." | He said that he **had seen** her. |
+| She said, "I **will come**." | She said that she **would come**. |
+
+#### ⚠️ **NO CHANGE IN TENSE IF:**
+
+1. **Universal Truth:**
+   - Direct: The teacher said, "The earth **is** round."
+   - Indirect: The teacher said that the earth **is** round.
+
+2. **Habitual Action:**
+   - Direct: He said, "I **wake up** at 6 AM."
+   - Indirect: He said that he **wakes up** at 6 AM.
+
+3. **Reporting verb is in Present/Future:**
+   - Direct: He **says**, "I **am** busy."
+   - Indirect: He **says** that he **is** busy.
+
+#### 📌 **RULE 2: CHANGE OF PRONOUNS**
+
+| Direct | Indirect |
+|--------|----------|
+| I | (depends on subject of reporting verb) |
+| We | (depends on subject) |
+| You | (depends on object) |
+| My | (depends on subject) |
+| Our | (depends on subject) |
+| Your | (depends on object) |
+
+**Examples:**
+- He said, "**I** am tired." → He said that **he** was tired.
+- She said to me, "**You** are late." → She told me that **I** was late.
+- They said, "**We** will help **you**." → They said that **they** would help **me**.
+
+#### 📌 **RULE 3: CHANGE OF TIME & PLACE WORDS**
+
+| Direct | Indirect |
+|--------|----------|
+| Now | Then |
+| Today | That day |
+| Yesterday | The previous day / The day before |
+| Tomorrow | The next day / The following day |
+| Here | There |
+| This | That |
+| These | Those |
+| Ago | Before |
+| Last week | The previous week |
+| Next week | The following week |
+| Tonight | That night |
+
+**Examples:**
+- He said, "I will come **tomorrow**." → He said that he would come **the next day**.
+- She said, "I met him **yesterday**." → She said that she had met him **the previous day**.
+- They said, "We are living **here**." → They said that they were living **there**.
+
+#### 📌 **RULE 4: INTERROGATIVE SENTENCES**
+
+**Yes/No Questions → Use if/whether**
+| Direct | Indirect |
+|--------|----------|
+| He said to me, "**Do** you like coffee?" | He asked me **if** I liked coffee. |
+| She said, "**Is** he coming?" | She asked **whether** he was coming. |
+
+**WH-Questions → Use the WH-word**
+| Direct | Indirect |
+|--------|----------|
+| He said to me, "**Where** do you live?" | He asked me **where** I lived. |
+| She said, "**What** is your name?" | She asked **what** my name was. |
+
+#### 📌 **RULE 5: IMPERATIVE SENTENCES**
+
+| Direct | Indirect |
+|--------|----------|
+| "Sit down." | He ordered/told/asked to sit down. |
+| "Don't smoke." | He forbade smoking. / He told not to smoke. |
+| "Please help me." | He requested to help him. |
+
+**Structure:** Subject + reporting verb (ordered/requested/advised) + to + V1
+
+**Examples:**
+- He said, "Open the door." → He told **to open** the door.
+- She said, "Don't be late." → She warned **not to be** late.
+- The teacher said, "Study hard." → The teacher advised **to study** hard.
+
+#### 📌 **RULE 6: EXCLAMATORY SENTENCES**
+
+| Direct | Indirect |
+|--------|----------|
+| "What a beautiful day!" | He exclaimed that it was a beautiful day. |
+| "Hurray! We won!" | He exclaimed with joy that they had won. |
+| "Alas! He is dead." | He exclaimed with sorrow that he was dead. |
+
+**Reporting verbs:** exclaimed with joy/sorrow, cried out, applauded
+
+---
+
+### TYPE 17: ACTIVE-PASSIVE VOICE
+
+#### 📊 **TENSE-WISE PASSIVE STRUCTURES**
+
+| Tense | Active | Passive |
+|-------|--------|---------|
+| Simple Present | S + V1 + O | O + is/am/are + V3 + by + S |
+| Present Continuous | S + is/am/are + V-ing + O | O + is/am/are + being + V3 + by + S |
+| Present Perfect | S + has/have + V3 + O | O + has/have + been + V3 + by + S |
+| Simple Past | S + V2 + O | O + was/were + V3 + by + S |
+| Past Continuous | S + was/were + V-ing + O | O + was/were + being + V3 + by + S |
+| Past Perfect | S + had + V3 + O | O + had + been + V3 + by + S |
+| Simple Future | S + will + V1 + O | O + will + be + V3 + by + S |
+| Future Perfect | S + will have + V3 + O | O + will have + been + V3 + by + S |
+| Modals (can/may) | S + modal + V1 + O | O + modal + be + V3 + by + S |
+
+#### 🔥 **PASSIVE VOICE SHORTCUT:**
+
+**Formula:** Object + be verb + V3 + by + Subject
+
+**Be verbs:**
+- Present: is/am/are
+- Past: was/were
+- Perfect: been
+- Continuous: being
+- Future: be
+- Modal + be
+
+#### 📝 **EXAMPLES BY TENSE:**
+
+**Simple Present:**
+- Active: She **writes** a letter.
+- Passive: A letter **is written** by her.
+
+**Present Continuous:**
+- Active: She **is writing** a letter.
+- Passive: A letter **is being written** by her.
+
+**Present Perfect:**
+- Active: She **has written** a letter.
+- Passive: A letter **has been written** by her.
+
+**Simple Past:**
+- Active: She **wrote** a letter.
+- Passive: A letter **was written** by her.
+
+**Past Continuous:**
+- Active: She **was writing** a letter.
+- Passive: A letter **was being written** by her.
+
+**Past Perfect:**
+- Active: She **had written** a letter.
+- Passive: A letter **had been written** by her.
+
+**Simple Future:**
+- Active: She **will write** a letter.
+- Passive: A letter **will be written** by her.
+
+**Future Perfect:**
+- Active: She **will have written** a letter.
+- Passive: A letter **will have been written** by her.
+
+**Modal Verbs:**
+- Active: She **can write** a letter.
+- Passive: A letter **can be written** by her.
+
+#### 📌 **SPECIAL CASES:**
+
+**Case 1: Two Objects**
+- Active: She gave **me** **a book**.
+- Passive 1: **I was given** a book by her. (more common)
+- Passive 2: **A book was given** to me by her.
+
+**Case 2: No Passive Possible**
+- Intransitive verbs (no object): sleep, go, come, arrive, die
+- ❌ The boy slept. → No passive
+
+**Case 3: Prepositions remain after verb**
+- Active: She **looked after** the child.
+- Passive: The child **was looked after** by her.
+
+**Case 4: Let + object + be + V3 (Imperative)**
+- Active: Open the door.
+- Passive: Let the door be opened.
+- Active: Do not open the door.
+- Passive: Let the door not be opened.
+
+**Case 5: Verbs with two objects (give, send, offer, teach, promise)**
+- Active: He taught **us** **English**.
+- Passive 1: **We were taught** English by him.
+- Passive 2: **English was taught** to us by him.
+
+---
+
+### TYPE 18: CLAUSES
+
+#### 📌 **NOUN CLAUSE**
+
+A clause that functions as a noun (subject, object, complement)
+
+**Introduced by:** that, what, why, how, where, when, if, whether
+
+**Examples:**
+- **What he said** surprised me. (Subject)
+- I know **that he is honest**. (Object)
+- This is **what I wanted**. (Complement)
+
+#### 📌 **ADJECTIVE CLAUSE (Relative Clause)**
+
+A clause that modifies a noun/pronoun
+
+**Introduced by:** who, whom, whose, which, that
+
+**Examples:**
+- The man **who came here** is my uncle.
+- The book **that you gave me** is interesting.
+- This is the house **where I was born**.
+
+#### 📌 **ADVERB CLAUSE**
+
+A clause that modifies a verb, adjective, or adverb
+
+**Types:**
+
+| Type | Conjunctions | Example |
+|------|--------------|---------|
+| Time | when, while, after, before, since | I will call you **when I arrive**. |
+| Place | where, wherever | Sit **wherever you like**. |
+| Reason | because, since, as | He failed **because he didn't study**. |
+| Purpose | so that, in order that | Study hard **so that you can pass**. |
+| Result | so...that, such...that | He was **so tired that he slept**. |
+| Condition | if, unless, provided | **If it rains**, we will cancel. |
+| Concession | though, although, even though | **Although he tried**, he failed. |
+| Manner | as, as if, as though | Do **as I say**. |
+
+---
+
+### TYPE 19: PHRASAL VERBS
+
+#### 📌 **MOST COMMON PHRASAL VERBS FOR EXAMS**
+
+| Phrasal Verb | Meaning | Example |
+|--------------|---------|---------|
+| **Break down** | stop functioning | The car **broke down**. |
+| **Break into** | enter forcibly | Thieves **broke into** the house. |
+| **Break out** | start suddenly | Fire **broke out** in the building. |
+| **Bring up** | raise (children) | She **brought up** three children. |
+| **Call off** | cancel | They **called off** the meeting. |
+| **Carry on** | continue | **Carry on** with your work. |
+| **Come across** | find by chance | I **came across** an old photo. |
+| **Cut down** | reduce | **Cut down** on sugar. |
+| **Drop out** | leave (school) | He **dropped out** of college. |
+| **Figure out** | understand | I can't **figure out** this problem. |
+| **Get along** | have good relations | They **get along** well. |
+| **Give up** | quit | **Give up** smoking. |
+| **Go through** | experience | She **went through** a lot. |
+| **Hold on** | wait | **Hold on** for a minute. |
+| **Keep up** | maintain | **Keep up** the good work. |
+| **Look after** | take care | **Look after** your health. |
+| **Look down upon** | despise | Don't **look down upon** the poor. |
+| **Look for** | search | I'm **looking for** my keys. |
+| **Look forward to** | anticipate | I **look forward to** meeting you. |
+| **Look up to** | respect | I **look up to** my father. |
+| **Make up** | invent | She **made up** a story. |
+| **Pass away** | die | He **passed away** yesterday. |
+| **Put off** | postpone | Don't **put off** your work. |
+| **Put up with** | tolerate | I can't **put up with** this noise. |
+| **Run out of** | exhaust | We **ran out of** milk. |
+| **Set up** | establish | They **set up** a business. |
+| **Take after** | resemble | She **takes after** her mother. |
+| **Take care of** | look after | **Take care of** yourself. |
+| **Take off** | remove/leave | The plane **took off**. |
+| **Turn down** | reject | He **turned down** the offer. |
+| **Turn up** | appear | He **turned up** late. |
+
+#### 🔥 **PHRASAL VERB TRICK:**
+- If the phrasal verb is **separable**, object can go between verb and particle
+  - Turn **the offer** down / Turn down **the offer**
+- If **inseparable**, object must go after particle
+  - Look after **the child** (NOT Look the child after)
+
+---
+
+### TYPE 20: CONFUSING WORDS (HOMOPHONES/HOMONYMS)
+
+#### 📌 **MOST COMMON CONFUSING PAIRS**
+
+| Word | Meaning | Example |
+|------|---------|---------|
+| **Accept** | to receive | I **accept** your offer. |
+| **Except** | excluding | Everyone **except** me went. |
+| **Access** | entry | I have **access** to the building. |
+| **Excess** | extra | Avoid **excess** sugar. |
+| **Advice** | suggestion (noun) | Take my **advice**. |
+| **Advise** | to suggest (verb) | I **advise** you to study. |
+| **Affect** | to influence (verb) | Weather **affects** my mood. |
+| **Effect** | result (noun) | Hard work has a positive **effect**. |
+| **All ready** | completely prepared | We are **all ready** to go. |
+| **Already** | by now | I have **already** eaten. |
+| **Altar** | religious table | They prayed at the **altar**. |
+| **Alter** | to change | **Alter** your plans. |
+| **Among** | in a group (3+) | Distribute **among** the students. |
+| **Between** | for two | Share **between** the two. |
+| **Beside** | next to | Sit **beside** me. |
+| **Besides** | in addition to | **Besides** math, I like science. |
+| **Borrow** | take temporarily | Can I **borrow** your pen? |
+| **Lend** | give temporarily | Can you **lend** me your pen? |
+| **Breath** | air (noun) | Take a deep **breath**. |
+| **Breathe** | to inhale (verb) | **Breathe** deeply. |
+| **Capital** | city/money | Delhi is the **capital**. |
+| **Capitol** | building | The **Capitol** in Washington. |
+| **Complement** | complete | Wine **complements** cheese. |
+| **Compliment** | praise | She paid me a **compliment**. |
+| **Desert** | dry area | Camels live in the **desert**. |
+| **Dessert** | sweet food | I love chocolate **dessert**. |
+| **Elicit** | to draw out | The question **elicited** a response. |
+| **Illicit** | illegal | **Illicit** activities. |
+| **Eminent** | famous | An **eminent** scientist. |
+| **Imminent** | about to happen | Danger is **imminent**. |
+| **Its** | possessive | The dog wagged **its** tail. |
+| **It's** | it is | **It's** raining. |
+| **Lay** | put down (transitive) | **Lay** the book on the table. |
+| **Lie** | recline (intransitive) | **Lie** down on the bed. |
+| **Loose** | not tight | This shirt is **loose**. |
+| **Lose** | misplace | Don't **lose** your keys. |
+| **Moral** | ethical | **Moral** values. |
+| **Morale** | confidence | Team **morale** is high. |
+| **Personal** | private | That's **personal** information. |
+| **Personnel** | staff | Company **personnel**. |
+| **Principal** | head/chief | School **principal**. |
+| **Principle** | rule | Moral **principles**. |
+| **Quiet** | silent | Be **quiet**. |
+| **Quite** | very | It's **quite** hot. |
+| **Stationary** | not moving | The car was **stationary**. |
+| **Stationery** | writing materials | Buy **stationery** from the shop. |
+| **Than** | comparison | She is taller **than** me. |
+| **Then** | at that time | I was young **then**. |
+| **Their** | possessive | **Their** house is big. |
+| **There** | place | It's over **there**. |
+| **They're** | they are | **They're** coming. |
+| **Weather** | climate | The **weather** is nice. |
+| **Whether** | if | I don't know **whether** to go. |
+| **Your** | possessive | Is this **your** book? |
+| **You're** | you are | **You're** late. |
+
+---
+
+### TYPE 21: IDIOMS AND PHRASES
+
+#### 📌 **50 MUST-KNOW IDIOMS FOR MAH MCA CET**
+
+| Idiom | Meaning | Example |
+|-------|---------|---------|
+| **A blessing in disguise** | Something good that seemed bad | Losing that job was a **blessing in disguise**. |
+| **A dime a dozen** | Very common | Such ideas are **a dime a dozen**. |
+| **A piece of cake** | Very easy | The exam was **a piece of cake**. |
+| **Add insult to injury** | Make a bad situation worse | He was late, and to **add insult to injury**, he forgot his presentation. |
+| **Apple of my eye** | Very dear | His daughter is the **apple of his eye**. |
+| **At the drop of a hat** | Immediately | He would help **at the drop of a hat**. |
+| **Back to the drawing board** | Start over | The plan failed, so it's **back to the drawing board**. |
+| **Ball is in your court** | Your turn to act | I've done my part, now the **ball is in your court**. |
+| **Beat around the bush** | Avoid the main topic | Stop **beating around the bush** and tell me directly. |
+| **Bite the bullet** | Face something difficult | I had to **bite the bullet** and tell the truth. |
+| **Break a leg** | Good luck | Before her performance, we said "**Break a leg**!" |
+| **Burn the midnight oil** | Study/work late | He **burned the midnight oil** for the exam. |
+| **By the skin of one's teeth** | Just barely | He passed **by the skin of his teeth**. |
+| **Call it a day** | Stop working | We're tired, let's **call it a day**. |
+| **Cut corners** | Do something poorly to save money/time | Don't **cut corners** on quality. |
+| **Cut to the chase** | Get to the point | Let's **cut to the chase** and discuss the main issue. |
+| **Devil's advocate** | Argue against for debate | Let me play **devil's advocate** here. |
+| **Face the music** | Accept consequences | He had to **face the music** for his mistakes. |
+| **Feeling under the weather** | Feeling ill | I'm **feeling under the weather** today. |
+| **Fit as a fiddle** | Very healthy | My grandfather is **fit as a fiddle**. |
+| **Get cold feet** | Become nervous before an event | He **got cold feet** before the wedding. |
+| **Give the benefit of the doubt** | Trust without proof | Let's **give him the benefit of the doubt**. |
+| **Go the extra mile** | Do more than expected | She always **goes the extra mile** for clients. |
+| **Hit the nail on the head** | Be exactly right | You **hit the nail on the head** with that answer. |
+| **Hit the sack** | Go to sleep | I'm tired, time to **hit the sack**. |
+| **In the same boat** | In the same situation | We're all **in the same boat** with this problem. |
+| **It's raining cats and dogs** | Raining heavily | Don't go out, **it's raining cats and dogs**. |
+| **Kill two birds with one stone** | Achieve two goals at once | By studying online, I **killed two birds with one stone** - saved time and money. |
+| **Let the cat out of the bag** | Reveal a secret | She **let the cat out of the bag** about the party. |
+| **Miss the boat** | Miss an opportunity | I applied too late and **missed the boat**. |
+| **Once in a blue moon** | Very rarely | He visits **once in a blue moon**. |
+| **Out of the blue** | Unexpectedly | The news came **out of the blue**. |
+| **Piece of cake** | Very easy | The test was a **piece of cake**. |
+| **Pull someone's leg** | Tease/joke | Don't worry, I'm just **pulling your leg**. |
+| **Pull yourself together** | Calm down | **Pull yourself together** and focus. |
+| **Put all your eggs in one basket** | Risk everything | Don't **put all your eggs in one basket**. |
+| **Ring a bell** | Sound familiar | That name **rings a bell**. |
+| **See eye to eye** | Agree | We don't **see eye to eye** on this issue. |
+| **Sit on the fence** | Be undecided | Stop **sitting on the fence** and choose. |
+| **Speak of the devil** | Person appears when mentioned | **Speak of the devil**, here comes John! |
+| **Spill the beans** | Reveal secret | Who **spilled the beans** about the surprise? |
+| **Take it with a grain of salt** | Don't fully believe | Take his advice **with a grain of salt**. |
+| **The best of both worlds** | Enjoy two different advantages | Working from home gives **the best of both worlds**. |
+| **The last straw** | Final problem in a series | His rudeness was **the last straw**. |
+| **Through thick and thin** | Through good and bad | They stayed together **through thick and thin**. |
+| **Time flies** | Time passes quickly | **Time flies** when you're having fun. |
+| **Up in the air** | Uncertain | Our plans are still **up in the air**. |
+| **When pigs fly** | Never | He'll apologize **when pigs fly**. |
+| **You can say that again** | I agree | "It's hot." "**You can say that again**!" |
+| **Your guess is as good as mine** | I don't know either | When will it end? **Your guess is as good as mine**. |
+
+---
+
+### TYPE 22: ONE WORD SUBSTITUTION
+
+#### 📌 **50 COMMON ONE WORD SUBSTITUTIONS**
+
+| Phrase | One Word |
+|--------|----------|
+| A person who writes books | Author |
+| A person who composes music | Composer |
+| A person who draws maps | Cartographer |
+| A person who collects stamps | Philatelist |
+| A person who collects coins | Numismatist |
+| A person who studies stars | Astronomer |
+| A person who studies the mind | Psychologist |
+| A person who studies languages | Linguist |
+| A person who loves books | Bibliophile |
+| A person who hates mankind | Misanthrope |
+| A person who loves mankind | Philanthropist |
+| A person who is self-centered | Egotist |
+| A person who is too confident | Arrogant |
+| A person who is unable to pay debts | Insolvent |
+| A person who is unable to read/write | Illiterate |
+| A person who speaks two languages | Bilingual |
+| A person who speaks many languages | Polyglot |
+| A person who walks in sleep | Somnambulist |
+| A person who fears water | Hydrophobic |
+| A person who fears confined spaces | Claustrophobic |
+| A thing that can be carried | Portable |
+| A thing that can be eaten | Edible |
+| A thing that can be drunk | Potable |
+| A thing that lasts forever | Eternal |
+| A thing that cannot be read | Illegible |
+| A thing that cannot be heard | Inaudible |
+| A thing that cannot be seen | Invisible |
+| A thing that cannot be corrected | Incorrigible |
+| A thing that cannot be conquered | Invincible |
+| A thing that cannot be avoided | Inevitable |
+| A thing that cannot be believed | Incredible |
+| A thing that cannot be defeated | Invincible |
+| A thing that cannot be imitated | Inimitable |
+| A thing that cannot be expressed | Inexpressible |
+| A thing that cannot be cured | Incurable |
+| A thing that cannot be repaired | Irreparable |
+| A thing that cannot be replaced | Irreplaceable |
+| A government by one person | Autocracy |
+| A government by few people | Oligarchy |
+| A government by the people | Democracy |
+| A government by the rich | Plutocracy |
+| A government by officials | Bureaucracy |
+| A government by religious leaders | Theocracy |
+| A place where birds are kept | Aviary |
+| A place where bees are kept | Apiary |
+| A place where fish are kept | Aquarium |
+| A place where weapons are kept | Arsenal |
+| A place where money is coined | Mint |
+| A place where dead bodies are kept | Morgue |
+| A place where animals are killed | Abattoir/Slaughterhouse |
+| A place where ships are built | Shipyard/Dockyard |
+
+---
+
+### TYPE 23: SYNONYMS AND ANTONYMS
+
+#### 📌 **50 COMMON SYNONYMS**
+
+| Word | Synonyms |
+|------|----------|
+| Abandon | Leave, desert, forsake, quit |
+| Abbreviate | Shorten, condense, compress |
+| Ability | Skill, talent, capability, competence |
+| Abundant | Plentiful, ample, copious, profuse |
+| Accept | Receive, take, agree, consent |
+| Accurate | Correct, precise, exact, right |
+| Achieve | Accomplish, attain, reach, fulfill |
+| Acknowledge | Admit, confess, accept, recognize |
+| Acquire | Obtain, gain, get, secure |
+| Adapt | Adjust, conform, modify, accommodate |
+| Adequate | Sufficient, enough, ample, satisfactory |
+| Admire | Appreciate, esteem, respect, praise |
+| Admit | Confess, acknowledge, accept, allow |
+| Adopt | Embrace, accept, assume, take on |
+| Advance | Progress, proceed, move forward |
+| Advantage | Benefit, gain, profit, edge |
+| Advise | Suggest, recommend, counsel, guide |
+| Affect | Influence, impact, alter, change |
+| Affection | Love, fondness, care, attachment |
+| Afraid | Frightened, scared, terrified, fearful |
+| Aggressive | Hostile, forceful, assertive, pushy |
+| Agree | Consent, accept, concur, assent |
+| Allow | Permit, let, authorize, grant |
+| Amaze | Astonish, surprise, shock, stun |
+| Ambitious | Aspiring, driven, determined, eager |
+| Angry | Mad, furious, irate, enraged |
+| Announce | Declare, proclaim, state, broadcast |
+| Annoy | Irritate, bother, disturb, vex |
+| Answer | Reply, respond, retort, react |
+| Anxious | Worried, nervous, tense, uneasy |
+| Apologize | Say sorry, regret, express remorse |
+| Apparent | Obvious, clear, evident, visible |
+| Appeal | Attract, interest, fascinate, charm |
+| Appear | Seem, look, emerge, show up |
+| Apply | Request, seek, ask, put in |
+| Appoint | Name, designate, assign, choose |
+| Appreciate | Value, admire, praise, enjoy |
+| Approach | Near, advance, come closer |
+| Approve | Accept, endorse, support, ratify |
+| Argue | Dispute, debate, quarrel, fight |
+| Arrange | Organize, plan, set up, order |
+| Arrive | Come, reach, appear, show up |
+| Artificial | Fake, synthetic, man-made, false |
+| Ask | Inquire, question, query, request |
+| Assemble | Gather, collect, meet, bring together |
+| Assist | Help, aid, support, facilitate |
+| Assume | Suppose, presume, believe, think |
+| Attack | Assault, strike, charge, raid |
+| Attain | Achieve, accomplish, reach, gain |
+| Attempt | Try, strive, endeavor, seek |
+
+#### 📌 **50 COMMON ANTONYMS**
+
+| Word | Antonyms |
+|------|----------|
+| Abandon | Keep, retain, stay |
+| Abbreviate | Lengthen, expand, extend |
+| Ability | Inability, incompetence, weakness |
+| Abundant | Scarce, rare, insufficient |
+| Accept | Reject, refuse, decline |
+| Accurate | Inaccurate, wrong, incorrect |
+| Achieve | Fail, lose, miss |
+| Acknowledge | Deny, reject, disregard |
+| Acquire | Lose, surrender, give up |
+| Active | Inactive, lazy, idle |
+| Add | Subtract, remove, deduct |
+| Adequate | Inadequate, insufficient, lacking |
+| Admire | Dislike, hate, despise |
+| Admit | Deny, reject, exclude |
+| Advance | Retreat, recede, withdraw |
+| Advantage | Disadvantage, drawback, handicap |
+| Affection | Hatred, dislike, indifference |
+| Afraid | Brave, fearless, confident |
+| After | Before, earlier, prior |
+| Against | For, in favor, supporting |
+| Age | Youth, freshness, newness |
+| Aggressive | Passive, gentle, meek |
+| Agree | Disagree, oppose, differ |
+| Alive | Dead, deceased, lifeless |
+| Allow | Forbid, prohibit, prevent |
+| Amateur | Professional, expert, skilled |
+| Amuse | Bore, tire, weary |
+| Ancient | Modern, new, recent |
+| Angry | Calm, peaceful, happy |
+| Answer | Question, ask, inquire |
+| Apart | Together, close, near |
+| Apparent | Unclear, obscure, hidden |
+| Appeal | Displease, repel, offend |
+| Appear | Disappear, vanish, fade |
+| Apply | Ignore, disregard, neglect |
+| Appoint | Dismiss, fire, remove |
+| Appreciate | Depreciate, criticize, scorn |
+| Approach | Leave, retreat, withdraw |
+| Approve | Disapprove, reject, oppose |
+| Argue | Agree, concur, accept |
+| Arrive | Depart, leave, go |
+| Artificial | Natural, genuine, real |
+| Ascend | Descend, drop, fall |
+| Ask | Answer, reply, respond |
+| Asleep | Awake, alert, conscious |
+| Assemble | Disperse, scatter, separate |
+| Assist | Hinder, obstruct, block |
+| Attack | Defend, protect, guard |
+| Attract | Repel, deter, discourage |
+| Awkward | Graceful, elegant, smooth |
+| Back | Front, forward, ahead |
+
+---
+
+### TYPE 24: SPELLING RULES AND COMMON MISSPELLINGS
+
+#### 📌 **SPELLING RULES**
+
+**Rule 1: I before E except after C**
+- believe, chief, field, receive, ceiling, deceive
+- **Exceptions:** weird, science, sufficient, ancient
+
+**Rule 2: Silent E Rule**
+- When adding -ing, drop the e: write → writing, dance → dancing
+- When adding -ed, keep the e? No: hope → hoped (drop e), agree → agreed (keep if double e)
+
+**Rule 3: Y to I Rule**
+- Change Y to I when adding -es or -ed: cry → cries, study → studied
+- Keep Y when adding -ing: cry → crying, study → studying
+
+**Rule 4: Double the consonant when:**
+- One syllable word ending in consonant-vowel-consonant: stop → stopped, big → bigger
+- Stress on last syllable: begin → beginning, prefer → preferred
+
+#### 📌 **50 COMMONLY MISSPELLED WORDS**
+
+| Correct | Common Mistake |
+|---------|----------------|
+| Accommodate | Accomodate, acommodate |
+| Achieve | Acheive |
+| Acquire | Aquire |
+| Address | Adress |
+| Advertisement | Advertisment |
+| Against | Aginst |
+| Aggressive | Agressive |
+| Argument | Arguement |
+| Beginning | Begining |
+| Believe | Belive |
+| Business | Buisness |
+| Calendar | Calender |
+| Category | Catagory |
+| Cemetery | Cemetary |
+| Changeable | Changeable (correct actually) |
+| Collectible | Collectable |
+| Column | Colum |
+| Committee | Comittee |
+| Conscience | Consience |
+| Conscious | Concious |
+| Definitely | Definately |
+| Desperate | Desparate |
+| Different | Differant |
+| Dilemma | Dilema |
+| Disappear | Dissapear |
+| Disappoint | Dissapoint |
+| Discipline | Disipline |
+| Embarrass | Embarass |
+| Environment | Enviroment |
+| Exaggerate | Exagerate |
+| Excellent | Excellant |
+| Existence | Existance |
+| Fascinating | Fascinating (correct) |
+| February | Febuary |
+| Finally | Finaly |
+| Forty | Fourty |
+| Friend | Freind |
+| Government | Goverment |
+| Grammar | Grammer |
+| Grateful | Greatful |
+| Guarantee | Guarantee (correct) |
+| Harass | Harrass |
+| Humorous | Humourous |
+| Independent | Independant |
+| Intelligence | Intellegence |
+| Interesting | Intresting |
+| Interrupt | Interupt |
+| Irresistible | Irresistable |
+| Knowledge | Knowlege |
+| License | Licence (UK) / License (US) |
+| Maintenance | Maintainance |
+| Millionaire | Millionare |
+| Mischievous | Mischievious |
+| Necessary | Neccessary |
+| Occasion | Occassion |
+| Occurred | Occured |
+| Occurrence | Occurrance |
+| Parallel | Parralel |
+| Privilege | Privelege |
+| Pronunciation | Pronounciation |
+| Publicly | Publically |
+| Receive | Recieve |
+| Recommend | Reccommend |
+| Referred | Refered |
+| Relevant | Relevent |
+| Repetition | Repetition (correct) |
+| Restaurant | Restaraunt |
+| Rhythm | Rythm |
+| Schedule | Shedule |
+| Separate | Seperate |
+| Successful | Succesful |
+| Surprise | Suprise |
+| Temperature | Temperture |
+| Tomorrow | Tommorow |
+| Truly | Truely |
+| Until | Untill |
+| Vacuum | Vaccuum |
+| Weird | Wierd |
+
+---
+
+### TYPE 25: SENTENCE ARRANGEMENT (PARA JUMBLES)
+
+#### 📌 **STRATEGY FOR PARA JUMBLES**
+
+**Step 1: Find the opening sentence**
+- Look for sentences that introduce a topic, person, or idea
+- Avoid sentences with: he, she, it, they, this, that (these refer to something already mentioned)
+- Avoid sentences starting with: But, However, Therefore, So (these are connectors)
+
+**Step 2: Look for mandatory pairs**
+- Find sentences that MUST go together
+- Look for: cause-effect, question-answer, statement-example
+
+**Step 3: Look for linking words**
+
+| Type | Words |
+|------|-------|
+| Addition | Moreover, Furthermore, Besides, Also |
+| Contrast | However, But, Nevertheless, On the other hand |
+| Cause/Effect | Therefore, Thus, Consequently, As a result |
+| Time | Then, After that, Later, Meanwhile |
+| Example | For example, For instance, Such as |
+
+**Step 4: Check pronoun references**
+- If a sentence has "he", there must be a previous sentence mentioning a male person
+- If a sentence has "this", there must be a previous sentence mentioning what "this" refers to
+
+**Step 5: Check logical flow**
+- Introduction → Details → Examples → Conclusion
+
+#### 🔥 **PARA JUMBLE SHORTCUTS:**
+
+1. **The "Noun-Pronoun" Trick:** If sentence B has "he/she/it/they" and sentence A has a noun, then A comes before B.
+
+2. **The "Time" Trick:** Arrange sentences in chronological order (past → present → future).
+
+3. **The "General to Specific" Trick:** General statements come first, specific details come later.
+
+4. **The "Question-Answer" Trick:** Question sentence comes first, answer sentence comes after.
+
+5. **The "Cause-Effect" Trick:** Cause comes first, effect comes after.
+
+#### 📝 **EXAMPLE PARA JUMBLE:**
+
+**Arrange the following sentences in correct order:**
+
+A. Therefore, it is important to manage time effectively.
+B. Time management is a crucial skill for students.
+C. For example, creating a study schedule can help.
+D. Without proper time management, students often feel stressed.
+
+**Solution:**
+1. **B** - Introduces the topic (Time management is crucial)
+2. **D** - Explains the problem (Without it, students feel stressed)
+3. **A** - Gives the solution (Therefore, manage time)
+4. **C** - Provides example (For example, study schedule)
+
+**Correct order: B D A C**
+
+---
+
+### TYPE 26: FILL IN THE BLANKS
+
+#### 📌 **STRATEGY FOR FILL IN THE BLANKS**
+
+**Step 1: Read the entire sentence** to understand context
+
+**Step 2: Identify what type of word is missing**
+- Noun, verb, adjective, adverb, preposition, conjunction?
+
+**Step 3: Check grammar around the blank**
+- Before blank: article (a/an/the) → noun likely
+- After blank: noun → adjective likely
+- Subject + blank + object → verb likely
+
+**Step 4: Check for fixed phrases/collocations**
+- "He insisted ___ going" → on (fixed preposition)
+- "She is capable ___ doing" → of (fixed preposition)
+
+**Step 5: Check meaning/context**
+- Positive or negative context?
+- Formal or informal?
+
+#### 🔥 **FILL IN THE BLANKS SHORTCUTS:**
+
+1. **Preposition questions:** Look for fixed verb-preposition combinations (insist on, depend on, afraid of)
+
+2. **Article questions:** Check the sound of the next word (a university, an hour)
+
+3. **Conjunction questions:** Check relationship between clauses (cause-effect, contrast, addition)
+
+4. **Tense questions:** Look for time markers (yesterday → past, since → perfect)
+
+---
+
+### TYPE 27: CLOZE TEST
+
+#### 📌 **WHAT IS A CLOZE TEST?**
+A passage with blanks where you must choose the correct word from options. Tests vocabulary, grammar, and comprehension together.
+
+#### 📌 **STRATEGY FOR CLOZE TEST**
+
+**Step 1: Skim the passage** quickly to understand the topic
+
+**Step 2: Read the first sentence carefully** - it often sets the theme
+
+**Step 3: For each blank, use context:**
+- What part of speech is needed?
+- What is the meaning required?
+- What words commonly go together (collocations)?
+
+**Step 4: Look for clues in surrounding sentences**
+
+**Step 5: Use elimination** - remove options that don't fit grammatically or meaning-wise
+
+#### 🔥 **CLOZE TEST SHORTCUTS:**
+
+1. **Grammar clues:** If blank follows "the", it's likely a noun. If follows "is", it's adjective or -ing.
+
+2. **Context clues:** The sentences before and after often contain the answer.
+
+3. **Collocation clues:** Some words naturally go together (heavy rain, strong wind, make a decision).
+
+4. **Repetition clue:** The same word might appear nearby.
+
+---
+
+# 📊 QUICK REFERENCE CHARTS
+
+## 🎯 **ERROR DETECTION - 10 MOST COMMON ERRORS**
+
+| Rank | Error Type | Example | Correction |
+|------|------------|---------|------------|
+| 1 | Subject-Verb Agreement | One of the boys **are** absent | One of the boys **is** absent |
+| 2 | Tense with time markers | I **have seen** him yesterday | I **saw** him yesterday |
+| 3 | Prepositions | He is married **with** her | He is married **to** her |
+| 4 | Articles | He is **an** university student | He is **a** university student |
+| 5 | Pronouns | Between you and **I** | Between you and **me** |
+| 6 | Double comparatives | She is **more smarter** | She is **smarter** |
+| 7 | Redundancy | **Return back** | **Return** |
+| 8 | Parallelism | She likes **dancing**, **to sing** | She likes **dancing**, **singing** |
+| 9 | Conditional | If I **was** you | If I **were** you |
+| 10 | Question Tags | She is coming, **is she?** | She is coming, **isn't she?** |
+
+---
+
+## 🎯 **SUBJECT-VERB AGREEMENT - QUICK CHEAT SHEET**
+
+| Subject Type | Verb | Example |
+|--------------|------|---------|
+| Each, Every, Everyone | Singular | Each student **is** ready |
+| One of + plural noun | Singular | One of the boys **is** absent |
+| The number of | Singular | The number **is** increasing |
+| A number of | Plural | A number **are** waiting |
+| Neither...nor | Nearest subject | Neither Ram nor his friends **are** |
+| Either...or | Nearest subject | Either the students or the teacher **is** |
+| As well as, along with | First subject | The teacher, along with students, **is** |
+| Collective noun (team) | Usually singular | The team **is** playing |
+| News, Mathematics | Singular | Mathematics **is** easy |
+| Scissors, Trousers | Plural | Scissors **are** sharp |
+| Measurements | Singular | Ten kilometers **is** far |
+
+---
+
+## 🎯 **TENSE - TIME MARKERS CHEAT SHEET**
+
+| Tense | Time Markers |
+|-------|--------------|
+| Simple Present | always, usually, often, sometimes, rarely, never, every day |
+| Present Continuous | now, at present, at the moment, Look!, Listen! |
+| Present Perfect | since, for, already, just, ever, never, yet, recently |
+| Simple Past | yesterday, last night, ago, in 2000, the other day |
+| Past Continuous | at 5 PM yesterday, while, when (interrupted) |
+| Past Perfect | before, after, already, by the time |
+| Future | tomorrow, next week, soon, in the future |
+| Future Perfect | by tomorrow, by next week, by 2025 |
+
+---
+
+## 🎯 **PREPOSITIONS - FIXED PAIRS CHEAT SHEET**
+
+| Verb | Preposition |
+|------|-------------|
+| Accused | of |
+| Addicted | to |
+| Afraid | of |
+| Agree | with (person) / to (plan) |
+| Angry | with (person) / at (situation) |
+| Apologize | for |
+| Apply | for (job) / to (institution) |
+| Arrive | at (small place) / in (city) |
+| Believe | in |
+| Belong | to |
+| Beware | of |
+| Blame | for |
+| Borrow | from |
+| Care | about (concern) / for (look after) |
+| Compare | with (similarities) / to (likeness) |
+| Complain | about (thing) / of (pain) |
+| Consist | of |
+| Deal | with |
+| Depend | on |
+| Die | of (disease) / from (injury) |
+| Different | from |
+| Disappointed | with (person) / at (result) |
+| Divide | into |
+| Dream | of (aspire) / about (while asleep) |
+| Famous | for |
+| Fill | with |
+| Good | at |
+| Grateful | to (person) / for (thing) |
+| Happen | to |
+| Hear | of (know) / from (receive news) |
+| Insist | on |
+| Interested | in |
+| Invest | in |
+| Involved | in |
+| Jealous | of |
+| Know | about |
+| Laugh | at |
+| Listen | to |
+| Look | at (see) / for (search) / after (care) |
+| Married | to |
+| Object | to |
+| Occur | to |
+| Pay | for |
+| Pleased | with |
+| Pray | to (God) / for (someone) |
+| Prefer | to |
+| Prepare | for |
+| Prevent | from |
+| Proud | of |
+| Provide | with |
+| Recover | from |
+| Related | to |
+| Rely | on |
+| Remind | of |
+| Responsible | for |
+| Result | in (lead to) / from (caused by) |
+| Search | for |
+| Similar | to |
+| Succeed | in |
+| Suffer | from |
+| Sure | of/about |
+| Surprised | at |
+| Take care | of |
+| Talk | about |
+| Think | of/about |
+| Tired | of |
+| Translate | into |
+| Trust | in |
+| Wait | for |
+| Warn | against |
+| Worry | about |
+| Write | to |
+
+---
+
+## 🎯 **ARTICLES - QUICK CHEAT SHEET**
+
+| Use 'A' Before | Use 'AN' Before |
+|----------------|-----------------|
+| Consonant SOUND | Vowel SOUND |
+| a **university** (yu) | an **hour** (ow) |
+| a **European** (yu) | an **honest** (o) |
+| a **one-eyed** (wu) | an **MBA** (em) |
+| a **useful** (yu) | an **FBI** (ef) |
+| a **house** (h) | an **apple** (a) |
+
+| Use 'THE' | Don't Use 'THE' |
+|-----------|-----------------|
+| Unique things (sun, moon) | Proper nouns (Mumbai) |
+| Superlatives (best) | Abstract nouns (life) |
+| Ordinals (first) | Plural general (dogs) |
+| Musical instruments (piano) | Meals (breakfast) |
+| Rivers, seas (Ganges) | Languages (Hindi) |
+| Mountain ranges (Himalayas) | Sports (cricket) |
+| Plural countries (USA) | Most countries (India) |
+
+---
+
+## 🎯 **PRONOUNS - QUICK CHEAT SHEET**
+
+| Subject | Object | Possessive | Reflexive |
+|---------|--------|------------|-----------|
+| I | me | my/mine | myself |
+| You | you | your/yours | yourself |
+| He | him | his | himself |
+| She | her | her/hers | herself |
+| It | it | its | itself |
+| We | us | our/ours | ourselves |
+| They | them | their/theirs | themselves |
+
+**Who vs Whom:**
+- Who = HE/SHE/THEY (subject)
+- Whom = HIM/HER/THEM (object)
+
+---
+
+## 🎯 **CONDITIONALS - QUICK CHEAT SHEET**
+
+| Type | If-clause | Main clause | Example |
+|------|-----------|-------------|---------|
+| Zero | Present | Present | If you heat ice, it melts. |
+| First | Present | will + V1 | If it rains, we will cancel. |
+| Second | Past | would + V1 | If I were rich, I would travel. |
+| Third | had + V3 | would have + V3 | If I had studied, I would have passed. |
+
+**Never use will/would in if-clause!**
+
+---
+
+## 🎯 **ACTIVE-PASSIVE - QUICK CHEAT SHEET**
+
+| Tense | Active | Passive |
+|-------|--------|---------|
+| Simple Present | write/writes | is/am/are + written |
+| Present Continuous | is/am/are + writing | is/am/are + being + written |
+| Present Perfect | has/have + written | has/have + been + written |
+| Simple Past | wrote | was/were + written |
+| Past Continuous | was/were + writing | was/were + being + written |
+| Past Perfect | had + written | had + been + written |
+| Simple Future | will + write | will + be + written |
+| Future Perfect | will have + written | will have + been + written |
+| Modal | can + write | can + be + written |
+
+---
+
+## 🎯 **DIRECT-INDIRECT - QUICK CHEAT SHEET**
+
+| Direct | Indirect |
+|--------|----------|
+| Simple Present | Simple Past |
+| Present Continuous | Past Continuous |
+| Present Perfect | Past Perfect |
+| Simple Past | Past Perfect |
+| Will | Would |
+| Can | Could |
+| May | Might |
+| Shall | Should |
+| Now | Then |
+| Today | That day |
+| Yesterday | The previous day |
+| Tomorrow | The next day |
+| Here | There |
+| This | That |
+
+---
+
+# 🏆 **FINAL EXAM STRATEGIES**
+
+## ⚡ **60-SECOND QUESTION ATTACK PLAN**
+
+| Time | Action |
+|------|--------|
+| 0-10 sec | Read the full sentence/part |
+| 10-20 sec | Check Subject-Verb Agreement |
+| 20-30 sec | Check Tense (look for time markers) |
+| 30-35 sec | Check Prepositions |
+| 35-40 sec | Check Articles |
+| 40-45 sec | Check Pronouns |
+| 45-50 sec | Check Parallelism |
+| 50-55 sec | Check Redundancy |
+| 55-60 sec | Choose answer or mark for review |
+
+---
+
+## ⚡ **TOP 10 EXAM TIPS**
+
+1. **Read the complete sentence first** before looking at options
+2. **Trust your ear** for 80% of questions - if it sounds wrong, it probably is
+3. **Look for time markers** (yesterday, since, for, ago) - they dictate tense
+4. **Check subject-verb agreement** first - most common error
+5. **Watch for double comparatives** (more better, most tallest)
+6. **Memorize fixed prepositions** - they repeat frequently
+7. **Know the a/an sound rule** - it's about sound, not letter
+8. **Eliminate two wrong options first** then choose between remaining
+9. **Don't spend more than 1 minute** on any question
+10. **If completely stuck, mark for review** and move on
+
+---
+
+## ⚡ **COMMON TRICK QUESTIONS TO WATCH FOR**
+
+1. **Trick:** "One of the boys are..." → Should be "is"
+2. **Trick:** "She don't like..." → Should be "doesn't"
+3. **Trick:** "Between you and I..." → Should be "me"
+4. **Trick:** "I have seen him yesterday..." → Should be "saw"
+5. **Trick:** "He is an university..." → Should be "a university"
+6. **Trick:** "Return back..." → Just "return"
+7. **Trick:** "More smarter..." → Just "smarter"
+8. **Trick:** "If I was you..." → Should be "were"
+9. **Trick:** "The news are..." → Should be "is"
+10. **Trick:** "Scissors is..." → Should be "are"
+
+---
+
+## 📚 **20-DAY REVISION PLAN**
+
+| Day | Topics to Cover |
+|-----|-----------------|
+| Day 1 | Subject-Verb Agreement (all 15 rules) |
+| Day 2 | Tenses (all 12 tenses + time markers) |
+| Day 3 | Prepositions (50 fixed pairs) |
+| Day 4 | Articles (A/An/The rules) |
+| Day 5 | Pronouns (all types + who/whom) |
+| Day 6 | Adjectives vs Adverbs |
+| Day 7 | Parallelism + Redundancy |
+| Day 8 | Comparatives + Double Negatives |
+| Day 9 | Conjunctions + Conditionals |
+| Day 10 | Question Tags + Modifiers |
+| Day 11 | Active-Passive Voice |
+| Day 12 | Direct-Indirect Speech |
+| Day 13 | Clauses + Phrasal Verbs |
+| Day 14 | Confusing Words + Idioms |
+| Day 15 | One Word Substitution |
+| Day 16 | Synonyms + Antonyms |
+| Day 17 | Spelling + Para Jumbles |
+| Day 18 | Mixed Practice (100 questions) |
+| Day 19 | Previous Year Paper |
+| Day 20 | Mock Test + Weak Area Revision |
+
+---
+
+## 🎉 **GOOD LUCK FOR YOUR EXAM!**
+
+Remember:
+- **Practice daily** - even 30 minutes helps
+- **Focus on common errors** - they repeat in exams
+- **Make your own notes** - write rules you forget
+- **Stay calm and read carefully** - don't rush
+- **You've got this!** 💪
+
+---
+
+*This guide covers all grammar topics for MAH MCA CET including Error Detection, Sentence Correction, Sentence Improvement, Parts of Speech, Active-Passive Voice, Direct-Indirect Speech, Clauses, Phrasal Verbs, Confusing Words, Idioms, One Word Substitution, Synonyms, Antonyms, Spelling, Para Jumbles, Fill in the Blanks, and Cloze Test.*

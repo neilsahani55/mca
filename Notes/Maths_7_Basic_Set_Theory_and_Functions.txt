@@ -1,0 +1,1423 @@
+# COMPLETE SET THEORY & FUNCTIONS GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## 📊 EXAM ANALYSIS & WEIGHTAGE
+- **Total Questions**: 3-5 questions (6-10 marks)
+- **Difficulty Level**: Easy to Moderate
+- **Time Allocation**: 5-7 minutes for this section
+- **Previous Year Trend**: 
+  - 2023: 4 questions (Sets: 2, Relations: 1, Functions: 1)
+  - 2022: 5 questions (Sets: 2, Relations: 1, Functions: 2)
+  - 2021: 3 questions (Sets: 1, Relations: 1, Functions: 1)
+
+---
+
+# SECTION 1: SET THEORY - COMPREHENSIVE COVERAGE
+
+## 1.1 INTRODUCTION TO SETS
+
+### Definition
+A set is a well-defined collection of distinct objects, considered as an object in its own right.
+
+**Key Points:**
+- "Well-defined" means we can definitively say whether an object belongs to the set
+- "Distinct" means no repetition of elements
+- Objects are called **elements** or **members**
+
+### Standard Notations
+- Sets are denoted by capital letters: A, B, C, ...
+- Elements are denoted by small letters: a, b, c, ...
+- ∈ means "belongs to" (a ∈ A)
+- ∉ means "does not belong to" (a ∉ A)
+
+### Important Number Sets (Must Remember)
+| Symbol | Set Name | Elements | Example |
+|--------|----------|----------|---------|
+| **N** | Natural numbers | {1, 2, 3, 4, ...} | 5 ∈ N |
+| **W** | Whole numbers | {0, 1, 2, 3, ...} | 0 ∈ W |
+| **Z** | Integers | {..., -2, -1, 0, 1, 2, ...} | -3 ∈ Z |
+| **Q** | Rational numbers | {p/q : p,q ∈ Z, q ≠ 0} | 2/3 ∈ Q |
+| **R** | Real numbers | All rational + irrational | √2 ∈ R |
+| **C** | Complex numbers | {a + bi : a,b ∈ R} | 2+3i ∈ C |
+
+## 1.2 METHODS OF REPRESENTATION
+
+### Method 1: Roster Form (Tabular Form)
+Elements are listed within curly brackets { }, separated by commas.
+
+**Rules:**
+- Order of elements doesn't matter
+- Each element is listed only once
+- For infinite sets, use ellipsis (...)
+
+**Examples:**
+- A = {2, 4, 6, 8, 10}
+- B = {a, e, i, o, u}
+- C = {1, 2, 3, ..., 100}
+- D = {1, 2, 3, ...} (infinite set)
+
+### Method 2: Set Builder Form
+Elements are described by a property they satisfy.
+
+**Format:** {x : condition(s) on x} or {x | condition(s) on x}
+
+**Examples:**
+- A = {x : x is an even natural number less than 11}
+- B = {x | x is a vowel in English alphabet}
+- C = {x ∈ N : 1 ≤ x ≤ 100}
+- D = {2x : x ∈ N} (set of even numbers)
+
+### Method 3: Venn Diagram (Visual)
+Circles/ovals represent sets within a rectangle (universal set)
+
+## 1.3 TYPES OF SETS - DETAILED CLASSIFICATION
+
+### 1.3.1 Based on Number of Elements
+
+| Type | Definition | Example | Cardinality |
+|------|------------|---------|-------------|
+| **Empty/Null/Void Set (∅ or {})** | Set with no elements | Set of odd numbers divisible by 2 | n(∅) = 0 |
+| **Singleton Set** | Set with exactly one element | {5}, {a}, {∅} | n = 1 |
+| **Finite Set** | Number of elements is countable | {a, b, c} | n is finite |
+| **Infinite Set** | Number of elements is not countable | N, Z, R | n is infinite |
+| **Countable Set** | Can be put in one-to-one with N | N, Z, Q | ℵ₀ (aleph-null) |
+| **Uncountable Set** | Cannot be listed | R, C | ℵ₁ |
+
+### 1.3.2 Based on Relationship Between Sets
+
+| Type | Definition | Example |
+|------|------------|---------|
+| **Equal Sets (A = B)** | Same elements (order irrelevant) | {1,2} = {2,1} |
+| **Equivalent Sets (A ≅ B)** | Same number of elements | {a,b} ≅ {1,2} |
+| **Disjoint Sets** | No common elements (A ∩ B = ∅) | {1,2} and {3,4} |
+| **Overlapping Sets** | Have some common elements | {1,2,3} and {2,3,4} |
+
+### 1.3.3 Special Sets
+
+#### Universal Set (U)
+The set containing all elements under consideration in a particular context.
+
+**Example:** If discussing students in a class, U = all students in that class
+
+#### Power Set P(A)
+The set of all subsets of A.
+
+**Key Formula:** If n(A) = m, then n[P(A)] = 2ᵐ
+
+**Example:** A = {1, 2}
+- Subsets: ∅, {1}, {2}, {1,2}
+- P(A) = {∅, {1}, {2}, {1,2}}
+- n[P(A)] = 2² = 4
+
+## 1.4 SUBSETS - IMPORTANT CONCEPT
+
+### Definition
+A set A is a subset of B (A ⊆ B) if every element of A is also an element of B.
+
+### Types of Subsets
+
+| Type | Definition | Example (A = {1,2}) |
+|------|------------|---------------------|
+| **Subset (A ⊆ B)** | All elements of A are in B | {1} ⊆ {1,2,3} |
+| **Proper Subset (A ⊂ B)** | A ⊆ B and A ≠ B | {1} ⊂ {1,2,3} |
+| **Improper Subset** | A = B | {1,2} ⊆ {1,2} |
+| **Superset (B ⊇ A)** | B contains A | {1,2,3} ⊇ {1,2} |
+
+### Important Properties of Subsets
+1. ∅ ⊆ A for every set A
+2. Every set is a subset of itself: A ⊆ A
+3. If A ⊆ B and B ⊆ C, then A ⊆ C (Transitive)
+4. If A ⊆ B and B ⊆ A, then A = B
+
+### Number of Subsets Formula
+For a set with n elements:
+- Total number of subsets = 2ⁿ
+- Number of proper subsets = 2ⁿ - 1
+- Number of non-empty subsets = 2ⁿ - 1
+- Number of non-empty proper subsets = 2ⁿ - 2
+
+**Example:** A = {a, b, c}, n = 3
+- Total subsets = 2³ = 8
+- Proper subsets = 8 - 1 = 7
+- Non-empty subsets = 8 - 1 = 7
+- Non-empty proper subsets = 8 - 2 = 6
+
+## 1.5 CARDINALITY - DETAILED
+
+### Definition
+The number of distinct elements in a finite set A is called its cardinality, denoted by n(A) or |A|.
+
+### Cardinality Rules
+1. For finite set A, n(A) is a non-negative integer
+2. n(∅) = 0
+3. If A ⊆ B, then n(A) ≤ n(B)
+4. n(A ∪ B) = n(A) + n(B) - n(A ∩ B)
+5. n(A - B) = n(A) - n(A ∩ B)
+6. n(A') = n(U) - n(A)
+
+### ⚡ SHORTCUT: Finding Cardinality from Venn Diagram
+For two overlapping sets:
+- Only A = n(A) - n(A∩B)
+- Only B = n(B) - n(A∩B)
+- Both = n(A∩B)
+- Neither = n(U) - n(A∪B)
+
+---
+
+# SECTION 2: SET OPERATIONS - DETAILED
+
+## 2.1 BASIC OPERATIONS WITH EXAMPLES
+
+### Union (A ∪ B)
+All elements in A OR B (or both)
+
+**Example:** 
+```
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+A ∪ B = {1, 2, 3, 4, 5, 6}
+```
+
+**Properties:**
+- A ∪ B = B ∪ A (Commutative)
+- A ∪ (B ∪ C) = (A ∪ B) ∪ C (Associative)
+- A ∪ A = A (Idempotent)
+- A ∪ ∅ = A (Identity)
+- A ⊆ A ∪ B and B ⊆ A ∪ B
+
+### Intersection (A ∩ B)
+All elements in BOTH A and B
+
+**Example:**
+```
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+A ∩ B = {3, 4}
+```
+
+**Properties:**
+- A ∩ B = B ∩ A (Commutative)
+- A ∩ (B ∩ C) = (A ∩ B) ∩ C (Associative)
+- A ∩ A = A (Idempotent)
+- A ∩ ∅ = ∅ (Identity)
+- A ∩ B ⊆ A and A ∩ B ⊆ B
+
+### Difference (A - B or A\B)
+Elements in A but NOT in B
+
+**Example:**
+```
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+A - B = {1, 2}
+B - A = {5, 6}
+```
+
+**Note:** A - B ≠ B - A (generally)
+
+### Complement (A' or Aᶜ or Ā)
+Elements in universal set U that are NOT in A
+
+**Example:**
+```
+U = {1, 2, 3, 4, 5, 6}
+A = {1, 2, 3}
+A' = {4, 5, 6}
+```
+
+**Properties:**
+- (A')' = A
+- ∅' = U
+- U' = ∅
+- A ∪ A' = U
+- A ∩ A' = ∅
+
+### Symmetric Difference (A Δ B)
+Elements in A or B but NOT in both
+A Δ B = (A - B) ∪ (B - A) = (A ∪ B) - (A ∩ B)
+
+**Example:**
+```
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+A Δ B = {1, 2, 5, 6}
+```
+
+**Properties:**
+- A Δ B = B Δ A (Commutative)
+- A Δ ∅ = A
+- A Δ A = ∅
+
+## 2.2 VENN DIAGRAMS - VISUAL REPRESENTATION
+
+### Two-Set Venn Diagram Regions
+```
+                    ┌─────────────────┐
+                    │    Universal    │
+                    │       U         │
+    ┌───────────────┼───────────────┐ │
+    │      A        │     A∩B       │ │
+    │    (Only A)   │   (Both)      │ │
+    │               │               │ │
+    └───────────────┼───────────────┘ │
+                    │      B         │ │
+                    │   (Only B)     │ │
+                    │                │ │
+                    └─────────────────┘
+                           (Neither)
+```
+
+### Three-Set Venn Diagram (8 Regions)
+1. Only A: A - (B ∪ C)
+2. Only B: B - (A ∪ C)
+3. Only C: C - (A ∪ B)
+4. A∩B only: (A∩B) - C
+5. B∩C only: (B∩C) - A
+6. A∩C only: (A∩C) - B
+7. All three: A∩B∩C
+8. None: U - (A∪B∪C)
+
+## 2.3 LAWS OF SET ALGEBRA - PROOFS & APPLICATIONS
+
+### Identity Laws
+1. A ∪ ∅ = A
+   - Proof: No element from ∅ to add, so remains A
+2. A ∩ U = A
+   - Proof: Only elements common with universe are elements of A
+
+### Domination Laws
+1. A ∪ U = U
+   - Proof: Adding all elements of universe gives universe
+2. A ∩ ∅ = ∅
+   - Proof: No element common with empty set
+
+### Idempotent Laws
+1. A ∪ A = A
+   - Proof: Adding set to itself doesn't add new elements
+2. A ∩ A = A
+   - Proof: Intersection with itself is itself
+
+### Commutative Laws
+1. A ∪ B = B ∪ A
+2. A ∩ B = B ∩ A
+   - Proof: Order doesn't matter for "or" and "and"
+
+### Associative Laws
+1. (A ∪ B) ∪ C = A ∪ (B ∪ C)
+2. (A ∩ B) ∩ C = A ∩ (B ∩ C)
+   - Proof: Grouping doesn't matter for unions/intersections
+
+### Distributive Laws (IMPORTANT)
+1. A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)
+   - Like multiplication: a + (b×c) = (a+b)×(a+c) in Boolean algebra
+2. A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+   - Like multiplication: a × (b+c) = (a×b) + (a×c)
+
+### Absorption Laws
+1. A ∪ (A ∩ B) = A
+   - Proof: Adding intersection doesn't add new elements
+2. A ∩ (A ∪ B) = A
+   - Proof: Intersection with larger set is A itself
+
+## 2.4 DE MORGAN'S LAWS - CRITICAL FOR EXAM
+
+### First Law: (A ∪ B)' = A' ∩ B'
+**Meaning:** Complement of union = Intersection of complements
+
+**Example:**
+```
+U = {1, 2, 3, 4, 5, 6}
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+A ∪ B = {1, 2, 3, 4, 5}
+(A ∪ B)' = {6}
+
+A' = {4, 5, 6}
+B' = {1, 2, 6}
+A' ∩ B' = {6}
+
+Thus (A ∪ B)' = A' ∩ B' ✓
+```
+
+### Second Law: (A ∩ B)' = A' ∪ B'
+**Meaning:** Complement of intersection = Union of complements
+
+**Example:**
+```
+A ∩ B = {3}
+(A ∩ B)' = {1, 2, 4, 5, 6}
+
+A' ∪ B' = {4, 5, 6} ∪ {1, 2, 6} = {1, 2, 4, 5, 6}
+
+Thus (A ∩ B)' = A' ∪ B' ✓
+```
+
+### ⚡ SHORTCUT: Remember as "Break the line, change the sign"
+- Complement of UNION becomes INTERSECTION of complements
+- Complement of INTERSECTION becomes UNION of complements
+
+## 2.5 CARDINALITY FORMULAS - EXAM FOCUS
+
+### Two Sets Formula
+**n(A ∪ B) = n(A) + n(B) - n(A ∩ B)**
+
+**Derivation:**
+- Count elements in A: n(A)
+- Count elements in B: n(B)
+- Elements in both counted twice, subtract once
+
+### Three Sets Formula (IMPORTANT)
+**n(A ∪ B ∪ C) = n(A) + n(B) + n(C) - n(A ∩ B) - n(B ∩ C) - n(A ∩ C) + n(A ∩ B ∩ C)**
+
+**Memory Trick:** "Add singles, subtract pairs, add triple"
+
+### Special Cases
+1. **Disjoint Sets:** n(A ∪ B) = n(A) + n(B)
+2. **A ⊆ B:** n(A ∪ B) = n(B), n(A ∩ B) = n(A)
+3. **Complement:** n(A') = n(U) - n(A)
+4. **Difference:** n(A - B) = n(A) - n(A ∩ B)
+
+### ⚡ SHORTCUT: Venn Diagram Method
+For word problems, draw mental Venn diagram:
+1. Start with the intersection (both/all three)
+2. Work backwards to find individual regions
+3. Add all regions for total
+
+---
+
+# SECTION 3: RELATIONS - COMPREHENSIVE
+
+## 3.1 ORDERED PAIR
+
+### Definition
+An ordered pair (a, b) is a pair of elements where **order matters**.
+
+**Key Property:** (a, b) = (c, d) if and only if a = c and b = d
+
+**Example:** (1, 2) ≠ (2, 1)
+
+## 3.2 CARTESIAN PRODUCT (CROSS PRODUCT)
+
+### Definition
+A × B = {(a, b) : a ∈ A, b ∈ B}
+
+**Example:**
+```
+A = {1, 2}
+B = {a, b}
+A × B = {(1,a), (1,b), (2,a), (2,b)}
+B × A = {(a,1), (a,2), (b,1), (b,2)}
+```
+
+### Properties of Cartesian Product
+1. n(A × B) = n(A) × n(B)
+2. A × B ≠ B × A (generally)
+3. A × ∅ = ∅ × A = ∅
+4. A × (B ∪ C) = (A × B) ∪ (A × C)
+5. A × (B ∩ C) = (A × B) ∩ (A × C)
+6. A × (B - C) = (A × B) - (A × C)
+
+### Important Results
+- If A ⊆ B, then A × C ⊆ B × C
+- (A × B) ∩ (C × D) = (A ∩ C) × (B ∩ D)
+
+## 3.3 RELATION - DEFINITION
+
+### Formal Definition
+A relation R from set A to set B is a subset of A × B.
+
+If (a, b) ∈ R, we write a R b (a is related to b).
+
+### Components of a Relation
+- **Domain:** Set of all first elements = {a : (a, b) ∈ R}
+- **Range:** Set of all second elements = {b : (a, b) ∈ R}
+- **Codomain:** Set B
+
+**Example:**
+```
+A = {1, 2, 3}, B = {4, 5, 6}
+R = {(1,4), (2,5), (3,6)}
+Domain(R) = {1, 2, 3}
+Range(R) = {4, 5, 6}
+Codomain = B = {4, 5, 6}
+```
+
+## 3.4 TOTAL NUMBER OF RELATIONS - IMPORTANT FORMULA
+
+If n(A) = m and n(B) = n, then:
+- Number of relations from A to B = 2ᵐⁿ
+- Number of relations from A to A = 2ᵐ²
+
+**Reasoning:** 
+- Total elements in A × B = m × n
+- Each element can either be in relation or not (2 choices)
+- Total relations = 2^(m×n)
+
+**Example:** If A has 3 elements and B has 2 elements:
+- n(A × B) = 3 × 2 = 6
+- Number of relations = 2⁶ = 64
+
+## 3.5 TYPES OF RELATIONS - DETAILED
+
+### 3.5.1 Based on Element Coverage
+
+#### Empty Relation
+R = ∅ (no element related to any other)
+
+**Example:** On A = {1,2,3}, R = {} is empty relation
+
+#### Universal Relation
+R = A × A (every element related to every other)
+
+**Example:** On A = {1,2}, R = {(1,1), (1,2), (2,1), (2,2)}
+
+#### Identity Relation
+R = {(a, a) : a ∈ A}
+
+**Example:** On A = {1,2,3}, I = {(1,1), (2,2), (3,3)}
+
+### 3.5.2 Based on Properties (CRITICAL FOR EXAM)
+
+#### Reflexive Relation
+A relation R on set A is reflexive if (a, a) ∈ R for **every** a ∈ A.
+
+**Check:** All diagonal elements must be present
+
+**Example:** 
+```
+A = {1,2,3}
+R = {(1,1), (2,2), (3,3), (1,2)} is reflexive ✓
+R = {(1,1), (2,2), (1,2)} is NOT reflexive (missing (3,3))
+```
+
+#### Symmetric Relation
+A relation R on set A is symmetric if (a, b) ∈ R ⇒ (b, a) ∈ R for all a, b ∈ A.
+
+**Check:** If (a,b) exists, (b,a) must exist
+
+**Example:**
+```
+R = {(1,2), (2,1), (3,3)} is symmetric ✓
+R = {(1,2), (2,1), (1,3)} is NOT symmetric (missing (3,1))
+```
+
+#### Transitive Relation
+A relation R on set A is transitive if (a, b) ∈ R and (b, c) ∈ R ⇒ (a, c) ∈ R for all a, b, c ∈ A.
+
+**Check:** Follow the chain
+
+**Example:**
+```
+R = {(1,2), (2,3), (1,3)} is transitive ✓
+R = {(1,2), (2,3)} is NOT transitive (missing (1,3))
+```
+
+#### Anti-symmetric Relation
+A relation R on set A is anti-symmetric if (a, b) ∈ R and (b, a) ∈ R ⇒ a = b.
+
+**Check:** No two different elements are related both ways
+
+**Example:**
+```
+R = {(1,1), (2,2), (1,2)} is anti-symmetric ✓
+R = {(1,2), (2,1)} is NOT anti-symmetric (1≠2 but both ways)
+```
+
+### 3.5.3 Combined Relations
+
+#### Equivalence Relation (VERY IMPORTANT)
+A relation that is **reflexive, symmetric, AND transitive**.
+
+**Example 1:** Equality relation on numbers
+```
+R = {(a,b) : a = b} on real numbers
+- Reflexive: a = a ✓
+- Symmetric: if a = b then b = a ✓
+- Transitive: if a = b and b = c then a = c ✓
+```
+
+**Example 2:** Parallel lines relation
+```
+Lines L1, L2: L1 R L2 if L1 ∥ L2
+- Reflexive: A line is parallel to itself ✓
+- Symmetric: if L1 ∥ L2 then L2 ∥ L1 ✓
+- Transitive: if L1 ∥ L2 and L2 ∥ L3 then L1 ∥ L3 ✓
+```
+
+#### Partial Order Relation
+A relation that is **reflexive, anti-symmetric, AND transitive**.
+
+**Example:** "Less than or equal to" (≤) on numbers
+```
+- Reflexive: a ≤ a ✓
+- Anti-symmetric: if a ≤ b and b ≤ a then a = b ✓
+- Transitive: if a ≤ b and b ≤ c then a ≤ c ✓
+```
+
+### ⚡ SHORTCUT: Quick Property Check
+
+| Property | Quick Test |
+|----------|------------|
+| Reflexive | All (a,a) present |
+| Symmetric | Matrix symmetric about diagonal |
+| Transitive | If a→b and b→c exist, a→c must exist |
+| Anti-symmetric | No pair (a,b) and (b,a) with a≠b |
+
+## 3.6 REPRESENTATION OF RELATIONS
+
+### 3.6.1 Matrix Representation
+For sets A = {a₁, a₂, ..., aₘ} and B = {b₁, b₂, ..., bₙ}, create m×n matrix M where:
+- Mᵢⱼ = 1 if (aᵢ, bⱼ) ∈ R
+- Mᵢⱼ = 0 otherwise
+
+**Example:**
+```
+A = {1,2}, B = {a,b}
+R = {(1,a), (2,b)}
+Matrix = [1 0; 0 1] (2×2 matrix)
+```
+
+### 3.6.2 Digraph (Directed Graph) Representation
+- Elements are vertices (nodes)
+- Draw arrow from a to b if (a,b) ∈ R
+- Loop at a if (a,a) ∈ R
+
+**Example:** R = {(1,2), (2,3), (1,3)} on A = {1,2,3}
+```
+    1 ──→ 2
+    │     │
+    └──→ 3 ←─┘
+```
+
+### 3.6.3 Arrow Diagram
+For relations from A to B, draw arrows from elements of A to elements of B.
+
+---
+
+# SECTION 4: FUNCTIONS - COMPREHENSIVE
+
+## 4.1 FUNCTION DEFINITION
+
+### Formal Definition
+A function f from set A to set B, denoted f: A → B, is a relation in which:
+1. **Every** element of A has an image in B (Domain = A)
+2. Each element of A has **exactly one** image in B (No one-to-many)
+
+### Terminology
+- **Domain:** Set A (all inputs)
+- **Codomain:** Set B (possible outputs)
+- **Range:** Set of actual outputs = {f(a) : a ∈ A}
+- **Image:** f(a) is the image of a
+- **Pre-image:** a is pre-image of f(a)
+
+### ⚡ SHORTCUT: Function Test
+For a relation to be a function:
+- Vertical line test: In graph, any vertical line cuts at most once
+- Arrow diagram: From each element in domain, exactly one arrow leaves
+
+## 4.2 DIFFERENCE BETWEEN RELATION AND FUNCTION
+
+| Aspect | Relation | Function |
+|--------|----------|----------|
+| **Definition** | Subset of A × B | Special type of relation |
+| **Domain** | May be subset of A | Must be entire A |
+| **Mapping** | One-to-many allowed | One-to-many NOT allowed |
+| **Many-to-one** | Allowed | Allowed |
+| **Empty allowed?** | Yes (empty relation) | No (every element must map) |
+
+## 4.3 TYPES OF FUNCTIONS - DETAILED
+
+### 4.3.1 Based on Mapping Pattern
+
+#### One-to-One (Injective) Function
+Different elements of A have different images in B.
+
+**Formal:** a₁ ≠ a₂ ⇒ f(a₁) ≠ f(a₂)
+**Equivalent:** f(a₁) = f(a₂) ⇒ a₁ = a₂
+
+**Example:** f: R → R, f(x) = 2x + 3
+```
+If f(x₁) = f(x₂)
+⇒ 2x₁+3 = 2x₂+3
+⇒ 2x₁ = 2x₂
+⇒ x₁ = x₂ ✓
+```
+
+**Horizontal Line Test:** Any horizontal line cuts graph at most once
+
+#### Many-to-One Function
+Two or more elements of A have the same image in B.
+
+**Example:** f: R → R, f(x) = x²
+```
+f(2) = 4 and f(-2) = 4 (two inputs, same output)
+```
+
+#### Onto (Surjective) Function
+Every element of B has at least one pre-image in A.
+**Condition:** Range = Codomain
+
+**Example:** f: R → R, f(x) = x³
+```
+For any y ∈ R, x = ∛y gives f(x) = y ✓
+```
+
+#### Into Function
+There exists at least one element in B with no pre-image in A.
+**Condition:** Range ⊂ Codomain (proper subset)
+
+**Example:** f: R → R, f(x) = x²
+```
+No x gives negative values, so range = [0,∞) ⊂ R
+```
+
+#### One-to-One and Onto (Bijective) Function
+Function is both injective and surjective.
+
+**Importance:** Only bijective functions have inverses
+
+**Example:** f: R → R, f(x) = 2x - 1
+```
+One-to-one: If 2x₁-1 = 2x₂-1 ⇒ x₁ = x₂
+Onto: For any y, x = (y+1)/2 gives f(x) = y
+```
+
+### ⚡ SHORTCUT: Function Type Quick Check
+
+| Function Type | Test |
+|--------------|------|
+| Injective | Different x → different y |
+| Surjective | Every y has some x |
+| Bijective | Both conditions satisfied |
+
+### 4.3.2 Based on Algebraic Form
+
+#### Constant Function
+f(x) = c for all x (c is constant)
+
+**Properties:**
+- Domain: All real numbers
+- Range: {c} (singleton)
+- Neither one-to-one (unless domain has 1 element)
+- Not onto (unless codomain = {c})
+
+#### Identity Function
+f(x) = x for all x
+- Domain = Range = given set
+- Always bijective
+- Denoted by I(x)
+
+#### Linear Function
+f(x) = ax + b, a ≠ 0
+
+**Properties:**
+- Domain: R
+- Range: R (if a ≠ 0)
+- One-to-one: Yes (if a ≠ 0)
+- Onto: Yes (if codomain is R)
+
+#### Polynomial Function
+f(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ
+
+**Degree n polynomial:**
+- Domain: R
+- Not necessarily one-to-one (depends on coefficients)
+- Not necessarily onto (even degree polynomials have range restrictions)
+
+#### Rational Function
+f(x) = p(x)/q(x), where p and q are polynomials, q(x) ≠ 0
+
+**Domain:** All x where q(x) ≠ 0
+
+#### Modulus Function
+f(x) = |x| = { x if x ≥ 0, -x if x < 0 }
+
+**Properties:**
+- Domain: R
+- Range: [0, ∞)
+- Even function
+- Not one-to-one
+- Not onto (if codomain R)
+
+#### Greatest Integer Function (Floor Function)
+f(x) = [x] = greatest integer ≤ x
+
+**Example:** [2.3] = 2, [3.8] = 3, [-1.2] = -2
+
+**Properties:**
+- Domain: R
+- Range: Z
+- Step function (constant on intervals [n, n+1))
+
+#### Signum Function
+f(x) = { 
+  1 if x > 0
+  0 if x = 0
+  -1 if x < 0
+}
+
+**Properties:**
+- Domain: R
+- Range: {-1, 0, 1}
+
+### 4.3.3 Based on Symmetry
+
+#### Even Function
+f(-x) = f(x) for all x
+- Symmetric about y-axis
+- Example: f(x) = x², cos x, |x|
+
+#### Odd Function
+f(-x) = -f(x) for all x
+- Symmetric about origin
+- Example: f(x) = x³, sin x, tan x
+
+#### Neither Even nor Odd
+Most functions
+- Example: f(x) = x² + x
+
+### ⚡ SHORTCUT: Even/Odd Test
+- Replace x with -x
+- If f(-x) = f(x) → Even
+- If f(-x) = -f(x) → Odd
+- Otherwise → Neither
+
+## 4.4 NUMBER OF FUNCTIONS - IMPORTANT FORMULAS
+
+If n(A) = m and n(B) = n:
+
+| Type of Function | Formula | Condition |
+|-----------------|---------|-----------|
+| **Total functions** | nᵐ | Always |
+| **One-to-one functions** | ⁿPₘ = n!/(n-m)! | m ≤ n |
+| **Many-to-one functions** | nᵐ - ⁿPₘ | m ≤ n |
+| **Onto functions** | Σ_{k=0}^{n} (-1)ᵏ ⁿCₖ (n-k)ᵐ | m ≥ n |
+| **Bijective functions** | n! | m = n |
+| **Constant functions** | n | Always |
+| **Identity functions** | 1 | A = B |
+
+### ⚡ SHORTCUT: Remember with Examples
+For m = 3, n = 4:
+- Total = 4³ = 64
+- One-to-one = ⁴P₃ = 24
+- Onto = 0 (since m < n, can't be onto)
+
+For m = 3, n = 2:
+- Total = 2³ = 8
+- One-to-one = 0 (since m > n)
+- Onto = 2³ - ²C₁×1³ + ²C₂×0³ = 8 - 2 + 0 = 6
+
+## 4.5 COMPOSITION OF FUNCTIONS
+
+### Definition
+If f: A → B and g: B → C, then g∘f: A → C is defined by:
+(g∘f)(x) = g(f(x)) for all x ∈ A
+
+**Read as:** "g circle f" or "g after f"
+**Order:** Apply f first, then g
+
+### Example
+```
+f(x) = 2x + 1
+g(x) = x²
+
+f∘g(x) = f(g(x)) = f(x²) = 2x² + 1
+g∘f(x) = g(f(x)) = g(2x+1) = (2x+1)² = 4x² + 4x + 1
+```
+
+### Properties of Composition
+1. **Not Commutative:** f∘g ≠ g∘f (generally)
+2. **Associative:** (f∘g)∘h = f∘(g∘h)
+3. **Identity:** f∘I = I∘f = f
+4. If f and g are one-to-one, then g∘f is one-to-one
+5. If f and g are onto, then g∘f is onto
+6. If f and g are bijective, then g∘f is bijective
+
+### ⚡ SHORTCUT: Domain/Range in Composition
+For g∘f to exist:
+- Range of f must be subset of Domain of g
+- Domain of g∘f = Domain of f
+- Range of g∘f = Range of g
+
+## 4.6 INVERSE OF A FUNCTION
+
+### Condition for Inverse
+A function f: A → B has an inverse f⁻¹: B → A if and only if f is **bijective**.
+
+### Properties of Inverse
+1. f⁻¹(f(x)) = x for all x ∈ A
+2. f(f⁻¹(y)) = y for all y ∈ B
+3. (f⁻¹)⁻¹ = f
+4. Domain of f⁻¹ = Range of f
+5. Range of f⁻¹ = Domain of f
+6. (g∘f)⁻¹ = f⁻¹∘g⁻¹ (Reverse order)
+
+### Steps to Find Inverse
+1. Write y = f(x)
+2. Solve for x in terms of y
+3. Swap x and y
+4. The resulting expression is f⁻¹(x)
+5. State domain restrictions if any
+
+### Examples
+
+**Example 1:** f(x) = 3x - 5
+```
+y = 3x - 5
+3x = y + 5
+x = (y + 5)/3
+f⁻¹(x) = (x + 5)/3
+Domain: R, Range: R
+```
+
+**Example 2:** f(x) = √(x - 2), x ≥ 2
+```
+y = √(x - 2)
+y² = x - 2
+x = y² + 2
+f⁻¹(x) = x² + 2, x ≥ 0
+Note: Domain of inverse = Range of original = [0, ∞)
+```
+
+### ⚡ SHORTCUT: Inverse of Common Functions
+- f(x) = ax + b → f⁻¹(x) = (x - b)/a
+- f(x) = eˣ → f⁻¹(x) = ln x
+- f(x) = ln x → f⁻¹(x) = eˣ
+- f(x) = xⁿ (x ≥ 0) → f⁻¹(x) = x^(1/n)
+
+## 4.7 SPECIAL TYPES OF FUNCTIONS
+
+### 4.7.1 Periodic Functions
+f(x + T) = f(x) for all x, where T > 0 is the **period**.
+
+**Examples:**
+- sin x: period 2π
+- cos x: period 2π
+- tan x: period π
+- Constant function: any T is period
+
+### 4.7.2 Monotonic Functions
+
+| Type | Definition | Example |
+|------|------------|---------|
+| **Increasing** | x₁ < x₂ ⇒ f(x₁) ≤ f(x₂) | f(x) = x³ |
+| **Strictly Increasing** | x₁ < x₂ ⇒ f(x₁) < f(x₂) | f(x) = 2x + 1 |
+| **Decreasing** | x₁ < x₂ ⇒ f(x₁) ≥ f(x₂) | f(x) = -x³ |
+| **Strictly Decreasing** | x₁ < x₂ ⇒ f(x₁) > f(x₂) | f(x) = -2x |
+
+### 4.7.3 Bounded Functions
+
+| Type | Definition | Example |
+|------|------------|---------|
+| **Bounded Above** | ∃ M such that f(x) ≤ M ∀x | f(x) = -x² |
+| **Bounded Below** | ∃ m such that f(x) ≥ m ∀x | f(x) = x² |
+| **Bounded** | Both above and below | sin x, cos x |
+
+---
+
+# SECTION 5: COMPREHENSIVE FORMULA SHEET
+
+## SET THEORY FORMULAS
+
+| Concept | Formula |
+|---------|---------|
+| Cardinality of set A | n(A) |
+| Power set cardinality | n[P(A)] = 2ⁿ where n = n(A) |
+| Number of subsets | 2ⁿ |
+| Number of proper subsets | 2ⁿ - 1 |
+| Number of non-empty subsets | 2ⁿ - 1 |
+| Number of non-empty proper subsets | 2ⁿ - 2 |
+| Union of two sets | n(A∪B) = n(A) + n(B) - n(A∩B) |
+| Union of three sets | n(A∪B∪C) = n(A)+n(B)+n(C) - n(A∩B) - n(B∩C) - n(A∩C) + n(A∩B∩C) |
+| Difference | n(A-B) = n(A) - n(A∩B) |
+| Complement | n(A') = n(U) - n(A) |
+| Symmetric difference | n(A Δ B) = n(A) + n(B) - 2n(A∩B) |
+
+## RELATIONS FORMULAS
+
+| Concept | Formula |
+|---------|---------|
+| Cartesian product | A × B = {(a,b) : a∈A, b∈B} |
+| Cardinality of product | n(A × B) = n(A) × n(B) |
+| Number of relations from A to B | 2ⁿ⁽ᴬ⁾×ⁿ⁽ᴮ⁾ |
+| Number of relations on A | 2⁽ⁿ⁽ᴬ⁾⁾² |
+| Number of reflexive relations on A | 2ⁿ⁽ᴬ⁾⁽ⁿ⁽ᴬ⁾⁻¹⁾ |
+| Number of symmetric relations on A | 2ⁿ⁽ᴬ⁾⁽ⁿ⁽ᴬ⁾⁺¹⁾/² |
+| Number of transitive relations | No simple formula |
+
+## FUNCTIONS FORMULAS
+
+| Concept | Formula | Condition |
+|---------|---------|-----------|
+| Total functions | [n(B)]ⁿ⁽ᴬ⁾ | Always |
+| One-to-one functions | ⁿ⁽ᴮ⁾Pₙ₍ₐ₎ = n(B)!/(n(B)-n(A))! | n(A) ≤ n(B) |
+| Onto functions | Σ_{k=0}^{n(B)} (-1)ᵏ C(n(B),k) (n(B)-k)ⁿ⁽ᴬ⁾ | n(A) ≥ n(B) |
+| Bijective functions | n(A)! | n(A) = n(B) |
+| Constant functions | n(B) | Always |
+| Identity functions | 1 | A = B |
+| Composition | (g∘f)(x) = g(f(x)) | Range(f) ⊆ Domain(g) |
+| Inverse exists | Only if function is bijective | - |
+
+## FUNCTION PROPERTIES CHECKLIST
+
+| Property | Mathematical Condition |
+|----------|------------------------|
+| One-to-one (Injective) | f(a) = f(b) ⇒ a = b |
+| Onto (Surjective) | ∀ y ∈ B, ∃ x ∈ A: f(x) = y |
+| Bijective | Both injective and surjective |
+| Even | f(-x) = f(x) |
+| Odd | f(-x) = -f(x) |
+| Periodic | f(x+T) = f(x) for some T>0 |
+| Increasing | x₁ < x₂ ⇒ f(x₁) ≤ f(x₂) |
+| Strictly Increasing | x₁ < x₂ ⇒ f(x₁) < f(x₂) |
+
+---
+
+# SECTION 6: SOLVED EXAMPLES WITH EXAM STRATEGY
+
+## SET THEORY PROBLEMS
+
+**Example 1:** In a survey of 200 students, 120 like tea, 110 like coffee, and 80 like both. Find:
+a) Students who like at least one
+b) Students who like neither
+c) Students who like only tea
+
+**Solution:**
+```
+Given: n(T) = 120, n(C) = 110, n(T∩C) = 80, Total = 200
+
+a) n(T∪C) = n(T) + n(C) - n(T∩C)
+          = 120 + 110 - 80 = 150
+
+b) Neither = Total - n(T∪C) = 200 - 150 = 50
+
+c) Only tea = n(T) - n(T∩C) = 120 - 80 = 40
+```
+
+**⚡ EXAM TIP:** Draw mental Venn diagram:
+```
+        ┌─────────────┐
+        │   Tea:120   │
+        │  ┌─────┬────┐
+        │  │ 40  │ 80 │
+        │  └─────┴────┘
+        │    Coffee:110 │
+        └─────────────┘
+          Neither:50
+```
+
+**Example 2:** If n(A) = 20, n(B) = 25, n(A∪B) = 35, find n(A∩B) and n(A-B).
+
+**Solution:**
+```
+n(A∪B) = n(A) + n(B) - n(A∩B)
+35 = 20 + 25 - n(A∩B)
+35 = 45 - n(A∩B)
+n(A∩B) = 10
+
+n(A-B) = n(A) - n(A∩B) = 20 - 10 = 10
+```
+
+**Example 3:** In a class of 50 students, 30 play cricket, 25 play football, and 15 play both. How many play neither?
+
+**Solution:**
+```
+n(C) = 30, n(F) = 25, n(C∩F) = 15
+n(C∪F) = 30 + 25 - 15 = 40
+Neither = 50 - 40 = 10 students
+```
+
+**Example 4:** If A = {1,2,3}, B = {2,3,4}, C = {3,4,5}, find n(A∪B∪C).
+
+**Solution:**
+```
+n(A) = 3, n(B) = 3, n(C) = 3
+n(A∩B) = {2,3} → 2
+n(B∩C) = {3,4} → 2
+n(A∩C) = {3} → 1
+n(A∩B∩C) = {3} → 1
+
+n(A∪B∪C) = 3+3+3 - 2-2-1 + 1 = 5
+```
+
+## RELATIONS PROBLEMS
+
+**Example 5:** Check if R = {(1,1), (1,2), (2,1), (2,2), (3,3)} on A = {1,2,3} is an equivalence relation.
+
+**Solution:**
+```
+Reflexive: Check (1,1), (2,2), (3,3) all present ✓
+Symmetric: 
+  - (1,2) present, (2,1) present ✓
+  - (2,1) present, (1,2) present ✓
+  - All diagonal pairs are symmetric ✓
+Transitive:
+  - (1,2) and (2,1) ⇒ need (1,1) which is present ✓
+  - (1,2) and (2,2) ⇒ need (1,2) which is present ✓
+  - (2,1) and (1,2) ⇒ need (2,2) which is present ✓
+  All chains checked ✓
+
+Therefore R is an equivalence relation.
+```
+
+**Example 6:** For A = {1,2,3}, find the number of reflexive relations on A.
+
+**Solution:**
+```
+n(A) = 3
+Total pairs in A×A = 3² = 9
+For reflexive: All 3 diagonal pairs (1,1), (2,2), (3,3) must be present
+Remaining 6 pairs can be either present or absent
+Number of reflexive relations = 2⁶ = 64
+```
+
+**Example 7:** Check if R = {(1,2), (2,3), (1,3)} on A = {1,2,3} is transitive.
+
+**Solution:**
+```
+We have (1,2) and (2,3) ⇒ need (1,3) which is present ✓
+No other chains to check
+Therefore R is transitive.
+```
+
+**Example 8:** For A = {1,2}, list all symmetric relations.
+
+**Solution:**
+```
+A×A = {(1,1), (1,2), (2,1), (2,2)}
+
+For symmetric:
+- If (1,2) included, (2,1) must be included
+- Diagonal pairs (1,1) and (2,2) can be independently chosen
+
+Possible combinations:
+1. ∅
+2. {(1,1)}
+3. {(2,2)}
+4. {(1,1), (2,2)}
+5. {(1,2), (2,1)}
+6. {(1,1), (1,2), (2,1)}
+7. {(2,2), (1,2), (2,1)}
+8. {(1,1), (2,2), (1,2), (2,1)}
+
+Total = 8 symmetric relations
+```
+
+## FUNCTIONS PROBLEMS
+
+**Example 9:** Determine if f: R → R defined by f(x) = x² + 1 is one-to-one and/or onto.
+
+**Solution:**
+```
+One-to-one check:
+f(2) = 4+1 = 5
+f(-2) = 4+1 = 5
+Since f(2) = f(-2) but 2 ≠ -2, function is NOT one-to-one.
+
+Onto check:
+Range of f(x) = x² + 1 is [1, ∞)
+Codomain is R
+Since range ≠ codomain, function is NOT onto.
+```
+
+**Example 10:** If f(x) = 2x - 3 and g(x) = x² + 1, find f∘g(2) and g∘f(2).
+
+**Solution:**
+```
+f∘g(2) = f(g(2)) = f(2²+1) = f(5) = 2×5 - 3 = 7
+g∘f(2) = g(f(2)) = g(2×2-3) = g(1) = 1²+1 = 2
+```
+
+**Example 11:** Find the inverse of f(x) = (2x+1)/(x-3), x ≠ 3.
+
+**Solution:**
+```
+Let y = (2x+1)/(x-3)
+y(x-3) = 2x+1
+yx - 3y = 2x + 1
+yx - 2x = 3y + 1
+x(y - 2) = 3y + 1
+x = (3y + 1)/(y - 2)
+
+Therefore f⁻¹(x) = (3x + 1)/(x - 2), x ≠ 2
+```
+
+**Example 12:** If A has 4 elements and B has 3 elements, find:
+a) Number of functions from A to B
+b) Number of onto functions from A to B
+
+**Solution:**
+```
+n(A) = 4, n(B) = 3
+
+a) Total functions = 3⁴ = 81
+
+b) Number of onto functions = 
+   3⁴ - C(3,1)×2⁴ + C(3,2)×1⁴ - C(3,3)×0⁴
+   = 81 - 3×16 + 3×1 - 0
+   = 81 - 48 + 3 = 36
+```
+
+**Example 13:** Check if f(x) = 2x + 1 and g(x) = (x-1)/2 are inverses of each other.
+
+**Solution:**
+```
+Check f(g(x)) = f((x-1)/2) = 2×((x-1)/2) + 1 = (x-1) + 1 = x
+Check g(f(x)) = g(2x+1) = ((2x+1)-1)/2 = (2x)/2 = x
+Since both compositions give identity, they are inverses.
+```
+
+## MIXED PROBLEMS
+
+**Example 14:** In a group of 100 people, 72 speak English, 43 speak French, and 32 speak both. How many speak neither?
+
+**Solution:**
+```
+n(E) = 72, n(F) = 43, n(E∩F) = 32
+n(E∪F) = 72 + 43 - 32 = 83
+Neither = 100 - 83 = 17
+```
+
+**Example 15:** If A = {a,b}, find P(A) and verify n[P(A)] = 2ⁿ⁽ᴬ⁾.
+
+**Solution:**
+```
+A = {a,b}, n(A) = 2
+Subsets: ∅, {a}, {b}, {a,b}
+P(A) = {∅, {a}, {b}, {a,b}}
+n[P(A)] = 4 = 2² ✓
+```
+
+**Example 16:** For f(x) = x³, determine if it's even, odd, or neither.
+
+**Solution:**
+```
+f(-x) = (-x)³ = -x³ = -f(x)
+Since f(-x) = -f(x), the function is odd.
+```
+
+**Example 17:** Find domain and range of f(x) = 1/(x² - 4).
+
+**Solution:**
+```
+Domain: x² - 4 ≠ 0 ⇒ x² ≠ 4 ⇒ x ≠ ±2
+So domain = R - {-2, 2}
+
+For range: Let y = 1/(x² - 4)
+x² - 4 = 1/y
+x² = 4 + 1/y
+For real x, x² ≥ 0 ⇒ 4 + 1/y ≥ 0
+⇒ 1/y ≥ -4
+
+Case 1: y > 0 ⇒ always true
+Case 2: y < 0 ⇒ 1/y ≥ -4 ⇒ 1 ≤ -4y ⇒ y ≤ -1/4
+
+Also y ≠ 0 (since numerator 1 ≠ 0)
+
+Therefore range = (-∞, -1/4] ∪ (0, ∞)
+```
+
+---
+
+# SECTION 7: CHAPTER-WISE WEIGHTAGE & EXAM STRATEGY
+
+## TOPIC-WISE BREAKDOWN FOR MHT CET MCA
+
+| Topic | Sub-topic | Expected Questions | Difficulty | Time to Solve |
+|-------|-----------|-------------------|------------|---------------|
+| **Set Theory** | Basic operations | 0-1 | Easy | 1 min |
+| | Cardinality problems | 1-2 | Easy-Moderate | 1-2 min |
+| | Venn diagram problems | 0-1 | Moderate | 2 min |
+| | De Morgan's laws | 0-1 | Easy | 1 min |
+| **Relations** | Types of relations | 1 | Moderate | 1-2 min |
+| | Number of relations | 0-1 | Easy | 1 min |
+| | Properties check | 0-1 | Moderate | 1-2 min |
+| **Functions** | Types of functions | 1 | Easy-Moderate | 1 min |
+| | Composition | 0-1 | Moderate | 1-2 min |
+| | Inverse | 0-1 | Moderate | 1-2 min |
+| | Number of functions | 0-1 | Moderate | 1-2 min |
+
+## ⚡ QUICK REVISION TRICKS
+
+### For Set Theory
+- **Union (∪):** "U" stands for "Union" = "U" as in "Universal" - everything together
+- **Intersection (∩):** Looks like "n" for "and" - common elements
+- **De Morgan's:** "Break the line, change the sign"
+- **Cardinality:** "Add all, subtract common" for two sets
+- **Three sets:** "Add singles, subtract pairs, add triple"
+
+### For Relations
+- **Reflexive:** All (a,a) must be there - like mirror to self
+- **Symmetric:** If a→b then b→a - like two-way street
+- **Transitive:** If a→b and b→c then a→c - like chain reaction
+- **Equivalence:** All three properties - like equality
+
+### For Functions
+- **One-to-one:** Different x → different y (Horizontal line test)
+- **Onto:** Every y has some x (Range = Codomain)
+- **Composition:** Work from inside out - "f∘g" means "g first, then f"
+- **Inverse:** Swap x and y, solve for y
+
+## COMMON MISTAKES TO AVOID
+
+### Set Theory Mistakes
+❌ Confusing ∪ and ∩
+✅ Remember: ∪ is like cup (holds more), ∩ is like cap (covers common)
+
+❌ Forgetting to subtract intersection in union formula
+✅ Always: n(A∪B) = n(A) + n(B) - n(A∩B)
+
+❌ Thinking A - B = B - A
+✅ They are generally different
+
+### Relations Mistakes
+❌ Assuming all relations are symmetric
+✅ Check both directions
+
+❌ Forgetting to check all chains for transitivity
+✅ Check (a,b) and (b,c) for every possible combination
+
+❌ Thinking empty relation is reflexive
+✅ Reflexive requires ALL diagonal elements
+
+### Functions Mistakes
+❌ Confusing domain and codomain
+✅ Domain = inputs, Codomain = possible outputs, Range = actual outputs
+
+❌ Assuming composition is commutative
+✅ f∘g ≠ g∘f generally
+
+❌ Forgetting domain restrictions for inverse
+✅ Inverse domain = original range
+
+## EXAM-DAY STRATEGY
+
+### First Pass (2-3 minutes)
+1. Scan all set theory questions - usually easiest
+2. Apply formulas directly for cardinality problems
+3. Mark questions that need more time
+
+### Second Pass (2-3 minutes)
+1. Solve relation property questions
+2. Do function type identification
+3. Handle composition problems
+
+### Final Pass (1-2 minutes)
+1. Review marked difficult questions
+2. Verify answers with quick checks
+3. Ensure no calculation errors
+
+### Time Management
+- Easy questions: 30-45 seconds each
+- Moderate questions: 1-1.5 minutes each
+- Don't spend more than 2 minutes on any question
+
+## FORMULAS TO MEMORIZE BEFORE EXAM
+
+### Must Remember
+1. n(A∪B) = n(A) + n(B) - n(A∩B)
+2. n(A∪B∪C) = n(A)+n(B)+n(C) - n(A∩B) - n(B∩C) - n(A∩C) + n(A∩B∩C)
+3. Number of relations = 2ᵐⁿ
+4. Number of functions = nᵐ
+5. One-to-one functions = ⁿPₘ (if m ≤ n)
+6. De Morgan's Laws: (A∪B)' = A'∩B', (A∩B)' = A'∪B'
+
+### Quick Reference
+- **Empty set:** ∅ or {}
+- **Universal set:** U
+- **Power set:** P(A), cardinality = 2ⁿ
+- **Identity relation:** {(a,a)}
+- **Inverse exists:** Only for bijective functions
+- **Even function:** f(-x) = f(x)
+- **Odd function:** f(-x) = -f(x)
+
+---
+
+# SECTION 8: PRACTICE QUESTIONS WITH ANSWERS
+
+## SET THEORY
+
+**Q1:** If A = {1,2,3,4}, B = {3,4,5,6}, find A∪B, A∩B, A-B, and B-A.
+
+**Q2:** In a class of 60 students, 35 like mathematics, 40 like physics, and 25 like both. Find:
+a) Students who like at least one subject
+b) Students who like neither
+c) Students who like only mathematics
+
+**Q3:** If n(A) = 15, n(B) = 20, and n(A∩B) = 8, find n(A∪B) and n(A-B).
+
+**Q4:** Verify De Morgan's Law for A = {1,2,3,4}, B = {3,4,5,6} with U = {1,2,3,4,5,6,7,8}.
+
+**Q5:** If A = {a,b,c}, find P(A) and its cardinality.
+
+## RELATIONS
+
+**Q6:** Check if R = {(1,1), (1,2), (2,1), (2,2), (3,3)} on A = {1,2,3} is an equivalence relation.
+
+**Q7:** Find the number of relations from A to B if n(A)=3 and n(B)=4.
+
+**Q8:** For A = {1,2,3}, find the number of reflexive relations.
+
+**Q9:** Determine if R = {(1,2), (2,3)} on A = {1,2,3} is transitive.
+
+**Q10:** List all symmetric relations on A = {1,2}.
+
+## FUNCTIONS
+
+**Q11:** Determine if f: R → R, f(x) = 3x - 2 is one-to-one and onto.
+
+**Q12:** If f(x) = x² + 2 and g(x) = 2x - 1, find f∘g(3) and g∘f(3).
+
+**Q13:** Find the inverse of f(x) = 4x + 7.
+
+**Q14:** If A has 3 elements and B has 2 elements, find the number of onto functions from A to B.
+
+**Q15:** Check if f(x) = x⁴ is even, odd, or neither.
+
+## ANSWERS
+
+**A1:** A∪B = {1,2,3,4,5,6}, A∩B = {3,4}, A-B = {1,2}, B-A = {5,6}
+
+**A2:** a) 50, b) 10, c) 10
+
+**A3:** n(A∪B) = 27, n(A-B) = 7
+
+**A4:** (A∪B)' = {7,8}, A'∩B' = {7,8} ✓
+
+**A5:** P(A) = {∅,{a},{b},{c},{a,b},{a,c},{b,c},{a,b,c}}, n = 8
+
+**A6:** Yes (reflexive, symmetric, transitive all satisfied)
+
+**A7:** 2¹² = 4096
+
+**A8:** 2⁶ = 64
+
+**A9:** No (need (1,3) for transitivity)
+
+**A10:** 8 relations (listed in Example 8)
+
+**A11:** Both one-to-one and onto (bijective)
+
+**A12:** f∘g(3) = 21, g∘f(3) = 21
+
+**A13:** f⁻¹(x) = (x-7)/4
+
+**A14:** 6 onto functions
+
+**A15:** Even function (f(-x) = (-x)⁴ = x⁴ = f(x))
+
+---
+
+## 🎯 FINAL EXAM TIPS
+
+1. **Read questions carefully** - Identify whether it's set, relation, or function problem
+2. **Use elimination** - For multiple choice, eliminate obviously wrong options
+3. **Draw diagrams** - Quick Venn diagrams for set problems
+4. **Check boundary cases** - Empty set, universal set, identity cases
+5. **Verify with examples** - Test with small examples for relation properties
+6. **Remember formulas** - Keep formula sheet in mind
+7. **Practice speed** - Aim for 1 minute per question
+8. **Review basics** - Strong fundamentals help in tricky questions
+
+---
+

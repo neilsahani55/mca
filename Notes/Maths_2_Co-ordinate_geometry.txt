@@ -1,0 +1,1911 @@
+# COMPLETE COORDINATE GEOMETRY GUIDE FOR MHT CET MCA ENTRANCE EXAM
+
+## EXAM OVERVIEW
+- **Weightage**: 8-12 questions (16-24 marks)
+- **Difficulty Level**: Moderate to High
+- **Time Allocation**: 15-20 minutes for this section
+- **Focus Areas**: Straight Lines, Circles, Conic Sections
+- **Key Skill**: Formula memorization + Quick calculation + Shortcut application
+
+---
+
+# SECTION 1: RECTANGULAR CARTESIAN COORDINATES
+
+## 1.1 The Coordinate Plane - Detailed Explanation
+
+### Quadrant System with Sign Convention
+| Quadrant | x-coordinate | y-coordinate | Example | Nature of Point |
+|----------|--------------|--------------|---------|-----------------|
+| I | + | + | (3, 4) | Both positive |
+| II | - | + | (-3, 4) | x negative, y positive |
+| III | - | - | (-3, -4) | Both negative |
+| IV | + | - | (3, -4) | x positive, y negative |
+
+### Important Points and Their Properties
+- **Origin**: O(0, 0) - Point of intersection of axes
+- **Point on x-axis**: (x, 0) - y-coordinate is always zero
+- **Point on y-axis**: (0, y) - x-coordinate is always zero
+- **Point on line y = x**: (a, a) - Both coordinates equal
+- **Point on line y = -x**: (a, -a) - Coordinates are negatives of each other
+- **Point on line x = k**: All points with x = constant (vertical line)
+- **Point on line y = k**: All points with y = constant (horizontal line)
+
+### SHORTCUT TRICKS:
+1. **To identify quadrant quickly**: Check signs of (x, y) - (+,+) → Q1; (-,+) → Q2; (-,-) → Q3; (+,-) → Q4
+2. **Mirror points**: Reflection across x-axis → (x, y) → (x, -y); across y-axis → (-x, y)
+3. **Equidistant points**: Points equidistant from axes lie on y = ±x
+
+## 1.2 Distance Formula - Detailed Explanation
+
+**Formula**: Distance between P(x₁, y₁) and Q(x₂, y₂)
+```
+d = √[(x₂ - x₁)² + (y₂ - y₁)²]
+```
+
+### Special Cases:
+- Distance from origin (0,0) to point (x,y) = √(x² + y²)
+- Distance between two points on x-axis = |x₂ - x₁|
+- Distance between two points on y-axis = |y₂ - y₁|
+
+### SOLVED EXAMPLES WITH DETAILED STEPS:
+
+**Example 1**: Find distance between A(2, 3) and B(5, 7)
+```
+Step 1: Identify coordinates
+x₁ = 2, y₁ = 3
+x₂ = 5, y₂ = 7
+
+Step 2: Apply formula
+d = √[(5-2)² + (7-3)²]
+  = √[3² + 4²]
+  = √[9 + 16]
+  = √25 = 5 units
+```
+
+**Example 2**: Show that points A(1, 2), B(4, 6), C(7, 2) form an isosceles triangle
+```
+Step 1: Calculate all sides
+AB = √[(4-1)² + (6-2)²] = √[9 + 16] = √25 = 5
+BC = √[(7-4)² + (2-6)²] = √[9 + 16] = √25 = 5
+CA = √[(7-1)² + (2-2)²] = √[36 + 0] = √36 = 6
+
+Step 2: Compare
+AB = BC = 5, therefore triangle is isosceles
+```
+
+### SHORTCUT TRICKS:
+1. **For collinearity check**: If AB + BC = AC, points are collinear
+2. **For right angle check**: If AB² + BC² = AC², angle B is 90°
+3. **For equilateral triangle**: All three distances equal
+4. **For square**: All sides equal and diagonals equal
+5. **Speed calculation**: Memorize common squares: 3²=9, 4²=16, 5²=25, 6²=36, 7²=49, 8²=64, 9²=81, 10²=100, 12²=144, 15²=225
+
+## 1.3 Section Formula - Detailed Explanation
+
+### Internal Division
+Point P dividing AB in ratio m:n (A to P : P to B = m : n)
+```
+P(x, y) = [(mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n)]
+```
+
+**Memory Trick**: "m with second, n with first" - m multiplies with x₂, n multiplies with x₁
+
+### External Division
+Point P dividing AB externally in ratio m:n
+```
+P(x, y) = [(mx₂ - nx₁)/(m - n), (my₂ - ny₁)/(m - n)]
+```
+
+**Note**: For external division, m ≠ n
+
+### SOLVED EXAMPLES:
+
+**Example 3**: Find point dividing A(2, 3) and B(6, 7) in ratio 2:3 internally
+```
+Step 1: Identify values
+x₁ = 2, y₁ = 3, x₂ = 6, y₂ = 7
+m = 2, n = 3
+
+Step 2: Apply internal division formula
+x = (m×x₂ + n×x₁)/(m + n) = (2×6 + 3×2)/(2+3) = (12 + 6)/5 = 18/5 = 3.6
+y = (m×y₂ + n×y₁)/(m + n) = (2×7 + 3×3)/(2+3) = (14 + 9)/5 = 23/5 = 4.6
+P = (3.6, 4.6)
+```
+
+**Example 4**: Find point dividing A(2, 3) and B(6, 7) in ratio 2:3 externally
+```
+Step 1: Apply external division formula
+x = (m×x₂ - n×x₁)/(m - n) = (2×6 - 3×2)/(2-3) = (12 - 6)/(-1) = 6/(-1) = -6
+y = (m×y₂ - n×y₁)/(m - n) = (2×7 - 3×3)/(2-3) = (14 - 9)/(-1) = 5/(-1) = -5
+P = (-6, -5)
+```
+
+### SHORTCUT TRICKS:
+1. **When ratio is 1:1**, it becomes midpoint formula
+2. **For k:1 ratio**, formula simplifies to: [(kx₂ + x₁)/(k+1), (ky₂ + y₁)/(k+1)]
+3. **To find ratio** when point is given, use: m/n = (x - x₁)/(x₂ - x) [for x-coordinate]
+
+## 1.4 Midpoint Formula - Detailed Explanation
+
+**Formula**: Midpoint of P(x₁, y₁) and Q(x₂, y₂)
+```
+M = [(x₁ + x₂)/2, (y₁ + y₂)/2]
+```
+
+### Properties:
+- Midpoint is the average of the coordinates
+- It's the point equidistant from both endpoints
+- It divides the segment in ratio 1:1
+
+**Example 5**: Find midpoint of (4, 6) and (8, 10)
+```
+M = [(4+8)/2, (6+10)/2] = (12/2, 16/2) = (6, 8)
+```
+
+### SHORTCUT TRICKS:
+1. **For multiple points**: Midpoint of (x₁,y₁), (x₂,y₂),...,(xₙ,yₙ) is (Σxᵢ/n, Σyᵢ/n)
+2. **To find endpoint** given midpoint and one endpoint: x₂ = 2Mₓ - x₁, y₂ = 2Mᵧ - y₁
+
+## 1.5 Area of Triangle - Detailed Explanation
+
+**Formula**: Area of triangle with vertices (x₁, y₁), (x₂, y₂), (x₃, y₃)
+```
+Area = ½ |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|
+```
+
+### Alternative Formula (Determinant Form):
+```
+Area = ½ | x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂) |
+     = ½ | (x₁ y₂ + x₂ y₃ + x₃ y₁) - (y₁ x₂ + y₂ x₃ + y₃ x₁) |
+```
+
+### SOLVED EXAMPLES:
+
+**Example 6**: Find area of triangle with vertices (0,0), (4,0), (0,3)
+```
+Step 1: Apply formula
+Area = ½ |0(0-3) + 4(3-0) + 0(0-0)|
+     = ½ |0 + 12 + 0|
+     = ½ × 12 = 6 square units
+```
+
+**Example 7**: Check if points (1,2), (3,4), (5,6) are collinear
+```
+Area = ½ |1(4-6) + 3(6-2) + 5(2-4)|
+     = ½ |1(-2) + 3(4) + 5(-2)|
+     = ½ |-2 + 12 - 10|
+     = ½ |0| = 0
+Since area = 0, points are collinear
+```
+
+### SHORTCUT TRICKS:
+1. **Collinearity test**: If area = 0, points are collinear
+2. **For triangle with base parallel to axes**: Area = ½ × base × height
+3. **For right triangle**: Area = ½ × product of legs
+4. **For triangle with one vertex at origin**: Area = ½ |x₁y₂ - x₂y₁|
+
+## 1.6 Centroid of Triangle - Detailed Explanation
+
+**Formula**: Centroid G = [(x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3]
+
+### Properties:
+- Centroid divides each median in ratio 2:1
+- Centroid is the center of mass of the triangle
+- It's always inside the triangle
+
+**Example 8**: Find centroid of triangle (2,4), (6,8), (10,12)
+```
+G = [(2+6+10)/3, (4+8+12)/3] = (18/3, 24/3) = (6, 8)
+```
+
+### SHORTCUT TRICKS:
+1. **Centroid formula** is simply the average of all coordinates
+2. **For triangle with vertices (0,0), (a,0), (0,b)**: Centroid = (a/3, b/3)
+3. **Relationship**: Centroid divides the line joining orthocenter and circumcenter in ratio 2:1
+
+---
+
+# SECTION 2: STRAIGHT LINES
+
+## 2.1 Slope of a Line - Detailed Explanation
+
+**Definition**: Slope (gradient) = tan θ, where θ is angle with positive x-axis (measured anticlockwise)
+
+**Formula**: m = (y₂ - y₁)/(x₂ - x₁)
+
+### Important Cases:
+- **Horizontal line**: m = 0 (θ = 0° or 180°)
+- **Vertical line**: m = undefined (θ = 90°)
+- **Line at 45°**: m = 1
+- **Line at 135°**: m = -1
+
+**Example 9**: Find slope of line through (2,3) and (5,11)
+```
+m = (11-3)/(5-2) = 8/3 ≈ 2.67
+This means for every 3 units right, line goes up 8 units
+```
+
+### SHORTCUT TRICKS:
+1. **Slope from equation**: For Ax + By + C = 0, slope m = -A/B
+2. **Parallel lines**: Equal slopes (m₁ = m₂)
+3. **Perpendicular lines**: m₁ × m₂ = -1
+4. **Acute angle with x-axis**: θ = tan⁻¹|m|
+
+## 2.2 Various Forms of Equation of Line - Detailed Explanation
+
+### 1. Slope-Intercept Form
+```
+y = mx + c
+```
+where m = slope, c = y-intercept (point where line cuts y-axis)
+
+**Example 10**: Write equation of line with slope 2 and y-intercept -3
+```
+y = 2x - 3
+```
+
+### 2. Point-Slope Form
+```
+y - y₁ = m(x - x₁)
+```
+Used when slope and one point are known
+
+**Example 11**: Line through (2,3) with slope 4
+```
+y - 3 = 4(x - 2)
+y - 3 = 4x - 8
+y = 4x - 5
+```
+
+### 3. Two-Point Form
+```
+(y - y₁)/(y₂ - y₁) = (x - x₁)/(x₂ - x₁)
+```
+or
+```
+(y - y₁)(x₂ - x₁) = (x - x₁)(y₂ - y₁)
+```
+
+**Example 12**: Line through (1,2) and (3,8)
+```
+(y - 2)/(8-2) = (x - 1)/(3-1)
+(y - 2)/6 = (x - 1)/2
+Cross multiply: 2(y - 2) = 6(x - 1)
+2y - 4 = 6x - 6
+2y = 6x - 2
+y = 3x - 1
+```
+
+### 4. Intercept Form
+```
+x/a + y/b = 1
+```
+where a = x-intercept, b = y-intercept
+
+**Example 13**: Line with x-intercept 4 and y-intercept 3
+```
+x/4 + y/3 = 1
+Multiply by 12: 3x + 4y = 12
+```
+
+### 5. Normal Form
+```
+x cos α + y sin α = p
+```
+where p = perpendicular distance from origin, α = angle of perpendicular with positive x-axis
+
+**Example 14**: Line at distance 5 from origin, perpendicular making 30° with x-axis
+```
+x cos 30° + y sin 30° = 5
+x(√3/2) + y(1/2) = 5
+√3x + y = 10
+```
+
+### 6. General Form
+```
+Ax + By + C = 0
+```
+where A, B, C are constants, and A, B not both zero
+
+### SHORTCUT TRICKS FOR CONVERTING FORMS:
+1. **General to slope-intercept**: y = (-A/B)x + (-C/B)
+2. **General to intercept form**: x/(-C/A) + y/(-C/B) = 1
+3. **To find intercepts quickly**: Put y=0 to get x-intercept, put x=0 to get y-intercept
+
+## 2.3 Important Formulas for General Form Ax + By + C = 0
+
+| Formula | Expression | Memory Trick |
+|---------|------------|--------------|
+| Slope | m = -A/B | "Minus A over B" |
+| x-intercept | -C/A | "Put y=0, solve for x" |
+| y-intercept | -C/B | "Put x=0, solve for y" |
+| Distance from origin | \|C\|/√(A² + B²) | "Absolute C over root sum of squares" |
+
+## 2.4 Angle Between Two Lines - Detailed Explanation
+
+**Formula**: tan θ = |(m₁ - m₂)/(1 + m₁m₂)|
+
+### Special Cases:
+- **Parallel lines**: m₁ = m₂ → θ = 0°
+- **Perpendicular lines**: m₁ × m₂ = -1 → θ = 90°
+- **Lines with slopes m and -1/m**: Always perpendicular
+
+**Example 15**: Find angle between lines y = 2x + 3 and y = -½x + 5
+```
+m₁ = 2, m₂ = -½
+tan θ = |(2 - (-½))/(1 + 2×(-½))|
+      = |(2 + 0.5)/(1 - 1)|
+      = |2.5/0| → ∞
+θ = 90° (perpendicular lines)
+```
+
+**Example 16**: Find angle between lines 3x - 4y + 7 = 0 and 12x - 5y - 8 = 0
+```
+Step 1: Find slopes
+m₁ = -A₁/B₁ = -3/(-4) = 3/4
+m₂ = -A₂/B₂ = -12/(-5) = 12/5
+
+Step 2: Apply formula
+tan θ = |(3/4 - 12/5)/(1 + (3/4)(12/5))|
+      = |(15/20 - 48/20)/(1 + 36/20)|
+      = |(-33/20)/(56/20)|
+      = | -33/56 | = 33/56
+θ = tan⁻¹(33/56)
+```
+
+### SHORTCUT TRICKS:
+1. **Acute angle always**: Formula gives acute angle, use modulus
+2. **For perpendicular lines**: Just check if A₁A₂ + B₁B₂ = 0 (in general form)
+3. **For parallel lines**: Check if A₁/A₂ = B₁/B₂ ≠ C₁/C₂
+
+## 2.5 Condition for Concurrency of Three Lines
+
+Three lines a₁x + b₁y + c₁ = 0, a₂x + b₂y + c₂ = 0, a₃x + b₃y + c₃ = 0 are concurrent if:
+
+```
+|a₁ b₁ c₁|
+|a₂ b₂ c₂| = 0
+|a₃ b₃ c₃|
+```
+
+### Alternative Method:
+Find intersection point of any two lines, then check if it satisfies the third line
+
+**Example 17**: Check if lines x + y - 3 = 0, 2x - y + 1 = 0, 3x - 4y + 5 = 0 are concurrent
+```
+Step 1: Solve first two equations
+x + y = 3 ...(1)
+2x - y = -1 ...(2)
+Add (1) and (2): 3x = 2 → x = 2/3
+From (1): 2/3 + y = 3 → y = 7/3
+Intersection point = (2/3, 7/3)
+
+Step 2: Check in third equation
+3(2/3) - 4(7/3) + 5 = 2 - 28/3 + 5 = 7 - 28/3 = (21-28)/3 = -7/3 ≠ 0
+Therefore lines are NOT concurrent
+```
+
+### SHORTCUT TRICK:
+For three lines to be concurrent, the determinant must be zero. This is faster than finding intersection.
+
+## 2.6 Distance from a Point to a Line - Detailed Explanation
+
+**Formula**: Distance from point (x₁, y₁) to line Ax + By + C = 0
+```
+d = |Ax₁ + By₁ + C|/√(A² + B²)
+```
+
+**Example 18**: Find distance of point (2,3) from line 3x + 4y - 6 = 0
+```
+Step 1: Substitute point in LHS
+3(2) + 4(3) - 6 = 6 + 12 - 6 = 12
+
+Step 2: Find denominator
+√(3² + 4²) = √(9 + 16) = √25 = 5
+
+Step 3: Apply formula
+d = |12|/5 = 2.4 units
+```
+
+**Example 19**: Find distance between parallel lines 3x + 4y - 6 = 0 and 3x + 4y + 14 = 0
+```
+For parallel lines Ax + By + C₁ = 0 and Ax + By + C₂ = 0:
+Distance = |C₁ - C₂|/√(A² + B²)
+
+Here: | -6 - 14 |/5 = | -20 |/5 = 4 units
+```
+
+### SHORTCUT TRICKS:
+1. **Distance between parallel lines**: |C₁ - C₂|/√(A² + B²)
+2. **Foot of perpendicular** from (x₁,y₁) to line: 
+   (x, y) = (x₁ - A·(Ax₁+By₁+C)/(A²+B²), y₁ - B·(Ax₁+By₁+C)/(A²+B²))
+3. **Image of point** in line: (x', y') = (x₁ - 2A·d, y₁ - 2B·d) where d = (Ax₁+By₁+C)/(A²+B²)
+
+## 2.7 Comprehensive Solved Examples on Straight Lines
+
+**Example 20**: Find equation of line passing through (2,3) with slope 4
+```
+Using point-slope form:
+y - 3 = 4(x - 2)
+y - 3 = 4x - 8
+y = 4x - 5
+```
+
+**Example 21**: Find equation of line passing through (1,2) and (3,8)
+```
+Method 1 (Two-point form):
+Slope m = (8-2)/(3-1) = 6/2 = 3
+Using point-slope with (1,2):
+y - 2 = 3(x - 1)
+y - 2 = 3x - 3
+y = 3x - 1
+
+Method 2 (Direct formula):
+(y - 2)/(8-2) = (x - 1)/(3-1)
+(y - 2)/6 = (x - 1)/2
+Cross multiply: 2(y - 2) = 6(x - 1)
+2y - 4 = 6x - 6
+2y = 6x - 2
+y = 3x - 1
+```
+
+**Example 22**: Find equation of line with x-intercept 4 and y-intercept 3
+```
+Using intercept form: x/4 + y/3 = 1
+Multiply by 12: 3x + 4y = 12
+```
+
+**Example 23**: Find line parallel to 2x + 3y = 6 and passing through (1,2)
+```
+Parallel lines have same coefficients of x and y
+Line: 2x + 3y + k = 0
+Put (1,2): 2(1) + 3(2) + k = 0
+2 + 6 + k = 0
+k = -8
+∴ 2x + 3y - 8 = 0
+```
+
+**Example 24**: Find line perpendicular to 3x - 4y = 7 and passing through origin
+```
+For perpendicular line: coefficients swap with one sign change
+Original: 3x - 4y = 7
+Perpendicular: 4x + 3y = 0 (through origin, so constant = 0)
+Check: (3)(4) + (-4)(3) = 12 - 12 = 0 ✓
+```
+
+**Example 25**: Find equation of line with slope 2 and passing through intersection of x + y = 5 and 2x - y = 4
+```
+Step 1: Find intersection
+x + y = 5 ...(1)
+2x - y = 4 ...(2)
+Add: 3x = 9 → x = 3
+From (1): 3 + y = 5 → y = 2
+Intersection point = (3,2)
+
+Step 2: Use point-slope form
+y - 2 = 2(x - 3)
+y - 2 = 2x - 6
+y = 2x - 4
+```
+
+### SHORTCUT TRICKS FOR LINE EQUATIONS:
+1. **Family of lines**: Lines passing through intersection of L₁ and L₂: L₁ + λL₂ = 0
+2. **Line through a point (x₁,y₁) with slope m**: y - y₁ = m(x - x₁)
+3. **Line through two points**: Use determinant: |x y 1; x₁ y₁ 1; x₂ y₂ 1| = 0
+4. **Line making equal intercepts**: x/a + y/a = 1 → x + y = a
+
+---
+
+# SECTION 3: PAIR OF STRAIGHT LINES
+
+## 3.1 General Equation of Pair of Lines - Detailed Explanation
+
+A second-degree equation representing two straight lines:
+```
+ax² + 2hxy + by² + 2gx + 2fy + c = 0
+```
+
+### Conditions for Representing Pair of Lines:
+1. The equation must be homogeneous or can be factorized into two linear factors
+2. The determinant condition: Δ = abc + 2fgh - af² - bg² - ch² = 0
+
+## 3.2 Homogeneous Equation (Lines Through Origin)
+
+```
+ax² + 2hxy + by² = 0
+```
+
+### Detailed Analysis:
+- **Represents two lines passing through origin**
+- **Slopes m₁, m₂** satisfy: bm² + 2hm + a = 0
+- **Sum of slopes**: m₁ + m₂ = -2h/b
+- **Product of slopes**: m₁m₂ = a/b
+
+### Conditions:
+- **Real and distinct lines**: h² - ab > 0
+- **Real and coincident lines**: h² - ab = 0
+- **Imaginary lines**: h² - ab < 0
+- **Lines are perpendicular**: a + b = 0
+- **Lines are equally inclined to axes**: h = 0
+
+**Example 26**: Show that x² - 5xy + 4y² = 0 represents two lines through origin
+```
+a = 1, h = -5/2, b = 4
+h² - ab = (25/4) - 4 = (25 - 16)/4 = 9/4 > 0
+Hence represents two real and distinct lines
+```
+
+**Example 27**: Find the lines represented by 6x² + xy - y² = 0
+```
+6x² + xy - y² = 0
+Divide by y²: 6(x/y)² + (x/y) - 1 = 0
+Let m = x/y: 6m² + m - 1 = 0
+(3m - 1)(2m + 1) = 0
+m = 1/3 or m = -1/2
+Therefore lines: y = 3x and y = -2x
+```
+
+**Example 28**: Find the angle between lines x² - 5xy + 4y² = 0
+```
+a = 1, h = -5/2, b = 4
+tan θ = |2√(h² - ab)/(a + b)|
+      = |2√(25/4 - 4)/(1 + 4)|
+      = |2√(9/4)/5|
+      = |2 × 3/2 /5|
+      = 3/5
+θ = tan⁻¹(3/5)
+```
+
+### SHORTCUT TRICKS:
+1. **To find individual lines**: Solve for m = y/x, then lines are y = m₁x and y = m₂x
+2. **If lines are perpendicular**: a + b = 0 (coefficient of x² + coefficient of y² = 0)
+3. **If lines are coincident**: h² = ab
+4. **Angle between lines**: Use tan θ = |2√(h² - ab)/(a + b)|
+
+## 3.3 Angle Between Pair of Lines - Detailed Formula
+
+**Formula**: tan θ = |2√(h² - ab)/(a + b)|
+
+**Special Cases**:
+- If a + b = 0, lines are perpendicular (θ = 90°)
+- If h² = ab, lines are parallel (coincident) (θ = 0°)
+
+**Example 29**: Find angle between lines 2x² - 5xy + 2y² = 0
+```
+a = 2, h = -5/2, b = 2
+h² - ab = 25/4 - 4 = (25 - 16)/4 = 9/4
+√(h² - ab) = 3/2
+a + b = 4
+tan θ = |2 × (3/2)/4| = |3/4| = 0.75
+θ = tan⁻¹(0.75) ≈ 36.87°
+```
+
+## 3.4 Equation of Lines Joining Origin to Points of Intersection
+
+If we have a line L and a curve, the combined equation of lines joining origin to their intersection points is obtained by homogenizing the curve equation with the line.
+
+**Example 30**: Find the lines joining origin to intersection of x² + y² = 4 and x + y = 2
+```
+Step 1: From line, 1 = (x + y)/2
+Step 2: Homogenize circle equation:
+x² + y² = 4[(x + y)/2]²
+x² + y² = 4(x² + 2xy + y²)/4
+x² + y² = x² + 2xy + y²
+0 = 2xy
+xy = 0
+Therefore lines are x = 0 and y = 0
+```
+
+### SHORTCUT TRICKS:
+1. **Homogenization**: Replace constant terms using the line equation
+2. **Joint equation**: Always a homogeneous equation of degree 2
+
+---
+
+# SECTION 4: CIRCLE
+
+## 4.1 Definition and Basic Concepts
+
+A circle is the locus of a point that moves such that its distance from a fixed point (center) is constant (radius).
+
+### Key Terms:
+- **Center**: The fixed point (h, k)
+- **Radius**: The constant distance r
+- **Circumference**: 2πr
+- **Area**: πr²
+- **Diameter**: 2r
+- **Chord**: Line segment joining two points on circle
+- **Secant**: Line intersecting circle at two points
+- **Tangent**: Line touching circle at exactly one point
+
+## 4.2 Standard Forms - Detailed Explanation
+
+### Center at Origin
+```
+x² + y² = r²
+```
+- Center: (0, 0)
+- Radius: r
+- General point on circle: (r cos θ, r sin θ)
+
+### Center at (h, k)
+```
+(x - h)² + (y - k)² = r²
+```
+- Center: (h, k)
+- Radius: r
+- General point: (h + r cos θ, k + r sin θ)
+
+### General Form
+```
+x² + y² + 2gx + 2fy + c = 0
+```
+
+**Derivation**:
+Comparing with (x - h)² + (y - k)² = r²:
+x² - 2hx + h² + y² - 2ky + k² = r²
+x² + y² - 2hx - 2ky + (h² + k² - r²) = 0
+
+Therefore:
+- **Center**: (-g, -f) where g = -h, f = -k
+- **Radius**: r = √(g² + f² - c)
+
+**Condition for real circle**: g² + f² - c > 0
+- If = 0: Point circle (radius 0)
+- If < 0: Imaginary circle (no real points)
+
+**Example 31**: Find center and radius of circle x² + y² - 4x + 6y - 12 = 0
+```
+Comparing with general form:
+2g = -4 → g = -2
+2f = 6 → f = 3
+c = -12
+
+Center = (-g, -f) = (2, -3)
+Radius = √(g² + f² - c) = √(4 + 9 + 12) = √25 = 5
+```
+
+**Example 32**: Find equation of circle with center (2, -3) and radius 4
+```
+Using center-radius form:
+(x - 2)² + (y + 3)² = 16
+x² - 4x + 4 + y² + 6y + 9 = 16
+x² + y² - 4x + 6y - 3 = 0
+```
+
+## 4.3 Diameter Form - Detailed Explanation
+
+Equation of circle with A(x₁, y₁) and B(x₂, y₂) as ends of diameter:
+```
+(x - x₁)(x - x₂) + (y - y₁)(y - y₂) = 0
+```
+
+**Proof**: For any point P(x, y) on circle, ∠APB = 90° (angle in semicircle). Therefore, slope of PA × slope of PB = -1.
+
+**Example 33**: Find equation of circle with A(2,3) and B(4,5) as ends of diameter
+```
+Using diameter form:
+(x - 2)(x - 4) + (y - 3)(y - 5) = 0
+x² - 6x + 8 + y² - 8y + 15 = 0
+x² + y² - 6x - 8y + 23 = 0
+```
+
+### SHORTCUT TRICK:
+Center is midpoint of AB: ((2+4)/2, (3+5)/2) = (3,4)
+Radius = half of AB = ½√[(4-2)² + (5-3)²] = ½√(4+4) = ½√8 = √2
+Equation: (x-3)² + (y-4)² = 2 → x² + y² - 6x - 8y + 23 = 0 ✓
+
+## 4.4 Position of a Point Relative to Circle - Detailed Explanation
+
+For circle S ≡ x² + y² + 2gx + 2fy + c = 0 and point P(x₁, y₁):
+
+Calculate S₁ = x₁² + y₁² + 2gx₁ + 2fy₁ + c
+
+- **If S₁ = 0**: Point lies on the circle
+- **If S₁ > 0**: Point lies outside the circle
+- **If S₁ < 0**: Point lies inside the circle
+
+**Example 34**: Determine position of P(3,2) relative to circle x² + y² - 4x + 6y - 12 = 0
+```
+S₁ = 3² + 2² - 4(3) + 6(2) - 12
+    = 9 + 4 - 12 + 12 - 12
+    = 1
+Since S₁ > 0, point lies outside the circle
+```
+
+### SHORTCUT TRICK:
+For circle x² + y² = r², point (x₁,y₁) is:
+- Inside if x₁² + y₁² < r²
+- On if x₁² + y₁² = r²
+- Outside if x₁² + y₁² > r²
+
+## 4.5 Tangent to a Circle - Detailed Explanation
+
+### Tangent at Point (x₁, y₁) on Circle x² + y² = r²
+```
+xx₁ + yy₁ = r²
+```
+
+### Tangent at Point (x₁, y₁) on Circle x² + y² + 2gx + 2fy + c = 0
+```
+xx₁ + yy₁ + g(x + x₁) + f(y + y₁) + c = 0
+```
+This is often written as T = 0, where T is obtained by replacing:
+- x² → xx₁
+- y² → yy₁
+- x → (x + x₁)/2
+- y → (y + y₁)/2
+- constant remains same
+
+**Example 35**: Find tangent to circle x² + y² = 25 at point (3,4)
+```
+Using formula: xx₁ + yy₁ = r²
+3x + 4y = 25
+```
+
+**Example 36**: Find tangent to circle x² + y² - 4x + 6y - 12 = 0 at point (2,1)
+```
+First verify point lies on circle:
+4 + 1 - 8 + 6 - 12 = -9 ≠ 0, so point not on circle!
+(Always verify point lies on circle before finding tangent)
+```
+
+### Condition for Tangency
+Line y = mx + c is tangent to circle x² + y² = r² if:
+```
+c² = r²(1 + m²)
+```
+
+**Example 37**: Find value of c for which y = 2x + c is tangent to x² + y² = 5
+```
+Using condition: c² = r²(1 + m²) = 5(1 + 4) = 25
+c = ±5
+Therefore lines: y = 2x + 5 and y = 2x - 5 are tangents
+```
+
+### SHORTCUT TRICKS FOR TANGENTS:
+1. **Slope form**: y = mx ± r√(1 + m²) are tangents to x² + y² = r²
+2. **From external point (x₁,y₁)**: Equation of pair of tangents is SS₁ = T²
+3. **Director circle**: Locus of point from which tangents are perpendicular is x² + y² = 2r²
+
+## 4.6 Length of Tangent from External Point - Detailed Explanation
+
+From point P(x₁, y₁) to circle x² + y² + 2gx + 2fy + c = 0:
+```
+Length of tangent = √(S₁) where S₁ = x₁² + y₁² + 2gx₁ + 2fy₁ + c
+```
+
+**Example 38**: Find length of tangent from point (7,1) to circle x² + y² = 25
+```
+S₁ = 7² + 1² - 25 = 49 + 1 - 25 = 25
+Length = √25 = 5 units
+```
+
+**Example 39**: Find length of tangent from (8,2) to circle x² + y² - 4x + 6y - 12 = 0
+```
+S₁ = 64 + 4 - 32 + 12 - 12 = 36
+Length = √36 = 6 units
+```
+
+## 4.7 Equation of Circle in Special Cases - Detailed Examples
+
+**Example 40**: Find equation of circle passing through (2,3), (4,5), and (6,1)
+```
+Let equation: x² + y² + 2gx + 2fy + c = 0
+
+For (2,3): 4 + 9 + 4g + 6f + c = 0 → 4g + 6f + c = -13 ...(1)
+For (4,5): 16 + 25 + 8g + 10f + c = 0 → 8g + 10f + c = -41 ...(2)
+For (6,1): 36 + 1 + 12g + 2f + c = 0 → 12g + 2f + c = -37 ...(3)
+
+Subtract (1) from (2): 4g + 4f = -28 → g + f = -7 ...(4)
+Subtract (1) from (3): 8g - 4f = -24 → 2g - f = -6 ...(5)
+
+Add (4) and (5): 3g = -13 → g = -13/3
+From (4): -13/3 + f = -7 → f = -7 + 13/3 = (-21 + 13)/3 = -8/3
+From (1): 4(-13/3) + 6(-8/3) + c = -13
+-52/3 - 48/3 + c = -13
+-100/3 + c = -13
+c = -13 + 100/3 = (-39 + 100)/3 = 61/3
+
+Equation: x² + y² - (26/3)x - (16/3)y + 61/3 = 0
+Multiply by 3: 3x² + 3y² - 26x - 16y + 61 = 0
+```
+
+**Example 41**: Find equation of circle with center on line x = 2y, passing through (1,2) and (3,4)
+```
+Let center be (h, k). Since on x = 2y, h = 2k
+Radius = distance from center to any point
+
+Distance to (1,2): r² = (2k - 1)² + (k - 2)²
+Distance to (3,4): r² = (2k - 3)² + (k - 4)²
+
+Equate: (2k - 1)² + (k - 2)² = (2k - 3)² + (k - 4)²
+4k² - 4k + 1 + k² - 4k + 4 = 4k² - 12k + 9 + k² - 8k + 16
+5k² - 8k + 5 = 5k² - 20k + 25
+-8k + 5 = -20k + 25
+12k = 20
+k = 5/3, h = 10/3
+
+r² = (20/3 - 1)² + (5/3 - 2)² = (17/3)² + (-1/3)² = 289/9 + 1/9 = 290/9
+
+Equation: (x - 10/3)² + (y - 5/3)² = 290/9
+Multiply by 9: 9(x - 10/3)² + 9(y - 5/3)² = 290
+9x² - 60x + 100 + 9y² - 30y + 25 = 290
+9x² + 9y² - 60x - 30y - 165 = 0
+Divide by 3: 3x² + 3y² - 20x - 10y - 55 = 0
+```
+
+## 4.8 Family of Circles - Important Concept
+
+### Family through Intersection of Two Circles:
+If S₁ = 0 and S₂ = 0 intersect, then S₁ + λS₂ = 0 represents family of circles passing through their intersection points.
+
+### Family through Intersection of Circle and Line:
+If S = 0 and L = 0 intersect, then S + λL = 0 represents family of circles passing through intersection points.
+
+**Example 42**: Find circle passing through intersection of x² + y² = 25 and x + y = 5, and through (0,0)
+```
+Family: x² + y² - 25 + λ(x + y - 5) = 0
+Passes through (0,0): 0 + 0 - 25 + λ(0 + 0 - 5) = 0
+-25 - 5λ = 0 → λ = -5
+
+Equation: x² + y² - 25 - 5(x + y - 5) = 0
+x² + y² - 25 - 5x - 5y + 25 = 0
+x² + y² - 5x - 5y = 0
+```
+
+### SHORTCUT TRICKS FOR CIRCLES:
+1. **Chord of contact** from (x₁,y₁) to circle: T = 0
+2. **Equation of chord** with midpoint (x₁,y₁): T = S₁
+3. **Power of point**: S₁ = (distance from center)² - r²
+4. **Radical axis** of two circles: S₁ - S₂ = 0
+5. **Orthogonal circles**: 2g₁g₂ + 2f₁f₂ = c₁ + c₂
+
+---
+
+# SECTION 5: PARABOLA
+
+## 5.1 Definition and Basic Concepts
+
+A parabola is the locus of a point whose distance from a fixed point (focus) equals its distance from a fixed line (directrix).
+
+### Key Terms:
+- **Focus**: Fixed point F
+- **Directrix**: Fixed line
+- **Vertex**: Point where parabola meets axis (midpoint of focus and directrix)
+- **Axis**: Line through focus perpendicular to directrix
+- **Latus Rectum**: Chord through focus perpendicular to axis
+- **Focal Distance**: Distance of any point on parabola from focus
+- **Focal Chord**: Chord passing through focus
+
+## 5.2 Standard Forms - Detailed Analysis
+
+### Type 1: Right Opening Parabola (Most Common)
+```
+y² = 4ax
+```
+- **Vertex**: (0, 0)
+- **Focus**: (a, 0)
+- **Directrix**: x = -a
+- **Axis**: x-axis (y = 0)
+- **Latus Rectum**: 
+  - Length = 4a
+  - Endpoints: (a, 2a) and (a, -2a)
+- **Focal Distance** of point (x,y): x + a
+
+### Type 2: Left Opening Parabola
+```
+y² = -4ax
+```
+- **Vertex**: (0, 0)
+- **Focus**: (-a, 0)
+- **Directrix**: x = a
+- **Axis**: x-axis (y = 0)
+- **Latus Rectum**: Length = 4a, Endpoints: (-a, 2a) and (-a, -2a)
+
+### Type 3: Upward Opening Parabola
+```
+x² = 4ay
+```
+- **Vertex**: (0, 0)
+- **Focus**: (0, a)
+- **Directrix**: y = -a
+- **Axis**: y-axis (x = 0)
+- **Latus Rectum**: Length = 4a, Endpoints: (2a, a) and (-2a, a)
+
+### Type 4: Downward Opening Parabola
+```
+x² = -4ay
+```
+- **Vertex**: (0, 0)
+- **Focus**: (0, -a)
+- **Directrix**: y = a
+- **Axis**: y-axis (x = 0)
+- **Latus Rectum**: Length = 4a, Endpoints: (2a, -a) and (-2a, -a)
+
+### SHORTCUT IDENTIFICATION TABLE:
+| Equation Form | Opening | Focus | Directrix | Axis |
+|---------------|---------|-------|-----------|------|
+| y² = 4ax | Right | (a,0) | x = -a | x-axis |
+| y² = -4ax | Left | (-a,0) | x = a | x-axis |
+| x² = 4ay | Up | (0,a) | y = -a | y-axis |
+| x² = -4ay | Down | (0,-a) | y = a | y-axis |
+
+## 5.3 Detailed Solved Examples
+
+**Example 43**: For parabola y² = 12x, find focus, directrix, axis, and latus rectum
+```
+Comparing with y² = 4ax:
+4a = 12 → a = 3
+
+Focus = (3, 0)
+Directrix: x = -3
+Axis: x-axis (y = 0)
+Latus rectum length = 4a = 12
+Endpoints of latus rectum: (3, 6) and (3, -6)
+```
+
+**Example 44**: Find equation of parabola with focus (4,0) and directrix x = -4
+```
+By definition, for any point P(x,y) on parabola:
+Distance to focus = Distance to directrix
+√[(x-4)² + y²] = |x + 4|
+
+Square both sides:
+(x-4)² + y² = (x+4)²
+x² - 8x + 16 + y² = x² + 8x + 16
+y² = 16x
+Therefore a = 4
+```
+
+**Example 45**: Find focus of parabola x² = -16y
+```
+Comparing with x² = -4ay:
+4a = 16 → a = 4
+Since it's x² = -4ay, it opens downward
+Focus = (0, -4)
+```
+
+**Example 46**: Find vertex, focus, directrix of parabola y² - 8y - 4x + 28 = 0
+```
+Step 1: Complete square for y terms
+y² - 8y = 4x - 28
+y² - 8y + 16 = 4x - 28 + 16
+(y - 4)² = 4x - 12
+(y - 4)² = 4(x - 3)
+
+Step 2: Compare with Y² = 4aX where Y = y-4, X = x-3
+Here 4a = 4 → a = 1
+
+Step 3: Find vertex in original coordinates
+X = 0 → x - 3 = 0 → x = 3
+Y = 0 → y - 4 = 0 → y = 4
+Vertex = (3, 4)
+
+Step 4: Find focus
+For Y² = 4aX, focus is at (a, 0) in (X,Y) coordinates
+So focus in (X,Y): (1, 0)
+In original: X = 1 → x - 3 = 1 → x = 4
+Y = 0 → y - 4 = 0 → y = 4
+Focus = (4, 4)
+
+Step 5: Directrix in (X,Y): X = -a = -1
+In original: x - 3 = -1 → x = 2
+Directrix: x = 2
+```
+
+## 5.4 Parametric Form of Parabola
+
+For parabola y² = 4ax:
+- Parametric coordinates: (at², 2at)
+- Parameter t represents slope of line joining point to vertex
+- For t₁ and t₂, chord joining them has equation: (t₁ + t₂)y = 2x + 2at₁t₂
+
+**Example 47**: Find point on parabola y² = 8x corresponding to t = 2
+```
+y² = 8x → 4a = 8 → a = 2
+Point = (at², 2at) = (2×4, 2×2×2) = (8, 8)
+```
+
+## 5.5 Tangent to Parabola - Important Formulas
+
+### Tangent at Point (x₁, y₁) on y² = 4ax
+```
+yy₁ = 2a(x + x₁)
+```
+or equivalently: T = 0 form: yy₁ = 2a(x + x₁)
+
+### Tangent in Slope Form
+Line y = mx + c is tangent to y² = 4ax if:
+```
+c = a/m
+```
+Point of contact: (a/m², 2a/m)
+
+### Tangent in Parametric Form
+At point with parameter t: 
+```
+ty = x + at²
+```
+
+**Example 48**: Find tangent to y² = 8x at point (2,4)
+```
+First verify point lies on parabola: 4² = 16, 8×2 = 16 ✓
+a = 2 (since 4a = 8)
+Using formula: yy₁ = 2a(x + x₁)
+y×4 = 2×2(x + 2)
+4y = 4x + 8
+y = x + 2
+```
+
+**Example 49**: Find condition for y = 2x + c to be tangent to y² = 4x
+```
+a = 1, m = 2
+Condition: c = a/m = 1/2
+Therefore y = 2x + 1/2 is tangent
+```
+
+### SHORTCUT TRICKS FOR PARABOLA:
+1. **Focal distance** of point (x,y) on y² = 4ax is |x + a|
+2. **Length of latus rectum** is always 4a
+3. **Equation of chord** joining t₁ and t₂: (t₁ + t₂)y = 2x + 2at₁t₂
+4. **Foot of directrix** is at (-a, 0) for y² = 4ax
+5. **Parametric form** is extremely useful for solving locus problems
+
+---
+
+# SECTION 6: ELLIPSE
+
+## 6.1 Definition and Basic Concepts
+
+An ellipse is the locus of a point whose sum of distances from two fixed points (foci) is constant (equal to length of major axis).
+
+### Key Terms:
+- **Foci**: Two fixed points F₁ and F₂
+- **Center**: Midpoint of foci
+- **Major Axis**: Line through foci, length = 2a
+- **Minor Axis**: Line perpendicular to major axis through center, length = 2b
+- **Vertices**: Endpoints of major axis
+- **Eccentricity (e)**: Ratio of distance between foci to length of major axis
+- **Latus Rectum**: Chord through focus perpendicular to major axis
+- **Focal Distance**: Sum of distances from any point on ellipse to foci = 2a
+
+## 6.2 Standard Form (Center at Origin) - Detailed Analysis
+
+### Horizontal Major Axis (a > b)
+```
+x²/a² + y²/b² = 1
+```
+
+**Properties**:
+- **Center**: (0, 0)
+- **Vertices**: (±a, 0)
+- **Foci**: (±c, 0) where c² = a² - b²
+- **Major axis length**: 2a (along x-axis)
+- **Minor axis length**: 2b (along y-axis)
+- **Eccentricity**: e = c/a (0 < e < 1)
+- **Latus Rectum**: Length = 2b²/a, Endpoints: (±c, ±b²/a)
+
+### Vertical Major Axis (a > b)
+```
+x²/b² + y²/a² = 1
+```
+
+**Properties**:
+- **Center**: (0, 0)
+- **Vertices**: (0, ±a)
+- **Foci**: (0, ±c) where c² = a² - b²
+- **Major axis length**: 2a (along y-axis)
+- **Minor axis length**: 2b (along x-axis)
+- **Eccentricity**: e = c/a
+- **Latus Rectum**: Length = 2b²/a, Endpoints: (±b²/a, ±c)
+
+## 6.3 Important Relationships
+- c² = a² - b²
+- e = c/a
+- b² = a²(1 - e²)
+- Sum of focal distances = 2a
+
+## 6.4 Detailed Solved Examples
+
+**Example 50**: For ellipse x²/25 + y²/9 = 1, find foci, eccentricity, vertices, latus rectum
+```
+Step 1: Identify a and b
+a² = 25 → a = 5
+b² = 9 → b = 3
+Since a > b, major axis is horizontal
+
+Step 2: Find c
+c² = a² - b² = 25 - 9 = 16 → c = 4
+
+Step 3: Find required values
+Foci: (±4, 0)
+Vertices: (±5, 0)
+Eccentricity e = c/a = 4/5 = 0.8
+Latus rectum length = 2b²/a = 2×9/5 = 18/5 = 3.6
+Endpoints of latus rectum: (4, ±9/5) and (-4, ±9/5)
+```
+
+**Example 51**: Find equation of ellipse with foci (±3,0) and length of major axis 10
+```
+Major axis length = 2a = 10 → a = 5
+c = 3
+b² = a² - c² = 25 - 9 = 16 → b = 4
+Since foci on x-axis, major axis is horizontal
+Equation: x²/25 + y²/16 = 1
+```
+
+**Example 52**: Find eccentricity of ellipse 4x² + 9y² = 36
+```
+Step 1: Convert to standard form
+Divide by 36: x²/9 + y²/4 = 1
+
+Step 2: Identify a and b
+x²/9 means a² = 9 → a = 3 (since coefficient under x² is larger)
+y²/4 means b² = 4 → b = 2
+
+Step 3: Find c
+c² = a² - b² = 9 - 4 = 5 → c = √5
+e = c/a = √5/3
+```
+
+**Example 53**: Find equation of ellipse with vertices (±6,0) and eccentricity 2/3
+```
+Vertices on x-axis, so major axis is horizontal
+a = 6
+e = c/a = 2/3 → c = 4
+b² = a² - c² = 36 - 16 = 20 → b = √20 = 2√5
+Equation: x²/36 + y²/20 = 1
+```
+
+**Example 54**: Find the latus rectum of ellipse 9x² + 16y² = 144
+```
+Divide by 144: x²/16 + y²/9 = 1
+a² = 16 → a = 4
+b² = 9 → b = 3
+Latus rectum = 2b²/a = 2×9/4 = 18/4 = 4.5
+```
+
+## 6.5 Parametric Form of Ellipse
+
+For ellipse x²/a² + y²/b² = 1:
+- Parametric coordinates: (a cos θ, b sin θ)
+- θ is called eccentric angle (not the angle with x-axis)
+- For θ₁ and θ₂, chord joining them has equation: (x/a)cos((θ₁+θ₂)/2) + (y/b)sin((θ₁+θ₂)/2) = cos((θ₁-θ₂)/2)
+
+**Example 55**: Find point on ellipse x²/16 + y²/9 = 1 corresponding to θ = 60°
+```
+a = 4, b = 3
+Point = (4 cos 60°, 3 sin 60°) = (4 × 1/2, 3 × √3/2) = (2, 3√3/2)
+```
+
+## 6.6 Tangent to Ellipse - Important Formulas
+
+### Tangent at Point (x₁, y₁) on x²/a² + y²/b² = 1
+```
+xx₁/a² + yy₁/b² = 1
+```
+
+### Tangent in Slope Form
+Line y = mx + c is tangent to x²/a² + y²/b² = 1 if:
+```
+c² = a²m² + b²
+```
+Point of contact: (±a²m/√(a²m² + b²), ±b²/√(a²m² + b²))
+
+### Tangent in Parametric Form
+At point with parameter θ: 
+```
+(x/a) cos θ + (y/b) sin θ = 1
+```
+
+**Example 56**: Find tangent to ellipse x²/16 + y²/9 = 1 at point (4 cos 60°, 3 sin 60°)
+```
+Point = (2, 3√3/2)
+Using formula: xx₁/a² + yy₁/b² = 1
+x×2/16 + y×(3√3/2)/9 = 1
+x/8 + (√3/6)y = 1
+Multiply by 24: 3x + 4√3 y = 24
+```
+
+**Example 57**: Find condition for y = 2x + c to be tangent to x²/16 + y²/9 = 1
+```
+a² = 16, b² = 9, m = 2
+Condition: c² = a²m² + b² = 16×4 + 9 = 64 + 9 = 73
+c = ±√73
+Therefore y = 2x ± √73 are tangents
+```
+
+### SHORTCUT TRICKS FOR ELLIPSE:
+1. **Eccentricity always < 1**
+2. **Sum of focal distances** for any point = 2a
+3. **Auxiliary circle**: x² + y² = a²
+4. **Director circle**: x² + y² = a² + b² (locus of point from which tangents are perpendicular)
+5. **Equation of chord** with midpoint (x₁,y₁): xx₁/a² + yy₁/b² = x₁²/a² + y₁²/b²
+
+---
+
+# SECTION 7: HYPERBOLA
+
+## 7.1 Definition and Basic Concepts
+
+A hyperbola is the locus of a point whose difference of distances from two fixed points (foci) is constant (equal to length of transverse axis).
+
+### Key Terms:
+- **Foci**: Two fixed points F₁ and F₂
+- **Center**: Midpoint of foci
+- **Transverse Axis**: Line through foci, length = 2a
+- **Conjugate Axis**: Line perpendicular to transverse axis through center, length = 2b
+- **Vertices**: Endpoints of transverse axis
+- **Eccentricity (e)**: Ratio of distance between foci to length of transverse axis (e > 1)
+- **Latus Rectum**: Chord through focus perpendicular to transverse axis
+- **Asymptotes**: Lines that the hyperbola approaches but never touches
+- **Focal Distance**: Difference of distances from any point on hyperbola to foci = ±2a
+
+## 7.2 Standard Form (Center at Origin) - Detailed Analysis
+
+### Horizontal Transverse Axis
+```
+x²/a² - y²/b² = 1
+```
+
+**Properties**:
+- **Center**: (0, 0)
+- **Vertices**: (±a, 0)
+- **Foci**: (±c, 0) where c² = a² + b²
+- **Transverse axis length**: 2a (along x-axis)
+- **Conjugate axis length**: 2b (along y-axis)
+- **Eccentricity**: e = c/a (e > 1)
+- **Latus Rectum**: Length = 2b²/a
+- **Asymptotes**: y = ±(b/a)x
+
+### Vertical Transverse Axis
+```
+y²/a² - x²/b² = 1
+```
+
+**Properties**:
+- **Center**: (0, 0)
+- **Vertices**: (0, ±a)
+- **Foci**: (0, ±c) where c² = a² + b²
+- **Transverse axis length**: 2a (along y-axis)
+- **Conjugate axis length**: 2b (along x-axis)
+- **Eccentricity**: e = c/a
+- **Latus Rectum**: Length = 2b²/a
+- **Asymptotes**: y = ±(a/b)x
+
+## 7.3 Important Relationships
+- c² = a² + b²
+- e = c/a
+- b² = a²(e² - 1)
+- Difference of focal distances = 2a
+
+## 7.4 Detailed Solved Examples
+
+**Example 58**: For hyperbola x²/16 - y²/9 = 1, find foci, eccentricity, asymptotes, latus rectum
+```
+Step 1: Identify a and b
+a² = 16 → a = 4
+b² = 9 → b = 3
+
+Step 2: Find c
+c² = a² + b² = 16 + 9 = 25 → c = 5
+
+Step 3: Find required values
+Foci: (±5, 0)
+Eccentricity e = c/a = 5/4 = 1.25
+Asymptotes: y = ±(3/4)x
+Latus rectum = 2b²/a = 2×9/4 = 18/4 = 4.5
+```
+
+**Example 59**: Find equation of hyperbola with foci (±5,0) and vertices (±3,0)
+```
+Vertices: a = 3
+Foci: c = 5
+b² = c² - a² = 25 - 9 = 16 → b = 4
+Since foci on x-axis, transverse axis is horizontal
+Equation: x²/9 - y²/16 = 1
+```
+
+**Example 60**: Find equation of hyperbola with vertices (0,±4) and foci (0,±5)
+```
+Vertices on y-axis, so transverse axis is vertical
+a = 4
+c = 5
+b² = c² - a² = 25 - 16 = 9 → b = 3
+Equation: y²/16 - x²/9 = 1
+```
+
+**Example 61**: Find eccentricity of hyperbola 9x² - 16y² = 144
+```
+Step 1: Convert to standard form
+Divide by 144: x²/16 - y²/9 = 1
+
+Step 2: Identify a and b
+a² = 16 → a = 4
+b² = 9 → b = 3
+
+Step 3: Find c
+c² = a² + b² = 16 + 9 = 25 → c = 5
+e = c/a = 5/4 = 1.25
+```
+
+## 7.5 Rectangular Hyperbola - Special Case
+
+When a = b, hyperbola is called rectangular hyperbola
+- **Equation**: x² - y² = a²
+- **Eccentricity**: e = √2
+- **Asymptotes**: y = ±x (perpendicular lines)
+- **Foci**: (±a√2, 0)
+
+### Rectangular Hyperbola xy = c²
+Another form: xy = c² (rotated by 45°)
+- **Asymptotes**: x = 0 and y = 0 (coordinate axes)
+- **Vertices**: (c, c) and (-c, -c)
+- **Foci**: (c√2, c√2) and (-c√2, -c√2)
+
+**Example 62**: Find equation of rectangular hyperbola with a = 4
+```
+x²/16 - y²/16 = 1
+or x² - y² = 16
+```
+
+**Example 63**: For rectangular hyperbola xy = 16, find vertices and foci
+```
+c² = 16 → c = 4
+Vertices: (4, 4) and (-4, -4)
+Foci: (4√2, 4√2) and (-4√2, -4√2)
+```
+
+## 7.6 Parametric Form of Hyperbola
+
+For hyperbola x²/a² - y²/b² = 1:
+- Parametric coordinates: (a sec θ, b tan θ)
+- θ is called parameter (not the angle)
+- Alternative: (a cosh t, b sinh t) using hyperbolic functions
+
+**Example 64**: Find point on hyperbola x²/9 - y²/4 = 1 corresponding to θ = 45°
+```
+a = 3, b = 2
+sec 45° = √2, tan 45° = 1
+Point = (3√2, 2)
+```
+
+## 7.7 Tangent to Hyperbola - Important Formulas
+
+### Tangent at Point (x₁, y₁) on x²/a² - y²/b² = 1
+```
+xx₁/a² - yy₁/b² = 1
+```
+
+### Tangent in Slope Form
+Line y = mx + c is tangent to x²/a² - y²/b² = 1 if:
+```
+c² = a²m² - b²
+```
+Point of contact: (±a²m/√(a²m² - b²), ±b²/√(a²m² - b²))
+
+**Note**: For tangency, we need a²m² > b²
+
+### Tangent in Parametric Form
+At point with parameter θ: 
+```
+(x/a) sec θ - (y/b) tan θ = 1
+```
+
+**Example 65**: Find tangent to hyperbola x²/16 - y²/9 = 1 at point (8, 3√3)
+```
+First verify point: 64/16 - 27/9 = 4 - 3 = 1 ✓
+Using formula: xx₁/a² - yy₁/b² = 1
+x×8/16 - y×3√3/9 = 1
+x/2 - (√3/3)y = 1
+Multiply by 6: 3x - 2√3 y = 6
+```
+
+**Example 66**: Find condition for y = 2x + c to be tangent to x²/16 - y²/9 = 1
+```
+a² = 16, b² = 9, m = 2
+Condition: c² = a²m² - b² = 16×4 - 9 = 64 - 9 = 55
+c = ±√55
+Therefore y = 2x ± √55 are tangents
+```
+
+### SHORTCUT TRICKS FOR HYPERBOLA:
+1. **Eccentricity always > 1**
+2. **Difference of focal distances** for any point = 2a
+3. **Auxiliary circle**: x² + y² = a²
+4. **Director circle**: x² + y² = a² - b² (exists only if a > b)
+5. **Asymptotes** are the most important feature - they help in sketching
+6. **Rectangular hyperbola** has perpendicular asymptotes and e = √2
+
+## 7.8 Comparison Table: Parabola, Ellipse, Hyperbola
+
+| Feature | Parabola | Ellipse | Hyperbola |
+|---------|----------|---------|-----------|
+| General Equation | y² = 4ax | x²/a² + y²/b² = 1 | x²/a² - y²/b² = 1 |
+| Eccentricity (e) | e = 1 | 0 < e < 1 | e > 1 |
+| Sum/Difference | Equal distances | Sum constant = 2a | Difference constant = 2a |
+| Foci | One focus | Two foci | Two foci |
+| Directrix | One directrix | Two directrices | Two directrices |
+| Asymptotes | None | None | Two |
+| Latus Rectum | 4a | 2b²/a | 2b²/a |
+
+---
+
+# SECTION 8: SIMPLE GEOMETRIC TRANSFORMATIONS
+
+## 8.1 Translation of Axes - Detailed Explanation
+
+### Concept
+Translation means shifting the origin to a new point without changing the direction of axes.
+
+### Shifting Origin to (h, k)
+If origin is shifted to point O'(h, k), then new coordinates (X, Y) are related to old coordinates (x, y) by:
+```
+x = X + h
+y = Y + k
+```
+Or equivalently:
+```
+X = x - h
+Y = y - k
+```
+
+**Memory Trick**: "New = Old - Shift" i.e., X = x - h, Y = y - k
+
+### Effect on Equations:
+- The shape of curve remains same
+- Only the position changes
+- Degree of equation remains same
+
+**Example 67**: Shift origin to (2,3). Find new coordinates of point (5,7)
+```
+X = 5 - 2 = 3
+Y = 7 - 3 = 4
+New coordinates: (3, 4)
+```
+
+**Example 68**: Transform equation x² + y² - 4x - 6y - 12 = 0 by shifting origin to (2,3)
+```
+Step 1: Substitution
+Let x = X + 2, y = Y + 3
+
+Step 2: Substitute in equation
+(X+2)² + (Y+3)² - 4(X+2) - 6(Y+3) - 12 = 0
+
+Step 3: Expand
+X² + 4X + 4 + Y² + 6Y + 9 - 4X - 8 - 6Y - 18 - 12 = 0
+
+Step 4: Simplify
+X² + Y² + (4X-4X) + (6Y-6Y) + (4+9-8-18-12) = 0
+X² + Y² - 25 = 0
+X² + Y² = 25
+
+This represents a circle with center at new origin and radius 5
+```
+
+**Example 69**: Find the transformed equation of line 2x + 3y = 6 after shifting origin to (1,1)
+```
+x = X + 1, y = Y + 1
+2(X+1) + 3(Y+1) = 6
+2X + 2 + 3Y + 3 = 6
+2X + 3Y + 5 = 6
+2X + 3Y = 1
+```
+
+### SHORTCUT TRICKS FOR TRANSLATION:
+1. **To remove linear terms**: Shift origin to center of curve
+2. **For circle x² + y² + 2gx + 2fy + c = 0**, shifting to (-g,-f) gives X² + Y² = R²
+3. **Equation becomes homogeneous** if shifted to vertex of parabola
+
+## 8.2 Rotation of Axes - Detailed Explanation
+
+### Concept
+Rotation means turning the axes by an angle θ while keeping origin fixed.
+
+### Rotation by Angle θ (Anticlockwise)
+If axes are rotated by angle θ anticlockwise, new coordinates (X, Y) are related to old coordinates (x, y) by:
+```
+x = X cos θ - Y sin θ
+y = X sin θ + Y cos θ
+```
+
+### Inverse Relations (To find new coordinates):
+```
+X = x cos θ + y sin θ
+Y = -x sin θ + y cos θ
+```
+
+**Memory Trick**: For inverse, "X is cos with +, Y is sin with -"
+
+### Important Rotation Angles:
+- **θ = 90°**: x = -Y, y = X
+- **θ = 180°**: x = -X, y = -Y
+- **θ = 270°**: x = Y, y = -X
+- **θ = 45°**: x = (X - Y)/√2, y = (X + Y)/√2
+
+**Example 70**: Rotate axes by 45°. Find new coordinates of point (4,2)
+```
+cos 45° = sin 45° = 1/√2
+
+Using inverse formulas:
+X = x cosθ + y sinθ = 4/√2 + 2/√2 = 6/√2 = 3√2
+Y = -x sinθ + y cosθ = -4/√2 + 2/√2 = -2/√2 = -√2
+
+New coordinates: (3√2, -√2)
+```
+
+**Example 71**: Transform equation x² + y² = a² by rotating axes by 45°
+```
+Using x = (X - Y)/√2, y = (X + Y)/√2
+
+x² + y² = [(X - Y)² + (X + Y)²]/2
+       = [X² - 2XY + Y² + X² + 2XY + Y²]/2
+       = [2X² + 2Y²]/2
+       = X² + Y²
+
+So equation becomes X² + Y² = a²
+(Equation remains unchanged - circle is invariant under rotation)
+```
+
+**Example 72**: Remove xy term from equation x² + 2xy + y² = 1 by rotation
+```
+General second-degree equation: ax² + 2hxy + by² = 1
+Here a = 1, h = 1, b = 1
+
+To remove xy term, rotate by θ where tan 2θ = 2h/(a-b)
+But here a-b = 0, so tan 2θ = ∞ → 2θ = 90° → θ = 45°
+
+After rotation by 45°, the equation becomes AX² + BY² = 1
+where A = a cos²θ + 2h sinθ cosθ + b sin²θ
+     = 1×(1/2) + 2×1×(1/√2)(1/√2) + 1×(1/2)
+     = 1/2 + 1 + 1/2 = 2
+and B = a sin²θ - 2h sinθ cosθ + b cos²θ
+     = 1×(1/2) - 2×1×(1/√2)(1/√2) + 1×(1/2)
+     = 1/2 - 1 + 1/2 = 0
+
+So equation becomes 2X² = 1 or X² = 1/2
+```
+
+### SHORTCUT TRICKS FOR ROTATION:
+1. **To identify rotation angle** to remove xy term: tan 2θ = 2h/(a-b)
+2. **Invariants under rotation**: 
+   - a + b remains constant
+   - h² - ab remains constant
+   - Discriminant remains constant
+3. **Circle** is invariant under any rotation
+
+## 8.3 Scaling (Dilation) - Detailed Explanation
+
+### Concept
+Scaling means multiplying coordinates by constant factors, changing the size of figures.
+
+### Uniform Scaling (Similarity Transformation)
+Scale both coordinates by factor k:
+```
+x' = kx
+y' = ky
+```
+- Shape remains similar
+- Distances multiply by k
+- Area multiplies by k²
+
+### Non-uniform Scaling (Affine Transformation)
+Scale x by factor p and y by factor q:
+```
+x' = px
+y' = qy
+```
+- Shape changes (circle becomes ellipse)
+- Area multiplies by |pq|
+
+**Example 73**: Scale the point (3,4) by factor 2 uniformly
+```
+x' = 2×3 = 6
+y' = 2×4 = 8
+New point: (6, 8)
+Distance from origin: originally 5, now 10 (doubled)
+```
+
+**Example 74**: Transform circle x² + y² = 9 by scaling x by factor 2 (non-uniform)
+```
+x' = 2x → x = x'/2
+Substitute: (x'/2)² + y² = 9
+x'²/4 + y² = 9
+x'² + 4y² = 36
+x'²/36 + y²/9 = 1
+This represents an ellipse with a = 6, b = 3
+```
+
+**Example 75**: Scale the line 2x + 3y = 6 by factor 2 uniformly
+```
+x' = 2x → x = x'/2
+y' = 2y → y = y'/2
+Substitute: 2(x'/2) + 3(y'/2) = 6
+x' + (3/2)y' = 6
+Multiply by 2: 2x' + 3y' = 12
+The line remains a line with same slope but different intercepts
+```
+
+### SHORTCUT TRICKS FOR SCALING:
+1. **Uniform scaling** preserves angles and similarity
+2. **Non-uniform scaling** changes angles (circle becomes ellipse)
+3. **Area scaling factor** = product of scale factors
+4. **To undo scaling**, use inverse factors
+
+## 8.4 Combined Transformations - Order Matters!
+
+When multiple transformations are applied, the order of application is crucial.
+
+### General Principle:
+Transformations are applied from right to left in the sequence mentioned.
+
+**Example 76**: Translate by (2,3) then rotate by 90° for point (1,1)
+```
+Step 1: Translation first
+After translation: (1+2, 1+3) = (3,4)
+
+Step 2: Then rotation by 90°
+For 90° rotation: x' = -y, y' = x
+So (3,4) → (-4, 3)
+
+Final point: (-4, 3)
+```
+
+**Example 77**: Rotate by 90° then translate by (2,3) for same point (1,1)
+```
+Step 1: Rotation first
+(1,1) rotated by 90° → (-1, 1)
+
+Step 2: Then translation by (2,3)
+(-1+2, 1+3) = (1, 4)
+
+Final point: (1, 4) [Different from previous example!]
+```
+
+**Example 78**: Find equation of curve after sequence: scale by 2, then translate by (1,2)
+Original curve: y = x²
+
+```
+Step 1: Scale by 2
+x₁ = 2x, y₁ = 2y
+In terms of new coordinates: x = x₁/2, y = y₁/2
+Equation becomes: y₁/2 = (x₁/2)²
+y₁/2 = x₁²/4
+y₁ = x₁²/2
+
+Step 2: Translate by (1,2)
+Let new coordinates after translation be (X,Y) with:
+x₁ = X - 1, y₁ = Y - 2
+Substitute: Y - 2 = (X - 1)²/2
+2Y - 4 = (X - 1)²
+Final equation: (X - 1)² = 2Y - 4
+```
+
+### Matrix Representation (For Advanced Understanding):
+Transformations can be represented as matrices:
+- Translation: Not linear, needs homogeneous coordinates
+- Rotation: [cosθ -sinθ; sinθ cosθ]
+- Scaling: [k 0; 0 k] or [p 0; 0 q]
+
+### SHORTCUT TRICKS FOR COMBINED TRANSFORMATIONS:
+1. **Order matters** - always apply in given sequence
+2. **Inverse transformations**: To find original point, apply inverse operations in reverse order
+3. **For translation + rotation**, it's often easier to use matrices
+4. **Check your answer** by applying inverse transformations
+
+## 8.5 Applications in Coordinate Geometry
+
+### Using Translation to Simplify Equations:
+1. **Circle**: x² + y² + 2gx + 2fy + c = 0 → X² + Y² = R²
+2. **Parabola**: y² - 4ax = 0 after translation to vertex
+3. **Ellipse/Hyperbola**: After translation to center, equation becomes standard form
+
+### Using Rotation to Remove xy Term:
+For general conic ax² + 2hxy + by² + ... = 0, rotate by θ where:
+tan 2θ = 2h/(a-b)
+
+**Example 79**: Identify and simplify the conic x² + 4xy + y² = 1
+```
+Step 1: Find rotation angle
+a = 1, h = 2, b = 1
+tan 2θ = 2h/(a-b) = 4/0 → undefined → 2θ = 90° → θ = 45°
+
+Step 2: Apply rotation formulas
+x = (X - Y)/√2, y = (X + Y)/√2
+
+Step 3: Substitute
+[(X-Y)² + 4(X-Y)(X+Y) + (X+Y)²]/2 = 1
+[X² - 2XY + Y² + 4(X² - Y²) + X² + 2XY + Y²]/2 = 1
+[6X² - 2Y²]/2 = 1
+3X² - Y² = 1
+
+This is a hyperbola!
+```
+
+---
+
+# SECTION 9: QUICK REFERENCE - ALL FORMULAS IN ONE PLACE
+
+## Distance and Section Formulas
+| Formula | Expression |
+|---------|------------|
+| Distance between two points | √[(x₂-x₁)² + (y₂-y₁)²] |
+| Section formula (internal) | [(mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n)] |
+| Section formula (external) | [(mx₂-nx₁)/(m-n), (my₂-ny₁)/(m-n)] |
+| Midpoint formula | [(x₁+x₂)/2, (y₁+y₂)/2] |
+| Area of triangle | ½|x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)\| |
+| Centroid of triangle | [(x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3] |
+
+## Straight Line Formulas
+| Form | Equation |
+|------|----------|
+| Slope-intercept | y = mx + c |
+| Point-slope | y - y₁ = m(x - x₁) |
+| Two-point | (y - y₁)/(x - x₁) = (y₂ - y₁)/(x₂ - x₁) |
+| Intercept | x/a + y/b = 1 |
+| Normal | x cos α + y sin α = p |
+| General | Ax + By + C = 0 |
+| Slope from general | m = -A/B |
+| Distance from point to line | \|Ax₁+By₁+C\|/√(A²+B²) |
+| Distance between || lines | \|C₁-C₂\|/√(A²+B²) |
+| Angle between lines | tan θ = \|(m₁-m₂)/(1+m₁m₂)\| |
+
+## Circle Formulas
+| Item | Formula |
+|------|---------|
+| Center-radius form | (x - h)² + (y - k)² = r² |
+| General form | x² + y² + 2gx + 2fy + c = 0 |
+| Center from general | (-g, -f) |
+| Radius from general | √(g² + f² - c) |
+| Diameter form | (x-x₁)(x-x₂) + (y-y₁)(y-y₂) = 0 |
+| Tangent at (x₁,y₁) | xx₁ + yy₁ + g(x+x₁) + f(y+y₁) + c = 0 |
+| Condition of tangency (y=mx+c) | c² = r²(1+m²) |
+| Length of tangent from (x₁,y₁) | √(x₁²+y₁²+2gx₁+2fy₁+c) |
+
+## Parabola Formulas (y² = 4ax)
+| Item | Formula |
+|------|---------|
+| Focus | (a, 0) |
+| Directrix | x = -a |
+| Vertex | (0, 0) |
+| Axis | y = 0 |
+| Latus rectum length | 4a |
+| Latus rectum endpoints | (a, ±2a) |
+| Parametric coordinates | (at², 2at) |
+| Tangent at (x₁,y₁) | yy₁ = 2a(x + x₁) |
+| Tangent slope form (y=mx+c) | c = a/m |
+| Focal distance of (x,y) | \|x + a\| |
+
+## Ellipse Formulas (x²/a² + y²/b² = 1, a > b)
+| Item | Formula |
+|------|---------|
+| Center | (0, 0) |
+| Vertices | (±a, 0) |
+| Foci | (±c, 0) where c² = a² - b² |
+| Eccentricity | e = c/a (0 < e < 1) |
+| Major axis length | 2a |
+| Minor axis length | 2b |
+| Latus rectum length | 2b²/a |
+| Parametric coordinates | (a cos θ, b sin θ) |
+| Tangent at (x₁,y₁) | xx₁/a² + yy₁/b² = 1 |
+| Tangent slope form (y=mx+c) | c² = a²m² + b² |
+| Sum of focal distances | 2a |
+
+## Hyperbola Formulas (x²/a² - y²/b² = 1)
+| Item | Formula |
+|------|---------|
+| Center | (0, 0) |
+| Vertices | (±a, 0) |
+| Foci | (±c, 0) where c² = a² + b² |
+| Eccentricity | e = c/a (e > 1) |
+| Transverse axis length | 2a |
+| Conjugate axis length | 2b |
+| Latus rectum length | 2b²/a |
+| Asymptotes | y = ±(b/a)x |
+| Parametric coordinates | (a sec θ, b tan θ) |
+| Tangent at (x₁,y₁) | xx₁/a² - yy₁/b² = 1 |
+| Tangent slope form (y=mx+c) | c² = a²m² - b² |
+| Difference of focal distances | 2a |
+
+## Transformation Formulas
+| Transformation | Formulas |
+|----------------|----------|
+| Translation (origin to h,k) | x = X + h, y = Y + K; X = x - h, Y = y - k |
+| Rotation by θ (anticlockwise) | x = X cosθ - Y sinθ, y = X sinθ + Y cosθ |
+| Rotation inverse | X = x cosθ + y sinθ, Y = -x sinθ + y cosθ |
+| Uniform scaling by k | x' = kx, y' = ky |
+| Non-uniform scaling (p,q) | x' = px, y' = qy |
+
+---
+
+# SECTION 10: EXAM STRATEGIES AND SHORTCUTS FOR MHT CET MCA
+
+## 10.1 Time Management Tips
+1. **8-12 questions** on Coordinate Geometry → Aim to solve in 15-20 minutes
+2. **First pass**: Solve direct formula-based questions (30-40 seconds each)
+3. **Second pass**: Attempt moderate difficulty questions (1-2 minutes each)
+4. **Skip and return**: If a question seems too lengthy, mark and move on
+
+## 10.2 Common Question Patterns
+1. **Direct formula application**: Distance, section, area, centroid
+2. **Line problems**: Finding equation, slope, intercepts, angle between lines
+3. **Circle problems**: Center, radius, tangent, position of point
+4. **Conic identification**: From given equation, find focus, directrix, eccentricity
+5. **Transformation problems**: Finding new coordinates after translation/rotation
+
+## 10.3 Important Shortcuts Summary
+
+### For Straight Lines:
+1. **Slope from equation**: m = -A/B
+2. **Perpendicular lines**: A₁A₂ + B₁B₂ = 0
+3. **Parallel lines**: A₁/A₂ = B₁/B₂ ≠ C₁/C₂
+4. **Distance between parallel lines**: |C₁ - C₂|/√(A² + B²)
+5. **Foot of perpendicular**: (x₁ - Ad, y₁ - Bd) where d = (Ax₁+By₁+C)/(A²+B²)
+
+### For Circles:
+1. **Center from general**: (-g, -f)
+2. **Radius**: √(g² + f² - c)
+3. **Length of tangent**: √S₁
+4. **Condition for orthogonality**: 2g₁g₂ + 2f₁f₂ = c₁ + c₂
+5. **Equation of chord with given midpoint**: T = S₁
+
+### For Conics:
+1. **Parabola**: Focus (a,0) for y² = 4ax
+2. **Ellipse**: c² = a² - b², e = c/a
+3. **Hyperbola**: c² = a² + b², e = c/a
+4. **Rectangular hyperbola**: a = b, e = √2
+
+### For Transformations:
+1. **New = Old - Shift** for translation
+2. **Rotation by 90°**: (x,y) → (-y,x)
+3. **Rotation by 180°**: (x,y) → (-x,-y)
+4. **Rotation by 270°**: (x,y) → (y,-x)
+
+## 10.4 Important Results to Memorize
+
+### Collinearity Conditions:
+- Area of triangle = 0
+- Slope AB = Slope BC
+- For three points (x₁,y₁), (x₂,y₂), (x₃,y₃): (y₂-y₁)/(x₂-x₁) = (y₃-y₂)/(x₃-x₂)
+
+### Concurrency Condition:
+Three lines are concurrent if determinant of coefficients = 0
+
+### Special Points in Triangle:
+1. **Centroid**: ( (x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3 )
+2. **Incenter**: ( (ax₁+bx₂+cx₃)/(a+b+c), (ay₁+by₂+cy₃)/(a+b+c) ) where a,b,c are side lengths
+3. **Circumcenter**: Intersection of perpendicular bisectors
+4. **Orthocenter**: Intersection of altitudes
+
+### Locus Problems:
+1. **Always eliminate parameter** to get equation in x and y
+2. **Use section formula** when point divides in fixed ratio
+3. **Use distance formula** for equidistant conditions
+
+## 10.5 Common Mistakes to Avoid
+
+1. **Sign errors** in section formula (remember: m with x₂, n with x₁)
+2. **Forgetting modulus** in area formula and distance from line
+3. **Confusing a and b** in ellipse and hyperbola
+4. **Order of transformations** - always apply in given sequence
+5. **Not checking if point lies on curve** before finding tangent
+6. **Mixing up formulas** for different conics - use comparison table
+
+## 10.6 Practice Strategy
+
+1. **Week 1-2**: Master all formulas (use the quick reference section)
+2. **Week 3-4**: Solve topic-wise problems (20-25 problems per topic)
+3. **Week 5-6**: Solve mixed problems and previous year papers
+4. **Week 7-8**: Take mock tests and analyze mistakes
+
+## 10.7 Final Tips for Exam Day
+
+1. **Read questions carefully** - identify which formula to apply
+2. **Write clearly** - avoid calculation errors
+3. **Use approximation** when exact calculation is time-consuming
+4. **Check units** - especially in area and distance problems
+5. **Verify your answer** with a quick mental check when possible
+6. **Don't spend more than 2 minutes** on any single question
+7. **Mark for review** if not sure, but attempt all questions
+
