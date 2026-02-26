@@ -29,14 +29,33 @@
     <main class="py-4">
         <div class="container-fluid">
             <div class="row">
+                <!-- Mobile Toggle Button (Sticky) -->
+                <div class="col-12 d-md-none mb-3 sticky-top bg-white py-2"
+                    style="top: 0; z-index: 1020; border-bottom: 1px solid #dee2e6;">
+                    <button class="btn btn-primary w-100 shadow-sm" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
+                        <i class="bi bi-list"></i> Browse Topics
+                    </button>
+                </div>
+
                 <!-- Sidebar -->
                 <div class="col-md-3">
-                    <div class="card shadow-sm sidebar">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0">Topics</h5>
+                    <div class="offcanvas-md offcanvas-start" tabindex="-1" id="sidebarOffcanvas"
+                        aria-labelledby="sidebarOffcanvasLabel">
+                        <div class="offcanvas-header bg-primary text-white">
+                            <h5 class="offcanvas-title" id="sidebarOffcanvasLabel">Topics</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                data-bs-target="#sidebarOffcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="accordion" id="topicsAccordion">
-                            <!-- Sidebar content will be populated by JS -->
+                        <div class="offcanvas-body p-0">
+                            <div class="card shadow-sm sidebar w-100 border-0 border-md-1">
+                                <div class="card-header bg-primary text-white d-none d-md-block">
+                                    <h5 class="mb-0">Topics</h5>
+                                </div>
+                                <div class="accordion" id="topicsAccordion">
+                                    <!-- Sidebar content will be populated by JS -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,6 +154,15 @@
 
                 const path = this.getAttribute('data-path');
                 const title = this.getAttribute('data-title');
+
+                // Close offcanvas on mobile if open
+                const offcanvasEl = document.getElementById('sidebarOffcanvas');
+                if (offcanvasEl && offcanvasEl.classList.contains('show')) {
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                }
 
                 noteTitle.textContent = title;
                 noteContent.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>';
