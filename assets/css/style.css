@@ -9,7 +9,8 @@
     border-radius: 5px;
     border: 1px solid #dee2e6;
     min-height: 500px;
-    overflow-wrap: break-word; /* Prevent long words from breaking layout */
+    overflow-wrap: break-word;
+    /* Prevent long words from breaking layout */
 }
 
 /* Markdown Styles */
@@ -59,14 +60,31 @@
 }
 
 /* Mobile Responsiveness */
+@media (min-width: 768px) {
+    #sidebarOffcanvas {
+        position: sticky;
+        top: 20px;
+        height: calc(100vh - 40px);
+        overflow-y: auto;
+    }
+}
+
 @media (max-width: 767.98px) {
     .note-content {
         padding: 15px;
     }
 
-    .note-content h1 { font-size: 1.75rem; }
-    .note-content h2 { font-size: 1.5rem; }
-    .note-content h3 { font-size: 1.25rem; }
+    .note-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .note-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .note-content h3 {
+        font-size: 1.25rem;
+    }
 
     /* Make tables scrollable on mobile */
     .note-content table {
@@ -74,7 +92,7 @@
         overflow-x: auto;
         white-space: nowrap;
     }
-    
+
     .sidebar {
         height: auto;
     }
