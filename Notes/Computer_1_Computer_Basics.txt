@@ -1384,8 +1384,7 @@ b) Alan Turing
 c) John Von Neumann
 d) Bill Gates
 
-✅ **Answer: a) Charles Babbage** - Designed Analytical Engine
-
+✅ **Answer: b) Alan Turing**
 ---
 
 ### Question 3
@@ -3689,3 +3688,4 @@ d) Shared resources, hold and wait, preemption, circular wait
 | **Number System** | Binary, Decimal, Hex conversions |
 
 ---
+
