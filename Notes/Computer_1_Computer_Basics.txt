@@ -1384,7 +1384,8 @@ b) Alan Turing
 c) John Von Neumann
 d) Bill Gates
 
-✅ **Answer: b) Alan Turing**
+✅ **Answer: b) Alan Turing** - Invented Turning Machine
+
 ---
 
 ### Question 3
@@ -3688,4 +3689,5 @@ d) Shared resources, hold and wait, preemption, circular wait
 | **Number System** | Binary, Decimal, Hex conversions |
 
 ---
+
 
